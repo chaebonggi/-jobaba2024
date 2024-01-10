@@ -44,11 +44,14 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 
  @media screen and (max-width: 640px) { 
     body.intro { 
-        height: 100vh; background: url(../../images/main_2024/intro/intro_mobg.png) #e3e3e3 bottom center no-repeat;
+        background: url(../../images/main_2024/intro/intro_mobg.png) #e3e3e3 bottom center no-repeat;
         background-size: contain;
         touch-action: pan-y;
     } 
-
+    .introWrap {
+        height: 100vh;
+        overflow: hidden;
+    }
     .introWrap .innerSection {
         padding: 0 10px;
     }
