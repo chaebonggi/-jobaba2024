@@ -1,4 +1,4 @@
-body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg.png) #e3e3e3 top center no-repeat; } 
+body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg.png) #e3e3e3 top center no-repeat; touch-action: pan-y; } 
  .innerSection { max-width: 1300px; height: 100%; padding: 0 20px; margin: 0 auto; } 
  #renewHeader .nheader_top { background: #2aa6c1; } 
  #renewHeader .h_util { display: flex; align-items: center; justify-content: space-between; height: 90px; } 
@@ -35,49 +35,23 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
  .introWrap .introList > li > a .introBtn { display: none; } 
  .introWrap .introList > li > a strong { color: #003281; } 
  .introWrap .introList > li > a p { height: auto; color: #8c8c8c; } 
- 
  }
 
  @media screen and (max-width: 1024px) { 
+    
     body.intro #renewHeader .h_util { display: none; } 
  }
 
  @media screen and (max-width: 640px) { 
-    body.intro { 
-        background: url(../../images/main_2024/intro/intro_mobg.png) #e3e3e3 bottom center no-repeat;
-        background-size: contain;
-        touch-action: pan-y;
-    } 
-    .introWrap {
-        height: 100vh;
-        overflow: hidden;
-    }
-    .introWrap .innerSection {
-        padding: 0 10px;
-    }
-    .introWrap .logo {
-        margin: 30px 0 30px;
-    }
-    .introWrap .logo img {
-        width: 50%;
-    }
-    .introWrap .introList > li:hover > a {
-        border: none;
-    }
-    .introWrap .introList > li + li {
-        margin-top: 15px;
-    }
-    .introWrap .introList > li > a {
-        height: 150px;
-        padding: 15px 15px 10px 20px;
-        background-size: auto 50%;         
-        background-position: right 10px bottom 10px;
-        border-radius: 15px 45px 15px 15px;
-    }
-    .introWrap .introList > li > a strong {
-        font-size: 26px;
-    }
-    .introWrap .introList > li > a p {
-        font-size: 18px;
-    }
+
+    body.intro { background-image: url(../../images/main_2024/intro/intro_bg_top.png), url(../../images/main_2024/intro/intro_bg_bottom.png); background-position: top center, bottom center; background-size: contain; } 
+    .introWrap { height: 100vh; overflow: hidden; } 
+    .introWrap .innerSection { padding: 0 10px; } 
+    .introWrap .logo { margin: 30px 0 30px; } 
+    .introWrap .logo img { width: 50%; } 
+    .introWrap .introList > li:hover > a { border: none; } 
+    .introWrap .introList > li + li { margin-top: 15px; } 
+    .introWrap .introList > li > a { height: 150px; padding: 15px 15px 10px 20px; background-size: auto 50%; background-position: right 10px bottom 10px; border-radius: 15px 45px 15px 15px; } 
+    .introWrap .introList > li > a strong { font-size: 26px; } 
+    .introWrap .introList > li > a p { font-size: 18px; } 
  }
