@@ -45,7 +45,7 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
  @media screen and (max-width: 640px) { 
 
     body.intro { background-image: url(../../images/main_2024/intro/intro_bg_top.png), url(../../images/main_2024/intro/intro_bg_bottom.png); background-color: #e3e3e3; background-position: top center, bottom center; background-size: contain; } 
-    .introWrap { padding: 40px 0; position: fixed; top: 50%; transform: translateY(-50%); overflow: hidden; } 
+    .introWrap { padding: 0 0 40px; position: fixed; top: 50%; transform: translateY(-50%); overflow: hidden; } 
     .introWrap .innerSection { padding: 0 10px; } 
     .introWrap .logo { margin: 0 0 30px; } 
     .introWrap .logo img { width: 50%; } 
