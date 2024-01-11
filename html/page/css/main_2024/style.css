@@ -198,6 +198,7 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 #renewMain .mainVisual { margin-bottom: 25px; } 
 #renewMain .visualWrap { display: flex; justify-content: space-between; } 
 #renewMain .mainVisual .visualCont { width: calc(100% - 360px); padding: 25px 208px 20px 35px; background-image: url(../../images/main_2024/main/visual_bg02.png), url(../../images/main_2024/main/visual_bg01.png); background-color: #dcf3f7; background-position: bottom 26px right 26px, top right; background-repeat: no-repeat; border-radius: 10px; } 
+#renewMain .mainVisual .visualCont.st2 { background-image: url(../../images/main_2024/main/visual_bg03.png), url(../../images/main_2024/main/visual_bg01.png); background-position: top right 22px, top right;} 
 #renewMain .mainVisual .visualItem { display: flex; flex-wrap: wrap; justify-content: space-between; } 
 #renewMain .mainVisual .visualItem li { width: 96px; height: 112px; box-sizing: border-box; } 
 #renewMain .mainVisual .visualItem li a { display: block; height: 100%; color: #000; font-size: 16px; text-align: center; letter-spacing: -0.7px; word-break: keep-all; } 

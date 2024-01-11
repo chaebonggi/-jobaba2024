@@ -411,8 +411,538 @@
             </div>
         </div>
     </header>
-    
-    <main>
+    <style>
+        #renewMain .mainBanner { max-width: 1986px; margin: 0 auto; overflow: hidden; }
+        #renewMain .mainBanner .swiper-container {width: 100%; max-width: 1260px; padding: 0 0 36px 270px; margin: 0 auto 30px; overflow:visible;}
+        #renewMain .mainBanner .swiper-wrapper { margin-left: 15px; }
+        #renewMain .mainBanner .swiper-slide { display:flex; justify-content:center; align-items:flex-end; width: 330px; margin-right: 30px; border-radius: 20px; transition:none; overflow: hidden; box-sizing: border-box; }
+        #renewMain .mainBanner .swiper-pagination-bullet.swiper-pagination-bullet-active { width: 70px; border-radius: 10px; background: #003280; }
+        #renewMain .mainBanner .swiper-slide .imgWrap { width: 100%; height: 300px; }
+        #renewMain .mainBanner .swiper-slide .imgWrap img { width: 100%; height: 100%; max-height: 300px;}
+        #renewMain .mainBanner .swiper-slide .x2 { display: none; }
+        #renewMain .mainBanner .swiper-slide.swiper-slide-active .x1 { display: none; }
+        #renewMain .mainBanner .swiper-slide.swiper-slide-active .x2 { display: block; }
+        #renewMain .mainBanner .changing,
+        #renewMain .mainBanner .changed { transform:translateX(-285px); -ms-user-select: none; -moz-user-select: -moz-none; -khtml-user-select: none; -webkit-user-select: none; user-select: none; }
+        #renewMain .mainBanner .changing { transition:transform 0.3s; pointer-events:none; }
+        #renewMain .mainBanner .changed { transition:none; }
+        #renewMain .mainBanner .changing.swiper-slide-active,
+        #renewMain .mainBanner .changed.swiper-slide-active { transform: scaleX(2.72728); border-radius: 5px / 15px; }
+        #renewMain .mainBanner .swiper-slide-active ~ .changing,
+        #renewMain .mainBanner .swiper-slide-active ~ .changed { transform:translateX(285px); }
+        #renewMain .mainBanner .changing .imgWrap,
+        #renewMain .mainBanner .changed .imgWrap { transform-origin:center bottom; }
+        #renewMain .mainBanner .changing .imgWrap { transition:transform 0.3s; }
+        #renewMain .mainBanner .changed .imgWrap { transition:none; }
+    </style>
+    <main id="renewMain">
+        <article class="mainVisual">
+            <div class="innerSection">
+                <div class="visualWrap">
+                    <div class="visualCont st2">
+                        <div class="visualSearch">                            
+                            <div class="searchWrap">
+                                <p class="tit">관심있는 <span>지원정책</span>을 찾아보세요</p>
+                                <div class="searchCont">
+                                    <input type="text" id="search" placeholder="#청년 #취업상담 #러닝센터 #역량강화사업">
+                                    <button type="submit">검색</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="itemSwiper">
+                        <ul class="visualItem swiper-wrapper">
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank" title="" class="vItem01"><span class="txt">자소서첨삭</span></a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank" title="" class="vItem02"><span class="txt">AI역량검사</span></a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank" title="" class="vItem03"><span class="txt">취업상담</span></a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank" title="" class="vItem04"><span class="txt">러닝센터</span></a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank" title="" class="vItem05"><span class="txt">구직신청</span></a>
+                            </li>
+                        </div>
+                            
+                        </ul>
+                    </div>
+                    <div class="loginForm">
+                        <div class="loginWrap">
+                            <p class="txt">로그인하고 맞춤형 서비스를 이용해 보세요.</p>
+                            <a href="" class="loginBtn"><span>로그인</span></button></a>
+                            <div class="loginSub">
+                                <a href="#" class="loginId">아이디찾기</a>
+                                <a href="#" class="loginPw">비밀번호 찾기</a>
+                                <a href="#" class="loginJoin">회원가입</a>                                
+                            </div>
+                        </div>
+                        <!-- 로그인 후 
+                        <div class="loginWrap login">
+                            <div class="txtWrap">
+                                <p><strong>홍길동</strong>님, 반갑습니다</p>
+                                <a href="">마이페이지</a>
+                            </div>
+                            <ul class="loginList">
+                                <li><a href="">취업진단<span>1</span></a></li>
+                                <li><a href="">자기소개서 첨삭<span>0</span></a></li>
+                                <li><a href="">AI 역량검사<span>2</span></a></li>
+                                <li><a href="">동영상교육<span>0</span></a></li>
+                            </ul>
+                        </div>
+                        -->
+                         
+                        <div class="counselingWrap">
+                            <a href="javascript:void(0);" class="channelTalk">
+                                <div class="chatTalk">
+                                    <p>실시간 진로&middot;취업상담 서비스</p>
+                                    <strong>잡아바 상담톡!</strong>
+                                </div>
+                                <div class="chatLive">
+                                    <p><span class="gBold">LIVE<br> CHAT</span></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="mainBanner">
+            <div class="swiper-container m_slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="imgWrap">
+                        <a href="#">
+                            <img src="./images/main_2024/main/m_main_img01.jpg" alt="" class="x1">
+                            <img src="./images/main_2024/main/main_img01.jpg" alt="" class="x2">
+                        </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="imgWrap">
+                        <a href="#">
+                            <img src="./images/main_2024/main/m_main_img02.jpg" alt="" class="x1">
+                            <img src="./images/main_2024/main/main_img02.jpg" alt="" class="x2">
+                        </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="imgWrap">
+                        <a href="#">
+                            <img src="./images/main_2024/main/m_main_img03.jpg" alt="" class="x1">
+                            <img src="./images/main_2024/main/main_img03.jpg" alt="" class="x2">
+                        </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="imgWrap">
+                        <a href="#">
+                            <img src="./images/main_2024/main/m_main_img04.jpg" alt="" class="x1">
+                            <img src="./images/main_2024/main/main_img04.jpg" alt="" class="x2">
+                        </a>
+                    </div>
+                  </div>                 
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+        </article>
+        <style>
+            #renewMain .mainPolicy { margin-bottom: 67px;}
+            #renewMain .mainPolicy .policyTit { display: flex; align-items: center; margin-bottom: 26px; margin-right: 10px; }
+            #renewMain .mainPolicy .policyTit a { padding: 2px 10px 2px; margin-left: auto; margin-top: 10px; background: #fff;  color: #3e3d3d; font-size: 14px; border: 1px solid #dedcdc; border-radius: 20px; text-align: center; white-space: nowrap; transition: all 0.35s;}
+            #renewMain .mainPolicy .policyTit a:hover {color: #fff; background: #2AA6C1; border: 1px solid #2AA6C1;}
+            #renewMain .mainPolicy .policyTit h3 { margin: 0 40px 0 10px; font-size: 36px; flex-shrink: 0; }
+            #renewMain .mainPolicy .policyBtn { display: flex; width: 100%; }
+            #renewMain .mainPolicy .policyBtn li { display: flex; align-items: center; justify-content: center; width: 90px; position: relative; height: 38px; padding-left: 30px; background: #f5f5f5; color: #4e4e4e; font-size: 14px; font-weight: 500; letter-spacing: -0.5px; cursor: pointer; border-radius: 20px; box-sizing: border-box; }
+            #renewMain .mainPolicy .policyBtn li::before { content: ''; width: 30px; height: 30px; position: absolute; top: 50%; left: 4px; transform: translateY(-50%); }
+            #renewMain .mainPolicy .policyBtn li.icon01::before { background: url(./images/main_2024/main/icon_policy_btn01.png) no-repeat; background-size: cover; }
+            #renewMain .mainPolicy .policyBtn li.icon02::before { background: url(./images/main_2024/main/icon_policy_btn02.png) no-repeat; background-size: cover; }
+            #renewMain .mainPolicy .policyBtn li.icon03::before { background: url(./images/main_2024/main/icon_policy_btn03.png) no-repeat; background-size: cover; }
+            #renewMain .mainPolicy .policyBtn li.icon01.active { background: #147dff; color: #fff; }
+            #renewMain .mainPolicy .policyBtn li.icon02.active { background: #ff007e; color: #fff; }
+            #renewMain .mainPolicy .policyBtn li.icon03.active { background: #003281; color: #fff; }
+            #renewMain .mainPolicy .policyBtn li + li { margin-left: 10px; }
+            
+            #renewMain .mainPolicy .policyEmpty { position: relative; text-align: center; width: 100%; }
+            #renewMain .mainPolicy .m_tag { height: 50px; position: relative; margin-bottom: 26px; padding: 8px 40px; background: #f3f3f3; border-radius: 30px; overflow: hidden; }
+            #renewMain .mainPolicy .m_tag.active { height: auto; }
+            #renewMain .mainPolicy .m_tag .m_tagBtn { width: 12px; height: 7px; position: absolute; top: 22px; right: 20px; background: url(./images/main_2024/main/icon_arrow.png) no-repeat; background-size: cover; transition: all 0.3s; text-indent: -9999px; border: none; }
+            #renewMain .mainPolicy .m_tag.active .m_tagBtn { transform: rotate(-180deg) }
+            #renewMain .mainPolicy .m_tag a:before{content:"#";}
+            #renewMain .mainPolicy .m_tag a { display: inline-block; padding: 6px 0; margin-right: 26px; color: #4e4e4e; font-size: 16px; font-weight: 300; }
+            #renewMain .mainPolicy .m_tag a:last-child { margin-right: 0; }
+
+            #renewMain .mainPolicy .policyCont { display: block; position: relative; width: 100%; overflow: hidden;}
+            #renewMain .mainPolicy .m_policy_cont.active { display: flex; flex-direction: column; }
+            #renewMain .mainPolicy .swiper-container { width: 100% }
+            #renewMain .mainPolicy .swiper-button-next { right: 0; left: initial !important; color: #9facb6; }
+            #renewMain .mainPolicy .swiper-button-prev { left: 0; color: #9facb6; }
+            #renewMain .mainPolicy .swiper-slide a { display: block; position: relative; background: #fff; border: 1px solid #dddddd; border-radius: 20px; overflow: hidden; }
+            #renewMain .mainPolicy .policyImg { height: 180px; }
+            #renewMain .mainPolicy .policyImg img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+            #renewMain .mainPolicy .badgeWrap { display: flex; justify-content: space-between; position: absolute; top: 10px; left: 0; right: 0; padding: 0 10px; }
+            #renewMain .mainPolicy .badgeWrap .badge { padding: 0 0 1px; width: 55px; font-size: 12px; border-radius: 15px; text-align: center; }
+            #renewMain .mainPolicy .policyTxt { padding: 18px 20px; }
+            #renewMain .mainPolicy .policyTxt .tit { height: 48px; min-height: 48px; color: #000; font-size: 16px; text-overflow: ellipsis; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; word-break: break-all; letter-spacing: -0.5px; }
+            #renewMain .mainPolicy .policyTxt .date { margin-top: 8px; color: #777777; font-size: 16px; font-weight: 300; text-overflow: ellipsis; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; word-break: break-all; letter-spacing: -0.5px; }
+        </style>
+        <article class="mainPolicy">
+            <div class="innerSection">
+                <div class="policyInfo">
+                    <div class="policyTit">
+                        <h3>정책정보</h3>
+                        <ul class="policyBtn">
+                            <li class="active icon01" data-tab="policy01">청년</li>
+                            <li class="icon02" data-tab="policy02">여성</li>
+                            <li class="icon03" data-tab="policy03">중장년</li>
+                        </ul>
+                        <a href="#"><span>더보기 &#43;</span></a>
+                    </div>
+                    
+
+                    <div class="policyCont active" data-tab="policy01">
+                        <div class="m_tag">
+                            <a href="#">전체</a>
+                            <a href="#">가평군</a>
+                            <a href="#">과천시</a>
+                            <a href="#">광명시</a>
+                            <a href="#">광주시</a>
+                            <a href="#">구리시</a>
+                            <a href="#">군포시</a>
+                            <a href="#">전체</a>
+                            <a href="#">가평군</a>
+                            <a href="#">과천시</a>
+                            <a href="#">광명시</a>
+                            <a href="#">광주시</a>
+                            <a href="#">구리시</a>
+                            <a href="#">군포시</a>
+                            <a href="#">전체</a>
+                            <a href="#">가평군</a>
+                            <a href="#">과천시</a>
+                            <a href="#">광명시</a>
+                            <a href="#">광주시</a>
+                            <a href="#">구리시</a>
+                            <a href="#">군포시</a>
+                            <a href="#">전체</a>
+                            <a href="#">가평군</a>
+                            <a href="#">과천시</a>
+                            <a href="#">광명시</a>
+                            <a href="#">광주시</a>
+                            <a href="#">구리시</a>
+                            <a href="#">군포시</a>
+                            <button class="m_tagBtn">tag 더보기 버튼</button>
+                        </div>
+                        <div class="swiper-container policySlide">
+                            <div class="swiper-wrapper">
+                                <!-- 정책이 없을 때 
+                                <div class="policyEmpty">해당 지역의 정책이 존재하지 않습니다.</div>
+                                -->
+                                <div class="swiper-slide">
+                                    <a href="#" target="_blank">
+                                        <div class="badgeWrap">
+                                            <span class="badge days">D-0</span>
+                                            <span class="badge area">남양주</span>
+                                        </div>
+                                        <div class="policyImg">
+                                            <img src="./images/main_2024/main/test01.png" alt="로봇과 체험하며 배우는 코딩">
+                                        </div>
+                                        <div class="policyTxt">
+                                            <strong class="tit">경기도기술학교</strong>
+                                            <p class="date">2023(월) ~ 2023.04.28.(금)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" target="_blank">
+                                        <div class="badgeWrap">
+                                            <span class="badge days">D-110</span>
+                                            <span class="badge area">남양주</span>
+                                        </div>
+                                        <div class="policyImg">
+                                            <img src="./images/main_2024/main/test02.jpg" alt="로봇과 체험하며 배우는 코딩">
+                                        </div>
+                                        <div class="policyTxt">
+                                            <strong class="tit">경기도기술학교 무료 교육생 교육생교육생교육생교육생교육생</strong>
+                                            <p class="date">2023(월) ~ 2023.04.28.(금)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" target="_blank">
+                                        <div class="badgeWrap">
+                                            <span class="badge days">D-0111</span>
+                                            <span class="badge area">남양주</span>
+                                        </div>
+                                        <div class="policyImg">
+                                            <img src="./images/main_2024/main/test03.jpg" alt="로봇과 체험하며 배우는 코딩">
+                                        </div>
+                                        <div class="policyTxt">
+                                            <strong class="tit">경기도기술학교 무료 교육생 교육생교육생교육생교육생교육생</strong>
+                                            <p class="date">2023(월) ~ 2023.04.28.(금)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" target="_blank">
+                                        <div class="badgeWrap">
+                                            <span class="badge days">D-0</span>
+                                            <span class="badge area">남양주</span>
+                                        </div>
+                                        <div class="policyImg">
+                                            <img src="./images/main_2024/main/test04.jpg" alt="로봇과 체험하며 배우는 코딩">
+                                        </div>
+                                        <div class="policyTxt">
+                                            <strong class="tit">경기도기술학교 무료 교육생 교육생교육생교육생교육생교육생</strong>
+                                            <p class="date">2023(월) ~ 2023.04.28.(금)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" target="_blank">
+                                        <div class="badgeWrap">
+                                            <span class="badge days">D-0</span>
+                                            <span class="badge area">남양주</span>
+                                        </div>
+                                        <div class="policyImg">
+                                            <img src="./images/main_2024/main/test05.jpg" alt="로봇과 체험하며 배우는 코딩">
+                                        </div>
+                                        <div class="policyTxt">
+                                            <strong class="tit">경기도기술학교 무료 교육생 교육생교육생교육생교육생교육생</strong>
+                                            <p class="date">2023(월) ~ 2023.04.28.(금)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" target="_blank">
+                                        <div class="badgeWrap">
+                                            <span class="badge days">D-0</span>
+                                            <span class="badge area">남양주</span>
+                                        </div>
+                                        <div class="policyImg">
+                                            <img src="./images/main_2024/main/test06.jpg" alt="로봇과 체험하며 배우는 코딩">
+                                        </div>
+                                        <div class="policyTxt">
+                                            <strong class="tit">경기도기술학교 무료 교육생 교육생교육생교육생교육생교육생</strong>
+                                            <p class="date">2023(월) ~ 2023.04.28.(금)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="policyCont" data-tab="policy02">
+                        <div class="m_tag">
+                            <a href="#">전체2</a>
+                            <a href="#">가평군</a>
+                            <a href="#">과천시</a>
+                            <a href="#">광명시</a>
+                            <a href="#">광주시</a>
+                            <a href="#">구리시</a>
+                            <a href="#">군포시</a>
+                            <a href="#">전체</a>
+                            <a href="#">가평군</a>
+                            <a href="#">과천시</a>
+                            <a href="#">광명시</a>
+                            <a href="#">광주시</a>
+                            <a href="#">구리시</a>
+                            <a href="#">군포시</a>
+                            <a href="#">전체</a>
+                            <a href="#">가평군</a>
+                            <a href="#">과천시</a>
+                            <a href="#">광명시</a>
+                            <a href="#">광주시</a>
+                            <a href="#">구리시</a>
+                            <a href="#">군포시</a>
+                            <a href="#">전체</a>
+                            <a href="#">가평군</a>
+                            <a href="#">과천시</a>
+                            <a href="#">광명시</a>
+                            <a href="#">광주시</a>
+                            <a href="#">구리시</a>
+                            <a href="#">군포시</a>
+                            <button class="m_tag_btn">tag 더보기 버튼</button>
+                        </div>
+                        <div class="swiper-container m_policy_slide">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#" target="_blank">
+                                        <div class="badge_wrap">
+                                            <span class="badge days">D-0</span>
+                                            <span class="badge area">구리시</span>
+                                        </div>
+                                        <div class="m_policy_img">
+                                            <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
+                                        </div>
+                                        <div class="m_policy_txt">
+                                            <strong class="tit">경기도기술학교 무료 교육생 교육생교육생교육생교육생교육생</strong>
+                                            <p class="date">2023(월) ~ 2023.04.28.(금)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" target="_blank">
+                                        <div class="badge_wrap">
+                                            <span class="badge days">D-110</span>
+                                            <span class="badge area">구리시</span>
+                                        </div>
+                                        <div class="m_policy_img">
+                                            <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
+                                        </div>
+                                        <div class="m_policy_txt">
+                                            <strong class="tit">경기도기술학교 무료 교육생 교육생교육생교육생교육생교육생</strong>
+                                            <p class="date">2023(월) ~ 2023.04.28.(금)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" target="_blank">
+                                        <div class="badge_wrap">
+                                            <span class="badge days">D-0111</span>
+                                            <span class="badge area">구리시</span>
+                                        </div>
+                                        <div class="m_policy_img">
+                                            <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
+                                        </div>
+                                        <div class="m_policy_txt">
+                                            <strong class="tit">경기도기술학교 무료 교육생 교육생교육생교육생교육생교육생</strong>
+                                            <p class="date">2023(월) ~ 2023.04.28.(금)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" target="_blank">
+                                        <div class="badge_wrap">
+                                            <span class="badge days">D-0</span>
+                                            <span class="badge area">구리시</span>
+                                        </div>
+                                        <div class="m_policy_img">
+                                            <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
+                                        </div>
+                                        <div class="m_policy_txt">
+                                            <strong class="tit">경기도기술학교 무료 교육생 교육생교육생교육생교육생교육생</strong>
+                                            <p class="date">2023(월) ~ 2023.04.28.(금)</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="btnWrap">
+                            <a href="#" target="_blank" class="icon01">인기 추천 정책</a>
+                            <a href="#" target="_blank" class="icon02">내게 맞는 정책 찾기</a>
+                            <a href="#" target="_blank" class="policyMore">정책 더보기</a>
+                        </div>
+                    </div>
+                    <div class="m_policy_cont" data-tab="policy03">
+                        <div class="m_tag">
+                            <a href="#">#전체3</a>
+                            <a href="#">#가평군</a>
+                            <a href="#">#과천시</a>
+                            <a href="#">#광명시</a>
+                            <a href="#">#광주시</a>
+                            <a href="#">#구리시</a>
+                            <a href="#">#군포시</a>
+                            <a href="#">#전체</a>
+                            <a href="#">#가평군</a>
+                            <a href="#">#과천시</a>
+                            <a href="#">#광명시</a>
+                            <a href="#">#광주시</a>
+                            <a href="#">#구리시</a>
+                            <a href="#">#군포시</a>
+                            <a href="#">#전체</a>
+                            <a href="#">#가평군</a>
+                            <a href="#">#과천시</a>
+                            <a href="#">#광명시</a>
+                            <a href="#">#광주시</a>
+                            <a href="#">#구리시</a>
+                            <a href="#">#군포시</a>
+                            <a href="#">#전체</a>
+                            <a href="#">#가평군</a>
+                            <a href="#">#과천시</a>
+                            <a href="#">#광명시</a>
+                            <a href="#">#광주시</a>
+                            <a href="#">#구리시</a>
+                            <a href="#">#군포시</a>
+                            <button class="m_tag_btn">tag 더보기 버튼</button>
+                        </div>
+                        <div class="swiper-container m_policy_slide">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#" target="_blank">
+                                        <div class="badge_wrap">
+                                            <span class="badge days">D-0</span>
+                                            <span class="badge area">이천시</span>
+                                        </div>
+                                        <div class="m_policy_img">
+                                            <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
+                                        </div>
+                                        <div class="m_policy_txt">
+                                            <strong class="tit">경기도기술학교 무료 교육생 교육생교육생교육생교육생교육생</strong>
+                                            <p class="date">2023(월) ~ 2023.04.28.(금)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" target="_blank">
+                                        <div class="badge_wrap">
+                                            <span class="badge days">D-110</span>
+                                            <span class="badge area">이천시</span>
+                                        </div>
+                                        <div class="m_policy_img">
+                                            <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
+                                        </div>
+                                        <div class="m_policy_txt">
+                                            <strong class="tit">경기도기술학교 무료 교육생 교육생교육생교육생교육생교육생</strong>
+                                            <p class="date">2023(월) ~ 2023.04.28.(금)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" target="_blank">
+                                        <div class="badge_wrap">
+                                            <span class="badge days">D-0111</span>
+                                            <span class="badge area">이천시</span>
+                                        </div>
+                                        <div class="m_policy_img">
+                                            <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
+                                        </div>
+                                        <div class="m_policy_txt">
+                                            <strong class="tit">경기도기술학교 무료 교육생 교육생교육생교육생교육생교육생</strong>
+                                            <p class="date">2023(월) ~ 2023.04.28.(금)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" target="_blank">
+                                        <div class="badge_wrap">
+                                            <span class="badge days">D-0</span>
+                                            <span class="badge area">이천시</span>
+                                        </div>
+                                        <div class="m_policy_img">
+                                            <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
+                                        </div>
+                                        <div class="m_policy_txt">
+                                            <strong class="tit">경기도기술학교 무료 교육생 교육생교육생교육생교육생교육생</strong>
+                                            <p class="date">2023(월) ~ 2023.04.28.(금)</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="btnWrap">
+                            <a href="#" target="_blank" class="icon01">인기 추천 정책</a>
+                            <a href="#" target="_blank" class="icon02">내게 맞는 정책 찾기</a>
+                            <a href="#" target="_blank" class="policyMore">정책 더보기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
 
     </main>
 
@@ -578,6 +1108,114 @@
         });
     });
 
+    // mainBanner
+    var bannerSwiper = new Swiper(".m_slider", {
+        slidesPerView: 1.5,
+        spaceBetween: 10,
+        centeredSlides: true,
+        preventClicks:true,
+        observer: true,
+        observeParents: true,
+        loop:true,
+        autoplay:{
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        on: {
+            init: function () {
+                $('.m_slider .swiper-slide').addClass('changed');
+            },
+            slideChangeTransitionStart : function() {
+                $('.m_slider .swiper-slide').addClass('changing');
+                $('.m_slider .swiper-slide').removeClass('changed');
+            },
+            slideChangeTransitionEnd : function() {
+                $('.m_slider .swiper-slide').removeClass('changing');
+                $('.m_slider .swiper-slide').addClass('changed');
+            }
+        },
+        breakpoints: {
+            1300: {
+                centeredSlides: false,
+                slidesPerView: 'auto',
+                spaceBetween: 0,
+            },
+            859: {
+                centeredSlides: true,
+                slidesPerView: 'auto',
+                spaceBetween: 0,
+            },
+            640: {
+                centeredSlides: true,
+                slidesPerView: 2,
+                spaceBetween: 10,
+            },
+        },
+    });
+
+    const RESIZE_DELAY = 300;
+    let resizeTimer = null;
+
+    function handleResize() {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => {
+            if (window.innerWidth > 860) {
+                const slides = document.querySelectorAll('#renewMain .mainBanner .swiper-slide');
+                slides.forEach((slide) => {
+                    slide.style.width = '330px';
+                });
+                bannerSwiper.update();
+                itemSwiper();
+            } else {
+                itemSwiper();
+            }
+        }, RESIZE_DELAY);
+    }
+
+    window.addEventListener('resize', handleResize);
+
+
+    // main policy
+    var $slider = $('.policyCont');
+    $slider.find('.policySlide').each(function(i){
+        var $this = $(this);
+        $this.siblings().addClass("type" + i);
+        var policySwiper = new Swiper($(this), {
+            slidesPerView: 1.5,
+            spaceBetween: 8,
+            observer: true,
+            observeParents: true,
+            breakpoints: {
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 10,
+                },
+                860: {
+                    slidesPerView: 3,
+                },
+                768: {
+                    slidesPerView: 2,
+
+                },
+                460: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 8,
+                },
+            },
+        });
+    });
+
+    $('.policyBtn ul li').click(function(){
+	    $('.m_policy_more').removeClass('active');
+    });
+    // tag 硫붾돱
+    $('.m_tag_btn').click(function () {
+        $(this).parent().toggleClass('active');
+    });
 
     // channel talk
     (function(){var w=window;if(w.ChannelIO){return w.console.error("ChannelIO script included twice.");}var ch=function(){ch.c(arguments);};ch.q=[];ch.c=function(args){ch.q.push(args);};w.ChannelIO=ch;function l(){if(w.ChannelIOInitialized){return;}w.ChannelIOInitialized=true;var s=document.createElement("script");s.type="text/javascript";s.async=true;s.src="https://cdn.channel.io/plugin/ch-plugin-web.js";var x=document.getElementsByTagName("script")[0];if(x.parentNode){x.parentNode.insertBefore(s,x);}}if(document.readyState==="complete"){l();}else{w.addEventListener("DOMContentLoaded",l);w.addEventListener("load",l);}})();
