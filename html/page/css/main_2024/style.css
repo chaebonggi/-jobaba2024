@@ -1,21 +1,30 @@
 /* intro */
-body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg.png) #e3e3e3 top center no-repeat; touch-action: pan-y; } 
- .introWrap .innerSection { padding: 0 20px 100px; } 
+body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg02.png) #ffffff top center no-repeat; touch-action: pan-y; } 
+ .introWrap .innerSection { padding: 0 20px 150px; } 
  .introWrap .logo { margin: 90px 0 66px; text-align: center; } 
  .introWrap .introList { display: flex; justify-content: space-between; } 
- .introWrap .introList > li > a { display: block; width: 370px; height: 460px; padding: 35px 25px; background-image: url(../../images/main_2024/intro/intro_img01.png); background-color: #fff; background-repeat: no-repeat; background-position: top 190px center; border-radius: 30px 85px 30px 30px; text-align: center; box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.2); border: 5px solid #fff; } 
- .introWrap .introList > li:nth-child(2) > a { background-image: url(../../images/main_2024/intro/intro_img02.png) } 
+ .introWrap .introList > li {width: 370px; background: #fff; border-radius: 30px 85px 30px 30px; box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.2); border: 5px solid #fff; overflow: hidden;}
+ .introWrap .introList > li:hover { border-color: #2aa6c1; } 
+ .introWrap .introList > li:nth-child(2):hover { border-color: #9eca80; } 
+ .introWrap .introList > li:nth-child(3):hover { border-color: #939ac8; } 
+ .introWrap .introList > li > a {display: block; width: 100%;padding: 35px 25px 0; background-image: url(../../images/main_2024/intro/intro_img01.png); background-color: #fff; background-repeat: no-repeat; background-position: top 190px center; text-align: center; } 
+ .introWrap .introList > li:nth-child(2) > a { background-image: url(../../images/main_2024/intro/intro_img04.png) } 
  .introWrap .introList > li:nth-child(3) > a { background-image: url(../../images/main_2024/intro/intro_img03.png) } 
- .introWrap .introList > li:hover > a { border-color: #2aa6c1; } 
+
  .introWrap .introList > li > a strong { display: block; margin-bottom: 10px; color: #000; font-size: 40px; } 
  .introWrap .introList > li > a p { height: 230px; margin-bottom: 15px; position: relative; color: #000; font-size: 24px; line-height: 1.3; letter-spacing: -1px; } 
- .introWrap .introList > li > a .introBtn { display: block; height: 60px; background: #cdcdcd; color: #000; font-size: 30px; font-weight: 300; line-height: 60px; border-radius: 30px; } 
- .introWrap .introList > li:hover .introLink { visibility: visible; } 
- .introWrap .introLink { height: 220px; margin-top: 20px; padding: 26px 30px; background: #fff; border-radius: 30px; box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.2); visibility: hidden; } 
- .introWrap .introLink li a { display: block; width: 100%; height: 56px; padding-left: 80px; color: #000; font-size: 26px; border-radius: 30px; line-height: 56px; } 
- .introWrap li:nth-child(3) .introLink li a { padding-left: 60px; } 
- .introWrap .introLink li a:hover { background: #2aa6c1; color: #fff; box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1); } 
- .introWrap .introLink li a:hover span::before { background: #fff; } 
+ .introWrap .introList > li > a .introBtn { display: block; height: 60px; background: #d0e9ee; color: #000; font-size: 30px; font-weight: 300; line-height: 60px; border-radius: 30px; } 
+ .introWrap .introList > li:nth-child(2) > a .introBtn {background: #d8ebcb;}
+ .introWrap .introList > li:nth-child(3) > a .introBtn {background: #d1d5f1;}
+ .introWrap .introLink { margin: 20px 0;} 
+ .introWrap .introLink li a { display: block; width: 100%; height: 56px; padding-left: 110px; color: #000; font-size: 26px; line-height: 56px; } 
+ .introWrap li:nth-child(3) .introLink li a { padding-left: 90px; } 
+ .introWrap .introLink li a:hover {color: #2aa6c1; font-weight: 700;} 
+ .introWrap .introLink li a:hover span::before { background: #2aa6c1; } 
+ .introWrap .introList li:nth-child(2) .introLink li a:hover {color: #79a958;} 
+ .introWrap .introList li:nth-child(2) .introLink li a:hover span::before { background: #79a958;} 
+ .introWrap .introList li:nth-child(3) .introLink li a:hover {color: #5c66a6;} 
+ .introWrap .introList li:nth-child(3) .introLink li a:hover span::before { background: #5c66a6;} 
  .introWrap .introLink li a span { position: relative; padding-left: 26px; } 
  .introWrap .introLink li a span::before { content: ''; width: 10px; height: 10px; position: absolute; left: 0; top: 50%; transform: translateY(-50%); background: #d1d1d1; border-radius: 50%; } 
 
@@ -23,7 +32,8 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
  .introWrap .introList { flex-direction: column; } 
  .introWrap .introLink { display: none; } 
  .introWrap .introList > li + li { margin-top: 38px; } 
- .introWrap .introList > li > a { width: 100%; max-width: 550px; height: 220px; margin: 0 auto; padding: 30px 38px 20px 50px; background-position: right 20px bottom 20px; text-align: left; } 
+ .introWrap .introList > li { width: 100%; max-width: 550px; height: 220px; margin: 0 auto;} 
+ .introWrap .introList > li > a {height: 100%; padding: 30px 38px 20px 50px; background-position: right 20px bottom 20px; text-align: left;}
  .introWrap .introList > li > a .introBtn { display: none; } 
  .introWrap .introList > li > a strong { color: #003281; } 
  .introWrap .introList > li > a p { height: auto; color: #8c8c8c; } 
@@ -34,14 +44,15 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
  }
 
  @media screen and (max-width: 640px) { 
-    body.intro { background-image: url(../../images/main_2024/intro/intro_bg_top.png), url(../../images/main_2024/intro/intro_bg_bottom.png); background-color: #e3e3e3; background-position: top center, bottom center; background-size: contain; } 
-    .introWrap { padding: 0 0 40px; position: fixed; top: 50%; transform: translateY(-50%); overflow: hidden; } 
+    body.intro { background-image: url(../../images/main_2024/intro/intro_bg_top02.png), url(../../images/main_2024/intro/intro_bg_bottom02.png); background-color: #ffffff; background-position: top center, bottom center; background-size: contain; } 
+    .introWrap { padding: 0 0 40px; position: fixed; top: 50%; left: 0; right: 0; transform: translateY(-50%); overflow: hidden; } 
     .introWrap .innerSection { padding: 0 10px; } 
     .introWrap .logo { margin: 0 0 30px; } 
     .introWrap .logo img { width: 50%; } 
     .introWrap .introList > li:hover > a { border: none; } 
     .introWrap .introList > li + li { margin-top: 15px; } 
-    .introWrap .introList > li > a { height: 150px; padding: 15px 15px 10px 20px; background-size: auto 50%; background-position: right 10px bottom 10px; border-radius: 15px 45px 15px 15px; } 
+    .introWrap .introList > li { height: 150px; border-radius: 15px 45px 15px 15px;}
+    .introWrap .introList > li > a { padding: 15px 15px 10px 20px; background-size: auto 50%; background-position: right 10px bottom 10px;  } 
     .introWrap .introList > li > a strong { font-size: 26px; } 
     .introWrap .introList > li > a p { font-size: 18px; } 
  }
