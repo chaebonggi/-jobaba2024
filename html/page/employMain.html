@@ -23,7 +23,7 @@
     
 </head>
 
-<body>
+<body>  
     <header id="renewHeader">
         <div class="nheader_top">
             <div class="innerSection">
@@ -448,7 +448,7 @@
                         </ul>
                     </div>
                     <div class="loginForm">
-                        <!-- <div class="loginWrap">
+                        <div class="loginWrap">
                             <p class="txt">로그인하고 맞춤형 서비스를 이용해 보세요.</p>
                             <a href="" class="loginBtn"><span>로그인</span></button></a>
                             <div class="loginSub">
@@ -456,8 +456,8 @@
                                 <a href="#" class="loginPw">비밀번호 찾기</a>
                                 <a href="#" class="loginJoin">회원가입</a>                                
                             </div>
-                        </div> -->
-                        <!-- 로그인 후 -->
+                        </div>
+                        <!-- 로그인 후 
                         <div class="loginWrap login">
                             <div class="txtWrap">
                                 <p><strong>홍길동</strong>님, 반갑습니다</p>
@@ -470,6 +470,7 @@
                                 <li><a href="">동영상교육<span>0</span></a></li>
                             </ul>
                         </div>
+                        -->
                          
                         <div class="counselingWrap">
                             <a href="javascript:void(0);" class="channelTalk">
@@ -486,7 +487,130 @@
                 </div>
             </div>
         </article>
-
+        <article class="companyWrap">
+            <div class="innerSection">
+                <style>
+                    #renewMain .companyWrap .companyList {
+                        display: flex;
+                    }
+                    #renewMain .companyWrap .companyList > li {
+                        width: calc(100% / 4 - 15px);
+                        margin-right: 20px;
+                        margin-top: 20px;
+                        background: #fff;
+                        border-radius: 10px;
+                        border: 1px solid #dadada;
+                        overflow: hidden;
+                    }
+                    #renewMain .companyWrap .companyList > li a {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    #renewMain .companyWrap .companyList .imgWrap img {
+                        width: 100%;
+                        height: 179px;
+                        overflow: hidden;
+                    }
+                    #renewMain .companyWrap .companyList .txtWrap {
+                        padding: 20px 25px;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    #renewMain .companyWrap .companyList .txtWrap .prog {
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                    #renewMain .companyWrap .companyList .txtWrap .prog.st1 {
+                        color: #00a8cd;
+                    }
+                    #renewMain .companyWrap .companyList .txtWrap .prog.st2 {
+                        color: #adadad;
+                    }
+                    #renewMain .companyWrap .companyList .txtWrap p {
+                        display: -webkit-box;
+                        width: 100%;
+                        margin: 15px 0;
+                        font-size: 18px;
+                        line-height: 1.6rem;
+                        height: 3.2rem;                        
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                        text-overflow: ellipsis;
+                        word-break: break-all;
+                        overflow: hidden;  
+                    }
+                    #renewMain .companyWrap .companyList .txtWrap ul {
+                        padding-top: 15px;
+                        border-top: 1px solid #e6e6e6;    
+                    }
+                    #renewMain .companyWrap .companyList .txtWrap ul li {
+                        color: #787878;
+                        font-size: 14px;    
+                    }
+                </style>
+                <ul class="companyList">
+                    <li>
+                        <a href="#" target="_blank">
+                            <div class="imgWrap">
+                                <img src="./images/main_2024/main/company_img01.jpg" alt="경기도 일자리 우수기업 온라인 채용관 바로가기">
+                            </div>
+                            <div class="txtWrap">
+                                <span class="prog st1">박람회오픈</span>
+                                <p class="tit">경기도 일자리 우수기업 채용관</p>
+                                <ul>
+                                    <li>2023.08.01(화) ~ 2024.12.31(화)</li>
+                                </ul>
+                            </div>                            
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <div class="imgWrap">
+                                <img src="./images/main_2024/main/company_img02.jpg" alt="KB굿잡 추천 채용관 바로가기">
+                            </div>
+                            <div class="txtWrap">
+                                <span class="prog st1">박람회오픈</span>
+                                <p class="tit">KB굿잡 추천 채용관</p>
+                                <ul>
+                                    <li>2023.08.01(화) ~ 2024.12.31(화)</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <div class="imgWrap">
+                                <img src="./images/main_2024/main/company_img03.jpg" alt="LG전자 협력회사 추천 일자리 채용관 바로가기">
+                            </div>
+                            <div class="txtWrap">
+                                <span class="prog st1">박람회오픈</span>
+                                <p class="tit">LG전자 협력회사 추천 일자리 채용관</p>
+                                <ul>
+                                    <li>2023.07.04(화) ~ 2024.12.31(화)</li>
+                                    <li>주관: LG전자 협력회사</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <div class="imgWrap">
+                                <img src="./images/main_2024/main/company_img04.jpg" alt="참 괜찮은 중소기업 일자리 채용관 바로가기">
+                            </div>
+                            <div class="txtWrap">
+                                <span class="prog st1">박람회오픈</span>
+                                <p class="tit">참 괜찮은 중소기업 일자리 채용관</p>
+                                <ul>
+                                    <li>2023.07.04(화) ~ 2024.12.31(화)</li>
+                                    <li>주관: 중소기업중앙회(참 괜찮은 중소기업)</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </article>
         <article class="infoWrap">
             <div class="innerSection">
                 <div class="infoBox">

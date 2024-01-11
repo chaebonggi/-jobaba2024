@@ -217,7 +217,7 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 
 /* visual login out */
 #renewMain .mainVisual .loginForm { width: 330px; } 
-#renewMain .mainVisual .loginWrap { padding: 20px; border: 1px solid #dddddd; border-radius: 10px; text-align: center; overflow: hidden;} 
+#renewMain .mainVisual .loginWrap { padding: 20px; border: 1px solid #dddddd; border-radius: 10px; text-align: center; overflow: hidden; } 
 #renewMain .mainVisual .loginWrap .txt { margin-bottom: 15px; color: #666666; font-size: 14px; } 
 #renewMain .mainVisual .loginBtn { display: block; width: 100%; padding: 13px 0; margin-bottom: 15px; background: #2aa6c1; color: #fff; font-size: 16px; font-weight: 500; border-radius: 5px; text-align: center; } 
 #renewMain .mainVisual .loginBtn::before { content: ''; display: inline-block; width: 51px; height: 16px; margin: -2px 5px 0 0; background: url(../../images/main_2024/main/login_icon01.png) no-repeat; vertical-align: middle; } 
@@ -228,11 +228,11 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 
 /* visual login in */
 #renewMain .mainVisual .loginWrap.login { padding: 0; border: 1px solid #dddddd; border-radius: 10px; } 
-#renewMain .mainVisual .loginWrap.login .txtWrap { display: flex; padding: 20px; align-items: center; justify-content: space-between;} 
-#renewMain .mainVisual .loginWrap.login .txtWrap p { color: #555555; font-size: 16px; font-weight: 500; text-align: left; word-break: keep-all;} 
-#renewMain .mainVisual .loginWrap.login .txtWrap p strong {color: #000;}
-#renewMain .mainVisual .loginWrap.login .txtWrap a { display: inline-block; width: 92px; padding: 5px 0; margin-left: 5px; background: #efefef; color: #707070; font-size: 14px; text-align: center; border-radius: 20px;} 
-#renewMain .mainVisual .loginWrap.login .loginList { display: flex; flex-wrap: wrap; background: #fafbfd;} 
+#renewMain .mainVisual .loginWrap.login .txtWrap { display: flex; padding: 20px; align-items: center; justify-content: space-between; } 
+#renewMain .mainVisual .loginWrap.login .txtWrap p { color: #555555; font-size: 16px; font-weight: 500; text-align: left; word-break: keep-all; } 
+#renewMain .mainVisual .loginWrap.login .txtWrap p strong { color: #000; } 
+#renewMain .mainVisual .loginWrap.login .txtWrap a { display: inline-block; width: 92px; padding: 5px 0; margin-left: 5px; background: #efefef; color: #707070; font-size: 14px; text-align: center; border-radius: 20px; } 
+#renewMain .mainVisual .loginWrap.login .loginList { display: flex; flex-wrap: wrap; background: #fafbfd; } 
 #renewMain .mainVisual .loginWrap.login .loginList li { width: calc(100% / 2); position: relative; border-top: 1px solid #dddddd; text-align: left; } 
 #renewMain .mainVisual .loginWrap.login .loginList li:nth-child(even):before { content: ''; display: flex; width: 1px; height: 16px; position: absolute; top: 50%; left: 0; background: #dddddd; transform: translateY(-50%); } 
 #renewMain .mainVisual .loginWrap.login .loginList a { display: inline-flex; margin-left: 30px; padding: 12px 0; align-items: center; color: #555555; font-size: 14px; font-weight: 500; } 
@@ -249,8 +249,22 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 #renewMain .mainVisual .counselingWrap .chatLive p { display: flex; height: 100%; position: relative; color: #ff0000; font-size: 12px; line-height: 1; justify-content: center; align-items: flex-end; } 
 #renewMain .mainVisual .counselingWrap .chatLive p::before { content: ''; width: 21px; height: 18px; position: absolute; top: 5px; left: 16px; background: url(../../images/main_2024/main/chat_icon01.png) no-repeat; } 
 
-/* employ */
+/* employ company */
+#renewMain .companyWrap .companyList { display: flex;} 
+#renewMain .companyWrap .companyList > li { width: calc(100% / 4 - 15px); margin-right: 20px; margin-top: 20px; background: #fff; border-radius: 10px; border: 1px solid #dadada; overflow: hidden; } 
+#renewMain .companyWrap .companyList > li a { display: block; width: 100%; height: 100%; } 
+#renewMain .companyWrap .companyList .imgWrap img { width: 100%; height: 179px; overflow: hidden; } 
+#renewMain .companyWrap .companyList .txtWrap { padding: 20px 25px; display: flex; flex-direction: column; } 
+#renewMain .companyWrap .companyList .txtWrap .prog { font-size: 14px; font-weight: 500; } 
+#renewMain .companyWrap .companyList .txtWrap .prog.st1 { color: #00a8cd; } 
+#renewMain .companyWrap .companyList .txtWrap .prog.st2 { color: #adadad; } 
+#renewMain .companyWrap .companyList .txtWrap p { display: -webkit-box; width: 100%; margin: 15px 0; font-size: 18px; line-height: 1.6rem; height: 3.2rem; -webkit-line-clamp: 2; -webkit-box-orient: vertical; text-overflow: ellipsis; word-break: break-all; overflow: hidden; } 
+#renewMain .companyWrap .companyList .txtWrap ul { padding-top: 15px; border-top: 1px solid #e6e6e6; } 
+#renewMain .companyWrap .companyList .txtWrap ul li { color: #787878; font-size: 14px; } 
+
+/* employ info */
 #renewMain .infoWrap { position: relative; margin-top: 40px; } 
+#renewMain .infoWrap + .infoWrap { margin-bottom: 70px; } 
 #renewMain .infoWrap .infoBox { position: relative; display: flex; justify-content: space-between; } 
 #renewMain .infoWrap .infoBox .infoItem { width: calc((100% - 30px) / 2); position: relative; padding: 40px 40px 60px; background: #fff; border: 1px solid #dddddd; border-radius: 20px; overflow: hidden; } 
 #renewMain .infoWrap .infoTit { display: flex; align-items: center; justify-content: space-between; margin-bottom: 26px; } 
