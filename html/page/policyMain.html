@@ -17,6 +17,7 @@
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/kgoon.reset.min.css">
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/mobile.css">
     <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.css" />
     <link type="text/css" rel="stylesheet" href="../etc/css/fonts.css">
 	<!-- 추가 css -->
     <link rel="stylesheet" href="./css/main_2024/style.css">
@@ -874,228 +875,354 @@
                 </div>
             </div>
         </article>
-        <style>
-            input[type="checkbox"]+label { display:inline-block; position:relative; padding-left:24px; font-size:14px; color:#333; }
-            input[type="checkbox"]+label::after { content:""; width:16px; height:16px; background:#fdfdfd; border:1px solid #ddd; position:absolute; left:0; top:1px; border-radius:3px; }
-            input[type="checkbox"]:checked+label::after { content:"?"; font-size:12px; line-height:16px; background:#38bab2; color:#fff; border-color:#38bab2; text-align:center; }
-            #renewMain .policyFind {
 
-            }
-            
-            #renewMain .policyFind .radio { margin:10px 8px; font-size:14px; color:#999; }
-            #renewMain .policyFind .radio + .radio { margin-top:14px; }
-            #renewMain .policyFind .radio span { padding-left:24px; font-size:14px; color:#505050; font-weight: 400; }
-            #renewMain .policyFind .radio input[type="checkbox"]+span::before { content:""; width:16px; height:16px; background:#fdfdfd; border:1px solid #ddd; position:absolute; left:0; top:1px; border-radius:3px; }
-            #renewMain .policyFind .radio input[type="checkbox"]:checked + span::before { content:"\2714"; font-size:12px; line-height:16px; background:#38bab2; color:#fff; border-color:#38bab2; text-align:center; font-weight:400; }
-            #renewMain .policyFind .cateWrap { display:flex; border:1px solid #e7e7e7; border-radius: 6px; flex-wrap:wrap; overflow:hidden; }
-            #renewMain .policyFind .cateWrap > div { flex-grow: 1; }
-            #renewMain .policyFind .cateWrap .tit { background-color:#f6f6f6; color:#000; font-size:15px; padding:12px 0; text-align:center; font-weight:700; }
-            #renewMain .policyFind .cateWrap > div + div { border-left:1px solid #e7e7e7; }
-            #renewMain .policyFind .cateWrap > div .scrollbar-outer { height:100px; overflow-y:scroll; }
-            #renewMain .policyFind .infoBtn { width: 150px; height: 190px; background: red; }
-
-            .scrollbar-outer > .scroll-element .scroll-element_track { background:#fff; }
-            .scrollbar-outer > .scroll-element .scroll-bar { background:#e7e7e7; }
-            .scrollbar-outer > .scroll-element.scroll-y { width:8px; }
-            .scrollbar-outer > .scroll-element .scroll-element_outer, .scrollbar-outer > .scroll-element .scroll-element_track, .scrollbar-outer > .scroll-element .scroll-bar { border-radius:0; }
-            .scrollbar-outer > .scroll-element.scroll-y .scroll-element_outer { width:6px; }
-
-            #renewMain .policyFind .selWrap {
-                display: flex;
-            }
-            #renewMain .policyFind .selWrap .contBox {
-                width: 100%;
-                /* width: 380px !important;
-                max-width: 100%;
-                border: 1px solid #ddd;
-                box-sizing: border-box;
-                border-radius: 5px; */
-            }
-            #renewMain .policyFind .selWrap .contBox 
-
-            select.commSelect {
-                width: 100%;
-                background-color: #fff;
-                background: url(./images/main_2024/main/icon_arrow.png) right 14px center no-repeat;
-                background-size: 12px 7px;
-            }
-        </style>
         <article class="policyFind">
             <div class="innerSection">
-                <div class="selWrap">
-                    <div class="contBox">
-                        <select id="ck01" name="ck01" title="" class="commSelect">	
-                            <option value="" selected="">연령</option>	
-                        </select>
+                <div class="titWrap">
+                    <div class="tit">
+                        <h2>나를 위한 정책 찾기</h2>
+                        <p>나에게 꼭 필요한 정책을 한번에 확인하실 수 있습니다.</p>
                     </div>
-                    <div class="contBox">
-                        <select id="ck02" name="ck02" title="" class="commSelect">	
-                            <option value="" selected="">성별</option>	
-                        </select>
-                    </div>
-                    <div class="contBox">
-                        <select id="ck03" name="ck03" title="" class="commSelect">	
-                            <option value="" selected="">특화대상여부</option>	
-                        </select>
-                    </div>
-                    <div class="contBox">
-                        <select id="ck04" name="ck04" title="" class="commSelect">	
-                            <option value="" selected="">상태</option>	
-                        </select>
-                    </div>
-                    <div class="contBox">
-                        <select id="ck05" name="ck05" title="" class="commSelect">	
-                            <option value="" selected="">지역</option>	
+                    <div class="selBox">
+                        <select id="find01" name="find01" title="" class="commSelect">	
+                            <option value="" selected="">정책찾기</option>	
                         </select>
                     </div>
                 </div>
-				<div class="cateWrap">
-                    <div>
-                        <div class="tit">근무지</div>
-                        <div class="scrollbar-outer">
-                            <div class="radio">
-                                <label>
-                                    <input type="checkbox" checked="checked"/>
-                                    <span class="text">구직지원</span>
-                                </label>
+                <div class="findWrap">
+                    <div class="findBox">
+                        <div class="selectWrap">
+                            <div class="contBox">
+                                <select id="ck01" name="ck01" title="" class="commSelect">	
+                                    <option value="" selected="">연령</option>	
+                                </select>
                             </div>
-                            <div class="radio">
-                                <label>
-                                    <input type="checkbox" />
-                                    <span class="text">취업지원금</span>
-                                </label>
+                            <div class="contBox">
+                                <select id="ck02" name="ck02" title="" class="commSelect">	
+                                    <option value="" selected="">성별</option>	
+                                </select>
                             </div>
-                            <div class="radio">
-                                <label>
-                                    <input type="checkbox" />
-                                    <span class="text">서류/면접 지원</span>
-                                </label>
+                            <div class="contBox">
+                                <select id="ck03" name="ck03" title="" class="commSelect">	
+                                    <option value="" selected="">특화대상여부</option>	
+                                </select>
                             </div>
-                            <div class="radio">
-                                <label>
-                                    <input type="checkbox" />
-                                    <span class="text">취업지원프로그램</span>
-                                </label>
+                            <div class="contBox">
+                                <select id="ck04" name="ck04" title="" class="commSelect">	
+                                    <option value="" selected="">상태</option>	
+                                </select>
+                            </div>
+                            <div class="contBox">
+                                <select id="ck05" name="ck05" title="" class="commSelect">	
+                                    <option value="" selected="">지역</option>	
+                                </select>
+                            </div>
+                        </div>
+                        <div class="cateWrap">
+                            <div>
+                                <div class="tit">근무지</div>
+                                <div class="scrollbar-outer">
+                                    <div class="radio">
+                                        <label>
+                                            <input type="checkbox" checked="checked"/>
+                                            <span class="text">구직지원</span>
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="checkbox" />
+                                            <span class="text">취업지원금</span>
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="checkbox" />
+                                            <span class="text">서류/면접 지원</span>
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="checkbox" />
+                                            <span class="text">취업지원프로그램</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="tit">생활지원</div>
+                                <div class="scrollbar-outer">
+                                    <div class="radio">
+                                        <label>
+                                            <input type="checkbox" />
+                                            <span class="text">자산형성</span>
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="checkbox" />
+                                            <span class="text">학자금</span>
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="checkbox" />
+                                            <span class="text">대출, 이자</span>
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="checkbox" />
+                                            <span class="text">자산형성</span>
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="checkbox" />
+                                            <span class="text">학자금</span>
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="checkbox" />
+                                            <span class="text">대출, 이자</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="tit">주거지원</div>
+                                <div class="scrollbar-outer">
+                                    <div class="radio">
+                                        <label>
+                                            <input type="checkbox" />
+                                            <span class="text">기숙사, 생활관</span>
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="checkbox" />
+                                            <span class="text">주택지원</span>
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="checkbox" />
+                                            <span class="text">전월세 자금</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="tit">재직지원</div>
+                                <div class="scrollbar-outer">
+                                    <div class="radio">
+                                        <label>
+                                            <input type="checkbox" />
+                                            <span class="text">워킹맘/대디 지원</span>
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="checkbox" />
+                                            <span class="text">중소기업 재직자 지원</span>
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="checkbox" />
+                                            <span class="text">고충상담</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="tit">기업지원</div>
+                                <div class="scrollbar-outer">
+                                    <div class="radio">
+                                        <label>
+                                            <input type="checkbox" />
+                                            <span class="text">고용장려금</span>
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="checkbox" />
+                                            <span class="text">인력지원</span>
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="checkbox" />
+                                            <span class="text">기업지원</span>
+                                        </label>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <div class="tit">생활지원</div>
-                        <div class="scrollbar-outer">
-                            <div class="radio">
-                                <label>
-                                    <input type="checkbox" />
-                                    <span class="text">자산형성</span>
-                                </label>
-                            </div>
-                            <div class="radio">
-                                <label>
-                                    <input type="checkbox" />
-                                    <span class="text">학자금</span>
-                                </label>
-                            </div>
-                            <div class="radio">
-                                <label>
-                                    <input type="checkbox" />
-                                    <span class="text">대출, 이자</span>
-                                </label>
-                            </div>
-                            <div class="radio">
-                                <label>
-                                    <input type="checkbox" />
-                                    <span class="text">자산형성</span>
-                                </label>
-                            </div>
-                            <div class="radio">
-                                <label>
-                                    <input type="checkbox" />
-                                    <span class="text">학자금</span>
-                                </label>
-                            </div>
-                            <div class="radio">
-                                <label>
-                                    <input type="checkbox" />
-                                    <span class="text">대출, 이자</span>
-                                </label>
-                            </div>
-                        </div>
+                    <div class="findBtn">
+                        <a href="javascript:void(0);" class="search">정책검색</a>
                     </div>
-                    <div>
-                        <div class="tit">주거지원</div>
-                        <div class="scrollbar-outer">
-                            <div class="radio">
-                                <label>
-                                    <input type="checkbox" />
-                                    <span class="text">기숙사, 생활관</span>
-                                </label>
-                            </div>
-                            <div class="radio">
-                                <label>
-                                    <input type="checkbox" />
-                                    <span class="text">주택지원</span>
-                                </label>
-                            </div>
-                            <div class="radio">
-                                <label>
-                                    <input type="checkbox" />
-                                    <span class="text">전월세 자금</span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="tit">재직지원</div>
-                        <div class="scrollbar-outer">
-                            <div class="radio">
-                                <label>
-                                    <input type="checkbox" />
-                                    <span class="text">워킹맘/대디 지원</span>
-                                </label>
-                            </div>
-                            <div class="radio">
-                                <label>
-                                    <input type="checkbox" />
-                                    <span class="text">중소기업 재직자 지원</span>
-                                </label>
-                            </div>
-                            <div class="radio">
-                                <label>
-                                    <input type="checkbox" />
-                                    <span class="text">고충상담</span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="tit">기업지원</div>
-                        <div class="scrollbar-outer">
-                            <div class="radio">
-                                <label>
-                                    <input type="checkbox" />
-                                    <span class="text">고용장려금</span>
-                                </label>
-                            </div>
-                            <div class="radio">
-                                <label>
-                                    <input type="checkbox" />
-                                    <span class="text">인력지원</span>
-                                </label>
-                            </div>
-                            <div class="radio">
-                                <label>
-                                    <input type="checkbox" />
-                                    <span class="text">기업지원</span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="infoBtn">
-                    <a href="javascript:void(0);" class="btn search">정책검색</a>
                 </div>
             </div>
         </article>
 
+        <article>
+            <style>
+                .itbox {
+                   
+                    height: 300px;
+                    border: 1px solid red;
+                    transition: all 0.3s;
+                }
+                .swiper-slide {
+                    width: 300px;
+                }
+                .swiper-slide-active {
+                    margin-right: 100px;
+                    width: 600px !important;
+                    background: blue;
+                }
+            </style>
+            <div class="innerSection">
+                <div class="visual_wrap">
+                    <div class="swiper-container visual">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="itbox">
+                                    1
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="itbox">
+                                    2
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="itbox">
+                                    3
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="itbox">
+                                    4
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper_bottom">
+                            <div class="wrap-autoplay-control">
+                                <button class="swiper-button-pause">정지</button>
+                                <button class="swiper-button-play">시작</button>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-counter"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="recomendInfo">
+            <div class="innerSection">
+                <div class="titWrap">
+                    <h2><span>잡아바</span> 추천정보</h2>
+                    <p>잡아바에서 드리는 다양한 정보와 혜택을 소개합니다.</p>
+                </div>
+                <div class="recomendWrap">
+                    <div class="swiper-container recomendSlide">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <div class="recomendItem">
+                                <a href="#" target="_blank">
+                                    <div class="imgWrap">
+                                        <img src="./images/main_2024/main/recomend_img01.jpg" alt="">
+                                    </div>
+                                    <div class="txtWrap">
+                                      <p class="sTit">
+                                        곽재선문화재단 제1회 청년작가 공모 FLY, YOUNG ARTIST <span class="badge sday">D - 1</span>
+                                      </p> 
+                                      <p class="sDate">
+                                        <span>모집일정</span> 2023/12/12 ~ 2024/01/12
+                                      </p>
+                                      <p class="sTarget">
+                                        <span>활동장소</span> 곽재선문화재단
+                                      </p>
+                                      <p class="sTag">#곽재선문화재단 #청년작가 #문화예술 #전시 #홍보 #공모전 #문화 #대외활동</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="recomendItem">
+                                <a href="#" target="_blank">
+                                    <div class="imgWrap">
+                                        <img src="./images/main_2024/main/recomend_img02.jpg" alt="">
+                                    </div>
+                                    <div class="txtWrap">
+                                        <p class="sTit">
+                                          곽재선문화재단 제1회 청년작가 공모 FLY, YOUNG ARTIST <span class="badge snew">new</span> <span class="badge sday">D - 1</span>
+                                        </p> 
+                                        <p class="sDate">
+                                          <span>모집일정</span> 2023/12/12 ~ 2024/01/12
+                                        </p>
+                                        <p class="sTarget">
+                                          <span>활동장소</span> 곽재선문화재단
+                                        </p>
+                                        <p class="sTag">#곽재선문화재단 #청년작가 #문화예술 #전시 #홍보 #공모전 #문화 #대외활동</p>
+                                      </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="recomendItem">
+                                <a href="#" target="_blank">
+                                    <div class="imgWrap">
+                                        <img src="./images/main_2024/main/recomend_img01.jpg" alt="">
+                                    </div>
+                                    <div class="txtWrap">
+                                      <p class="sTit">
+                                        곽재선문화재단 제1회 청년작가 공모 FLY, YOUNG ARTIST <span class="badge sday">D - 1</span>
+                                      </p> 
+                                      <p class="sDate">
+                                        <span>모집일정</span> 2023/12/12 ~ 2024/01/12
+                                      </p>
+                                      <p class="sTarget">
+                                        <span>활동장소</span> 곽재선문화재단
+                                      </p>
+                                      <p class="sTag">#곽재선문화재단 #청년작가 #문화예술 #전시 #홍보 #공모전 #문화 #대외활동</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="recomendItem">
+                                <a href="#" target="_blank">
+                                    <div class="imgWrap">
+                                        <img src="./images/main_2024/main/recomend_img02.jpg" alt="">
+                                    </div>
+                                    <div class="txtWrap">
+                                        <p class="sTit">
+                                          곽재선문화재단 제1회 청년작가 공모 FLY, YOUNG ARTIST <span class="badge snew">new</span> <span class="badge sday">D - 1</span>
+                                        </p> 
+                                        <p class="sDate">
+                                          <span>모집일정</span> 2023/12/12 ~ 2024/01/12
+                                        </p>
+                                        <p class="sTarget">
+                                          <span>활동장소</span> 곽재선문화재단
+                                        </p>
+                                        <p class="sTag">#곽재선문화재단 #청년작가 #문화예술 #전시 #홍보 #공모전 #문화 #대외활동</p>
+                                      </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    </div>
+                    <div class="swiper-navigation">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </article>
     </main>
 
     <footer id="renewFooter">
@@ -1223,161 +1350,61 @@
 <script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery.leanModal.min.js"></script>
 <script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/script.js"></script>
 <script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/imgLiquid-min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.js"></script>
+<script src="./js/main_2024/main.js"></script>
 
 <script>
-    // header all menu
-    function allMenu() {
-        if(window.innerWidth < 860) {
-            $('.h_mobile').toggleClass('show');
-        } else {
-            $('.h_gnb_bg').stop().slideToggle(300);
-            $('.h_menu').toggleClass('active');
-        }
-    }
-    $(document).mouseup(function(e){
-        var navMenu = $(".h_gnb_bg");
-        var navBg = $('.h_ui');
-        var navBtn = $('.h_menu');
-        if(navMenu.has(e.target).length === 0 && navBg.has(e.target).length === 0){
-            navMenu.stop().slideUp(300);
-            navBtn.removeClass('active');
-        }
-    });
-    $('.h_mobile_close').click(function(){
-        $('.h_mobile').removeClass('show');
-        $('.h_menu').removeClass('active');
-    });
-
-    // footer menu
-    $('.footer_btn').click(function () {
-    $(this).toggleClass('active');
-        var footerWrap = $('.footer_wrap');
-
-        footerWrap.slideToggle(300, function() {
-            if (footerWrap.is(':visible')) {
-                $('html, body').animate({scrollTop: $(document).height()}, 300);
-            }
-        });
-    });
-
-    // mainBanner
-    var bannerSwiper = new Swiper(".m_slider", {
-        slidesPerView: 1.5,
-        spaceBetween: 10,
-        centeredSlides: true,
-        preventClicks:true,
-        observer: true,
-        observeParents: true,
-        loop:true,
-        autoplay:{
-            delay: 5000,
-            disableOnInteraction: false,
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        on: {
-            init: function () {
-                $('.m_slider .swiper-slide').addClass('changed');
-            },
-            slideChangeTransitionStart : function() {
-                $('.m_slider .swiper-slide').addClass('changing');
-                $('.m_slider .swiper-slide').removeClass('changed');
-            },
-            slideChangeTransitionEnd : function() {
-                $('.m_slider .swiper-slide').removeClass('changing');
-                $('.m_slider .swiper-slide').addClass('changed');
-            }
-        },
-        breakpoints: {
-            1300: {
-                centeredSlides: false,
-                slidesPerView: 'auto',
-                spaceBetween: 0,
-            },
-            859: {
-                centeredSlides: true,
-                slidesPerView: 'auto',
-                spaceBetween: 0,
-            },
-            640: {
-                centeredSlides: true,
-                slidesPerView: 2,
-                spaceBetween: 10,
-            },
-        },
-    });
-
-    const RESIZE_DELAY = 300;
-    let resizeTimer = null;
-
-    function handleResize() {
-        clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(() => {
-            if (window.innerWidth > 860) {
-                const slides = document.querySelectorAll('#renewMain .mainBanner .swiper-slide');
-                slides.forEach((slide) => {
-                    slide.style.width = '330px';
-                });
-                bannerSwiper.update();
-                itemSwiper();
-            } else {
-                itemSwiper();
-            }
-        }, RESIZE_DELAY);
+    
+    function updSwiperNumericPagination() {
+        this.el.querySelector(".swiper-counter").innerHTML = '<span class="count">0' + (this.realIndex + 1) + '</span><span class="total">0' + this.el.slidesQuantity + "</span>";
     }
 
-    window.addEventListener('resize', handleResize);
+    $(".visual").each(function () {
+        this.slidesQuantity = this.querySelectorAll(".swiper-slide").length;
 
-
-    // main policy
-    var $slider = $('.policyCont');
-    $slider.find('.policySlide').each(function(i){
-        var $this = $(this);
-        $this.siblings().addClass("type" + i);
-        var policySwiper = new Swiper($(this), {
-            slidesPerView: 1.5,
-            spaceBetween: 8,
-            observer: true,
-            observeParents: true,
-            breakpoints: {
-                1024: {
-                    slidesPerView: 5,
-                    spaceBetween: 10,
-                },
-                860: {
-                    slidesPerView: 3,
-                },
-                768: {
-                    slidesPerView: 2,
-
-                },
-                460: {
-                    slidesPerView: 2.5,
-                    spaceBetween: 8,
-                },
+        var mySwiper = new Swiper('.visual', {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            loop: false,
+            autoHeight: true,
+            // autoplay: {
+            //     delay: 5000,
+            //     disableOnInteraction: true // 쓸어 넘기거나 버튼 클릭 시 자동 슬라이드 정지.
+            // },
+            pagination: {
+                el: ".swiper-pagination",
+                type: "progressbar",
+            },
+            loop: true,
+            on: {
+                init: updSwiperNumericPagination,
+                slideChange: updSwiperNumericPagination
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
             },
         });
-    });
 
-    // policy tag 
-    $('.m_tagBtn').click(function () {
-        $(this).parent().toggleClass('active');
-    });
+        $('.wrap-autoplay-control > .swiper-button-pause').click(function () {
+            $(this).hide();
+            mySwiper.autoplay.stop();
+            $('.wrap-autoplay-control > .swiper-button-play').show()
 
-    function handleTabClick($btn, $items, tabAttr) {
-        $btn.click(function() {
-        var tab = $(this).attr(tabAttr);
-        $btn.removeClass('active');
-        $(this).addClass('active');
-        $items.removeClass('active');
-        $items.filter('[data-tab="' + tab + '"]').addClass('active');
         });
-    }
-    handleTabClick($('.mainPolicy .policyBtn li'), $('.mainPolicy .policyCont'), 'data-tab');
 
-   
+        $('.wrap-autoplay-control > .swiper-button-play').click(function () {
+            $(this).hide();
+            mySwiper.autoplay.start();
+            $('.wrap-autoplay-control > .swiper-button-pause').show();
+        });
+
+    });
+    
+    
+
+ 
+    
 </script>
 
 </body>
