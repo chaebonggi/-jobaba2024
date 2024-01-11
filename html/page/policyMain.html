@@ -411,30 +411,6 @@
             </div>
         </div>
     </header>
-    <style>
-        #renewMain .mainBanner { max-width: 1986px; margin: 0 auto; overflow: hidden; }
-        #renewMain .mainBanner .swiper-container {width: 100%; max-width: 1260px; padding: 0 0 36px 270px; margin: 0 auto 30px; overflow:visible;}
-        #renewMain .mainBanner .swiper-wrapper { margin-left: 15px; }
-        #renewMain .mainBanner .swiper-slide { display:flex; justify-content:center; align-items:flex-end; width: 330px; margin-right: 30px; border-radius: 20px; transition:none; overflow: hidden; box-sizing: border-box; }
-        #renewMain .mainBanner .swiper-pagination-bullet.swiper-pagination-bullet-active { width: 70px; border-radius: 10px; background: #003280; }
-        #renewMain .mainBanner .swiper-slide .imgWrap { width: 100%; height: 300px; }
-        #renewMain .mainBanner .swiper-slide .imgWrap img { width: 100%; height: 100%; max-height: 300px;}
-        #renewMain .mainBanner .swiper-slide .x2 { display: none; }
-        #renewMain .mainBanner .swiper-slide.swiper-slide-active .x1 { display: none; }
-        #renewMain .mainBanner .swiper-slide.swiper-slide-active .x2 { display: block; }
-        #renewMain .mainBanner .changing,
-        #renewMain .mainBanner .changed { transform:translateX(-285px); -ms-user-select: none; -moz-user-select: -moz-none; -khtml-user-select: none; -webkit-user-select: none; user-select: none; }
-        #renewMain .mainBanner .changing { transition:transform 0.3s; pointer-events:none; }
-        #renewMain .mainBanner .changed { transition:none; }
-        #renewMain .mainBanner .changing.swiper-slide-active,
-        #renewMain .mainBanner .changed.swiper-slide-active { transform: scaleX(2.72728); border-radius: 5px / 15px; }
-        #renewMain .mainBanner .swiper-slide-active ~ .changing,
-        #renewMain .mainBanner .swiper-slide-active ~ .changed { transform:translateX(285px); }
-        #renewMain .mainBanner .changing .imgWrap,
-        #renewMain .mainBanner .changed .imgWrap { transform-origin:center bottom; }
-        #renewMain .mainBanner .changing .imgWrap { transition:transform 0.3s; }
-        #renewMain .mainBanner .changed .imgWrap { transition:none; }
-    </style>
     <main id="renewMain">
         <article class="mainVisual">
             <div class="innerSection">
@@ -550,46 +526,7 @@
                 <div class="swiper-pagination"></div>
               </div>
         </article>
-        <style>
-            #renewMain .mainPolicy { margin-bottom: 67px;}
-            #renewMain .mainPolicy .policyTit { display: flex; align-items: center; margin-bottom: 26px; margin-right: 10px; }
-            #renewMain .mainPolicy .policyTit a { padding: 2px 10px 2px; margin-left: auto; margin-top: 10px; background: #fff;  color: #3e3d3d; font-size: 14px; border: 1px solid #dedcdc; border-radius: 20px; text-align: center; white-space: nowrap; transition: all 0.35s;}
-            #renewMain .mainPolicy .policyTit a:hover {color: #fff; background: #2AA6C1; border: 1px solid #2AA6C1;}
-            #renewMain .mainPolicy .policyTit h3 { margin: 0 40px 0 10px; font-size: 36px; flex-shrink: 0; }
-            #renewMain .mainPolicy .policyBtn { display: flex; width: 100%; }
-            #renewMain .mainPolicy .policyBtn li { display: flex; align-items: center; justify-content: center; width: 90px; position: relative; height: 38px; padding-left: 30px; background: #f5f5f5; color: #4e4e4e; font-size: 14px; font-weight: 500; letter-spacing: -0.5px; cursor: pointer; border-radius: 20px; box-sizing: border-box; }
-            #renewMain .mainPolicy .policyBtn li::before { content: ''; width: 30px; height: 30px; position: absolute; top: 50%; left: 4px; transform: translateY(-50%); }
-            #renewMain .mainPolicy .policyBtn li.icon01::before { background: url(./images/main_2024/main/icon_policy_btn01.png) no-repeat; background-size: cover; }
-            #renewMain .mainPolicy .policyBtn li.icon02::before { background: url(./images/main_2024/main/icon_policy_btn02.png) no-repeat; background-size: cover; }
-            #renewMain .mainPolicy .policyBtn li.icon03::before { background: url(./images/main_2024/main/icon_policy_btn03.png) no-repeat; background-size: cover; }
-            #renewMain .mainPolicy .policyBtn li.icon01.active { background: #147dff; color: #fff; }
-            #renewMain .mainPolicy .policyBtn li.icon02.active { background: #ff007e; color: #fff; }
-            #renewMain .mainPolicy .policyBtn li.icon03.active { background: #003281; color: #fff; }
-            #renewMain .mainPolicy .policyBtn li + li { margin-left: 10px; }
-            
-            #renewMain .mainPolicy .policyEmpty { position: relative; text-align: center; width: 100%; }
-            #renewMain .mainPolicy .m_tag { height: 50px; position: relative; margin-bottom: 26px; padding: 8px 40px; background: #f3f3f3; border-radius: 30px; overflow: hidden; }
-            #renewMain .mainPolicy .m_tag.active { height: auto; }
-            #renewMain .mainPolicy .m_tag .m_tagBtn { width: 12px; height: 7px; position: absolute; top: 22px; right: 20px; background: url(./images/main_2024/main/icon_arrow.png) no-repeat; background-size: cover; transition: all 0.3s; text-indent: -9999px; border: none; }
-            #renewMain .mainPolicy .m_tag.active .m_tagBtn { transform: rotate(-180deg) }
-            #renewMain .mainPolicy .m_tag a:before{content:"#";}
-            #renewMain .mainPolicy .m_tag a { display: inline-block; padding: 6px 0; margin-right: 26px; color: #4e4e4e; font-size: 16px; font-weight: 300; }
-            #renewMain .mainPolicy .m_tag a:last-child { margin-right: 0; }
 
-            #renewMain .mainPolicy .policyCont { display: block; position: relative; width: 100%; overflow: hidden;}
-            #renewMain .mainPolicy .m_policy_cont.active { display: flex; flex-direction: column; }
-            #renewMain .mainPolicy .swiper-container { width: 100% }
-            #renewMain .mainPolicy .swiper-button-next { right: 0; left: initial !important; color: #9facb6; }
-            #renewMain .mainPolicy .swiper-button-prev { left: 0; color: #9facb6; }
-            #renewMain .mainPolicy .swiper-slide a { display: block; position: relative; background: #fff; border: 1px solid #dddddd; border-radius: 20px; overflow: hidden; }
-            #renewMain .mainPolicy .policyImg { height: 180px; }
-            #renewMain .mainPolicy .policyImg img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
-            #renewMain .mainPolicy .badgeWrap { display: flex; justify-content: space-between; position: absolute; top: 10px; left: 0; right: 0; padding: 0 10px; }
-            #renewMain .mainPolicy .badgeWrap .badge { padding: 0 0 1px; width: 55px; font-size: 12px; border-radius: 15px; text-align: center; }
-            #renewMain .mainPolicy .policyTxt { padding: 18px 20px; }
-            #renewMain .mainPolicy .policyTxt .tit { height: 48px; min-height: 48px; color: #000; font-size: 16px; text-overflow: ellipsis; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; word-break: break-all; letter-spacing: -0.5px; }
-            #renewMain .mainPolicy .policyTxt .date { margin-top: 8px; color: #777777; font-size: 16px; font-weight: 300; text-overflow: ellipsis; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; word-break: break-all; letter-spacing: -0.5px; }
-        </style>
         <article class="mainPolicy">
             <div class="innerSection">
                 <div class="policyInfo">
@@ -764,50 +701,23 @@
                             <a href="#">광주시</a>
                             <a href="#">구리시</a>
                             <a href="#">군포시</a>
-                            <button class="m_tag_btn">tag 더보기 버튼</button>
+                            <button class="m_tagBtn">tag 더보기 버튼</button>
                         </div>
-                        <div class="swiper-container m_policy_slide">
+                        <div class="swiper-container policySlide">
                             <div class="swiper-wrapper">
+                                <!-- 정책이 없을 때 
+                                <div class="policyEmpty">해당 지역의 정책이 존재하지 않습니다.</div>
+                                -->
                                 <div class="swiper-slide">
                                     <a href="#" target="_blank">
-                                        <div class="badge_wrap">
-                                            <span class="badge days">D-0</span>
-                                            <span class="badge area">구리시</span>
-                                        </div>
-                                        <div class="m_policy_img">
-                                            <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
-                                        </div>
-                                        <div class="m_policy_txt">
-                                            <strong class="tit">경기도기술학교 무료 교육생 교육생교육생교육생교육생교육생</strong>
-                                            <p class="date">2023(월) ~ 2023.04.28.(금)</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="#" target="_blank">
-                                        <div class="badge_wrap">
-                                            <span class="badge days">D-110</span>
-                                            <span class="badge area">구리시</span>
-                                        </div>
-                                        <div class="m_policy_img">
-                                            <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
-                                        </div>
-                                        <div class="m_policy_txt">
-                                            <strong class="tit">경기도기술학교 무료 교육생 교육생교육생교육생교육생교육생</strong>
-                                            <p class="date">2023(월) ~ 2023.04.28.(금)</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="#" target="_blank">
-                                        <div class="badge_wrap">
+                                        <div class="badgeWrap">
                                             <span class="badge days">D-0111</span>
-                                            <span class="badge area">구리시</span>
+                                            <span class="badge area">남양주</span>
                                         </div>
-                                        <div class="m_policy_img">
-                                            <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
+                                        <div class="policyImg">
+                                            <img src="./images/main_2024/main/test03.jpg" alt="로봇과 체험하며 배우는 코딩">
                                         </div>
-                                        <div class="m_policy_txt">
+                                        <div class="policyTxt">
                                             <strong class="tit">경기도기술학교 무료 교육생 교육생교육생교육생교육생교육생</strong>
                                             <p class="date">2023(월) ~ 2023.04.28.(금)</p>
                                         </div>
@@ -815,87 +725,114 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <a href="#" target="_blank">
-                                        <div class="badge_wrap">
+                                        <div class="badgeWrap">
                                             <span class="badge days">D-0</span>
-                                            <span class="badge area">구리시</span>
+                                            <span class="badge area">남양주</span>
                                         </div>
-                                        <div class="m_policy_img">
-                                            <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
+                                        <div class="policyImg">
+                                            <img src="./images/main_2024/main/test04.jpg" alt="로봇과 체험하며 배우는 코딩">
                                         </div>
-                                        <div class="m_policy_txt">
+                                        <div class="policyTxt">
                                             <strong class="tit">경기도기술학교 무료 교육생 교육생교육생교육생교육생교육생</strong>
                                             <p class="date">2023(월) ~ 2023.04.28.(금)</p>
                                         </div>
                                     </a>
                                 </div>
-
+                                <div class="swiper-slide">
+                                    <a href="#" target="_blank">
+                                        <div class="badgeWrap">
+                                            <span class="badge days">D-0</span>
+                                            <span class="badge area">남양주</span>
+                                        </div>
+                                        <div class="policyImg">
+                                            <img src="./images/main_2024/main/test05.jpg" alt="로봇과 체험하며 배우는 코딩">
+                                        </div>
+                                        <div class="policyTxt">
+                                            <strong class="tit">경기도기술학교 무료 교육생 교육생교육생교육생교육생교육생</strong>
+                                            <p class="date">2023(월) ~ 2023.04.28.(금)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" target="_blank">
+                                        <div class="badgeWrap">
+                                            <span class="badge days">D-0</span>
+                                            <span class="badge area">남양주</span>
+                                        </div>
+                                        <div class="policyImg">
+                                            <img src="./images/main_2024/main/test06.jpg" alt="로봇과 체험하며 배우는 코딩">
+                                        </div>
+                                        <div class="policyTxt">
+                                            <strong class="tit">경기도기술학교 무료 교육생 교육생교육생교육생교육생교육생</strong>
+                                            <p class="date">2023(월) ~ 2023.04.28.(금)</p>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <div class="btnWrap">
-                            <a href="#" target="_blank" class="icon01">인기 추천 정책</a>
-                            <a href="#" target="_blank" class="icon02">내게 맞는 정책 찾기</a>
-                            <a href="#" target="_blank" class="policyMore">정책 더보기</a>
-                        </div>
                     </div>
-                    <div class="m_policy_cont" data-tab="policy03">
+                    <div class="policyCont" data-tab="policy03">
                         <div class="m_tag">
-                            <a href="#">#전체3</a>
-                            <a href="#">#가평군</a>
-                            <a href="#">#과천시</a>
-                            <a href="#">#광명시</a>
-                            <a href="#">#광주시</a>
-                            <a href="#">#구리시</a>
-                            <a href="#">#군포시</a>
-                            <a href="#">#전체</a>
-                            <a href="#">#가평군</a>
-                            <a href="#">#과천시</a>
-                            <a href="#">#광명시</a>
-                            <a href="#">#광주시</a>
-                            <a href="#">#구리시</a>
-                            <a href="#">#군포시</a>
-                            <a href="#">#전체</a>
-                            <a href="#">#가평군</a>
-                            <a href="#">#과천시</a>
-                            <a href="#">#광명시</a>
-                            <a href="#">#광주시</a>
-                            <a href="#">#구리시</a>
-                            <a href="#">#군포시</a>
-                            <a href="#">#전체</a>
-                            <a href="#">#가평군</a>
-                            <a href="#">#과천시</a>
-                            <a href="#">#광명시</a>
-                            <a href="#">#광주시</a>
-                            <a href="#">#구리시</a>
-                            <a href="#">#군포시</a>
-                            <button class="m_tag_btn">tag 더보기 버튼</button>
+                            <a href="#">전체3</a>
+                            <a href="#">가평군</a>
+                            <a href="#">과천시</a>
+                            <a href="#">광명시</a>
+                            <a href="#">광주시</a>
+                            <a href="#">구리시</a>
+                            <a href="#">군포시</a>
+                            <a href="#">전체</a>
+                            <a href="#">가평군</a>
+                            <a href="#">과천시</a>
+                            <a href="#">광명시</a>
+                            <a href="#">광주시</a>
+                            <a href="#">구리시</a>
+                            <a href="#">군포시</a>
+                            <a href="#">전체</a>
+                            <a href="#">가평군</a>
+                            <a href="#">과천시</a>
+                            <a href="#">광명시</a>
+                            <a href="#">광주시</a>
+                            <a href="#">구리시</a>
+                            <a href="#">군포시</a>
+                            <a href="#">전체</a>
+                            <a href="#">가평군</a>
+                            <a href="#">과천시</a>
+                            <a href="#">광명시</a>
+                            <a href="#">광주시</a>
+                            <a href="#">구리시</a>
+                            <a href="#">군포시</a>
+                            <button class="m_tagBtn">tag 더보기 버튼</button>
                         </div>
-                        <div class="swiper-container m_policy_slide">
+                        <div class="swiper-container policySlide">
                             <div class="swiper-wrapper">
+                                <!-- 정책이 없을 때 
+                                <div class="policyEmpty">해당 지역의 정책이 존재하지 않습니다.</div>
+                                -->
                                 <div class="swiper-slide">
                                     <a href="#" target="_blank">
-                                        <div class="badge_wrap">
+                                        <div class="badgeWrap">
                                             <span class="badge days">D-0</span>
-                                            <span class="badge area">이천시</span>
+                                            <span class="badge area">남양주</span>
                                         </div>
-                                        <div class="m_policy_img">
-                                            <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
+                                        <div class="policyImg">
+                                            <img src="./images/main_2024/main/test01.png" alt="로봇과 체험하며 배우는 코딩">
                                         </div>
-                                        <div class="m_policy_txt">
-                                            <strong class="tit">경기도기술학교 무료 교육생 교육생교육생교육생교육생교육생</strong>
+                                        <div class="policyTxt">
+                                            <strong class="tit">경기도기술학교</strong>
                                             <p class="date">2023(월) ~ 2023.04.28.(금)</p>
                                         </div>
                                     </a>
                                 </div>
                                 <div class="swiper-slide">
                                     <a href="#" target="_blank">
-                                        <div class="badge_wrap">
+                                        <div class="badgeWrap">
                                             <span class="badge days">D-110</span>
-                                            <span class="badge area">이천시</span>
+                                            <span class="badge area">남양주</span>
                                         </div>
-                                        <div class="m_policy_img">
-                                            <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
+                                        <div class="policyImg">
+                                            <img src="./images/main_2024/main/test02.jpg" alt="로봇과 체험하며 배우는 코딩">
                                         </div>
-                                        <div class="m_policy_txt">
+                                        <div class="policyTxt">
                                             <strong class="tit">경기도기술학교 무료 교육생 교육생교육생교육생교육생교육생</strong>
                                             <p class="date">2023(월) ~ 2023.04.28.(금)</p>
                                         </div>
@@ -903,14 +840,14 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <a href="#" target="_blank">
-                                        <div class="badge_wrap">
+                                        <div class="badgeWrap">
                                             <span class="badge days">D-0111</span>
-                                            <span class="badge area">이천시</span>
+                                            <span class="badge area">남양주</span>
                                         </div>
-                                        <div class="m_policy_img">
-                                            <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
+                                        <div class="policyImg">
+                                            <img src="./images/main_2024/main/test03.jpg" alt="로봇과 체험하며 배우는 코딩">
                                         </div>
-                                        <div class="m_policy_txt">
+                                        <div class="policyTxt">
                                             <strong class="tit">경기도기술학교 무료 교육생 교육생교육생교육생교육생교육생</strong>
                                             <p class="date">2023(월) ~ 2023.04.28.(금)</p>
                                         </div>
@@ -918,28 +855,243 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <a href="#" target="_blank">
-                                        <div class="badge_wrap">
+                                        <div class="badgeWrap">
                                             <span class="badge days">D-0</span>
-                                            <span class="badge area">이천시</span>
+                                            <span class="badge area">남양주</span>
                                         </div>
-                                        <div class="m_policy_img">
-                                            <img src="https://www.jobaba.net/file/image.do?filePath=Y34G5ZNG1Pow9cvynifUNupDlnmAWjwQJoFRQ7QL9yPHEy6fU7na0Fy7R/vglPQu" alt="로봇과 체험하며 배우는 코딩">
+                                        <div class="policyImg">
+                                            <img src="./images/main_2024/main/test04.jpg" alt="로봇과 체험하며 배우는 코딩">
                                         </div>
-                                        <div class="m_policy_txt">
+                                        <div class="policyTxt">
                                             <strong class="tit">경기도기술학교 무료 교육생 교육생교육생교육생교육생교육생</strong>
                                             <p class="date">2023(월) ~ 2023.04.28.(금)</p>
                                         </div>
                                     </a>
                                 </div>
-
                             </div>
                         </div>
-                        <div class="btnWrap">
-                            <a href="#" target="_blank" class="icon01">인기 추천 정책</a>
-                            <a href="#" target="_blank" class="icon02">내게 맞는 정책 찾기</a>
-                            <a href="#" target="_blank" class="policyMore">정책 더보기</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <style>
+            input[type="checkbox"]+label { display:inline-block; position:relative; padding-left:24px; font-size:14px; color:#333; }
+            input[type="checkbox"]+label::after { content:""; width:16px; height:16px; background:#fdfdfd; border:1px solid #ddd; position:absolute; left:0; top:1px; border-radius:3px; }
+            input[type="checkbox"]:checked+label::after { content:"?"; font-size:12px; line-height:16px; background:#38bab2; color:#fff; border-color:#38bab2; text-align:center; }
+            #renewMain .policyFind {
+
+            }
+            
+            #renewMain .policyFind .radio { margin:10px 8px; font-size:14px; color:#999; }
+            #renewMain .policyFind .radio + .radio { margin-top:14px; }
+            #renewMain .policyFind .radio span { padding-left:24px; font-size:14px; color:#505050; font-weight: 400; }
+            #renewMain .policyFind .radio input[type="checkbox"]+span::before { content:""; width:16px; height:16px; background:#fdfdfd; border:1px solid #ddd; position:absolute; left:0; top:1px; border-radius:3px; }
+            #renewMain .policyFind .radio input[type="checkbox"]:checked + span::before { content:"\2714"; font-size:12px; line-height:16px; background:#38bab2; color:#fff; border-color:#38bab2; text-align:center; font-weight:400; }
+            #renewMain .policyFind .cateWrap { display:flex; border:1px solid #e7e7e7; border-radius: 6px; flex-wrap:wrap; overflow:hidden; }
+            #renewMain .policyFind .cateWrap > div { flex-grow: 1; }
+            #renewMain .policyFind .cateWrap .tit { background-color:#f6f6f6; color:#000; font-size:15px; padding:12px 0; text-align:center; font-weight:700; }
+            #renewMain .policyFind .cateWrap > div + div { border-left:1px solid #e7e7e7; }
+            #renewMain .policyFind .cateWrap > div .scrollbar-outer { height:100px; overflow-y:scroll; }
+            #renewMain .policyFind .infoBtn { width: 150px; height: 190px; background: red; }
+
+            .scrollbar-outer > .scroll-element .scroll-element_track { background:#fff; }
+            .scrollbar-outer > .scroll-element .scroll-bar { background:#e7e7e7; }
+            .scrollbar-outer > .scroll-element.scroll-y { width:8px; }
+            .scrollbar-outer > .scroll-element .scroll-element_outer, .scrollbar-outer > .scroll-element .scroll-element_track, .scrollbar-outer > .scroll-element .scroll-bar { border-radius:0; }
+            .scrollbar-outer > .scroll-element.scroll-y .scroll-element_outer { width:6px; }
+
+            #renewMain .policyFind .selWrap {
+                display: flex;
+            }
+            #renewMain .policyFind .selWrap .contBox {
+                width: 100%;
+                /* width: 380px !important;
+                max-width: 100%;
+                border: 1px solid #ddd;
+                box-sizing: border-box;
+                border-radius: 5px; */
+            }
+            #renewMain .policyFind .selWrap .contBox 
+
+            select.commSelect {
+                width: 100%;
+                background-color: #fff;
+                background: url(./images/main_2024/main/icon_arrow.png) right 14px center no-repeat;
+                background-size: 12px 7px;
+            }
+        </style>
+        <article class="policyFind">
+            <div class="innerSection">
+                <div class="selWrap">
+                    <div class="contBox">
+                        <select id="ck01" name="ck01" title="" class="commSelect">	
+                            <option value="" selected="">연령</option>	
+                        </select>
+                    </div>
+                    <div class="contBox">
+                        <select id="ck02" name="ck02" title="" class="commSelect">	
+                            <option value="" selected="">성별</option>	
+                        </select>
+                    </div>
+                    <div class="contBox">
+                        <select id="ck03" name="ck03" title="" class="commSelect">	
+                            <option value="" selected="">특화대상여부</option>	
+                        </select>
+                    </div>
+                    <div class="contBox">
+                        <select id="ck04" name="ck04" title="" class="commSelect">	
+                            <option value="" selected="">상태</option>	
+                        </select>
+                    </div>
+                    <div class="contBox">
+                        <select id="ck05" name="ck05" title="" class="commSelect">	
+                            <option value="" selected="">지역</option>	
+                        </select>
+                    </div>
+                </div>
+				<div class="cateWrap">
+                    <div>
+                        <div class="tit">근무지</div>
+                        <div class="scrollbar-outer">
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" checked="checked"/>
+                                    <span class="text">구직지원</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text">취업지원금</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text">서류/면접 지원</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text">취업지원프로그램</span>
+                                </label>
+                            </div>
                         </div>
                     </div>
+                    <div>
+                        <div class="tit">생활지원</div>
+                        <div class="scrollbar-outer">
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text">자산형성</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text">학자금</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text">대출, 이자</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text">자산형성</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text">학자금</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text">대출, 이자</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="tit">주거지원</div>
+                        <div class="scrollbar-outer">
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text">기숙사, 생활관</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text">주택지원</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text">전월세 자금</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="tit">재직지원</div>
+                        <div class="scrollbar-outer">
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text">워킹맘/대디 지원</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text">중소기업 재직자 지원</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text">고충상담</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="tit">기업지원</div>
+                        <div class="scrollbar-outer">
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text">고용장려금</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text">인력지원</span>
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="checkbox" />
+                                    <span class="text">기업지원</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="infoBtn">
+                    <a href="javascript:void(0);" class="btn search">정책검색</a>
                 </div>
             </div>
         </article>
@@ -1209,22 +1361,23 @@
         });
     });
 
-    $('.policyBtn ul li').click(function(){
-	    $('.m_policy_more').removeClass('active');
-    });
-    // tag 硫붾돱
-    $('.m_tag_btn').click(function () {
+    // policy tag 
+    $('.m_tagBtn').click(function () {
         $(this).parent().toggleClass('active');
     });
 
-    // channel talk
-    (function(){var w=window;if(w.ChannelIO){return w.console.error("ChannelIO script included twice.");}var ch=function(){ch.c(arguments);};ch.q=[];ch.c=function(args){ch.q.push(args);};w.ChannelIO=ch;function l(){if(w.ChannelIOInitialized){return;}w.ChannelIOInitialized=true;var s=document.createElement("script");s.type="text/javascript";s.async=true;s.src="https://cdn.channel.io/plugin/ch-plugin-web.js";var x=document.getElementsByTagName("script")[0];if(x.parentNode){x.parentNode.insertBefore(s,x);}}if(document.readyState==="complete"){l();}else{w.addEventListener("DOMContentLoaded",l);w.addEventListener("load",l);}})();
-    
-    ChannelIO('boot', {
-       "pluginKey": "92271334-7ce9-457f-92a1-988a347ab637",
-       "customLauncherSelector": ".channelTalk",
-       "hideChannelButtonOnBoot": true
-    });
+    function handleTabClick($btn, $items, tabAttr) {
+        $btn.click(function() {
+        var tab = $(this).attr(tabAttr);
+        $btn.removeClass('active');
+        $(this).addClass('active');
+        $items.removeClass('active');
+        $items.filter('[data-tab="' + tab + '"]').addClass('active');
+        });
+    }
+    handleTabClick($('.mainPolicy .policyBtn li'), $('.mainPolicy .policyCont'), 'data-tab');
+
+   
 </script>
 
 </body>
