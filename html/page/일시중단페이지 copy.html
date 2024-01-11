@@ -6,8 +6,10 @@
 	<title>일자리플랫폼 잡아바!</title>
     <!-- 추가 -->
     <link type="text/css" rel="stylesheet" href="https://chaebonggi.github.io/jobaba2024/html/page/css/main/kgoon.reset.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link type="text/css" rel="stylesheet" href="https://chaebonggi.github.io/jobaba2024/html/etc/css/fonts.css">
-
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 <body class="intro">
     <style>
@@ -15,6 +17,13 @@
         .gMid { font-family: 'GmarketSans','Noto Sans KR' !important; font-weight: 500; } 
         .gBold { font-family: 'GmarketSans','Noto Sans KR' !important; font-weight: 700; } 
         
+        /* 팝업 */
+        .shadow { background: rgba(0, 0, 0, 0.33); width: 100%; height: 100vh; position: fixed; top: 0; left: 0; z-index: 9999; display: none } 
+        .popup { position: fixed; left: 50%; top: 50%; transform: translate(-50%,-50%); z-index: 99999; max-width: 500px; width: calc(100% - 40px); display: none } 
+        .popup .pop_head { background: #0082cc; color: #fff; padding: 15px; display: flex; justify-content: space-between; align-items: center; font-size: 16px; } 
+        .popup .pop_head .close_btn { background: url(../images/user/pop_close.png) no-repeat; width: 18px; height: 18px; text-indent: -9999px; } 
+        .popup .pop_cont { background: #fff; max-height:calc(100vh - 100px); overflow-y: auto; font-size: 0; } 
+        .popup .pop_head .close_btn { background: url(https://chaebonggi.github.io/jobaba2024/html/page/images/main/pop_close.png) no-repeat; width: 18px; height: 18px; text-indent: -9999px; } 
         .introWrap { background: url(https://chaebonggi.github.io/jobaba2024/html/page/images/main/pop_bg.png) top 190px center no-repeat; text-align: center; } 
         .introCont h1 { color: #004688; font-size: 65px; letter-spacing: -1px; } 
         .introCont .imgWrap::before { content: ''; display: block; width: 227px; height: 225px; margin: 45px auto 0; background: url(https://chaebonggi.github.io/jobaba2024/html/page/images/main/pop_img01.png) no-repeat; background-size: contain; } 
@@ -79,5 +88,29 @@
             </div>
         </div>
     </div>
+
+    <!--팝업-->
+    <div class="shadow" style="display: block"></div>
+    <div class="popup" style="display: block">
+        <div class="pop_head">
+            <p>잡아바 안내</p>
+            <a href="#" class="close_btn" onclick="close_pop()">닫기</a>
+        </div>
+        <div class="pop_cont">
+            <img src="https://chaebonggi.github.io/jobaba2024/html/page/images/main/pop_img.png" alt="잡아바 팝업">
+        </div>
+    </div>
+    <!--//팝업-->
+    <script>
+        function close_pop(flag) {
+            // 모달 닫기
+            $('.popup').hide();
+            $('body').removeClass('not_scroll');
+            $('.shadow').hide();
+
+            // 이전 스크롤 위치로 이동
+            $('body').scrollTop(scrollPosition);
+        }
+    </script>
 </body>
 </html>

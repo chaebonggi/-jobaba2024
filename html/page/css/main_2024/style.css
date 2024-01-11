@@ -205,17 +205,16 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
    background-repeat: no-repeat;
    border-radius: 10px; 
 }
-#renewMain .mainVisual .m_visual_items { display: flex; flex-wrap: wrap; justify-content: space-between; margin-bottom: 30px; }
-#renewMain .mainVisual .m_visual_items li { width: calc(100% / 6); height: 112px; box-sizing: border-box; }
-#renewMain .mainVisual .m_visual_items li a { display: block; height: 100%; color: #000; font-size: 16px; text-align: center; letter-spacing: -0.7px; word-break: keep-all; }
-#renewMain .mainVisual .m_visual_items li a::before { display: block; content: ''; width: 84px; height: 78px; margin: 0 auto 10px auto; border-radius: 20px; background-color: #fff; background-position: center center; background-repeat: no-repeat; background-size: auto; box-sizing: border-box; }
-#renewMain .mainVisual .m_visual_items li a.m_item01::before { background-image: url(/resource/images/main2023/icon_item01.png); }
-#renewMain .mainVisual .m_visual_items li a.m_item02::before { background-image: url(/resource/images/main2023/icon_item02.png); }
-#renewMain .mainVisual .m_visual_items li a.m_item03::before { background-image: url(/resource/images/main2023/icon_item03.png); }
-#renewMain .mainVisual .m_visual_items li a.m_item04::before { background-image: url(/resource/images/main2023/icon_item04.png); }
-#renewMain .mainVisual .m_visual_items li a.m_item05::before { background-image: url(/resource/images/main2023/icon_item05.png); }
-#renewMain .mainVisual .m_visual_items li a.m_item06::before { background-image: url(/resource/images/main2023/icon_item06.png); }
-#renewMain .mainVisual .m_visual_items li a:hover::before { border: 1px solid #dadada; box-shadow: 0px 3px 5px 0px rgba(7, 7, 7, 0.08); }
+#renewMain .mainVisual .visualItem { display: flex; flex-wrap: wrap; justify-content: space-between; margin-bottom: 30px; }
+#renewMain .mainVisual .visualItem li { width: 96px; height: 112px; box-sizing: border-box;}
+#renewMain .mainVisual .visualItem li a { display: block; height: 100%; color: #000; font-size: 16px; text-align: center; letter-spacing: -0.7px; word-break: keep-all; }
+#renewMain .mainVisual .visualItem li a::before { display: block; content: ''; width: 100%; height: 80px; margin: 0 auto 10px auto; border-radius: 20px; background-color: #fff; background-position: center center; background-repeat: no-repeat; background-size: auto; box-sizing: border-box; }
+#renewMain .mainVisual .visualItem li a.vItem01::before { background-image: url(../../images/main_2024/main/icon_item01.png); }
+#renewMain .mainVisual .visualItem li a.vItem02::before { background-image: url(../../images/main_2024/main/icon_item02.png); }
+#renewMain .mainVisual .visualItem li a.vItem03::before { background-image: url(../../images/main_2024/main/icon_item03.png); }
+#renewMain .mainVisual .visualItem li a.vItem04::before { background-image: url(../../images/main_2024/main/icon_item04.png); }
+#renewMain .mainVisual .visualItem li a.vItem05::before { background-image: url(../../images/main_2024/main/icon_item05.png); }
+#renewMain .mainVisual .visualItem li a:hover::before { border: 1px solid #dadada; box-shadow: 0px 3px 5px 0px rgba(7, 7, 7, 0.08); }
 #renewMain .mainVisual .m_visual_search { position: relative; }
 #renewMain .mainVisual .searchWrap {}
 #renewMain .mainVisual .searchWrap .tit { margin-bottom: 20px; margin-left: 20px; color: #343434; font-size: 24px; font-weight: 200; }
@@ -223,7 +222,7 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 #renewMain .mainVisual .searchWrap .searchCont { position: relative; display: flex; align-items: center; justify-content: space-between; width: 660px; padding: 14px 20px; margin-bottom: 14px; background: #fff; border-radius: 10px; }
 #renewMain .mainVisual .searchWrap .searchCont button { display: block; flex-shrink: 0; background: url(../../images/main_2024/main/icon_search.png) no-repeat; width: 27px; height: 27px; border: 0; text-indent: -9999px; cursor: pointer; }
 #renewMain .mainVisual .searchWrap .searchCont input { width: 100%; margin: 0 10px; font-size: 16px; border: 0; outline: 0; }
-#renewMain .mainVisual .searchWrap .searchCont input::placeholder { color: #464646; font-size: 14px; font-weight: 200; }
+#renewMain .mainVisual .searchWrap .searchCont input::placeholder { color: #464646; font-size: 14px; font-weight: 200px; }
 
 #renewMain .mainVisual .m_search_cont ul { display: inline-flex; background: #008ae0; border-radius: 20px; z-index: 1; }
 #renewMain .m_visual .m_search_cont ul li { width: 70px; padding: 3px 0; margin: 4px; color: #fff; font-size: 14px; font-weight: 500; border-radius: 20px; text-align: center; cursor: pointer; transition: all 0.2s; }
