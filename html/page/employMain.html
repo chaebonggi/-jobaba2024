@@ -80,7 +80,7 @@
                     </h1>
                     <ul class="h_gnb">
                         <li>
-                            <a href="<spring:message code='DEFAULT.URI' />/sprtPlcy/info/list2020.do"><span>일자리지원사업</span></a>
+                            <a href="<spring:message code='DEFAULT.URI' />/sprtPlcy/info/list2020.do"><span>공공일자리</span></a>
                             <ul class="depth_02">
                                 <li><a href="<spring:message code='DEFAULT.URI' />/sprtPlcy/info/list2020.do"><span class="menu_txt">일자리지원사업</span></a></li>
                                 <li><a href="<spring:message code='DEFAULT.URI' />/entCntnts/sprtPlcy/list2020.do"><span class="menu_txt">기업지원정책</span></a></li>
@@ -90,7 +90,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="<spring:message code='DEFAULT.URI' />/jobDiagnose/diagnoseView.do"><span>기업지원정책</span></a>
+                            <a href="<spring:message code='DEFAULT.URI' />/jobDiagnose/diagnoseView.do"><span>신성장 산업</span></a>
                             <ul class="depth_02">
                                 <li><a href="http://jobabadev.jobaba.net/auland/mainList.do"><span class="menu_txt">취업진로진단</span></a></li>
                                 <li><a href="http://jobabadev.jobaba.net/psychology/mainList.do"><span class="menu_txt">진로 취업상담</span></a></li>
@@ -99,7 +99,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="https://youthedu.jobaba.net" target="_blank"><span>취업교육</span></a>
+                            <a href="https://youthedu.jobaba.net" target="_blank"><span>대기업 협력사</span></a>
                             <ul class="depth_02">
                                 <li><a href="<spring:message code='DEFAULT.URI' />/youthedu/apply/intro.do"><span class="menu_txt">알아보기</span></a></li>
                                 <li><a href="<spring:message code='DEFAULT.URI' />/thema/vocEduList.do"><span class="menu_txt">동영상 교육</span></a></li>
@@ -107,7 +107,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="<spring:message code='DEFAULT.URI' />/empmn/enterpriseEmployListNew.do"><span>대외활동</span></a>
+                            <a href="<spring:message code='DEFAULT.URI' />/empmn/enterpriseEmployListNew.do"><span>우수기업</span></a>
                             <ul class="depth_02">
                                 <li><a href="<spring:message code='DEFAULT.URI' />/empmn/enterpriseEmployListNew.do"><span class="menu_txt">기업채용정보</span></a></li>
                                 <li><a href="<spring:message code='DEFAULT.URI' />/empmn/recruitListJob.do"><span class="menu_txt">일경험 채용관</span></a></li>
@@ -118,7 +118,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="<spring:message code='DEFAULT.URI' />/thema/list.do"><span>참여소통</span></a>
+                            <a href="<spring:message code='DEFAULT.URI' />/thema/list.do"><span>채용박람회</span></a>
                             <ul class="depth_02">
                                 <li><a href="<spring:message code='DEFAULT.URI' />/hpdsk/ntc/list.do"><span class="menu_txt">공지사항</span></a></li>
                                 <li><a href="<spring:message code='DEFAULT.URI' />/event/list.do"><span class="menu_txt">이벤트</span></a></li>
@@ -126,7 +126,7 @@
                                 <li><a href="<spring:message code='DEFAULT.URI' />/thema/list.do"><span class="menu_txt">잡학사전</span></a></li>
                                 <li><a href="<spring:message code='DEFAULT.URI' />/thema/themeInfo.do"><span class="menu_txt">정책활용 꿀팁</span></a></li>
                             </ul>
-                        </li>
+                        </li>                        
                     </ul>
                     <div class="h_ui">
                         <div class="h_menu" onclick="allMenu();">
@@ -413,6 +413,81 @@
     </header>
    
     <main id="renewMain">
+        <article class="mainVisual">
+            <div class="innerSection">
+                <div class="visualWrap">
+                    <div class="visualCont">
+                        <div class="visualSearch">                            
+                            <div class="searchWrap">
+                                <p class="tit">관심있는 <span>채용정보</span>를 찾아보세요</p>
+                                <div class="searchCont">
+                                    <input type="text" id="search" placeholder="#청년 #취업상담 #러닝센터 #역량강화사업">
+                                    <button type="submit">검색</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="itemSwiper">
+                        <ul class="m_visual_items swiper-wrapper">
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank" title="" class="m_item01"><span class="txt">자소서첨삭</span></a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank" title="" class="m_item02"><span class="txt">AI역량검사</span></a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank" title="" class="m_item03"><span class="txt">취업상담</span></a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank" title="" class="m_item04"><span class="txt">러닝센터</span></a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank" title="" class="m_item06"><span class="txt">구직신청</span></a>
+                            </li>
+                        </div>
+                            
+                        </ul>
+                    </div>
+                    <div class="loginForm">
+                        <div class="loginWrap">
+                            <p class="txt">로그인하고 맞춤형 서비스를 이용해 보세요.</p>
+                            <a href="" class="loginBtn"><span>로그인</span></button></a>
+                            <div class="loginSub">
+                                <a href="#" class="loginId">아이디찾기</a>
+                                <a href="#" class="loginPw">비밀번호 찾기</a>
+                                <a href="#" class="loginJoin">회원가입</a>                                
+                            </div>
+                        </div>
+                        <!-- 로그인 후
+                        <div class="m_login_wrap login">
+                            <div class="txtWrap">
+                                <p><strong>홍길동님</strong>, 반갑습니다</p>
+                                <a href="">마이페이지</a>
+                            </div>
+                            <ul class="loginList">
+                                <li><a href="">이력서<span>1</span></a></li>
+                                <li><a href="">입사지원<span>0</span></a></li>
+                                <li><a href="">입사제의<span>2</span></a></li>
+                                <li><a href="">공고추천<span>0</span></a></li>
+                                <li><a href="">온라인면접<span>0</span></a></li>
+                            </ul>
+                        </div>
+                         -->
+                        <div class="m_counseling_wrap">
+                            <a href="#" target="_blank" class="m_counseling_chat">
+                                <p>실시간 진로·취업상담 서비스</p>
+                                <div class="chatTalk">
+                                    <strong>잡아바<br>상담톡!</strong>
+                                </div>
+                                <div class="chatLive">
+                                    <strong>Live Chat</strong>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
         <article class="infoWrap">
             <div class="innerSection">
                 <div class="infoBox">
