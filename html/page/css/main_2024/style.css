@@ -425,7 +425,7 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 .recomendInfo .swiper-button-prev { background: url(../../images/main_2024/main/prev_btn.png) no-repeat; background-size: contain; left: 35px; } 
 
 /* policy jobRecomend */
-#renewMain .jobRecomend { background: #fff; } 
+#renewMain .jobRecomend { background: #fff; overflow: hidden;} 
 #renewMain .jobRecomend .innerSection { padding: 122px 0 280px; } 
 #renewMain .jobRecomend .titWrap h2 { margin-bottom: 40px; font-size: 36px; } 
 #renewMain .jobRecomend .titWrap h2 span { color: #47ada7; } 
