@@ -433,7 +433,7 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 #renewMain .jobRecomend .titWrap ul li + li { margin-top: 10px; } 
 #renewMain .jobRecomend .titWrap ul li a { display: flex; width: 100%; height: 100%; padding: 10px 20px; background: #e7e7e7; color: #000; font-size: 24px; font-weight: 200; align-items: center; } 
 #renewMain .jobRecomend .titWrap ul li.active a { color: #fff; background: #47ada7; } 
-#renewMain .jobRecomend .titWrap ul li a::before { content: ''; margin-right: 10px;} 
+#renewMain .jobRecomend .titWrap ul li a::before { content: ''; margin-right: 10px; } 
 #renewMain .jobRecomend .titWrap ul li.icon01 a::before { width: 24px; height: 25px; background: url(../../images/main_2024/main/recomend_icon05.png) no-repeat; } 
 #renewMain .jobRecomend .titWrap ul li.icon02 a::before { width: 26px; height: 25px; background: url(../../images/main_2024/main/recomend_icon03.png) no-repeat; } 
 #renewMain .jobRecomend .titWrap ul li.icon03 a::before { width: 26px; height: 26px; margin-right: 24px; background: url(../../images/main_2024/main/recomend_icon04.png) no-repeat; } 
@@ -461,24 +461,22 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 #renewMain .jobRecomend .swiper-slide-active .jobItem .txtWrap .jInfo,
 #renewMain .jobRecomend .swiper-slide-active .jobItem .txtWrap .jDay,
 #renewMain .jobRecomend .swiper-slide-active .jobItem .jobBtn { display: block; } 
-#renewMain .jobRecomend .jobItem .jLogo { display: none;  margin-bottom: 20px;   }
-#renewMain .jobRecomend .jobItem .jLogo p {display: inline-block; padding: 10px; background: #f7f7f7; font-size: 20px; border-radius: 6px;} 
+#renewMain .jobRecomend .jobItem .jLogo { display: none; margin-bottom: 20px; } 
+#renewMain .jobRecomend .jobItem .jLogo p { display: inline-block; padding: 10px; background: #f7f7f7; font-size: 20px; border-radius: 6px; } 
 #renewMain .jobRecomend .jobItem .jLogo img { height: 100%; } 
 #renewMain .jobRecomend .jobItem { padding: 60px 30px 0; height: 100%; background-repeat: no-repeat; background-position: center; background-size: cover; } 
-#renewMain .jobRecomend .jobItem.bg01 {background-image: url(../../images/main_2024/main/recomend_bg_01.png);}
-#renewMain .jobRecomend .jobItem.bg02 {background-image: url(../../images/main_2024/main/recomend_bg_02.png);}
-#renewMain .jobRecomend .jobItem.bg03 {background-image: url(../../images/main_2024/main/recomend_bg_03.png);}
-#renewMain .jobRecomend .jobItem.bg04 {background-image: url(../../images/main_2024/main/recomend_bg_04.png);}
-#renewMain .jobRecomend .jobItem.bg05 {background-image: url(../../images/main_2024/main/recomend_bg_05.png);}
+#renewMain .jobRecomend .jobItem.bg01 { background-image: url(../../images/main_2024/main/recomend_bg_01.png); } 
+#renewMain .jobRecomend .jobItem.bg02 { background-image: url(../../images/main_2024/main/recomend_bg_02.png); } 
+#renewMain .jobRecomend .jobItem.bg03 { background-image: url(../../images/main_2024/main/recomend_bg_03.png); } 
+#renewMain .jobRecomend .jobItem.bg04 { background-image: url(../../images/main_2024/main/recomend_bg_04.png); } 
+#renewMain .jobRecomend .jobItem.bg05 { background-image: url(../../images/main_2024/main/recomend_bg_05.png); } 
 #renewMain .jobRecomend .swiper-slide-active .jobItem .txtWrap .jTit { margin-bottom: 20px; color: #fff; font-size: 26px; line-height: 1.2; text-overflow: ellipsis; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; word-break: keep-all; } 
 #renewMain .jobRecomend .jobItem .txtWrap .jTit { color: #000; font-size: 16px; line-height: 2; } 
 #renewMain .jobRecomend .jobItem .txtWrap .jInfo { display: none; color: #fff; font-size: 16px; margin-bottom: 10px; } 
-#renewMain .jobRecomend .jobItem .txtWrap .jInfo span {
-    display: block;
-}
+#renewMain .jobRecomend .jobItem .txtWrap .jInfo span { display: block; } 
 /* #renewMain .jobRecomend .jobItem .txtWrap .jInfo li { display: inline-block; position: relative; color: #fff; font-size: 20px; } 
 #renewMain .jobRecomend .jobItem .txtWrap .jInfo li + li { margin-left: 14px; padding-left: 14px; } 
-#renewMain .jobRecomend .jobItem .txtWrap .jInfo li + li::before { content: ''; display: block; width: 1px; height: 11px; position: absolute; top: 50%; left: 0; background: #ddd; transform: translateY(-50%); }  */
+#renewMain .jobRecomend .jobItem .txtWrap .jInfo li + li::before { content: ''; display: block; width: 1px; height: 11px; position: absolute; top: 50%; left: 0; background: #ddd; transform: translateY(-50%); } */
 #renewMain .jobRecomend .jobItem .txtWrap .jDay { display: none; color: #edff98; font-size: 18px; font-weight: 500; } 
 #renewMain .jobRecomend .jobItem .jobBtn { display: none; text-align: right; } 
 #renewMain .jobRecomend .jobItem .jobBtn a { display: inline-block; width: 200px; height: 60px; background: #fff; color: #000; font-size: 20px; font-weight: 500; line-height: 60px; text-align: center; border-radius: 10px; } 
@@ -541,24 +539,11 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
  .recomendInfo .swiper-button-prev { display: none; } 
 
  /* policy jobRecomend */
- #renewMain .jobRecomend .innerSection {
-    padding: 60px 10px 60px;
-}
- #renewMain .jobRecomend .titWrap {
-    display: flex;
-
- }
- #renewMain .jobRecomend .jobWrap {
-    position: static;
- }
- #renewMain .jobRecomend .titWrap ul {
-    margin-left: auto;
- }
- #renewMain .jobRecomend .swiperBottom {
-    left: 50%;
-    transform: translateX(-50%);
- }
-
+ #renewMain .jobRecomend .innerSection { padding: 60px 10px 60px; } 
+ #renewMain .jobRecomend .titWrap { display: flex;}
+ #renewMain .jobRecomend .jobWrap { position: static; } 
+ #renewMain .jobRecomend .titWrap ul { margin-left: auto; } 
+ #renewMain .jobRecomend .swiperBottom { left: 50%; transform: translateX(-50%); } 
 }
 @media screen and (max-width: 860px) { /* header */
  #renewHeader .nheader_mid { overflow: hidden; } 
@@ -607,7 +592,7 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 #renewMain .infoWrap .infoBox { flex-direction: column; } 
 #renewMain .infoWrap .infoBox .infoItem { width: 100%; } 
 #renewMain .infoWrap .infoBox .infoItem + .infoItem { margin-top: 20px; } 
-}
+ }
 
 @media screen and (max-width: 768px) { /* footer */
  #renewFooter .nfooter_top .f_sns { display: none; } 
@@ -626,7 +611,7 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
  #renewMain .mainPolicy .btnWrap a:nth-child(2) { display: none; } 
  #renewMain .mainPolicy .btnWrap a.policyMore { display: flex; } 
  #renewMain .mainPolicy .m_tag { margin: 0 10px 26px; } 
-}
+ }
 
 @media screen and (max-width: 640px){
  .innerSection { padding: 0 10px; } 
@@ -698,51 +683,18 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 .recomendInfo .swiper-pagination-bullet { width: 10px; height: 10px; } 
 
  /* policy jobRecomend */
- #renewMain .jobRecomend .titWrap h2 {
-    margin-bottom: 10px;
-    font-size: 22px;
-}
-#renewMain .jobRecomend .titWrap ul li a::before {
-    background-size: 50% !important;
-    background-position: center !important;
-}
-#renewMain .jobRecomend .titWrap ul li {
-    width: 120px;
-    height: 30px;
-}
-#renewMain .jobRecomend .titWrap ul li a {
-    padding: 10px 10px;
-    font-size: 12px;
-}
-#renewMain .jobRecomend .titWrap ul li + li {
-    margin-top: 4px;
-}
-#renewMain .jobRecomend .swiper-slide-active {
-    width: 100% !important;
-}
-#renewMain .jobRecomend .swiper-slide-active .jobItem {
-    padding: 20px 20px 10px;
-}
-#renewMain .jobRecomend .jobItem .jLogo p {
-    font-size: 12px;
-}
-#renewMain .jobRecomend .swiper-slide-active .jobItem .txtWrap .jTit {
-    font-size: 18px;
-}
-#renewMain .jobRecomend .jobItem .txtWrap .jInfo {
-    font-size: 14px;
-}
-#renewMain .jobRecomend .swiper-slide {
-    height: auto;
-}
-#renewMain .jobRecomend .jobItem .jobBtn a {
-    width: 100%;
-    height: auto;
-    padding: 10px 0;
-    margin-bottom: 10px;
-    font-size: 18px;
-    line-height: initial;
-}
+ #renewMain .jobRecomend .titWrap h2 { margin-bottom: 10px; font-size: 22px; } 
+#renewMain .jobRecomend .titWrap ul li a::before { background-size: 50% !important; background-position: center !important; } 
+#renewMain .jobRecomend .titWrap ul li { width: 120px; height: 30px; } 
+#renewMain .jobRecomend .titWrap ul li a { padding: 10px 10px; font-size: 12px; } 
+#renewMain .jobRecomend .titWrap ul li + li { margin-top: 4px; } 
+#renewMain .jobRecomend .swiper-slide-active { width: 100% !important; } 
+#renewMain .jobRecomend .swiper-slide-active .jobItem { padding: 20px 20px 10px; } 
+#renewMain .jobRecomend .jobItem .jLogo p { font-size: 12px; } 
+#renewMain .jobRecomend .swiper-slide-active .jobItem .txtWrap .jTit { font-size: 18px; } 
+#renewMain .jobRecomend .jobItem .txtWrap .jInfo { font-size: 14px; } 
+#renewMain .jobRecomend .swiper-slide { height: auto; } 
+#renewMain .jobRecomend .jobItem .jobBtn a { width: 100%; height: auto; padding: 10px 0; margin-bottom: 10px; font-size: 18px; line-height: initial; } 
 
 
 /* employ infoWrap */
@@ -759,7 +711,7 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 #renewMain .infoWrap .infoList a .detail { display: none; } 
 #renewMain .infoWrap .infoTit { flex-direction: column; } 
 #renewMain .infoWrap .infoTit ul { margin-top: 10px; } 
-}
+ }
 @media screen and (max-width: 480px) { /* header */
  #renewHeader .nheader_bottom .innerSection { padding: 0; } 
  /* footer */
@@ -771,7 +723,5 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
  #renewMain .mainPolicy .policyBtn li::before { width: 20px; height: 20px; } 
 
  /* policy jobRecomend */
- #renewMain .policyFind .selectWrap .contBox {
-    width: 100%;
-}
+ #renewMain .policyFind .selectWrap .contBox { width: 100%; } 
  }
