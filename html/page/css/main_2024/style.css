@@ -541,9 +541,22 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
  .recomendInfo .swiper-button-prev { display: none; } 
 
  /* policy jobRecomend */
+ #renewMain .jobRecomend .innerSection {
+    padding: 60px 10px 60px;
+}
  #renewMain .jobRecomend .titWrap {
     display: flex;
 
+ }
+ #renewMain .jobRecomend .jobWrap {
+    position: static;
+ }
+ #renewMain .jobRecomend .titWrap ul {
+    margin-left: auto;
+ }
+ #renewMain .jobRecomend .swiperBottom {
+    left: 50%;
+    transform: translateX(-50%);
  }
 
 }
@@ -671,7 +684,7 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 #renewMain .policyFind .titWrap .tit p { font-size: 14px; } 
 #renewMain .policyFind .titWrap { padding-left: 34px; background-size: auto 50%; } 
 
- /* recomendInfo */
+ /* policy recomendInfo */
  .recomendInfo .innerSection { padding: 30px 10px 60px; } 
  .recomendInfo .titWrap h2 { margin-bottom: 10px; font-size: 22px; } 
 .recomendInfo .titWrap p { font-size: 14px; } 
@@ -683,6 +696,54 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 .recomendInfo .recomendWrap { padding: 30px 20px 80px; border-radius: 20px; } 
 .recomendInfo .recomendItem .txtWrap .sTit { font-size: 16px; } 
 .recomendInfo .swiper-pagination-bullet { width: 10px; height: 10px; } 
+
+ /* policy jobRecomend */
+ #renewMain .jobRecomend .titWrap h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+#renewMain .jobRecomend .titWrap ul li a::before {
+    background-size: 50% !important;
+    background-position: center !important;
+}
+#renewMain .jobRecomend .titWrap ul li {
+    width: 120px;
+    height: 30px;
+}
+#renewMain .jobRecomend .titWrap ul li a {
+    padding: 10px 10px;
+    font-size: 12px;
+}
+#renewMain .jobRecomend .titWrap ul li + li {
+    margin-top: 4px;
+}
+#renewMain .jobRecomend .swiper-slide-active {
+    width: 100% !important;
+}
+#renewMain .jobRecomend .swiper-slide-active .jobItem {
+    padding: 20px 20px 10px;
+}
+#renewMain .jobRecomend .jobItem .jLogo p {
+    font-size: 12px;
+}
+#renewMain .jobRecomend .swiper-slide-active .jobItem .txtWrap .jTit {
+    font-size: 18px;
+}
+#renewMain .jobRecomend .jobItem .txtWrap .jInfo {
+    font-size: 14px;
+}
+#renewMain .jobRecomend .swiper-slide {
+    height: auto;
+}
+#renewMain .jobRecomend .jobItem .jobBtn a {
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: initial;
+}
+
 
 /* employ infoWrap */
 #renewMain .companyWrap .companyList > li { width: 100%; } 
@@ -708,4 +769,9 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
  #renewMain .mainPolicy .policyBtn li { width: calc(100% / 3); height: 30px; padding: 1px 0 2px 20px; font-size: 12px; } 
  #renewMain .mainPolicy .policyBtn li + li { margin-left: 2px; } 
  #renewMain .mainPolicy .policyBtn li::before { width: 20px; height: 20px; } 
+
+ /* policy jobRecomend */
+ #renewMain .policyFind .selectWrap .contBox {
+    width: 100%;
+}
  }

@@ -185,6 +185,48 @@ recomendSwiper = new Swiper('.recomendSlide', {
     },
 });
 
+// policy jobRecomend
+
+function updSwiperNumericPagination() {
+    this.el.querySelector(".swiper-counter").innerHTML = '<span class="count">0' + (this.realIndex + 1) + '</span><span class="total">/ 0' + this.el.slidesQuantity + "</span>";
+}
+
+$(".jobSlide").each(function () {
+    this.slidesQuantity = this.querySelectorAll(".swiper-slide").length;
+
+    var jobSwiper = new Swiper('.jobSlide', {
+        slidesPerView: 'auto',
+        spaceBetween: 30,
+        loop: true,
+        // autoplay: {
+        //     delay: 5000,
+        //     disableOnInteraction: true // 쓸어 넘기거나 버튼 클릭 시 자동 슬라이드 정지.
+        // },
+        on: {
+            init: updSwiperNumericPagination,
+            slideChange: updSwiperNumericPagination
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+
+    $('.wrap-autoplay-control > .swiper-button-pause').click(function () {
+        $(this).hide();
+        jobSwiper.autoplay.stop();
+        $('.wrap-autoplay-control > .swiper-button-play').show()
+
+    });
+
+    $('.wrap-autoplay-control > .swiper-button-play').click(function () {
+        $(this).hide();
+        jobSwiper.autoplay.start();
+        $('.wrap-autoplay-control > .swiper-button-pause').show();
+    });
+
+});
+
 
 
 
