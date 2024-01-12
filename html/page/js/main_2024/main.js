@@ -115,6 +115,22 @@ function handleResize() {
 
 window.addEventListener('resize', handleResize);
 
+// main menu btn
+var menuSwiper = undefined;
+function itemSwiper() {
+    if (window.innerWidth  < 641 && menuSwiper == undefined) {
+            menuSwiper = new Swiper(".itemSwiper", {
+            slidesPerView: 'auto',
+            spaceBetween: 16,
+            simulateTouch: true,
+        });
+    } else if (window.innerWidth >= 641 && menuSwiper != undefined) {
+        menuSwiper.destroy();
+        menuSwiper = undefined;
+    }
+}
+itemSwiper();
+
 
 // main policy
 var $slider = $('.policyCont');
