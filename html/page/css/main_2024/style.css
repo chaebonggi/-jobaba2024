@@ -426,7 +426,7 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 
 /* policy jobRecomend */
 #renewMain .jobRecomend { background: #fff; overflow: hidden; } 
-#renewMain .jobRecomend .innerSection { padding: 122px 0 280px; } 
+#renewMain .jobRecomend .innerSection { padding: 122px 10px 280px; } 
 #renewMain .jobRecomend .titWrap h2 { margin-bottom: 40px; font-size: 36px; } 
 #renewMain .jobRecomend .titWrap h2 span { color: #47ada7; } 
 #renewMain .jobRecomend .titWrap ul li { width: 170px; height: 50px; border-radius: 30px; overflow: hidden; } 
@@ -536,10 +536,15 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
  /* main policy */
  #renewMain .mainPolicy .policyImg { height: auto; } 
  
- /* recomendInfo */
+ /* policy recomendInfo */
  .recomendInfo .swiper-button-next,
  .recomendInfo .swiper-button-prev { display: none; } 
 
+ /* policy jobRecomend */
+ #renewMain .jobRecomend .titWrap {
+    display: flex;
+
+ }
 
 }
 @media screen and (max-width: 860px) { /* header */
