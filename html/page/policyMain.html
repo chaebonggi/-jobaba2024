@@ -1067,18 +1067,18 @@
             </div>
         </article>
 
-        <article>
+        <article class="job">
             <style>
-                .itbox {
+                .job .itbox {
                    
                     height: 300px;
                     border: 1px solid red;
                     transition: all 0.3s;
                 }
-                .swiper-slide {
+                .job .swiper-slide {
                     width: 300px;
                 }
-                .swiper-slide-active {
+                .job .swiper-slide-active {
                     margin-right: 100px;
                     width: 600px !important;
                     background: blue;
@@ -1375,7 +1375,6 @@
                 el: ".swiper-pagination",
                 type: "progressbar",
             },
-            loop: true,
             on: {
                 init: updSwiperNumericPagination,
                 slideChange: updSwiperNumericPagination
