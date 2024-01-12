@@ -195,13 +195,13 @@ $(".jobSlide").each(function () {
     this.slidesQuantity = this.querySelectorAll(".swiper-slide").length;
 
     var jobSwiper = new Swiper('.jobSlide', {
-        slidesPerView: 'auto',
+        slidesPerView: 1,
         spaceBetween: 30,
         loop: true,
-        // autoplay: {
-        //     delay: 5000,
-        //     disableOnInteraction: true // 쓸어 넘기거나 버튼 클릭 시 자동 슬라이드 정지.
-        // },
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: true // 쓸어 넘기거나 버튼 클릭 시 자동 슬라이드 정지.
+        },
         on: {
             init: updSwiperNumericPagination,
             slideChange: updSwiperNumericPagination
@@ -209,6 +209,11 @@ $(".jobSlide").each(function () {
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 'auto',
+            },
         },
     });
 
