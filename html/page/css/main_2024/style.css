@@ -697,7 +697,7 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 #renewMain .jobRecomend .swiper-slide-active .jobItem .txtWrap .jTit { font-size: 18px; } 
 #renewMain .jobRecomend .jobItem .txtWrap .jInfo { font-size: 14px; } 
 #renewMain .jobRecomend .swiper-slide { height: auto; } 
-#renewMain .jobRecomend .jobItem .jobBtn a { width: 100%; height: auto; padding: 10px 0; margin-bottom: 10px; font-size: 18px; line-height: initial; } 
+#renewMain .jobRecomend .jobItem .jobBtn a { width: 100%; height: auto; padding: 10px 0; margin-bottom: 10px; font-size: 14px; line-height: initial; } 
 
 
 /* employ infoWrap */
