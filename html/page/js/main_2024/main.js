@@ -101,14 +101,16 @@ function handleResize() {
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(() => {
         if (window.innerWidth > 860) {
-            const slides = document.querySelectorAll('#renewMain .mainBanner .swiper-slide');
+            const slides = document.querySelectorAll('#renewMain .mainBanner .swiper-slide');            
             slides.forEach((slide) => {
                 slide.style.width = '330px';
             });
             bannerSwiper.update();
+            // jobSlide();            
             itemSwiper();
         } else {
             itemSwiper();
+            // jobSlide();
         }
     }, RESIZE_DELAY);
 }
@@ -195,28 +197,40 @@ $(".jobSlide").each(function () {
     this.slidesQuantity = this.querySelectorAll(".swiper-slide").length;
 
     var jobSwiper = new Swiper('.jobSlide', {
-        slidesPerView: 1,
-        spaceBetween: 30,
+        slidesPerView: 1.2,
+        spaceBetween: 10,
+        centeredSlides: true,
         loop: true,
         autoplay: {
             delay: 5000,
-            disableOnInteraction: true // 쓸어 넘기거나 버튼 클릭 시 자동 슬라이드 정지.
+            disableOnInteraction: true,
         },
+        observer: true,
+        observeParents: true,
         on: {
             init: updSwiperNumericPagination,
-            slideChange: updSwiperNumericPagination
+            slideChange: updSwiperNumericPagination,
+            init: function () {
+                $('.jobSlide .swiper-slide').addClass('changed');
+            },
         },
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
         breakpoints: {
-            640: {
-                slidesPerView: 'auto',
+            1024: {
+                slidesPerView: 3.8,
+                centeredSlides: false,
+                spaceBetween: 30,
             },
+            640: {
+                slidesPerView: 1.5,
+                centeredSlides: true,
+                spaceBetween: 30,
+            }
         },
-    });
-
+    }); 
     $('.wrap-autoplay-control > .swiper-button-pause').click(function () {
         $(this).hide();
         jobSwiper.autoplay.stop();
@@ -230,8 +244,26 @@ $(".jobSlide").each(function () {
         $('.wrap-autoplay-control > .swiper-button-pause').show();
     });
 
+    var resizeCheck;
+    $(window).resize(function(){
+        if(resizeCheck){ 
+            clearTimeout(resizeCheck);               
+        };            
+        resizeCheck = setTimeout(function(){
+            const jobslides = document.querySelectorAll('#renewMain .jobRecomend .swiper-slide');
+            if (window.innerWidth < 1024) {
+                                    
+                jobslides.forEach((slide) => {
+                    slide.classList.remove('changed');
+                });
+            } else {
+                jobslides.forEach((slide) => {
+                    slide.classList.add('changed');
+                });                    
+            }               
+        },300);
+    });
 });
-
 
 
 

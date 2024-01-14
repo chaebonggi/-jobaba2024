@@ -39,7 +39,8 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
  .introWrap .introList > li > a p { height: auto; color: #8c8c8c; } 
  }
 
- @media screen and (max-width: 1024px) { body.intro #renewHeader .h_util { display: none; } 
+ @media screen and (max-width: 1024px) { 
+    body.intro #renewHeader .h_util { display: none; } 
  }
 
  @media screen and (max-width: 640px) { body.intro { background-image: url(../../images/main_2024/intro/intro_bg_top02.png), url(../../images/main_2024/intro/intro_bg_bottom02.png); background-color: #ffffff; background-position: top center, bottom center; background-size: contain; } 
@@ -363,11 +364,11 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 #renewMain .policyFind { background: #eff4f9; } 
 #renewMain .policyFind .innerSection { padding: 100px 10px; } 
 
-#renewMain .policyFind .radio { margin:10px 8px 10px 20px; font-size:14px; color:#999; } 
-#renewMain .policyFind .radio + .radio { margin-top:14px; } 
-#renewMain .policyFind .radio span { padding-left:24px; font-size:14px; color:#505050; font-weight: 400; } 
-#renewMain .policyFind .radio input[type="checkbox"]+span::before { content:""; width:16px; height:16px; background:#fdfdfd; border:1px solid #ddd; position:absolute; left:0; top:1px; border-radius:3px; } 
-#renewMain .policyFind .radio input[type="checkbox"]:checked + span::before { content:"\2714"; font-size:12px; line-height:16px; background:#38bab2; color:#fff; border-color:#38bab2; text-align:center; font-weight:400; } 
+#renewMain .policyFind .ckItem { margin:10px 8px 10px 20px; font-size:14px; color:#999;letter-spacing: -1px; line-height: 16px;} 
+#renewMain .policyFind .ckItem + .ckItem { margin-top:14px; } 
+#renewMain .policyFind .ckItem span { padding-left:24px; font-size:14px; color:#505050; font-weight: 400; } 
+#renewMain .policyFind .ckItem input[type="checkbox"] + span::before { content:""; width:16px; height:16px; background:#fdfdfd; border:1px solid #ddd; position:absolute; left:0; top:1px; border-radius:3px; } 
+#renewMain .policyFind .ckItem input[type="checkbox"]:checked + span::before { content:"\2714"; font-size:12px; line-height:16px; background:#38bab2; color:#fff; border-color:#38bab2; text-align:center; font-weight:400; } 
 #renewMain .policyFind .cateWrap { display:flex; border:1px solid #e7e7e7; flex-wrap:wrap; overflow:hidden; } 
 #renewMain .policyFind .cateWrap > div { flex: 1; background: #fff; } 
 #renewMain .policyFind .cateWrap .tit { background-color:#f6f6f6; color:#000; font-size:15px; padding:12px 0 12px 22px; text-align:left; font-weight:500; } 
@@ -453,8 +454,7 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 #renewMain .jobRecomend .swiper-counter .count { color: #000; position: absolute; left: 34px; top: 50%; transform: translateY(-50%) } 
 #renewMain .jobRecomend .total { position: absolute; left: 56px; top: 50%; transform: translateY(-50%) } 
 
-
-#renewMain .jobRecomend .swiper-slide-active { width: 600px !important; } 
+#renewMain .jobRecomend .changed.swiper-slide-active { width: 600px !important; } 
 #renewMain .jobRecomend .swiper-slide-active .jobItem { height: 100%; padding: 30px 30px 10px; background-color: #47ada7; background-image: none !important; border-radius: 20px; box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05); } 
 #renewMain .jobRecomend .swiper-slide { width: 320px; height: 350px; border-radius: 20px; } 
 #renewMain .jobRecomend .swiper-slide-active .jobItem .jLogo,
@@ -464,7 +464,7 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 #renewMain .jobRecomend .jobItem .jLogo { display: none; margin-bottom: 20px; } 
 #renewMain .jobRecomend .jobItem .jLogo p { display: inline-block; padding: 10px; background: #f7f7f7; font-size: 20px; border-radius: 6px; } 
 #renewMain .jobRecomend .jobItem .jLogo img { height: 100%; } 
-#renewMain .jobRecomend .jobItem { padding: 60px 30px 0; height: 100%; background-repeat: no-repeat; background-position: center; background-size: cover; } 
+#renewMain .jobRecomend .jobItem { padding: 60px 30px 0; height: 100%; background-repeat: no-repeat; background-position: center; background-size: cover; border-radius: 20px;} 
 #renewMain .jobRecomend .jobItem.bg01 { background-image: url(../../images/main_2024/main/recomend_bg_01.png); } 
 #renewMain .jobRecomend .jobItem.bg02 { background-image: url(../../images/main_2024/main/recomend_bg_02.png); } 
 #renewMain .jobRecomend .jobItem.bg03 { background-image: url(../../images/main_2024/main/recomend_bg_03.png); } 
@@ -523,14 +523,17 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 
 
 
-@media screen and (max-width: 1300px) { /* policy main banner */
+@media screen and (max-width: 1300px) { 
+    
+/* policy main banner */
  #renewMain .mainBanner .swiper-container { max-width: 100%; padding: 0 0 60px 0; } 
  }
-@media screen and (max-width: 1024px) { /* main visual */
+@media screen and (max-width: 1024px) { 
+    
+/* main visual */
  #renewMain .mainVisual .visualCont { background-image: url(../../images/main_2024/main/visual_bg01.png); background-position: top right; } 
  #renewMain .mainVisual .visualCont.st2 { background-image: url(../../images/main_2024/main/visual_bg01.png); background-position: top right; } 
  #renewMain .mainVisual .visualCont { padding: 25px 20px 20px; } 
-
  /* main policy */
  #renewMain .mainPolicy .policyImg { height: auto; } 
  
@@ -543,7 +546,8 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
  #renewMain .jobRecomend .titWrap { display: flex;}
  #renewMain .jobRecomend .jobWrap { position: static; } 
  #renewMain .jobRecomend .titWrap ul { margin-left: auto; } 
- #renewMain .jobRecomend .swiperBottom { left: 50%; transform: translateX(-50%); } 
+ #renewMain .jobRecomend .swiperBottom { left: 50%; transform: translateX(-50%); }
+
 }
 @media screen and (max-width: 860px) { /* header */
  #renewHeader .nheader_mid { overflow: hidden; } 
@@ -688,7 +692,6 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 #renewMain .jobRecomend .titWrap ul li { width: 120px; height: 30px; } 
 #renewMain .jobRecomend .titWrap ul li a { padding: 10px 10px; font-size: 12px; } 
 #renewMain .jobRecomend .titWrap ul li + li { margin-top: 4px; } 
-#renewMain .jobRecomend .swiper-slide-active { width: 100% !important; } 
 #renewMain .jobRecomend .swiper-slide-active .jobItem { padding: 20px 20px 10px; } 
 #renewMain .jobRecomend .jobItem .jLogo p { font-size: 12px; } 
 #renewMain .jobRecomend .swiper-slide-active .jobItem .txtWrap .jTit { font-size: 18px; } 
