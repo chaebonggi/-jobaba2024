@@ -357,7 +357,7 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 #renewMain .mainPolicy .badgeWrap { display: flex; justify-content: space-between; position: absolute; top: 10px; left: 0; right: 0; padding: 0 10px; } 
 #renewMain .mainPolicy .badgeWrap .badge { padding: 0 0 1px; width: 55px; font-size: 12px; border-radius: 15px; text-align: center; } 
 #renewMain .mainPolicy .policyTxt { padding: 18px 20px; } 
-#renewMain .mainPolicy .policyTxt .tit { height: 48px; min-height: 48px; color: #000; font-size: 16px; text-overflow: ellipsis; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; word-break: break-all; letter-spacing: -0.5px; } 
+#renewMain .mainPolicy .policyTxt .tit { height: 48px; min-height: 48px; color: #000; font-size: 16px; font-weight: 500; text-overflow: ellipsis; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; word-break: break-all; letter-spacing: -0.5px; } 
 #renewMain .mainPolicy .policyTxt .date { margin-top: 8px; color: #777777; font-size: 16px; font-weight: 300; text-overflow: ellipsis; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; word-break: break-all; letter-spacing: -0.5px; } 
 
 /* policy find */
