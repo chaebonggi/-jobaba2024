@@ -77,11 +77,11 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 
  /* header */
 #renewHeader .nheader_top { background: #2aa6c1; } 
-#renewHeader .h_util { display: flex; align-items: center; justify-content: space-between; height: 90px; } 
+#renewHeader .h_util { display: flex; align-items: center; justify-content: space-between; height: 70px; } 
 #renewHeader .h_util ul { display: flex; } 
 #renewHeader .h_util ul li + li { margin-left: 16px; } 
 #renewHeader .h_util ul li a:hover { background: #fff; color: #2aa6c1; border-radius: 10px; } 
-#renewHeader .h_util ul li a { display: block; padding: 10px 14px; color: #fff; font-size: 20px; font-weight: 500; line-height: 1; } 
+#renewHeader .h_util ul li a { display: block; padding: 10px 14px; color: #fff; font-size: 18px; font-weight: 500; line-height: 1; } 
 #renewHeader .h_cont { display: flex; align-items: center; justify-content: space-between; height: 70px; margin-top: 25px; } 
 #renewHeader .h_cont .logo { height: 70px; flex-shrink: 0; margin-bottom: 6px; } 
 #renewHeader .h_cont .logo a { display: block; max-width: 100%; height: 100%; } 
