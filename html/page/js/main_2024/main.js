@@ -33,6 +33,16 @@ $(this).toggleClass('active');
     });
 });
 
+// channel talk
+(function(){var w=window;if(w.ChannelIO){return w.console.error("ChannelIO script included twice.");}var ch=function(){ch.c(arguments);};ch.q=[];ch.c=function(args){ch.q.push(args);};w.ChannelIO=ch;function l(){if(w.ChannelIOInitialized){return;}w.ChannelIOInitialized=true;var s=document.createElement("script");s.type="text/javascript";s.async=true;s.src="https://cdn.channel.io/plugin/ch-plugin-web.js";var x=document.getElementsByTagName("script")[0];if(x.parentNode){x.parentNode.insertBefore(s,x);}}if(document.readyState==="complete"){l();}else{w.addEventListener("DOMContentLoaded",l);w.addEventListener("load",l);}})();
+    
+ChannelIO('boot', {
+   "pluginKey": "92271334-7ce9-457f-92a1-988a347ab637",
+   "customLauncherSelector": ".channelTalk",
+   "hideChannelButtonOnBoot": true
+});
+
+
 function handleTabClick($btn, $items, tabAttr) {
     $btn.click(function() {
     var tab = $(this).attr(tabAttr);
@@ -45,7 +55,7 @@ function handleTabClick($btn, $items, tabAttr) {
 handleTabClick($('.infoWrap .infoBtn li'), $('.infoWrap .infoTab'), 'data-tab');
 handleTabClick($('.mainPolicy .policyBtn li'), $('.mainPolicy .policyCont'), 'data-tab');
 
-// mainBanner
+//policy mainBanner
 var bannerSwiper = new Swiper(".m_slider", {
     slidesPerView: 1.5,
     spaceBetween: 10,
@@ -105,19 +115,17 @@ function handleResize() {
             slides.forEach((slide) => {
                 slide.style.width = '330px';
             });
-            bannerSwiper.update();
-            // jobSlide();            
+            bannerSwiper.update();           
             itemSwiper();
         } else {
             itemSwiper();
-            // jobSlide();
         }
     }, RESIZE_DELAY);
 }
 
 window.addEventListener('resize', handleResize);
 
-// main menu btn
+// policy main menu btn
 var menuSwiper = undefined;
 function itemSwiper() {
     if (window.innerWidth  < 641 && menuSwiper == undefined) {
@@ -133,8 +141,7 @@ function itemSwiper() {
 }
 itemSwiper();
 
-
-// main policy
+// policy main
 var $slider = $('.policyCont');
 $slider.find('.policySlide').each(function(i){
     var $this = $(this);
@@ -188,7 +195,6 @@ recomendSwiper = new Swiper('.recomendSlide', {
 });
 
 // policy jobRecomend
-
 function updSwiperNumericPagination() {
     this.el.querySelector(".swiper-counter").innerHTML = '<span class="count">0' + (this.realIndex + 1) + '</span><span class="total">/ 0' + this.el.slidesQuantity + "</span>";
 }
@@ -263,15 +269,4 @@ $(".jobSlide").each(function () {
             }               
         },300);
     });
-});
-
-
-
-// channel talk
-(function(){var w=window;if(w.ChannelIO){return w.console.error("ChannelIO script included twice.");}var ch=function(){ch.c(arguments);};ch.q=[];ch.c=function(args){ch.q.push(args);};w.ChannelIO=ch;function l(){if(w.ChannelIOInitialized){return;}w.ChannelIOInitialized=true;var s=document.createElement("script");s.type="text/javascript";s.async=true;s.src="https://cdn.channel.io/plugin/ch-plugin-web.js";var x=document.getElementsByTagName("script")[0];if(x.parentNode){x.parentNode.insertBefore(s,x);}}if(document.readyState==="complete"){l();}else{w.addEventListener("DOMContentLoaded",l);w.addEventListener("load",l);}})();
-    
-ChannelIO('boot', {
-   "pluginKey": "92271334-7ce9-457f-92a1-988a347ab637",
-   "customLauncherSelector": ".channelTalk",
-   "hideChannelButtonOnBoot": true
 });
