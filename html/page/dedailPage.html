@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>일자리플랫폼 잡아바!</title>
+
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/import.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/mobile.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/fullcalendar.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/js/css/jquery_ui.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/bxslider/slick.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/swiper.min.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/adminDetail.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/layout.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/style.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/kgoon.reset.min.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/mobile.css">
+    <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.css" />
+    <link type="text/css" rel="stylesheet" href="../etc/css/fonts.css">
+	<!-- 추가 css -->
+    <link rel="stylesheet" href="./css/main_2024/style.css">
+    
+</head>
+
+<body>
+    <header id="renewHeader">
+        <div class="nheader_top">
+            <div class="innerSection">
+                <div class="h_util">
+                    <ul>
+                        <li>
+                            <a href="#" target="_blank" title="정책정보 페이지 이동">
+                                <span>정책정보</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" title="채용정보 페이지 이동">
+                                <span>채용정보</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" title="잡아바 러닝센터 페이지 이동">
+                                <span>잡아바 러닝센터</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" title="일자리 사업신청 페이지 이동">
+                                <span>일자리 사업신청</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#" title="로그인 페이지 이동">
+                                <span>로그인</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="회원가입 페이지 이동">
+                                <span>회원가입</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="고객센터 페이지 이동">
+                                <span>고객센터</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="nheader_mid">
+            <div class="innerSection">
+                <div class="h_cont">
+                    <h1 class="logo">
+                        <a href="/main/main.do">
+                            <img src="./images/main_2024/main/logo_01.png" alt="잡아바 로고">
+                        </a>
+                    </h1>
+                    <ul class="h_gnb">
+                        <li>
+                            <a href="<spring:message code='DEFAULT.URI' />/sprtPlcy/info/list2020.do"><span>일자리지원사업</span></a>
+                            <ul class="depth_02">
+                                <li><a href="<spring:message code='DEFAULT.URI' />/sprtPlcy/info/list2020.do"><span class="menu_txt">일자리지원사업</span></a></li>
+                                <li><a href="<spring:message code='DEFAULT.URI' />/entCntnts/sprtPlcy/list2020.do"><span class="menu_txt">기업지원정책</span></a></li>
+                                <li><a href="<spring:message code='DEFAULT.URI' />/edutrn/list2020.do"><span class="menu_txt">취업교육</span></a></li>
+                                <li><a href="<spring:message code='DEFAULT.URI' />/evtIfo/list2020.do"><span class="menu_txt">대외활동</span></a></li>
+                                <li><a href="<spring:message code='DEFAULT.URI' />/usrReg/cmmn/intro.do"><span class="menu_txt">정책등록</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="<spring:message code='DEFAULT.URI' />/jobDiagnose/diagnoseView.do"><span>기업지원정책</span></a>
+                            <ul class="depth_02">
+                                <li><a href="http://jobabadev.jobaba.net/auland/mainList.do"><span class="menu_txt">취업진로진단</span></a></li>
+                                <li><a href="http://jobabadev.jobaba.net/psychology/mainList.do"><span class="menu_txt">진로 취업상담</span></a></li>
+                                <li><a href="http://jobabadev.jobaba.net/introduction/mainList.do"><span class="menu_txt">자기소개서 첨삭</span></a></li>
+                                <li><a href="http://jobabadev.jobaba.net/interview/mainList.do"><span class="menu_txt">AI역량검사</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://youthedu.jobaba.net" target="_blank"><span>취업교육</span></a>
+                            <ul class="depth_02">
+                                <li><a href="<spring:message code='DEFAULT.URI' />/youthedu/apply/intro.do"><span class="menu_txt">알아보기</span></a></li>
+                                <li><a href="<spring:message code='DEFAULT.URI' />/thema/vocEduList.do"><span class="menu_txt">동영상 교육</span></a></li>
+                                <li><a href="<spring:message code='DEFAULT.URI' />/youthedu/apply/form.do"><span class="menu_txt">연계신청</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="<spring:message code='DEFAULT.URI' />/empmn/enterpriseEmployListNew.do"><span>대외활동</span></a>
+                            <ul class="depth_02">
+                                <li><a href="<spring:message code='DEFAULT.URI' />/empmn/enterpriseEmployListNew.do"><span class="menu_txt">기업채용정보</span></a></li>
+                                <li><a href="<spring:message code='DEFAULT.URI' />/empmn/recruitListJob.do"><span class="menu_txt">일경험 채용관</span></a></li>
+                                <li><a href="<spring:message code='DEFAULT.URI' />/pblcEmpmn/list.do"><span class="menu_txt">공공일자리</span></a></li>
+                                <li><a href="<spring:message code='DEFAULT.URI' />/empmn/desEntNew.do"><span class="menu_txt">탐나는 기업관</span></a></li>
+                                <li><a href="<spring:message code='DEFAULT.URI' />/cntn/covJobInfoCntr.do"><span class="menu_txt">탐나는 일자리 정보관</span></a></li>
+                                <li><a href="<spring:message code='DEFAULT.URI' />/entCntnts/exhb/exhbListNew.do"><span class="menu_txt">온&middot;오프 채용박람회</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="<spring:message code='DEFAULT.URI' />/thema/list.do"><span>참여소통</span></a>
+                            <ul class="depth_02">
+                                <li><a href="<spring:message code='DEFAULT.URI' />/hpdsk/ntc/list.do"><span class="menu_txt">공지사항</span></a></li>
+                                <li><a href="<spring:message code='DEFAULT.URI' />/event/list.do"><span class="menu_txt">이벤트</span></a></li>
+                                <li><a href="<spring:message code='DEFAULT.URI' />/hpdsk/qna/list.do"><span class="menu_txt">Q&A</span></a></li>
+                                <li><a href="<spring:message code='DEFAULT.URI' />/thema/list.do"><span class="menu_txt">잡학사전</span></a></li>
+                                <li><a href="<spring:message code='DEFAULT.URI' />/thema/themeInfo.do"><span class="menu_txt">정책활용 꿀팁</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="h_ui">
+                        <div class="h_menu" onclick="allMenu();">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="h_search">
+                            <button><img src="./images/main_2024/main/icon_search.png" alt="검색"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nheader_bottom">
+            <div class="h_gnb_bg">
+                <div class="h_gnb_menu">
+                    <div class="gnb_item menu">
+                        <div class="depth_01 double">
+                            <span class="etc_txt">혜택이 필요하면</span>
+                            <a href="#" class="depth_tit"><span class="menu_tit">정책정보</span></a>
+                            <ul class="depth_02">
+                                <li><a href="<spring:message code='DEFAULT.URI' />/sprtPlcy/info/list2020.do"><span class="menu_txt">일자리지원사업</span></a></li>
+                                <li><a href="<spring:message code='DEFAULT.URI' />/entCntnts/sprtPlcy/list2020.do"><span class="menu_txt">기업지원정책</span></a></li>
+                                <li><a href="<spring:message code='DEFAULT.URI' />/edutrn/list2020.do"><span class="menu_txt">취업교육</span></a></li>
+                                <li><a href="<spring:message code='DEFAULT.URI' />/evtIfo/list2020.do"><span class="menu_txt">대외활동</span></a></li>
+                                <li><a href="<spring:message code='DEFAULT.URI' />/usrReg/cmmn/intro.do"><span class="menu_txt">정책등록</span></a></li>
+                            </ul>
+                            <a href="https://apply.jobaba.net/" target="_blank" class="extra">
+                                <p><span>정책신청은</span>잡아바 어플라이 바로가기</p>
+                            </a>
+                        </div>
+                        <div class="depth_01">
+                            <a href="#" class="depth_tit"><span class="menu_tit">취업준비</span></a>
+                            <ul class="depth_02">
+                                <li><a href="http://jobabadev.jobaba.net/auland/mainList.do"><span class="menu_txt">취업진로진단</span></a></li>
+                                <li><a href="http://jobabadev.jobaba.net/psychology/mainList.do"><span class="menu_txt">진로 취업상담</span></a></li>
+                                <li><a href="http://jobabadev.jobaba.net/introduction/mainList.do"><span class="menu_txt">자기소개서 첨삭</span></a></li>
+                                <li><a href="http://jobabadev.jobaba.net/interview/mainList.do"><span class="menu_txt">AI역량검사</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="depth_01">
+                            <a href="#" class="depth_tit"><span class="menu_tit">러닝센터</span></a>
+                            <ul class="depth_02">
+                                <li><a href="<spring:message code='DEFAULT.URI' />/youthedu/apply/intro.do"><span class="menu_txt">알아보기</span></a></li>
+                                <li><a href="<spring:message code='DEFAULT.URI' />/thema/vocEduList.do"><span class="menu_txt">동영상 교육</span></a></li>
+                                <li><a href="<spring:message code='DEFAULT.URI' />/youthedu/apply/form.do"><span class="menu_txt">연계신청</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="depth_01 double">
+                            <span class="etc_txt">공고를 찾는다면</span>
+                            <a href="#" class="depth_tit"><span class="menu_tit">채용정보</span></a>
+                            <ul class="depth_02">
+                                <li><a href="<spring:message code='DEFAULT.URI' />/empmn/enterpriseEmployListNew.do"><span class="menu_txt">기업채용정보</span></a></li>
+                                <li><a href="<spring:message code='DEFAULT.URI' />/empmn/recruitListJob.do"><span class="menu_txt">일경험 채용관</span></a></li>
+                                <li><a href="<spring:message code='DEFAULT.URI' />/pblcEmpmn/list.do"><span class="menu_txt">공공일자리</span></a></li>
+                                <li><a href="<spring:message code='DEFAULT.URI' />/empmn/desEntNew.do"><span class="menu_txt">탐나는 기업관</span></a></li>
+                                <li><a href="<spring:message code='DEFAULT.URI' />/cntn/covJobInfoCntr.do"><span class="menu_txt">탐나는 일자리정보관</span></a></li>
+                            </ul>
+                            <a href="<spring:message code='DEFAULT.URI' />/entCntnts/exhb/exhbListNew.do" class="extra">
+                                <p><span>경기도민을 위한 일자리 기회 제공</span>온ㆍ오프라인 채용박람회</p>
+                            </a>
+                        </div>
+                        <div class="depth_01">
+                            <a href="#" class="depth_tit"><span class="menu_tit">참여소통</span></a>
+                            <ul class="depth_02">
+                                <li><a href="<spring:message code='DEFAULT.URI' />/hpdsk/ntc/list.do"><span class="menu_txt">공지사항</span></a></li>
+                                <li><a href="<spring:message code='DEFAULT.URI' />/event/list.do"><span class="menu_txt">이벤트</span></a></li>
+                                <li><a href="<spring:message code='DEFAULT.URI' />/hpdsk/qna/list.do"><span class="menu_txt">Q&A</span></a></li>
+                                <li><a href="<spring:message code='DEFAULT.URI' />/thema/list.do"><span class="menu_txt">잡학사전</span></a></li>
+                                <li><a href="<spring:message code='DEFAULT.URI' />/thema/themeInfo.do"><span class="menu_txt">정책활용 꿀팁</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="gnb_item links">
+                        <span class="etc_txt">잡아바가 처음이라면</span>
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0);" class="channelTalk">
+                                    <span class="links_icon"><img src="./images/main_2024/main/gnb_icon01.png" alt="잡아바 상담톡"></span>
+                                    <span class="links_tit">잡아바 상담톡</span>
+                                    <span class="links_txt">빠르고 정확한 진로 및 취업상담</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://jobabadev.jobaba.net/cntn/covJobInfoCntr.do">
+                                    <span class="links_icon"><img src="./images/main_2024/main/gnb_icon02.png" alt="좋은 일자리 정보관"></span>
+                                    <span class="links_tit">좋은 일자리 정보관</span>
+                                    <span class="links_txt">경기도 내 모든 추천 일자리</span>
+                                </a>
+                            </li>                            
+                            <li>
+                                <a href="javascript:void(0);" class="resume">
+                                    <span class="links_icon"><img src="./images/main_2024/main/gnb_icon03.png" alt="구직등록"></span>
+                                    <span class="links_tit">구직등록</span>
+                                    <span class="links_txt">내게 딱 맞는 일자리 찾기</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="entMbr">
+                                    <span class="links_icon"><img src="./images/main_2024/main/gnb_icon04.png" alt="채용공고 등록"></span>
+                                    <span class="links_tit">채용공고 등록</span>
+                                    <span class="links_txt">우리회사 맞춤인재 채용</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="h_mobile">
+            <div class="h_mobile_top">
+                <div class="h_mobile_btn">
+                    <h1 class="logo"><a href="/main/main.do"><img src="./images/main_2024/main/logo_01.png" alt="잡아바 로고"></a></h1>
+                    <div class="h_mobile_close">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="h_mobile_login">
+                    <a href="#" target="_blank" class="btn01 loginBtn">로그인</a>
+                    <a href="#" target="_blank" class="btn01 joinBtn">회원가입</a>
+                </div>
+                <!-- 로그인 후
+                <div class="h_mobile_login login">
+                    <p class="logName"><strong>홍길동님</strong>, 반갑습니다</p>
+                    <a href="" class="myBtn">마이페이지</a>
+                    <a href="" class="logoutBtn">로그아웃</a>
+                </div>
+                 -->
+                <ul class="h_mobile_info">
+                    <li>
+                        <a href="#" target="_blank" class="mobile_icon01">
+                            잡아바<br> 어플라이
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" class="mobile_icon02">
+                            청년지원사업<br> 청년몰
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" class="mobile_icon03">
+                            잡아바<br> 러닝센터
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="h_mobile_mid">
+                <ul class="mobile_menu">
+                    <li>
+                        <a href="<spring:message code='DEFAULT.URI' />/sprtPlcy/info/list2020.do">정책정보</a>
+                        <ul class="mobileGnb">
+                            <li>
+                                <li><a href="<spring:message code='DEFAULT.URI' />/sprtPlcy/info/list2020.do">일자리 지원사업</a></li>
+                                <li><a href="<spring:message code='DEFAULT.URI' />/entCntnts/sprtPlcy/list2020.do">기업지원정책</a></li>
+                                <li><a href="<spring:message code='DEFAULT.URI' />/edutrn/list2020.do">취업교육</a></li>
+                                <li><a href="<spring:message code='DEFAULT.URI' />/evtIfo/list2020.do">대외활동</a></li>
+                                <li><a href="<spring:message code='DEFAULT.URI' />/usrReg/cmmn/intro.do">정책등록</a></li>
+                            </li>
+                            <li>
+                                <ul class="mobileSub">
+                                    <li><a href="https://apply.jobaba.net" target="_blank"><span>정책신청은</span>잡아바 어플라이 바로가기</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="<spring:message code='DEFAULT.URI' />/auland/mainList.do">취업준비</a>
+                        <ul class="mobileGnb">
+                            <li>
+                                <a href="<spring:message code='DEFAULT.URI' />/auland/mainList.do">취업진로진단</a>
+                            </li>
+                            <li>
+                                <a href="<spring:message code='DEFAULT.URI' />/psychology/mainList.do">진로 취업상담</a>
+                            </li>
+                            <li>
+                                <a href="<spring:message code='DEFAULT.URI' />/introduction/mainList.do">자기소개서 첨삭</a>
+                            </li>
+                            <li>
+                                <a href="<spring:message code='DEFAULT.URI' />/interview/mainList.do">AI역량검사</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://youthedu.jobaba.net/main/index.jsp" target="_blank">러닝센터</a>
+                        <ul class="mobileGnb">
+                            <li>
+                                <a href="<spring:message code='DEFAULT.URI' />/youthedu/apply/intro.do">알아보기</a>
+                            </li>
+                            <li>
+                                <a href="<spring:message code='DEFAULT.URI' />/thema/vocEduList.do">동영상교육</a>
+                            </li>
+                            <li>
+                                <a href="<spring:message code='DEFAULT.URI' />/youthedu/apply/form.do">연계신청</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="<spring:message code='DEFAULT.URI' />/empmn/enterpriseEmployListNew.do">채용정보</a>
+                        <ul class="mobileGnb">
+                            <li><a href="<spring:message code='DEFAULT.URI' />/empmn/enterpriseEmployListNew.do">기업채용정보</a></li>
+                            <li><a href="<spring:message code='DEFAULT.URI' />/empmn/recruitListJob.do">일경험 채용관</a></li>
+                            <li><a href="<spring:message code='DEFAULT.URI' />/pblcEmpmn/list.do">공공일자리</a></li>
+                            <li><a href="<spring:message code='DEFAULT.URI' />/empmn/desEntNew.do">탐나는 기업관</a></li>
+                            <li><a href="<spring:message code='DEFAULT.URI' />/cntn/covJobInfoCntr.do">좋은 일자리 정보관</a></li>
+                            <li>
+                                <ul class="mobileSub">
+                                    <li><a href="<spring:message code='DEFAULT.URI' />/entCntnts/exhb/exhbListNew.do"><span>경기도민을 위한 일자리 기회 제공</span>온ㆍ오프라인 채용박람회</a></li>
+                                </ul>
+                            </li>                            
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="<spring:message code='DEFAULT.URI' />/hpdsk/ntc/list.do">참여소통</a>
+                        <ul class="mobileGnb">
+                            <li>
+                                <a href="<spring:message code='DEFAULT.URI' />/hpdsk/ntc/list.do">공지사항</a>
+                            </li>
+                            <li>
+                                <a href="<spring:message code='DEFAULT.URI' />/event/list.do">이벤트</a>
+                            </li>
+                            <li>
+                                <a href="<spring:message code='DEFAULT.URI' />/hpdsk/qna/list.do">Q&A</a>
+                            </li>
+                            <li>
+                                <a href="<spring:message code='DEFAULT.URI' />/thema/list.do">잡학사전</a>
+                            </li>
+                            <li>
+                                <a href="<spring:message code='DEFAULT.URI' />/thema/themeInfo.do">정책활용 꿀팁</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="h_mobile_bottom">
+                <div class="h_mobile_family">
+                    <strong>패밀리 사이트 바로가기</strong>
+                    <ul>
+                        <li>
+                            <a href="#" target="_blank">
+                                <img src="./images/main_2024/main/mobile_logo01.png" alt="경기도일자리재단">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <img src="./images/main_2024/main/mobile_logo02.png" alt="꿈마루">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <img src="./images/main_2024/main/mobile_logo03.png" alt="꿈날개">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <img src="./images/main_2024/main/mobile_logo04.png" alt="잡아바러닝센터">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="h_mobile_sns">
+                    <li>
+                        <a href="#" title="잡아바 블로그 이동" class="blog">잡아바 블로그</a>
+                    </li>
+                    <li>
+                        <a href="#" title="잡아바 페이스북 이동" class="face">잡아바 페이스북</a>
+                    </li>
+                    <li>
+                        <a href="#" title="잡아바 인스타그램 이동" class="insta">잡아바 인스타그램</a>
+                    </li>
+                    <li>
+                        <a href="#" title="잡아바 유튜브 이동" class="youtu">잡아바 유튜브</a>
+                    </li>
+                    <li>
+                        <a href="#" title="잡아바 앱스토어 이동" class="app">잡아바 앱스토어</a>
+                    </li>
+                    <li>
+                        <a href="#" title="잡아바 플레이스토어 이동" class="play">잡아바 플레이스토어</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="contents-wrap detail">
+        <div class="containerNew clearfix">
+            <div class="m_sub_header">
+                <ul>
+                    <li><span class="m_btn prev" onclick="window.close();"></span></li>
+                    <li><span id="alarmBtnM" class="m_btn alarm " onclick="alarmPopupM();"></span></li>
+                    <li><span id="goodBtnM" class="m_btn good " onclick="heartOnOffChgM();"></span></li>
+                </ul>
+            </div>
+    
+            <div class="view-wrap">
+                <div class="tit_area">
+                    <p class="tit">지원정책 &gt; 취업지원</p>
+                    <div class="sns_area">
+                        <ul>
+                            <li class="visit">조회 <span class="num">0</span></li>
+
+                            <li>
+                                <a href="javascript:void(0);" onclick="snsShare('kakao');" title="카카오 공유 이동">
+                                    <img src="https://www.jobaba.net/resource/images/icon_kakao2.gif" alt="카카오 아이콘">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" onclick="snsShare('facebook');" title="페이스북 공유 이동">
+                                    <img src="https://www.jobaba.net/resource/images/ico_facebook2.gif" alt="페이스북 아이콘">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" onclick="onPhoneSmsPopup();" title="내 폰에서 보기">
+                                    <img src="https://www.jobaba.net/resource/images/ico_phone2.gif" alt="내 폰에서 보기 아이콘">
+                                </a>
+                            </li>
+                            <li>
+                                <a id="copyUrl" href="javascript:void(0);" title="주소 복사" data-clipboard-action="copy" data-clipboard-text="https://www.jobaba.net/sprtPlcy/info/view2020.do?seq=12049">
+                                    <img src="https://www.jobaba.net/resource/images/ico_url2.gif" alt="주소 복사 아이콘">
+                                </a>                
+                            </li>    
+                        </ul>
+                    </div>
+                </div>
+                <div class="list_t_area">
+                    <div class="tit_area">
+                        <p class="tit">[평택시] 2024년 평택시 장학관 입사생 모집</p>
+                        <p class="label_area">
+                            
+                                <span class="label new">NEW</span>                       
+                        <span class="label d-Day">D - 4일</span> </p>
+                    </div>
+    
+                    <div class="btn_area">
+                        <ul class="ico_area">
+                            <li id="heartOn" style="display:none;"><a href="javascript:void(0);"><img src="https://www.jobaba.net/resource/images/main/heart_ico_on.png" alt="좋아요" onclick="heartOnOffChg('ON');"></a></li>
+                            <li id="heartOff" style=""><a href="javascript:void(0);"><img src="https://www.jobaba.net/resource/images/main/heart_ico_off.png" alt="좋아요" onclick="heartOnOffChg('OFF');"></a></li>
+    
+                            <li id="alarmOn" style="display:none;"><a href="javascript:void(0);"><img src="https://www.jobaba.net/resource/images/main/alarm_ico_on.png" alt="알림신청" onclick="alarmPopup('ON');"></a></li>
+                            <li id="alarmOff" style=""><a href="javascript:void(0);"><img src="https://www.jobaba.net/resource/images/main/alarm_ico_off.png" alt="알림신청" onclick="alarmPopup('OFF');"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pc_hide m_num">조회 <span class="num">0</span></div>
+                <div class="notice-wrap">
+                    <div class="img_area">
+                        <div class="img imgLiquid imgLiquid_bgSize imgLiquid_ready" style="filter: grayscale(100%); background-image: url(&quot;https://www.jobaba.net/file/image.do?filePath=QYaKjlJA9m3tIQRYnBMx4Q+ogZhlq5tvbqDT+d4nveXs4UgartYi3nXiYcyX+uWMVxlEjsQu+4cnMGc8K4f50Q==&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+                            <img src="https://www.jobaba.net/file/image.do?filePath=QYaKjlJA9m3tIQRYnBMx4Q+ogZhlq5tvbqDT+d4nveXs4UgartYi3nXiYcyX+uWMVxlEjsQu+4cnMGc8K4f50Q==" alt="지원정책 메인 이미지" style="display: none;">
+                        </div>
+                    </div>
+                    <div class="txt_area">
+                        <ul>
+                            <li><p class="s_tit">모집일정</p>
+                                <p class="note">
+                                    <span class="bold">
+                                        2024-01-15(월) ~  2024-01-19(금) 까지 남은시간 <span id="timeDiff" class="p_color"></span> :
+                                                      <span id="timeDiff2" class="p_color">4일 4:12:22</span>
+                                    </span>
+                                </p>
+                            </li>
+                            <li><p class="s_tit">지원대상</p>
+                                <p class="note">
+                                    서울특별시&nbsp;소재&nbsp;2년제&nbsp;이상의&nbsp;대학에&nbsp;입학&nbsp;예정이거나&nbsp;재학&nbsp;중인&nbsp;학생으로&nbsp;선발&nbsp;공고일&nbsp;현재&nbsp;본인&nbsp;또는&nbsp;보호자가&nbsp;<br>평택시에&nbsp;1년&nbsp;이상&nbsp;계속하여&nbsp;주민등록이&nbsp;되어&nbsp;있는&nbsp;사람&nbsp;(대학원생&nbsp;제외)
+                                </p>
+                            </li>
+                            <li><p class="s_tit">이용방법</p>
+                                <p class="note">
+                                    온라인&nbsp;접수
+                                </p>
+                            </li>
+                            <form id="srchTagFrm" name="srchTagFrm" method="post" target="_blank" action="/search/search.do">
+                            <input type="hidden" id="srchTxtId" name="srchTxt" value="">
+                            <li><p class="s_tit">관련태그</p>
+                                <p class="note">
+                                    <span class="label tag-label" style="cursor:pointer;" onclick="fnOnTag('평택시장학관');">#평택시장학관</span>                                
+                                    <span class="label tag-label" style="cursor:pointer;" onclick="fnOnTag('장학관');">#장학관</span>                                
+                                    <span class="label tag-label" style="cursor:pointer;" onclick="fnOnTag('입사생');">#입사생</span>                                
+                                    <span class="label tag-label" style="cursor:pointer;" onclick="fnOnTag('대학생');">#대학생</span>                                
+                                    <span class="label tag-label" style="cursor:pointer;" onclick="fnOnTag('기숙사');">#기숙사</span>                                
+                                    <span class="label tag-label" style="cursor:pointer;" onclick="fnOnTag('대학생기숙사');">#대학생기숙사</span>                                
+                                    <span class="label tag-label" style="cursor:pointer;" onclick="fnOnTag('주거지원');">#주거지원</span>                                               
+                                </p>
+                            </li>
+                            </form>
+                        </ul>
+                    </div>
+                </div>
+                <div class="btn-wrap">                     
+                    <a class="homepage_go_btn" href="javascript:void(0);" onclick="fn_mberActLog('12049' , 'https://www.pyeongtaek.go.kr/ptjhk/dormitoryApply/apply.do?mId=0202000000')">홈페이지 바로가기</a>     
+                </div>
+                <div class="tab">
+                    <ul>
+                        <li class="on"><a href="#detailContent">상세정보</a></li>
+                        <li><a href="#detailLocation">기관위치/연락처</a></li>
+                    </ul>
+                </div>
+                <div class="con-wrap">
+                    <h1 style="top: -210px;position: relative;" id="detailContent"></h1>
+                    <div class="sub_note">    
+                        <div class="note">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th>지원기간</th>
+                                        <td> 
+                                            2024-01-15(월)부터 <br>
+                                            2024-01-19(금) 까지   
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>지원대상</th>
+                                        <td>서울특별시&nbsp;소재&nbsp;2년제&nbsp;이상의&nbsp;대학에&nbsp;입학&nbsp;예정이거나&nbsp;재학&nbsp;중인&nbsp;학생으로&nbsp;선발&nbsp;공고일&nbsp;현재&nbsp;본인&nbsp;또는&nbsp;보호자가&nbsp;<br>평택시에&nbsp;1년&nbsp;이상&nbsp;계속하여&nbsp;주민등록이&nbsp;되어&nbsp;있는&nbsp;사람&nbsp;(대학원생&nbsp;제외)</td>
+                                    </tr>
+                                </tbody>
+                            </table>    
+                            <div class="tab_detail_con img_control">
+                                <h2 class="mgb10">지원내용</h2>
+                                     <div class="mgt10 mgb30">
+    <style>
+        .tab_detail_con .t_scroll {
+            width: 100%;
+            overflow-x: auto;
+        }
+        .tab_detail_con table {
+            width: 960px !important;
+        }
+        .tab_detail_con table th {
+            background: #347ab7 !important;
+            color: #fff !important;
+            font-weight: 700;
+        }
+    </style>
+    <div class="t_scroll">
+        <table border="1" cellspacing="0" style="border-bottom:none; border-collapse:collapse; border-left:none; border-right:none; border-top:none; border:solid #000000 0.28pt; overflow:auto; table-layout:fixed">
+            <tbody>
+                <tr>
+                    <th style="height:27.84pt; vertical-align:middle; width:82.42pt">
+                    <p style="text-align:center">구분</p>
+                    </th>
+                    <th style="height:27.84pt; vertical-align:middle; width:229.58pt">
+                    <p style="text-align:center">시설현황</p>
+                    </th>
+                    <th style="height:27.84pt; vertical-align:middle; width:113.55pt">
+                    <p style="text-align:center">비고</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td style="height:40.14pt; vertical-align:middle; width:82.42pt">
+                    <p style="text-align:center">위치</p>
+                    </td>
+                    <td style="height:40.14pt; vertical-align:middle; width:229.58pt">
+                    <p><span style="font-family:바탕">- </span>서울특별시 강북구 도봉로 <span style="font-family:바탕">287(</span>수유동<span style="font-family:바탕">)</span></p>
+        
+                    <p>※ 수유역<span style="font-family:바탕">(</span>지하철 <span style="font-family:바탕">4</span>호선<span style="font-family:바탕">) </span>도보 <span style="font-family:바탕">5</span>분 거리</p>
+                    </td>
+                    <td style="height:40.14pt; vertical-align:middle; width:113.55pt">
+                    <p>&nbsp;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height:48.63pt; vertical-align:middle; width:82.42pt">
+                    <p style="text-align:center">시설규모</p>
+                    </td>
+                    <td style="height:48.63pt; vertical-align:middle; width:229.58pt">
+                    <p><span style="font-family:바탕">- 1</span>개동<span style="font-family:바탕">(</span>지하<span style="font-family:바탕">1</span>층 <span style="font-family:바탕">/ </span>지상<span style="font-family:바탕">10</span>층<span style="font-family:바탕">)</span></p>
+        
+                    <p><span style="font-family:바탕">- </span>부지면적<span style="font-family:바탕">: 548.00</span>㎡<span style="font-family:바탕">, </span>연면적<span style="font-family:바탕">: 2,883.24</span>㎡</p>
+                    </td>
+                    <td style="height:48.63pt; vertical-align:middle; width:113.55pt">
+                    <p>&nbsp;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height:37.31pt; vertical-align:middle; width:82.42pt">
+                    <p style="text-align:center">주요시설</p>
+                    </td>
+                    <td style="height:37.31pt; vertical-align:middle; width:229.58pt">
+                    <p><span style="font-family:바탕">- 150</span>명</p>
+                    </td>
+                    <td style="height:37.31pt; vertical-align:middle; width:113.55pt">
+                    <p>&nbsp;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <p>테이블 이미지</p>
+        <img src="./images/main/table_img02.png" alt="">
+    </div>
+    <br>
+    <br>
+    <br>
+    ○ 제출서류
+    <div class="t_scroll">
+        <table border="1" cellspacing="0">
+            <tbody>
+                <tr>
+                    <th>
+                    <p>구 분</p>
+                    </th>
+                    <th>
+                    <p>구 비 서 류</p>
+                    </th>
+                    <th>
+                    <p>비 고</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                    <p>공 통</p>
+                    </td>
+                    <td>
+                    <p>o 입사원서</p>
+        
+                    <p>※ 국민기초생활수급자, 차상위계층, 한부모가정, 국가유공자, 장애인</p>
+        
+                    <p>우선선발자는 선발유형에 우선선발 표기 후 관련 서류 제출</p>
+        
+                    <p>&nbsp;</p>
+        
+                    <p>o 개인정보 수집·이용·조회·제공 동의서 1부</p>
+        
+                    <p>o 보호자 명의의 가족관계증명서 1부 (가족사항이 전부 기록된 것)</p>
+        
+                    <p>(편부, 편모일 경우 혼인관계증명서 추가 첨부)</p>
+        
+                    <p>o 2023년도 봉사활동 확인서(해당자에 한함)</p>
+                    </td>
+                    <td>
+                    <p>▶온라인 서 식</p>
+        
+                    <p>&nbsp;</p>
+        
+                    <p>&nbsp;</p>
+        
+                    <p>▶온라인 서 식</p>
+        
+                    <p>&nbsp;</p>
+        
+                    <p>&nbsp;</p>
+        
+                    <p>&nbsp;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <p>신입생</p>
+                    </td>
+                    <td>
+                    <p>o 합격증명서(합격통지서) 또는 대학지원 수험표(수시 지원자 포함, 수험표</p>
+        
+                    <p>제출자는 장학관 선발 합격자 발표 후 입사등록시 합격증명서를 장학관 제출)</p>
+        
+                    <p>&nbsp;</p>
+        
+                    <p>o 2024학년도 대학수학능력시험 성적표 또는</p>
+        
+                    <p>고등학교 전체(1~3학년) 성적증명서 중 선택하여 제출</p>
+        
+                    <p>&nbsp;</p>
+        
+                    <p>o 입사생 선발 공고일 기준으로 최근 3년 이내 전국규모</p>
+        
+                    <p>공식대회 3위 이상 입상을 증명하는 서류 1부(예체능계)</p>
+                    </td>
+                    <td>
+                    <p>&nbsp;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <p>재학생</p>
+                    </td>
+                    <td>
+                    <p>o 재학증명서(복학(예정)자는 휴학증명서 또는 복학예정증명서)</p>
+        
+                    <p>o 직전 2개 학기 성적증명서</p>
+                    </td>
+                    <td>
+                    <p>&nbsp;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <p>테이블 이미지</p>
+        <img src="./images/main/table_img01.png" alt="">
+    </div>
+    <br>
+    ○ 접수방법 : 온라인 접수<br>
+    &nbsp; - 평택시장학관 홈페이지(https://www.pyeongtaek.go.kr/ptjhk/main.do) → 로그인(본인인증) → 입사생선발 → 입사생선발 신청에서 입사 지원<br>
+    <br>
+    ○ 문의처 : 평택시 장학관(02-983-7900~2, Fax 02-983-7905)
+                                        </div>
+                                <h2 class="mgb10">이용방법</h2>
+
+                                        <div>온라인&nbsp;접수</div>
+                                    
+                                    
+                                
+                                
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                    <!-- 참고자료 -->
+                        <div class="reference_note">
+                            <div class="tit_area">
+                                <h1 style="top: -90px;position: relative;" id="detailLocation"></h1>
+                                <p class="tit">기관위치/연락처</p>
+                            </div>
+                            <div class="list_area">
+                                <ul>
+                                    <form name="mapFrm" id="mapFrm" target="_blank"></form>
+                                    
+                                        <input type="hidden" name="insttMaps" id="insttMaps0" value="">
+                                        <input type="hidden" name="mapcodintLats" id="mapcodintLat0" value="36.9923004756">
+                                        <input type="hidden" name="mapcodintLngs" id="mapcodintLng0" value="127.1125266851">
+                                        <input type="hidden" name="rdnmads" id="rdnmad0" value="경기 평택시 경기대로 245">
+                                        <input type="hidden" name="pstintNms" id="pstintNm0" value="평택시청">
+                                        
+                                            <li>
+                                                <p class="s_tit wid80">
+                                                    <span class="bold">기관명</span>평택시청
+                                                </p>
+                                                
+                                                    <a href="javascript:void(0);" onclick="fn_mberActLog('12049' , 'http://www.pyeongtaek.go.kr/main.do')">
+                                                        <p class="go_btn">기관 홈페이지 바로가기</p>
+                                                    </a>
+                                                
+                                            </li>
+                                            <li>
+                                                <p class="s_tit wid80">
+                                                    <span class="bold">주소</span>경기 평택시 경기대로 245 
+                                                </p>
+                                                <a href="javascript:void(0);" onclick="onPath('평택시청', '경기 평택시 경기대로 245');">
+                                                    <p class="go_btn map">지도보기</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <p class="s_tit wid80">
+                                                    <span class="bold">전화번호</span>
+                                                        
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p class="s_tit wid80">
+                                                    <span class="bold">이메일</span>
+                                                        
+                                                </p>
+                                            </li>
+                                        
+                                    
+                                </ul>
+                            </div>
+                        </div>
+    
+                    
+    
+                    
+                    <div class="notice_area">
+                        <p>
+                            본 정보는 경기도일자리재단이 각 기관 및 홈페이지에서 제공하거나 수집한 내용을 토대로 편집, 그 표현방법을 수정하여 완성한 것으로 재단의 동의없이 무단전재 및
+                            재배포, 재가공할 수 없습니다. 재단은 자료에 대한 오류와 사용자가 이를 신뢰하여 취한 조치에 대해 책임을 지지 않습니다.<br><br>
+    
+                            해당 정보는 서비스 제공기관의 사정, 기간변경 등 다양한 원인으로 언제든지 변경될 수 있으며, 현행화의 시간차이 등으로 100% 정확하지 않을 수 있으니, 반드시
+                            해당기관의 홈페이지 또는 전화문의를 통하여 확인하시기 바랍니다.<br><br>
+    
+                            정보통신망법 제50조에 따라 본 게시물 상의 연락처는 내용상의 서비스 제공에 대한 문의 외에 사전동의 없이 전자메일 등으로 광고성 정보를 전송 및 연락하는 행위
+                            를 하면 안됩니다.&ZeroWidthSpace;
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="renewFooter">
+        <div class="nfooter_top">
+            <div class="innerSection">
+                <div class="f_util">
+                    <ul class="f_nav">
+                        <li>
+                            <a href="#" target="_blank">
+                                <strong>개인정보처리방침</strong>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                경기도일자리재단
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                이용약관
+                            </a>
+                        </li>                        
+                        <li>
+                            <a href="#" target="_blank">
+                                API신청
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="f_sns">
+                        <li>
+                            <a href="#" title="잡아바 블로그 이동" class="blog">잡아바 블로그</a>
+                        </li>
+                        <li>
+                            <a href="#" title="잡아바 페이스북 이동" class="face">잡아바 페이스북</a>
+                        </li>
+                        <li>
+                            <a href="#" title="잡아바 인스타그램 이동" class="insta">잡아바 인스타그램</a>
+                        </li>
+                        <li>
+                            <a href="#" title="잡아바 유튜브 이동" class="youtu">잡아바 유튜브</a>
+                        </li>
+                        <li>
+                            <a href="#" title="잡아바 앱스토어 이동" class="app">잡아바 앱스토어</a>
+                        </li>
+                        <li>
+                            <a href="#" title="잡아바 플레이스토어 이동" class="play">잡아바 플레이스토어</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>      
+        <div class="nfooter_mid">
+            <div class="f_btn_wrap">
+                <button type="button" class="footer_btn" title="닫기"><span>© 2016 GJF</span><span>더보기</span></button>
+            </div>
+            <div class="innerSection"> 
+                <div class="footer_wrap">
+                    <div class="f_business">
+                        <div class="f_logo">
+                            <a href="#" target="_blank" title="경기도일자리재단 이동" class="f_gyeonggi_logo">
+                                <img src="./images/main_2024/main/gyeonggi_logo.png" alt="경기도일자리재단 로고">
+                            </a>
+                            <p class="f_addr">경기도 부천시 부천로 136번길 27, 3층 경기도일자리재단</p>
+                            <ul class="f_sns">
+                                <li>
+                                    <a href="#" title="잡아바 블로그 이동" class="blog">잡아바 블로그</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="잡아바 페이스북 이동" class="face">잡아바 페이스북</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="잡아바 인스타그램 이동" class="insta">잡아바 인스타그램</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="잡아바 유튜브 이동" class="youtu">잡아바 유튜브</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="잡아바 앱스토어 이동" class="app">잡아바 앱스토어</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="잡아바 플레이스토어 이동" class="play">잡아바 플레이스토어</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="f_enquiry">
+                            <dl>
+                                <dt>문의안내</dt>
+                                <dd>평일 09:00~18:00 <span>※ 토, 일요일 및 법정공휴일</span></dd>
+                            </dl>
+                            <dl>
+                                <dt>잡아바 이용문의</dt>
+                                <dd><a href="tel:031-270-9688">031-270-9688 / jobaba@GJF.or.kr</a></dd>
+                            </dl>
+                            <dl>
+                                <dt>재단 사업문의</dt>
+                                <dd><a href="tel:031-270-9600">031-270-9600</a></dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="f_address">
+                        <p class="f_addr">경기도 부천시 부천로 136번길 27, 3층 경기도일자리재단</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+
+    
+
+<!-- 잡아바 js -->
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-2.2.4.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-ui-1.11.4.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery.validate-1.14.0.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/common.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/mobile.common.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery.common.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/upload/js/upload.common.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/default_menu.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/swiper.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/bxslider/slick.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/bootstrap.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery.leanModal.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/script.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/imgLiquid-min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.js"></script>
+<script src="./js/main_2024/main.js"></script>
+
+</body>
+</html>
