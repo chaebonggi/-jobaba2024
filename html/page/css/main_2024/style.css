@@ -43,12 +43,14 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
     body.intro #renewHeader .h_util { display: none; } 
  }
 
- @media screen and (max-width: 640px) { body.intro { background-image: url(../../images/main_2024/intro/intro_bg_top02.png), url(../../images/main_2024/intro/intro_bg_bottom02.png); background-color: #ffffff; background-position: top center, bottom center; background-size: contain; } 
+ @media screen and (max-width: 640px) { 
+   
+ body.intro { background-image: url(../../images/main_2024/intro/intro_bg_top02.png), url(../../images/main_2024/intro/intro_bg_bottom02.png); background-color: #ffffff; background-position: top center, bottom center; background-size: contain; } 
  .introWrap { padding: 0 0 40px; position: fixed; top: 50%; left: 0; right: 0; transform: translateY(-50%); overflow: hidden; } 
  .introWrap .innerSection { padding: 0 10px; } 
  .introWrap .logo { margin: 0 0 30px; } 
  .introWrap .logo img { width: 50%; } 
- .introWrap .introList > li:hover > a { border: none; } 
+ .introWrap .introList > li:hover { border: none; } 
  .introWrap .introList > li + li { margin-top: 15px; } 
  .introWrap .introList > li { height: 150px; border-radius: 15px 45px 15px 15px; } 
  .introWrap .introList > li > a { padding: 15px 15px 10px 20px; background-size: auto 50%; background-position: right 10px bottom 10px; } 
