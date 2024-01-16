@@ -55,6 +55,28 @@ function handleTabClick($btn, $items, tabAttr) {
 handleTabClick($('.infoWrap .infoBtn li'), $('.infoWrap .infoTab'), 'data-tab');
 handleTabClick($('.mainPolicy .policyBtn li'), $('.mainPolicy .policyCont'), 'data-tab');
 
+// employ company slide
+var companySwiper = new Swiper(".companySlide", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    autoHeight : false,
+    loop: false,
+    breakpoints: {
+        1024: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+            autoHeight : true,
+        },
+        860: {
+            slidesPerView: 3,
+        },
+        640: {
+            slidesPerView: 2,
+            autoHeight : true,
+        },
+    },
+});
+
 //policy mainBanner
 var bannerSwiper = new Swiper(".m_slider", {
     slidesPerView: 1.5,
