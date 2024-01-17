@@ -19,6 +19,7 @@
     <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/style.css">
     <link type="text/css" rel="stylesheet" href="../etc/css/fonts.css">
 	<!-- 추가 css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.css" />
     <link rel="stylesheet" href="./css/main_2024/style.css">
     
 </head>
@@ -28,15 +29,15 @@
         <div class="nheader_top">
             <div class="innerSection">
                 <div class="h_util">
-                    <ul>
+                    <ul class="leftBox">
                         <li class="active">
-                            <a href="#" target="_blank" title="정책정보 페이지 이동">
-                                <span>정책정보</span>
+                            <a href="#" target="_blank" title="일자리 정보 페이지 이동">
+                                <span>일자리 정보</span>
                             </a>
                         </li>
                         <li class="active">
-                            <a href="#" target="_blank" title="채용정보 페이지 이동">
-                                <span>채용정보</span>
+                            <a href="#" target="_blank" title="사업 정보 페이지 이동">
+                                <span>사업 정보</span>
                             </a>
                         </li>
                         <li>
@@ -50,7 +51,7 @@
                             </a>
                         </li>
                     </ul>
-                    <ul>
+                    <ul class="rightBox">
                         <li>
                             <a href="#" title="로그인 페이지 이동">
                                 <span>로그인</span>
@@ -76,28 +77,10 @@
             <h1 class="logo">
                 <img src="./images/main_2024/intro/logo.png" alt="잡아바 로고">
             </h1>
-            <ul class="introList">
-                <li>
-                    <a href="#" target="_blank" title="정책정보 페이지 이동">
-                        <strong>정책정보</strong>
-                        <p><span>경기도의 모든 일자리 정책정보가<br> 궁금하다면?</span></p>
-                        <span class="introBtn">바로가기  &#8594;</span>
-                    </a>
-                    <ul class="introLink">
-                        <li>
-                            <a href="" target="" title="지원사업 페이지 이동"><span>지원사업</span></a>
-                        </li>
-                        <li>
-                            <a href="" target="" title="취업교육 페이지 이동"><span>취업교육</span></a>
-                        </li>
-                        <li>
-                            <a href="" target="" title="대외활동 페이지 이동"><span>대외활동</span></a>
-                        </li>
-                    </ul>
-                </li>
+            <ul class="introList">                
                 <li>
                     <a href="#" target="_blank" title="채용정보 페이지 이동">
-                        <strong>채용정보</strong>
+                        <strong>일자리 정보</strong>
                         <p><span>경기도의 우수 채용정보가<br> 궁금하다면?</span></p>
                         <span class="introBtn">바로가기  &#8594;</span>
                     </a>
@@ -114,22 +97,135 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#" target="_blank" title="잡아바 러닝센터 페이지 이동">
-                        <strong>잡아바 러닝센터</strong>
-                        <p><span>취업 역량을 높이고 싶으면?</span></p>
+                    <a href="#" target="_blank" title="정책정보 페이지 이동">
+                        <strong>사업 정보</strong>
+                        <p><span>경기도의 모든 일자리 정책정보가<br> 궁금하다면?</span></p>
                         <span class="introBtn">바로가기  &#8594;</span>
                     </a>
                     <ul class="introLink">
                         <li>
-                            <a href="" target="" title="온라인 교육 페이지 이동"><span>온라인 교육</span></a>
+                            <a href="" target="" title="지원사업 페이지 이동"><span>지원사업</span></a>
                         </li>
                         <li>
-                            <a href="" target="" title="취업지원서비스 페이지 이동"><span>취업지원서비스</span></a>
+                            <a href="" target="" title="취업교육 페이지 이동"><span>취업교육</span></a>
+                        </li>
+                        <li>
+                            <a href="" target="" title="대외활동 페이지 이동"><span>대외활동</span></a>
                         </li>
                     </ul>
                 </li>
             </ul>
+            <div class="introBtn">
+                <a href="#">
+                    <strong>잡아바 러닝센터</strong>
+                    <span>바로가기  &#8594;</span>
+                </a>
+            </div>
         </div>
+        <footer id="renewFooter">
+            <div class="nfooter_top">
+                <div class="innerSection">
+                    <div class="f_util">
+                        <ul class="f_nav">
+                            <li>
+                                <a href="#" target="_blank">
+                                    <strong>개인정보처리방침</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    경기도일자리재단
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    이용약관
+                                </a>
+                            </li>                        
+                            <li>
+                                <a href="#" target="_blank">
+                                    API신청
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="f_sns">
+                            <li>
+                                <a href="#" title="잡아바 블로그 이동" class="blog">잡아바 블로그</a>
+                            </li>
+                            <li>
+                                <a href="#" title="잡아바 페이스북 이동" class="face">잡아바 페이스북</a>
+                            </li>
+                            <li>
+                                <a href="#" title="잡아바 인스타그램 이동" class="insta">잡아바 인스타그램</a>
+                            </li>
+                            <li>
+                                <a href="#" title="잡아바 유튜브 이동" class="youtu">잡아바 유튜브</a>
+                            </li>
+                            <li>
+                                <a href="#" title="잡아바 앱스토어 이동" class="app">잡아바 앱스토어</a>
+                            </li>
+                            <li>
+                                <a href="#" title="잡아바 플레이스토어 이동" class="play">잡아바 플레이스토어</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>      
+            <div class="nfooter_mid">
+                <div class="f_btn_wrap">
+                    <button type="button" class="footer_btn" title="닫기"><span>© 2016 GJF</span><span>더보기</span></button>
+                </div>
+                <div class="innerSection"> 
+                    <div class="footer_wrap">
+                        <div class="f_business">
+                            <div class="f_logo">
+                                <a href="#" target="_blank" title="경기도일자리재단 이동" class="f_gyeonggi_logo">
+                                    <img src="./images/main_2024/main/gyeonggi_logo.png" alt="경기도일자리재단 로고">
+                                </a>
+                                <p class="f_addr">경기도 부천시 부천로 136번길 27, 3층 경기도일자리재단</p>
+                                <ul class="f_sns">
+                                    <li>
+                                        <a href="#" title="잡아바 블로그 이동" class="blog">잡아바 블로그</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="잡아바 페이스북 이동" class="face">잡아바 페이스북</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="잡아바 인스타그램 이동" class="insta">잡아바 인스타그램</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="잡아바 유튜브 이동" class="youtu">잡아바 유튜브</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="잡아바 앱스토어 이동" class="app">잡아바 앱스토어</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="잡아바 플레이스토어 이동" class="play">잡아바 플레이스토어</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="f_enquiry">
+                                <dl>
+                                    <dt>문의안내</dt>
+                                    <dd>평일 09:00~18:00 <span>※ 토, 일요일 및 법정공휴일</span></dd>
+                                </dl>
+                                <dl>
+                                    <dt>잡아바 이용문의</dt>
+                                    <dd><a href="tel:031-270-9688">031-270-9688 / jobaba@GJF.or.kr</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt>재단 사업문의</dt>
+                                    <dd><a href="tel:031-270-9600">031-270-9600</a></dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="f_address">
+                            <p class="f_addr">경기도 부천시 부천로 136번길 27, 3층 경기도일자리재단</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
    
 
@@ -153,7 +249,20 @@
 <script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery.leanModal.min.js"></script>
 <script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/script.js"></script>
 <script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/imgLiquid-min.js"></script>
+<!-- 추가 js -->
+<script>
+    // footer menu
+    $('.footer_btn').click(function () {
+    $(this).toggleClass('active');
+        var footerWrap = $('.footer_wrap');
 
+        footerWrap.slideToggle(300, function() {
+            if (footerWrap.is(':visible')) {
+                $('html, body').animate({scrollTop: $(document).height()}, 300);
+            }
+        });
+    });
+</script>
 
 
 </body>

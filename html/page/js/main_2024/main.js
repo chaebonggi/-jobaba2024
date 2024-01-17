@@ -55,6 +55,28 @@ function handleTabClick($btn, $items, tabAttr) {
 handleTabClick($('.infoWrap .infoBtn li'), $('.infoWrap .infoTab'), 'data-tab');
 handleTabClick($('.mainPolicy .policyBtn li'), $('.mainPolicy .policyCont'), 'data-tab');
 
+// employ company slide
+var companySwiper = new Swiper(".companySlide", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    autoHeight : false,
+    loop: false,
+    breakpoints: {
+        1024: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+            autoHeight : true,
+        },
+        860: {
+            slidesPerView: 3,
+        },
+        640: {
+            slidesPerView: 2,
+            autoHeight : true,
+        },
+    },
+});
+
 //policy mainBanner
 var bannerSwiper = new Swiper(".m_slider", {
     slidesPerView: 1.5,
@@ -115,7 +137,8 @@ function handleResize() {
             slides.forEach((slide) => {
                 slide.style.width = '330px';
             });
-            bannerSwiper.update();           
+            bannerSwiper.update();
+            thumbSwiper.update();
             itemSwiper();
         } else {
             itemSwiper();
@@ -180,7 +203,7 @@ $('.m_tagBtn').click(function () {
 $('.scrollbar-outer').scrollbar();
 
 // policy recomend swiper
-recomendSwiper = new Swiper('.recomendSlide', {
+var recomendSwiper = new Swiper('.recomendSlide', {
     slidesPerView: 1,
     spaceBetween : 10,
 
@@ -192,6 +215,52 @@ recomendSwiper = new Swiper('.recomendSlide', {
             nextEl: ".recomendInfo .swiper-button-next",
             prevEl: ".recomendInfo .swiper-button-prev",
     },
+});
+
+//policy category
+$('#renewMain .contentsBox .categoryMenu li').click(function(){
+    var ctab = $(this).attr('data-tab');
+    $('.contentsBox .categoryMenu li').removeClass('active');
+    $(this).addClass('active');
+    $('.contentsBox .categoryCont').removeClass('active');
+    $('.contentsBox .categoryCont[data-tab='+ctab+']').addClass('active');
+});
+
+$("#renewMain #tabMobile").on("change",function(){
+var select_data = $(this).find('option:selected').data('tab');
+    $('.contentsBox .categoryMenu li[data-tab='+select_data+']').addClass("active").siblings().removeClass('active');
+    $('.contentsBox .categoryCont').removeClass('active');
+    $('.contentsBox .categoryCont[data-tab='+select_data+']').addClass('active');
+});
+var $categorySlider = $('#renewMain .categoryCont');
+$categorySlider.find('.thumbList').each(function(i){
+    $(this).find(".swiper-pagination").addClass("type"+i);
+    var thumbSwiper  = new Swiper($(this), {
+        slidesPerView: 1,
+        slidesPerColumn: 2,
+        spaceBetween: 20,
+        slidesPerColumnFill: "row", 
+        observer: true,
+        observeParents: true,
+        pagination: {
+            el: $categorySlider.find('.swiper-pagination.type'+i),
+            type: 'bullets'
+        },
+        breakpoints: {
+            1024: {
+                slidesPerView: 5,
+                spaceBetween: 30,
+            },
+            860: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            }
+        },
+    }); 
 });
 
 // policy jobRecomend
@@ -253,12 +322,11 @@ $(".jobSlide").each(function () {
     var resizeCheck;
     $(window).resize(function(){
         if(resizeCheck){ 
-            clearTimeout(resizeCheck);               
+            clearTimeout(resizeCheck);
         };            
         resizeCheck = setTimeout(function(){
             const jobslides = document.querySelectorAll('#renewMain .jobRecomend .swiper-slide');
             if (window.innerWidth < 1024) {
-                                    
                 jobslides.forEach((slide) => {
                     slide.classList.remove('changed');
                 });
