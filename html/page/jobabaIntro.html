@@ -250,8 +250,19 @@
 <script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/script.js"></script>
 <script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/imgLiquid-min.js"></script>
 <!-- 추가 js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.js"></script>
-<script src="./js/main_2024/main.js"></script>
+<script>
+    // footer menu
+    $('.footer_btn').click(function () {
+    $(this).toggleClass('active');
+        var footerWrap = $('.footer_wrap');
+
+        footerWrap.slideToggle(300, function() {
+            if (footerWrap.is(':visible')) {
+                $('html, body').animate({scrollTop: $(document).height()}, 300);
+            }
+        });
+    });
+</script>
 
 
 </body>
