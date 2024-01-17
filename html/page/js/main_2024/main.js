@@ -260,8 +260,7 @@ $categorySlider.find('.thumbList').each(function(i){
                 spaceBetween: 20,
             }
         },
-    });
-    
+    }); 
 });
 
 // policy jobRecomend
@@ -328,7 +327,6 @@ $(".jobSlide").each(function () {
         resizeCheck = setTimeout(function(){
             const jobslides = document.querySelectorAll('#renewMain .jobRecomend .swiper-slide');
             if (window.innerWidth < 1024) {
-                                    
                 jobslides.forEach((slide) => {
                     slide.classList.remove('changed');
                 });

@@ -1,6 +1,6 @@
 /* intro */
 body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg02.png) #ffffff top center no-repeat; touch-action: pan-y; } 
- .introWrap .innerSection { padding: 0 20px 30px; } 
+ .introWrap .innerSection { padding: 0 20px 0; } 
  .introWrap .logo { margin: 30px 0 30px; text-align: center; } 
  .introWrap .introList { display: flex; justify-content: center; } 
  .introWrap .introList > li { width: 400px; background: #fff; border-radius: 30px 85px 30px 30px; box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.2); border: 5px solid #fff; overflow: hidden; } 
@@ -22,13 +22,20 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
  .introWrap .introLink li a span { position: relative; padding-left: 26px; } 
  .introWrap .introLink li a span::before { content: ''; width: 10px; height: 10px; position: absolute; left: 0; top: 50%; transform: translateY(-50%); background: #d1d1d1; border-radius: 50%; } 
 
- .introWrap .introBtn { max-width: 550px; margin: 20px auto 0; } 
- .introWrap .introBtn a { display: inline-block; width: 100%; padding: 10px 0; background: url(../../images/main_2024/intro/intro_img05.png) #fff center right 20px no-repeat; box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.2); border: 5px solid #fff; border-radius: 20px; text-align: center; } 
+ .introWrap .introBtn { max-width: 830px; margin: 20px auto 0; padding-bottom: 30px; } 
+ .introWrap .introBtn a { display: inline-block; width: 100%; padding: 30px 30px; background-image: url(../../images/main_2024/intro/intro_img05.png); background-color: #fff; background-repeat: no-repeat; background-position: center right 30px; box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.2); border: 5px solid #fff; border-radius: 20px; } 
  .introWrap .introBtn a:hover { border-color: #939ac8; } 
- .introWrap .introBtn strong { display: block; color: #000; font-size: 30px; } 
- .introWrap .introBtn span { display: inline-block; margin-top: 10px; padding: 4px 20px; background: #d1d5f1; color: #000; font-size: 20px; font-weight: 300; border-radius: 30px; } 
+ .introWrap .introBtn strong {color: #000; font-size: 30px; } 
+ .introWrap .introBtn span { display: inline-block; margin-left: 20px; padding: 4px 30px; background: #d1d5f1; color: #000; font-size: 20px; font-weight: 300; border-radius: 30px; } 
 
  @media screen and (max-width: 1200px){
+ 
+}
+
+ @media screen and (max-width: 1024px) { 
+ body.intro #renewHeader .h_util { height: 70px; justify-content: center; } 
+ body.intro #renewHeader .h_util ul { margin-left: initial; } 
+ body.intro #renewHeader .h_util .rightBox { display: flex; } 
  .introWrap .introList { flex-direction: column; } 
  .introWrap .introLink { display: none; } 
  .introWrap .introList > li + li { margin-top: 30px; margin-left: auto; } 
@@ -37,24 +44,18 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
  .introWrap .introList > li > a .introBtn { display: none; } 
  .introWrap .introList > li > a strong { color: #003281; } 
  .introWrap .introList > li > a p { height: auto; color: #8c8c8c; } 
- .introWrap .introBtn a { padding: 30px 0; } 
- .introWrap .introBtn strong { color: #003281; } 
-}
-
- @media screen and (max-width: 1024px) { 
- body.intro #renewHeader .h_util { justify-content: center; } 
- body.intro #renewHeader .h_util ul { margin-left: initial; } 
- }
- @media screen and (max-width: 1024px) { 
- body.intro #renewHeader .h_util { height: 70px; } 
- body.intro #renewHeader .h_util .rightBox { display: flex; } 
+ .introWrap .introBtn {max-width: 550px;}
+ .introWrap .introBtn a { padding: 30px 38px 20px 50px; } 
+ .introWrap .introBtn strong {display: block; color: #003281; } 
+ .introWrap .introBtn span {margin-top: 20px; margin-left: 0;}
  }
 
  @media screen and (max-width: 640px) { 
  body.intro { background-image: url(../../images/main_2024/intro/intro_bg_top02.png), url(../../images/main_2024/intro/intro_bg_bottom02.png); background-color: #ffffff; background-position: top center, bottom center; background-size: contain; } 
- .introWrap .innerSection { padding: 0 10px; } 
  body.intro #renewHeader .h_util { height: 50px; } 
  body.intro #renewHeader .h_util ul li a { padding: 10px 14px; font-size: 14px; } 
+ body.intro #renewFooter {display: none;}
+ .introWrap .innerSection { padding: 0 10px; } 
  .introWrap .logo { margin: 30px 0; } 
  .introWrap .logo img { width: 50%; } 
  .introWrap .introList > li:hover { border: none; } 
@@ -65,8 +66,10 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
  .introWrap .introList > li > a p { font-size: 18px; } 
 
  .introWrap .introBtn a:hover { border: none; } 
- .introWrap .introBtn a { padding: 15px 20px; background-size: auto 50%; text-align: left; } 
+ .introWrap .introBtn a { padding: 15px 20px; background-size: auto 50%; background-position: bottom 10px right 10px;} 
  .introWrap .introBtn strong { font-size: 26px; } 
+
+ 
  }
  /* //intro */
 
@@ -514,6 +517,7 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 #renewMain .jobRecomend .jobItem .jobBtn a { display: inline-block; width: 200px; height: 60px; background: #fff; color: #000; font-size: 20px; font-weight: 500; line-height: 60px; text-align: center; border-radius: 10px; } 
 
 /* footer */
+#renewFooter {background: #fff;}
 #renewFooter .nfooter_top { background: #fff; border-top: 1px solid #ededed; border-bottom: 1px solid #ededed; margin-top: 15px; } 
 #renewFooter .f_util { display: flex; align-items: center; justify-content: center; position: relative; padding: 13px 0; } 
 #renewFooter .f_nav { display: flex; } 
