@@ -137,8 +137,7 @@ function handleResize() {
             slides.forEach((slide) => {
                 slide.style.width = '330px';
             });
-            bannerSwiper.update();
-            thumbSwiper.update();
+            // bannerSwiper.update();
             itemSwiper();
         } else {
             itemSwiper();

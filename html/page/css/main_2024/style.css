@@ -28,10 +28,6 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
  .introWrap .introBtn strong {color: #000; font-size: 30px; } 
  .introWrap .introBtn span { display: inline-block; margin-left: 20px; padding: 4px 30px; background: #d1d5f1; color: #000; font-size: 20px; font-weight: 300; border-radius: 30px; } 
 
- @media screen and (max-width: 1200px){
- 
-}
-
  @media screen and (max-width: 1024px) { 
  body.intro #renewHeader .h_util { height: 70px; justify-content: center; } 
  body.intro #renewHeader .h_util ul { margin-left: initial; } 
@@ -559,13 +555,19 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 
 
 
-@media screen and (max-width: 1300px) { /* policy main banner */
+@media screen and (max-width: 1300px) { 
+
+ /* policy main banner */
  #renewMain .mainBanner .swiper-container { max-width: 100%; padding: 0 0 60px 0; } 
  }
-@media screen and (max-width: 1024px) { /* header */
+@media screen and (max-width: 1024px) { 
+
+/* header */
 #renewHeader .h_gnb { margin: 0 20px 0 10px; } 
+#renewHeader .h_gnb > li > a {font-size: 20px;}
 #renewHeader .h_util .leftBox { display: none; } 
 #renewHeader .h_util .rightBox { margin-left: auto; } 
+
 
 /* main visual */
  #renewMain .mainVisual .visualCont { background-image: url(../../images/main_2024/main/visual_bg01.png); background-position: top right; } 
@@ -585,7 +587,8 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
  #renewMain .jobRecomend .titWrap ul { margin-left: auto; } 
  #renewMain .jobRecomend .swiperBottom { left: 50%; transform: translateX(-50%); } 
  }
-@media screen and (max-width: 860px) { /* header */
+@media screen and (max-width: 860px) { 
+/* header */
  #renewHeader .nheader_mid { overflow: hidden; } 
  #renewHeader .h_cont { flex-wrap: wrap; height: auto; } 
  #renewHeader .h_util { height: 4px; } 
