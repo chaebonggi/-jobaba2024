@@ -23,7 +23,7 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
  .introWrap .introLink li a span::before { content: ''; width: 10px; height: 10px; position: absolute; left: 0; top: 50%; transform: translateY(-50%); background: #d1d1d1; border-radius: 50%; } 
 
  .introWrap .introBtn { max-width: 830px; margin: 20px auto 0; padding-bottom: 30px; } 
- .introWrap .introBtn a { display: inline-block; width: 100%; padding: 30px 30px; background-image: url(../../images/main_2024/intro/intro_img05.png); background-color: #fff; background-repeat: no-repeat; background-position: center right 30px; box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.2); border: 5px solid #fff; border-radius: 20px; } 
+ .introWrap .introBtn a { display: inline-block; width: 100%; padding: 30px 0 30px 124px; background-image: url(../../images/main_2024/intro/intro_img05.png); background-color: #fff; background-repeat: no-repeat; background-position: center right 74px; box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.2); border: 5px solid #fff; border-radius: 20px; } 
  .introWrap .introBtn a:hover { border-color: #939ac8; } 
  .introWrap .introBtn strong {color: #000; font-size: 30px; } 
  .introWrap .introBtn span { display: inline-block; margin-left: 20px; padding: 4px 30px; background: #d1d5f1; color: #000; font-size: 20px; font-weight: 300; border-radius: 30px; } 
