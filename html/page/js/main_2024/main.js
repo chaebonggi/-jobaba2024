@@ -202,7 +202,7 @@ $('.m_tagBtn').click(function () {
 $('.scrollbar-outer').scrollbar();
 
 // policy recomend swiper
-recomendSwiper = new Swiper('.recomendSlide', {
+var recomendSwiper = new Swiper('.recomendSlide', {
     slidesPerView: 1,
     spaceBetween : 10,
 
@@ -214,6 +214,52 @@ recomendSwiper = new Swiper('.recomendSlide', {
             nextEl: ".recomendInfo .swiper-button-next",
             prevEl: ".recomendInfo .swiper-button-prev",
     },
+});
+
+//policy category
+$('#renewMain .contentsBox .categoryMenu li').click(function(){
+    var ctab = $(this).attr('data-tab');
+    $('.contentsBox .categoryMenu li').removeClass('active');
+    $(this).addClass('active');
+    $('.contentsBox .categoryCont').removeClass('active');
+    $('.contentsBox .categoryCont[data-tab='+ctab+']').addClass('active');
+});
+
+$("#renewMain #tabMobile").on("change",function(){
+var select_data = $(this).find('option:selected').data('tab');
+    $('.contentsBox .categoryMenu li[data-tab='+select_data+']').addClass("active").siblings().removeClass('active');
+    $('.contentsBox .categoryCont').removeClass('active');
+    $('.contentsBox .categoryCont[data-tab='+select_data+']').addClass('active');
+});
+var $categorySlider = $('#renewMain .categoryCont');
+$categorySlider.find('.thumbList').each(function(i){
+    $(this).find(".swiper-pagination").addClass("type"+i);
+    var thumbSwiper  = new Swiper($(this), {
+        slidesPerView: 1,
+        slidesPerColumn: 2,
+        spaceBetween: 20,
+        slidesPerColumnFill: "row", 
+        observer: true,
+        observeParents: true,
+        pagination: {
+            el: $categorySlider.find('.swiper-pagination.type'+i),
+            type: 'bullets'
+        },
+        breakpoints: {
+            1024: {
+                slidesPerView: 5,
+                spaceBetween: 30,
+            },
+            860: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            }
+        },
+    });
 });
 
 // policy jobRecomend
