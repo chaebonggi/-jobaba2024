@@ -137,7 +137,8 @@ function handleResize() {
             slides.forEach((slide) => {
                 slide.style.width = '330px';
             });
-            bannerSwiper.update();           
+            bannerSwiper.update();
+            thumbSwiper.update();
             itemSwiper();
         } else {
             itemSwiper();
@@ -260,7 +261,9 @@ $categorySlider.find('.thumbList').each(function(i){
             }
         },
     });
+    
 });
+console.log('a')
 
 // policy jobRecomend
 function updSwiperNumericPagination() {

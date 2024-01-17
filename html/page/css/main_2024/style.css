@@ -22,7 +22,7 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
  .introWrap .introLink li a span { position: relative; padding-left: 26px; } 
  .introWrap .introLink li a span::before { content: ''; width: 10px; height: 10px; position: absolute; left: 0; top: 50%; transform: translateY(-50%); background: #d1d1d1; border-radius: 50%; } 
 
- .introWrap .introBtn { max-width: 830px; margin: 20px auto 0; } 
+ .introWrap .introBtn { max-width: 550px; margin: 20px auto 0; } 
  .introWrap .introBtn a { display: inline-block; width: 100%; padding: 10px 0; background: url(../../images/main_2024/intro/intro_img05.png) #fff center right 20px no-repeat; box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.2); border: 5px solid #fff; border-radius: 20px; text-align: center; } 
  .introWrap .introBtn a:hover { border-color: #939ac8; } 
  .introWrap .introBtn strong { display: block; color: #000; font-size: 30px; } 
@@ -37,7 +37,6 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
  .introWrap .introList > li > a .introBtn { display: none; } 
  .introWrap .introList > li > a strong { color: #003281; } 
  .introWrap .introList > li > a p { height: auto; color: #8c8c8c; } 
- .introWrap .introBtn { max-width: 550px; } 
  .introWrap .introBtn a { padding: 30px 0; } 
  .introWrap .introBtn strong { color: #003281; } 
 }
