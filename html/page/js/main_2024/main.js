@@ -263,7 +263,6 @@ $categorySlider.find('.thumbList').each(function(i){
     });
     
 });
-console.log('a')
 
 // policy jobRecomend
 function updSwiperNumericPagination() {
@@ -324,7 +323,7 @@ $(".jobSlide").each(function () {
     var resizeCheck;
     $(window).resize(function(){
         if(resizeCheck){ 
-            clearTimeout(resizeCheck);               
+            clearTimeout(resizeCheck);
         };            
         resizeCheck = setTimeout(function(){
             const jobslides = document.querySelectorAll('#renewMain .jobRecomend .swiper-slide');
