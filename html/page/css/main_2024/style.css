@@ -10,7 +10,7 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
  .introWrap .introList { display: flex; justify-content: center; } 
  .introWrap .introList > li { width: 400px; background: #fff; border-radius: 30px 85px 30px 30px; box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.2); border: 5px solid #fff; overflow: hidden; } 
  .introWrap .introList > li + li { margin-left: 30px; } 
- .introWrap .introList > li:hover { border-color: #2aa6c1; } 
+ .introWrap .introList > li:hover { border-color: #008ae0; } 
  .introWrap .introList > li:nth-child(2):hover { border-color: #9eca80; } 
  .introWrap .introList > li > a { display: block; width: 100%; padding: 50px 25px; background-image: url(../../images/main_2024/intro/intro_img04_2.png); background-color: #fff; background-repeat: no-repeat; background-position: top 130px center; text-align: center; } 
  .introWrap .introList > li:nth-child(2) > a { background-image: url(../../images/main_2024/intro/intro_img01.png) } 
@@ -18,11 +18,22 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 
  .introWrap .introList > li > a strong { display: block; margin-bottom: 168px; color: #000; font-size: 36px; } 
  .introWrap .introList > li > a p { height: 200px; margin-bottom: 15px; position: relative; color: #000; font-size: 24px; line-height: 1.3; letter-spacing: -1px; } 
- .introWrap .introList > li > a .introBtn { display: block; height: 50px; background: #d8ebcb; color: #000; font-size: 30px; font-weight: 300; line-height: 50px; border-radius: 30px; } 
+ .introWrap .introList > li > a .introBtn { display: block; height: 50px; position: relative; background: #d8ebcb; color: #000; font-size: 30px; font-weight: 300; line-height: 50px; border-radius: 30px; } 
+ .introWrap .introList > li > a .introBtn::before {
+    content: '채용';
+    position: absolute;
+    top: -52px;
+    right: 20px;
+    color: #8c8c8c;
+    font-size: 24px;
+ }
+ .introWrap .introList > li > a .introBtn.icon01::before {
+    content: '정책';
+ }
  .introWrap .introList > li:nth-child(2) > a .introBtn { background: #d0e9ee; } 
  .introWrap .introLink li a { display: block; width: 100%; height: 50px; padding-left: 120px; color: #000; font-size: 26px; line-height: 50px; } 
- .introWrap .introLink li a:hover { color: #2aa6c1; font-weight: 700; } 
- .introWrap .introLink li a:hover span::before { background: #2aa6c1; } 
+ .introWrap .introLink li a:hover { color: #008ae0; font-weight: 700; } 
+ .introWrap .introLink li a:hover span::before { background: #008ae0; } 
  .introWrap .introList li:nth-child(2) .introLink li a:hover { color: #79a958; } 
  .introWrap .introList li:nth-child(2) .introLink li a:hover span::before { background: #79a958; } 
  .introWrap .introLink li a span { position: relative; padding-left: 26px; } 
@@ -104,11 +115,11 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 #renewMain .badge.area { color: #808080; background: #fff; border: 1px solid #c9c9c9; } 
 
  /* header */
-#renewHeader .nheader_top { background: #2aa6c1; } 
+#renewHeader .nheader_top { background: #008ae0; } 
 #renewHeader .h_util { display: flex; align-items: center; justify-content: space-between; height: 70px; } 
 #renewHeader .h_util ul { display: flex; } 
 #renewHeader .h_util ul li + li { margin-left: 16px; } 
-#renewHeader .h_util ul li a:hover { background: #fff; color: #2aa6c1; border-radius: 10px; } 
+#renewHeader .h_util ul li a:hover { background: #fff; color: #008ae0; border-radius: 10px; } 
 #renewHeader .h_util ul li a { display: block; padding: 10px 14px; color: #fff; font-size: 18px; font-weight: 500; line-height: 1; } 
 #renewHeader .h_cont { display: flex; align-items: center; justify-content: space-between; height: 70px; margin-top: 25px; } 
 #renewHeader .h_cont .logo { height: 70px; flex-shrink: 0; margin-bottom: 6px; } 
@@ -127,7 +138,7 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 #renewHeader .h_menu.active span:last-child { top: 50%; transform: rotate(-45deg); } 
 #renewHeader .h_ui .h_login { display: none; margin-left: 10px; } 
 #renewHeader .h_ui .h_login a { display: block; width: 20px; height: 20px; background: url(../../images/main_2024/main/mobile_icon_login.png) center no-repeat; background-size: contain; } 
-#renewHeader .h_search { width: 27px; height: 27px; margin-left: 34px; background: url(../../images/main_2024/main/icon_search.png) center no-repeat; flex-shrink: 0; cursor: pointer; } 
+#renewHeader .h_search { width: 27px; height: 27px; margin-left: 34px; background: url(../../images/main_2024/main/icon_search_02.png) center no-repeat; flex-shrink: 0; cursor: pointer; } 
 #renewHeader .nheader_bottom { position: relative; } 
 #renewHeader .h_gnb { display: flex; max-width: 750px; width: 100%; margin: 0 60px 0 10px; justify-content: space-between; } 
 #renewHeader .h_gnb > li { position: relative; text-align: center; } 
@@ -170,7 +181,7 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 /* header mobile menu */
 #renewHeader .h_mobile { width: 100%; position: fixed; top: 0; right: -100%; background: #fff; transition: all 0.3s; z-index: 9999; } 
 #renewHeader .h_mobile.show { right: 0; height: 100vh; overflow-y: auto; } 
-#renewHeader .h_mobile_top { border-top: 4px solid #2aa6c1; } 
+#renewHeader .h_mobile_top { border-top: 4px solid #008ae0; } 
 #renewHeader .h_mobile_btn { display: flex; align-items: center; justify-content: space-between; height: 70px; padding: 0 10px; border-bottom: 1px solid #cecece; } 
 #renewHeader .h_mobile_btn .logo { height: 100%; } 
 #renewHeader .h_mobile_btn .logo a { display: block; width: 100%; height: 100%; padding: 10px 0; } 
@@ -181,7 +192,7 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 #renewHeader .h_mobile_close span:last-child { transform: rotate(-45deg); } 
 #renewHeader .h_mobile_login { margin-top: 20px; padding: 0 15px; } 
 #renewHeader .h_mobile_login .btn01 { display: block; padding: 15px 0; background: #ececec; color: #000; font-size: 12px; border: 1px solid #d0d0d0; border-radius: 10px; text-align: center; } 
-#renewHeader .h_mobile_login .btn01.joinBtn { margin-top: 8px; background: #2aa6c1; color: #fff; border: 1px solid #2aa6c1; } 
+#renewHeader .h_mobile_login .btn01.joinBtn { margin-top: 8px; background: #008ae0; color: #fff; border: 1px solid #008ae0; } 
 #renewHeader .h_mobile_login.login { display: flex; flex-wrap: wrap; justify-content:space-between; } 
 #renewHeader .h_mobile_login.login .logName { width: 100%; margin-bottom: 10px; color: #000; font-size: 16px; } 
 #renewHeader .h_mobile_login.login a { width: calc(100% / 2 - 4px); background: #fff; font-size: 14px; text-align: center; border-radius: 20px; } 
@@ -246,7 +257,7 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 #renewMain .mainVisual .searchWrap .tit { margin-bottom: 20px; margin-left: 20px; color: #343434; font-size: 24px; font-weight: 300; } 
 #renewMain .mainVisual .searchWrap .tit span { font-weight: 500; } 
 #renewMain .mainVisual .searchWrap .searchCont { position: relative; display: flex; align-items: center; justify-content: space-between; max-width: 660px; padding: 14px 20px; margin-bottom: 20px; background: #fff; border-radius: 10px; } 
-#renewMain .mainVisual .searchWrap .searchCont button { display: block; flex-shrink: 0; background: url(../../images/main_2024/main/icon_search.png) no-repeat; width: 27px; height: 27px; border: 0; text-indent: -9999px; cursor: pointer; } 
+#renewMain .mainVisual .searchWrap .searchCont button { display: block; flex-shrink: 0; background: url(../../images/main_2024/main/icon_search_02.png) no-repeat; width: 27px; height: 27px; border: 0; text-indent: -9999px; cursor: pointer; } 
 #renewMain .mainVisual .searchWrap .searchCont input { width: 100%; margin: 0 10px; font-size: 16px; border: 0; outline: 0; } 
 #renewMain .mainVisual .searchWrap .searchCont input::placeholder { color: #464646; font-size: 14px; font-weight: 200px; } 
 
@@ -254,7 +265,7 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 #renewMain .mainVisual .loginForm { width: 330px; } 
 #renewMain .mainVisual .loginWrap { padding: 20px; border: 1px solid #dddddd; border-radius: 10px; text-align: center; overflow: hidden; } 
 #renewMain .mainVisual .loginWrap .txt { margin-bottom: 15px; color: #666666; font-size: 14px; } 
-#renewMain .mainVisual .loginBtn { display: block; width: 100%; padding: 13px 0; margin-bottom: 15px; background: #2aa6c1; color: #fff; font-size: 16px; font-weight: 500; border-radius: 5px; text-align: center; } 
+#renewMain .mainVisual .loginBtn { display: block; width: 100%; padding: 13px 0; margin-bottom: 15px; background: #008ae0; color: #fff; font-size: 16px; font-weight: 500; border-radius: 5px; text-align: center; } 
 #renewMain .mainVisual .loginBtn::before { content: ''; display: inline-block; width: 51px; height: 16px; margin: -2px 5px 0 0; background: url(../../images/main_2024/main/login_icon01.png) no-repeat; vertical-align: middle; } 
 #renewMain .mainVisual .loginSub { display: flex; justify-content: center; align-items: center; } 
 #renewMain .mainVisual .loginSub a { position: relative; color: #666666; font-size: 14px; } 
@@ -271,7 +282,7 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 #renewMain .mainVisual .loginWrap.login .loginList li { width: calc(100% / 2); position: relative; border-top: 1px solid #dddddd; text-align: left; } 
 #renewMain .mainVisual .loginWrap.login .loginList li:nth-child(even):before { content: ''; display: flex; width: 1px; height: 16px; position: absolute; top: 50%; left: 0; background: #dddddd; transform: translateY(-50%); } 
 #renewMain .mainVisual .loginWrap.login .loginList a { display: inline-flex; margin-left: 30px; padding: 12px 0; align-items: center; color: #555555; font-size: 14px; font-weight: 500; } 
-#renewMain .mainVisual .loginWrap.login .loginList a span { display: inline-block; margin-left: 6px; color: #2aa6c1; font-size: 14px; font-weight: bold; } 
+#renewMain .mainVisual .loginWrap.login .loginList a span { display: inline-block; margin-left: 6px; color: #008ae0; font-size: 14px; font-weight: bold; } 
 
 /* visual chat talk */
 #renewMain .mainVisual .counselingWrap { margin-top: 24px; } 
@@ -305,8 +316,8 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 #renewMain .infoWrap .infoTit ul { display: flex; } 
 #renewMain .infoWrap .infoTit ul li { position: relative; color: #666666; font-size: 14px; font-weight: 500; cursor: pointer; } 
 #renewMain .infoWrap .infoTit ul li + li { margin-left: 30px; } 
-#renewMain .infoWrap .infoTit ul li.active { color: #38bab2; } 
-#renewMain .infoWrap .infoTit ul li.active::after { content: ''; width: 100%; height: 1px; position: absolute; bottom: -4px; left: 0; background: #38bab2; } 
+#renewMain .infoWrap .infoTit ul li.active { color: #008ae0; } 
+#renewMain .infoWrap .infoTit ul li.active::after { content: ''; width: 100%; height: 1px; position: absolute; bottom: -4px; left: 0; background: #008ae0; } 
 #renewMain .infoWrap .infoCont { display: flex; justify-content: space-between; margin-bottom: 20px; } 
 #renewMain .infoWrap .infoCont > a { width: calc((100% - 20px) / 2); position: relative; padding: 10px; border: 1px solid #dddddd; background: #f6f6f6; border-radius: 10px; height: 185px; } 
 #renewMain .infoWrap .infoCont .infoTxt .tit { margin-bottom: 10px; color: #888888; font-size: 15px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; word-break: break-all; } 
@@ -316,7 +327,7 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 #renewMain .infoWrap .infoCont .badgeWrap .badge { min-width: 46px; padding: 0 6px; font-size: 12px; border-radius: 10px; text-align: center; } 
 #renewMain .infoWrap .infoList a { display: flex; justify-content: space-between; padding: 10px 0; } 
 #renewMain .infoWrap .infoList a .detail { margin-top: 10px; color: #666666; font-size: 14px; } 
-#renewMain .infoWrap .infoList a:hover .detail span { position: relative; color: #38bab2; } 
+#renewMain .infoWrap .infoList a:hover .detail span { position: relative; color: #008ae0; } 
 #renewMain .infoWrap .infoList a:hover .detail span::after { content: ''; width: 100%; height: 1px; position: absolute; left: 0; bottom: -4px; background: #38bab2; } 
 #renewMain .infoWrap .listItem .tit { display: inline-block; margin-right: 10px; color: #808080; font-size: 14px; } 
 #renewMain .infoWrap .listItem .badgeWrap { display: inline-block; } 
@@ -357,7 +368,7 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 #renewMain .mainPolicy { margin-bottom: 67px; } 
 #renewMain .mainPolicy .policyTit { display: flex; align-items: center; margin-bottom: 26px; margin-right: 10px; } 
 #renewMain .mainPolicy .policyTit a { padding: 2px 10px 2px; margin-left: auto; margin-top: 10px; background: #fff; color: #3e3d3d; font-size: 14px; border: 1px solid #dedcdc; border-radius: 20px; text-align: center; white-space: nowrap; transition: all 0.35s; } 
-#renewMain .mainPolicy .policyTit a:hover { color: #fff; background: #2AA6C1; border: 1px solid #2AA6C1; } 
+#renewMain .mainPolicy .policyTit a:hover { color: #fff; background: #008ae0; border: 1px solid #008ae0; } 
 #renewMain .mainPolicy .policyTit h3 { margin: 0 40px 0 10px; font-size: 36px; flex-shrink: 0; } 
 #renewMain .mainPolicy .policyBtn { display: flex; width: 100%; } 
 #renewMain .mainPolicy .policyBtn li { display: flex; align-items: center; justify-content: center; width: 90px; position: relative; height: 38px; padding-left: 30px; background: #f5f5f5; color: #4e4e4e; font-size: 14px; font-weight: 500; letter-spacing: -0.5px; cursor: pointer; border-radius: 20px; box-sizing: border-box; } 
@@ -400,14 +411,14 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 #renewMain .policyFind .ckItem + .ckItem { margin-top:14px; } 
 #renewMain .policyFind .ckItem span { padding-left:24px; font-size:14px; color:#505050; font-weight: 400; } 
 #renewMain .policyFind .ckItem input[type="checkbox"] + span::before { content:""; width:16px; height:16px; background:#fdfdfd; border:1px solid #ddd; position:absolute; left:0; top:1px; border-radius:3px; } 
-#renewMain .policyFind .ckItem input[type="checkbox"]:checked + span::before { content:"\2714"; font-size:12px; line-height:16px; background:#38bab2; color:#fff; border-color:#38bab2; text-align:center; font-weight:400; } 
+#renewMain .policyFind .ckItem input[type="checkbox"]:checked + span::before { content:"\2714"; font-size:12px; line-height:16px; background:#008ae0; color:#fff; border-color:#008ae0; text-align:center; font-weight:400; } 
 #renewMain .policyFind .cateWrap { display:flex; border:1px solid #e7e7e7; flex-wrap:wrap; overflow:hidden; } 
 #renewMain .policyFind .cateWrap > div { flex: 1; background: #fff; } 
 #renewMain .policyFind .cateWrap .tit { background-color:#f6f6f6; color:#000; font-size:15px; padding:12px 0 12px 22px; text-align:left; font-weight:500; } 
 #renewMain .policyFind .cateWrap > div + div { border-left:1px solid #e7e7e7; } 
 #renewMain .policyFind .cateWrap > div .scrollbar-outer { height:100px; overflow-y:scroll; } 
-#renewMain .policyFind .findBtn { width: 150px; background: #47ada7; border-radius: 10px; } 
-#renewMain .policyFind .findBtn a { display: flex; width: 100%; height: 100%; color: #fff; font-size: 24px; align-items: center; justify-content: center; } 
+#renewMain .policyFind .findBtn { width: 150px; border-radius: 10px; overflow: hidden;} 
+#renewMain .policyFind .findBtn a { display: flex; width: 100%; height: 100%;background: #008ae0; color: #fff; font-size: 24px; align-items: center; justify-content: center; } 
 
 #renewMain .scrollbar-outer > .scroll-element .scroll-element_track { background:#fff; } 
 #renewMain .scrollbar-outer > .scroll-element .scroll-bar { background:#e7e7e7; } 
@@ -431,7 +442,7 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 #renewMain .policyFind .categoryMenu { display: flex; } 
 #renewMain .policyFind .categoryMenu li { flex: 1; } 
 #renewMain .policyFind .categoryMenu li a { display: block; width: 100%; height: 100%; padding: 18px 0; background: #f6f7f9; font-size: 14px; line-height: 24px; text-align: center; color: #222222; border: 1px solid #dddddd; border-bottom: 1px solid #000; cursor: pointer; } 
-#renewMain .policyFind .categoryMenu li.active a { background: #fff; color: #38bab2; font-weight: bold; border: 1px solid #000; border-bottom: none; } 
+#renewMain .policyFind .categoryMenu li.active a { background: #fff; color: #008ae0; font-weight: bold; border: 1px solid #000; border-bottom: none; } 
 #renewMain .policyFind .categoryCont { display: none; background: #fff; border: 1px solid #ddd; border-top: none; border-radius: 0 0 10px 10px; } 
 #renewMain .policyFind .categoryCont.active { display: block; } 
 #renewMain .policyFind .categoryCont .swiper-container { width: 100%; height: auto; margin-left: auto; margin-right: auto; padding: 20px 20px 60px; } 
@@ -478,11 +489,11 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 #renewMain .jobRecomend { background: #fff; overflow: hidden; } 
 #renewMain .jobRecomend .innerSection { padding: 122px 10px 280px; } 
 #renewMain .jobRecomend .titWrap h2 { margin-bottom: 40px; font-size: 36px; } 
-#renewMain .jobRecomend .titWrap h2 span { color: #47ada7; } 
+#renewMain .jobRecomend .titWrap h2 span { color: #008ae0; } 
 #renewMain .jobRecomend .titWrap ul li { width: 170px; height: 50px; border-radius: 30px; overflow: hidden; } 
 #renewMain .jobRecomend .titWrap ul li + li { margin-top: 10px; } 
 #renewMain .jobRecomend .titWrap ul li a { display: flex; width: 100%; height: 100%; padding: 10px 20px; background: #e7e7e7; color: #000; font-size: 24px; font-weight: 200; align-items: center; } 
-#renewMain .jobRecomend .titWrap ul li.active a { color: #fff; background: #47ada7; } 
+#renewMain .jobRecomend .titWrap ul li.active a { color: #fff; background: #008ae0; } 
 #renewMain .jobRecomend .titWrap ul li a::before { content: ''; margin-right: 10px; } 
 #renewMain .jobRecomend .titWrap ul li.icon01 a::before { width: 24px; height: 25px; background: url(../../images/main_2024/main/recomend_icon05.png) no-repeat; } 
 #renewMain .jobRecomend .titWrap ul li.icon02 a::before { width: 26px; height: 25px; background: url(../../images/main_2024/main/recomend_icon03.png) no-repeat; } 
@@ -504,7 +515,7 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 #renewMain .jobRecomend .total { position: absolute; left: 56px; top: 50%; transform: translateY(-50%) } 
 
 #renewMain .jobRecomend .changed.swiper-slide-active { width: 600px !important; } 
-#renewMain .jobRecomend .swiper-slide-active .jobItem { height: 100%; padding: 30px 30px 10px; background-color: #47ada7; background-image: none !important; border-radius: 20px; box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05); } 
+#renewMain .jobRecomend .swiper-slide-active .jobItem { height: 100%; padding: 30px 30px 10px; background-color: #008ae0; background-image: none !important; border-radius: 20px; box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05); } 
 #renewMain .jobRecomend .swiper-slide { width: 320px; height: 350px; border-radius: 20px; } 
 #renewMain .jobRecomend .swiper-slide-active .jobItem .jLogo,
 #renewMain .jobRecomend .swiper-slide-active .jobItem .txtWrap .jInfo,
