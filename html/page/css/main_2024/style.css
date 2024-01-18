@@ -434,7 +434,7 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 #renewMain .policyFind .categoryCont .thumbList .thumb { height: 140px; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; } 
 #renewMain .policyFind .categoryCont .thumbList .thumb img { width: 100%; height: 100%; object-fit: cover; } 
 #renewMain .policyFind .categoryCont .thumbList .txtWrap p { margin-top: 20px; width: 100%; min-height: 52px; color: #222222; font-size: 14px; line-height: 24px; text-overflow: ellipsis; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; word-wrap: break-word; } 
-#renewMain .policyFind .swiper-pagination-bullet-active { background: #47ada7; } 
+#renewMain .policyFind .swiper-pagination-bullet-active { background: #008ae0; } 
 #renewMain .policyFind .swiper-pagination-bullet { width: 10px; height: 10px; margin: 0 4px; } 
 
 /* policy recomend */
@@ -463,7 +463,7 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 .recomendInfo .recomendItem .badge.snew { color: #38bab2; border: solid 1px #38bab2; } 
 .recomendInfo .swiper-pagination { bottom: 36px; left: 50%; transform: translateX(-50%); } 
 .recomendInfo .swiper-pagination-bullet { width: 18px; height: 18px; margin: 0 4px; } 
-.recomendInfo .swiper-pagination-bullet-active { background: #47ada7; } 
+.recomendInfo .swiper-pagination-bullet-active { background: #008ae0; } 
 .swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after, .swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after { content: none; } 
 .recomendInfo .swiper-button-next, .recomendInfo .swiper-button-prev { width: 60px; height: 119px; top: calc(50% + 30px); transform: translateY(-50%); } 
 .recomendInfo .swiper-button-next { background: url(../../images/main_2024/main/next_btn.png) no-repeat; background-size: contain; left: initial !important; right: 35px; } 
