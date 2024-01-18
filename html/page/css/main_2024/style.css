@@ -46,8 +46,10 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
  .introWrap .introBtn strong { display: block; position: relative; color: #003281; } 
  .introWrap .introBtn strong::after { content: '\27F6'; position: absolute; top: calc(50% - 2px); right: -30px; transform: translateY(-50%); font-size: 20px; }
  .introWrap .introBtn span { margin-right: 20px; } 
- }
  .introWrap .introBtn p { display: none; } 
+ 
+ }
+
 
  @media screen and (max-width: 640px) { 
  body.intro { background-image: url(../../images/main_2024/intro/intro_bg_top02.png), url(../../images/main_2024/intro/intro_bg_bottom02.png); background-color: #ffffff; background-position: top center, bottom center; background-size: contain; } 
