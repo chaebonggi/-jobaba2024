@@ -1,22 +1,16 @@
 /* intro */
 body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg02.png) #ffffff top center no-repeat; touch-action: pan-y; } 
  .introWrap .innerSection { padding: 0 20px 0; } 
- .introWrap .forPc { display: none; } 
- .introWrap .logo { margin: 40px 0 40px; text-align: center; height: 70px; } 
- .introWrap .logo img { height: 100%; } 
- .introWrap .txtWrap { margin-bottom: 60px; text-align: center; } 
- .introWrap .txtWrap p { display: inline-block; padding-left: 110px; position: relative; color: #000; font-size: 30px; font-weight: 700; } 
- .introWrap .txtWrap p::before { content: ''; width: 100px; height: 108px; position: absolute; left: 0; top: 50%; transform: translateY(-50%); background: url(../../images/main_2024/intro/intro_icon_txt.png) center no-repeat; background-size: contain; } 
+ .introWrap .logo { margin: 40px 0 40px; text-align: center; } 
  .introWrap .introList { display: flex; justify-content: center; } 
  .introWrap .introList > li { width: 400px; background: #fff; border-radius: 30px 85px 30px 30px; box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.2); border: 5px solid #fff; overflow: hidden; } 
  .introWrap .introList > li + li { margin-left: 30px; } 
  .introWrap .introList > li:hover { border-color: #2aa6c1; } 
  .introWrap .introList > li:nth-child(2):hover { border-color: #9eca80; } 
- .introWrap .introList > li > a { display: block; width: 100%; padding: 50px 25px; background-image: url(../../images/main_2024/intro/intro_img04_2.png); background-color: #fff; background-repeat: no-repeat; background-position: top 130px center; text-align: center; } 
+ .introWrap .introList > li > a { display: block; width: 100%; padding: 20px 25px 0; background-image: url(../../images/main_2024/intro/intro_img04_2.png); background-color: #fff; background-repeat: no-repeat; background-position: top 160px center; text-align: center; } 
  .introWrap .introList > li:nth-child(2) > a { background-image: url(../../images/main_2024/intro/intro_img01.png) } 
- .introWrap .introList > li > a p { display: none; } 
 
- .introWrap .introList > li > a strong { display: block; margin-bottom: 168px; color: #000; font-size: 36px; } 
+ .introWrap .introList > li > a strong { display: block; margin-bottom: 10px; color: #000; font-size: 36px; } 
  .introWrap .introList > li > a p { height: 200px; margin-bottom: 15px; position: relative; color: #000; font-size: 24px; line-height: 1.3; letter-spacing: -1px; } 
  .introWrap .introList > li > a .introBtn { display: block; height: 50px; background: #d8ebcb; color: #000; font-size: 30px; font-weight: 300; line-height: 50px; border-radius: 30px; } 
  .introWrap .introList > li:nth-child(2) > a .introBtn { background: #d0e9ee; } 
@@ -39,22 +33,21 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
  body.intro #renewHeader .h_util { height: 70px; justify-content: center; } 
  body.intro #renewHeader .h_util ul { margin-left: initial; } 
  body.intro #renewHeader .h_util .rightBox { display: flex; } 
- .introWrap .txtWrap { margin-bottom: 40px; } 
- .introWrap .forPc { display: block; } 
  .introWrap .introList { flex-direction: column; } 
  .introWrap .introLink { display: none; } 
  .introWrap .introList > li + li { margin-top: 30px; margin-left: auto; } 
  .introWrap .introList > li { width: 100%; max-width: 550px; height: 220px; margin: 0 auto; } 
  .introWrap .introList > li > a { height: 100%; padding: 30px 38px 20px 50px; background-position: right 20px bottom 20px; text-align: left; } 
  .introWrap .introList > li > a .introBtn { display: none; } 
- .introWrap .introList > li > a strong { margin-bottom: 10px; color: #003281; } 
- .introWrap .introList > li > a p { display: block; height: auto; color: #8c8c8c; } 
+ .introWrap .introList > li > a strong { color: #003281; } 
+ .introWrap .introList > li > a p { height: auto; color: #8c8c8c; } 
  .introWrap .introBtn { margin-top: 50px; } 
  .introWrap .introBtn a { display: flex; padding: 0; background-image: none; background-color: transparent; border: none; box-shadow: none; align-items: center; justify-content: center; } 
  .introWrap .introBtn strong { display: block; position: relative; color: #003281; } 
- .introWrap .introBtn strong::before { content: '\27F6'; position: absolute; top: calc(50% - 2px); right: -30px; transform: translateY(-50%); font-size: 20px; } 
+ .introWrap .introBtn strong::before { content: '\27F6'; position: absolute; top: calc(50% - 2px); right: -30px; transform: translateY(-50%); font-size: 20px; }
  .introWrap .introBtn span { margin-right: 20px; } 
  .introWrap .introBtn p { display: none; } 
+ 
  }
 
  @media screen and (max-width: 640px) { 
@@ -63,13 +56,8 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
  body.intro #renewHeader .h_util ul li a { padding: 10px 14px; font-size: 14px; } 
  body.intro #renewFooter { display: none; } 
  .introWrap .innerSection { padding: 0 10px; } 
- .introWrap .logo { height: 35px; margin: 30px 0 20px; } 
- .introWrap .txtWrap { margin-bottom: 20px; } 
-
- .introWrap .txtWrap p::before { width: 50px; height: 55px; } 
-.introWrap .txtWrap p { padding-left: 55px; font-size: 18px; } 
-
-
+ .introWrap .logo { margin: 30px 0; } 
+ .introWrap .logo img { width: 50%; } 
  .introWrap .introList > li:hover { border: none; } 
  .introWrap .introList > li + li { margin-top: 15px; } 
  .introWrap .introList > li { height: 180px; border-radius: 15px 45px 15px 15px; } 
@@ -79,11 +67,21 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 
  .introWrap .introBtn { margin-top: 30px; } 
  .introWrap .introBtn a:hover { border: none; } 
- .introWrap .introBtn a { margin-left: -14px; padding: 15px 20px; background-size: auto 50%; background-position: bottom 10px right 10px; } 
+ .introWrap .introBtn a {margin-left: -14px; padding: 15px 20px; background-size: auto 50%; background-position: bottom 10px right 10px; } 
  .introWrap .introBtn strong { padding-right: 24px; font-size: 18px; } 
  .introWrap .introBtn strong::before { top: 50%; right: -20px; font-size: 12px; } 
- .introWrap .introBtn strong::after { content: ''; width: 20px; height: 19px; position: absolute; top: 50%; right: 0; transform: translateY(-50%); background: url(../../images/main_2024/intro/intro_img06.png) center no-repeat; } 
+ .introWrap .introBtn strong::after {
+    content: '';
+    width: 20px;
+    height: 19px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background: url(../../images/main_2024/intro/intro_img06.png) center no-repeat;
+ }
  .introWrap .introBtn span { margin-right: 6px; font-size: 12px; } 
+
  }
  /* //intro */
 
@@ -436,7 +434,7 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 #renewMain .policyFind .categoryCont { display: none; background: #fff; border: 1px solid #ddd; border-top: none; border-radius: 0 0 10px 10px; } 
 #renewMain .policyFind .categoryCont.active { display: block; } 
 #renewMain .policyFind .categoryCont .swiper-container { width: 100%; height: auto; margin-left: auto; margin-right: auto; padding: 20px 20px 60px; } 
-#renewMain .policyFind .categoryCont .swiper-container li { margin-top: 0 !important; margin-bottom: 10px; } 
+#renewMain .policyFind .categoryCont .swiper-container li {margin-top: 0 !important; margin-bottom: 10px;}
 #renewMain .policyFind .categoryCont .thumbList .thumb { height: 140px; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; } 
 #renewMain .policyFind .categoryCont .thumbList .thumb img { width: 100%; height: 100%; object-fit: cover; } 
 #renewMain .policyFind .categoryCont .thumbList .txtWrap p { margin-top: 20px; width: 100%; min-height: 52px; color: #222222; font-size: 14px; line-height: 24px; text-overflow: ellipsis; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; word-wrap: break-word; } 
@@ -574,10 +572,12 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 
 
 
-@media screen and (max-width: 1300px) { /* policy main banner */
+@media screen and (max-width: 1300px) {
+ /* policy main banner */
  #renewMain .mainBanner .swiper-container { max-width: 100%; padding: 0 0 60px 0; } 
  }
-@media screen and (max-width: 1024px) { /* header */
+@media screen and (max-width: 1024px) {
+/* header */
 #renewHeader .h_gnb { margin: 0 20px 0 10px; } 
 #renewHeader .h_gnb > li > a { font-size: 20px; } 
 #renewHeader .h_util .leftBox { display: none; } 
@@ -602,7 +602,7 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
  #renewMain .jobRecomend .titWrap ul { margin-left: auto; } 
  #renewMain .jobRecomend .swiperBottom { left: 50%; transform: translateX(-50%); } 
  }
-@media screen and (max-width: 860px) { /* header */
+@media screen and (max-width: 860px) {/* header */
  #renewHeader .nheader_mid { overflow: hidden; } 
  #renewHeader .h_cont { flex-wrap: wrap; height: auto; } 
  #renewHeader .h_util { height: 4px; } 
