@@ -187,7 +187,6 @@ var select_data = $(this).find('option:selected').data('tab');
     $('.contentsBox .categoryCont[data-tab='+select_data+']').addClass('active');
 });
 function cateSlide() {
-    console.log('a')
     var $categorySlider = $('#renewMain .categoryCont');
     $categorySlider.find('.thumbList').each(function(i){
         $(this).find(".swiper-pagination").addClass("type"+i);

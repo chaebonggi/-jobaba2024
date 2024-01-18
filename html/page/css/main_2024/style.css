@@ -182,19 +182,14 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 #renewHeader .h_mobile_login { margin-top: 20px; padding: 0 15px; } 
 #renewHeader .h_mobile_login .btn01 { display: block; padding: 15px 0; background: #ececec; color: #000; font-size: 12px; border: 1px solid #d0d0d0; border-radius: 10px; text-align: center; } 
 #renewHeader .h_mobile_login .btn01.joinBtn { margin-top: 8px; background: #008ae0; color: #fff; border: 1px solid #008ae0; } 
-#renewHeader .h_mobile_login.login { display: flex; flex-wrap: wrap; justify-content:space-between; } 
-#renewHeader .h_mobile_login.login .logName { width: 100%; margin-bottom: 10px; color: #000; font-size: 16px; } 
-#renewHeader .h_mobile_login.login a { width: calc(100% / 2 - 4px); background: #fff; font-size: 14px; text-align: center; border-radius: 20px; } 
-#renewHeader .h_mobile_login.login .myBtn { color: #008ae0; border: 1px solid #008ae0; } 
-#renewHeader .h_mobile_login.login .logoutBtn { background: #000; border: 1px solid #000; color: #fff; } 
 #renewHeader .h_mobile_info { display: flex; align-items: center; justify-content: space-around; margin: 20px 0 15px; } 
 #renewHeader .h_mobile_info li { width: calc(100% / 3); } 
 #renewHeader .h_mobile_info li a { display: block; height: 100%; color: #000; font-size: 12px; text-align: center; } 
 #renewHeader .h_mobile_info li a::before { display: block; content: ''; width: 38px; height: 35px; margin: 0 auto 10px auto; background-position: center center; background-repeat: no-repeat; background-size: contain; } 
-#renewHeader .h_mobile_info li a.mobile_icon01::before { background-image: url(../../images/main_2024/main/mobile_menu_icon01.png); } 
-#renewHeader .h_mobile_info li a.mobile_icon02::before { background-image: url(../../images/main_2024/main/mobile_menu_icon02.png); } 
-#renewHeader .h_mobile_info li a.mobile_icon03::before { background-image: url(../../images/main_2024/main/mobile_menu_icon03.png); } 
-#renewHeader .h_mobile_info li a.mobile_icon04::before { background-image: url(../../images/main_2024/main/mobile_menu_icon04.png); } 
+#renewHeader .h_mobile_info li a.mobile_icon01::before { background-image: url(../../images/main_2024/main/mobile_menu_icon01_02.png); } 
+#renewHeader .h_mobile_info li a.mobile_icon02::before { background-image: url(../../images/main_2024/main/mobile_menu_icon02_02.png); } 
+#renewHeader .h_mobile_info li a.mobile_icon03::before { background-image: url(../../images/main_2024/main/mobile_menu_icon03_02.png); } 
+#renewHeader .h_mobile_info li a.mobile_icon04::before { background-image: url(../../images/main_2024/main/mobile_menu_icon04_02.png); } 
 
 #renewHeader .h_mobile_mid { padding: 10px 20px; border-top: 8px solid #eeeeee; border-bottom: 8px solid #eeeeee; } 
 #renewHeader .h_mobile_mid .mobile_menu { margin: 20px 0 20px 30px; } 
@@ -237,11 +232,11 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 #renewMain .mainVisual .visualItem li { width: 96px; height: 112px; margin-bottom: 10px; box-sizing: border-box; } 
 #renewMain .mainVisual .visualItem li a { display: block; height: 100%; color: #000; font-size: 16px; text-align: center; letter-spacing: -0.7px; word-break: keep-all; } 
 #renewMain .mainVisual .visualItem li a::before { display: block; content: ''; width: 100%; height: 80px; margin: 0 auto 10px auto; border-radius: 20px; background-color: #fff; background-position: center center; background-repeat: no-repeat; background-size: auto; box-sizing: border-box; } 
-#renewMain .mainVisual .visualItem li a.vItem01::before { background-image: url(../../images/main_2024/main/icon_item01.png); } 
-#renewMain .mainVisual .visualItem li a.vItem02::before { background-image: url(../../images/main_2024/main/icon_item02.png); } 
-#renewMain .mainVisual .visualItem li a.vItem03::before { background-image: url(../../images/main_2024/main/icon_item03.png); } 
-#renewMain .mainVisual .visualItem li a.vItem04::before { background-image: url(../../images/main_2024/main/icon_item04.png); } 
-#renewMain .mainVisual .visualItem li a.vItem05::before { background-image: url(../../images/main_2024/main/icon_item05.png); } 
+#renewMain .mainVisual .visualItem li a.vItem01::before { background-image: url(../../images/main_2024/main/icon_item01_02.png); } 
+#renewMain .mainVisual .visualItem li a.vItem02::before { background-image: url(../../images/main_2024/main/icon_item02_02.png); } 
+#renewMain .mainVisual .visualItem li a.vItem03::before { background-image: url(../../images/main_2024/main/icon_item03_02.png); } 
+#renewMain .mainVisual .visualItem li a.vItem04::before { background-image: url(../../images/main_2024/main/icon_item04_02.png); } 
+#renewMain .mainVisual .visualItem li a.vItem05::before { background-image: url(../../images/main_2024/main/icon_item05_02.png); } 
 #renewMain .mainVisual .visualItem li a:hover::before { border: 1px solid #dadada; box-shadow: 0px 3px 5px 0px rgba(7, 7, 7, 0.08); } 
 #renewMain .mainVisual .searchWrap .tit { margin-bottom: 20px; margin-left: 20px; color: #343434; font-size: 24px; font-weight: 300; } 
 #renewMain .mainVisual .searchWrap .tit span { font-weight: 500; } 
@@ -607,7 +602,7 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
  #renewHeader .h_util { height: 4px; } 
  #renewHeader .h_util ul { display: none; } 
  #renewHeader .h_gnb::before { content: ''; width: 120%; height: 1px; position: absolute; top: 0; left: -20px; background: #dadada; } 
- #renewHeader .h_gnb { position: relative; margin-right: 0; order: 3; } 
+ #renewHeader .h_gnb { position: relative; margin: 0; order: 3; } 
  #renewHeader .h_gnb li a { padding: 0; } 
  #renewHeader .h_gnb_bg { display: none !important; } 
  #newHeader .h_gnb > li:hover .depth_02 { display: none; } 
