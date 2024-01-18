@@ -7,7 +7,7 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
  .introWrap .introList > li + li { margin-left: 30px; } 
  .introWrap .introList > li:hover { border-color: #2aa6c1; } 
  .introWrap .introList > li:nth-child(2):hover { border-color: #9eca80; } 
- .introWrap .introList > li > a { display: block; width: 100%; padding: 20px 25px 0; background-image: url(../../images/main_2024/intro/intro_img04.png); background-color: #fff; background-repeat: no-repeat; background-position: top 160px center; text-align: center; } 
+ .introWrap .introList > li > a { display: block; width: 100%; padding: 20px 25px 0; background-image: url(../../images/main_2024/intro/intro_img04_2.png); background-color: #fff; background-repeat: no-repeat; background-position: top 160px center; text-align: center; } 
  .introWrap .introList > li:nth-child(2) > a { background-image: url(../../images/main_2024/intro/intro_img01.png) } 
 
  .introWrap .introList > li > a strong { display: block; margin-bottom: 10px; color: #000; font-size: 36px; } 
@@ -230,7 +230,7 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 /* visual */
 #renewMain .mainVisual { margin-bottom: 25px; } 
 #renewMain .visualWrap { display: flex; justify-content: space-between; } 
-#renewMain .mainVisual .visualCont { width: calc(100% - 360px); padding: 25px 208px 20px 35px; background-image: url(../../images/main_2024/main/visual_bg02.png), url(../../images/main_2024/main/visual_bg01.png); background-color: #dcf3f7; background-position: bottom 26px right 26px, top right; background-repeat: no-repeat; border-radius: 10px; } 
+#renewMain .mainVisual .visualCont { width: calc(100% - 360px); padding: 25px 208px 20px 35px; background-image: url(../../images/main_2024/main/visual_bg02_2.png), url(../../images/main_2024/main/visual_bg01.png); background-color: #dcf3f7; background-position: bottom 26px right 26px, top right; background-repeat: no-repeat; border-radius: 10px; } 
 #renewMain .mainVisual .visualCont.st2 { background-image: url(../../images/main_2024/main/visual_bg03.png), url(../../images/main_2024/main/visual_bg01.png); background-position: top right 22px, top right; } 
 #renewMain .mainVisual .visualItem { display: flex; flex-wrap: wrap; justify-content: space-between; } 
 #renewMain .mainVisual .visualItem li { width: 96px; height: 112px; margin-bottom: 10px; box-sizing: border-box; } 
