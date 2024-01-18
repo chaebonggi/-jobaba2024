@@ -42,14 +42,13 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
  .introWrap .introList > li > a strong { color: #003281; } 
  .introWrap .introList > li > a p { height: auto; color: #8c8c8c; } 
  .introWrap .introBtn { margin-top: 50px; } 
- .introWrap .introBtn a { display: flex; padding: 0; margin-left: -12px; background-image: none; background-color: transparent; border: none; box-shadow: none; align-items: center; justify-content: center; } 
+ .introWrap .introBtn a { display: flex; padding: 0; background-image: none; background-color: transparent; border: none; box-shadow: none; align-items: center; justify-content: center; } 
  .introWrap .introBtn strong { display: block; position: relative; color: #003281; } 
- .introWrap .introBtn strong::after { content: '\27F6'; position: absolute; top: calc(50% - 2px); right: -30px; transform: translateY(-50%); font-size: 20px; }
+ .introWrap .introBtn strong::before { content: '\27F6'; position: absolute; top: calc(50% - 2px); right: -30px; transform: translateY(-50%); font-size: 20px; }
  .introWrap .introBtn span { margin-right: 20px; } 
  .introWrap .introBtn p { display: none; } 
  
  }
-
 
  @media screen and (max-width: 640px) { 
  body.intro { background-image: url(../../images/main_2024/intro/intro_bg_top02.png), url(../../images/main_2024/intro/intro_bg_bottom02.png); background-color: #ffffff; background-position: top center, bottom center; background-size: contain; } 
@@ -68,9 +67,19 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 
  .introWrap .introBtn { margin-top: 30px; } 
  .introWrap .introBtn a:hover { border: none; } 
- .introWrap .introBtn a { padding: 15px 20px; background-size: auto 50%; background-position: bottom 10px right 10px; } 
- .introWrap .introBtn strong { font-size: 18px; } 
- .introWrap .introBtn strong::after { right: -18px; font-size: 12px; } 
+ .introWrap .introBtn a {padding: 15px 20px; background-size: auto 50%; background-position: bottom 10px right 10px; } 
+ .introWrap .introBtn strong { padding-right: 24px; font-size: 18px; } 
+ .introWrap .introBtn strong::before { top: 50%; right: -20px; font-size: 12px; } 
+ .introWrap .introBtn strong::after {
+    content: '';
+    width: 20px;
+    height: 19px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background: url(../../images/main_2024/intro/intro_img06.png) center no-repeat;
+ }
  .introWrap .introBtn span { margin-right: 6px; font-size: 12px; } 
 
  }
