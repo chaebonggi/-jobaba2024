@@ -186,36 +186,41 @@ var select_data = $(this).find('option:selected').data('tab');
     $('.contentsBox .categoryCont').removeClass('active');
     $('.contentsBox .categoryCont[data-tab='+select_data+']').addClass('active');
 });
-var $categorySlider = $('#renewMain .categoryCont');
-$categorySlider.find('.thumbList').each(function(i){
-    $(this).find(".swiper-pagination").addClass("type"+i);
-    var thumbSwiper  = new Swiper($(this), {
-        slidesPerView: 1,
-        slidesPerColumn: 2,
-        spaceBetween: 20,
-        slidesPerColumnFill: "row", 
-        observer: true,
-        observeParents: true,
-        pagination: {
-            el: $categorySlider.find('.swiper-pagination.type'+i),
-            type: 'bullets'
-        },
-        breakpoints: {
-            1024: {
-                slidesPerView: 5,
-                spaceBetween: 30,
+function cateSlide() {
+    console.log('a')
+    var $categorySlider = $('#renewMain .categoryCont');
+    $categorySlider.find('.thumbList').each(function(i){
+        $(this).find(".swiper-pagination").addClass("type"+i);
+        var thumbSwiper  = new Swiper($(this), {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+            slidesPerColumn: 1,
+            spaceBetween: 20,
+            slidesPerColumnFill: "row", 
+            observer: true,
+            observeParents: true,
+            pagination: {
+                el: $categorySlider.find('.swiper-pagination.type'+i),
+                type: 'bullets'
             },
-            860: {
-                slidesPerView: 3,
-                spaceBetween: 30,
+            breakpoints: {
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 30,
+                    slidesPerColumn: 2,
+                    slidesPerGroup: 5,
+                },
+                860: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                    slidesPerColumn: 2,
+                    slidesPerGroup: 3,
+                },
             },
-            640: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-            }
-        },
-    }); 
-});
+        }); 
+    });
+}
+cateSlide();
 
 // policy jobRecomend
 function updSwiperNumericPagination() {
