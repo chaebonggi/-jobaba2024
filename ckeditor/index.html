@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CKEditor</title>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:@300;400;500;700&display=swap" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js" ></script>
+	<script src="ckeditor.js"></script>
+	<style>
+		img{max-width:100%;}
+		.templete_list{display:flex;align-items:center;margin-bottom:8px;}
+		.templete_list .tit{font-size:14px;color:#666;padding-right:16px;}
+		.templete_list .tmp_sel{border:1px solid #ccc;position:relative;cursor:pointer;font-size:14px;padding:8px 16px;border-radius:4px;}
+		.templete_list .tmp_sel:hover{background-color:#ededed;}
+		.templete_list .tmp_sel .type{position:absolute;bottom:1px;right:1px;background:rgba(0,0,0,.5);color:#fff;font-size:12px;letter-spacing:-1px;padding:4px 8px;}
+		.templete_list .tmp_sel + .tmp_sel{margin-left:5px;}
+
+		.templete{display:none;}
+	</style>
+</head>
+<body>
+	<form>
+		<div class="templete_list">
+			<div class="tit">채용공고<br/>템플릿 선택</div>
+			<div class="tmp_sel" onclick="SetContents('A');">지원정책</div>
+			
+		</div>
+		<!-- <input onclick="SetContents('A');" type="button" value="템플릿A" >
+		<input onclick="SetContents('B');" type="button" value="템플릿B" >
+		<input onclick="SetContents('C');" type="button" value="템플릿C" > -->
+		<textarea name="editor1" id="editor1" rows="10" cols="80">
+			채용공고 내용을 입력하세요.<br/>
+			템플릿을 선택하시면 더 빠르게 채용공고를 완성할 수 있습니다.
+		</textarea>
+		<!-- <textarea cols="100" id="htmlArea" rows="3" ></textarea> -->
+		<div id="templeteA" class="templete"></div>
+		<div id="templeteB" class="templete"></div>
+		<div id="templeteC" class="templete"></div>
+		<div id="rcu_field" class="templete">
+			<div class="vTable">
+				<div class="vTh">모집분야명<span>(0명)</span></div>
+				<div>
+					<dl>
+						<dt>담당업무</dt>
+						<dd>상세 업무내용을 입력하세요.</dd>
+						<dd>상세 업무내용을 입력하세요.</dd>
+						<dd>상세 업무내용을 입력하세요.</dd>
+						<dt>자격요건</dt>
+						<dd>학력 : 학력무관</dd>
+						<dd>경력 : 경력무관</dd>
+						<dt>우대사항</dt>
+						<dd>상세내용을 입력하세요.</dd>
+						<dd>상세내용을 입력하세요.</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+	</form>
+	<script>
+		$(document).ready(function(){
+			$('#templeteA').load('templete_A.html');
+			$('#templeteB').load('templeteB.html');
+			$('#templeteC').load('templeteC.html');
+		});
+		
+		//CKEDITOR.config.contentsCss = 'templete.css';
+		//CKEDITOR.config.allowedContent = true;
+		var ckeditor_config = {
+			//extraPlugins: 'editorplaceholder',
+			//editorplaceholder: 'Start typing here...',
+			//resize_enable : false
+			//extraPlugins: 'autogrow',
+			//autoGrow_minHeight: 200,
+			//autoGrow_maxHeight: 600,
+			//autoGrow_bottomSpace: 50,
+			//fullPage : true,
+			height: 700,
+			//extraPlugins: 'charcount',
+			allowedContent : true,
+			enterMode : CKEDITOR.ENTER_BR,
+			shiftEnterMode : CKEDITOR.ENTER_P,
+			//removePlugins: 'resize',
+			//removeButtons: 'PasteFromWord'
+		};
+		CKEDITOR.replace( 'editor1', ckeditor_config);
+		function SetContents(type){
+			var editor = CKEDITOR.instances.editor1;
+			var value = document.getElementById('templete'+type).innerHTML;
+			editor.setData(value);
+		}
+	</script>
+</body>
+</html>

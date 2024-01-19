@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CKEditor</title>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .recruit_wrapper{
+            font-family: 'Noto Sans KR', sans-serif;font-size:16px;font-weight:400;color:#333;box-sizing:border-box;
+            position:relative;margin:0 auto;padding:0;width:100%;max-width:958px;
+        }
+        .recruit_wrapper .header{background:url(https://cdn.jsdelivr.net/gh/kang2oon/entCompany/ckeditor/images/top_case1.png) no-repeat 50% 50%;display:flex;justify-content:center;align-items:center;height:420px;}
+        .recruit_wrapper .header h2{color:#fff;font-size:48px;font-weight:700;text-align:center;}
+        .recruit_wrapper .company_info{padding:36px;text-align:center;}
+        .recruit_wrapper .space{height:16px;}
+        .recruit_wrapper .space.second{height:8px;}
+        .recruit_wrapper h3{background:url(https://cdn.jsdelivr.net/gh/kang2oon/entCompany/ckeditor/images/bu_circle_38bab2.png) no-repeat 0% 50%;background-size:24px;font-size:24px;padding-left:32px;margin:16px 0 8px;}
+        .recruit_wrapper .vTable{display:flex;}
+        .recruit_wrapper .vTable div{border:1px solid #ccc;padding:24px;}
+        .recruit_wrapper .vTable div + div{border-left:none;}
+        .recruit_wrapper .vTable .vTh{background:#f5f5f5;text-align:center;flex-shrink:0;width:180px;}
+        .recruit_wrapper .vTable .vTh span{font-weight:300;color:#666;display:block;}
+        .recruit_wrapper .vTable div:nth-child(2n){flex-grow:1;}
+        .recruit_wrapper dl{margin:0;}
+        .recruit_wrapper dt{margin:24px 0 0;}
+        .recruit_wrapper dt:nth-child(1){margin:0;}
+        .recruit_wrapper dd{font-weight:300;margin-left:20px;position:relative;}
+        .recruit_wrapper dd::before{content:"ㆍ";font-weight:700;font-size:18px;padding-right:4px;position:absolute;left:-20px;}
+        @media screen and (max-width:768px) {
+            .recruit_wrapper .vTable .vTh{width:120px;}
+        }
+        @media screen and (max-width:420px) {
+            .recruit_wrapper .header{height:320px;}
+            .recruit_wrapper .header h2{font-size:36px;padding:0 24px;}
+            .recruit_wrapper .vTable{flex-direction:column;}
+            .recruit_wrapper .vTable div{border:none;}
+            .recruit_wrapper .vTable .vTh{width:calc(100% - 32px);padding:16px;text-align:left;}
+            .recruit_wrapper .vTable .vTh span{display:inline;}
+        }
+    </style>
+</head>
+<body>
+<div class="recruit_wrapper">
+    <div class="header">
+        <h2>채용공고 제목을 입력하세요.</h2>
+    </div>
+    <div class="space"></div>
+    <div class="space"></div>
+    <div class="space"></div>
+    <h3>모집분야 및 자격요건</h3>
+    <div class="vTable">
+        <div class="vTh">모집분야명<span>(0명)</span></div>
+        <div>
+            <dl>
+                <dt>담당업무</dt>
+                <dd>상세 업무내용을 입력하세요.</dd>
+                <dd>상세 업무내용을 입력하세요.</dd>
+                <dd>상세 업무내용을 입력하세요.</dd>
+                <dt>자격요건</dt>
+                <dd>학력 : 학력무관</dd>
+                <dd>경력 : 경력무관</dd>
+                <dt>우대사항</dt>
+                <dd>상세내용을 입력하세요.</dd>
+                <dd>상세내용을 입력하세요.</dd>
+            </dl>
+        </div>
+    </div>
+    <div id="fieldBefore" class="space second"></div>
+    <div class="space second"></div>
+    <h3>근무조건</h3>
+    <dl>
+        <dd>근무일시 : 2022.08.01~</dd>
+        <dd>근무조건 : 정규직</dd>
+        <dd>근무장소 : 경기도 > 부천시</dd>
+        <dd>근무요일 : 주5일</dd>
+        <dd>근무시간 : 9시~18시</dd>
+        <dd>급여조건 : 면접 후 결정</dd>
+    </dl>
+    <div class="space"></div>
+    <h3>복리후생</h3>
+    <dl>
+        <dd>A</dd>
+        <dd>B</dd>
+        <dd>C</dd>
+        <dd>D</dd>
+        <dd>E</dd>
+    </dl>
+    <div class="space"></div>
+    <h3>전형절차</h3>
+    <dl>
+        <dd>서류전형 > 1차면접 > 2차면접 > 임원면접 > 최종합격</dd>
+        <dd>면접일정은 추후 통보됩니다.</dd>
+    </dl>
+    <div class="space"></div>
+    <h3>제출서류</h3>
+    <dl>
+        <dd>A</dd>
+    </dl>
+    <div class="space"></div>
+    <h3>접수기간 및 방법</h3>
+    <dl>
+        <dd>접수기간 : 2022년 00월 00일(월) ~ 2022년 00월 00일 16시까지</dd>
+        <dd>접수방법 : 잡아바 입사지원</dd>
+    </dl>
+    <div class="space"></div>
+    <h3>유의사항</h3>
+    <dl>
+        <dd>허위사실이 발견될 경우 채용이 취소될 수 있습니다.</dd>
+    </dl>
+    <div class="space"></div>
+</div>
+</body>
+</html>

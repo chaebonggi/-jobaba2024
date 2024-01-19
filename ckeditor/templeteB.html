@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CKEditor</title>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .recruit_wrapper{
+            font-family: 'Noto Sans KR', sans-serif;font-size:16px;font-weight:400;color:#333;box-sizing:border-box;
+            position:relative;margin:0 auto;padding:0;width:100%;max-width:958px;
+        }
+        .recruit_wrapper .space{height:16px;}
+        .recruit_wrapper .space.second{height:8px;}
+        .recruit_wrapper .header{
+            background:#ff9072 url(https://cdn.jsdelivr.net/gh/kang2oon/entCompany/ckeditor/images/top_case2.png) no-repeat 50% 50%;
+            height:420px;box-sizing:border-box;padding:90px 56px 0 56px;text-align:center;
+        }
+        .recruit_wrapper .header h2{color:#00396d;font-size:48px;font-weight:700;line-height:1.3;display:inline-block;box-shadow:inset 0 -24px 0 rgba(255,238,209,.5);}
+        .recruit_wrapper h3{background:url(https://cdn.jsdelivr.net/gh/kang2oon/entCompany/ckeditor/images/bu_checkmark_ff9072.png) no-repeat 0% 50%;font-size:28px;font-weight:500;padding-left:32px;margin:24px 0 8px;}
+        .recruit_wrapper .tbl{width:100%;border-collapse:collapse;}
+        .recruit_wrapper .tbl thead th{padding:12px;font-weight:300;}
+        .recruit_wrapper .tbl tbody th, .recruit_wrapper .tbl tbody td{padding:16px;}
+        .recruit_wrapper .tbl tbody th span{display:block;font-weight:300;}
+        .recruit_wrapper .tbl tbody td{font-weight:300;}
+        .recruit_wrapper .tbl tbody td ul{margin:6px;padding:0 0 0 18px;}
+        .recruit_wrapper .process{display:flex;}
+        .recruit_wrapper .process div{flex-grow:1;text-align:center;background:url(https://cdn.jsdelivr.net/gh/kang2oon/entCompany/ckeditor/images/bg_dashline_ff9072_mid.png) no-repeat 50% 50%;}
+        .recruit_wrapper .process div:first-child{background:url(https://cdn.jsdelivr.net/gh/kang2oon/entCompany/ckeditor/images/bg_dashline_ff9072_start.png) no-repeat 50% 50%;}
+        .recruit_wrapper .process div:last-child{background:url(https://cdn.jsdelivr.net/gh/kang2oon/entCompany/ckeditor/images/bg_dashline_ff9072_end.png) no-repeat 50% 50%;}
+        .recruit_wrapper .process div span{display:inline-block;padding:32px 24px;background:#fff;border:2px solid #ff9072;border-radius:120px;}
+        .recruit_wrapper .process div span em{display:block;font-size:12px;font-weight:300;}
+        .recruit_wrapper li{list-style:disc;}
+    </style>
+</head>
+<body>
+    <div class="recruit_wrapper">
+        <div class="header">
+            <h2>채용공고 제목을 입력하세요.</h2>
+        </div>
+        <div class="space"></div>
+        <h3>모집부문 및 상세내용</h3>
+        <table class="tbl" style="border-top:2px solid #ff9072;">
+            <thead>
+            <tr>
+                <th style="border-bottom:1px solid #ddd;">모집부문</th>
+                <th style="border-bottom:1px solid #ddd;">상세내용</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th style="border-bottom:1px solid #ddd;">공통 자격요건</th>
+                <td style="border-bottom:1px solid #ddd;border-left:1px solid #ddd;">
+                    <ul>
+                        <li>학력 : 무관</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th style="border-bottom:1px solid #ddd;">모집분야명<span>(0명)</span></th>
+                <td style="border-bottom:1px solid #ddd;border-left:1px solid #ddd;">
+                    <strong>담당업무</strong>
+                    <ul>
+                        <li>상세 업무내용을 입력하세요.</li>
+                        <li>상세 업무내용을 입력하세요.</li>
+                        <li>상세 업무내용을 입력하세요.</li>
+                    </ul>
+                    <div class="space second"></div>
+                    <strong>지원자격</strong>
+                    <ul>
+                        <li>경력 : 경력무관</li>
+                    </ul>
+                    <div class="space second"></div>
+                    <strong>우대사항</strong>
+                    <ul>
+                        <li>상세내용을 입력하세요.</li>
+                        <li>상세내용을 입력하세요.</li>
+                    </ul>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="space"></div>
+        <h3>근무조건</h3>
+        <ul>
+            <li>근무조건 : 정규직</li>
+            <li>근무장소 : 경기도 > 부천시</li>
+            <li>근무요일 : 주5일</li>
+            <li>근무시간 : 9시~18시</li>
+            <li>급여조건 : 면접 후 결정</li>
+        </ul>
+        <div class="space"></div>
+        <h3>전형절차</h3>
+        <div class="process">
+            <div><span><em>STEP1</em>서류전형</span></div>
+            <div><span><em>STEP2</em>면접전형</span></div>
+            <div><span><em>STEP3</em>최종합격</span></div>
+        </div>
+        <div class="space"></div>
+        <h3>접수기간 및 방법</h3>
+        <ul>
+            <li>접수기간 : 2022년 00월 00일(월) ~ 2022년 00월 00일 16시까지</li>
+            <li>접수방법 : 잡아바 입사지원</li>
+        </ul>
+        <div class="space"></div>
+        <h3>유의사항</h3>
+        <ul>
+            <li>허위사실이 발견될 경우 채용이 취소될 수 있습니다.</li>
+        </ul>
+    </div>
+</body>
+</html>
