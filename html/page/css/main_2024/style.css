@@ -715,7 +715,7 @@ body.intro { background-image: url(../../images/main_2024/intro/intro_bg_top02.p
 #renewMain .policyFind .findBtn a { padding: 10px 0; font-size: 18px; } 
 #renewMain .policyFind .titWrap .tit h2 { font-size: 22px; } 
 #renewMain .policyFind .titWrap .tit p { font-size: 14px; } 
-#renewMain .policyFind .titWrap { padding-left: 34px; background-size: auto 50%; } 
+#renewMain .policyFind .titWrap { padding-left: 40px; background-size: 30px; } 
 
  /* policy recomendInfo */
  .recomendInfo .innerSection { padding: 30px 10px 60px; } 
