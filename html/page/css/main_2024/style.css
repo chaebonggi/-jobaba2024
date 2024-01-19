@@ -12,7 +12,7 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
  .introWrap .introList > li + li { margin-left: 30px; } 
  .introWrap .introList > li:hover { border-color: #008ae0; } 
  .introWrap .introList > li:nth-child(2):hover { border-color: #9eca80; } 
- .introWrap .introList > li > a { display: block; width: 100%; padding: 50px 25px; background-image: url(../../images/main_2024/intro/intro_img04_2.png); background-color: #fff; background-repeat: no-repeat; background-position: top 130px center; text-align: center; } 
+ .introWrap .introList > li > a { display: block; width: 100%; padding: 50px 25px; background-image: url(../../images/main_2024/intro/intro_img04_2.png); background-color: #fff; background-repeat: no-repeat; background-position: top 130px center; text-align: center; box-sizing: border-box;} 
  .introWrap .introList > li:nth-child(2) > a { background-image: url(../../images/main_2024/intro/intro_img01.png) } 
  .introWrap .introList > li > a p { display: none; } 
 
@@ -24,7 +24,7 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
  .introWrap .introList > li:nth-child(2) > a .introBtn { background: #d0e9ee; } 
 
  .introWrap .introBtn { max-width: 830px; margin: 20px auto 0; padding-bottom: 30px; } 
- .introWrap .introBtn a { display: inline-block; width: 100%; padding: 30px 0 30px 260px; background-image: url(../../images/main_2024/intro/intro_img05.png); background-color: #fff; background-repeat: no-repeat; background-position: center left 120px; box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.2); border: 5px solid #fff; border-radius: 20px; } 
+ .introWrap .introBtn a { display: inline-block; width: 100%; padding: 30px 0 30px 260px; background-image: url(../../images/main_2024/intro/intro_img05.png); background-color: #fff; background-repeat: no-repeat; background-position: center left 120px; box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.2); border: 5px solid #fff; border-radius: 20px; box-sizing: border-box;} 
  .introWrap .introBtn a:hover { border-color: #939ac8; } 
  .introWrap .introBtn span { display: block; color: #8c8c8c; font-size: 20px; } 
  .introWrap .introBtn .tit { display: inline-block; color: #000; font-size: 30px; font-weight: 500; } 
@@ -388,7 +388,7 @@ body.intro { background-image: url(../../images/main_2024/intro/intro_bg_top02.p
 
 #renewMain .policyFind .ckItem { margin:10px 8px 10px 20px; font-size:14px; color:#999; letter-spacing: -1px; line-height: 16px; } 
 #renewMain .policyFind .ckItem + .ckItem { margin-top:14px; } 
-#renewMain .policyFind .ckItem span { padding-left:24px; font-size:14px; color:#505050; font-weight: 400; } 
+#renewMain .policyFind .ckItem span { padding-left:24px; position: relative; font-size:14px; color:#505050; font-weight: 400; } 
 #renewMain .policyFind .ckItem input[type="checkbox"] + span::before { content:""; width:16px; height:16px; background:#fdfdfd; border:1px solid #ddd; position:absolute; left:0; top:1px; border-radius:3px; } 
 #renewMain .policyFind .ckItem input[type="checkbox"]:checked + span::before { content:"\2714"; font-size:12px; line-height:16px; background:#008ae0; color:#fff; border-color:#008ae0; text-align:center; font-weight:400; } 
 #renewMain .policyFind .cateWrap { display:flex; border:1px solid #e7e7e7; flex-wrap:wrap; overflow:hidden; } 
@@ -408,7 +408,9 @@ body.intro { background-image: url(../../images/main_2024/intro/intro_bg_top02.p
 #renewMain .policyFind .findBox { width: calc(100% - 166px); } 
 #renewMain .policyFind .selectWrap { display: flex; margin-bottom: 12px; justify-content: space-between; gap: 0 12px; } 
 #renewMain .policyFind .selectWrap .contBox { width: 100%; } 
-#renewMain .policyFind .commSelect { width: 100%; padding: 10px 12px; background-color: #fff !important; background-image: url(../../images/main_2024/main/icon_arrow.png); background-repeat: no-repeat; background-position: right 14px center; background-size: 12px 7px; color: #000; font-size: 14px; border: 1px solid #f5f3f3; cursor: pointer; } 
+#renewMain .policyFind .commSelect { width: 100%; padding: 10px 12px; background-color: #fff !important; background-image: url(../../images/main_2024/main/icon_arrow.png); background-repeat: no-repeat; background-position: right 14px center; background-size: 12px 7px; color: #000; font-size: 14px; border: 1px solid #f5f3f3; cursor: pointer; appearance:none;
+
+} 
 #renewMain .policyFind .titWrap { display: flex; padding-left: 80px; margin-bottom: 20px; background: url(../../images/main_2024/main/policy_icon01.png) left center no-repeat; } 
 #renewMain .policyFind .titWrap .tit h2 { color: #000; font-size: 36px; } 
 #renewMain .policyFind .titWrap .tit p { color: #616162; font-size: 16px; } 
