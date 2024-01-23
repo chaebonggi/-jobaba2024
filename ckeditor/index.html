@@ -24,8 +24,8 @@
 	<form>
 		<div class="templete_list">
 			<div class="tit">채용공고<br/>템플릿 선택</div>
-			<div class="tmp_sel" onclick="SetContents('A');">지원정책</div>
-			
+			<div class="tmp_sel" onclick="SetContents('A');">A형</div>
+			<div class="tmp_sel" onclick="SetContents('B');">B형</div>
 		</div>
 		<!-- <input onclick="SetContents('A');" type="button" value="템플릿A" >
 		<input onclick="SetContents('B');" type="button" value="템플릿B" >
@@ -60,7 +60,7 @@
 	<script>
 		$(document).ready(function(){
 			$('#templeteA').load('templete_A.html');
-			$('#templeteB').load('templeteB.html');
+			$('#templeteB').load('templete_B.html');
 			$('#templeteC').load('templeteC.html');
 		});
 		
