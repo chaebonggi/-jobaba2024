@@ -26,6 +26,12 @@
 			<div class="tit">템플릿 선택</div>
 			<div class="tmp_sel" onclick="SetContents('A');">A형</div>
 			<div class="tmp_sel" onclick="SetContents('B');">B형</div>
+			<div class="tmp_sel" onclick="SetContents('C');">지원정책(창업지원) A형</div>
+			<div class="tmp_sel" onclick="SetContents('D');">지원정책 B형</div>
+			<div class="tmp_sel" onclick="SetContents('E');">대외활동(공모전/경진대회)</div>
+			<div class="tmp_sel" onclick="SetContents('F');">대외활동(채용박람회)</div>
+			<div class="tmp_sel" onclick="SetContents('G');">대외활동(서포터즈/봉사활동)</div>
+			<div class="tmp_sel" onclick="SetContents('H');">대외활동(박람회)</div>
 		</div>
 		<!-- <input onclick="SetContents('A');" type="button" value="템플릿A" >
 		<input onclick="SetContents('B');" type="button" value="템플릿B" >
@@ -61,7 +67,8 @@
 		$(document).ready(function(){
 			$('#templeteA').load('templete_A.html');
 			$('#templeteB').load('templete_B.html');
-			$('#templeteC').load('templeteC.html');
+			$('#templeteC').load('templete_C.html');
+			// $('#templeteC').load('templeteC.html');
 		});
 		
 		//CKEDITOR.config.contentsCss = 'templete.css';
