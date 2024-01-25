@@ -14,6 +14,10 @@
         .tmp_wrap p{margin:0;padding-left:20px;}
         .tmp_wrap .tit{font-size:18px;font-weight:500;margin:24px 0 4px;padding-left:0;}
         .tmp_wrap .desc{margin:24px 0 4px;padding-left:0;}
+        .tmp_wrap ul { padding: 0; margin: 0 0 0 20px;}
+        .tmp_wrap li { position: relative; padding-left: 8px; list-style-type: none; } 
+        .tmp_wrap li.dot::before{content: ''; display: block; width: 4px; height: 4px; position: absolute; top: 10px; left: 0; background: #232323; border-radius: 50%;}
+        .tmp_wrap li.minus::before{content: '\002D'; display: block; position: absolute; left: 0; top: 0;}
         
         @media screen and (max-width:768px) {
             
@@ -26,18 +30,26 @@
 <body>
 <div class="tmp_wrap">
     <p class="tit">📂 사업정보</p>
-    <p>&middot; 사업명 : 사업명을 기입한다.</p>
-    <p>&middot; 사업기간 : 사업기간을 기입한다. </p>
-    <p>&middot; 지원내용 : 사업의 지원내용/혜택 등을 개조식으로 작성 </p>
-    <p>&middot; 모집인원 : 00명 </p>
-    <p>&middot; 지원혜택 : </p>
+    <ul>
+        <li class="dot">사업명 : 사업명을 기입한다.</li>
+        <li class="dot">사업기간 : 사업기간을 기입한다.</li>
+        <li class="dot">지원내용 : 사업의 지원내용/혜택 등을 개조식으로 작성</li>
+        <li class="dot">모집인원 : 00명</li>
+        <li class="dot">지원혜택 :</li>
+    </ul>
 
     <p class="tit">📂 지원대상</p>
-    <p>&middot; 연령, 성별, 취업상태, 지역 등 1~2줄 이내 개조식 작성</p>
+    <ul>
+        <li class="dot">연령, 성별, 취업상태, 지역 등 1~2줄 이내 개조식 작성</li>
+    </ul>
     <p class="tit">📂 신청방법</p>
-    <p>&middot; 방문접수 (안성시 첨단사업과기업지원팀)</p>
+    <ul>
+        <li class="dot">방문접수 (안성시 첨단사업과기업지원팀)</li>
+    </ul>
     <p class="tit">📞 문의처</p>
-    <p>&middot; 안성시 첨단사업과기업지원팀(031-257-4531)</p>
+    <ul>
+        <li class="dot">안성시 첨단사업과기업지원팀(031-257-4531)</li>
+    </ul>
     <p class="desc">💡 기타 자세한 모집요강 및 세부 내용은 첨부된 공고문을 참고하시기 바랍니다</p>
     <p class="desc">💡 기타 자세한 모집요강 및 세부 내용은 상세페이지에서 내용을 참고하시기 바랍니다.</p>
 </div>
