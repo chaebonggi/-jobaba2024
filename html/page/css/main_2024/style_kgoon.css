@@ -112,7 +112,7 @@
     .contents-wrap .view-wrap .summary_side .state .apply{display:none;}    
     .contents-wrap .view-wrap .apply_mobile{display:block;position:sticky;bottom:16px;}
     .contents-wrap .view-wrap .apply_mobile a{
-        display:block;padding:12px;text-align:center;color:#fff;background-color:#2aa6c1;border-radius:4px;margin-top:24px;font-size:18px;
+        display:block;width: 100%; max-width: 480px; margin: 0 auto; padding:12px;text-align:center;color:#fff;background-color:#2aa6c1;border-radius:4px;margin-top:24px;font-size:18px;
     }
 }
 
