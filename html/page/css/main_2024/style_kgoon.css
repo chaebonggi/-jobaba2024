@@ -105,10 +105,14 @@
     .contents-wrap .view-wrap .dtinfo_wrap .coposition, .contents-wrap .view-wrap .dtinfo_wrap .description{padding:20px 24px;}
     .contents-wrap .view-wrap .dtinfo_wrap .description{margin-top:20px;}
     /*.contents-wrap .view-wrap .dtinfo_wrap .coposition li span{display:block;}*/
-    .contents-wrap .view-wrap .dtinfo_wrap .coposition li span{display:block;max-width:100%;}
+    .contents-wrap .view-wrap .dtinfo_wrap .coposition li span{display: inline; max-width:100%;}
     /*.contents-wrap .view-wrap .dtinfo_wrap .coposition li span.tit{font-weight:500;width:auto;font-size:12px;color:#abb1b1;margin-bottom:4px;}*/
-    .contents-wrap .view-wrap .dtinfo_wrap .coposition li span.tit{font-weight:500;width:auto;font-size:14px;color:#abb1b1;margin-bottom:4px;}
-    .contents-wrap .view-wrap .dtinfo_wrap .coposition li span.gobtn{position:relative;margin-top:8px;}
-
+    .contents-wrap .view-wrap .dtinfo_wrap .coposition li span.tit{display: block; font-weight:500;width:auto;font-size:14px;color:#abb1b1;margin-bottom:4px;}
+    .contents-wrap .view-wrap .dtinfo_wrap .coposition li span.gobtn{position:relative;}
+    .contents-wrap .view-wrap .dtinfo_wrap .coposition li span.gobtn a { width: 24px; padding: 0; background-repeat: no-repeat; background-position: center; background-size: contain; border: none; text-indent: -999999px;}
+    .contents-wrap .view-wrap .dtinfo_wrap .coposition li span.gobtn a.icon_home {background-image: url(../../images/detail/icon_home.png);}
+    .contents-wrap .view-wrap .dtinfo_wrap .coposition li span.gobtn a.icon_addr {background-image: url(../../images/detail/icon_addr.png);}
+    .contents-wrap .view-wrap .dtinfo_wrap .coposition li span.gobtn a.icon_tel {background-image: url(../../images/detail/icon_tel.png);}
+    .contents-wrap .view-wrap .dtinfo_wrap .coposition li span.gobtn a.icon_mail {background-image: url(../../images/detail/icon_mail.png);}
 }
     
