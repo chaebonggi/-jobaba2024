@@ -16,8 +16,8 @@
         .tmp_wrap .desc{margin:24px 0 4px;padding-left:0;}
         .tmp_wrap ul { padding: 0; margin: 0 0 0 20px;}
         .tmp_wrap li { position: relative; padding-left: 8px; list-style-type: none; } 
-        .tmp_wrap li.dot::before{content: ''; display: block; width: 4px; height: 4px; position: absolute; top: 10px; left: 0; background: #232323; border-radius: 50%;}
-        .tmp_wrap li.minus::before{content: '\002D'; display: block; position: absolute; left: 0; top: 0;}
+        .tmp_wrap ul.style_dot li::before{content: ''; display: block; width: 4px; height: 4px; position: absolute; top: 10px; left: 0; background: #232323; border-radius: 50%;}
+        .tmp_wrap ul.style_minus li::before{content: '\002D'; display: block; position: absolute; left: 0; top: 0;}
         
         @media screen and (max-width:768px) {
             
@@ -30,26 +30,26 @@
 <body>
 <div class="tmp_wrap">
     <p class="tit">📂 활동개요</p>
-    <ul>
-        <li class="dot">활동명 :</li>
-        <li class="dot">활동소개 :</li>
-        <li class="dot">활동기간 :</li>
-        <li class="dot">활동혜택 :</li>
+    <ul class="style_dot">
+        <li>활동명 :</li>
+        <li>활동소개 :</li>
+        <li>활동기간 :</li>
+        <li>활동혜택 :</li>
     </ul>
 
     <p class="tit">📂 지원자격</p>
-    <ul>
-        <li class="dot">최대한 간결하게 작성 (상세내용은 공고문 참고)</li>
+    <ul class="style_dot">
+        <li>최대한 간결하게 작성 (상세내용은 공고문 참고)</li>
     </ul>
 
     <p class="tit">📂 신청방법</p>
-    <ul>
-        <li class="dot">이메일 접수(   )</li>
+    <ul class="style_dot">
+        <li>이메일 접수(   )</li>
     </ul>
 
     <p class="tit">📞 문의처</p>
-    <ul>
-        <li class="dot">********(   )</li>
+    <ul class="style_dot">
+        <li>********(   )</li>
     </ul>
 
     <p class="desc">💡 기타 자세한 모집요강 및 세부 내용은 첨부파일을 참고하시기 바랍니다.</p>

@@ -16,8 +16,8 @@
         .tmp_wrap .desc{margin:24px 0 4px;padding-left:0;}
         .tmp_wrap ul { padding: 0; margin: 0 0 0 20px;}
         .tmp_wrap li { position: relative; padding-left: 8px; list-style-type: none; } 
-        .tmp_wrap li.dot::before{content: ''; display: block; width: 4px; height: 4px; position: absolute; top: 10px; left: 0; background: #232323; border-radius: 50%;}
-        .tmp_wrap li.minus::before{content: '\002D'; display: block; position: absolute; left: 0; top: 0;}
+        .tmp_wrap ul.style_dot li::before{content: ''; display: block; width: 4px; height: 4px; position: absolute; top: 10px; left: 0; background: #232323; border-radius: 50%;}
+        .tmp_wrap ul.style_minus li::before{content: '\002D'; display: block; position: absolute; left: 0; top: 0;}
         
         @media screen and (max-width:768px) {
             
@@ -30,34 +30,34 @@
 <body>
 <div class="tmp_wrap">
     <p class="tit">📂 사업정보</p>
-    <ul>
-        <li class="dot">사업명 : 사업명을 기입한다.</li>
-        <li class="dot">사업기간 : 사업기간을 기입한다.</li>
-        <li class="dot">모집인원 : 00명</li>
-        <li class="dot">지원혜택 :</li>
+    <ul class="style_dot">
+        <li>사업명 : 사업명을 기입한다.</li>
+        <li>사업기간 : 사업기간을 기입한다.</li>
+        <li>모집인원 : 00명</li>
+        <li>지원혜택 :</li>
     </ul>
 
     <p class="tit">📂 채용분야 및 형태</p>
-    <ul>
-        <li class="dot">근로형태 :</li>
-        <li class="dot">근무기간 :</li>
-        <li class="dot">급여 :</li>
-        <li class="dot">주요업무 :</li>
+    <ul class="style_dot">
+        <li>근로형태 :</li>
+        <li>근무기간 :</li>
+        <li>급여 :</li>
+        <li>주요업무 :</li>
     </ul>
 
     <p class="tit">📂 지원대상</p>
-    <ul>
-        <li class="dot">최대한 간결하게 작성 (상세내용은 공고문 참고)</li>
+    <ul class="style_dot">
+        <li>최대한 간결하게 작성 (상세내용은 공고문 참고)</li>
     </ul> 
 
     <p class="tit">📂 신청방법</p>
-    <ul>
-        <li class="dot">방문접수 (안성시 첨단사업과기업지원팀)</li>
+    <ul class="style_dot">
+        <li>방문접수 (안성시 첨단사업과기업지원팀)</li>
     </ul>
 
     <p class="tit">📞 문의처</p>
-    <ul>
-        <li class="dot">안성시 첨단사업과기업지원팀(031-257-4531)</li>
+    <ul class="style_dot">
+        <li>안성시 첨단사업과기업지원팀(031-257-4531)</li>
     </ul>
 
     <p class="desc">💡 기타 자세한 모집요강 및 세부 내용은 첨부된 공고문을 참고하시기 바랍니다</p>
