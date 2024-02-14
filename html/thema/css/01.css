@@ -39,7 +39,7 @@
 .themaWrap .cont01 .innerSection { padding: 200px 0 160px; } 
 .themaWrap .banner { padding: 56px 0 36px; border-top: 20px solid #f3f3f3; text-align: center; } 
 .themaWrap .banner h3 { color: #000; font-size: 72px; } 
-.themaWrap .banner p { color: #000000; font-size: 24px; } 
+.themaWrap .banner p { color: #000000; font-size: 34px; } 
 .themaWrap .banner a { display: inline-block; padding: 4px 28px; margin-top: 20px; color: #ffff; font-size: 18px; border-radius: 20px; box-sizing: border-box; } 
 .themaWrap .banner a span { display: block; padding-top: 4px; } 
 .themaWrap .banner.style01 { background: #c3e7e5; } 
@@ -178,6 +178,7 @@
  .themaWrap .cont01 .bz_wrap .bz_list { gap: 10px; } 
  .themaWrap .cont01 .bz_wrap .bz_list li.none_img { display: none; } 
  .themaWrap .cont01 .bz_wrap .bz_list li a { border-radius: 15px; } 
+ .themaWrap .cont01 .bz_wrap .bz_list li a span {display: inline-block; padding: 10px 20px 4px; background: #b9e2e0; border-radius: 30px;}
 
  .themaWrap .cont01 .bz_wrap .bz_list li { width: calc(100% / 3 - 10px); } 
 
@@ -216,7 +217,6 @@
  .themaWrap .cont01 .item_box .tit_wrap .tit { font-size: 28px; } 
  .themaWrap .cont01 .item_box .tit_wrap .txt { font-size: 16px; word-break: keep-all; } 
  .themaWrap .cont01 .item_box .item_tit { margin: 30px 0; } 
- .themaWrap .cont01 .item_box ul li { width: 100%; } 
  .themaWrap .cont01 .item_box li .tit { font-size: 16px; } 
  .themaWrap .cont01 .item_box li .txt::before { height: 30px; background-size: contain !important; margin: 20px auto; } 
  .themaWrap .cont01 .item_box ul li a { min-height: auto; } 
@@ -275,6 +275,15 @@
  .themaWrap .cont01 .bz_wrap .bz_list li:nth-child(3) {
     margin-top: 0 !important;
  }
-
+ .themaWrap .cont01 .item_box {
+   padding: 0 10px;
+ }
+ .themaWrap .cont01 .item_box .swiper-container {
+   padding-bottom: 50px;
+ }
+ .themaWrap .cont01 .item_box ul {
+   flex-wrap: initial;
+   gap: initial;
+}
 
  }
