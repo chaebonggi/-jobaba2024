@@ -87,6 +87,7 @@
 .themaWrap .cont01 .item_box.style02 .tit_wrap::before { top: 50%; left: initial; right: 30px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2024/html/thema/images/240213/list_icon02.png) center no-repeat; } 
 .themaWrap .cont01 .item_box.style02 .tit_wrap .tit { color: #f98029; } 
 .themaWrap .cont01 .item_box.style02 ul li a { min-height: 320px; } 
+.themaWrap .cont01 .item_box.style02 li .txt span { display: flex; min-height: 116px; align-items: center; justify-content: center; } 
 
 .themaWrap .cont_tit.icon02 { margin-top: 190px; } 
 .themaWrap .cont01 .bz_wrap { margin-top: 50px; position: relative; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2024/html/thema/images/240213/bz_bg.png) top right 80px #f3f3f3 no-repeat; border-radius: 20px; } 
@@ -155,12 +156,11 @@
  .themaWrap .cont01 .item_box.style02 .item_tit::after { content: none; } 
  .themaWrap .cont01 .item_box .item_tit { margin: 130px 0 50px; justify-content: center; } 
  .themaWrap .cont01 .item_box.style02 .item_tit { margin: 160px 0 50px; justify-content: center; } 
- 
-}
+ }
 
 @media all and (max-width:1024px){
  .themaWrap .cont01 .bz_wrap .bz_list { padding: 70px 20px; } 
-}
+ }
 
 @media all and (max-width:860px){
  .themaWrap .mainVisual .innerSection { padding: 30px 10px 30px; } 
@@ -218,6 +218,7 @@
  .themaWrap .cont01 .item_box.style02 .item_tit { margin: 30px 0; } 
  .themaWrap .cont01 .item_box.style02 .tit_wrap { padding-left: 0; } 
  .themaWrap .cont01 .item_box.style02 ul li a { min-height: auto; } 
+ .themaWrap .cont01 .item_box.style02 li .txt span {min-height: auto;}
  .themaWrap .cont_tit.icon02 { margin-top: 30px; } 
  .themaWrap .cont01 .bz_wrap { margin-top: 20px; } 
  .themaWrap .cont01 .bz_wrap .bz_list { padding: 20px 10px; gap: 5px; } 
@@ -245,7 +246,7 @@
  .themaWrap .cont_tit.icon05 > div { margin-top: 25px; } 
  .themaWrap .box_wrap.slide_cont04::before { width: 60px; height: 71px; background-size: contain !important; top: -56px; } 
  .themaWrap .cont03 .innerSection { padding: 60px 10px 50px; } 
- .themaWrap .cont03 { background-position: bottom; }  
+ .themaWrap .cont03 { background-position: bottom; } 
 
  .themaWrap .box_wrap .cont_slide { width: calc(100% - 100px); } 
  .themaWrap .box_wrap .swiper-button-prev { left: 10px; } 
