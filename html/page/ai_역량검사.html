@@ -376,8 +376,8 @@
                     <h2>A<span>I</span> 역량검사</h2>
                     <p class="txt">지금껏 알기 어려웠던 나의 나의 진짜 역량을 확인해 보세요.</p>
                     <div class="linkWrap">
-                        <a href="#"><img src="./resource/images/ability/btn_icon01.png" alt="신청하기"></a>
-                        <a href=""><img src="./resource/images/ability/btn_icon02.png" alt="결과보기"></a>
+                        <a href="javascript:void(0);" onclick="javascript:openModal('modal1');"><img src="./resource/images/ability/btn_icon01.png" alt="신청하기"></a>
+                        <a href="https://www.jobaba.net/mber/myPage/eduInfo/aiInterviewList.do"><img src="./resource/images/ability/btn_icon02.png" alt="결과보기"></a>
                     </div>
                 </div>
             </div>
@@ -394,7 +394,7 @@
                         <p class="mt20">3가지 유형, 17개 과제로<br>
                             구성되어 약 80분간 진행합니다.<br><span>(※ 이어서 진행 가능)</span></p>
                         
-                        <a href="#"><img src="./resource/images/ability/cont01_btn.png" alt="결과지 샘플 보기"></a>
+                            <a href="javascript:void(0);" onclick="javascript:openModal('modal4');"><img src="./resource/images/ability/cont01_btn.png" alt="결과지 샘플 보기"></a>
                     </div>
                     <div class="listWrap">
                         <div class="contList">
@@ -808,44 +808,136 @@
 	</div>
 </div>
 <style>
-    .aiPopup {
-        width: calc(100% - 40px);
-        max-width: 700px;
-        padding: 36px 30px;
-        position: fixed;
-        left: 50%;
-        top: 50%;
-        background: #fff;
-        transform: translate(-50%,-50%);
-        border-radius: 20px;
-        z-index: 99999;
-    }
-    .aiPopup .pop_head {
-        display: flex;
-        color: #000;
-        font-size: 22px;
-        justify-content: space-between;
-        align-items: center;
-        
-    }
-    .aiPopup .pop_head .pop_close {
-        background: url(./resource/images/ability/close_btn02.png) no-repeat;
-        width: 15px;
-        height: 15px;
-        text-indent: -9999px;
-    }
+    
 </style>
-<!--팝업-->
-<div class="aiPopup modal1">
+<!--AI역량검사 팝업1 -->
+<div class="aiPopup modal1" style="display: none;">
     <div class="pop_head">
         <p>AI역량검사 응시하기</p>
         <a href="#" class="pop_close" onclick="pop_close()">닫기</a>
     </div>
     <div class="pop_cont">
-        
+        <ul>
+            <li>
+                <strong class="p_tit">신청인</strong>
+                <p class="p_txt">홍길동</p>
+            </li>
+            <li>
+                <strong class="p_tit">기업유형</strong>
+                <p class="p_txt">
+                    <select class="select_style">
+                        <option>선택</option>
+                        <option>대기업</option>
+                        <option>중견·강소기업</option>
+                        <option>외국계 기업</option>
+                        <option>공기업·공사</option>
+                        <option>상장기업</option>
+                        <option>공무원·공직</option>
+                    </select>
+                    <span class="error_text">※ 기업유형을 선택해주세요</span>
+                </p>
+            </li>
+            <li>
+                <strong class="p_tit">희망직종</strong>
+                <p class="p_txt">
+                    <select class="select_style">
+                        <option>선택</option>                        
+                        <option>선택</option>
+                        <option>경영·사무</option>
+                        <option>IT·인터넷</option>
+                        <option>연구·개발·설계</option>
+                        <option>영업·고객상담</option>
+                        <option>전문·특수직</option>
+                        <option>생산·제조</option>
+                        <option>의료</option>
+                        <option>마케팅·광고·홍보</option>
+                        <option>교육</option>
+                        <option>디자인</option>
+                        <option>무역·유통</option>
+                        <option>건설</option>
+                        <option>미디어</option>
+                        <option>서비스</option>
+                    </select>
+                    <span class="error_text">※ 기업유형을 선택해주세요</span>
+                </p>
+            </li>
+            <li>
+                <strong class="p_tit">인증코드</strong>
+                <div class="p_code_wrap">
+                    <p class="p_code"></p>
+                    <a href="#" class="code_btn">인증코드발급</a>
+                    <!-- <a href="#" class="code_btn p_blue">복사하기</a> -->
+                    <span>※ 인증코드는 AI역량검사 응시를 위해서 필요합니다.</span> 
+                </div>                               
+            </li>
+        </ul>
     </div>
     <div class="pop_btn">
+        <a href="#">취소</a>
+        <a href="#">응시</a>
+        <!-- <a href="#" class="p_blue">응시</a> -->
+    </div>
+</div>
+<!--AI역량검사 팝업2 -->
+<div class="aiPopup modal2" style="display: none;">
+    <div class="pop_head">
+        <p>AI역량검사 이어하기</p>
+        <a href="#" class="pop_close" onclick="pop_close()">닫기</a>
+    </div>
+    <div class="pop_cont">
+        <p class="cont_txt">
+            기존 신청한 검사가 아직 진행 중입니다.<br>
+            <span>검사 종료 후 새로운 검사를 응시</span>하실 수 있습니다.<br>
+            이어서 진행하시겠습니까? 
+        </p>
+        <ul>            
+            <li class="code_confirm">
+                <a href="#">인증코드 확인></a>                             
+            </li>
+        </ul>
+    </div>
+    <div class="pop_btn">
+        <a href="#">취소</a>
+        <a href="#" class="p_blue">AI역량검사 이어하기</a>
+    </div>
+</div>
+<!--AI역량검사 팝업3 -->
+<div class="aiPopup modal3" style="display: none;">
+    <div class="pop_head">
+        <p>AI역량검사 이어하기</p>
+        <a href="#" class="pop_close" onclick="pop_close()">닫기</a>
+    </div>
+    <div class="pop_cont">
+        <p class="cont_txt">
+            기존 신청한 검사가 아직 진행 중입니다.<br>
+            <span>검사 종료 후 새로운 검사를 응시</span>하실 수 있습니다.<br>
+            이어서 진행하시겠습니까? 
+        </p>
+        <ul>            
+            <li>
+                <strong class="p_tit">인증코드</strong>
+                <div class="p_code_wrap">
+                    <p class="p_code"></p>
+                    <a href="#" class="code_btn p_blue">복사하기</a>
+                    <span>※ 인증코드는 AI역량검사 응시를 위해서 필요합니다.</span> 
+                </div>                               
+            </li>
+        </ul>
+    </div>
+    <div class="pop_btn">
+        <a href="#">취소</a>
+        <a href="#" class="p_blue">AI역량검사 이어하기</a>
+    </div>
+</div>
 
+<!-- 결과지 샘플포기 -->
+<div class="aiPopup modal4" style="display: none;">
+    <div class="pop_head">
+        <p>AI 면접 분석</p>
+        <a href="#" class="pop_close" onclick="pop_close()">닫기</a>
+    </div>
+    <div class="pop_cont ai_sample">
+        <img src="./resource/images/ability/ai_sample1.png" alt="ai 면접 분석 샘플">
     </div>
 </div>
     
@@ -940,6 +1032,17 @@
         }
 
         document.getElementById("playUrl").src = url;
+    }
+
+    function openModal(modalname) {
+        $("." + modalname).show();
+        $('body').addClass('not_scroll');
+        $('.shadow').show();
+    }
+    function pop_close() {
+        $('.aiPopup').hide();
+        $('body').removeClass('not_scroll');
+        $('.shadow').hide();
     }
 </script>
 
