@@ -166,6 +166,7 @@
  .aiAbility .cont03 li .t_txt { font-size: 14px; } 
  .aiAbility .cont04 .innerSection { padding: 30px 10px; } 
  .aiAbility .cont04 h3::before { width: 20px; height: 32px; left: 10px; background-size: contain; } 
+ .aiAbility .cont04 .qnaList li + li { margin-top: 10px; } 
  .aiAbility .cont04 .qnaList a p::before { width: 20px; height: 20px; top: 4px; background-size: contain; } 
  .aiAbility .cont04 .qnaList a { padding: 20px 30px 20px 15px; font-size: 16px; } 
  .aiAbility .cont04 .qnaList a p { padding-left: 28px; } 
