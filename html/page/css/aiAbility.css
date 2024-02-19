@@ -62,7 +62,7 @@ html{overflow: initial;}
 .aiAbility .cont03 ul li:nth-child(6):before { background: url(../resource/images/ability/cont03_list06.png) no-repeat; } 
 .aiAbility .cont03 ul li { width: calc(100% / 3 - 40px); padding: 30px 0 20px; background: #fff; box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.05); border-radius: 30px; text-align: center; } 
 .aiAbility .cont03 li .t_tit { margin-bottom: 4px; color: #000; font-size: 20px; font-weight: 500; } 
-.aiAbility .cont03 li .t_txt { color: #666666; font-size: 16px; font-weight: 300; letter-spacing: -1px; line-height: 1.2; } 
+.aiAbility .cont03 li .t_txt { color: #666666; font-size: 16px; font-weight: 300; letter-spacing: -1px; line-height: 1.4; } 
 
 .aiAbility .cont04 .innerSection { padding: 120px 0; } 
 .aiAbility .cont04 .qnaList { margin-top: 40px; } 
