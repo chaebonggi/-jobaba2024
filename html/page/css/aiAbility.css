@@ -1,5 +1,6 @@
 .mt20 { margin-top: 20px; } 
 .for_pc { display: none; } 
+html{overflow: initial;}
 .aiAbility .innerSection { max-width: 1260px; padding: 0; margin: 0 auto; } 
 .aiAbility .mainWrap { background: url(../resource/images/ability/main_bg.jpg) top no-repeat; text-align: center; } 
 .aiAbility .mainWrap .innerSection { padding: 80px 50px; } 
