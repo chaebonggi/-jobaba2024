@@ -36,7 +36,7 @@
 				background: url(./images/eventImg/event01/main_bg.jpg) top center no-repeat;
 			}
 			.eventWrap .eventMain .innerSection {
-				padding-top: 150px;
+				padding-top: 140px;
 			}
 			.eventWrap .eventMain .mainVisual {
 				overflow: hidden;
@@ -50,7 +50,8 @@
 				height: 313px;
 				display: block;
 				position: relative;
-				bottom: -20px;
+				left: 30px;
+				bottom: -30px;
 				background: url(./images/eventImg/event01/main_cont01.png) no-repeat;
 			}
 		</style>
@@ -61,11 +62,75 @@
 				</div>			
 			</div>	 
 		</article>
-
+		<style>
+			.eventWrap .whiteBox {
+				padding: 100px 30px 0;
+				position: relative;
+				box-sizing: border-box;
+			}
+			.eventWrap .whiteBox.box01 {
+				width: 978px;
+				height: 808px;				
+				background: url(./images/eventImg/event01/box_01.png) no-repeat;
+				z-index: 10;
+			}
+			.eventWrap .event01 .innerSection::before{
+				content: '';
+				width: 978px;
+				height: 582px;
+				position: absolute;
+				top: -60px;
+				left: 0;
+				background: url(./images/eventImg/event01/box01_icon.png) no-repeat;
+				z-index: 1;
+			}
+			.eventWrap .whiteBox h3 {
+				display: flex;
+				width: 300px;
+				height: 65px;
+				position: absolute;
+				left: 10px;
+				top: 10px;
+				color: #000;
+				font-size: 28px;
+				font-weight: bold;
+				align-items: center;
+				justify-content: center;
+			}
+		</style>
 		<article class="event01">
 			<div class="innerSection">
-				<div class="whiteBox">
-					
+				<div class="whiteBox box01">
+					<h3 class="tit">이벤트 안내</h3>
+					<div class="eventList">
+						<div class="item">
+							<div class="num">
+								<p>5명</p>
+							</div>
+							<div class="img_wrap">
+								<img src="./images/eventImg/event01/event_img01.png" alt="네이버페이 10,000원권">
+							</div>
+							<p class="txt">네이버페이<br> 10,000원권</p>
+						</div>
+						<div class="item">
+							<div class="num">
+								<p>50명</p>
+							</div>
+							<div class="img_wrap">
+								<img src="./images/eventImg/event01/event_img02.png" alt="스타벅스 아메리카노">
+							</div>
+							<p class="txt">스타벅스<br> 아메리카노</p>
+						</div>
+						<div class="item">
+							<div class="num">
+								<p>150명</p>
+							</div>
+							<div class="img_wrap">
+								<img src="./images/eventImg/event01/event_img03.png" alt="cu편의점 3,000원권">
+							</div>
+							<p class="txt">네이버페이<br> 10,000원권</p>
+						</div>
+					</div>
 				</div>
 				
 			</div>

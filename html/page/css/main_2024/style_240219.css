@@ -8,64 +8,75 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
  .introWrap .txtWrap p { display: inline-block; padding-left: 110px; position: relative; color: #000; font-size: 30px; font-weight: 300; } 
  .introWrap .txtWrap p::before { content: ''; width: 100px; height: 108px; position: absolute; left: 0; top: 50%; transform: translateY(-50%); background: url(../../images/main_2024/intro/intro_icon_txt.png) center no-repeat; background-size: contain; } 
  .introWrap .introList { display: flex; justify-content: center; } 
- .introWrap .introList li { width: 400px; height: 380px; position: relative; background-position: top 140px center; background-repeat: no-repeat; border-radius: 30px 85px 30px 30px; box-shadow: 0px 0px 20px 0px rgba(0, 50, 129, 0.2); box-sizing: border-box; overflow: hidden; } 
- .introWrap .introList li:nth-child(1) { background-color: #003281; background-image: url(../../images/main_2024/intro/new_intro_01.png); } 
- .introWrap .introList li:nth-child(2) { background-color: #008ae0; background-image: url(../../images/main_2024/intro/new_intro_02.png); } 
- .introWrap .introList li:nth-child(1):hover { box-shadow: 0px 10px 20px 0px rgba(0, 50, 129, 0.6); } 
- .introWrap .introList li:nth-child(2):hover { box-shadow: 0px 10px 20px 0px rgba(0, 50, 129, 0.6); } 
- .introWrap .introList li + li { margin-left: 30px; } 
- .introWrap .introList li a { display: flex; width: 100%; height: 100%; padding: 66px 0 36px; flex-direction: column; align-items: center; } 
- .introWrap .introList li .int_tag { padding: 0 20px; position: absolute; top: 26px; left: 26px; color: #003281; font-size: 20px; background: #fff; border-radius: 20px; } 
- .introWrap .introList li:nth-child(2) .int_tag { color: #008ae0; } 
- .introWrap .introList li .tit { color: #fff; font-size: 36px; } 
- .introWrap .introList li .int_btn { margin-top: auto; color: #fff; font-size: 20px; } 
- .introWrap .introBtn { max-width: 830px; margin: 20px auto 0; padding-bottom: 30px; } 
- .introWrap .introBtn a { display: flex; width: 100%; padding: 30px 115px 30px 310px; background-image: url(../../images/main_2024/intro/intro_img05.png); background-color: #fff; background-repeat: no-repeat; background-position: center left 180px; box-shadow: 0px 0px 20px 0px rgba(0, 50, 129, 0.06); border: 5px solid #fff; border-radius: 20px; align-items: center; box-sizing: border-box; } 
- .introWrap .introBtn a:hover { box-shadow: 0px 10px 20px 0px rgba(83, 102, 133, 0.5); } 
- .introWrap .introBtn span { color: #8c8c8c; font-size: 20px; } 
- .introWrap .introBtn .tit { display: inline-block; color: #000; font-size: 30px; font-weight: 500; line-height: 1.3; text-align: center; } 
- .introWrap .introBtn .intBtn { display: inline-block; margin-left: auto; padding: 4px 30px; background: #67c3be; color: #fff; font-size: 20px; font-weight: 300; border-radius: 30px; } 
+ .introWrap .introList > li { width: 400px; background: #fff; border-radius: 30px 85px 30px 30px; box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.2); border: 5px solid #fff; overflow: hidden; } 
+ .introWrap .introList > li + li { margin-left: 30px; } 
+ .introWrap .introList > li:hover { border-color: #008ae0; } 
+ .introWrap .introList > li:nth-child(2):hover { border-color: #9eca80; } 
+ .introWrap .introList > li > a { display: block; width: 100%; padding: 50px 25px; background-image: url(../../images/main_2024/intro/intro_img04_2.png); background-color: #fff; background-repeat: no-repeat; background-position: top 130px center; text-align: center; box-sizing: border-box; } 
+ .introWrap .introList > li:nth-child(2) > a { background-image: url(../../images/main_2024/intro/intro_img01.png) } 
+ .introWrap .introList > li > a p { display: none; } 
 
- @media screen and (max-width: 1024px) {body.intro #renewHeader .h_util { height: 70px; justify-content: center; } 
+ .introWrap .introList > li > a .tit { display: block; margin-bottom: 168px; color: #000; font-size: 36px; font-weight: 500; } 
+ .introWrap .introList > li > a .txt { height: 200px; margin-bottom: 15px; position: relative; color: #000; font-size: 24px; line-height: 1.3; letter-spacing: -1px; } 
+ .introWrap .introList > li > a .introBtn { display: block; height: 50px; position: relative; background: #d8ebcb; color: #000; font-size: 30px; font-weight: 300; line-height: 50px; border-radius: 30px; } 
+ .introWrap .introList > li > a .introBtn::before { content: '채용'; position: absolute; top: -52px; right: 20px; color: #8c8c8c; font-size: 30px; } 
+ .introWrap .introList > li > a .introBtn.icon01::before { content: '정책'; } 
+ .introWrap .introList > li:nth-child(2) > a .introBtn { background: #d0e9ee; } 
+
+ .introWrap .introBtn { max-width: 830px; margin: 20px auto 0; padding-bottom: 30px; } 
+ .introWrap .introBtn a { display: inline-block; width: 100%; padding: 30px 0 30px 260px; background-image: url(../../images/main_2024/intro/intro_img05.png); background-color: #fff; background-repeat: no-repeat; background-position: center left 120px; box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.2); border: 5px solid #fff; border-radius: 20px; box-sizing: border-box; } 
+ .introWrap .introBtn a:hover { border-color: #939ac8; } 
+ .introWrap .introBtn span { display: block; color: #8c8c8c; font-size: 20px; } 
+ .introWrap .introBtn .tit { display: inline-block; color: #000; font-size: 30px; font-weight: 500; } 
+ .introWrap .introBtn .intBtn { display: inline-block; margin-left: 20px; padding: 4px 30px; background: #d1d5f1; color: #000; font-size: 20px; font-weight: 300; border-radius: 30px; } 
+
+ @media screen and (max-width: 1024px) {
+ body.intro #renewHeader .h_util { height: 70px; justify-content: center; } 
  body.intro #renewHeader .h_util ul { margin-left: initial; } 
  body.intro #renewHeader .h_util .rightBox { display: flex; } 
  .introWrap .txtWrap { margin-bottom: 40px; } 
  .introWrap .forPc { display: block; } 
  .introWrap .introList { flex-direction: column; } 
- .introWrap .introList li + li { margin-top: 30px; margin-left: auto; } 
- .introWrap .introList li { width: 100%; max-width: 550px; height: 250px; margin: 0 auto; } 
- .introWrap .introList li { background-position: center right 30px; } 
- .introWrap .introList li a { padding: 40px; align-items: flex-start; } 
- .introWrap .introList li .int_tag { padding: 0; position: static; background-color: initial; color: #c5e5ef !important; font-size: 24px; } 
- .introWrap .introBtn { max-width: 550px; } 
- .introWrap .introBtn a { padding: 30px 0 30px 140px; background-position: center left 100px; flex-direction: column; } 
- .introWrap .introBtn .intBtn { margin-left: initial; margin-top: 10px; } 
-}
+ .introWrap .introList > li + li { margin-top: 30px; margin-left: auto; } 
+ .introWrap .introList > li { width: 100%; max-width: 550px; height: 220px; margin: 0 auto; } 
+ .introWrap .introList > li > a { height: 100%; padding: 30px 38px 20px 50px; background-position: right 20px bottom 20px; text-align: left; } 
+ .introWrap .introList > li > a .introBtn { display: none; } 
+ .introWrap .introList > li > a .tit { margin-bottom: 10px; color: #003281; } 
+ .introWrap .introList > li > a .txt { display: block; height: auto; color: #8c8c8c; } 
+ .introWrap .introBtn { margin-top: 50px; } 
+ .introWrap .introBtn a { display: flex; padding: 0; background-image: none; background-color: transparent; border: none; box-shadow: none; align-items: center; justify-content: center; } 
+ .introWrap .introBtn .tit { display: block; position: relative; color: #003281; } 
+ .introWrap .introBtn .tit::before { content: '\27F6'; position: absolute; top: calc(50% - 2px); right: -30px; transform: translateY(-50%); font-size: 20px; } 
+ .introWrap .introBtn span { margin-right: 20px; } 
+ .introWrap .introBtn .intBtn { display: none; } 
+ }
 
- @media screen and (max-width: 640px) {body.intro { background-image: url(../../images/main_2024/intro/intro_bg_top02.png), url(../../images/main_2024/intro/intro_bg_bottom02.png); background-color: #ffffff; background-position: top center, bottom center; background-size: contain; } 
+ @media screen and (max-width: 640px) { 
+body.intro { background-image: url(../../images/main_2024/intro/intro_bg_top02.png), url(../../images/main_2024/intro/intro_bg_bottom02.png); background-color: #ffffff; background-position: top center, bottom center; background-size: contain; } 
  body.intro #renewHeader .h_util { height: 50px; } 
  body.intro #renewHeader .h_util ul li a { padding: 10px 14px; font-size: 14px; } 
  body.intro #renewFooter { display: none; } 
  .introWrap .innerSection { padding: 0 10px; } 
  .introWrap .logo { height: 35px; margin: 30px 0 20px; } 
  .introWrap .txtWrap { margin-bottom: 20px; } 
- .introWrap .txtWrap p::before { content: none; } 
-.introWrap .txtWrap p { padding-left: 0; font-size: 18px; } 
 
- .introWrap .introList li:hover { border: none; } 
- .introWrap .introList li + li { margin-top: 15px; } 
- .introWrap .introList li { height: 150px; border-radius: 15px 45px 15px 15px; background-size: auto 50%; background-position: center right 20px; } 
- .introWrap .introList li > a { padding: 20px; } 
- .introWrap .introList li > a .tit { font-size: 22px; } 
- .introWrap .introList li .int_tag { font-size: 16px; } 
- .introWrap .introList li .int_btn { font-size: 16px; } 
+ .introWrap .txtWrap p::before { width: 50px; height: 55px; background: url(../../images/main_2024/intro/intro_icon_txt_02.png) center no-repeat; } 
+.introWrap .txtWrap p { padding-left: 55px; font-size: 18px; } 
 
- .introWrap .introBtn { margin-top: 20px; } 
+ .introWrap .introList > li:hover { border: none; } 
+ .introWrap .introList > li + li { margin-top: 15px; } 
+ .introWrap .introList > li { height: 180px; border-radius: 15px 45px 15px 15px; } 
+ .introWrap .introList > li > a { padding: 15px 15px 10px 20px; background-size: auto 50%; background-position: right 10px bottom 10px; } 
+ .introWrap .introList > li > a .tit { font-size: 26px; } 
+ .introWrap .introList > li > a .txt { font-size: 16px; } 
+
+ .introWrap .introBtn { margin-top: 30px; } 
  .introWrap .introBtn a:hover { border: none; } 
- .introWrap .introBtn a { padding: 20px 0 20px 80px; background-size: auto 50%; background-position: center left 40px; } 
- .introWrap .introBtn .tit { padding-right: 0; font-size: 18px; } 
-.introWrap .introBtn .tit span { font-size: 14px; } 
-.introWrap .introBtn .intBtn { padding: 4px 26px; margin-top: 4px; font-size: 14px; } 
+ .introWrap .introBtn a { margin-left: -14px; padding: 15px 20px; background-size: auto 50%; background-position: bottom 10px right 10px; } 
+ .introWrap .introBtn .tit { padding-right: 24px; font-size: 18px; } 
+ .introWrap .introBtn .tit::before { top: 50%; right: -20px; font-size: 12px; } 
+ .introWrap .introBtn .tit::after { content: ''; width: 20px; height: 19px; position: absolute; top: 50%; right: 0; transform: translateY(-50%); background: url(../../images/main_2024/intro/intro_img06.png) center no-repeat; } 
+ .introWrap .introBtn span { margin-right: 6px; font-size: 12px; } 
  }
  /* //intro */
 
@@ -396,7 +407,7 @@ body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg
 #renewMain .policyFind .findBox { width: calc(100% - 166px); } 
 #renewMain .policyFind .selectWrap { display: flex; margin-bottom: 12px; justify-content: space-between; gap: 0 12px; } 
 #renewMain .policyFind .selectWrap .contBox { width: 100%; } 
-#renewMain .policyFind .commSelect { width: 100%; padding: 10px 12px; background-color: #fff !important; background-image: url(../../images/main_2024/main/icon_arrow.png); background-repeat: no-repeat; background-position: right 14px center; background-size: 12px 7px; color: #000; font-size: 14px; border: 1px solid #f5f3f3; cursor: pointer; appearance:none; } 
+#renewMain .policyFind .commSelect { width: 100%; padding: 10px 12px; background-color: #fff !important; background-image: url(../../images/main_2024/main/icon_arrow.png); background-repeat: no-repeat; background-position: right 14px center; background-size: 12px 7px; color: #000; font-size: 14px; border: 1px solid #f5f3f3; cursor: pointer; appearance:none;}
 #renewMain .policyFind .titWrap { display: flex; padding-left: 80px; margin-bottom: 20px; background: url(../../images/main_2024/main/policy_icon01.png) left center no-repeat; } 
 #renewMain .policyFind .titWrap .tit h2 { color: #000; font-size: 36px; } 
 #renewMain .policyFind .titWrap .tit p { color: #616162; font-size: 16px; } 
