@@ -376,7 +376,7 @@
                     <h2>A<span>I</span> 역량검사</h2>
                     <p class="txt">지금껏 알기 어려웠던 나의 나의 진짜 역량을 확인해 보세요.</p>
                     <div class="linkWrap">
-                        <a href="javascript:void(0);" onclick="javascript:openModal('modal1');"><img src="./resource/images/ability/btn_icon01.png" alt="신청하기"></a>
+                        <a href="javascript:void(0);" onclick="openModal('modal1');"><img src="./resource/images/ability/btn_icon01.png" alt="신청하기"></a>
                         <a href="https://www.jobaba.net/mber/myPage/eduInfo/aiInterviewList.do"><img src="./resource/images/ability/btn_icon02.png" alt="결과보기"></a>
                     </div>
                 </div>
@@ -875,7 +875,7 @@
         </ul>
     </div>
     <div class="pop_btn">
-        <a href="#">취소</a>
+        <a href="#" onclick="pop_close()">취소</a>
         <a href="#">응시</a>
         <!-- <a href="#" class="p_blue">응시</a> -->
     </div>
@@ -899,7 +899,7 @@
         </ul>
     </div>
     <div class="pop_btn">
-        <a href="#">취소</a>
+        <a href="#" onclick="pop_close()">취소</a>
         <a href="#" class="p_blue">AI역량검사 이어하기</a>
     </div>
 </div>
@@ -927,7 +927,7 @@
         </ul>
     </div>
     <div class="pop_btn">
-        <a href="#">취소</a>
+        <a href="#" onclick="pop_close()">취소</a>
         <a href="#" class="p_blue">AI역량검사 이어하기</a>
     </div>
 </div>
@@ -959,13 +959,10 @@
 <!-- 추가 js -->
 <script>
     $(document).ready(function() {
-
         $(".aiAbility .qnaList li:first .answerWrap").css("display", "block");
         $('.aiAbility .qnaList a').click(function(){
-            $('.aiAbility .qnaList li').removeClass('active');
-            $('.aiAbility .qnaList .answerWrap').stop().slideUp(300);
-            $(this).parent().addClass('active');
-            $(this).next().stop().slideDown(300);
+            $(this).parent().toggleClass('active');
+            $(this).next().stop().slideToggle(300);
         });
 
         var swiper = new Swiper(".cont_slide", {

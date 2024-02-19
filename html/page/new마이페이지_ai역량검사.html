@@ -203,7 +203,7 @@
 									<!-- 24.02.19 AI 역량검사 테이블 변경 -->
 									<div data-tab="tab3" class="infoCont active">
 										<div class="ar mgb20">
-											<a href="https://www.jobaba.net/interview/mainList.do" target="_blank" class="btn_nomal btn_puertoRico">AI 역량검사 신청 &gt;</a>
+											<a href="./ai_역량검사.html" target="_blank" class="btn_nomal btn_puertoRico">AI 역량검사 신청 &gt;</a>
 										</div>
 										<div class="mytb2-type">
 											<table class="table table-list">
@@ -230,7 +230,7 @@
 														<td class="center t_hide">대기업</td>
 														<td class="center t_hide">IT 인터넷</td>
 														<td class="center">진행중</td>
-														<td class="center"><a href="javascript:void(0);" class="btn_small btnPuertoRico">이어하기</a></td>
+														<td class="center"><a href="javascript:void(0);" class="btn_small btnPuertoRico" onclick="openModal('modal2');">이어하기</a></td>
 													</tr>
 													<tr>
 														<td class="center">2024-01-16</td>
@@ -263,7 +263,131 @@
 				</div>
 			</div>
 		</article>
-	
+
+		<div class="shadow"></div>
+<!--AI역량검사 팝업1 -->
+<div class="aiPopup modal1" style="display: none;">
+    <div class="pop_head">
+        <p>AI역량검사 응시하기</p>
+        <a href="#" class="pop_close" onclick="pop_close()">닫기</a>
+    </div>
+    <div class="pop_cont">
+        <ul>
+            <li>
+                <strong class="p_tit">신청인</strong>
+                <p class="p_txt">홍길동</p>
+            </li>
+            <li>
+                <strong class="p_tit">기업유형</strong>
+                <p class="p_txt">
+                    <select class="select_style">
+                        <option>선택</option>
+                        <option>대기업</option>
+                        <option>중견·강소기업</option>
+                        <option>외국계 기업</option>
+                        <option>공기업·공사</option>
+                        <option>상장기업</option>
+                        <option>공무원·공직</option>
+                    </select>
+                    <!-- 필수 선택
+                        <span class="error_text">※ 기업유형을 선택해주세요</span> 
+                    -->
+                </p>
+            </li>
+            <li>
+                <strong class="p_tit">희망직종</strong>
+                <p class="p_txt">
+                    <select class="select_style">
+                        <option>선택</option>                        
+                        <option>선택</option>
+                        <option>경영·사무</option>
+                        <option>IT·인터넷</option>
+                        <option>연구·개발·설계</option>
+                        <option>영업·고객상담</option>
+                        <option>전문·특수직</option>
+                        <option>생산·제조</option>
+                        <option>의료</option>
+                        <option>마케팅·광고·홍보</option>
+                        <option>교육</option>
+                        <option>디자인</option>
+                        <option>무역·유통</option>
+                        <option>건설</option>
+                        <option>미디어</option>
+                        <option>서비스</option>
+                    </select>
+                    <!-- 필수 선택
+                        <span class="error_text">※ 기업유형을 선택해주세요</span> 
+                    -->
+                </p>
+            </li>
+            <li>
+                <strong class="p_tit">인증코드</strong>
+                <div class="p_code_wrap">
+                    <p class="p_code"></p>
+                    <a href="#" class="code_btn">인증코드발급</a>
+                    <!-- <a href="#" class="code_btn p_blue">복사하기</a> -->
+                    <span>※ 인증코드는 AI역량검사 응시를 위해서 필요합니다.</span> 
+                </div>                               
+            </li>
+        </ul>
+    </div>
+    <div class="pop_btn">
+        <a href="#" onclick="pop_close()">취소</a>
+        <a href="#">응시</a>
+        <!-- <a href="#" class="p_blue">응시</a> -->
+    </div>
+</div>
+<!--AI역량검사 팝업2 -->
+<div class="aiPopup modal2" style="display: none;">
+    <div class="pop_head">
+        <p>AI역량검사 이어하기</p>
+        <a href="#" class="pop_close" onclick="pop_close()">닫기</a>
+    </div>
+    <div class="pop_cont">
+        <p class="cont_txt">
+            기존 신청한 검사가 아직 진행 중입니다.<br>
+            <span>검사 종료 후 새로운 검사를 응시</span>하실 수 있습니다.<br>
+            이어서 진행하시겠습니까? 
+        </p>
+        <ul>            
+            <li class="code_confirm">
+                <a href="#">인증코드 확인></a>                             
+            </li>
+        </ul>
+    </div>
+    <div class="pop_btn">
+        <a href="#" onclick="pop_close()">취소</a>
+        <a href="#" class="p_blue">AI역량검사 이어하기</a>
+    </div>
+</div>
+<!--AI역량검사 팝업3 -->
+<div class="aiPopup modal3" style="display: none;">
+    <div class="pop_head">
+        <p>AI역량검사 이어하기</p>
+        <a href="#" class="pop_close" onclick="pop_close()">닫기</a>
+    </div>
+    <div class="pop_cont">
+        <p class="cont_txt">
+            기존 신청한 검사가 아직 진행 중입니다.<br>
+            <span>검사 종료 후 새로운 검사를 응시</span>하실 수 있습니다.<br>
+            이어서 진행하시겠습니까? 
+        </p>
+        <ul>            
+            <li>
+                <strong class="p_tit">인증코드</strong>
+                <div class="p_code_wrap">
+                    <p class="p_code">abcdxxx</p>
+                    <a href="#" class="code_btn p_blue">복사하기</a>
+                    <span>※ 인증코드는 AI역량검사 응시를 위해서 필요합니다.</span> 
+                </div>                               
+            </li>
+        </ul>
+    </div>
+    <div class="pop_btn">
+        <a href="#" onclick="pop_close()">취소</a>
+        <a href="#" class="p_blue">AI역량검사 이어하기</a>
+    </div>
+</div>
 	
 		
 	<!--잡아바 js-->
@@ -306,8 +430,18 @@
 			$('.contentsBox ul.categoryMenu li[data-tab='+select_data+']').addClass("active").siblings().removeClass('active');
 			$('.contentsBox .infoCont').removeClass('active');
 			$('.contentsBox .infoCont[data-tab='+select_data+']').addClass('active');
-		});
-
+		});	
 	});
+	// 팝업
+	function openModal(modalname) {
+		$("." + modalname).show();
+		$('body').addClass('not_scroll');
+		$('.shadow').show();
+	}
+	function pop_close() {
+		$('.aiPopup').hide();
+		$('body').removeClass('not_scroll');
+		$('.shadow').hide();
+	}
 	</script>
 </body></html>
