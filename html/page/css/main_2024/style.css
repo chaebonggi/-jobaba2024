@@ -48,6 +48,7 @@ body.intro #jobaba_wrap { min-width: initial; background: inherit;}
  body.intro #renewHeader .h_util { height: 50px; } 
  body.intro #renewHeader .h_util ul li a { padding: 10px 14px; font-size: 14px; } 
  body.intro #renewFooter { display: none; } 
+ .introWrap {min-height: auto;}
  .introWrap .innerSection { padding: 0 10px; } 
  .introWrap .logo { height: 35px; margin: 30px 0 20px; } 
  .introWrap .txtWrap { margin-bottom: 20px; } 
