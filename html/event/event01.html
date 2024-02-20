@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -63,18 +64,28 @@
 			</div>	 
 		</article>
 		<style>
+			.eventWrap .event01 {
+				background: url(./images/eventImg/event01/event01_bg.jpg) bottom center #dfecec no-repeat;
+			}
+			.eventWrap .event01 .innerSection {
+				padding-bottom: 40px;
+			}
 			.eventWrap .whiteBox {
-				padding: 100px 30px 0;
+				padding: 130px 50px 0;
 				position: relative;
 				box-sizing: border-box;
 			}
-			.eventWrap .whiteBox.box01 {
+			.eventWrap .boxWrap {
+				position: relative;
+			}
+			.eventWrap .box01 .whiteBox {
 				width: 978px;
-				height: 808px;				
+				height: 808px;
+				margin-bottom: 50px;		
 				background: url(./images/eventImg/event01/box_01.png) no-repeat;
 				z-index: 10;
 			}
-			.eventWrap .event01 .innerSection::before{
+			.eventWrap .event01 .box01::before{
 				content: '';
 				width: 978px;
 				height: 582px;
@@ -84,6 +95,47 @@
 				background: url(./images/eventImg/event01/box01_icon.png) no-repeat;
 				z-index: 1;
 			}
+			.eventWrap .box02 .whiteBox {
+				width: 978px;
+				height: 1233px;		
+				margin-bottom: 80px;		
+				background: url(./images/eventImg/event01/box_02.png) no-repeat;
+				z-index: 10;
+			}
+			.eventWrap .box02::before{
+				content: '';
+				width: 978px;
+				height: 533px;				
+				position: absolute;
+				top: -8px;
+				left: 0;
+				background: url(./images/eventImg/event01/box02_icon.png) no-repeat;
+				z-index: 1;
+			}
+			.eventWrap .box03 .whiteBox {
+				width: 978px;
+				height: 315px;
+				margin-bottom: 40px;			
+				background: url(./images/eventImg/event01/box_03.png) no-repeat;
+				z-index: 10;
+			}
+			.eventWrap .box03::before{
+				content: '';
+				width: 978px;
+				height: 216px;
+				position: absolute;
+				top: 30px;
+				left: 0;
+				background: url(./images/eventImg/event01/box03_icon.png) no-repeat;
+				z-index: 1;
+			}
+			.eventWrap .box04 .whiteBox {
+				width: 978px;
+				height: 475px;
+				background: url(./images/eventImg/event01/box_04.png) no-repeat;
+				z-index: 10;
+			}
+			
 			.eventWrap .whiteBox h3 {
 				display: flex;
 				width: 300px;
@@ -97,38 +149,517 @@
 				align-items: center;
 				justify-content: center;
 			}
+			.eventWrap .event01 .eventList {
+				display: flex;
+				justify-content: space-between;
+				border-bottom: 1px solid #dddddd;
+			}
+			.eventWrap .event01 .eventList .item {
+				margin: 50px 0 30px;
+				position: relative;
+			}
+			.eventWrap .event01 .eventList .item .num {
+				display: flex;
+				width: 100px;
+				height: 100px;
+				position: absolute;
+				top: -50px;
+				left: 50%;
+				transform: translateX(-50%);
+				background: #ff7800;
+				color: #fff;
+				font-size: 26px;
+				border-radius: 50%;
+				align-items: center;
+				justify-content: center;
+			}
+			.eventWrap .event01 .eventList .item .img_wrap {
+				display: flex;
+				width: 250px;
+				height: 250px;
+				background: #ececec;
+				border-radius: 50%;
+				align-items: center;
+				justify-content: center;
+			}
+			.eventWrap .event01 .eventList .item .txt {
+				margin-top: 20px;
+				color: #000;
+				font-size: 26px;
+				font-weight: bold;
+				text-align: center;
+				line-height: 1.2;
+			}
+			.eventWrap .event01 .infoList {
+				margin-top: 30px;
+			}
+			.eventWrap .event01 .infoList li {
+				display: flex;				
+				align-items: flex-start;
+			}
+			.eventWrap .event01 .infoList li + li {
+				margin-top: 15px;
+			}
+			.eventWrap .event01 .infoList li strong {
+				display: inline-block;
+				width: 140px;
+				margin-right: 20px;
+				padding: 4px 0;
+				background: #0058aa;
+				color: #fff;
+				font-size: 22px;
+				border-radius: 8px;
+				text-align: center;
+			}
+			.eventWrap .event01 .infoList li p {
+				color: #000000;
+				font-size: 24px;
+				font-weight: 500;
+			}
+			.eventWrap .event01 .infoList li p span {
+				color: #ff7800;
+				font-size: 18px;
+			}
+			
+			
 		</style>
 		<article class="event01">
 			<div class="innerSection">
-				<div class="whiteBox box01">
-					<h3 class="tit">이벤트 안내</h3>
-					<div class="eventList">
-						<div class="item">
-							<div class="num">
-								<p>5명</p>
+				<div class="boxWrap box01">
+					<div class="whiteBox">
+						<h3 class="tit">이벤트 안내</h3>
+						<div class="eventList">
+							<div class="item">
+								<div class="num">
+									<p>5명</p>
+								</div>
+								<div class="img_wrap">
+									<img src="./images/eventImg/event01/event_img01.png" alt="네이버페이 10,000원권">
+								</div>
+								<p class="txt">네이버페이<br> 10,000원권</p>
 							</div>
-							<div class="img_wrap">
-								<img src="./images/eventImg/event01/event_img01.png" alt="네이버페이 10,000원권">
+							<div class="item">
+								<div class="num">
+									<p>50명</p>
+								</div>
+								<div class="img_wrap">
+									<img src="./images/eventImg/event01/event_img02.png" alt="스타벅스 아메리카노">
+								</div>
+								<p class="txt">스타벅스<br> 아메리카노</p>
 							</div>
-							<p class="txt">네이버페이<br> 10,000원권</p>
+							<div class="item">
+								<div class="num">
+									<p>150명</p>
+								</div>
+								<div class="img_wrap">
+									<img src="./images/eventImg/event01/event_img03.png" alt="cu편의점 3,000원권">
+								</div>
+								<p class="txt">네이버페이<br> 10,000원권</p>
+							</div>
 						</div>
-						<div class="item">
-							<div class="num">
-								<p>50명</p>
+						<ul class="infoList">
+							<li>
+								<strong>이벤트 기간</strong>
+								<p>2024년 2월 21일(수) ~ 3월 10일(일)</p>
+							</li>
+							<li>
+								<strong>당첨자 발표</strong>
+								<p>2024년 3월 12일(화)</p>
+							</li>
+							<li>
+								<strong>참여 대상</strong>
+								<p>잡아바 신규 구직정보 등록 회원<br><span>※ 기존 구직정보 등록 회원은 이벤트 참여대상에서 제외됩니다.</span></p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<style>
+					.eventWrap .event01 .stepWrap .item {
+						display: flex;
+						justify-content: space-between;
+					}
+					.eventWrap .event01 .stepWrap .item > div {
+						border: 2px dashed #dddddd;
+						border-radius: 20px;
+					}
+					.eventWrap .event01 .stepWrap .item .s_img::before {
+						content: '';
+						width: 150px;
+						height: 75px;
+						position: absolute;
+						top: -25px;
+    					left: -22px;
+					}
+					.eventWrap .event01 .stepWrap .item + .item {
+						margin-top: 50px;
+						padding-top: 50px;
+						border-top: 1px solid #ddd;						
+					}
+					.eventWrap .event01 .stepWrap .item:nth-child(1) .s_img::before {
+						background: url(./images/eventImg/event01/step01.png) no-repeat;
+					}
+					.eventWrap .event01 .stepWrap .item:nth-child(2) .s_img::before {
+						background: url(./images/eventImg/event01/step02.png) no-repeat;
+					}
+					.eventWrap .event01 .stepWrap .item:nth-child(3) .s_img::before {
+						background: url(./images/eventImg/event01/step03.png) no-repeat;
+					}
+					.eventWrap .event01 .stepWrap .item .s_img {
+						max-width: 380px;
+						width: 100%;
+						padding: 40px 0 20px 30px;
+						position: relative;
+						box-sizing: border-box;
+					}
+					.eventWrap .event01 .stepWrap .item .s_img p {
+						font-size: 26px;
+					}
+					.eventWrap .event01 .stepWrap .item .b_img {
+						overflow: hidden;
+					}
+					.eventWrap .event01 .stepWrap .item .b_img img {
+						display: block;
+						width: 100%;
+						height: 100%;
+					}
+					.eventWrap .event01 .linkBtn {
+						max-width: 680px;
+						width: 100%;					
+						position: absolute;
+						bottom: -40px;
+						left: 50%;
+						transform: translateX(-50%);
+						background: #ff7800;
+						text-align: center;
+						box-shadow: 0px 4px 0px 0px rgba(192, 209, 184, 0.004);
+						border-radius: 100px;
+					}
+					.eventWrap .event01 .linkBtn a {
+						display: block;
+						padding: 26px 0;
+					}
+					.eventWrap .event01 .linkBtn p {
+						display: inline-block;	
+						padding-left: 40px;					
+						position: relative;
+						color: #fff;
+						font-size: 30px;
+						font-weight: bold;						
+					}
+					.eventWrap .event01 .linkBtn p::before {
+						content: '';
+						width: 36px;
+						height: 36px;						
+						position: absolute;
+						left: 0;
+						top: 4px;
+						background: url(./images/eventImg/event01/btn_icon01.png) no-repeat;
+					}
+					.eventWrap .event01 .linkBtn::after {
+						content: '';
+						width: 100px;
+						height: 74px;
+						position: absolute;
+						bottom: -20px;
+    					right: -24px;
+						background: url(./images/eventImg/event01/btn_icon02.png) no-repeat;
+					}
+				</style>
+				<div class="boxWrap box02">
+					<div class="whiteBox">
+						<h3 class="tit">이벤트 참여방법</h3>
+						<div class="stepWrap">
+							<div class="item">
+								<div class="s_img">
+									<img src="./images/eventImg/event01/s_img01.png" alt="step 01">
+									<p>잡아바 로그인 후<br>
+										<strong>마이페이지 이동</strong>
+									</p>
+								</div>
+								<div class="b_img">
+									<img src="./images/eventImg/event01/b_img01.png" alt="step 01">
+								</div>
 							</div>
-							<div class="img_wrap">
-								<img src="./images/eventImg/event01/event_img02.png" alt="스타벅스 아메리카노">
+							<div class="item">
+								<div class="s_img">
+									<img src="./images/eventImg/event01/s_img02.png" alt="step 02">
+									<p>
+										<strong>취업활동 &gt; 구직 등록</strong><br>
+										메뉴에서<br>
+										구직 정보 등록!
+									</p>
+								</div>
+								<div class="b_img">
+									<img src="./images/eventImg/event01/b_img02.png" alt="step 02">
+								</div>
 							</div>
-							<p class="txt">스타벅스<br> 아메리카노</p>
+							<div class="item">
+								<div class="s_img">
+									<img src="./images/eventImg/event01/s_img03.png" alt="step 03">
+									<p>
+										<strong>인재정보 노출&middot;기업인재<br>
+										추천서비스 신청 하고</strong><br>
+										구직정보 등록하면<br>
+										이벤트 참여 완료!
+									</p>
+								</div>
+								<div class="b_img">
+									<img src="./images/eventImg/event01/b_img03.png" alt="step 03">
+								</div>
+							</div>
 						</div>
+						<div class="linkBtn">
+							<a href="#" target="_blank">
+								<p>구직정보 등록하고 경품 받기 &#8594;</p>
+							</a>
+						</div>
+					</div>
+				</div>
+				<style>
+					.eventWrap .event01 .cautionList li:nth-child(2) p {
+						color: #ff7800;
+						font-size: 28px;
+					}
+					.eventWrap .event01 .cautionList li + li {
+						margin-top: 15px;
+					}
+					.eventWrap .event01 .cautionList li p::before {
+						content: '';
+						width: 34px;
+						height: 33px;
+						position: absolute;
+						left: 0;
+						top: 2px;
+						background: url(./images/eventImg/event01/list_icon.png) no-repeat;
+					}
+					.eventWrap .event01 .cautionList li p {
+						padding-left: 50px;
+						position: relative;
+						color: #000;
+						font-size: 24px;
+					}
+
+				</style>
+				<div class="boxWrap box03">
+					<div class="whiteBox">
+						<h3 class="tit">이벤트 참여 주의사항</h3>
+						<ul class="cautionList">
+							<li><p>본 이벤트는 <strong>잡아바 구직정보 등록 서비스를 처음 이용하는 회원</strong>을 대상으로 합니다.</p></li>
+							<li><p><strong>이벤트 기간 종료시점까지 구직정보등록상태를 유지해야 합니다.</strong></p></li>
+							<li><p>반드시 <strong>인재정보 노출, 기업인재 추천서비스를 신청</strong>해야 이벤트 참여가 완료됩니다</p></li>
+						</ul>
+					</div>
+				</div>
+				<style>
+					.eventWrap .event01 .tipWrap {
+						display: flex;
+						align-items: center;
+					}
+					.eventWrap .box04 .whiteBox::before {
+						content: '';
+						width: 161px;
+						height: 194px;
+						position: absolute;
+						right: 40px;
+						bottom: 10px;
+						background: url(./images/eventImg/event01/tip_icon02.png) no-repeat;
+					}
+					.eventWrap .event01 .tipWrap + p {
+						margin-top: 20px;
+						color: #ff7800;
+						font-size: 24px;
+						font-weight: bold;
+					}
+					.eventWrap .event01 .tipWrap .imgWrap {
+						margin-right: 40px;
+					}
+					.eventWrap .event01 .tipWrap .txtWrap p {
+						margin-bottom: 20px;
+						color: #000;
+						font-size: 24px;
+					}
+					.eventWrap .event01 .tipWrap .txtWrap p strong {
+						color: #1e88af;
+						font-size: 30px;
+					}
+					.eventWrap .event01 .tipWrap .txtWrap span {
+						color: #000;
+						font-size: 18px;
+					}
+					.eventWrap .event01 .tipWrap .txtWrap a {
+						display: block;
+						width: 260px;
+						padding: 15px 0;
+						margin-top: 40px;
+						background: #1e88af;
+						color: #fff;
+						font-size: 20px;
+						font-weight: 500;
+						border-radius: 50px;
+						text-align: center;
+						box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.4);
+					}
+				</style>
+				<div class="boxWrap box04">
+					<div class="whiteBox">
+						<h3 class="tit">이벤트 당첨 Tip</h3>
+						<div class="tipWrap">
+							<div class="imgWrap">
+								<img src="./images/eventImg/event01/tip_icon01.png" alt="잡아바 상담 talk">
+							</div>
+							<div class="txtWrap">
+								<p><strong>잡아바 상담 톡</strong> 이용하면 당첨확률이 올라갑니다!</p>
+								<span>진로 &middot; 취업상담 부터 이직, 직장내 고민 상담까지!<br>
+									기다리지 말고 실시간 상담 받아보세요!</span>
+								<a href="#" target="_blank">상담 톡 바로가기 &#8594;</a>
+							</div>
+						</div>
+						<p>&#8251; 기초 정보 입력 시, 이메일에 잡아바 ID를 입력해주세요</p>
+					</div>
+				</div>
+			</div>
+		</article>
+		<style>
+			.eventWrap .event02 {
+				background: #7db6ae;
+			}
+			.eventWrap .event02 .innerSection {
+				padding: 60px 0;
+			}
+			.eventWrap .event02 .tit {				
+				margin-bottom: 40px;
+				position: relative;
+				text-align: center;
+				
+			}
+			.eventWrap .event02 .tit::before {
+				content: '';
+				width: 45px;
+				height: 39px;
+				position: absolute;
+				top: -34px;
+    			left: -39px;
+				background: url(./images/eventImg/event01/event_02icon01.png) no-repeat;
+			}
+			.eventWrap .event02 .tit::after {
+				content: '';
+				width: 45px;
+				height: 39px;
+				position: absolute;
+				bottom: -26px;
+    			right: -39px;
+				background: url(./images/eventImg/event01/event_02icon02.png) no-repeat;
+			}
+			.eventWrap .event02 .txt {
+				color: #fff;
+				font-size: 28px;
+				font-weight: 500;
+				
+				text-align: center;
+			}
+			.eventWrap .event02 .txt span {
+				color: #fff000;
+				font-weight: 500;
+			}
+		</style>
+		<article class="event02">
+			<div class="innerSection">
+				<div class="tit">
+					<img src="./images/eventImg/event01/event02_tit.png" alt="잡아바 구직정보">
+				</div>
+				<p class="txt"><span>전문 직업상담사</span>의 취업상담과 함께  <span>딱! 맞는 일자리정보</span>까지 추천해드립니다!</p>
+			</div>
+		</article>
+		<style>
+			.eventWrap .event03 {
+				background: url(./images/eventImg/event01/event03_bg.jpg) top center #adccc8 no-repeat;
+			}
+			.eventWrap .event03 .titWrap {
+				display: flex;
+				padding: 30px 40px;
+				background: #253b6d;
+				border-radius: 20px 20px 0 0;
+				align-items: center;
+				justify-content: space-between;
+			}
+			.eventWrap .event03 .titWrap p {
+				color: #fff;
+				font-size: 28px;
+				font-weight: 500;
+			}
+			.eventWrap .event03 .titWrap span {
+				display: block;
+				width: 20px;
+				height: 20px;
+				position: relative;
+				background: #46dc29;
+				border-radius: 50%;
+			}
+			.eventWrap .event03 .titWrap span::before {
+				content: '';
+				width: 20px;
+				height: 20px;
+				position: absolute;
+				top: 0;
+				left: -60px;
+				background: #e33d0a;
+				border-radius: 50%;
+			}
+			.eventWrap .event03 .titWrap span::after {
+				content: '';
+				width: 20px;
+				height: 20px;
+				position: absolute;
+				top: 0;
+				left: -30px;
+				background: #ffc600;
+				border-radius: 50%;
+			}
+		</style>
+		<article class="event03">
+			<div class="innerSection">
+				<div class="titWrap">
+					<p>취업상담&middot;알선 사례</p>
+					<div>
+						<span></span>
+					</div>
+				</div>
+				<div>
+					<div>
 						<div class="item">
-							<div class="num">
-								<p>150명</p>
+							<div>
+								<div class="info_img">
+
+								</div>
+								<ul class="info_txt">
+									<li>유** (여성)</li>
+									<li>청년(18 ~ 34세)</li>
+									<li>취업희망분야 : 사무 행정</li>
+								</ul>
 							</div>
-							<div class="img_wrap">
-								<img src="./images/eventImg/event01/event_img03.png" alt="cu편의점 3,000원권">
+							<div class="info_box">
+								<span class="tit">상담문의</span>
+								<p class="txt">4년제 대학 졸업 후 자신에게 맞는 직무를 선택하지 못해 고민 호소하며 진로 선택 및<br>
+									취업준비 스킬 향상 희망합니다.</p>
 							</div>
-							<p class="txt">네이버페이<br> 10,000원권</p>
+							<div class="info_box">
+								<span class="tit">컨설팅 및 취업알선</span>
+								<ul>
+									<li>다수의 상담을 통해 <strong>직업선호도 검사 및 자기분석 진행</strong> &gt; 유통/물류 분야에 강점을 발견</li>
+									<li>지원분야에 적합한  <strong>자소서 컨설팅 및 면접 코칭 진행</strong>을 통해 취업 스킬 강화</li>
+									<li>취업희망기업에 취업성공 후, <strong>직업 적응 및 고충 상담을 통한 사후 관리 진행</strong></li>
+								</ul>
+							</div>
+							<div class="resultWrap">
+								<div class="result">
+									<span class="tit">컨설팅 결과</span>
+									<p>
+										취업시작인 <span>자기분석, 목표설정, 역량강화부터</span> 인턴 생활이<br>
+										끝난 이후에도 <span>잡아바 상담사와 지속적인 커뮤니케이션을 통해<br>
+										취업에 성공</span>하셨습니다!
+									</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
