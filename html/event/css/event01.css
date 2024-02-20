@@ -125,7 +125,7 @@
  .eventWrap .event02 .tit::before,
  .eventWrap .event02 .tit::after { content: none; } 
  
- .eventWrap .eventMain .mainVisual::after { width: 800px; height: 271px; bottom: -50px; background-size: contain; } 
+ .eventWrap .eventMain .mainVisual::after { width: 800px; height: 271px; bottom: -50px; left: 50%; transform: translateX(-50%); background-size: contain; } 
  .eventWrap .event01 .whiteBox { width: 100% !important; height: auto !important; background: #fff !important; padding: 40px; border-radius: 20px; box-shadow: 0px 20px 20px 0px rgba(192, 209, 184, 0.4); } 
  .eventWrap .whiteBox h3 { margin: 0 auto 40px; position: static; background: #ff7800; color: #fff; border-radius: 30px; } 
  .eventWrap .event01 .linkBtn { margin: 20px auto; position: static; transform: none; } 
@@ -155,7 +155,7 @@
  .eventWrap .eventMain { background: #f1f7f6; } 
  .eventWrap .innerSection { width: calc(100% - 20px); } 
  .eventWrap .eventMain .innerSection { padding-top: 30px; } 
- .eventWrap .eventMain .mainVisual::after { width: 300px; height: 102px; bottom: -18px; left: 0; } 
+ .eventWrap .eventMain .mainVisual::after { width: 300px; height: 102px; bottom: -18px;} 
  .eventWrap .event01 .whiteBox { padding: 20px; margin-bottom: 20px; } 
  .eventWrap .whiteBox h3 { width: 100%; height: auto; padding: 4px 0; margin: 0 auto 20px; font-size: 20px; } 
  .eventWrap .event01 .eventList .item { margin: 20px 0 20px; } 
