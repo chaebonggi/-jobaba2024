@@ -15,7 +15,7 @@
 	<link type="text/css" rel="stylesheet" href="./css/main/job/layout.css">
 	<link type="text/css" rel="stylesheet" href="./css/main/job/style.css">
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/kgoon.reset.min.css">
-    <link type="text/css" rel="stylesheet" href="./css/main/n_style.css">    
+    <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/style.css">     
     <link type="text/css" rel="stylesheet" href="../etc/css/fonts.css">
 
 	<!-- 추가 css -->
@@ -1240,6 +1240,24 @@
             </div>
         </div>
     </div>
+    <!-- 로그인 -->
+    <div class="modal fade" role="dialog" aria-labelledby="loginLayerModalLabel" id="loginLayerModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header header-primary">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="loginLayerModalLabel"></h4>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" id="closeBtnLogin">닫기</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal" id="loginBtn">로그인</button>
+                </div>
+            </div>
+        </div>
+    </div>
     
 
     
@@ -1269,12 +1287,19 @@
 
 <script>
     $(document).ready(function() {
+        //로그인팝업 클릭
+        $(".login_alert, .resume").on('click', function(e){
+            e.preventDefault();
+            loginLayerPopup("알림", "로그인후 이용 하여 주세요.");
+        });
+
         //통합검색 아이콘 클릭
         $('.renewHeader .h_search').on('click', function(){
             $('.modal_search_wrapper').show();
             $('.search_menu').show();
             $('.search_menu input[type="text"]').focus();
         });
+        
     });
 </script>
 
