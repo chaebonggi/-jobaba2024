@@ -1,10 +1,10 @@
-// header all menu
-function allMenu() {
+
+function allMenu(clickMenu) {
     if(window.innerWidth < 860) {
-        $('.h_mobile').toggleClass('show');
+        $('#' + clickMenu + ' .h_mobile').toggleClass('show');
     } else {
-        $('.h_gnb_bg').stop().slideToggle(300);
-        $('.h_menu').toggleClass('active');
+        $('#' + clickMenu + ' .h_gnb_bg').stop().slideToggle(300);
+        $('#' + clickMenu + ' .h_menu').toggleClass('active');
     }
 }
 $(document).mouseup(function(e){
