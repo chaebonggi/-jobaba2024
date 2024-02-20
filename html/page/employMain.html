@@ -6,32 +6,32 @@
 	<title>일자리플랫폼 잡아바!</title>
 
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/import.css">
-	<!-- <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/mobile.css"> -->
+	<link type="text/css" rel="stylesheet" href="./css/main/job/mobile.css">
 	<!-- <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/fullcalendar.css"> -->
 	<!-- <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/js/css/jquery_ui.css"> -->
 	<!-- <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/bxslider/slick.css"> -->
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/swiper.min.css">
 	<!-- <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/adminDetail.css"> -->
-	<!-- <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/layout.css"> -->
-	<!-- <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/style.css"> -->
+	<link type="text/css" rel="stylesheet" href="./css/main/job/layout.css">
+	<link type="text/css" rel="stylesheet" href="./css/main/job/style.css">
 	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/kgoon.reset.min.css">
-	<!-- <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/mobile.css"> -->
-    <!-- <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/style.css"> -->
-    
+    <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/style.css">    
     <link type="text/css" rel="stylesheet" href="../etc/css/fonts.css">
+
 	<!-- 추가 css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.css" />
+    <link type="text/css" rel="stylesheet" href="./css/new/allnew_ia.css">
     <link rel="stylesheet" href="./css/main_2024/style.css">
     
 </head>
 
 <body>  
-    <header id="renewHeader">
+    <header class="renewHeader">
         <div class="nheader_top">
             <div class="innerSection">
                 <div class="h_util">
                     <ul class="leftBox">
-                        <li>
+                        <li class="on">
                             <a href="#" target="_blank" title="일자리 정보 페이지 이동">
                                 <span>일자리 정보</span>
                             </a>
@@ -379,7 +379,7 @@
                                 <p class="tit">관심있는 <strong>일자리 정보</strong>를 찾아보세요</p>
                                 <div class="searchCont">
                                     <input type="text" id="search" placeholder="기업명 또는 채용공고명으로 검색해 보세요!">
-                                    <button type="submit">검색</button>
+                                    <button type="submit" onClick="chkMainSrch();">검색</button>
                                 </div>
                             </div>
                         </div>
@@ -998,6 +998,86 @@
         </div>
     </footer>
 
+    <!-- 레이어 : 통합검색 -->
+    <div class="modal_search_wrapper" style="display:none;">
+        <div class="containerNew">
+            <div class="search_menu clearfix">
+                <div class="btn_search_close">닫기<img src="https://www.jobaba.net/resource/images/main2020/btn_search_close.png" alt=""></div>
+                <form id="topSrchFrm" name="topSrchFrm" action="/search/search.do" method="post" class="clearfix" novalidate="novalidate">
+                    <input type="hidden" name="autoWordFlag" id="autoWordFlag" value="Y">
+                    <input type="hidden" name="autoWordFlag" id="autoPreviewFlag" value="N">
+                    <input type="hidden" name="subSrchTxt" id="subSrchTxt" value="">
+                    <input type="hidden" name="srchOldTxt" id="srchOldTxt" value="">
+                    <input class="menu_search" type="text" name="srchTxt" id="srchTxt" title="검색어 입력" placeholder="검색어를 입력하세요." autocomplete="off" onkeyup="onSearch('onkeyup',event);">
+                    <input type="submit" value="검색">
+                </form>
+
+                <div class="search_list clearfix">
+                    <div class="search_rank">
+                        <p class="tit">인기검색어</p>
+                        <ul id="hotListRank">
+                            <li><a href="#none" onclick="setSearchText('청년기본소득')" title="청년기본소득 이동"><span class="rank">1</span><span class="keyword">청년기본소득</span></a></li>
+                            <li><a href="#none" onclick="setSearchText('청년기본소득 4분기')" title="청년기본소득 4분기 이동"><span class="rank">2</span><span class="keyword">청년기본소득 4분기</span></a></li>
+                            <li><a href="#none" onclick="setSearchText('오산')" title="오산 이동"><span class="rank">3</span><span class="keyword">오산</span></a></li>
+                            <li><a href="#none" onclick="setSearchText('면접수당')" title="면접수당 이동"><span class="rank">4</span><span class="keyword">면접수당</span></a></li>
+                            <li><a href="#none" onclick="setSearchText('청년지원금')" title="청년지원금 이동"><span class="rank">5</span><span class="keyword">청년지원금</span></a></li>
+                            <li><a href="#none" onclick="setSearchText('경기도')" title="경기도 이동"><span class="rank">6</span><span class="keyword">경기도</span></a></li>
+                            <li><a href="#none" onclick="setSearchText('청년몰')" title="청년몰 이동"><span class="rank">7</span><span class="keyword">청년몰</span></a></li>
+                            <li><a href="#none" onclick="setSearchText('정장대여')" title="정장대여 이동"><span class="rank">8</span><span class="keyword">정장대여</span></a></li>
+                            <li><a href="#none" onclick="setSearchText('면접')" title="면접 이동"><span class="rank">9</span><span class="keyword">면접</span></a></li>
+                            <li><a href="#none" onclick="setSearchText('직업상담사')" title="직업상담사 이동"><span class="rank">10</span><span class="keyword">직업상담사</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="search_tag">
+                        <p class="tit">인기태그</p>
+                        <ul>
+                        <!-- DefaultInterceptor 에서 가져옴  -->
+                        
+                            <li><a href="#none" onclick="setSearchText('경영지원')" title="경영지원 이동">#경영지원</a></li>
+                        
+                            <li><a href="#none" onclick="setSearchText('구직활동지원')" title="구직활동지원 이동">#구직활동지원</a></li>
+                        
+                            <li><a href="#none" onclick="setSearchText('금융지원')" title="금융지원 이동">#금융지원</a></li>
+                        
+                            <li><a href="#none" onclick="setSearchText('생활비지원')" title="생활비지원 이동">#생활비지원</a></li>
+                        
+                            <li><a href="#none" onclick="setSearchText('청년')" title="청년 이동">#청년</a></li>
+                        
+                            <li><a href="#none" onclick="setSearchText('취업지원')" title="취업지원 이동">#취업지원</a></li>
+                        
+                            <li><a href="#none" onclick="setSearchText('일경험지원')" title="일경험지원 이동">#일경험지원</a></li>
+                        
+                            <li><a href="#none" onclick="setSearchText('취업')" title="취업 이동">#취업</a></li>
+                        
+                            <li><a href="#none" onclick="setSearchText('자본금지원')" title="자본금지원 이동">#자본금지원</a></li>
+                        
+                            <li><a href="#none" onclick="setSearchText('중소기업')" title="중소기업 이동">#중소기업</a></li>
+                        
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //레이어 : 통합검색 -->
+    <!-- 로그인 -->
+    <div class="modal fade" role="dialog" aria-labelledby="loginLayerModalLabel" id="loginLayerModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header header-primary">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="loginLayerModalLabel"></h4>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" id="closeBtnLogin">닫기</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal" id="loginBtn">로그인</button>
+                </div>
+            </div>
+        </div>
+    </div>
     
 
     
@@ -1023,6 +1103,27 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.js"></script>
 <script src="./js/main_2024/top.js"></script>
 <script src="./js/main_2024/main.js"></script>
+
+<script>
+    $(document).ready(function() {
+        //로그인팝업 클릭
+        $(".login_alert").on('click', function(e){
+            e.preventDefault();
+            loginLayerPopup("알림", "로그인후 이용 하여 주세요.");
+        });
+    
+        //통합검색 아이콘 클릭
+        $('.renewHeader .h_search').on('click', function(){
+            $('.modal_search_wrapper').show();
+            $('.search_menu').show();
+            $('.search_menu input[type="text"]').focus();
+        });    
+    });
+    // 메인 검색 전송 전 처리
+    function chkMainSrch() {
+            alert("검색어를 입력해 주세요.");
+        }
+    </script>
 
 </body>
 </html>
