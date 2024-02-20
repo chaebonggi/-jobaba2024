@@ -377,4 +377,10 @@
     .mw30 {width: 30%;}
     .mytb2-type .table > thead > tr > th {padding: 6px 10px;font-size: 12px;}
     .mytb2-type .table > tbody > tr > td {padding: 12px 5px;font-size: 12px;}
+
+    .aiPopup { width: calc(100% - 20px); padding: 20px 20px;}
+    .aiPopup .pop_cont li { flex-direction: column; } 
+    .aiPopup .pop_cont .select_style {width: 100%; margin-right: 0;}
+    .aiPopup .pop_cont li .p_tit { margin-right: 0; text-align: left; } 
+    .aiPopup .pop_cont li .error_text { display: block; } 
 }
