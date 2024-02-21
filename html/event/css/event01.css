@@ -81,7 +81,7 @@
 .eventWrap .event03 .slideWrap .swiper-button-next:after, 
 .eventWrap .event03 .slideWrap .swiper-button-prev::after { content: none; } 
 .eventWrap .event03 .slideWrap .swiper-button-next, 
-.eventWrap .event03 .slideWrap .swiper-button-prev { margin-top: 0; width: 20px; height: 37px; top: 50%; transform: translateY(-50%); } 
+.eventWrap .event03 .slideWrap .swiper-button-prev { margin-top: 0; width: 20px; height: 37px; top: 500px;} 
 .eventWrap .event03 .slideWrap .swiper-button-prev { left: 20px; background: url(../images/eventImg/event01/prev_btn.png); } 
 .eventWrap .event03 .slideWrap .swiper-button-next { left: initial !important; right: 20px; background: url(../images/eventImg/event01/next_btn.png); } 
 .eventWrap .event03 .slideWrap .swiper-pagination { left: 50%; bottom: 30px; transform: translateX(-50%); } 

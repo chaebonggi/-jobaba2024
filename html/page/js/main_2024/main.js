@@ -197,6 +197,7 @@ function cateSlide() {
             spaceBetween: 20,
             slidesPerColumnFill: "row", 
             observer: true,
+            watchOverflow: true,
             observeParents: true,
             pagination: {
                 el: $categorySlider.find('.swiper-pagination.type'+i),
