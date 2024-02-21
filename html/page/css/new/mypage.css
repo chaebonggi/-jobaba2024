@@ -70,8 +70,8 @@
 .mypageWrap .myInfo .btnWrap a span::after { content: 'OFF'; }
 .mypageWrap .myInfo .btnWrap a.on span::after { content: 'ON'; }
 .mypageWrap .myInfo .rectify { width: 90px; margin-left: 10px; background: #a6a6a6; color: #fff; font-size: 14px; line-height: 26px; text-align: center; border-radius: 6px; }
-.mypageWrap .myInfo + .myAdm { width: calc(100% - 470px); border-right: 1px solid #cbe3e2; }
-.mypageWrap .myAdm + .myAdm { width: 470px; }
+.mypageWrap .myAdm {width: calc(100% / 2); }
+.mypageWrap .myAdm + .myAdm { border-left: 1px solid #cbe3e2; }
 .mypageWrap .myinfoWrap h3 { margin: 20px 0; color: #666666; font-size: 14px; font-weight: 400; }
 .mypageWrap .myinfoWrap .myAdm { padding: 0 28px; }
 .mypageWrap .myinfoWrap .myAdm ul { display: flex; text-align: center; justify-content: space-around; margin-bottom: 20px; }
@@ -83,8 +83,7 @@
 .mypageWrap .myinfoWrap .myAdm ul li p { margin-top: 10px; color: #222; font-size: 16px; line-height: 26px; }
 
 @media all and (max-width:1024px){
- .mypageWrap .myInfo + .myAdm { width: calc(100% - 370px); }
- .mypageWrap .myAdm + .myAdm { width: 370px; }
+
  }
 @media all and (max-width:860px){
  .innerSection { padding: 0 10px; }
@@ -98,7 +97,7 @@
 @media all and (max-width:768px){
  .mypageWrap .myInfo .btnWrap a { width: 134px; padding-left: 6px; }
  .mypageWrap .myInfo .btnWrap a span { width: 38px; }
- .mypageWrap .myinfoWrap .myAdm ul { flex-wrap: wrap; gap: 20px 10px; }
+ .mypageWrap .myinfoWrap .myAdm ul { gap: 20px 10px; }
  .mypageWrap .myinfoWrap .myAdm ul li p { font-size: 14px; }
  }
 
