@@ -30,6 +30,15 @@ var companySwiper = new Swiper(".companySlide", {
             autoHeight : true,
         },
     },
+    navigation: {
+        nextEl: ".comSlidWrap .swiper-button-next",
+        prevEl: ".comSlidWrap .swiper-button-prev",
+    },
+    pagination: {
+        clickable : true,
+        el: '.comSlidWrap .swiper-pagination',
+        type: 'bullets',
+    },
 });
 
 //policy mainBanner
@@ -191,10 +200,10 @@ function cateSlide() {
     $categorySlider.find('.thumbList').each(function(i){
         $(this).find(".swiper-pagination").addClass("type"+i);
         var thumbSwiper  = new Swiper($(this), {
-            slidesPerView: 2,
-            slidesPerGroup: 2,
+            slidesPerView: 1.5,
+            slidesPerGroup: 1,
             slidesPerColumn: 1,
-            spaceBetween: 20,
+            spaceBetween: 10,
             slidesPerColumnFill: "row", 
             observer: true,
             watchOverflow: true,
@@ -215,6 +224,12 @@ function cateSlide() {
                     spaceBetween: 30,
                     slidesPerColumn: 2,
                     slidesPerGroup: 3,
+                },
+                480: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                    slidesPerColumn: 1,
+                    slidesPerGroup: 2,
                 },
             },
         }); 
