@@ -15,6 +15,8 @@ var companySwiper = new Swiper(".companySlide", {
     slidesPerView: 1,
     spaceBetween: 10,
     autoHeight : false,
+    observer: true,
+    observeParents: true,
     loop: false,
     breakpoints: {
         1024: {
