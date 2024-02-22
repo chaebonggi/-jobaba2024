@@ -339,7 +339,7 @@ var issueSwiper = new Swiper(".issueWrap .issueSlide", {
         768: {
             slidesPerView: 3,
         },
-        640: {
+        480: {
             slidesPerView: 2,
         },
     },
