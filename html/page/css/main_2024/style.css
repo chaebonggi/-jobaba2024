@@ -44,7 +44,8 @@ body.intro #jobaba_wrap { min-width: initial; background: inherit;}
  .introWrap .introBtn .intBtn { margin-left: initial; margin-top: 10px; } 
 }
 
- @media screen and (max-width: 640px) {body.intro { background-image: url(../../images/main_2024/intro/intro_bg_top02.png), url(../../images/main_2024/intro/intro_bg_bottom02.png); background-color: #ffffff; background-position: top center, bottom center; background-size: contain; } 
+ @media screen and (max-width: 640px) {
+ body.intro { background-image: url(../../images/main_2024/intro/intro_bg_top02.png), url(../../images/main_2024/intro/intro_bg_bottom02.png); background-color: #ffffff; background-position: top center, bottom center; background-size: contain; } 
  body.intro .renewHeader .h_util { height: 50px; } 
  body.intro .renewHeader .h_util ul li a { padding: 10px 14px; font-size: 14px; } 
  body.intro #renewFooter { display: none; } 
@@ -71,8 +72,9 @@ body.intro #jobaba_wrap { min-width: initial; background: inherit;}
 .introWrap .introBtn .intBtn { padding: 4px 26px; margin-top: 4px; font-size: 14px; } 
  }
  /* //intro */
-
- .innerSection { max-width: 1300px; height: 100%; padding: 0 20px; margin: 0 auto; position: relative; } 
+ .renewHeader .innerSection { max-width: 1300px; height: 100%; padding: 0 20px; margin: 0 auto; position: relative; }
+ #renewMain .innerSection { max-width: 1300px; height: 100%; padding: 0 20px; margin: 0 auto; position: relative; } 
+ #renewFooter .innerSection { max-width: 1300px; height: 100%; padding: 0 20px; margin: 0 auto; position: relative; } 
  .gMid { font-family: 'GmarketSans','Noto Sans KR' !important; font-weight: 500; } 
  .gBold { font-family: 'GmarketSans','Noto Sans KR' !important; font-weight: 700; } 
  .ir-text { display:block; overflow:hidden; font-size:1px; line-height:0; text-indent:-9999px; } 
