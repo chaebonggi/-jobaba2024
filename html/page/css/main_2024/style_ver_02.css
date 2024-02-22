@@ -278,7 +278,7 @@ body.intro #jobaba_wrap { min-width: initial; background: inherit;}
 #renewMain .companyWrap .companyList .txtWrap .prog.st1 { color: #00a8cd; } 
 #renewMain .companyWrap .companyList .txtWrap .prog.st2 { color: #adadad; } 
 #renewMain .companyWrap .companyList .txtWrap p { display: -webkit-box; width: 100%; height: 52px; margin: 15px 0; font-size: 18px; line-height: 1.6rem; -webkit-line-clamp: 2; -webkit-box-orient: vertical; text-overflow: ellipsis; word-break: break-all; overflow: hidden; } 
-#renewMain .companyWrap .companyList .txtWrap ul { padding-top: 15px; border-top: 1px solid #e6e6e6; } 
+#renewMain .companyWrap .companyList .txtWrap ul { padding-top: 15px; min-height: 56px; border-top: 1px solid #e6e6e6; } 
 #renewMain .companyWrap .companyList .txtWrap ul li { display: -webkit-box; color: #787878; font-size: 14px; -webkit-line-clamp: 1; -webkit-box-orient: vertical; text-overflow: ellipsis; word-break: break-all; overflow: hidden; } 
 #renewMain .companyWrap .comSlidWrap { position: relative; padding-bottom: 40px; } 
 #renewMain .companyWrap .swiper-pagination { bottom: 0; left: 50%; transform: translateX(-50%); } 
@@ -752,7 +752,7 @@ body.intro #jobaba_wrap { min-width: initial; background: inherit;}
 #renewMain .jobRecomend .jobItem .jobBtn a { width: 100%; height: auto; padding: 10px 0; margin-bottom: 10px; font-size: 14px; line-height: initial; } 
 
 /* employ company */
-#renewMain .companyWrap .comSlidWrap {padding-bottom: 10px;}
+#renewMain .companyWrap .comSlidWrap {padding-bottom: 25px;}
 #renewMain .companyWrap .companyList { height: auto !important; } 
 #renewMain .companyWrap .companyList > li { height: auto; } 
 #renewMain .companyWrap .companyList .txtWrap { padding: 15px 15px; } 
