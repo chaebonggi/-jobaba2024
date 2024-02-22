@@ -328,23 +328,19 @@ $slider.find('.policySlide').each(function(i){
 });
 // policy issue slide
 var issueSwiper = new Swiper(".issueWrap .issueSlide", {
-    slidesPerView: 1,
-    spaceBetween: 10,
+    slidesPerView: 1.5,
+    spaceBetween: 5,
     watchOverflow: true,
-    observer: true,
-    observeParents: true,
     breakpoints: {
         1024: {
             slidesPerView: 4,
             spaceBetween: 20,
-            autoHeight : true,
         },
-        860: {
+        768: {
             slidesPerView: 3,
         },
         640: {
             slidesPerView: 2,
-            autoHeight : true,
         },
     },
     pagination: {
