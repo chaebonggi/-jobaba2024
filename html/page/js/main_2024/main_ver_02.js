@@ -9,6 +9,7 @@ function handleTabClick($btn, $items, tabAttr) {
 }
 handleTabClick($('.infoWrap .infoBtn li'), $('.infoWrap .infoTab'), 'data-tab');
 handleTabClick($('.mainPolicy .policyBtn li'), $('.mainPolicy .policyCont'), 'data-tab');
+handleTabClick($('.m_useful .m_useful_btn li'), $('.m_useful .m_useful_cont'), 'data-tab');
 
 // employ company slide
 var companySwiper = new Swiper(".companySlide", {
@@ -324,6 +325,33 @@ $slider.find('.policySlide').each(function(i){
             },
         },
     });
+});
+// policy issue slide
+var issueSwiper = new Swiper(".issueWrap .issueSlide", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    watchOverflow: true,
+    observer: true,
+    observeParents: true,
+    breakpoints: {
+        1024: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+            autoHeight : true,
+        },
+        860: {
+            slidesPerView: 3,
+        },
+        640: {
+            slidesPerView: 2,
+            autoHeight : true,
+        },
+    },
+    pagination: {
+        clickable : true,
+        el: '.issueWrap .swiper-pagination',
+        type: 'bullets',
+    },
 });
 
 // policy tag 

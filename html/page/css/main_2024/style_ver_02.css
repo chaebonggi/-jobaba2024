@@ -270,6 +270,7 @@ body.intro #jobaba_wrap { min-width: initial; background: inherit;}
 #renewMain .mainVisual .counselingWrap .chatLive p::before { content: ''; width: 21px; height: 18px; position: absolute; top: 5px; left: 16px; background: url(../../images/main_2024/main/chat_icon01.png) no-repeat; } 
 
 /* employ company */
+#renewMain .companyWrap {margin-bottom: 40px;}
 #renewMain .companyWrap .companyList > li { height: 100%; background: #fff; border-radius: 10px; border: 1px solid #dadada; overflow: hidden; } 
 #renewMain .companyWrap .companyList > li a { display: block; width: 100%; height: 100%; } 
 #renewMain .companyWrap .companyList .imgWrap img { width: 100%; height: 179px; overflow: hidden; } 
@@ -289,8 +290,7 @@ body.intro #jobaba_wrap { min-width: initial; background: inherit;}
 #renewMain .companyWrap .swiper-button-prev { left: -20px; background: url(../../images/main_2024/main/btn_s_prev.png) no-repeat; } 
 
 /* employ info */
-#renewMain .infoWrap { position: relative; margin-top: 40px; } 
-#renewMain .infoWrap + .infoWrap { margin-bottom: 70px; } 
+#renewMain .infoWrap { position: relative; margin-bottom: 70px;}
 
 #renewMain .infoWrap .infoItem { width: 100%; position: relative; padding: 40px 40px 60px; background: #fff; border: 1px solid #dddddd; border-radius: 20px; overflow: hidden; } 
 #renewMain .infoWrap .infoTit { display: flex; align-items: center; justify-content: space-between; margin-bottom: 26px; } 
@@ -529,6 +529,22 @@ body.intro #jobaba_wrap { min-width: initial; background: inherit;}
 #renewMain .jobRecomend .jobItem .jobBtn { display: none; text-align: right; } 
 #renewMain .jobRecomend .jobItem .jobBtn a { display: inline-block; width: 200px; height: 60px; background: #fff; color: #000; font-size: 20px; font-weight: 500; line-height: 60px; text-align: center; border-radius: 10px; } 
 
+/* 유용한 꿀팁 */
+#renewMain .m_useful .m_useful_wrap { padding: 28px 36px; margin-bottom: 62px; background: #f0f0f0; border-radius: 20px; } 
+#renewMain .m_useful .m_useful_wrap h3 {color: #000; font-size: 26px; font-weight: 500;}
+#renewMain .m_useful .m_useful_btn { display: flex; margin: 16px 0; } 
+#renewMain .m_useful .m_useful_btn li { padding: 4px 20px; color: #666666; font-size: 16px; font-weight: 500; cursor: pointer; border-radius: 20px; flex-shrink: 0;} 
+#renewMain .m_useful .m_useful_btn li.active { color: #fff; background: #003281; } 
+#renewMain .m_useful .m_useful_cont { display: none; } 
+#renewMain .m_useful .m_useful_cont.active { display: flex; justify-content: space-between; } 
+#renewMain .m_useful .m_useful_cont a { width: calc((100% - 60px) / 4); } 
+#renewMain .m_useful .m_useful_cont a + a { margin-left: 14px; } 
+#renewMain .m_useful .m_useful_thumb { height: auto; max-height: 160px; border: 2px solid #fff; border-radius: 5px; overflow: hidden; } 
+#renewMain .m_useful .m_useful_thumb img { width: 100%; height: 100%; object-fit: cover; } 
+#renewMain .m_useful .m_useful_txt { padding: 14px 10px; } 
+#renewMain .m_useful .m_useful_txt p { margin-bottom: 4px; color: #808080; font-size: 12px; text-overflow: ellipsis; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; word-break: break-all; } 
+#renewMain .m_useful .m_useful_txt strong { color: #000; font-size: 14px; font-weight: 500; text-overflow: ellipsis; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; word-break: break-all; } 
+
 /* footer */
 #renewFooter { background: #fff; } 
 #renewFooter .nfooter_top { background: #fff; border-top: 1px solid #ededed; border-bottom: 1px solid #ededed; margin-top: 15px; } 
@@ -665,9 +681,11 @@ body.intro #jobaba_wrap { min-width: initial; background: inherit;}
  #renewMain .companyWrap .swiper-button-next, 
  #renewMain .companyWrap .swiper-button-prev {display: none; }
 
+ #renewMain .m_useful {display: none;}
  }
 
 @media screen and (max-width: 640px){
+    
  .innerSection { padding: 0 10px; } 
  /* header */
  .renewHeader .h_cont { margin-top: 0; } 
@@ -752,6 +770,7 @@ body.intro #jobaba_wrap { min-width: initial; background: inherit;}
 #renewMain .jobRecomend .jobItem .jobBtn a { width: 100%; height: auto; padding: 10px 0; margin-bottom: 10px; font-size: 14px; line-height: initial; } 
 
 /* employ company */
+#renewMain .companyWrap {margin-bottom: 20px;}
 #renewMain .companyWrap .comSlidWrap {padding-bottom: 25px;}
 #renewMain .companyWrap .companyList { height: auto !important; } 
 #renewMain .companyWrap .companyList > li { height: auto; } 
@@ -760,8 +779,7 @@ body.intro #jobaba_wrap { min-width: initial; background: inherit;}
 
 /* employ infoWrap */
 #renewMain .infoWrap .infoItem {padding: 20px 20px 60px;}
-#renewMain .infoWrap + .infoWrap {margin-bottom: 0;}
-#renewMain .infoWrap { margin-top: 20px; }
+#renewMain .infoWrap { margin-bottom: 20px; }
 #renewMain .infoWrap .infoCont > a { height: auto; }
 #renewMain .infoWrap .infoCont.noneImg > div { height: 171px; }
 #renewMain .infoWrap .infoTit { flex-direction: column; } 
