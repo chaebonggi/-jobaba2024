@@ -72,9 +72,9 @@ body.intro #jobaba_wrap { min-width: initial; background: inherit;}
 .introWrap .introBtn .intBtn { padding: 4px 26px; margin-top: 4px; font-size: 14px; } 
  }
  /* //intro */
- .renewHeader .innerSection { max-width: 1300px; height: 100%; padding: 0 20px; margin: 0 auto; position: relative; }
- #renewMain .innerSection { max-width: 1300px; height: 100%; padding: 0 20px; margin: 0 auto; position: relative; } 
- #renewFooter .innerSection { max-width: 1300px; height: 100%; padding: 0 20px; margin: 0 auto; position: relative; } 
+ .renewHeader .innerSection { max-width: 1300px; height: 100%; padding: 0 20px; margin: 0 auto;  }
+ #renewMain .innerSection { max-width: 1300px; height: 100%; padding: 0 20px; margin: 0 auto;  } 
+ #renewFooter .innerSection { max-width: 1300px; height: 100%; padding: 0 20px; margin: 0 auto;  } 
  .gMid { font-family: 'GmarketSans','Noto Sans KR' !important; font-weight: 500; } 
  .gBold { font-family: 'GmarketSans','Noto Sans KR' !important; font-weight: 700; } 
  .ir-text { display:block; overflow:hidden; font-size:1px; line-height:0; text-indent:-9999px; } 
@@ -435,40 +435,40 @@ body.intro #jobaba_wrap { min-width: initial; background: inherit;}
 #renewMain .policyFind .swiper-pagination-bullet { width: 10px; height: 10px; margin: 0 4px; } 
 
 /* policy recomend */
-.recomendInfo { background: linear-gradient(to bottom, #ecf8f2 40%, #fff 40%); } 
-.recomendInfo .innerSection { padding: 70px 10px 120px; } 
-.recomendInfo .recomendWrap { padding: 56px 20px 100px; position: relative; background: #fff; border: 1px solid #cccccc; border-radius: 50px; box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1); } 
-.recomendInfo .recomendWrap::before { content: ''; width: 111px; height: 149px; position: absolute; right: 80px; top: -150px; background: url(../../images/main_2024/main/recomend_icon01.png) no-repeat; background-size: contain; } 
-.recomendInfo .recomendWrap::after { content: ''; width: 133px; height: 60px; position: absolute; right: 72px; top: -46px;; background: url(../../images/main_2024/main/recomend_icon02.png) no-repeat; background-size: contain; } 
-.recomendInfo .titWrap { padding-left: 15px; margin-bottom: 50px; } 
-.recomendInfo .titWrap h2 { margin-bottom: 20px; font-size: 36px; } 
-.recomendInfo .titWrap p { font-size: 20px; } 
-.recomendInfo .titWrap h2 span { font-weight: 500; } 
-.recomendInfo .recomendSlide { max-width: 850px; } 
-.recomendInfo .recomendItem + .recomendItem { margin-top: 20px; padding-top: 20px; border-top: 1px solid #ddd; } 
- .recomendInfo .recomendItem a { display: flex; align-items: center; } 
-.recomendInfo .recomendItem .imgWrap { width: 160px; height: 120px; margin: 0 20px 0 0; background: #eee; border-radius: 10px; overflow: hidden; flex-shrink: 0; } 
-.recomendInfo .recomendItem .imgWrap img { object-fit: cover; height: 100%; } 
-.recomendInfo .recomendItem .txtWrap .sTit { margin: 0 0 10px; color: #000; font-size: 20px; letter-spacing: -1px; } 
-.recomendInfo .recomendItem .txtWrap .sDate { margin: 5px 0; color: #666666; font-size: 14px; display: -webkit-box; text-overflow: ellipsis; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; } 
-.recomendInfo .recomendItem .txtWrap .sDate span { margin: 0 15px 0 0; color: #222222; font-weight: 700; } 
-.recomendInfo .recomendItem .txtWrap .sTarget { margin: 5px 0; color: #666666; font-size: 14px; display: -webkit-box; text-overflow: ellipsis; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; } 
-.recomendInfo .recomendItem .txtWrap .sTarget span { margin: 0 15px 0 0; color: #222222; font-weight: 700; } 
-.recomendInfo .recomendItem .txtWrap .sTag { margin: 15px 0 0 0; color: #999999; font-size: 14px; display: -webkit-box; text-overflow: ellipsis; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; } 
-.recomendInfo .recomendItem .badge { display: inline-block; width: 50px; padding: 0 0 2px; margin-left: 4px; font-size: 12px; border-radius: 15px; text-align: center; vertical-align: middle; } 
-.recomendInfo .recomendItem .badge.sday { color: #ec004b; border: solid 1px #ec004b; } 
-.recomendInfo .recomendItem .badge.snew { color: #38bab2; border: solid 1px #38bab2; } 
-.recomendInfo .swiper-pagination { bottom: 36px; left: 50%; transform: translateX(-50%); } 
-.recomendInfo .swiper-pagination-bullet { width: 18px; height: 18px; margin: 0 4px; } 
-.recomendInfo .swiper-pagination-bullet-active { background: #008ae0; } 
+#renewMain .recomendInfo { background: linear-gradient(to bottom, #ecf8f2 40%, #fff 40%); } 
+#renewMain .recomendInfo .innerSection { padding: 70px 10px 120px; } 
+#renewMain .recomendInfo .recomendWrap { padding: 56px 20px 100px; position: relative; background: #fff; border: 1px solid #cccccc; border-radius: 50px; box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1); } 
+#renewMain .recomendInfo .recomendWrap::before { content: ''; width: 111px; height: 149px; position: absolute; right: 80px; top: -150px; background: url(../../images/main_2024/main/recomend_icon01.png) no-repeat; background-size: contain; } 
+#renewMain .recomendInfo .recomendWrap::after { content: ''; width: 133px; height: 60px; position: absolute; right: 72px; top: -46px;; background: url(../../images/main_2024/main/recomend_icon02.png) no-repeat; background-size: contain; } 
+#renewMain .recomendInfo .titWrap { padding-left: 15px; margin-bottom: 50px; } 
+#renewMain .recomendInfo .titWrap h2 { margin-bottom: 20px; font-size: 36px; } 
+#renewMain .recomendInfo .titWrap p { font-size: 20px; } 
+#renewMain .recomendInfo .titWrap h2 span { font-weight: 500; } 
+#renewMain .recomendInfo .recomendSlide { max-width: 850px; } 
+#renewMain .recomendInfo .recomendItem + .recomendItem { margin-top: 20px; padding-top: 20px; border-top: 1px solid #ddd; } 
+#renewMain .recomendInfo .recomendItem a { display: flex; align-items: center; } 
+#renewMain .recomendInfo .recomendItem .imgWrap { width: 160px; height: 120px; margin: 0 20px 0 0; background: #eee; border-radius: 10px; overflow: hidden; flex-shrink: 0; } 
+#renewMain .recomendInfo .recomendItem .imgWrap img { object-fit: cover; height: 100%; } 
+#renewMain .recomendInfo .recomendItem .txtWrap .sTit { margin: 0 0 10px; color: #000; font-size: 20px; letter-spacing: -1px; } 
+#renewMain .recomendInfo .recomendItem .txtWrap .sDate { margin: 5px 0; color: #666666; font-size: 14px; display: -webkit-box; text-overflow: ellipsis; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; } 
+#renewMain .recomendInfo .recomendItem .txtWrap .sDate span { margin: 0 15px 0 0; color: #222222; font-weight: 700; } 
+#renewMain .recomendInfo .recomendItem .txtWrap .sTarget { margin: 5px 0; color: #666666; font-size: 14px; display: -webkit-box; text-overflow: ellipsis; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; } 
+#renewMain .recomendInfo .recomendItem .txtWrap .sTarget span { margin: 0 15px 0 0; color: #222222; font-weight: 700; } 
+#renewMain .recomendInfo .recomendItem .txtWrap .sTag { margin: 15px 0 0 0; color: #999999; font-size: 14px; display: -webkit-box; text-overflow: ellipsis; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; } 
+#renewMain .recomendInfo .recomendItem .badge { display: inline-block; width: 50px; padding: 0 0 2px; margin-left: 4px; font-size: 12px; border-radius: 15px; text-align: center; vertical-align: middle; } 
+#renewMain .recomendInfo .recomendItem .badge.sday { color: #ec004b; border: solid 1px #ec004b; } 
+#renewMain .recomendInfo .recomendItem .badge.snew { color: #38bab2; border: solid 1px #38bab2; } 
+#renewMain .recomendInfo .swiper-pagination { bottom: 36px; left: 50%; transform: translateX(-50%); } 
+#renewMain .recomendInfo .swiper-pagination-bullet { width: 18px; height: 18px; margin: 0 4px; } 
+#renewMain .recomendInfo .swiper-pagination-bullet-active { background: #008ae0; } 
 .swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after, .swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after { content: none; } 
-.recomendInfo .swiper-button-next, .recomendInfo .swiper-button-prev { width: 60px; height: 119px; top: calc(50% + 30px); transform: translateY(-50%); } 
-.recomendInfo .swiper-button-next { background: url(../../images/main_2024/main/next_btn.png) no-repeat; background-size: contain; left: initial !important; right: 35px; } 
-.recomendInfo .swiper-button-prev { background: url(../../images/main_2024/main/prev_btn.png) no-repeat; background-size: contain; left: 35px; } 
+#renewMain .recomendInfo .swiper-button-next, .recomendInfo .swiper-button-prev { width: 60px; height: 119px; top: calc(50% + 30px); transform: translateY(-50%); } 
+#renewMain .recomendInfo .swiper-button-next { background: url(../../images/main_2024/main/next_btn.png) no-repeat; background-size: contain; left: initial !important; right: 35px; } 
+#renewMain .recomendInfo .swiper-button-prev { background: url(../../images/main_2024/main/prev_btn.png) no-repeat; background-size: contain; left: 35px; } 
 
 /* policy jobRecomend */
 #renewMain .jobRecomend { background: #fff; overflow: hidden; } 
-#renewMain .jobRecomend .innerSection { padding: 122px 10px 280px; } 
+#renewMain .jobRecomend .innerSection { padding: 122px 10px 280px; position: relative;} 
 #renewMain .jobRecomend .titWrap h2 { margin-bottom: 40px; font-size: 36px; } 
 #renewMain .jobRecomend .titWrap h2 span { color: #008ae0; } 
 #renewMain .jobRecomend .titWrap ul li { width: 170px; height: 50px; border-radius: 30px; overflow: hidden; } 
@@ -723,17 +723,17 @@ body.intro #jobaba_wrap { min-width: initial; background: inherit;}
 #renewMain .policyFind .findWrap { padding: 30px 20px; } 
 
  /* policy recomendInfo */
- .recomendInfo .innerSection { padding: 30px 10px 60px; } 
- .recomendInfo .titWrap h2 { margin-bottom: 10px; font-size: 22px; } 
-.recomendInfo .titWrap p { font-size: 14px; } 
-.recomendInfo .recomendWrap::before,
-.recomendInfo .recomendWrap::after { content: none; } 
-.recomendInfo .titWrap { margin-bottom: 20px; } 
-.recomendInfo .recomendItem a { flex-direction: column; } 
-.recomendInfo .recomendItem .imgWrap { margin: 0 0 10px; } 
-.recomendInfo .recomendWrap { padding: 30px 20px 80px; border-radius: 20px; } 
-.recomendInfo .recomendItem .txtWrap .sTit { font-size: 16px; } 
-.recomendInfo .swiper-pagination-bullet { width: 10px; height: 10px; } 
+#renewMain .recomendInfo .innerSection { padding: 30px 10px 60px; } 
+#renewMain .recomendInfo .titWrap h2 { margin-bottom: 10px; font-size: 22px; } 
+#renewMain .recomendInfo .titWrap p { font-size: 14px; } 
+#renewMain .recomendInfo .recomendWrap::before,
+#renewMain .recomendInfo .recomendWrap::after { content: none; } 
+#renewMain .recomendInfo .titWrap { margin-bottom: 20px; } 
+#renewMain .recomendInfo .recomendItem a { flex-direction: column; } 
+#renewMain .recomendInfo .recomendItem .imgWrap { margin: 0 0 10px; } 
+#renewMain .recomendInfo .recomendWrap { padding: 30px 20px 80px; border-radius: 20px; } 
+#renewMain .recomendInfo .recomendItem .txtWrap .sTit { font-size: 16px; } 
+#renewMain .recomendInfo .swiper-pagination-bullet { width: 10px; height: 10px; } 
 
  /* policy jobRecomend */
  #renewMain .jobRecomend .titWrap h2 { margin-bottom: 10px; font-size: 22px; } 
