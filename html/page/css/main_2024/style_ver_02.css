@@ -377,7 +377,7 @@ body.intro #jobaba_wrap { min-width: initial; background: inherit;}
 #renewMain .mainPolicy .m_tag a:before { content:"#"; } 
 #renewMain .mainPolicy .m_tag a { display: inline-block; padding: 6px 0; margin-right: 26px; color: #4e4e4e; font-size: 16px; font-weight: 300; } 
 #renewMain .mainPolicy .m_tag a:last-child { margin-right: 0; } 
-#renewMain .mainPolicy .policyCont { display: none; position: relative; width: 100%; padding: 0 0 0 20px; overflow: hidden; } 
+#renewMain .mainPolicy .policyCont { display: none; position: relative; width: 100%; overflow: hidden; } 
 #renewMain .mainPolicy .policyCont.active { display: flex; flex-direction: column; } 
 #renewMain .mainPolicy .swiper-container { width: 100% } 
 #renewMain .mainPolicy .swiper-button-next { right: 0; left: initial !important; color: #9facb6; } 
@@ -690,7 +690,7 @@ body.intro #jobaba_wrap { min-width: initial; background: inherit;}
  #renewMain .mainPolicy .innerSection { padding: 0; } 
  #renewMain .mainPolicy .policyInfo { flex-direction: column; } 
  #renewMain .mainPolicy .policyCont .swiper-navigation { display: none; } 
- #renewMain .mainPolicy .policyCont { width: 100%; } 
+ #renewMain .mainPolicy .policyCont { padding: 0 0 0 20px;} 
  /* #renewMain .mainPolicy .swiper-container { width: 100%; margin-left: 20px; }  */
  #renewMain .mainPolicy .btnWrap a:nth-child(1),
  #renewMain .mainPolicy .btnWrap a:nth-child(2) { display: none; } 
@@ -747,7 +747,7 @@ body.intro #jobaba_wrap { min-width: initial; background: inherit;}
 #renewMain .mainPolicy .policyTxt { padding: 10px; } 
 #renewMain .mainPolicy .policyTxt .tit { height: auto; font-size: 14px; } 
 #renewMain .mainPolicy .policyTxt .date { margin-top: 4px; font-size: 14px; } 
-#renewMain .mainPolicy .m_tag { height: 30px; margin: 20px 10px 0; padding: 2px 25px 2px 20px; background: #ffeaef; border-radius: 10px; order:2; } 
+#renewMain .mainPolicy .m_tag { height: 30px; margin: 20px 20px 0 0; padding: 2px 25px 2px 20px; background: #ffeaef; border-radius: 10px; order:2; } 
 #renewMain .mainPolicy .m_tag a { margin-right: 6px; padding: 2px 0; font-size: 14px; } 
 #renewMain .mainPolicy .m_tag .m_tagBtn { top: 12px; right: 14px; } 
 #renewMain .mainPolicy .btnWrap { order: 3; } 
