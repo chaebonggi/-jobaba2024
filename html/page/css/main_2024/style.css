@@ -1,3 +1,15 @@
+body[data-header=job]{
+    #job{display:block;}
+    #pol, #edu{display:none;}
+}
+body[data-header=pol]{
+    #pol{display:block;}
+    #job, #edu{display:none;}
+}
+body[data-header=edu]{
+    #edu{display:block;}
+    #pol, #job{display:none;}
+}
 /* intro */
 body.intro { height: 100%; background: url(../../images/main_2024/intro/intro_bg02.png) #ffffff top center no-repeat; touch-action: pan-y; } 
 body.intro #jobaba_wrap { min-width: initial; background: inherit;}
