@@ -246,6 +246,9 @@
 .myContents .confirmWrap { display: flex; flex-wrap: wrap; gap: 0 10px; }
 .myContents .confirmWrap>p { width: 100%; }
 .myContents .confirmWrap>p+div { margin-left: auto; }
+.myContents .table > tbody > tr > td a {display: inline-block;}
+.myContents .table > tbody > tr > td a + a {margin-top: 4px;}
+
 
 
 /* 테이블 */
@@ -260,6 +263,8 @@
 .mytb2-type .table > thead > tr > th { padding: 10px 10px; background: #ececec; font-weight: 500; border-left: 1px solid #ccc;}
 .mytb2-type .table > tbody > tr > td:first-child { border-left: none;}
 .mytb2-type .table > tbody > tr > td { padding: 15px 5px; border-top: 1px solid #ddd; border-left: 1px solid #ccc; vertical-align: middle; line-height: 1.5; }
+
+
 
 /* 팝업 */
 .not_scroll { width: 100%; height: 100%; overflow: hidden; } 
