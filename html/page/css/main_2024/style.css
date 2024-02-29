@@ -523,34 +523,12 @@ body.intro #jobaba_wrap { min-width: initial; background: inherit;}
 #renewFooter .footer_wrap { display: none; }
 
 /* Font Awesome */
-.fa-calendar::before {
-    content: url('../../images/main_2024/main/fa-calendar.svg');
-    display: block;
-    width: 10px;
-}
-.fa-clock-o::before {
-    content: url('../../images/main_2024/main/fa-clock.svg');
-    display: block;
-    width: 10px;
-}
-.datepicker table tr th.prev:before {
-	content: url('../../images/main_2024/main/fa-left.svg') !important;
-    display: block;
-    width: 14px;
-    margin: 0 auto;
-}
-.datepicker table tr th.next:before {
-	content: url('../../images/main_2024/main/fa-right.svg') !important;
-    display: block;
-    width: 14px;
-    margin: 0 auto;
-}
-.bootstrap-timepicker-widget table td a i.icon-chevron-up:before {
-	content: url('../../images/main_2024/main/fa-up.svg') !important;
-}
-.bootstrap-timepicker-widget table td a i.icon-chevron-down:before {
-	content: url('../../images/main_2024/main/fa-down.svg') !important;
-}
+.fa-calendar::before { content: url('../../images/main_2024/main/fa-calendar.svg'); display: block; width: 10px; } 
+.fa-clock-o::before { content: url('../../images/main_2024/main/fa-clock.svg'); display: block; width: 10px; } 
+.datepicker table tr th.prev:before {content: url('../../images/main_2024/main/fa-left.svg') !important; display: block; width: 14px; margin: 0 auto; } 
+.datepicker table tr th.next:before {content: url('../../images/main_2024/main/fa-right.svg') !important; display: block; width: 14px; margin: 0 auto; } 
+.bootstrap-timepicker-widget table td a i.icon-chevron-up:before {content: url('../../images/main_2024/main/fa-up.svg') !important; display: block; width: 20px; margin: 0 auto; } 
+.bootstrap-timepicker-widget table td a i.icon-chevron-down:before {content: url('../../images/main_2024/main/fa-down.svg') !important; display: block; width: 20px; margin: 0 auto; } 
 
 
 @media screen and (max-width: 1300px) { /* policy main banner */
