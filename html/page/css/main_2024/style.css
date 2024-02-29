@@ -534,16 +534,22 @@ body.intro #jobaba_wrap { min-width: initial; background: inherit;}
     width: 10px;
 }
 .datepicker table tr th.prev:before {
-	content: url('../../images/main_2024/main/fa-left.svg');
+	content: url('../../images/main_2024/main/fa-left.svg') !important;
     display: block;
-    width: 15px;
+    width: 14px;
     margin: 0 auto;
 }
 .datepicker table tr th.next:before {
-	content: url('../../images/main_2024/main/fa-right.svg');
+	content: url('../../images/main_2024/main/fa-right.svg') !important;
     display: block;
-    width: 15px;
+    width: 14px;
     margin: 0 auto;
+}
+.bootstrap-timepicker-widget table td a i.icon-chevron-up:before {
+	content: url('../../images/main_2024/main/fa-up.svg') !important;
+}
+.bootstrap-timepicker-widget table td a i.icon-chevron-down:before {
+	content: url('../../images/main_2024/main/fa-down.svg') !important;
 }
 
 
@@ -732,7 +738,7 @@ body.intro #jobaba_wrap { min-width: initial; background: inherit;}
 #renewMain .companyWrap .companyList > li { height: auto; }
 #renewMain .companyWrap .companyList .txtWrap { padding: 15px 15px; }
 #renewMain .companyWrap .companyList .txtWrap p { height: auto; margin: 8px 0; font-size: 14px; }
-
+}
 @media screen and (max-width: 480px) { /* header */
  .renewHeader .nheader_bottom .innerSection { padding: 0; }
  /* footer */
