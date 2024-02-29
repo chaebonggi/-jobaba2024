@@ -575,7 +575,17 @@ body.intro #jobaba_wrap { min-width: initial; background: inherit;}
 #renewFooter .f_address .f_addr { display: none; color: #838282; font-size: 13px; letter-spacing: -1px; } 
 #renewFooter .footer_wrap { display: none; } 
 
-
+/* Font Awesome */
+.fa-calendar::before {
+    content: url('../../images/main_2024/main/fa-calendar.svg');
+    display: block;
+    width: 10px;
+}
+.fa-clock-o::before {
+    content: url('../../images/main_2024/main/fa-clock.svg');
+    display: block;
+    width: 10px;
+}
 
 @media screen and (max-width: 1300px) { /* policy main banner */
  #renewMain .mainBanner .swiper-container { max-width: 100%; padding: 0 0 60px 0; } 
