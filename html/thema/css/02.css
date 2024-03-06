@@ -66,7 +66,7 @@
 .themaWrap .cont01 .tabContWrap { position: relative; padding: 0 40px; } 
 .themaWrap .cont01 .tabContWrap .titWrap { margin-bottom: -40px; text-align: center; } 
 .themaWrap .cont01 .tabContWrap .item { padding: 60px 20px 20px; background: #fff; border: 1px solid #dcdcdc; border-radius: 20px; } 
-.themaWrap .cont01 .tabContWrap .tit { display: inline-flex; min-width: 365px; height: 85px; padding: 0 20px; background: #fff; color: #4c6de7; font-size: 36px; border: 1px dashed #4c6de7; border-radius: 50px; align-items: center; justify-content: center;} 
+.themaWrap .cont01 .tabContWrap .tit { display: inline-flex; min-width: 365px; height: 85px; padding: 6px 20px 0; background: #fff; color: #4c6de7; font-size: 36px; border: 1px dashed #4c6de7; border-radius: 50px; align-items: center; justify-content: center;} 
 .themaWrap .cont01 .tabContWrap .tit.fc28 {font-size: 28px;}
 .themaWrap .cont01 .tabContWrap .imgWrap { margin-bottom: 24px; text-align: center; } 
 .themaWrap .cont01 .tabContWrap .txtWrap { display: flex; align-items: center; justify-content: space-between; } 
@@ -99,7 +99,8 @@
 .themaWrap .cont02 .itemCont01 .imgWrap p.icon03::before { content: ''; display: block; width: 139px; height: 136px; margin: 0 auto 20px; background: url(https://cdn.jsdelivr.net/gh/chaebonggi/jobaba2024/html/thema/images/240304/item_cont03.png) no-repeat; } 
 .themaWrap .cont02 .itemCont01 .rightBox { margin-left: 40px; } 
 .themaWrap .cont02 .itemCont01 .rightBox p { color: #000; font-size: 20px; line-height: 1.5; letter-spacing: -1px; } 
-.themaWrap .cont02 .itemCont01 .rightBox table { width: 100%; margin-top: 10px; } 
+.themaWrap .cont02 .itemCont01 .rightBox table { width: 100%; margin-top: 10px; }
+.themaWrap .cont02 .itemCont01 .rightBox table col {width: 50%;}
 .themaWrap .cont02 .itemCont01 .rightBox table th:nth-child(1) { border-radius: 10px 0 0 0; } 
 .themaWrap .cont02 .itemCont01 .rightBox table th:nth-child(2) { border-radius: 0 10px 0 0; } 
 .themaWrap .cont02 .itemCont01 .rightBox table th { padding: 10px 0 4px; background: #003280; color: #fff; font-size: 20px; } 
@@ -257,7 +258,7 @@
  .themaWrap .cont02 .itemCont01 .rightBox p { font-size: 16px; word-break: keep-all; } 
  .themaWrap .for_mo { display: none; } 
  .themaWrap .cont02 .itemCont01 .rightBox table th { font-size: 16px; } 
- .themaWrap .cont02 .itemCont01 .rightBox table td { font-size: 14px; } 
+ .themaWrap .cont02 .itemCont01 .rightBox table td { font-size: 14px; }
  .themaWrap .cont02 .itemCont01 .imgWrap p.icon02::before { width: 60px; height: 57px; margin: 0 auto 10px; background-size: contain; } 
  .themaWrap .cont02 .itemCont01 .imgWrap p.icon03::before { width: 60px; height: 59px; margin: 0 auto 10px; background-size: contain; } 
  .themaWrap .cont02 .itemCont01 .rightBox ul { margin-top: 20px; justify-content: center; flex-direction: column; align-items: center; } 
