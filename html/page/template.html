@@ -1,0 +1,1322 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>일자리플랫폼 잡아바!</title>
+
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/import.css">
+    <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/swiper.min.css">
+    <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/kgoon.reset.min.css">
+    <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/main2024/etc/css/fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.css">
+
+    <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/bxslider/slick.css">
+    <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/main2024/css/main_2024/style.css">
+    <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/main2024/css/main_2024/style_ver_02.css">
+
+    <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/allnew_ia.css">
+    <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/layout.css">
+    <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/style.css">
+    <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/style.css">
+    <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/mobile.css">
+    <link type="text/css" rel="stylesheet" href="../etc/css/fonts.css">
+    
+</head>
+
+<body data-header="job">
+    <style>
+        body[data-header=job]{
+            #job{display:block;}
+            #pol, #edu{display:none;}
+        }
+        body[data-header=pol]{
+            #pol{display:block;}
+            #job, #edu{display:none;}
+        }
+        body[data-header=edu]{
+            #edu{display:block;}
+            #pol, #job{display:none;}
+        }
+        h2 {font-size: 20px; text-align: center; margin: 20px 0;}
+        hr {border: 1px solid #ddd; margin: 100px 0;}
+        main {min-height: calc(100% - 273px);}
+    </style>
+    <!-- 일자리정보 job -->
+    <header class="renewHeader" id="job">
+        <div class="nheader_top">
+            <div class="innerSection">
+                <div class="h_util">
+                    <ul class="leftBox">
+                        <li class="on">
+                            <a href="https://jb24.job-cloud.kr/html/page/employMain.html" target="_blank" title="일자리 정보 페이지 이동">
+                                <span>일자리 정보</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://jb24.job-cloud.kr/html/page/policyMain.html" target="_blank" title="사업 정보 페이지 이동">
+                                <span>사업 정보</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://youthedu.jobaba.net/main/index.jsp" target="_blank" title="잡아바 러닝센터 페이지 이동">
+                                <span>잡아바 러닝센터</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://apply.jobaba.net/bsns/bsnsListView.do" target="_blank" title="일자리 사업신청 페이지 이동">
+                                <span>일자리 사업신청</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="rightBox">
+                        <li>
+                            <a href="https://www.jobaba.net/mber/login/login.do?rtnPath=L21haW4vbWFpbi5kbw%253D%253D" title="로그인 페이지 이동">
+                                <span>로그인</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.jobaba.net/mber/sbcs/mberJoinIntro.do" title="회원가입 페이지 이동">
+                                <span>회원가입</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.jobaba.net/hpdsk/qna/list.do" title="고객센터 페이지 이동">
+                                <span>고객센터</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="nheader_mid">
+            <div class="innerSection">
+                <div class="h_cont">
+                    <h1 class="logo">
+                        <a href="/main/main.do">
+                            <img src="https://www.jobaba.net/resource/images/main2023/logo_03.png" alt="잡아바 로고">
+                        </a>
+                    </h1>
+                    <ul class="h_gnb">
+                        <li>
+                            <a href="https://www.jobaba.net/pblcEmpmn/list.do" target="_blank"><span>공공일자리</span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.jobaba.net/cntn/newGrowtMain.do" target="_blank"><span>신성장 산업</span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.jobaba.net/cntn/covJobInfoCntr.do" target="_blank"><span>대기업 협력사</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>우수기업</span></a>
+                            <ul class="depth_02">
+                                <li><a href="https://www.jobaba.net/cntn/salEntExclnc.do"><span class="menu_txt">연봉매출 우수기업</span></a></li>
+                                <li><a href="https://www.jobaba.net/cntn/entExclnc.do"><span class="menu_txt">일자리 우수기업</span></a></li>
+                                <li><a href="https://www.jobaba.net/empmn/desEntNew.do"><span class="menu_txt">탐나는 기업</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://www.jobaba.net/entCntnts/exhb/exhbListNew.do"><span>채용박람회</span></a>
+                        </li>                        
+                    </ul>
+                    <div class="h_ui">
+                        <div class="h_menu" onclick="allMenu('job');">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="h_login">
+                            <a href="#"><span class="ir-text">로그인</span></a>
+                        </div>
+                        <div class="h_search">
+                            <button><span class="ir-text">검색</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nheader_bottom">
+            <div class="h_gnb_bg">
+                <div class="h_gnb_menu">
+                    <div class="gnb_item menu">
+                        <div class="depth_01 double">
+                            <span class="etc_txt">공고를 찾는다면</span>
+                            <a href="#" class="depth_tit"><span class="menu_tit">일자리 정보</span></a>
+                            <ul class="depth_02">
+                                <li><a href="https://www.jobaba.net/pblcEmpmn/list.do"><span class="menu_txt">공공일자리</span></a></li>
+                                <li><a href="https://www.jobaba.net/cntn/newGrowtMain.do"><span class="menu_txt">신성장산업</span></a></li>
+                                <li><a href="https://www.jobaba.net/cntn/covJobInfoCntr.do"><span class="menu_txt">대기업 협력사</span></a></li>
+                                <li><a href="https://www.jobaba.net/cntn/salEntExclnc.do"><span class="menu_txt">연봉매출 우수기업</span></a></li>
+                                <li><a href="https://www.jobaba.net/cntn/entExclnc.do"><span class="menu_txt">일자리수 우수기업</span></a></li>
+                                <li><a href="https://www.jobaba.net/empmn/desEntNew.do"><span class="menu_txt">탐나는 기업</span></a></li>
+                            </ul>
+                            <a href="https://www.jobaba.net/entCntnts/exhb/exhbListNew.do" class="extra">
+                                <p><span>경기도민을 위한 일자리 기회 제공</span>온ㆍ오프라인 채용박람회</p>
+                            </a>
+                        </div>
+                        <div class="depth_01 double">
+                            <span class="etc_txt">혜택이 필요하면</span>
+                            <a href="#" class="depth_tit"><span class="menu_tit">사업 정보</span></a>
+                            <ul class="depth_02">
+                                <li><a href="https://www.jobaba.net/sprtPlcy/info/list2020.do"><span class="menu_txt">일자리지원사업</span></a></li>
+                                <li><a href="https://www.jobaba.net/entCntnts/sprtPlcy/list2020.do"><span class="menu_txt">기업지원정책</span></a></li>
+                                <li><a href="https://www.jobaba.net/edutrn/list2020.do"><span class="menu_txt">취업교육</span></a></li>
+                                <li><a href="https://www.jobaba.net/evtIfo/list2020.do"><span class="menu_txt">대외활동</span></a></li>
+                            </ul>
+                            <a href="https://apply.jobaba.net/" target="_blank" class="extra">
+                                <p><span>정책신청은</span>잡아바 어플라이 바로가기</p>
+                            </a>
+                        </div>  
+                        <div class="depth_01">
+                            <a href="#" class="depth_tit"><span class="menu_tit">러닝센터</span></a>
+                            <ul class="depth_02">
+                                <li><a href="https://www.jobaba.net/thema/vocEduList.do"><span class="menu_txt">동영상 교육</span></a></li>
+                                <li><a href="https://www.jobaba.net/jobDiagnose/diagnoseView.do"><span class="menu_txt">취업진로진단</span></a></li>
+                                <li><a href="https://www.jobaba.net/psychology/mainList.do"><span class="menu_txt">진로취업상담</span></a></li>
+                                <li><a href="https://www.jobaba.net/introduction/mainList.do"><span class="menu_txt">자기소개서 첨삭</span></a></li>
+                                <li><a href="https://www.jobaba.net/interview/mainList.do"><span class="menu_txt">AI 역량검사</span></a></li>                                
+                            </ul>
+                        </div>
+                        <div class="depth_01">
+                            <a href="#" class="depth_tit"><span class="menu_tit">참여소통</span></a>
+                            <ul class="depth_02">
+                                <li><a href="https://www.jobaba.net/hpdsk/ntc/list.do"><span class="menu_txt">공지사항</span></a></li>
+                                <li><a href="https://www.jobaba.net/hpdsk/ntc/list.do/event/list.do"><span class="menu_txt">이벤트</span></a></li>
+                                <li><a href="https://www.jobaba.net/hpdsk/ntc/list.do/hpdsk/qna/list.do"><span class="menu_txt">Q&A</span></a></li>
+                                <li><a href="https://www.jobaba.net/hpdsk/ntc/list.do/thema/list.do"><span class="menu_txt">잡학사전</span></a></li>
+                                <li><a href="https://www.jobaba.net/hpdsk/ntc/list.do/thema/themeInfo.do"><span class="menu_txt">정책활용 꿀팁</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="gnb_item links">
+                        <span class="etc_txt">잡아바가 처음이라면</span>
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0);" class="channelTalk">
+                                    <span class="links_icon"><img src="./images/main_2024/main/gnb_icon01.png" alt="잡아바 상담톡"></span>
+                                    <span class="links_tit">잡아바 상담톡</span>
+                                    <span class="links_txt">빠르고 정확한 진로 및 취업상담</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.jobaba.net/cntn/covJobInfoCntr.do">
+                                    <span class="links_icon"><img src="./images/main_2024/main/gnb_icon02.png" alt="대기업 협력사"></span>
+                                    <span class="links_tit">대기업 협력사</span>
+                                    <span class="links_txt">경기도 내 모든 추천 일자리</span>
+                                </a>
+                            </li>                            
+                            <li>
+                                <a href="javascript:void(0);" class="resume">
+                                    <span class="links_icon"><img src="./images/main_2024/main/gnb_icon03.png" alt="구직등록"></span>
+                                    <span class="links_tit">구직등록</span>
+                                    <span class="links_txt">내게 딱 맞는 일자리 찾기</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="h_mobile">
+            <div class="h_mobile_top">
+                <div class="h_mobile_btn">
+                    <h1 class="logo"><a href="/main/main.do"><img src="https://www.jobaba.net/resource/images/main2023/logo_03.png" alt="잡아바 로고"></a></h1>
+                    <div class="h_mobile_close">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <!-- 로그인 전
+                <div class="h_mobile_login">
+                    <a href="#" target="_blank" class="btn01 loginBtn">로그인</a>
+                    <a href="#" target="_blank" class="btn01 joinBtn">회원가입</a>
+                </div>
+                -->
+                <div class="h_mobile_login login">
+                    <a href="#" target="_blank" class="btn01 loginBtn">로그아웃</a>
+                    <a href="#" target="_blank" class="btn01 joinBtn">마이페이지</a>
+                </div>
+                
+                
+                <ul class="h_mobile_info">
+                    <li>
+                        <a href="https://jb24.job-cloud.kr/html/page/employMain.html" target="_blank" class="mobile_icon01">
+                            일자리정보
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://jb24.job-cloud.kr/html/page/policyMain.html" target="_blank" class="mobile_icon02">
+                            사업정보
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://youthedu.jobaba.net/main/index.jsp" target="_blank" class="mobile_icon03">
+                            러닝센터
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://apply.jobaba.net/bsns/bsnsListView.do" target="_blank" class="mobile_icon04">
+                            어플라이
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="h_mobile_mid">
+                <ul class="mobile_menu">
+                    <li>
+                        <a href="https://www.jobaba.net/hpdsk/ntc/list.do/empmn/enterpriseEmployListNew.do">일자리 정보</a>
+                        <ul class="mobileGnb">
+                            <li><a href="https://www.jobaba.net/pblcEmpmn/list.do">공공일자리</a></li>
+                            <li><a href="https://www.jobaba.net/cntn/newGrowtMain.do">신성장산업</a></li>
+                            <li><a href="https://www.jobaba.net/cntn/covJobInfoCntr.do">대기업 협력사</a></li>
+                            <li><a href="https://www.jobaba.net/cntn/salEntExclnc.do">연봉매출 우수기업</a></li>
+                            <li><a href="https://www.jobaba.net/cntn/entExclnc.do">일자리 우수기업</a></li>
+                            <li><a href="https://www.jobaba.net/empmn/desEntNew.do">탐나는 기업</a></li>
+                            <li>
+                                <ul class="mobileSub">
+                                    <li><a href="https://www.jobaba.net/hpdsk/ntc/list.do/entCntnts/exhb/exhbListNew.do"><span>경기도민을 위한 일자리 기회 제공</span>온ㆍ오프라인 채용박람회</a></li>
+                                </ul>
+                            </li>                            
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://www.jobaba.net/sprtPlcy/info/list2020.do">사업 정보</a>
+                        <ul class="mobileGnb">
+                            <li>
+                                <li><a href="https://www.jobaba.net/sprtPlcy/info/list2020.do">일자리 지원사업</a></li>
+                                <li><a href="https://www.jobaba.net/entCntnts/sprtPlcy/list2020.do">기업지원정책</a></li>
+                                <li><a href="https://www.jobaba.net/edutrn/list2020.do">취업교육</a></li>
+                                <li><a href="https://www.jobaba.net/evtIfo/list2020.do">대외활동</a></li>
+                            </li>
+                            <li>
+                                <ul class="mobileSub">
+                                    <li><a href="https://apply.jobaba.net" target="_blank"><span>정책신청은</span>잡아바 어플라이 바로가기</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>                    
+                    <li>
+                        <a href="https://youthedu.jobaba.net/main/index.jsp" target="_blank">러닝센터</a>
+                        <ul class="mobileGnb">
+                            <li>
+                                <ul class="mobileGnb">
+                                    <li>
+                                        <a href="https://www.jobaba.net/thema/vocEduList.do">동영상 교육</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.jobaba.net/jobDiagnose/diagnoseView.do">취업진로진단</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.jobaba.net/psychology/mainList.do">진로취업상담</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.jobaba.net/introduction/mainList.do">자기소개서 첨삭</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.jobaba.net/interview/mainList.do">AI 역량검사</a>
+                                    </li>                            
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                
+                    <li>
+                        <a href="https://www.jobaba.net/hpdsk/ntc/list.do/hpdsk/ntc/list.do">참여소통</a>
+                        <ul class="mobileGnb">
+                            <li>
+                                <a href="https://www.jobaba.net/hpdsk/ntc/list.do/hpdsk/ntc/list.do">공지사항</a>
+                            </li>
+                            <li>
+                                <a href="https://www.jobaba.net/hpdsk/ntc/list.do/event/list.do">이벤트</a>
+                            </li>
+                            <li>
+                                <a href="https://www.jobaba.net/hpdsk/ntc/list.do/hpdsk/qna/list.do">Q&A</a>
+                            </li>
+                            <li>
+                                <a href="https://www.jobaba.net/hpdsk/ntc/list.do/thema/list.do">잡학사전</a>
+                            </li>
+                            <li>
+                                <a href="https://www.jobaba.net/hpdsk/ntc/list.do/thema/themeInfo.do">정책활용 꿀팁</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="h_mobile_bottom">
+                <div class="h_mobile_family">
+                    <strong>패밀리 사이트 바로가기</strong>
+                    <ul>
+                        <li>
+                            <a href="https://www.gjf.or.kr/web/gjf/main" target="_blank">
+                                <img src="./images/main_2024/main/mobile_logo01.png" alt="경기도일자리재단">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.dreammaru.or.kr/www/index.do" target="_blank">
+                                <img src="./images/main_2024/main/mobile_logo02.png" alt="꿈마루">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.dream.go.kr/dream/index.do" target="_blank">
+                                <img src="./images/main_2024/main/mobile_logo03.png" alt="꿈날개">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="h_mobile_sns">
+                    <li>
+                        <a href="https://blog.naver.com/jobaba_" title="잡아바 블로그 이동" class="blog">잡아바 블로그</a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/jobabanet" title="잡아바 페이스북 이동" class="face">잡아바 페이스북</a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/jobabanet/" title="잡아바 인스타그램 이동" class="insta">잡아바 인스타그램</a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UC69DhLD0FUmLgP9BsxitbDw" title="잡아바 유튜브 이동" class="youtu">잡아바 유튜브</a>
+                    </li>
+                    <li>
+                        <a href="https://apps.apple.com/us/app/%EC%9E%A1%EC%95%84%EB%B0%94/id1260278304?l=ko&ls=1" title="잡아바 앱스토어 이동" class="app">잡아바 앱스토어</a>
+                    </li>
+                    <li>
+                        <a href="https://play.google.com/store/apps/details?id=net.jobaba.app&pli=1" title="잡아바 플레이스토어 이동" class="play">잡아바 플레이스토어</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- 사업정보 pol -->
+    <header class="renewHeader" id="pol">
+        <div class="nheader_top">
+            <div class="innerSection">
+                <div class="h_util">
+                    <ul class="leftBox">
+                        <li>
+                            <a href="https://jb24.job-cloud.kr/html/page/employMain.html" target="_blank" title="일자리 정보 페이지 이동">
+                                <span>일자리 정보</span>
+                            </a>
+                        </li>
+                        <li class="on">
+                            <a href="https://jb24.job-cloud.kr/html/page/policyMain.html" target="_blank" title="사업 정보 페이지 이동">
+                                <span>사업 정보</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://youthedu.jobaba.net/main/index.jsp" target="_blank" title="잡아바 러닝센터 페이지 이동">
+                                <span>잡아바 러닝센터</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://apply.jobaba.net/bsns/bsnsListView.do" target="_blank" title="일자리 사업신청 페이지 이동">
+                                <span>일자리 사업신청</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="rightBox">
+                        <li>
+                            <a href="https://www.jobaba.net/mber/login/login.do?rtnPath=L21iZXIvc2Jjcy9tYmVySm9pbkludHJvLmRv" title="로그인 페이지 이동">
+                                <span>로그인</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.jobaba.net/mber/sbcs/mberJoinIntro.do" title="회원가입 페이지 이동">
+                                <span>회원가입</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.jobaba.net/hpdsk/qna/list.do" title="고객센터 페이지 이동">
+                                <span>고객센터</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="nheader_mid">
+            <div class="innerSection">
+                <div class="h_cont">
+                    <h1 class="logo">
+                        <a href="/main/main.do">
+                            <img src="https://www.jobaba.net/resource/images/main2023/logo_03.png" alt="잡아바 로고">
+                        </a>
+                    </h1>
+                    <ul class="h_gnb">
+                        <li>
+                            <a href="https://www.jobaba.net/sprtPlcy/info/list2020.do"><span>일자리지원사업</span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.jobaba.net/entCntnts/sprtPlcy/list2020.do"><span>기업지원정책</span></a>
+                        </li>
+                        <li>
+                            <a href="https://youthedu.jobaba.net" target="_blank"><span>취업교육</span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.jobaba.net/evtIfo/list2020.do"><span>대외활동</span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.jobaba.net/hpdsk/ntc/list.do/thema/list.do"><span>참여소통</span></a>
+                            <ul class="depth_02">
+                                <li><a href="https://www.jobaba.net/hpdsk/ntc/list.do/hpdsk/ntc/list.do"><span class="menu_txt">공지사항</span></a></li>
+                                <li><a href="https://www.jobaba.net/hpdsk/ntc/list.do/event/list.do"><span class="menu_txt">이벤트</span></a></li>
+                                <li><a href="https://www.jobaba.net/hpdsk/ntc/list.do/hpdsk/qna/list.do"><span class="menu_txt">Q&A</span></a></li>
+                                <li><a href="https://www.jobaba.net/hpdsk/ntc/list.do/thema/list.do"><span class="menu_txt">잡학사전</span></a></li>
+                                <li><a href="https://www.jobaba.net/hpdsk/ntc/list.do/thema/themeInfo.do"><span class="menu_txt">정책활용 꿀팁</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="h_ui">
+                        <div class="h_menu" onclick="allMenu('pol');">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="h_login">
+                            <a href="#"><span class="ir-text">로그인</span></a>
+                        </div>
+                        <div class="h_search">
+                            <button><span class="ir-text">검색</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nheader_bottom">
+            <div class="h_gnb_bg">
+                <div class="h_gnb_menu">
+                    <div class="gnb_item menu">
+                        <div class="depth_01 double">
+                            <span class="etc_txt">공고를 찾는다면</span>
+                            <a href="#" class="depth_tit"><span class="menu_tit">일자리 정보</span></a>
+                            <ul class="depth_02">
+                                <li><a href="https://www.jobaba.net/pblcEmpmn/list.do"><span class="menu_txt">공공일자리</span></a></li>
+                                <li><a href="https://www.jobaba.net/cntn/newGrowtMain.do"><span class="menu_txt">신성장산업</span></a></li>
+                                <li><a href="https://www.jobaba.net/cntn/covJobInfoCntr.do"><span class="menu_txt">대기업 협력사</span></a></li>
+                                <li><a href="https://www.jobaba.net/cntn/salEntExclnc.do"><span class="menu_txt">연봉매출 우수기업</span></a></li>
+                                <li><a href="https://www.jobaba.net/cntn/entExclnc.do"><span class="menu_txt">일자리수 우수기업</span></a></li>
+                                <li><a href="https://www.jobaba.net/empmn/desEntNew.do"><span class="menu_txt">탐나는 기업</span></a></li>
+                            </ul>
+                            <a href="https://www.jobaba.net/hpdsk/ntc/list.do/entCntnts/exhb/exhbListNew.do" class="extra">
+                                <p><span>경기도민을 위한 일자리 기회 제공</span>온ㆍ오프라인 채용박람회</p>
+                            </a>
+                        </div>
+                        <div class="depth_01 double">
+                            <span class="etc_txt">혜택이 필요하면</span>
+                            <a href="#" class="depth_tit"><span class="menu_tit">사업 정보</span></a>
+                            <ul class="depth_02">
+                                <li><a href="https://www.jobaba.net/sprtPlcy/info/list2020.do"><span class="menu_txt">일자리지원사업</span></a></li>
+                                <li><a href="https://www.jobaba.net/entCntnts/sprtPlcy/list2020.do"><span class="menu_txt">기업지원정책</span></a></li>
+                                <li><a href="https://www.jobaba.net/edutrn/list2020.do"><span class="menu_txt">취업교육</span></a></li>
+                                <li><a href="https://www.jobaba.net/evtIfo/list2020.do"><span class="menu_txt">대외활동</span></a></li>
+                            </ul>
+                            <a href="https://apply.jobaba.net/" target="_blank" class="extra">
+                                <p><span>정책신청은</span>잡아바 어플라이 바로가기</p>
+                            </a>
+                        </div>                        
+                        <div class="depth_01">
+                            <a href="#" class="depth_tit"><span class="menu_tit">러닝센터</span></a>
+                            <ul class="depth_02">
+                                <li><a href="https://www.jobaba.net/thema/vocEduList.do"><span class="menu_txt">동영상 교육</span></a></li>
+                                <li><a href="https://www.jobaba.net/jobDiagnose/diagnoseView.do"><span class="menu_txt">취업진로진단</span></a></li>
+                                <li><a href="https://www.jobaba.net/psychology/mainList.do"><span class="menu_txt">진로취업상담</span></a></li>
+                                <li><a href="https://www.jobaba.net/introduction/mainList.do"><span class="menu_txt">자기소개서 첨삭</span></a></li>
+                                <li><a href="https://www.jobaba.net/interview/mainList.do"><span class="menu_txt">AI 역량검사</span></a></li>                                
+                            </ul>
+                        </div>
+                        <div class="depth_01">
+                            <a href="#" class="depth_tit"><span class="menu_tit">참여소통</span></a>
+                            <ul class="depth_02">
+                                <li><a href="https://www.jobaba.net/hpdsk/ntc/list.do/hpdsk/ntc/list.do"><span class="menu_txt">공지사항</span></a></li>
+                                <li><a href="https://www.jobaba.net/hpdsk/ntc/list.do/event/list.do"><span class="menu_txt">이벤트</span></a></li>
+                                <li><a href="https://www.jobaba.net/hpdsk/ntc/list.do/hpdsk/qna/list.do"><span class="menu_txt">Q&A</span></a></li>
+                                <li><a href="https://www.jobaba.net/hpdsk/ntc/list.do/thema/list.do"><span class="menu_txt">잡학사전</span></a></li>
+                                <li><a href="https://www.jobaba.net/hpdsk/ntc/list.do/thema/themeInfo.do"><span class="menu_txt">정책활용 꿀팁</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="gnb_item links">
+                        <span class="etc_txt">잡아바가 처음이라면</span>
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0);" class="channelTalk">
+                                    <span class="links_icon"><img src="./images/main_2024/main/gnb_icon01.png" alt="잡아바 상담톡"></span>
+                                    <span class="links_tit">잡아바 상담톡</span>
+                                    <span class="links_txt">빠르고 정확한 진로 및 취업상담</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.jobaba.net/cntn/covJobInfoCntr.do">
+                                    <span class="links_icon"><img src="./images/main_2024/main/gnb_icon02.png" alt="대기업 협력사"></span>
+                                    <span class="links_tit">대기업 협력사</span>
+                                    <span class="links_txt">경기도 내 모든 추천 일자리</span>
+                                </a>
+                            </li>                            
+                            <li>
+                                <a href="javascript:void(0);" class="resume">
+                                    <span class="links_icon"><img src="./images/main_2024/main/gnb_icon03.png" alt="구직등록"></span>
+                                    <span class="links_tit">구직등록</span>
+                                    <span class="links_txt">내게 딱 맞는 일자리 찾기</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="h_mobile">
+            <div class="h_mobile_top">
+                <div class="h_mobile_btn">
+                    <h1 class="logo"><a href="/main/main.do"><img src="https://www.jobaba.net/resource/images/main2023/logo_03.png" alt="잡아바 로고"></a></h1>
+                    <div class="h_mobile_close">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="h_mobile_login">
+                    <a href="#" target="_blank" class="btn01 loginBtn">로그인</a>
+                    <a href="#" target="_blank" class="btn01 joinBtn">회원가입</a>
+                </div>
+                <!-- 로그인 후 
+                <div class="h_mobile_login login">
+                    <a href="#" target="_blank" class="btn01 loginBtn">로그아웃</a>
+                    <a href="#" target="_blank" class="btn01 joinBtn">마이페이지</a>
+                </div>
+                -->
+                <ul class="h_mobile_info">
+                    <li>
+                        <a href="https://jb24.job-cloud.kr/html/page/employMain.html" target="_blank" class="mobile_icon01">
+                            일자리정보
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://jb24.job-cloud.kr/html/page/policyMain.html" target="_blank" class="mobile_icon02">
+                            사업정보
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://youthedu.jobaba.net/main/index.jsp" target="_blank" class="mobile_icon03">
+                            러닝센터
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://apply.jobaba.net/bsns/bsnsListView.do" target="_blank" class="mobile_icon04">
+                            어플라이
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="h_mobile_mid">
+                <ul class="mobile_menu">
+                    <li>
+                        <a href="https://www.jobaba.net/hpdsk/ntc/list.do/empmn/enterpriseEmployListNew.do">일자리 정보</a>
+                        <ul class="mobileGnb">
+                            <li><a href="https://www.jobaba.net/pblcEmpmn/list.do">공공일자리</a></li>
+                            <li><a href="https://www.jobaba.net/cntn/newGrowtMain.do">신성장산업</a></li>
+                            <li><a href="https://www.jobaba.net/cntn/covJobInfoCntr.do">대기업 협력사</a></li>
+                            <li><a href="https://www.jobaba.net/cntn/salEntExclnc.do">연봉매출 우수기업</a></li>
+                            <li><a href="https://www.jobaba.net/cntn/entExclnc.do">일자리 우수기업</a></li>
+                            <li><a href="https://www.jobaba.net/empmn/desEntNew.do">탐나는 기업</a></li>
+                            <li>
+                                <ul class="mobileSub">
+                                    <li><a href="https://www.jobaba.net/hpdsk/ntc/list.do/entCntnts/exhb/exhbListNew.do"><span>경기도민을 위한 일자리 기회 제공</span>온ㆍ오프라인 채용박람회</a></li>
+                                </ul>
+                            </li>                            
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://www.jobaba.net/sprtPlcy/info/list2020.do">사업 정보</a>
+                        <ul class="mobileGnb">
+                            <li>
+                                <li><a href="https://www.jobaba.net/sprtPlcy/info/list2020.do">일자리 지원사업</a></li>
+                                <li><a href="https://www.jobaba.net/entCntnts/sprtPlcy/list2020.do">기업지원정책</a></li>
+                                <li><a href="https://www.jobaba.net/edutrn/list2020.do">취업교육</a></li>
+                                <li><a href="https://www.jobaba.net/evtIfo/list2020.do">대외활동</a></li>
+                            </li>
+                            <li>
+                                <ul class="mobileSub">
+                                    <li><a href="https://apply.jobaba.net" target="_blank"><span>정책신청은</span>잡아바 어플라이 바로가기</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>  
+                    <li>
+                        <a href="https://youthedu.jobaba.net/main/index.jsp" target="_blank">러닝센터</a>
+                        <ul class="mobileGnb">
+                            <li>
+                                <a href="https://www.jobaba.net/thema/vocEduList.do">동영상 교육</a>
+                            </li>
+                            <li>
+                                <a href="https://www.jobaba.net/jobDiagnose/diagnoseView.do">취업진로진단</a>
+                            </li>
+                            <li>
+                                <a href="https://www.jobaba.net/psychology/mainList.do">진로취업상담</a>
+                            </li>
+                            <li>
+                                <a href="https://www.jobaba.net/introduction/mainList.do">자기소개서 첨삭</a>
+                            </li>
+                            <li>
+                                <a href="https://www.jobaba.net/interview/mainList.do">AI 역량검사</a>
+                            </li>                            
+                        </ul>
+                    </li>
+                   
+                    <li>
+                        <a href="https://www.jobaba.net/hpdsk/ntc/list.do/hpdsk/ntc/list.do">참여소통</a>
+                        <ul class="mobileGnb">
+                            <li>
+                                <a href="https://www.jobaba.net/hpdsk/ntc/list.do/hpdsk/ntc/list.do">공지사항</a>
+                            </li>
+                            <li>
+                                <a href="https://www.jobaba.net/hpdsk/ntc/list.do/event/list.do">이벤트</a>
+                            </li>
+                            <li>
+                                <a href="https://www.jobaba.net/hpdsk/ntc/list.do/hpdsk/qna/list.do">Q&A</a>
+                            </li>
+                            <li>
+                                <a href="https://www.jobaba.net/hpdsk/ntc/list.do/thema/list.do">잡학사전</a>
+                            </li>
+                            <li>
+                                <a href="https://www.jobaba.net/hpdsk/ntc/list.do/thema/themeInfo.do">정책활용 꿀팁</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="h_mobile_bottom">
+                <div class="h_mobile_family">
+                    <strong>패밀리 사이트 바로가기</strong>
+                    <ul>
+                        <li>
+                            <a href="https://www.gjf.or.kr/web/gjf/main" target="_blank">
+                                <img src="./images/main_2024/main/mobile_logo01.png" alt="경기도일자리재단">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.dreammaru.or.kr/www/index.do" target="_blank">
+                                <img src="./images/main_2024/main/mobile_logo02.png" alt="꿈마루">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.dream.go.kr/dream/index.do" target="_blank">
+                                <img src="./images/main_2024/main/mobile_logo03.png" alt="꿈날개">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="h_mobile_sns">
+                    <li>
+                        <a href="https://blog.naver.com/jobaba_" title="잡아바 블로그 이동" class="blog">잡아바 블로그</a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/jobabanet" title="잡아바 페이스북 이동" class="face">잡아바 페이스북</a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/jobabanet/" title="잡아바 인스타그램 이동" class="insta">잡아바 인스타그램</a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UC69DhLD0FUmLgP9BsxitbDw" title="잡아바 유튜브 이동" class="youtu">잡아바 유튜브</a>
+                    </li>
+                    <li>
+                        <a href="https://apps.apple.com/us/app/%EC%9E%A1%EC%95%84%EB%B0%94/id1260278304?l=ko&ls=1" title="잡아바 앱스토어 이동" class="app">잡아바 앱스토어</a>
+                    </li>
+                    <li>
+                        <a href="https://play.google.com/store/apps/details?id=net.jobaba.app&pli=1" title="잡아바 플레이스토어 이동" class="play">잡아바 플레이스토어</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- 러닝센터 edu -->
+    <header class="renewHeader" id="edu">
+        <div class="nheader_top">
+            <div class="innerSection">
+                <div class="h_util">
+                    <ul class="leftBox">
+                        <li>
+                            <a href="https://jb24.job-cloud.kr/html/page/employMain.html" target="_blank" title="일자리 정보 페이지 이동">
+                                <span>일자리 정보</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://jb24.job-cloud.kr/html/page/policyMain.html" target="_blank" title="사업 정보 페이지 이동">
+                                <span>사업 정보</span>
+                            </a>
+                        </li>
+                        <li class="on">
+                            <a href="https://youthedu.jobaba.net/main/index.jsp" target="_blank" title="잡아바 러닝센터 페이지 이동">
+                                <span>잡아바 러닝센터</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" title="일자리 사업신청 페이지 이동">
+                                <span>일자리 사업신청</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="rightBox">
+                        <li>
+                            <a href="#" title="로그인 페이지 이동">
+                                <span>로그인</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="회원가입 페이지 이동">
+                                <span>회원가입</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="고객센터 페이지 이동">
+                                <span>고객센터</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="nheader_mid">
+            <div class="innerSection">
+                <div class="h_cont">
+                    <h1 class="logo">
+                        <a href="/main/main.do">
+                            <img src="./images/main_2024/main/edu_logo02.png" alt="러닝센터 로고">
+                        </a>
+                    </h1>
+                    <ul class="h_gnb">
+                        <li>
+                            <a href="#"><span>취업지원교육</span></a>
+                            <ul class="depth_02">
+                                <li><a href="#"><span class="menu_txt">전체과정</span></a></li>
+                                <li><a href="#"><span class="menu_txt">대기업 준비</span></a></li>
+                                <li><a href="#"><span class="menu_txt">공기업 준비</span></a></li>
+                                <li><a href="#"><span class="menu_txt">자격증</span></a></li>
+                                <li><a href="#"><span class="menu_txt">직무스킬업</span></a></li>
+                                <li><a href="#"><span class="menu_txt">경기도일자리재단</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>비대면취업지원</span></a>
+                            <ul class="depth_02">
+                                <li><a href="#"><span class="menu_txt">취업상담컨설팅</span></a></li>
+                                <li><a href="#"><span class="menu_txt">자기소개서첨삭</span></a></li>
+                                <li><a href="#"><span class="menu_txt">취업진로진단검사</span></a></li>
+                                <li><a href="#"><span class="menu_txt">AI역량검사</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>참여소통</span></a>
+                            <ul class="depth_02">
+                                <li><a href="#"><span class="menu_txt">공지사항</span></a></li>
+                                <li><a href="#"><span class="menu_txt">FAQ</span></a></li>
+                                <li><a href="#"><span class="menu_txt">이벤트</span></a></li>
+                                <li><a href="#"><span class="menu_txt">연계신청</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>소속정보수정</span></a>
+                            <ul class="depth_02">
+                                <li><a href="#"><span class="menu_txt">나의강의실</span></a></li>
+                                <li><a href="#"><span class="menu_txt">활동이력</span></a></li>
+                                <li><a href="#"><span class="menu_txt">회원정보수정</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="h_ui">
+                        <div class="h_menu" onclick="allMenu('edu');">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="h_login">
+                            <a href="#"><span class="ir-text">로그인</span></a>
+                        </div>
+                        <div class="h_search">
+                            <button><span class="ir-text">검색</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nheader_bottom">
+            <div class="h_gnb_bg">
+                <div class="h_gnb_menu">
+                    <div class="gnb_item menu">
+                        <div class="depth_01 double">
+                            <span class="etc_txt">공고를 찾는다면</span>
+                            <a href="#" class="depth_tit"><span class="menu_tit">일자리 정보</span></a>
+                            <ul class="depth_02">
+                                <li><a href="https://www.jobaba.net/pblcEmpmn/list.do"><span class="menu_txt">공공일자리</span></a></li>
+                                <li><a href="https://www.jobaba.net/cntn/newGrowtMain.do"><span class="menu_txt">신성장산업</span></a></li>
+                                <li><a href="https://www.jobaba.net/cntn/covJobInfoCntr.do"><span class="menu_txt">대기업 협력사</span></a></li>
+                                <li><a href="https://www.jobaba.net/cntn/salEntExclnc.do"><span class="menu_txt">연봉매출 우수기업</span></a></li>
+                                <li><a href="https://www.jobaba.net/cntn/entExclnc.do"><span class="menu_txt">일자리수 우수기업</span></a></li>
+                                <li><a href="https://www.jobaba.net/empmn/desEntNew.do"><span class="menu_txt">탐나는 기업</span></a></li>
+                            </ul>
+                            <a href="https://www.jobaba.net/hpdsk/ntc/list.do/entCntnts/exhb/exhbListNew.do" class="extra">
+                                <p><span>경기도민을 위한 일자리 기회 제공</span>온ㆍ오프라인 채용박람회</p>
+                            </a>
+                        </div>
+                        <div class="depth_01 double">
+                            <span class="etc_txt">혜택이 필요하면</span>
+                            <a href="#" class="depth_tit"><span class="menu_tit">사업 정보</span></a>
+                            <ul class="depth_02">
+                                <li><a href="https://www.jobaba.net/sprtPlcy/info/list2020.do"><span class="menu_txt">일자리지원사업</span></a></li>
+                                <li><a href="https://www.jobaba.net/entCntnts/sprtPlcy/list2020.do"><span class="menu_txt">기업지원정책</span></a></li>
+                                <li><a href="https://www.jobaba.net/edutrn/list2020.do"><span class="menu_txt">취업교육</span></a></li>
+                                <li><a href="https://www.jobaba.net/evtIfo/list2020.do"><span class="menu_txt">대외활동</span></a></li>
+                            </ul>
+                            <a href="https://apply.jobaba.net/" target="_blank" class="extra">
+                                <p><span>정책신청은</span>잡아바 어플라이 바로가기</p>
+                            </a>
+                        </div>                        
+                        <div class="depth_01">
+                            <a href="#" class="depth_tit"><span class="menu_tit">러닝센터</span></a>
+                            <ul class="depth_02">
+                                <li><a href="https://www.jobaba.net/thema/vocEduList.do"><span class="menu_txt">동영상 교육</span></a></li>
+                                <li><a href="https://www.jobaba.net/jobDiagnose/diagnoseView.do"><span class="menu_txt">취업진로진단</span></a></li>
+                                <li><a href="https://www.jobaba.net/psychology/mainList.do"><span class="menu_txt">진로취업상담</span></a></li>
+                                <li><a href="https://www.jobaba.net/introduction/mainList.do"><span class="menu_txt">자기소개서 첨삭</span></a></li>
+                                <li><a href="https://www.jobaba.net/interview/mainList.do"><span class="menu_txt">AI 역량검사</span></a></li>                                
+                            </ul>
+                        </div>
+                        <div class="depth_01">
+                            <a href="#" class="depth_tit"><span class="menu_tit">참여소통</span></a>
+                            <ul class="depth_02">
+                                <li><a href="https://www.jobaba.net/hpdsk/ntc/list.do/hpdsk/ntc/list.do"><span class="menu_txt">공지사항</span></a></li>
+                                <li><a href="https://www.jobaba.net/hpdsk/ntc/list.do/event/list.do"><span class="menu_txt">이벤트</span></a></li>
+                                <li><a href="https://www.jobaba.net/hpdsk/ntc/list.do/hpdsk/qna/list.do"><span class="menu_txt">Q&A</span></a></li>
+                                <li><a href="https://www.jobaba.net/hpdsk/ntc/list.do/thema/list.do"><span class="menu_txt">잡학사전</span></a></li>
+                                <li><a href="https://www.jobaba.net/hpdsk/ntc/list.do/thema/themeInfo.do"><span class="menu_txt">정책활용 꿀팁</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="gnb_item links">
+                        <span class="etc_txt">잡아바가 처음이라면</span>
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0);" class="channelTalk">
+                                    <span class="links_icon"><img src="./images/main_2024/main/gnb_icon01.png" alt="잡아바 상담톡"></span>
+                                    <span class="links_tit">잡아바 상담톡</span>
+                                    <span class="links_txt">빠르고 정확한 진로 및 취업상담</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.jobaba.net/cntn/covJobInfoCntr.do">
+                                    <span class="links_icon"><img src="./images/main_2024/main/gnb_icon02.png" alt="대기업 협력사"></span>
+                                    <span class="links_tit">대기업 협력사</span>
+                                    <span class="links_txt">경기도 내 모든 추천 일자리</span>
+                                </a>
+                            </li>                            
+                            <li>
+                                <a href="javascript:void(0);" class="resume">
+                                    <span class="links_icon"><img src="./images/main_2024/main/gnb_icon03.png" alt="구직등록"></span>
+                                    <span class="links_tit">구직등록</span>
+                                    <span class="links_txt">내게 딱 맞는 일자리 찾기</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="h_mobile">
+            <div class="h_mobile_top">
+                <div class="h_mobile_btn">
+                    <h1 class="logo"><a href="/main/main.do"><img src="https://www.jobaba.net/resource/images/main2023/logo_03.png" alt="잡아바 로고"></a></h1>
+                    <div class="h_mobile_close">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="h_mobile_login">
+                    <a href="#" target="_blank" class="btn01 loginBtn">로그인</a>
+                    <a href="#" target="_blank" class="btn01 joinBtn">회원가입</a>
+                </div>
+                <!-- 로그인 후 
+                <div class="h_mobile_login login">
+                    <a href="#" target="_blank" class="btn01 loginBtn">로그아웃</a>
+                    <a href="#" target="_blank" class="btn01 joinBtn">마이페이지</a>
+                </div>
+                -->
+                <ul class="h_mobile_info">
+                    <li>
+                        <a href="https://jb24.job-cloud.kr/html/page/employMain.html" target="_blank" class="mobile_icon01">
+                            일자리정보
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://jb24.job-cloud.kr/html/page/policyMain.html" target="_blank" class="mobile_icon02">
+                            사업정보
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://youthedu.jobaba.net/main/index.jsp" target="_blank" class="mobile_icon03">
+                            러닝센터
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://apply.jobaba.net/bsns/bsnsListView.do" target="_blank" class="mobile_icon04">
+                            어플라이
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="h_mobile_mid">
+                <ul class="mobile_menu">
+                    <li>
+                        <a href="https://www.jobaba.net/hpdsk/ntc/list.do/empmn/enterpriseEmployListNew.do">일자리 정보</a>
+                        <ul class="mobileGnb">
+                            <li><a href="https://www.jobaba.net/pblcEmpmn/list.do">공공일자리</a></li>
+                            <li><a href="https://www.jobaba.net/cntn/newGrowtMain.do">신성장산업</a></li>
+                            <li><a href="https://www.jobaba.net/cntn/covJobInfoCntr.do">대기업 협력사</a></li>
+                            <li><a href="https://www.jobaba.net/cntn/salEntExclnc.do">연봉매출 우수기업</a></li>
+                            <li><a href="https://www.jobaba.net/cntn/entExclnc.do">일자리 우수기업</a></li>
+                            <li><a href="https://www.jobaba.net/empmn/desEntNew.do">탐나는 기업</a></li>
+                            <li>
+                                <ul class="mobileSub">
+                                    <li><a href="https://www.jobaba.net/hpdsk/ntc/list.do/entCntnts/exhb/exhbListNew.do"><span>경기도민을 위한 일자리 기회 제공</span>온ㆍ오프라인 채용박람회</a></li>
+                                </ul>
+                            </li>                            
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://www.jobaba.net/sprtPlcy/info/list2020.do">사업 정보</a>
+                        <ul class="mobileGnb">
+                            <li>
+                                <li><a href="https://www.jobaba.net/sprtPlcy/info/list2020.do">일자리 지원사업</a></li>
+                                <li><a href="https://www.jobaba.net/entCntnts/sprtPlcy/list2020.do">기업지원정책</a></li>
+                                <li><a href="https://www.jobaba.net/edutrn/list2020.do">취업교육</a></li>
+                                <li><a href="https://www.jobaba.net/evtIfo/list2020.do">대외활동</a></li>
+                            </li>
+                            <li>
+                                <ul class="mobileSub">
+                                    <li><a href="https://apply.jobaba.net" target="_blank"><span>정책신청은</span>잡아바 어플라이 바로가기</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>  
+                    <li>
+                        <a href="https://youthedu.jobaba.net/main/index.jsp" target="_blank">러닝센터</a>
+                        <ul class="mobileGnb">
+                            <li>
+                                <a href="https://www.jobaba.net/thema/vocEduList.do">동영상 교육</a>
+                            </li>
+                            <li>
+                                <a href="https://www.jobaba.net/jobDiagnose/diagnoseView.do">취업진로진단</a>
+                            </li>
+                            <li>
+                                <a href="https://www.jobaba.net/psychology/mainList.do">진로취업상담</a>
+                            </li>
+                            <li>
+                                <a href="https://www.jobaba.net/introduction/mainList.do">자기소개서 첨삭</a>
+                            </li>
+                            <li>
+                                <a href="https://www.jobaba.net/interview/mainList.do">AI 역량검사</a>
+                            </li>                            
+                        </ul>
+                    </li>
+                   
+                    <li>
+                        <a href="https://www.jobaba.net/hpdsk/ntc/list.do/hpdsk/ntc/list.do">참여소통</a>
+                        <ul class="mobileGnb">
+                            <li>
+                                <a href="https://www.jobaba.net/hpdsk/ntc/list.do/hpdsk/ntc/list.do">공지사항</a>
+                            </li>
+                            <li>
+                                <a href="https://www.jobaba.net/hpdsk/ntc/list.do/event/list.do">이벤트</a>
+                            </li>
+                            <li>
+                                <a href="https://www.jobaba.net/hpdsk/ntc/list.do/hpdsk/qna/list.do">Q&A</a>
+                            </li>
+                            <li>
+                                <a href="https://www.jobaba.net/hpdsk/ntc/list.do/thema/list.do">잡학사전</a>
+                            </li>
+                            <li>
+                                <a href="https://www.jobaba.net/hpdsk/ntc/list.do/thema/themeInfo.do">정책활용 꿀팁</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="h_mobile_bottom">
+                <div class="h_mobile_family">
+                    <strong>패밀리 사이트 바로가기</strong>
+                    <ul>
+                        <li>
+                            <a href="https://www.gjf.or.kr/web/gjf/main" target="_blank">
+                                <img src="./images/main_2024/main/mobile_logo01.png" alt="경기도일자리재단">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.dreammaru.or.kr/www/index.do" target="_blank">
+                                <img src="./images/main_2024/main/mobile_logo02.png" alt="꿈마루">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.dream.go.kr/dream/index.do" target="_blank">
+                                <img src="./images/main_2024/main/mobile_logo03.png" alt="꿈날개">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="h_mobile_sns">
+                    <li>
+                        <a href="https://blog.naver.com/jobaba_" title="잡아바 블로그 이동" class="blog">잡아바 블로그</a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/jobabanet" title="잡아바 페이스북 이동" class="face">잡아바 페이스북</a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/jobabanet/" title="잡아바 인스타그램 이동" class="insta">잡아바 인스타그램</a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UC69DhLD0FUmLgP9BsxitbDw" title="잡아바 유튜브 이동" class="youtu">잡아바 유튜브</a>
+                    </li>
+                    <li>
+                        <a href="https://apps.apple.com/us/app/%EC%9E%A1%EC%95%84%EB%B0%94/id1260278304?l=ko&ls=1" title="잡아바 앱스토어 이동" class="app">잡아바 앱스토어</a>
+                    </li>
+                    <li>
+                        <a href="https://play.google.com/store/apps/details?id=net.jobaba.app&pli=1" title="잡아바 플레이스토어 이동" class="play">잡아바 플레이스토어</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- 컨텐츠 -->
+    <main class="content"><h2>컨텐츠</h2></main>
+
+    <!-- 푸터 -->
+    <footer id="renewFooter">
+        <div class="nfooter_top">
+            <div class="innerSection">
+                <div class="f_util">
+                    <ul class="f_nav">
+                        <li>
+                            <a href="#" target="_blank">
+                                <strong>개인정보처리방침</strong>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                경기도일자리재단
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                이용약관
+                            </a>
+                        </li>                        
+                        <li>
+                            <a href="#" target="_blank">
+                                API신청
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="f_sns">
+                        <li>
+                            <a href="#" title="잡아바 블로그 이동" class="blog">잡아바 블로그</a>
+                        </li>
+                        <li>
+                            <a href="#" title="잡아바 페이스북 이동" class="face">잡아바 페이스북</a>
+                        </li>
+                        <li>
+                            <a href="#" title="잡아바 인스타그램 이동" class="insta">잡아바 인스타그램</a>
+                        </li>
+                        <li>
+                            <a href="#" title="잡아바 유튜브 이동" class="youtu">잡아바 유튜브</a>
+                        </li>
+                        <li>
+                            <a href="#" title="잡아바 앱스토어 이동" class="app">잡아바 앱스토어</a>
+                        </li>
+                        <li>
+                            <a href="#" title="잡아바 플레이스토어 이동" class="play">잡아바 플레이스토어</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>      
+        <div class="nfooter_mid">
+            <div class="f_btn_wrap">
+                <button type="button" class="footer_btn" title="닫기"><span>© 2016 GJF</span><span>더보기</span></button>
+            </div>
+            <div class="innerSection"> 
+                <div class="footer_wrap">
+                    <div class="f_business">
+                        <div class="f_logo">
+                            <a href="#" target="_blank" title="경기도일자리재단 이동" class="f_gyeonggi_logo">
+                                <img src="./images/main_2024/main/gyeonggi_logo.png" alt="경기도일자리재단 로고">
+                            </a>
+                            <p class="f_addr">경기도 부천시 부천로 136번길 27, 3층 경기도일자리재단</p>
+                            <ul class="f_sns">
+                                <li>
+                                    <a href="#" title="잡아바 블로그 이동" class="blog">잡아바 블로그</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="잡아바 페이스북 이동" class="face">잡아바 페이스북</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="잡아바 인스타그램 이동" class="insta">잡아바 인스타그램</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="잡아바 유튜브 이동" class="youtu">잡아바 유튜브</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="잡아바 앱스토어 이동" class="app">잡아바 앱스토어</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="잡아바 플레이스토어 이동" class="play">잡아바 플레이스토어</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="f_enquiry">
+                            <dl>
+                                <dt>문의안내</dt>
+                                <dd>평일 09:00~18:00 <span>※ 토, 일요일 및 법정공휴일</span></dd>
+                            </dl>
+                            <dl>
+                                <dt>잡아바 이용문의</dt>
+                                <dd><a href="tel:031-270-9688">031-270-9688 / jobaba@GJF.or.kr</a></dd>
+                            </dl>
+                            <dl>
+                                <dt>재단 사업문의</dt>
+                                <dd><a href="tel:031-270-9600">031-270-9600</a></dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="f_address">
+                        <p class="f_addr">경기도 부천시 부천로 136번길 27, 3층 경기도일자리재단</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 레이어 : 통합검색 -->
+    <div class="modal_search_wrapper" style="display:none;">
+        <div class="containerNew">
+            <div class="search_menu clearfix">
+                <div class="btn_search_close">닫기<img src="https://www.jobaba.net/resource/images/main2020/btn_search_close.png" alt=""></div>
+                <form id="topSrchFrm" name="topSrchFrm" action="/search/search.do" method="post" class="clearfix" novalidate="novalidate">
+                    <input type="hidden" name="autoWordFlag" id="autoWordFlag" value="Y">
+                    <input type="hidden" name="autoWordFlag" id="autoPreviewFlag" value="N">
+                    <input type="hidden" name="subSrchTxt" id="subSrchTxt" value="">
+                    <input type="hidden" name="srchOldTxt" id="srchOldTxt" value="">
+                    <input class="menu_search" type="text" name="srchTxt" id="srchTxt" title="검색어 입력" placeholder="검색어를 입력하세요." autocomplete="off" onkeyup="onSearch('onkeyup',event);">
+                    <input type="submit" value="검색">
+                </form>
+
+                <div class="search_list clearfix">
+                    <div class="search_rank">
+                        <p class="tit">인기검색어</p>
+                        <ul id="hotListRank">
+                            <li><a href="#none" onclick="setSearchText('청년기본소득')" title="청년기본소득 이동"><span class="rank">1</span><span class="keyword">청년기본소득</span></a></li>
+                            <li><a href="#none" onclick="setSearchText('청년기본소득 4분기')" title="청년기본소득 4분기 이동"><span class="rank">2</span><span class="keyword">청년기본소득 4분기</span></a></li>
+                            <li><a href="#none" onclick="setSearchText('오산')" title="오산 이동"><span class="rank">3</span><span class="keyword">오산</span></a></li>
+                            <li><a href="#none" onclick="setSearchText('면접수당')" title="면접수당 이동"><span class="rank">4</span><span class="keyword">면접수당</span></a></li>
+                            <li><a href="#none" onclick="setSearchText('청년지원금')" title="청년지원금 이동"><span class="rank">5</span><span class="keyword">청년지원금</span></a></li>
+                            <li><a href="#none" onclick="setSearchText('경기도')" title="경기도 이동"><span class="rank">6</span><span class="keyword">경기도</span></a></li>
+                            <li><a href="#none" onclick="setSearchText('청년몰')" title="청년몰 이동"><span class="rank">7</span><span class="keyword">청년몰</span></a></li>
+                            <li><a href="#none" onclick="setSearchText('정장대여')" title="정장대여 이동"><span class="rank">8</span><span class="keyword">정장대여</span></a></li>
+                            <li><a href="#none" onclick="setSearchText('면접')" title="면접 이동"><span class="rank">9</span><span class="keyword">면접</span></a></li>
+                            <li><a href="#none" onclick="setSearchText('직업상담사')" title="직업상담사 이동"><span class="rank">10</span><span class="keyword">직업상담사</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="search_tag">
+                        <p class="tit">인기태그</p>
+                        <ul>
+                        <!-- DefaultInterceptor 에서 가져옴  -->
+                        
+                            <li><a href="#none" onclick="setSearchText('경영지원')" title="경영지원 이동">#경영지원</a></li>
+                        
+                            <li><a href="#none" onclick="setSearchText('구직활동지원')" title="구직활동지원 이동">#구직활동지원</a></li>
+                        
+                            <li><a href="#none" onclick="setSearchText('금융지원')" title="금융지원 이동">#금융지원</a></li>
+                        
+                            <li><a href="#none" onclick="setSearchText('생활비지원')" title="생활비지원 이동">#생활비지원</a></li>
+                        
+                            <li><a href="#none" onclick="setSearchText('청년')" title="청년 이동">#청년</a></li>
+                        
+                            <li><a href="#none" onclick="setSearchText('취업지원')" title="취업지원 이동">#취업지원</a></li>
+                        
+                            <li><a href="#none" onclick="setSearchText('일경험지원')" title="일경험지원 이동">#일경험지원</a></li>
+                        
+                            <li><a href="#none" onclick="setSearchText('취업')" title="취업 이동">#취업</a></li>
+                        
+                            <li><a href="#none" onclick="setSearchText('자본금지원')" title="자본금지원 이동">#자본금지원</a></li>
+                        
+                            <li><a href="#none" onclick="setSearchText('중소기업')" title="중소기업 이동">#중소기업</a></li>
+                        
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 로그인 -->
+    <div class="modal fade" role="dialog" aria-labelledby="loginLayerModalLabel" id="loginLayerModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header header-primary">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="loginLayerModalLabel"></h4>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" id="closeBtnLogin">닫기</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal" id="loginBtn">로그인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    
+
+<!-- 잡아바 js -->
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-2.2.4.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-ui-1.11.4.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery.validate-1.14.0.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/common.js?v=202205240916"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/mobile.common.js?v=20190418"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery.common.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/upload/js/upload.common.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/default_menu.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/swiper.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/bxslider/slick.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/bootstrap.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery.leanModal.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/imgLiquid-min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/script.js?v=20220629"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/jquery.vticker-min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/googleAnalytics.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/facebookPixelCode.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/acecounter.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.js"></script>
+<script src="https://www.jobaba.net/resource/main2024/js/main_2024/top.js"></script>
+<script src="https://www.jobaba.net/resource/main2024/js/main_2024/main_ver_02.js"></script>
+
+<script>
+    $(document).ready(function() {
+        //로그인팝업 클릭
+        $(".login_alert, .resume").on('click', function(e){
+            e.preventDefault();
+            loginLayerPopup("알림", "로그인후 이용 하여 주세요.");
+        });
+
+        //통합검색 아이콘 클릭
+        $('.renewHeader .h_search').on('click', function(){
+            $('.modal_search_wrapper').show();
+            $('.search_menu').show();
+            $('.search_menu input[type="text"]').focus();
+        });
+        
+    });
+</script>
+
+</body>
+</html>
