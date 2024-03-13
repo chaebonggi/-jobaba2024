@@ -1,24 +1,24 @@
 .contents-wrap .view-wrap { display:flex; flex-direction:row-reverse; margin:40px 0; } 
 .contents-wrap .view-wrap .summary_side { width:340px; } 
- .contents-wrap .view-wrap .summary_side .thumb { border:1px solid #e5eaea; border-radius:8px; overflow:hidden; } 
+ .contents-wrap .view-wrap .summary_side .thumb { border:1px solid #e5eaea; border-radius:8px; margin-bottom: 24px; overflow:hidden; } 
  .contents-wrap .view-wrap .summary_side .tit_area { display:none; } 
  .contents-wrap .view-wrap .summary_side .sticky_box { position:sticky; top:24px; } 
- .contents-wrap .view-wrap .summary_side .state { border:1px solid #e5eaea; border-radius:8px; margin:24px 0; padding:16px 24px; } 
+ .contents-wrap .view-wrap .summary_side .state { border:1px solid #e5eaea; border-radius:8px; margin: 0 0 24px; padding:16px 24px; } 
  .contents-wrap .view-wrap .summary_side .state .remaining { display:flex; } 
  .contents-wrap .view-wrap .summary_side .state .remaining > div:nth-child(1) { flex-shrink:0; width:112px; color:#abb1b1; } 
  .contents-wrap .view-wrap .summary_side .state .remaining > div:nth-child(2) { flex-grow:1; text-align:right; } 
  .contents-wrap .view-wrap .summary_side .state .remaining span { display:inline-block; padding:4px 8px; border-radius:16px; background-color:rgb(213, 247, 255); color:#2196b1; font-size:14px; margin-left:8px; } 
  .contents-wrap .view-wrap .summary_side .state .remaining span.end { background-color:#efefef; color:#999; } 
  .contents-wrap .view-wrap .summary_side .state .apply { margin-top:16px; } 
- .contents-wrap .view-wrap .summary_side .state .apply a { display:block; padding:12px; text-align:center; color:#fff; background-color:#2aa6c1; border-radius:4px; font-size:18px; } 
+ .contents-wrap .view-wrap .summary_side .state .apply a { display:block; padding:12px; text-align:center; color:#fff; background-color:#008ae0; border-radius:4px; font-size:18px; } 
  .contents-wrap .view-wrap .summary_side .sminfo { border:1px solid #e5eaea; border-radius:8px; padding:4px 24px 24px; word-break:keep-all; } 
  .contents-wrap .view-wrap .summary_side .sminfo dt { font-size:14px; margin:20px 0 4px; color:#abb1b1; } 
- .contents-wrap .view-wrap .summary_side .sminfo li { display:inline-block; font-size:14px; padding:2px 8px; border:1px solid #2196b1; color:#2196b1; border-radius:24px; margin:0 2px 6px 0; cursor:pointer; } 
- .contents-wrap .view-wrap .summary_side .sminfo li:hover { background-color:#2196b1; color:#fff; } 
+ .contents-wrap .view-wrap .summary_side .sminfo li { display:inline-block; font-size:14px; padding:2px 8px; border:1px solid #008ae0; color:#008ae0; border-radius:24px; margin:0 2px 6px 0; cursor:pointer; } 
+ .contents-wrap .view-wrap .summary_side .sminfo li:hover { background-color:#008ae0; color:#fff; } 
  .contents-wrap .view-wrap .summary_side .sminfo li::before { content:"#"; } 
 .contents-wrap .view-wrap .dtinfo_wrap { width:calc(100% - 364px); min-height:1000px; margin-right:24px; } 
  .contents-wrap .view-wrap .dtinfo_wrap .tit_area { border:1px solid #e5eaea; border-radius:8px 8px 0 0; padding:24px 32px; } 
- .contents-wrap .view-wrap .dtinfo_wrap .tit_area .cate { color:#2196b1; margin-bottom:4px; } 
+ .contents-wrap .view-wrap .dtinfo_wrap .tit_area .cate { color:#008ae0; margin-bottom:4px; } 
  .contents-wrap .view-wrap .dtinfo_wrap .tit_area .cate span { display:inline-block; color:#999; margin-left:8px; } 
  .contents-wrap .view-wrap .dtinfo_wrap .tit_area .cate span::before { content:"|"; padding-right:8px; color:#ccc; font-size:12px; position:relative; top:-2px; } 
  .contents-wrap .view-wrap .dtinfo_wrap .tit_area h1 { font-size:24px; font-weight:500; color:#3d3d3d; word-break:keep-all; } 
@@ -69,7 +69,7 @@
  .contents-wrap .view-wrap .summary_side, .contents-wrap .view-wrap .dtinfo_wrap { width:100%; } 
  .contents-wrap .view-wrap .summary_side .state .apply { display:none; } 
  .contents-wrap .view-wrap .apply_mobile { display:block; position:sticky; bottom:16px; } 
- .contents-wrap .view-wrap .apply_mobile a { display:block; width: 100%; max-width: 480px; margin: 0 auto; padding:12px; text-align:center; color:#fff; background-color:#2aa6c1; border-radius:4px; margin-top:24px; font-size:18px; } 
+ .contents-wrap .view-wrap .apply_mobile a { display:block; width: 100%; max-width: 480px; margin: 0 auto; padding:12px; text-align:center; color:#fff; background-color:#008ae0; border-radius:4px; margin-top:24px; font-size:18px; } 
  }
 
 @media screen and (max-width: 480px) { 
