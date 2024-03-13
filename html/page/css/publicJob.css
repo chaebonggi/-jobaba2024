@@ -251,6 +251,7 @@
 @media all and (max-width: 640px) { 
     body[data-chatbot="no"] { 
         #ch-plugin { display: none !important; } 
+        #renewFooter {padding-bottom: 50px;}
  }
  .public_job .for_mobile { display: block; } 
  .public_job .pbj_main { display: none; } 
