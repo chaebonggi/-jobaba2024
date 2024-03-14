@@ -32,7 +32,7 @@
  .public_job .check_list .item:nth-child(5n) { border-right: none; } 
  .public_job .check_list .item .lb_tag { color: #000; font-size: 14px; font-weight: 300; } 
  .public_job .check_list .inp_chk:checked + .lb_tag { color: #008ae0; } 
- .public_job .pbj_main .scrollbar-outer  {max-height: 201px;}
+ .public_job .pbj_main .scrollbar-outer  {max-height: 202px;}
  .public_job .scrollbar-outer { max-height:120px; overflow-y:scroll; } 
  .public_job .scrollbar-outer > .scroll-content.scroll-scrolly_visible { margin: 0; left: 0; } 
  .public_job .scrollbar-outer > .scroll-element .scroll-element_track { background: transparent; } 
