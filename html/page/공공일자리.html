@@ -2835,8 +2835,9 @@
                         <div class="calendar_day">
                             <span>2024.</span>
                             <span>03</span>
-                        </div>
+                        </div>                        
                         <div class="calendar_btn">
+                            <button type="button" class="today_btn">오늘</button>
                             <button type="button" class="prev_btn"><span class="ir-text">이전 달</span></button>
                             <button type="button" class="next_btn"><span class="ir-text">다음 달</span></button>
                         </div>
@@ -3070,7 +3071,7 @@
                                         </div>
                                         <div class="cal_schedule">
                                             <div class="link_item nodata">
-                                                <p>공공일자리가 없습니다</p>
+                                                <p>공공일자리 공고가 없습니다.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -3249,7 +3250,7 @@
                                         </div>
                                         <div class="cal_schedule">
                                             <div class="link_item nodata">
-                                                <p>공공일자리가 없습니다</p>
+                                                <p>공공일자리 공고가 없습니다.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -3450,7 +3451,7 @@
                                         </div>
                                         <div class="cal_schedule">
                                             <div class="link_item nodata">
-                                                <p>공공일자리가 없습니다</p>
+                                                <p>공공일자리 공고가 없습니다.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -3651,7 +3652,7 @@
                                         </div>
                                         <div class="cal_schedule">
                                             <div class="link_item nodata">
-                                                <p>공공일자리가 없습니다</p>
+                                                <p>공공일자리 공고가 없습니다.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -3852,7 +3853,7 @@
                                         </div>
                                         <div class="cal_schedule">
                                             <div class="link_item nodata">
-                                                <p>공공일자리가 없습니다</p>
+                                                <p>공공일자리 공고가 없습니다.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -4244,32 +4245,30 @@
                 observeParents: true,
                 slideToClickedSlide : true,
             });
-            //캘린더 팝업            
-            $('.calendar_wrap').on('click', function (e) {
+            //캘린더 팝업  
+            var currentDate = new Date();
+            var year = currentDate.getFullYear();
+            var month = (currentDate.getMonth() + 1).toString().padStart(2, '0');
+            var day = currentDate.getDate().toString().padStart(2, '0');
+            var formattedDate = year + month + day;
+            var hrefValuesWithoutHash = $('.cal_list_wrap .calendar_list li a').map(function () {
+                return $(this).attr('href').replace('#', '');
+            }).get();
+            var initialSlideIndex = hrefValuesWithoutHash.indexOf(formattedDate.toString());
+            var currentPosition;
+
+            $('.calendar_wrap').on('click', function(e) {
                 e.preventDefault();
-                
-                if (windowWidth <= 640) {
-                    var currentDate = new Date();
-                    var year = currentDate.getFullYear();
-                    var month = (currentDate.getMonth() + 1).toString().padStart(2, '0');
-                    var day = currentDate.getDate().toString().padStart(2, '0');
-                    var formattedDate = year + month + day;
-
-                    var hrefValuesWithoutHash = $('.cal_list_wrap .calendar_list li a').map(function () {
-                        return $(this).attr('href').replace('#', '');
-                    }).get();
-
-                    var initialSlideIndex = hrefValuesWithoutHash.indexOf(formattedDate.toString());
+                if (windowWidth <= 640) {                   
                     calendarSwiper.slideTo(initialSlideIndex);
                     setTimeout(function () {
                         var popHeight = $(".pop_calendar_top").outerHeight();
                         var target = $(formattedDate == "#" || formattedDate == "" ? "body" : "#" + formattedDate);
-                        var position = target.offset().top - popHeight + $(window).scrollTop();
-                        $("html, body").animate({ scrollTop: position }, 100);
-                        
+                        currentPosition = target.offset().top - popHeight + $(window).scrollTop();
+                        $("html, body").animate({ scrollTop: currentPosition }, 100);
+                        console.log(currentPosition)
                     }, 100);
-                    $('.scrollbar-outer').scrollbar('destroy');
-                    
+                   
                     $(document).scroll(function(){
                         var scrollPosition = $(this).scrollTop();
                         $('.cal_wrap').each(function () {
@@ -4284,12 +4283,17 @@
                                 }
                             }
                         });                      
-                    });                    
+                    });
+                    $('.scrollbar-outer').scrollbar('destroy');
                 } 
                 $('.pop_shadow').show();
                 $('.pop_calender').show();
                 $('body').addClass('scroll_Lock');
             });
+            $('.pop_calender .today_btn').on('click', function() {
+                $("html, body").animate({ scrollTop: currentPosition }, 100);
+            });
+            
             $('.pop_calender .pop_close').click(function(){
                 $('.pop_shadow').hide();
                 $('.pop_calender').hide();

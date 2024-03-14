@@ -203,6 +203,7 @@
  .calendar_btn_wrap { display: flex; align-items: center; justify-content: space-between; } 
  .calendar_btn_wrap .calendar_day span { display: inline-block; color: #000; font-size: 36px; font-weight: 500; } 
  .calendar_btn_wrap .calendar_btn button { width: 41px; height: 41px; border: none; } 
+ .calendar_btn_wrap .calendar_btn button.today_btn {display: none; width: 42px; margin-right: 10px; color: #008ae0; font-size: 12px; text-align: center; border: 1px solid #008ae0; border-radius: 20px;}
  .calendar_btn_wrap .calendar_btn button.prev_btn { background: url(../resource/images/publicJob/arrow_prev_icon.png); } 
  .calendar_btn_wrap .calendar_btn button.next_btn { background: url(../resource/images/publicJob/arrow_next_icon.png); } 
  .calendar { width: 100%; background: #fff; border-collapse: collapse; box-sizing: border-box; margin: 0 auto; table-layout: fixed; } 
@@ -310,7 +311,8 @@
 .pop_calendar_control { padding: 0; background: #fff; } 
 .calendar_btn_wrap { padding: 10px; border-bottom: 1px solid #ddd; margin-bottom: 5px; } 
 .calendar_btn_wrap .calendar_day span { font-size: 15px; } 
-.calendar_btn_wrap .calendar_btn button { width: 20px; height: 20px; background-size: contain !important; } 
+.calendar_btn_wrap .calendar_btn button { width: 20px; height: 20px; background-size: contain !important; }
+.calendar_btn_wrap .calendar_btn button.today_btn {display: inline-block;}
 
 .calendar thead tr th { display: none; } 
 .calendar tbody tr td { display: block; border: none; } 
