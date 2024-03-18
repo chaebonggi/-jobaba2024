@@ -5,8 +5,10 @@ html{overflow: initial;}
 .aiAbility .mainWrap { background: url(../resource/images/ability/main_bg.jpg) top no-repeat; text-align: center; } 
 .aiAbility .mainWrap .innerSection { padding: 80px 50px; } 
 .aiAbility .mainWrap .mainBanner { display: inline-block; position: relative; } 
-.aiAbility .mainWrap .mainBanner::before { content: ''; width: 143px; height: 297px; position: absolute; top: -6px; left: -184px; background: url(../resource/images/ability/main_item01.png) no-repeat; } 
-.aiAbility .mainWrap .mainBanner::after { content: ''; width: 179px; height: 259px; position: absolute; top: 60px; right: -238px; background: url(../resource/images/ability/main_item02.png) no-repeat; } 
+/* s: 2024.03.18 css 수정 */
+.aiAbility .mainWrap .mainBanner::before { content: ''; width: 152px; height: 193px; position: absolute; top: -6px; left: -184px; background: url(../resource/images/ability/main_item03.png) no-repeat; } 
+.aiAbility .mainWrap .mainBanner::after { content: ''; width: 142px; height: 254px; position: absolute; bottom: -30px; right: -196px; background: url(../resource/images/ability/main_item04.png) no-repeat; } 
+/* e: 2024.03.18 css 수정 */
 .aiAbility .mainWrap .mainBanner h2 { color: #fff; font-size: 48px; font-weight: 700; } 
 .aiAbility .mainWrap .mainBanner h2 span { position: relative; } 
 .aiAbility .mainWrap .mainBanner h2 span::before { content: ''; width: 43px; height: 34px; position: absolute; left: 50%; top: -16px; transform: translateX(-50%); background: url(../resource/images/ability/main_icon01.png) no-repeat; } 
@@ -41,8 +43,10 @@ html{overflow: initial;}
 .aiAbility .cont02 { background: #5d81b2; } 
 .aiAbility .cont02 .innerSection { padding: 36px 0; } 
 .aiAbility .cont02 .banner { text-align: center; } 
-.aiAbility .cont02 .banner p { display: inline-block; padding-right: 130px; position: relative; font-size: 36px; color: #fff; text-align: center; letter-spacing: -1px; } 
-.aiAbility .cont02 .banner p::before { content: ''; width: 123px; height: 168px; position: absolute; bottom: -20px; right: 0; background: url(../resource/images/ability/cont02_img.png) no-repeat; } 
+/* s: 2024.03.18 css 수정 */
+.aiAbility .cont02 .banner p { display: inline-block; padding-right: 160px; position: relative; font-size: 36px; color: #fff; text-align: center; letter-spacing: -1px; word-break: keep-all;} 
+.aiAbility .cont02 .banner p::before { content: ''; width: 139px; height: 132px; position: absolute; bottom: 0; right: 0; background: url(../resource/images/ability/cont02_img02.png) no-repeat; } 
+/* e: 2024.03.18 css 수정 */
 .aiAbility .cont02 .banner p span { display: inline-block; padding: 0 10px; position: relative; background: #def1ff; color: #003281; border: 2px solid #003281; border-radius: 10px; font-weight: bold; } 
 .aiAbility .cont02 .banner p span::before { content: ''; width: 30px; height: 28px; position: absolute; top: -24px; right: -22px; background: url(../resource/images/ability/cont02_icon.png) no-repeat; } 
 
