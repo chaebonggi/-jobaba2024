@@ -100,8 +100,9 @@
 .public_job .job_list .list_top { padding: 20px 20px 14px; } 
 .public_job .job_list .job_area .area { padding-left: 20px; margin-bottom: 10px; position: relative; color: #000; font-size: 13px; font-weight: 300; } 
 .public_job .job_list .job_area .area::before { content: ''; width: 13px; height: 17px; position: absolute; top: 50%; left: 0; transform: translateY(-50%); background: url(../resource/images/publicJob/area_icon.png) no-repeat; } 
-.public_job .job_list .job_area .corp { color: #008ae0; font-size: 13px; font-weight: 300; } 
-.public_job .job_list .tit { margin-bottom: 15px; color: #000; font-size: 16px; font-weight: 300; display: -webkit-box; white-space: normal; -webkit-line-clamp: 2; -webkit-box-orient: vertical; text-overflow: ellipsis; overflow: hidden; } 
+/* 2024.03.20 css 수정 */
+.public_job .job_list .job_area .corp { color: #008ae0; font-size: 13px; font-weight: 300; display: -webkit-box; white-space: normal; -webkit-line-clamp: 1; -webkit-box-orient: vertical; text-overflow: ellipsis; overflow: hidden;} 
+.public_job .job_list .tit { height: 48px; margin-bottom: 15px; color: #000; font-size: 16px; font-weight: 300; display: -webkit-box; white-space: normal; -webkit-line-clamp: 2; -webkit-box-orient: vertical; text-overflow: ellipsis; overflow: hidden; } 
 .public_job .job_list .job_desc { display: flex; align-items: center; } 
 /* .public_job .job_list .date_wrap { margin-left: auto; } */
 /* .public_job .job_list .job_desc .logo { display: none; width: 100px; height: 34px; } 
@@ -264,9 +265,10 @@
  .public_job .pbj_list h3 { padding: 0 10px; margin-bottom: 20px; font-size: 18px; } 
  .public_job .pbj_list .innerSection { width: 100%; } 
  .public_job .pbj_list .job_list .item { width: 100%; } 
- .public_job .job_list .job_area { display: flex; justify-content: space-between; } 
- .public_job .job_list .job_area .corp { order: 1; } 
- .public_job .job_list .job_area .area { order: 2; } 
+ /* 2024.03.20 css 수정 */
+ .public_job .job_list .job_area { display: flex; margin-bottom: 10px; justify-content: space-between; } 
+ .public_job .job_list .job_area .corp {font-size: 12px; order: 1; } 
+ .public_job .job_list .job_area .area {margin-bottom: 0; margin-left: 10px; font-size: 12px; order: 2; flex-shrink: 0;} 
  .public_job .pbj_list .job_content { padding: 0 10px; } 
  .public_job .pbj_list .job_menu.fixed {position: sticky; box-shadow: 0px 10px 10px 0px rgba(34, 31, 31, 0.15);}
  .public_job .pbj_list .job_menu { margin-bottom: 20px; padding: 20px 10px; top: 0; background: #f8f8f8; text-align: center; z-index: 200; } 
@@ -285,9 +287,7 @@
  .public_job .pbj_list .more_wrap { margin: 30px 0; } 
  .public_job .pbj_list .job_list .item.nodata { min-height: 100px } 
 .public_job .pbj_list .job_list .item.nodata p { font-size: 14px; } 
-.public_job .job_list .tit { font-size: 14px; } 
-.public_job .job_list .job_area .corp { font-size: 12px; } 
-.public_job .job_list .job_area .area { font-size: 12px; } 
+.public_job .job_list .tit { height: auto; font-size: 14px; } 
 .public_job .pbj_slide h3 { padding-left: 20px; margin-bottom: 20px; font-size: 18px; } 
 .public_job .pbj_slide h3::before { width: 14px; height: 12px; background-size: contain; } 
 

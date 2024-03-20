@@ -1640,7 +1640,7 @@
                                     <div class="list_top">
                                         <div class="job_area">
                                             <p class="area">경기 수원시 외</p>
-                                            <span class="corp">용인시청</span>
+                                            <span class="corp">용인시청용인시청용인시청용인시청용인시청용인시청용인시청용인시청용인시청용인시청</span>
                                         </div>                                        
                                         <p class="tit">2024년도 제1회 경기도 지방공무원 공개
                                             경쟁임용시험 시행 경쟁임용시험 시행경쟁임용시험 시행</p>
@@ -1663,8 +1663,7 @@
                                             <p class="area">경기 수원시 외</p>
                                             <span class="corp">용인시청</span>
                                         </div>                                        
-                                        <p class="tit">2024년도 제1회 경기도 지방공무원 공개
-                                            경쟁임용시험 시행 경쟁임용시험 시행경쟁임용시험 시행</p>
+                                        <p class="tit">2024년도 제1회 경기도</p>
                                         <div class="job_desc">
                                             <div class="date_wrap">                                                
                                                 <span class="always">상시</span>                                            
@@ -4209,6 +4208,12 @@
                 $('body').addClass('scrollLock');
             });
             mPopCloseBtn.on("click", function(){
+                mBottomCont.removeClass('on');
+                mPopupOpenBtn.show();
+                $('body').removeClass('scrollLock');
+            });
+            // 2024.03.20 팝업 서치 버튼 추가
+            mSearchBtn.on("click", function(){ 
                 mBottomCont.removeClass('on');
                 mPopupOpenBtn.show();
                 $('body').removeClass('scrollLock');
