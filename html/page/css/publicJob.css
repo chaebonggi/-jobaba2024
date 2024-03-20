@@ -301,10 +301,12 @@
 .public_job .pbj_calendar .calendar_wrap a span { display: none; } 
 
 /* 캘린더 */
-.pop_calendar_top { position: fixed; width: 100%; top: 0; z-index: 1200; box-shadow: 0px 0px 20px 0px rgba(34, 37, 75, 0.2); } 
-.pop_calender .cal_list_wrap { display: block; } 
-.pop_calendar_wrap { padding: 138px 0 200px; } 
-.pop_calender { position: absolute; left: 0; top: 0; transform: none; border-radius: 0;} 
+/* 2024.03.20 css 수정 */
+.pop_calender { position: fixed; left: 0; top: 0; bottom: 0; right: 0; transform: none; border-radius: 0;}
+.pop_calendar_top { position: relative; width: 100%; height: 142px; z-index: 1200; box-shadow: 0px 0px 20px 0px rgba(34, 37, 75, 0.2);}
+.pop_calender .cal_list_wrap { display: block; }
+.pop_calendar_wrap {position: absolute; top:0; right: 0; left: 0; bottom: 0;}
+.pop_calendar_wrap .calendar_content {padding-bottom: 200px; position: absolute; top: 140px; right: 0; left: 0; bottom: 0; overflow:hidden; overflow-y:auto;}
 .pop_calendar_top .pop_tit { padding: 8px 12px; background: #f4f4f4; border-top: 2px solid #008ae0; border-radius: 0;} 
 .pop_calendar_top .pop_tit .p_tit { padding-left: 0; color: #000; font-size: 14px; } 
 .pop_calendar_top .pop_tit .p_tit::before { content: none; } 

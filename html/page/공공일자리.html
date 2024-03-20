@@ -3972,6 +3972,7 @@
                 </div>
             </div>
         </div>
+        
         <!-- E:캘린더 팝업  -->
         
     </main>
@@ -4248,39 +4249,40 @@
                         var popHeight = $(".pop_calendar_top").outerHeight();
                         var target = $(formattedDate == "#" || formattedDate == "" ? "body" : "#" + formattedDate);
                         currentPosition = target.offset().top - popHeight + $(window).scrollTop();
-                        $("html, body").animate({ scrollTop: currentPosition }, 100);
-                        console.log(currentPosition)
+                        $(".calendar_content").animate({ scrollTop: currentPosition }, 100);
                     }, 100);
-                   
-                    $(document).scroll(function(){
-                        var scrollPosition = $(this).scrollTop();
+                    // 2024.03.20 캘린더 스크립트 위치 수정
+                    $('.calendar_content').off('scroll').on('scroll', function(){
+                        var popCalenderPosition = $('.pop_calender').offset().top;
                         $('.cal_wrap').each(function () {
                             var calWrapId = $(this).attr('id');
                             var calWrapPosition = $(this).offset().top;
                             var matchingElement = $('.cal_list_wrap .calendar_list li a[href="#' + calWrapId + '"]');
                             if (matchingElement.length > 0) {
-                                var matchingElementPosition = matchingElement.offset().top;
+                                var matchingElementPosition = matchingElement.offset().top - popCalenderPosition;
                                 if (Math.abs(calWrapPosition - matchingElementPosition) < 50) {
                                     var initialSlideIndex = $('.cal_list_wrap .calendar_list li a').index(matchingElement);
                                     calendarSwiper.slideTo(initialSlideIndex);
                                 }
                             }
                         });                      
-                    });
+                    });                           
                     $('.scrollbar-outer').scrollbar('destroy');
-                } 
+                }                
                 $('.pop_shadow').show();
                 $('.pop_calender').show();
-                $('body').addClass('scroll_Lock');
+                $('body').addClass('scrollLock');
             });
+            
+            // 2024.03.20 캘린더 스크립트 위치 수정
             $('.pop_calender .today_btn').on('click', function() {
-                $("html, body").animate({ scrollTop: currentPosition }, 100);
+                $(".calendar_content").animate({ scrollTop: currentPosition }, 100);
             });
             
             $('.pop_calender .pop_close').click(function(){
                 $('.pop_shadow').hide();
                 $('.pop_calender').hide();
-                $('body').removeClass('scroll_Lock');
+                $('body').removeClass('scrollLock');
             });
             
             $(".calendar_list .swiper-slide a").on("click", function(){
