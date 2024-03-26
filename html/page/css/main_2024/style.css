@@ -1,10 +1,11 @@
 /* s: 20240326 intro css 추가 */
-.newIntro .newIntroWrap .innerSection { max-width: 1060px; padding: 60px 0 80px; } 
+.newIntro .newIntroWrap .innerSection { max-width: 1060px; padding: 40px 0; } 
 .newIntro .newIntroWrap .logo { text-align: center; } 
-.newIntro .newIntroWrap .txtWrap { margin: 40px 0 120px; text-align: center; } 
-.newIntro .newIntroWrap .txtWrap p { color: #003280; font-size: 40px; word-break: keep-all; } 
-.newIntro .newIntroWrap .txtWrap span { color: #68c1bc; font-size: 30px; word-break: keep-all; } 
-.newIntro .newIntroWrap .introList { display: flex; margin-bottom: 30px; justify-content: space-between; } 
+.newIntro .newIntroWrap .logo img { max-width: 200px; } 
+.newIntro .newIntroWrap .txtWrap { margin: 20px 0 85px; text-align: center; } 
+.newIntro .newIntroWrap .txtWrap p { color: #003280; font-size: 36px; word-break: keep-all; } 
+.newIntro .newIntroWrap .txtWrap span { color: #68c1bc; font-size: 28px; word-break: keep-all; } 
+.newIntro .newIntroWrap .introList { display: flex; margin-bottom: 10px; justify-content: space-between; } 
 .newIntro .newIntroWrap .introList li { width: 334px; height: 371px; position: relative; cursor: pointer; } 
 .newIntro .newIntroWrap .introList li:hover { transform: translateY(-5px); } 
 .newIntro .newIntroWrap .introList li:nth-child(1) { background: url(../../images/main_2024/intro/new_intro_bg01.png) top center no-repeat; } 
