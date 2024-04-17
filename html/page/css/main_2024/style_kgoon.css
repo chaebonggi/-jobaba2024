@@ -25,6 +25,7 @@
  .contents-wrap .view-wrap .dtinfo_wrap .tit_area h1 span { position:relative; top:-2px; cursor:pointer; margin-left:4px; } 
  /* 2024.03.20 css 수정 */
  .contents-wrap .view-wrap .dtinfo_wrap .dtinfo { border:1px solid #e5eaea; border-top-style:none; border-radius:0 0 8px 8px; padding:32px; word-break:break-all; } 
+ .contents-wrap .view-wrap .dtinfo_wrap .dtinfo img { width: 100%;} 
  .contents-wrap .view-wrap .dtinfo_wrap .sbtit { font-weight:500; border-width:1px; border-color:#e5eaea; border-style:none none solid none; padding-bottom:16px; margin-bottom:16px; } 
  .contents-wrap .view-wrap .dtinfo_wrap .attach { border:1px solid #e5eaea; border-radius:8px; padding:24px 32px; margin:24px 0; } 
  .contents-wrap .view-wrap .dtinfo_wrap .attach li { list-style:circle; margin-left:24px; } 
