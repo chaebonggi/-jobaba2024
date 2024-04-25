@@ -489,6 +489,9 @@ body.not_scroll { width: 100%; height: 100%; overflow: hidden; }
 .mento_popup i.print_icon { display: inline-block; width: 20px; height: 20px; margin-right: 4px; background: url(../../resource/images/mento/mento_print_icon.png) center no-repeat; background-size: contain; vertical-align: middle; } 
 /* 잡아바 멘토 지원하기 */
 .mento_popup.mentoPop03 .comm_select, .mento_popup.mentoPop04 .comm_select, .mento_popup.mentoPop06 .comm_select { width: 100% !important; min-width: 100%; } 
+/* 2024.04.25 selectbox 크기 수정 했습니다 */
+.mento_popup .new_comm_select{min-width:100% !important;width:100% !important;}
+/* //2024.04.25 selectbox 크기 수정 했습니다 */
 
 /* 멘토링 증명서 팝업 */
 .certiPopup::before { content: ''; position: fixed; width: 100%; height: 100vh; background: rgba(0, 0, 0, 0.2); left: 0; top: 0; z-index: -1; } 
