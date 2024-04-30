@@ -25,7 +25,7 @@
  .contents-wrap .view-wrap .dtinfo_wrap .tit_area h1 span { position:relative; top:-2px; cursor:pointer; margin-left:4px; } 
  /* 2024.03.20 css 수정 */
  .contents-wrap .view-wrap .dtinfo_wrap .dtinfo { border:1px solid #e5eaea; border-top-style:none; border-radius:0 0 8px 8px; padding:32px; word-break:break-all; } 
- .contents-wrap .view-wrap .dtinfo_wrap .dtinfo img { width: 100%;} 
+ .contents-wrap .view-wrap .dtinfo_wrap .dtinfo img { width: 100%; } 
  .contents-wrap .view-wrap .dtinfo_wrap .sbtit { font-weight:500; border-width:1px; border-color:#e5eaea; border-style:none none solid none; padding-bottom:16px; margin-bottom:16px; } 
  .contents-wrap .view-wrap .dtinfo_wrap .attach { border:1px solid #e5eaea; border-radius:8px; padding:24px 32px; margin:24px 0; } 
  .contents-wrap .view-wrap .dtinfo_wrap .attach li { list-style:circle; margin-left:24px; } 
@@ -39,7 +39,14 @@
  .contents-wrap .view-wrap .dtinfo_wrap .description { border:1px solid #e5eaea; border-radius:8px; padding:24px 32px; background-color:#f9f9f9; margin-top:24px; word-break:keep-all; } 
  .contents-wrap .view-wrap .apply_mobile { display:none; } 
 
-@media screen and (max-width: 1200px) {}
+/* 2024.04.30 css 수정 */
+.contents-wrap .view-wrap .btn_wrap { margin-top: 20px; text-align: center; } 
+.contents-wrap .view-wrap .btn_type01 { display: inline-block; padding: 12px 30px; font-size: 18px; text-align: center; border-radius: 4px; } 
+.btn_style01 { background-color: #008ae0; color: #fff !important; border: 1px solid #008ae0; } 
+.btn_style02 { background-color: #fff; color: #008ae0 !important; border: 1px solid #008ae0; } 
+/* //2024.04.30 css 수정 */
+
+@media screen and (max-width: 1200px) { } 
 
 @media screen and (max-width: 1024px){
  .contents-wrap .view-wrap .dtinfo_wrap .coposition li span { max-width:100%; } 
@@ -55,7 +62,7 @@
 
 @media screen and (max-width: 768px){
  .contents-wrap .view-wrap { flex-direction:column; margin:16px 0; } 
- .contents-wrap .view-wrap .summary_side .state { padding:12px 20px; margin:20px 0; }
+ .contents-wrap .view-wrap .summary_side .state { padding:12px 20px; margin:20px 0; } 
  .contents-wrap .view-wrap .summary_side { width: 100%; max-width: 480px; margin: 0 auto; } 
  .contents-wrap .view-wrap .summary_side .tit_area { display:block; margin-top:24px; } 
  .contents-wrap .view-wrap .summary_side .tit_area .cate { color:#2196b1; margin-bottom:4px; font-size:14px; } 
@@ -65,22 +72,27 @@
  .contents-wrap .view-wrap .dtinfo_wrap { width: 100%; max-width: 480px; margin: 20px auto 0; } 
  .contents-wrap .view-wrap .dtinfo_wrap .dtinfo { border: 1px solid #e5eaea; border-radius: 8px; } 
  .contents-wrap .view-wrap .dtinfo_wrap .tit_area { display:none; } 
-}
+ }
 
 @media screen and (max-width: 640px){
  .contents-wrap .view-wrap { flex-direction:column; margin:16px 0; } 
  .contents-wrap .view-wrap .summary_side, .contents-wrap .view-wrap .dtinfo_wrap { width:100%; } 
  .contents-wrap .view-wrap .summary_side .state .apply { display:none; } 
- .contents-wrap .view-wrap .apply_mobile { display:block; position:sticky; bottom:16px; } 
- .contents-wrap .view-wrap .apply_mobile a { display:block; width: 100%; max-width: 480px; margin: 0 auto; padding:12px; text-align:center; color:#fff; background-color:#008ae0; border-radius:4px; margin-top:24px; font-size:18px; } 
- }
 
-@media screen and (max-width: 480px) {  
+ /* 2024.04.30 css 수정 */
+ .contents-wrap .view-wrap .btn_wrap {display: none;}
+ .contents-wrap .view-wrap .apply_mobile {display: flex; width: 100%; max-width: 480px; position:sticky; bottom:16px; margin: 24px auto 0; gap: 0 5px;} 
+ .contents-wrap .view-wrap .btn_type01 {padding: 8px 15px; font-size: 14px;}
+ .contents-wrap .view-wrap .apply_mobile a:nth-child(2) {flex-grow: 1;}
+ /* //2024.04.30 css 수정 */
+}
+
+@media screen and (max-width: 480px){
  .contents-wrap .view-wrap .summary_side .sminfo { padding:4px 20px 16px; } 
  .contents-wrap .view-wrap .summary_side .sminfo dt { margin:16px 0 4px; } 
  .contents-wrap .view-wrap .dtinfo_wrap .dtinfo { border-style:solid none; border-radius:0; margin: 0 -4%; padding:24px; } 
  .contents-wrap .view-wrap .dtinfo_wrap .attach { margin:20px 0; padding:20px 24px; } 
- .contents-wrap .view-wrap .dtinfo_wrap .coposition, .contents-wrap .view-wrap .dtinfo_wrap .description { padding:20px 24px; font-size: 14px;} 
+ .contents-wrap .view-wrap .dtinfo_wrap .coposition, .contents-wrap .view-wrap .dtinfo_wrap .description { padding:20px 24px; font-size: 14px; } 
  .contents-wrap .view-wrap .dtinfo_wrap .description { margin-top:20px; } 
  }
  
