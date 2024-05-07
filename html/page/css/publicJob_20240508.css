@@ -14,18 +14,15 @@
  .public_job .pbj_tab_btn button { background-color: transparent; border: none; cursor: pointer; } 
  .public_job .pbj_tab { display: flex; } 
  .public_job .pbj_tab .pbj_tab_btn { display: flex; width: 100%; background: #fff; } 
- /* 2024.05.07 css 수정 */
- .public_job .pbj_tab .pbj_tab_btn li {height: 40px; position: relative; flex: 1; border: 1px solid #dbdbdb; border-bottom: none; border-left: none; } 
- .public_job .pbj_tab .pbj_tab_btn li:first-child { border-left: 1px solid #dbdbdb; } 
+ .public_job .pbj_tab .pbj_tab_btn li { position: relative; flex: 1; border: 1px solid #dbdbdb; border-bottom: none; border-right: none; } 
+ .public_job .pbj_tab .pbj_tab_btn li:last-child { border-right: 1px solid #dbdbdb; } 
  .public_job .pbj_tab .pbj_tab_btn li.p_btn::after { content: ''; display: block; width: 15px; height: 9px; position: absolute; top: 50%; right: 20px; transform: translateY(-50%); background: url(../resource/images/publicJob/arrow_type01_icon.png) no-repeat; } 
  .public_job .pbj_tab .pbj_tab_btn li.p_btn.active::after { background: url(../resource/images/publicJob/arrow_type01_icon_on.png) no-repeat; } 
  .public_job .pbj_tab .pbj_tab_btn li.active { border-color: #5c6fa7; } 
- .public_job .pbj_tab .pbj_tab_btn li.active button { background: #3f4860; color: #fff; } 
+ .public_job .pbj_tab .pbj_tab_btn li.active button { background: #5c6fa7; color: #fff; } 
  .public_job .pbj_tab .pbj_tab_btn button { width: 100%; height: 100%; padding: 0 20px; color: #000; font-size: 14px; font-weight: 500; text-align: left; } 
- .public_job .pbj_search_wrap { position: relative; background: #fff; border: 1px solid #dbdbdb; border-bottom: 0;}
- .public_job .pbj_search_wrap .pbj_keyword::before { content: ''; display: block; width: 16px; height: 16px; position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background: url(../resource/images/publicJob/search_icon.png) no-repeat; } 
- .public_job .pbj_search_wrap .pbj_keyword input { padding: 0 10px 0 34px; width: 100%; height: 40px; border: 0; box-sizing: border-box; color: #222; font-size: 13px; line-height: 40px; background: transparent; } 
-  /* //2024.05.07 css 수정 */
+ .public_job .pbj_tab .pbj_tab_btn .pbj_keyword::before { content: ''; display: block; width: 16px; height: 16px; position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background: url(../resource/images/publicJob/search_icon.png) no-repeat; } 
+ .public_job .pbj_tab .pbj_tab_btn .pbj_keyword input { padding: 0 10px 0 34px; width: 100%; height: 40px; border: 0; box-sizing: border-box; color: #222; font-size: 13px; line-height: 40px; background: transparent; } 
  .public_job .pbj_tab_content { background: #fff; border: 1px solid #5c6fa7; box-shadow: 0px 0px 10px 0px rgba(34, 31, 31, 0.2); } 
  .public_job .pbj_tab_content .pbj_tab_box { display: none; } 
  .public_job .pbj_tab_content .pbj_tab_box.active { display: block; } 
@@ -246,9 +243,6 @@
  .public_job .pbj_list .job_list .item { width: calc(100% / 3 - 14px); } 
  }
 @media all and (max-width: 860px){
-/* 2024.05.07 css 수정 */
-.public_job .pbj_tab .pbj_tab_btn li.none_btn {display: none;}
-/* //2024.05.07 css 수정 */
  .public_job .pbj_result { flex-wrap: wrap; } 
  .public_job .pbj_result .keywords_wrap { width: 100%; margin-top: 20px; order: 4; } 
  .public_job .check_list .item { width: calc(100% / 3); } 
