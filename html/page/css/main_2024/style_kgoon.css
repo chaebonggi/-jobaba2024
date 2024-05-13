@@ -13,6 +13,9 @@
  .contents-wrap .view-wrap .summary_side .state .apply a { display:block; padding:12px; text-align:center; color:#fff; background-color:#008ae0; border-radius:4px; font-size:18px; } 
  .contents-wrap .view-wrap .summary_side .sminfo { border:1px solid #e5eaea; border-radius:8px; padding:4px 24px 24px; word-break:keep-all; } 
  .contents-wrap .view-wrap .summary_side .sminfo dt { font-size:14px; margin:20px 0 4px; color:#abb1b1; } 
+  /* 2024.05.13 css 수정 */
+ .contents-wrap .view-wrap .summary_side .sminfo dd.list_dot {position: relative; padding-left: 6px;}
+ .contents-wrap .view-wrap .summary_side .sminfo dd.list_dot::before {content: ''; width: 3px; height: 3px; position: absolute; top: 12px; left: 0; background: #4e4e4e; border-radius: 50%;}
  .contents-wrap .view-wrap .summary_side .sminfo li { display:inline-block; font-size:14px; padding:2px 8px; border:1px solid #008ae0; color:#008ae0; border-radius:24px; margin:0 2px 6px 0; cursor:pointer; } 
  .contents-wrap .view-wrap .summary_side .sminfo li:hover { background-color:#008ae0; color:#fff; } 
  .contents-wrap .view-wrap .summary_side .sminfo li::before { content:"#"; } 
