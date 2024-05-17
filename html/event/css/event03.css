@@ -26,12 +26,12 @@
 .eventWrap .event01 .cont02::before { content: ''; width: 17px; height: 124px; position: absolute; top: -84px; left: 62px; background: url(../images/eventImg/event03/cont01_bar.png) no-repeat; } 
 .eventWrap .event01 .cont02::after { content: ''; width: 17px; height: 124px; position: absolute; top: -84px; right: 62px; background: url(../images/eventImg/event03/cont01_bar.png) no-repeat; } 
 .eventWrap .event01 .cont02 .ev_info { max-width: 718px; margin: 0 auto; } 
-.eventWrap .event01 .cont02 .ev_info > li { display: flex; align-items: flex-start; word-break: keep-all; } 
+.eventWrap .event01 .cont02 .ev_info > li { display: flex; align-items: flex-start; } 
 .eventWrap .event01 .cont02 .ev_info > li + li { margin-top: 20px; } 
 .eventWrap .event01 .cont02 .ev_info .ev_tit { display: flex; width: 142px; height: 42px; padding-top: 4px; margin: 0; background: #383838; color: #fff; font-size: 20px; border-radius: 30px; align-items: center; justify-content: center; flex-shrink: 0; } 
 .eventWrap .event01 .cont02 .ev_info .txt_box { padding-top: 4px; margin-left: 16px; letter-spacing: -1px; } 
-.eventWrap .event01 .cont02 .ev_info .txt_box p { color: #000; font-size: 24px; } 
-.eventWrap .event01 .cont02 .ev_info .txt_box ul li { padding-left: 12px; position: relative; color: #ff003c; font-size: 24px; } 
+.eventWrap .event01 .cont02 .ev_info .txt_box p { color: #000; font-size: 24px; word-break: keep-all;} 
+.eventWrap .event01 .cont02 .ev_info .txt_box ul li { padding-left: 12px; position: relative; color: #ff003c; font-size: 24px; word-break: keep-all;} 
 .eventWrap .event01 .cont02 .ev_info .txt_box ul li::before { content: ''; width: 6px; height: 6px; position: absolute; top: 8px; left: 0; background: #ff003c; border-radius: 50%; } .eventWrap .event01 .cont02 .ev_info .txt_box ul { padding-top: 4px; } 
 .eventWrap .event01 .cont02 .ev_info .txt_box .ev_etc { display: block; margin: 4px 0 10px; padding-left: 20px; position: relative; color: #000; font-size: 19px; } 
 .eventWrap .event01 .cont02 .ev_info .txt_box .ev_etc::before { content: '\203B'; position: absolute; top: 0; left: 0; } 
@@ -147,7 +147,7 @@
  .eventWrap .event01 .cont02 .ev_info .txt_box { margin-left: 0; } 
  .eventWrap .event01 .cont02 .ev_info .txt_box p { font-size: 16px; text-align: center; } 
  .eventWrap .event01 .cont02 .ev_info .txt_box ul li::before { width: 3px; height: 3px; top: 6px; } 
- .eventWrap .event01 .cont02 .ev_info .txt_box ul li { padding-left: 6px; font-size: 14px; } 
+ .eventWrap .event01 .cont02 .ev_info .txt_box ul li { padding-left: 6px; font-size: 14px; word-break: break-all;} 
  .eventWrap .event01 .cont02 .ev_info .txt_box .ev_etc { padding-left: 16px; font-size: 12px; } 
  .eventWrap .event01 .cont03 { margin-top: 20px; } 
  .eventWrap .event01 .cont03 .tit_wrap { padding: 12px 0 15px; } 
