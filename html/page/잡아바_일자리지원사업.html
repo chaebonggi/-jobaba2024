@@ -2485,7 +2485,7 @@
 
 
 
-	  <!-- 푸터 -->
+    <!-- 푸터 -->
 	<footer id="renewFooter">
         <div class="nfooter_top">
             <div class="innerSection">
@@ -2546,7 +2546,7 @@
                             <a href="#" target="_blank" title="경기도일자리재단 이동" class="f_gyeonggi_logo">
                                 <img src="./images/main_2024/main/gyeonggi_logo.png" alt="경기도일자리재단 로고">
                             </a>
-                            <p class="f_addr">경기도 부천시 부천로 136번길 27, 3층 경기도일자리재단</p>
+                            <p class="f_addr">경기도 부천시 부흥로 424번길 25, 3층 경기도일자리재단</p>
                             <ul class="f_sns">
                                 <li>
                                     <a href="#" title="잡아바 블로그 이동" class="blog">잡아바 블로그</a>
@@ -2571,15 +2571,19 @@
                         <div class="f_enquiry">
                             <dl>
                                 <dt>문의안내</dt>
-                                <dd>평일 09:00~18:00 <span>※ 토, 일요일 및 법정공휴일</span></dd>
+                                <dd>평일 09:00~18:00 <span>※ 토, 일요일 및 법정공휴일 휴무</span></dd>
                             </dl>
                             <dl>
                                 <dt>잡아바 이용문의</dt>
-                                <dd><a href="tel:031-270-9688">031-270-9688 / jobaba@GJF.or.kr</a></dd>
+                                <dd><a href="tel:031-270-9988">031-270-9988 / jobaba@GJF.or.kr</a></dd>
                             </dl>
                             <dl>
                                 <dt>재단 사업문의</dt>
                                 <dd><a href="tel:031-270-9600">031-270-9600</a></dd>
+                            </dl>
+                            <dl>
+                                <dt>러닝센터 이용문의</dt>
+                                <dd><a href="tel:032-240-6142">032-240-6142</a></dd>
                             </dl>
                         </div>
                     </div>
@@ -2713,6 +2717,8 @@
             const mPopupOpenBtn = mBottomCont.find('.btn_pop_open');
             const mSearchBtn = mBottomCont.find('.btn_search');
             const mPopCloseBtn = mBottomCont.find('.m_bnt_close');
+            const mLayerTop = $(".m_info_top");
+            const mLayerBottom = $(".m_info_bottom");
             mPopupOpenBtn.on("click", function(){
                 mBottomCont.addClass('on');
                 $(this).hide();
@@ -2735,6 +2741,13 @@
                 mBottomCont.removeClass('on');
                 mPopupOpenBtn.show();
                 $('body').removeClass('scrollLock');
+            });
+            $(document).mouseup(function (e) {
+                if (!mLayerTop.is(e.target) && mLayerTop.has(e.target).length === 0 && !mLayerBottom.is(e.target) && mLayerBottom.has(e.target).length === 0) {
+                    mBottomCont.removeClass('on');
+                    mPopupOpenBtn.show();
+                    $('body').removeClass('scrollLock');
+                }
             });
 
            
