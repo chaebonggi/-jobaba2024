@@ -46,7 +46,7 @@
 .workExpWrap .item .contact .flex{display: flex;justify-content: space-between;align-items: flex-end}
 .workExpWrap .item .contact .flex li{font-size: 14px;color: #565454;margin-bottom: 5px}
 .workExpWrap .item .contact .flex li:last-child{margin-bottom: 0}
-.workExpWrap .item .contact .flex button{background: #00a8cd;color: #fff;font-size: 14px;font-weight: 500;padding: 6px 50px;border-radius: 3px}
+.workExpWrap .item .contact .flex button{background: #00a8cd;color: #fff;font-size: 14px;font-weight: 500;padding: 6px 50px;border-radius: 3px; white-space: nowrap;}
 .workExpWrap .ex_lower{background: #f8f8f8;padding: 60px  0;margin-top: 60px}
 .workExpWrap .ex_lower  > div > div{display: flex;justify-content: space-between}
 .workExpWrap .ex_lower  > div > div a{background: #fff;border: 1px solid #e6e6e6;width: calc(25% - 26.25px);margin-right: 35px;padding: 30px;border-radius: 10px;}
