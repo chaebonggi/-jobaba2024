@@ -629,10 +629,10 @@ body.scrollLock { overflow: hidden; }
 .contents-wrap .job_info_wrap .category_wrap .cate_search .srch_wrap_item:first-child { padding-bottom: 25px; margin-bottom: 15px; border-bottom: 1px solid #efefef; } 
 .contents-wrap .job_info_wrap .category_wrap .check_item { padding: 10px 6px; border-bottom: 1px solid #eaeaea; } 
 .contents-wrap .job_info_wrap .category_wrap .check_item:last-child { border-bottom: 0; } 
-.contents-wrap .job_info_wrap .category_wrap .check_item .check_txt::before { content: ''; display: block; width: 12px; height: 12px; margin-top: 2px; margin-right: 5px; position: relative; background-color: #fff; border: 1px solid #dddddd; box-sizing: border-box; cursor: pointer; } 
+.contents-wrap .job_info_wrap .category_wrap .check_item .check_txt::before { content: ''; display: block; width: 16px; height: 16px; margin-top: 2px; margin-right: 5px; position: relative; background-color: #fff; border: 1px solid #dddddd; border-radius: 2px; box-sizing: border-box; cursor: pointer; } 
 .contents-wrap .job_info_wrap .category_wrap .check_item .check_txt::after { content: none; } 
-.contents-wrap .job_info_wrap .category_wrap .check_item input:checked + .check_txt::before { border-color: #000; background-image: url(../../../page/images/main_2024/sub/ico_check.png); background-position: center; background-repeat: no-repeat; } 
-.contents-wrap .job_info_wrap .category_wrap .check_item input:checked + .check_txt { color: #000; } 
+.contents-wrap .job_info_wrap .category_wrap .check_item input:checked + .check_txt::before {content: "\2714"; background: #2a61f9; color: #fff; font-size: 12px; border-color: #2a61f9; text-align: center; line-height: 12px;} 
+.contents-wrap .job_info_wrap .category_wrap .check_item input:checked + .check_txt { color: #2a61f9; } 
 .contents-wrap .job_info_wrap .category_wrap .check_item .check_txt { display: flex; color: #777777; font-size: 14px; align-items: center; word-break: keep-all; letter-spacing: -1px; } 
 .contents-wrap .job_info_wrap .category_wrap .srch_wrap .scrollbar-outer { max-height:280px; overflow-y:scroll; } 
 .contents-wrap .job_info_wrap .category_wrap .srch_wrap .scrollbar-outer > .scroll-content.scroll-scrolly_visible { margin: 0; left: 0; } 
