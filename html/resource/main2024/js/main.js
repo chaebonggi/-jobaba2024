@@ -86,7 +86,11 @@ itemSwiper();
 
 $('#newMain .policyWrap .checkItem .areaMore').click(function(){
     $('#newMain .policyWrap .checkItem .checkList.area').toggleClass('on');
-    $(this).css('display', 'none');
+    if ($('#newMain .policyWrap .checkItem .checkList.area').hasClass('on')) {
+        $(this).find('span').text('접기');
+    } else {
+        $(this).find('span').text('더보기');
+    }
 });
 
 function handleTabClick($btn, $items, tabAttr) {
@@ -123,7 +127,7 @@ tipSlide.find('.swiper-container').each(function(i){
                 spaceBetween: 10,
             },
             480: {
-                slidesPerView: 2,
+                slidesPerView: 2.2,
                 spaceBetween: 10,
             },
         },
@@ -157,7 +161,7 @@ var policySlide = new Swiper("#newMain .policySlide .swiper-container", {
             slidesPerGroup: 3,
         },
         480: {
-            slidesPerView: 2,
+            slidesPerView: 2.2,
             spaceBetween: 10,
             slidesPerColumn: 2,
             slidesPerGroup: 2,
@@ -185,7 +189,7 @@ var issueSlide = new Swiper("#newMain .issueSlide .swiper-container", {
             spaceBetween: 10,
         },
         480: {
-            slidesPerView: 2,
+            slidesPerView: 2.2,
             spaceBetween: 10,
         },
     },
