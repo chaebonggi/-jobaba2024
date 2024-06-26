@@ -229,8 +229,9 @@
  #newMain .slideWrap .item .txtWrap .txt { color: #888888; font-size: 14px; font-weight: 300; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; } 
  #newMain .slideWrap .item .badgeWrap .badge { padding: 0 8px; position: absolute; top: 10px; right: 16px; font-size: 12px; border-radius: 15px; text-align: center; } 
  #newMain .slideWrap .item .badgeWrap .badge.area { color: #888888; background: #fff; border: 1px solid #505769; } 
- #newMain .slideWrap .item .badgeWrap .tip { display: flex; width: 56px; height: 28px; position: absolute; top: 0; left: 16px; background: #505769; color: #fff; font-size: 12px; font-weight: 300; align-items: center; justify-content: center; } 
- #newMain .slideWrap .item .badgeWrap .tip::after { content: ''; position: absolute; top: 28px; left: 0; border-top: 15px solid #505769; border-right: 28px solid transparent; border-left: 28px solid transparent; } 
+ #newMain .slideWrap .item .badgeWrap .tip { display: flex; width: 90px; height: 28px; position: absolute; top: 0; left: 16px; background: #505769; color: #fff; font-size: 12px; font-weight: 300; align-items: center; justify-content: center; } 
+ #newMain .slideWrap .item .badgeWrap .tip::after { content: ''; position: absolute; top: 28px; left: 0; right: 0; border-top: 15px solid #505769; border-right: 45px solid transparent; border-left: 45px solid transparent; } 
+
  #newMain .slideWrap.policySlide { padding-bottom: 10px; position: relative; } 
  #newMain .slideWrap.policySlide .item { margin-top: 0 !important; margin-bottom: 20px; } 
  #newMain .slideWrap .swiper-pagination { left: 50%; bottom: 0; transform: translateX(-50%); } 
