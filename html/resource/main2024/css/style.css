@@ -421,7 +421,8 @@
 @media screen and (max-width: 1300px){
  #newHeader .innerSection { width: calc(100% - 20px); } 
  #newMain .mainBanner .swiper-container { max-width: 100%; padding: 0 0 60px 0; } 
- #newMain .innerSection { width: calc(100% - 20px); } 
+ #newMain .innerSection { width: calc(100% - 20px); }
+ #newFooter .innerSection {width: calc(100% - 20px);}
  }
 
 @media screen and (max-width: 1200px){
