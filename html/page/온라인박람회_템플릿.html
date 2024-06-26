@@ -1,0 +1,230 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+<style type="text/css">
+    img { max-width: 100%; } 
+    .recruit_wrapper { font-family: 'Noto Sans KR', sans-serif; font-size: 16px; font-weight: 400; color: #333; box-sizing: border-box; position: relative; margin: 0 auto; padding: 0; width: 100%; max-width: 958px; } 
+    .recruit_wrapper .space { height: 16px; } 
+    .recruit_wrapper .space.second { height: 8px; } 
+    .recruit_wrapper .header { margin-bottom: 48px; box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .075); line-height: 0; } 
+    .recruit_wrapper h3::before { content: ''; width: 25px; height: 25px; position: absolute; top: 8px; left: 0; background: #fff; border: 5px solid #003281; border-radius: 50%; box-sizing: border-box; } 
+    .recruit_wrapper h3 {position: relative; padding-left: 30px; font-size: 28px; font-weight: 500; margin: 16px 0 10px; } 
+    .recruit_wrapper .gTable { display: grid; width: 100%; font-size: 16px; border-top: 2px solid #003281; grid-template-columns: repeat(2, 100px 1fr); } 
+    .recruit_wrapper .gTable>div { border-bottom: 1px solid #ccc; padding: 12px 10px; font-weight: 300; } 
+    .recruit_wrapper .gTable>div:nth-child(odd) { display: grid; font-weight: 400; text-align: center; background-color: #e5f2ff; align-items: center; } 
+    .recruit_wrapper .gTable>div.three { grid-column: span 3; } 
+    .recruit_wrapper .gTable>div ul { margin: 0 6px; padding: 0 0 0 18px; } 
+    .recruit_wrapper .gTable>div ul li { position: relative; list-style: disc; } 
+    .recruit_wrapper .gTable>div ul.type02 { padding: 0; } 
+    .recruit_wrapper .gTable>div ul.type02 li::before { content: '※'; position: absolute; top: 0; left: 0; } 
+    .recruit_wrapper .gTable>div ul.type02 li { padding-left: 20px; list-style: none; } 
+    .recruit_wrapper .gList { display: grid; grid-template-columns: 1fr 1fr; row-gap: 10px; } 
+    .recruit_wrapper .gList dl { display: grid; margin: 0; grid-template-columns: auto 1fr; column-gap: 10px; } 
+    .recruit_wrapper .gList dl.row { grid-column: span 3; } 
+    .recruit_wrapper .gList dt { margin: 0; padding-left: 10px; position: relative; color: #000; font-size: 20px; font-weight: 500; grid-column: 1; } 
+    .recruit_wrapper .gList dt::before { content: ''; width: 6px; height: 6px; position: absolute; top: 12px; left: 0; background: #003281; border-radius: 50%; } 
+    .recruit_wrapper .gList dd { margin: 0; color: #000; font-size: 18px; font-weight: 300; } 
+    .recruit_wrapper .gTable02 { display: grid; width: 100%; background: #fff; border-top: 2px solid #003281; grid-template-columns: 100px 100px 1fr 100px 1fr; } 
+    .recruit_wrapper .gTable02>div.rowFour { grid-row: span 4; } 
+    .recruit_wrapper .gTable02>div.rowThree { grid-row: span 3; } 
+    .recruit_wrapper .gTable02>div { border-bottom: 1px solid #ccc; padding: 12px 10px; font-weight: 300; } 
+    .recruit_wrapper .gTable02>div.tit { display: grid; font-weight: 400; text-align: center; background-color: #e5f2ff; align-items: center; } 
+    .recruit_wrapper .gTable02>div.subTit { display: grid; font-weight: 400; text-align: center; background-color: #fff; border-left: 1px solid #ccc; border-right: 1px solid #ccc; align-items: center; } 
+    .recruit_wrapper .gTable02>div.three { grid-column: span 3; } 
+
+    @media screen and (max-width:768px){
+        .recruit_wrapper .gTable { grid-template-columns: 180px auto; } 
+        .recruit_wrapper .gTable>div.three { grid-column: span 1; } 
+        .recruit_wrapper .gList { display: block; } 
+        .recruit_wrapper .gList dl { margin-top: 10px; } 
+        .recruit_wrapper .gTable02 { grid-template-columns: 120px 120px auto; } 
+        .recruit_wrapper .gTable02>div.rowFour { grid-row: span 6; } 
+        .recruit_wrapper .gTable02>div.rowThree { grid-row: span 4; } 
+        .recruit_wrapper .gTable02>div.three { grid-column: span 1; } 
+    }
+
+    @media screen and (max-width:480px){
+        .recruit_wrapper h3 { font-size: 22px; } 
+        .recruit_wrapper h3::before { width: 20px; height: 20px; border: 4px solid #003281; } 
+        .recruit_wrapper .gTable { grid-template-columns: auto; } 
+        .recruit_wrapper .gTable>div:nth-child(odd) { text-align: left; padding: 16px 16px 0; border-bottom: none; background-color: transparent; } 
+        .recruit_wrapper .gTable>div:nth-child(odd) br { display: none; } 
+        .recruit_wrapper .gTable>div:nth-child(even) { padding: 8px 16px 16px; } 
+        .recruit_wrapper .gTable>div:nth-child(4n),
+        .recruit_wrapper .gTable>div:nth-child(4n-1) { background-color: #f5f5f5; } 
+        .recruit_wrapper .gList dt,
+        .recruit_wrapper .gList dd { font-size: 16px; } 
+        .recruit_wrapper .gList dt::before { top: 10px; } 
+        .recruit_wrapper .gTable02 { grid-template-columns: auto; } 
+        .recruit_wrapper .gTable02>div.tit { text-align: left; background-color: transparent; font-size: 13px; }
+        .recruit_wrapper .gTable02>div.subTit { text-align: left; padding: 16px 16px 0; border: none; background-color: transparent; font-size: 13px; } 
+        .recruit_wrapper .gTable02>div.subTit br { display: none; } 
+        .recruit_wrapper .gTable02>div.bgGray { background-color: #f5f5f5; } 
+    }
+</style>
+<div class="recruit_wrapper">
+    <div class="header">
+        <!-- <img alt="" src="/resource/images/empmn/top_case3.png" /> -->
+    </div>
+
+    <div class="gList">
+        <dl>
+            <dt>기업명 : </dt>
+            <dd>기업명을 작성하세요.</dd>
+        </dl>
+        <dl>
+            <dt>영문기업명 : </dt>
+            <dd>영문기업명을 작성하세요.</dd>
+        </dl>
+        <dl class="row">
+            <dt>채용명 : </dt>
+            <dd>채용명을 작성하세요.</dd>
+        </dl>
+        <dl class="row">
+            <dt>접수기간 : </dt>
+            <dd>접수기간을 작성하세요.</dd>
+        </dl>
+    </div>
+    
+    <div class="space">&nbsp;</div>
+
+    <h3>기업정보</h3>
+
+    <div class="gTable">
+        <div>대표자</div>
+
+        <div>대표자를 입력하세요.</div>
+
+        <div>업종</div>
+
+        <div>업종을 입력하세요</div>
+
+        <div>설립연도</div>
+
+        <div>설립연도를 입력하세요.</div>
+
+        <div>매출액</div>
+
+        <div>000</div>
+
+        <div>사원수</div>
+
+        <div>사원수를 입력하세요.</div>
+
+        <div>주소</div>
+
+        <div>주소를 입력하세요</div>
+
+        <div>홈페이지</div>
+
+        <div class="three">홈페이지 주소를 입력하세요.</div>
+
+        <div>회사소개</div>
+
+        <div class="three">회사소개를 입력하세요.</div>
+    </div>
+
+    <div class="space">&nbsp;</div>
+
+    <h3>모집요강</h3>
+
+    <div class="gTable02">
+        <div class="tit rowFour">근무조건</div>
+        <div class="subTit">고용형태</div>
+        <div>고용형태를 입력하세요.</div>
+        <div class="subTit bgGray">계약기간</div>
+        <div class="bgGray">계약기간을 입력하세요.</div>
+        <div class="subTit">근무시간</div>
+        <div>근무시간을 입력하세요.</div>
+        <div class="subTit bgGray">비자타입</div>
+        <div class="bgGray">비자타입을 입력하세요.</div>
+        <div class="subTit">급여(유료)</div>
+        <div class="three">급여(유료)를 입력하세요.</div>
+        <div class="subTit bgGray">주요<br>업무내용</div>
+        <div class="three bgGray">주요업무를 입력하세요.</div>
+
+        <div class="tit rowThree">자격조건</div>
+        <div class="subTit">경력</div>
+        <div>경력을 입력하세요.</div>
+        <div class="subTit bgGray">학력</div>
+        <div class="bgGray">학력을 입력하세요.</div>
+        <div class="subTit">외국어</div>
+        <div class="three">외국어를 입력하세요.</div>
+        <div class="subTit bgGray">그 외<br> 자격조건</div>
+        <div class="three bgGray">자격조건을 입력하세요.</div>
+
+    </div>
+
+    <div class="space">&nbsp;</div>
+
+    <h3>기타 근로복지</h3>
+
+    <div class="gTable">
+        <div>가족동반<br> 가능여부</div>
+
+        <div>가족등반 가능여부를 입력하세요.</div>
+
+        <div>숙식<br> 제공여부</div>
+
+        <div>숙식 제공여부를 입력하세요.</div>
+
+        <div>항공료<br> 제공여부</div>
+
+        <div>항공료 제공여부를 입력하세요.</div>
+
+        <div>휴가</div>
+
+        <div>휴가 여부를 입력하세요.</div>
+
+        <div>기타<br> 근로조건</div>
+
+        <div class="three">기타 근로조건을 입력하세요.</div>
+    </div>
+
+    <div class="space">&nbsp;</div>
+
+    <h3>접수기간 및 방법</h3>
+
+    <div class="gTable">
+        <div>모집기간</div>
+
+        <div class="three">모집기간을 입력하세요.</div>
+
+        <div>채용 예정일</div>
+
+        <div class="three">채용 예정일을 입력하세요.</div>
+
+        <div>필수서류</div>
+
+        <div>필수서류를 입력하세요.</div>
+
+        <div>기타<br> 제출서류</div>
+
+        <div>제출서류를 입력하세요.</div>
+
+        <div>채용전형</div>
+
+        <div class="three">채용전형을 입력하세요.</div>
+
+        <div>문의처</div>
+
+        <div class="three">
+            E-mail: global@gif.or.kr<br>
+            T. 031-270-9644 or 9983
+        </div>
+
+        <div>기타사항</div>
+
+        <div class="three">
+            <ul class="type02">
+                <li>본 공고와 관련한 추후 면접진행 및 채용과정, 당사자 간 합의 및 계약 사항에 대해서는 경기도일자리재단이 책임지지 않음을 알려드리오니 착오 없으시기 바랍니다.</li>
+                <li>위 기재된 채용예정일은 업체 사정상 변경될 수 있음을 알려드립니다.</li>
+                <li>업체에서 채용 결정시 공고가 조기 마감될 수 있음을 알려드립니다.</li>
+                <li>공고 지원 시, 향후 채용이 확정된 경우 취업증빙을 위한 서류를 경기도일자리재단에 제출하는 것에 동의한 것으로 간주합니다.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="space">&nbsp;</div>
+</div>
