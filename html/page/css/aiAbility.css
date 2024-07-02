@@ -1,14 +1,13 @@
 .mt20 { margin-top: 20px; } 
 .for_pc { display: none; } 
-html{overflow: initial;}
+html { overflow: initial; } 
+.aiAbility { max-width: 1920px; margin: 0 auto; } 
 .aiAbility .innerSection { max-width: 1260px; padding: 0; margin: 0 auto; } 
 .aiAbility .mainWrap { background: url(../resource/images/ability/main_bg.jpg) top no-repeat; text-align: center; } 
-.aiAbility .mainWrap .innerSection { padding: 80px 50px; } 
+.aiAbility .mainWrap .innerSection { padding: 50px 50px; } 
 .aiAbility .mainWrap .mainBanner { display: inline-block; position: relative; } 
-/* s: 2024.03.18 css 수정 */
 .aiAbility .mainWrap .mainBanner::before { content: ''; width: 152px; height: 193px; position: absolute; top: -6px; left: -184px; background: url(../resource/images/ability/main_item03.png) no-repeat; } 
 .aiAbility .mainWrap .mainBanner::after { content: ''; width: 142px; height: 254px; position: absolute; bottom: -30px; right: -196px; background: url(../resource/images/ability/main_item04.png) no-repeat; } 
-/* e: 2024.03.18 css 수정 */
 .aiAbility .mainWrap .mainBanner h2 { color: #fff; font-size: 48px; font-weight: 700; } 
 .aiAbility .mainWrap .mainBanner h2 span { position: relative; } 
 .aiAbility .mainWrap .mainBanner h2 span::before { content: ''; width: 43px; height: 34px; position: absolute; left: 50%; top: -16px; transform: translateX(-50%); background: url(../resource/images/ability/main_icon01.png) no-repeat; } 
@@ -43,10 +42,8 @@ html{overflow: initial;}
 .aiAbility .cont02 { background: #5d81b2; } 
 .aiAbility .cont02 .innerSection { padding: 36px 0; } 
 .aiAbility .cont02 .banner { text-align: center; } 
-/* s: 2024.03.18 css 수정 */
-.aiAbility .cont02 .banner p { display: inline-block; padding-right: 160px; position: relative; font-size: 36px; color: #fff; text-align: center; letter-spacing: -1px; word-break: keep-all;} 
+.aiAbility .cont02 .banner p { display: inline-block; padding-right: 160px; position: relative; font-size: 36px; color: #fff; text-align: center; letter-spacing: -1px; word-break: keep-all; } 
 .aiAbility .cont02 .banner p::before { content: ''; width: 139px; height: 132px; position: absolute; bottom: 0; right: 0; background: url(../resource/images/ability/cont02_img02.png) no-repeat; } 
-/* e: 2024.03.18 css 수정 */
 .aiAbility .cont02 .banner p span { display: inline-block; padding: 0 10px; position: relative; background: #def1ff; color: #003281; border: 2px solid #003281; border-radius: 10px; font-weight: bold; } 
 .aiAbility .cont02 .banner p span::before { content: ''; width: 30px; height: 28px; position: absolute; top: -24px; right: -22px; background: url(../resource/images/ability/cont02_icon.png) no-repeat; } 
 
@@ -71,8 +68,8 @@ html{overflow: initial;}
 .aiAbility .cont04 .innerSection { padding: 120px 0; } 
 .aiAbility .cont04 .qnaList { margin-top: 40px; } 
 .aiAbility .cont04 .qnaList a { display: block; padding: 26px 60px 26px 36px; position: relative; background: #f2f2f2; color: #000; font-size: 24px; font-weight: 500; border-radius: 20px; } 
-.aiAbility .cont04 .qnaList li + li { margin-top: 20px; }
-.aiAbility .cont04 .qnaList li.active a { border-radius: 20px 20px 0 0;} 
+.aiAbility .cont04 .qnaList li + li { margin-top: 20px; } 
+.aiAbility .cont04 .qnaList li.active a { border-radius: 20px 20px 0 0; } 
 .aiAbility .cont04 .qnaList a p { padding-left: 60px; position: relative; } 
 .aiAbility .cont04 .qnaList a p::before { content: ''; width: 42px; height: 42px; position: absolute; left: 0; top: 0; background: url(../resource/images/ability/icon_q.png) no-repeat; } 
 .aiAbility .cont04 .qnaList a::after { content: ''; width: 17px; height: 9px; position: absolute; top: 50%; right: 36px; background: url(../resource/images/ability/icon_arrow.png) no-repeat; transform: translateY(-50%); transition: all 0.5s ease; } 
@@ -111,7 +108,7 @@ html{overflow: initial;}
 .aiPopup .pop_cont li:last-child { border-bottom: 1px solid #e6e6e6; } 
 .aiPopup .pop_cont li .p_tit { width: 90px; margin-right: 30px; color: #000; font-size: 16px; font-weight: 500; text-align: center; flex-shrink: 0; } 
 .aiPopup .pop_cont li .p_txt { color: #777777; font-size: 16px; } 
-.aiPopup .pop_cont .select_style { width: 140px; margin-right: 20px; appearance: auto;} 
+.aiPopup .pop_cont .select_style { width: 140px; margin-right: 20px; appearance: auto; } 
 .aiPopup .pop_cont .error_text { color: #ff0000; font-size: 12px; } 
 .aiPopup .pop_cont .p_code_wrap { display: inline-flex; width: 100%; align-items: center; flex-wrap: wrap; justify-content: space-between; } 
 .aiPopup .pop_cont .p_code_wrap span { display: block; margin-top: 4px; font-size: 12px; } 
@@ -125,42 +122,155 @@ html{overflow: initial;}
 .aiPopup .pop_cont.ai_sample { height: 300px; overflow: scroll; } 
 .aiPopup .pop_cont.ai_sample img { display: block; width: 100%; } 
 
-.aiResult_wrap{position:relative;padding:40px;}
-    .aiResult_wrap .tab_navi_wrap, .aiResult_wrap .result_wrap{position:relative;width:1040px;margin:0 auto 40px;}
-    .aiResult_wrap .tab_navi_wrap .tab_navi{display:flex;}
-    .aiResult_wrap .tab_navi_wrap a{appearance:none;border:none;background:transparent;font:inherit;outline:none;cursor:pointer;}
-    .aiResult_wrap .tab_navi_wrap .tab_navi a + a{margin-left:8px;}
-    .aiResult_wrap .tab_navi_wrap a.closeBtn{position:absolute;right:0;top:8px;width:48px;height:48px;}
-    .aiResult_wrap .tab_navi_wrap .tab_navi .resultState{
-        display:flex;align-items:center;justify-content:space-between;width:185px;height:56px;padding:14px 24px 14px 20px;border-radius:8px;
-        background-color: #f4f4f5;color:#9fa4ab;font-size:18px;font-weight:500;line-height:24px;
-    }
-    .aiResult_wrap .tab_navi_wrap .tab_navi .resultState svg{fill:#9fa4ab;}
-    .aiResult_wrap .tab_navi_wrap .tab_navi .resultState.on{color:#fff;background-color:#121619;}
-    .aiResult_wrap .tab_navi_wrap .tab_navi .resultState.on svg{fill:#fff;}
+.aiResult_wrap { position:relative; padding:40px; } 
+.aiResult_wrap .tab_navi_wrap, .aiResult_wrap .result_wrap { position:relative; width:1040px; margin:0 auto 40px; } 
+.aiResult_wrap .tab_navi_wrap .tab_navi { display:flex; } 
+.aiResult_wrap .tab_navi_wrap a { appearance:none; border:none; background:transparent; font:inherit; outline:none; cursor:pointer; } 
+.aiResult_wrap .tab_navi_wrap .tab_navi a + a { margin-left:8px; } 
+.aiResult_wrap .tab_navi_wrap a.closeBtn { position:absolute; right:0; top:8px; width:48px; height:48px; } 
+.aiResult_wrap .tab_navi_wrap .tab_navi .resultState { display:flex; align-items:center; justify-content:space-between; width:185px; height:56px; padding:14px 24px 14px 20px; border-radius:8px; background-color: #f4f4f5; color:#9fa4ab; font-size:18px; font-weight:500; line-height:24px; } 
+.aiResult_wrap .tab_navi_wrap .tab_navi .resultState svg { fill:#9fa4ab; } 
+.aiResult_wrap .tab_navi_wrap .tab_navi .resultState.on { color:#fff; background-color:#121619; } 
+.aiResult_wrap .tab_navi_wrap .tab_navi .resultState.on svg { fill:#fff; } 
+
+/* 2024.07.01 합격 면접 자료 */
+.aiAbility .noData { display: flex; width: 100%; padding: 30px 0; color: #000; font-size: 16px; align-items: center; justify-content: center; align-items: center; } 
+.aiAbility .innerSection02 { max-width: 1080px; width: calc(100% - 20px); padding: 0; margin: 0 auto; } 
+.aiAbility .cont06 .innerSection { padding-top: 110px; } 
+.aiAbility .cont06 h3 span { margin-left: 20px; color: #666666; font-size: 18px; font-weight: 300; } 
+.aiAbility .cont06 h3 span em { font-weight: 900; } 
+.aiAbility .cont06 h3::before { width: 54px; height: 48px; left: 22px; background: url(../resource/images/ability/cont06_tit.png) no-repeat; } 
+.aiAbility .cont06 .tabList { display: flex; border: 1px solid #cfcfcf; border-bottom: 0; } 
+.aiAbility .cont06 .tabList li { flex: 1; } 
+.aiAbility .cont06 .tabList li:first-child { border-right: 1px solid #cfcfcf; } 
+.aiAbility .cont06 .tabList li.active a::before { content: ''; width: 100%; height: 6px; position: absolute; left: 0; top: 0; background: #008ae0; } 
+.aiAbility .cont06 .tabList li.active a { background: #fff; color: #000; border-bottom: 0; } 
+.aiAbility .cont06 .tabList li a { display: block; padding: 20px 0; position: relative; background: #f9f9f9; color: #999999; font-size: 20px; font-weight: 500; text-align: center; border-bottom: 1px solid #cfcfcf; } 
+.aiAbility .cont06 .tabCont .tabItem { display: none; } 
+.aiAbility .cont06 .tabCont .tabItem.active { display: block; } 
+.aiAbility .cont06 .tabArea { display: flex; margin-bottom: 60px; background: #fff; border: 1px solid #cfcfcf; border-top: 0; } 
+.aiAbility .cont06 .guideWrap { width: 292px; flex-shrink: 0; } 
+.aiAbility .cont06 .guideWrap .guideList { border: 1px solid #cfcfcf; border-left: 0; border-bottom: 0; } 
+.aiAbility .cont06 .guideWrap .guideList li { border-bottom: 1px solid #ededed; } 
+.aiAbility .cont06 .guideWrap .guideList li:last-child { border-bottom: 0; } 
+.aiAbility .cont06 .guideWrap .guideList li button { display: block; width: 100%; padding: 12px 0 12px 25px; color: #666666; font-size: 14px; text-align: left; border: 0; } 
+.aiAbility .cont06 .guideWrap .guideList li.active button { color: #008ae0; font-weight: 900; } 
+.aiAbility .cont06 .guideWrap .guideList li button:focus { border: 0; outline: 0; } 
+.aiAbility .cont06 .resultWrap { width: 100%; } 
+.aiAbility .cont06 .resultWrap .resultList > li:last-child { border-bottom: 0; } 
+.aiAbility .cont06 .resultWrap .resultList > li { display: flex; padding: 15px 50px; align-items: center; justify-content: space-between; border-bottom: 1px solid #ededed; } 
+.aiAbility .cont06 .resultWrap .resultList > li .tit { margin-bottom: 6px; color: #000; font-size: 18px; font-weight: 900; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; } 
+.aiAbility .cont06 .resultWrap .resultList > li .txt { color: #666666; font-size: 18px; font-weight: 300; display: -webkit-box; text-overflow: ellipsis; overflow: hidden; -webkit-line-clamp: 2; -webkit-box-orient: vertical; word-break: keep-all; } 
+.aiAbility .cont06 .resultWrap .resultList > li .viewBtn button { width: 82px; margin-left: 30px; padding: 4px 0; color: #008ae0; font-size: 14px; font-weight: 900; border: 1px solid #008ae0; text-align: center; flex-shrink: 0; } 
+.aiAbility .cont06 .resultWrap .resultList > li .viewBtn button:hover { background: #008ae0; color: #fff; } 
+.aiAbility .cont06 .resultWrap .resultList .tagWrap { margin-top: 10px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; } 
+.aiAbility .cont06 .resultWrap .resultList .tagWrap .tagTit { color: #000000; font-size: 14px; font-weight: 900; } 
+.aiAbility .cont06 .resultWrap .resultList .tagWrap .tagTit ~ span { margin-left: 16px; } 
+.aiAbility .cont06 .resultWrap .resultList .tagWrap .tag { color: #666666; font-size: 14px; font-weight: 300; } 
+.aiAbility .cont06 .resultWrap .resultList .tagWrap .tag em { font-weight: 900; } 
+.aiAbility .cont06 .resultWrap .resultList .tagList li { color: #666666; font-size: 18px; font-weight: 300; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; } 
+.aiAbility .cont06 .scrollbar-outer { height: 370px; overflow-y: scroll; } 
+.aiAbility .cont06 .scrollbar-outer > .scroll-content.scroll-scrolly_visible { margin: 0; left: 0; } 
+.aiAbility .cont06 .scrollbar-outer > .scroll-element .scroll-element_track { background: #e9e9e9; } 
+.aiAbility .cont06 .scrollbar-outer > .scroll-element .scroll-bar { background: #bbbbbb; } 
+.aiAbility .cont06 .scrollbar-outer > .scroll-element.scroll-y { width: 10px; } 
+.aiAbility .cont06 .scrollbar-outer > .scroll-element .scroll-element_outer, 
+.aiAbility .cont06 .scrollbar-outer > .scroll-element .scroll-element_track, .aiAbility .cont06 .scrollbar-outer > .scroll-element .scroll-bar { border-radius: 0; } 
+.aiAbility .cont06 .linkWrap { text-align: center; } 
+.aiAbility .cont06 .linkWrap a { display: inline-flex; max-width: 285px; width: 100%; padding: 20px 0; background: #f9f9f9; color: #000; font-size: 18px; border: 1px solid #cfcfcf; align-items: center; justify-content: center; } 
+
+/* 면접 가이드 상세 */
+.aiAbility .aiGuide { background-image: url(../resource/images/ability/guide_bg.png); background-color: #e6f4f6; background-repeat: no-repeat; background-position: bottom -10px center; } 
+.aiAbility .aiGuide .innerSection02 { padding: 60px 0; } 
+.aiAbility .aiGuide .mainBanner { display: flex; min-height: 225px; padding: 10px 42px; background: #fff; border-radius: 20px; align-items: center; justify-content: space-between; } 
+.aiAbility .aiGuide .mainBanner .titWrap { width: 300px; margin-right: 10px; flex-shrink: 0; } 
+.aiAbility .aiGuide .mainBanner .titWrap h2 { margin-bottom: 10px; color: #000; font-size: 36px; font-weight: 900; } 
+.aiAbility .aiGuide .mainBanner .titWrap p { color: #666666; font-size: 16px; font-weight: 300; word-break: keep-all; letter-spacing: -0.5px; } 
+.aiAbility .aiGuide .mainBanner ul { display: flex; max-width: 640px; width: 100%; justify-content: space-between; } 
+.aiAbility .aiGuide .mainBanner ul li { text-align: center; } 
+.aiAbility .aiGuide .mainBanner ul li::before { content: ''; display: block; width: 94px; height: 94px; margin: 0 auto 20px; background-color: #eee; background-repeat: no-repeat; background-position: center; border-radius: 50%; border: 3px solid #fff; outline: 1px solid #c6c6c6; box-sizing: border-box; } 
+.aiAbility .aiGuide .mainBanner ul li:nth-child(1):before { background-image: url(../resource/images/ability/guide_icon01.png); } 
+.aiAbility .aiGuide .mainBanner ul li:nth-child(2):before { background-image: url(../resource/images/ability/guide_icon02.png); } 
+.aiAbility .aiGuide .mainBanner ul li:nth-child(3):before { background-image: url(../resource/images/ability/guide_icon03.png); } 
+.aiAbility .aiGuide .mainBanner ul li:nth-child(4):before { background-image: url(../resource/images/ability/guide_icon04.png); } 
+.aiAbility .aiGuide .mainBanner ul li:nth-child(5):before { background-image: url(../resource/images/ability/guide_icon05.png); } 
+.aiAbility .aiGuide .mainBanner ul li:nth-child(6):before { background-image: url(../resource/images/ability/guide_icon06.png); } 
+.aiAbility .aiGuide .mainBanner ul li p { color: #000; font-size: 20px; font-weight: 300; } 
+.aiAbility .searchWrap .innerSection02 { padding: 40px 0; } 
+.aiAbility .searchWrap .searchArea { width: 100%; height: 55px; margin-bottom: 60px; background-color: #f4f4f4; border: 1px solid #ececec; border-radius: 10px; text-align: center; box-sizing: border-box; } 
+.aiAbility .searchWrap .searchArea input[type=text] { max-width: 450px; width: 100%; height: 100%; padding: 10px 40px 10px 10px; font-size: 16px; background-color: #f4f4f4; background-image: url(../resource/images/ability/search_icon.png); background-position: center right 20px; background-repeat: no-repeat; text-align: center; box-sizing: border-box; border: 0; } 
+.aiAbility .searchWrap .searchArea input[type=text]:focus { border: 0; outline: 0; } 
+.aiAbility .searchWrap .listArea .topWrap { padding-bottom: 15px; border-bottom: 2px solid #707070; } 
+.aiAbility .searchWrap .listArea .topWrap p { margin-left: 20px; color: #000; font-size: 24px; font-weight: 300; } 
+.aiAbility .searchWrap .listArea .topWrap p span { color: #008ae0; font-weight: 900; } 
+.aiAbility .searchWrap .listArea .searchList .item { display: flex; padding: 15px 50px; align-items: center; justify-content: space-between; border-bottom: 1px solid #ededed; } 
+.aiAbility .searchWrap .listArea .searchList .logoWrap { height: 40px; padding: 2px 0; margin-bottom: 10px; } 
+.aiAbility .searchWrap .listArea .searchList .logoWrap img { height: 100%; } 
+.aiAbility .searchWrap .listArea .searchList .tit { margin-bottom: 20px; color: #666666; font-size: 20px; font-weight: 900; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; } 
+.aiAbility .searchWrap .listArea .searchList .txt { color: #666666; font-size: 18px; font-weight: 300; display: -webkit-box; text-overflow: ellipsis; overflow: hidden; -webkit-line-clamp: 2; -webkit-box-orient: vertical; word-break: keep-all; } 
+.aiAbility .searchWrap .listArea .searchList .tagWrap { margin-top: 10px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; } 
+.aiAbility .searchWrap .listArea .searchList .tagTit { color: #000000; font-size: 14px; font-weight: 900; } 
+.aiAbility .searchWrap .listArea .searchList .tagTit ~ span { margin-left: 16px; } 
+.aiAbility .searchWrap .listArea .searchList .tag { color: #666666; font-size: 14px; font-weight: 300; } 
+.aiAbility .searchWrap .listArea .searchList .tag em { font-weight: 900; } 
+.aiAbility .searchWrap .listArea .searchList .viewBtn button { width: 82px; margin-left: 30px; padding: 4px 0; color: #008ae0; font-size: 14px; font-weight: 900; border: 1px solid #008ae0; text-align: center; flex-shrink: 0; } 
+.aiAbility .searchWrap .listArea .searchList .viewBtn button:hover { background: #008ae0; color: #fff; } 
+
+.aiAbility .aiEdu { background-image: url(../resource/images/ability/edu_bg.png); background-color: #efe6d7; background-repeat: no-repeat; background-position: bottom 20px center; } 
+.aiAbility .aiEdu .innerSection02 { padding: 60px 0; } 
+.aiAbility .aiEdu .mainBanner { display: flex; min-height: 225px; padding: 20px 42px; background: #fff; border-radius: 20px; align-items: center; justify-content: space-between; } 
+.aiAbility .aiEdu .mainBanner .titWrap { width: 310px; margin-right: 10px; flex-shrink: 0; } 
+.aiAbility .aiEdu .mainBanner .titWrap h2 { margin-bottom: 10px; color: #000; font-size: 36px; font-weight: 900; } 
+.aiAbility .aiEdu .mainBanner .titWrap p { color: #666666; font-size: 16px; font-weight: 300; word-break: keep-all; letter-spacing: -0.5px; } 
+.aiAbility .aiEdu .mainBanner ul { display: flex; max-width: 630px; width: 100%; flex-wrap: wrap; justify-content: space-between; gap: 10px; } 
+.aiAbility .aiEdu .mainBanner ul li { width: calc(100% / 2 - 5px); padding: 12px 0; position: relative; border: 3px solid #fff; text-align: center; border-radius: 50px; } 
+.aiAbility .aiEdu .mainBanner ul li::before { content: ''; width: calc(100% + 5px); height: calc(100% + 5px); position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border: 1px solid #c6c6c6; border-radius: 50px; } 
+.aiAbility .aiEdu .mainBanner ul li:nth-child(1) { background: #e5f0d5; } 
+.aiAbility .aiEdu .mainBanner ul li:nth-child(2) { background: #e2eaf7; } 
+.aiAbility .aiEdu .mainBanner ul li:nth-child(3) { background: #f4ecd0; } 
+.aiAbility .aiEdu .mainBanner ul li:nth-child(4) { background: #fae4e8; } 
+.aiAbility .aiEdu .mainBanner ul li p { color: #000; font-size: 18px; font-weight: 500; letter-spacing: -0.5px; } 
+.aiAbility .aiEdu .mainBanner ul li span { display: block; color: #000; font-size: 14px; font-weight: 300; letter-spacing: -0.5px; } 
+.aiAbility .searchWrap .listArea .searchList .listIcon { padding-left: 70px; position: relative; } 
+.aiAbility .searchWrap .listArea .searchList .listIcon::before { content: ''; width: 45px; height: 39px; position: absolute; left: 0; top: 50%; transform: translateY(-50%); background: url(../resource/images/ability/list_icon01.png) no-repeat; } 
+.aiAbility .searchWrap .listArea .searchList .tagList li { color: #666666; font-size: 18px; font-weight: 300; letter-spacing: -0.5px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; } 
+
+@media all and (max-width:1200px){
+ .aiAbility .innerSection { width: calc(100% - 20px); } 
+ }
 
 @media all and (max-width:1040px){
-    .aiResult_wrap{width:100%;padding:8px 16px 24px;}
-    .aiResult_wrap .tab_navi_wrap, .aiResult_wrap .result_wrap{width:100%;margin:0 auto 24px;}
-    .aiResult_wrap .tab_navi_wrap{padding-top:48px;}
-    .aiResult_wrap .tab_navi_wrap a.closeBtn{top:0;width:36px;height:36px;}
-    .aiResult_wrap .tab_navi_wrap .tab_navi .resultState{justify-content:center;padding:16px;font-size:12px;line-height:1.2;width:calc((100% - 16px) / 3);height:auto;}
-    .aiResult_wrap .tab_navi_wrap .tab_navi .resultState svg{display:none;}
-}
+ .aiResult_wrap { width:100%; padding:8px 16px 24px; } 
+ .aiResult_wrap .tab_navi_wrap, .aiResult_wrap .result_wrap { width:100%; margin:0 auto 24px; } 
+ .aiResult_wrap .tab_navi_wrap { padding-top:48px; } 
+ .aiResult_wrap .tab_navi_wrap a.closeBtn { top:0; width:36px; height:36px; } 
+ .aiResult_wrap .tab_navi_wrap .tab_navi .resultState { justify-content:center; padding:16px; font-size:12px; line-height:1.2; width:calc((100% - 16px) / 3); height:auto; } 
+ .aiResult_wrap .tab_navi_wrap .tab_navi .resultState svg { display:none; } 
+ }
 
 @media all and (max-width:1024px){
  .for_pc { display: block; } 
  .aiAbility .mainWrap .mainBanner::before,
  .aiAbility .mainWrap .mainBanner::after { content: none; } 
- .aiAbility .cont01 .innerSection { padding: 90px 20px 130px; } 
  .aiAbility .cont01 .listWrap { flex-direction: column; } 
  .aiAbility .cont01 .listWrap .contList { width: 100%; } 
  .aiAbility .cont02 .banner p span::before { content: none; } 
- .aiAbility .cont03 .innerSection { padding: 120px 20px 130px; } 
  .aiAbility .cont03 ul { gap: 20px; } 
  .aiAbility .cont03 ul li { width: calc(100% / 2 - 20px); } 
- .aiAbility .cont04 .innerSection { padding: 120px 20px; } 
- .aiAbility .cont05 .innerSection { padding: 120px 20px 130px; } 
+
+ /* 면접 가이드 */
+ .aiAbility .cont06 .tabArea { display: block; } 
+ .aiAbility .cont06 .guideWrap { width: 100%; } 
+ .aiAbility .cont06 .guideWrap .guideList { border: 0; border-bottom: 1px solid #cfcfcf; } 
+ .aiAbility .cont06 .guideList.scrollbar-outer { height: 190px; } 
+
+ .aiAbility .cont06 .innerSection { width: calc(100% - 20px); } 
+ .aiAbility .aiEdu .mainBanner { display: block; min-height: 100%; } 
+ .aiAbility .aiEdu .mainBanner .titWrap { max-width: 640px; width: 100%; margin: 0 auto 20px; } 
+ .aiAbility .aiEdu .mainBanner ul { margin: 0 auto; } 
+ .aiAbility .aiGuide .mainBanner { display: block; min-height: 100%; } 
+ .aiAbility .aiGuide .mainBanner .titWrap { max-width: 640px; width: 100%; margin: 0 auto 20px; } 
+ .aiAbility .aiGuide .mainBanner ul { margin: 0 auto; } 
  }
 
 @media all and (max-width:768px){
@@ -169,6 +279,12 @@ html{overflow: initial;}
  .aiAbility .cont02 .banner p { padding-right: 0; } 
  .aiAbility .cont03 ul { gap: 10px 0; } 
  .aiAbility .cont03 ul li { width: 100%; } 
+
+ /* 면접 가이드 */
+ .aiAbility .cont06 h3 span { display: block; margin-left: 0; } 
+ .aiAbility .searchWrap .listArea .searchList .item { display: block; } 
+ .aiAbility .searchWrap .listArea .searchList .viewBtn { margin-top: 20px; } 
+ .aiAbility .searchWrap .listArea .searchList .viewBtn button { width: 100%; margin-left: 0; } 
  }
 @media all and (max-width:640px){
  .aiAbility .mainWrap .innerSection { padding: 30px 10px; } 
@@ -178,7 +294,7 @@ html{overflow: initial;}
  .aiAbility .mainWrap .mainBanner .linkWrap { margin-top: 30px; display: flex; } 
  .aiAbility .cont01 .innerSection { padding: 30px 10px; } 
  .aiAbility .cont01 .contWrap { flex-direction: column; } 
- .aiAbility .cont01 .txtWrap {margin-right: 0;}
+ .aiAbility .cont01 .txtWrap { margin-right: 0; } 
  .aiAbility .cont01 .txtWrap strong { margin-bottom: 20px; font-size: 22px; } 
  .aiAbility .cont01 .txtWrap strong::after { width: 30px; height: 41px; right: -38px; } 
  .aiAbility .cont01 .txtWrap p { font-size: 14px; word-break: keep-all; } 
@@ -209,9 +325,61 @@ html{overflow: initial;}
  .aiAbility .cont05 .cont_slide .txtWrap .tit { font-size: 16px; } 
  .aiAbility .cont05 .cont_slide .txtWrap .tag { font-size: 12px; word-break: keep-all; } 
 
-.aiPopup { width: calc(100% - 20px); padding: 20px 20px;}
+.aiPopup { width: calc(100% - 20px); padding: 20px 20px; } 
 .aiPopup .pop_cont li { flex-direction: column; } 
-.aiPopup .pop_cont .select_style {width: 100%; margin-right: 0;}
+.aiPopup .pop_cont .select_style { width: 100%; margin-right: 0; } 
 .aiPopup .pop_cont li .p_tit { margin-right: 0; text-align: left; } 
 .aiPopup .pop_cont li .error_text { display: block; } 
+
+ /* 면접 가이드 */
+.aiAbility .cont06 h3::before { width: 30px; height: 27px; left: 0; top: 5px; background-size: contain; transform: none; } 
+.aiAbility .cont06 h3 span { font-size: 14px; } 
+.aiAbility .cont06 .tabList li a { padding: 12px 0; font-size: 16px; } 
+.aiAbility .cont06 .guideWrap .guideList li button { padding: 15px 0 15px 20px; font-size: 14px; } 
+.aiAbility .cont06 .resultWrap .resultList > li { display: block; padding: 15px 15px; } 
+.aiAbility .cont06 .resultWrap .resultList > li .tit { font-size: 16px; } 
+.aiAbility .cont06 .resultWrap .resultList > li .txt { font-size: 14px; } 
+.aiAbility .cont06 .resultWrap .resultList .tagWrap .tagTit { font-size: 12px; } 
+.aiAbility .cont06 .resultWrap .resultList .tagWrap .tagTit ~ span { margin-left: 6px; } 
+.aiAbility .cont06 .resultWrap .resultList .tagWrap .tag { font-size: 12px; } 
+.aiAbility .cont06 .resultWrap .resultList > li .viewBtn { margin-top: 20px; } 
+.aiAbility .cont06 .resultWrap .resultList > li .viewBtn button { width: 100%; margin-left: 0; } 
+.aiAbility .cont06 .resultWrap .resultList .tagList li { font-size: 14px; } 
+.aiAbility .cont06 .tabArea { margin-bottom: 30px; } 
+.aiAbility .cont06 .linkWrap a { padding: 10px 0; font-size: 14px; } 
+.aiAbility .cont06 .innerSection { padding-top: 30px; } 
+
+.aiAbility .aiEdu .innerSection02 { padding: 20px 0; } 
+.aiAbility .aiEdu .mainBanner { padding: 20px 15px; } 
+.aiAbility .aiEdu .mainBanner .titWrap h2 { font-size: 18px; } 
+.aiAbility .aiEdu .mainBanner .titWrap p { font-size: 14px; } 
+.aiAbility .aiEdu .mainBanner ul li { width: 100%; padding: 4px; border: 2px solid #fff; border-radius: 10px; word-break: keep-all; } 
+.aiAbility .aiEdu .mainBanner ul li::before { width: calc(100% + 4px); height: calc(100% + 4px); border-radius: 10px; } 
+.aiAbility .aiEdu .mainBanner ul li p { font-size: 14px; } 
+.aiAbility .aiEdu .mainBanner ul li span { font-size: 12px; } 
+.aiAbility .searchWrap .searchArea { height: 40px; margin-bottom: 30px; } 
+.aiAbility .searchWrap .searchArea input[type=text] { font-size: 14px; } 
+.aiAbility .searchWrap .listArea .topWrap p { margin-left: 12px; font-size: 18px; } 
+.aiAbility .searchWrap .listArea .topWrap { padding-bottom: 10px; } 
+.aiAbility .searchWrap .listArea .searchList .listIcon::before { content: none; } 
+.aiAbility .searchWrap .listArea .searchList .listIcon { padding-left: 0; } 
+.aiAbility .searchWrap .listArea .searchList .item { padding: 15px 15px; } 
+.aiAbility .searchWrap .listArea .searchList .tit { margin-bottom: 10px; font-size: 16px; } 
+.aiAbility .searchWrap .listArea .searchList .tagList li { font-size: 14px; } 
+
+.aiAbility .aiGuide .innerSection02 { padding: 20px 0; } 
+.aiAbility .aiGuide .mainBanner { padding: 20px 15px; } 
+.aiAbility .aiGuide .mainBanner .titWrap h2 { font-size: 18px; } 
+.aiAbility .aiGuide .mainBanner .titWrap p { font-size: 14px; } 
+.aiAbility .aiGuide .mainBanner ul { flex-wrap: wrap; gap: 8px; } 
+.aiAbility .aiGuide .mainBanner ul li { width: calc(100% / 3 - 6px); } 
+.aiAbility .aiGuide .mainBanner ul li::before { width: 65px; height: 65px; margin: 0 auto 4px; border: 2px solid #fff; outline: 1px solid #c6c6c6; background-size: 50%; } 
+.aiAbility .aiGuide .mainBanner ul li p { font-size: 12px; } 
+.aiAbility .searchWrap .listArea .searchList .logoWrap { height: 30px; margin-bottom: 4px; } 
+.aiAbility .searchWrap .listArea .searchList .txt { font-size: 14px; } 
+.aiAbility .searchWrap .listArea .searchList .tagTit { font-size: 12px; } 
+.aiAbility .searchWrap .listArea .searchList .tagTit ~ span { margin-left: 6px; } 
+.aiAbility .searchWrap .listArea .searchList .tag { font-size: 12px; } 
  }
+
+ /* //2024.07.01 합격 면접 자료 */
