@@ -200,9 +200,10 @@ html { overflow: initial; }
 .aiAbility .searchWrap .searchArea { width: 100%; height: 55px; margin-bottom: 60px; background-color: #f4f4f4; border: 1px solid #ececec; border-radius: 10px; text-align: center; box-sizing: border-box; } 
 .aiAbility .searchWrap .searchArea input[type=text] { max-width: 450px; width: 100%; height: 100%; padding: 10px 40px 10px 10px; font-size: 16px; background-color: #f4f4f4; background-image: url(../resource/images/ability/search_icon.png); background-position: center right 20px; background-repeat: no-repeat; text-align: center; box-sizing: border-box; border: 0; } 
 .aiAbility .searchWrap .searchArea input[type=text]:focus { border: 0; outline: 0; } 
-.aiAbility .searchWrap .listArea .topWrap { padding-bottom: 15px; border-bottom: 2px solid #707070; } 
+.aiAbility .searchWrap .listArea .topWrap { display: flex; padding-bottom: 15px; border-bottom: 2px solid #707070; align-items: center; justify-content: space-between;} 
 .aiAbility .searchWrap .listArea .topWrap p { margin-left: 20px; color: #000; font-size: 24px; font-weight: 300; } 
 .aiAbility .searchWrap .listArea .topWrap p span { color: #008ae0; font-weight: 900; } 
+.aiAbility .searchWrap .select_style01 { width: 160px; height: 34px; padding: 0 8px; background: #fff url(../resource/images/ability/ico_btn_style01.png) center right 10px no-repeat; color: #777777; font-size: 14px; border: solid 1px #e2e2e2; border-radius: 5px; cursor: pointer; } 
 .aiAbility .searchWrap .listArea .searchList .item { display: flex; padding: 15px 50px; align-items: center; justify-content: space-between; border-bottom: 1px solid #ededed; } 
 .aiAbility .searchWrap .listArea .searchList .logoWrap { height: 40px; padding: 2px 0; margin-bottom: 10px; } 
 .aiAbility .searchWrap .listArea .searchList .logoWrap img { height: 100%; } 
@@ -234,6 +235,7 @@ html { overflow: initial; }
 .aiAbility .searchWrap .listArea .searchList .listIcon { padding-left: 70px; position: relative; } 
 .aiAbility .searchWrap .listArea .searchList .listIcon::before { content: ''; width: 45px; height: 39px; position: absolute; left: 0; top: 50%; transform: translateY(-50%); background: url(../resource/images/ability/list_icon01.png) no-repeat; } 
 .aiAbility .searchWrap .listArea .searchList .tagList li { color: #666666; font-size: 18px; font-weight: 300; letter-spacing: -0.5px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; } 
+
 
 @media all and (max-width:1200px){
  .aiAbility .innerSection { width: calc(100% - 20px); } 
@@ -361,6 +363,7 @@ html { overflow: initial; }
 .aiAbility .searchWrap .searchArea input[type=text] { font-size: 14px; } 
 .aiAbility .searchWrap .listArea .topWrap p { margin-left: 12px; font-size: 18px; } 
 .aiAbility .searchWrap .listArea .topWrap { padding-bottom: 10px; } 
+.aiAbility .searchWrap .select_style01 { width: 130px; height: 30px; padding: 0 8px; font-size: 12px; } 
 .aiAbility .searchWrap .listArea .searchList .listIcon::before { content: none; } 
 .aiAbility .searchWrap .listArea .searchList .listIcon { padding-left: 0; } 
 .aiAbility .searchWrap .listArea .searchList .item { padding: 15px 15px; } 
