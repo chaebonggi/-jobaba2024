@@ -681,6 +681,8 @@ body.scrollLock { overflow: hidden; }
 /* cont_list */ 
 .contents-wrap .job_info_wrap .select_style01 { width: 120px; height: 34px; padding: 0 8px; background: #fff url(../../../page/images/main_2024/sub/ico_btn_style01.png) center right 10px no-repeat; color: #777777; font-size: 14px; border: solid 1px #e2e2e2; border-radius: 5px; cursor: pointer; } 
 .contents-wrap .job_info_wrap .select_style01.sw100 { width: 100px; } 
+/* 2024.07.08 css 추가 수정 */
+.contents-wrap .job_info_wrap .content_wrap .cont_list {padding-bottom: 30px;}
 .contents-wrap .job_info_wrap .content_wrap .cont_list .tit_wrap { display: flex; padding-bottom: 10px; align-items: center; border-bottom: 1px solid #bbbbbb; } 
 .contents-wrap .job_info_wrap .content_wrap .cont_list .tit_wrap ul { margin-left: auto; } 
 .contents-wrap .job_info_wrap .content_wrap .cont_list .tit_wrap ul li { display: inline-flex; } 
@@ -690,14 +692,17 @@ body.scrollLock { overflow: hidden; }
 /* s: 2024.07.01 css 추가 수정 */
 .contents-wrap .job_info_wrap .content_wrap .cont_list_area .cont_area.type02 > a { display: flex; width: calc(100% - 80px); align-items: center; z-index: 90; } 
 .contents-wrap .job_info_wrap .content_wrap .cont_list_area .cont_area .s_tit_wrap { display: flex; margin-bottom: 10px; align-items: center; } 
-.contents-wrap .job_info_wrap .content_wrap .cont_list_area .cont_area .txt_wrap a {display: block;}
-.contents-wrap .job_info_wrap .content_wrap .cont_list_area > li { display: flex; padding: 30px 0; align-items: center; border-bottom: 1px solid #eaeaea; } 
+.contents-wrap .job_info_wrap .content_wrap .cont_list_area .cont_area .txt_wrap a { display: block; } 
+/* 2024.07.08 css 추가 수정 */
+.contents-wrap .job_info_wrap .content_wrap .cont_list_area > li { display: flex; padding: 30px 0; position: relative; align-items: center; border-bottom: 1px solid #eaeaea; } 
+.contents-wrap .job_info_wrap .content_wrap .cont_list_area > li:nth-child(odd) { z-index: 1; } 
+.contents-wrap .job_info_wrap .content_wrap .cont_list_area > li:nth-child(even) { z-index: 2; }
 .contents-wrap .job_info_wrap .content_wrap .cont_list_area .cont_area { display: flex; width: calc(100% - 80px); align-items: center; z-index: 90; } 
 .contents-wrap .job_info_wrap .content_wrap .cont_list_area .img_wrap { width: 225px; height: 170px; margin-right: 30px; border-radius: 10px; overflow: hidden; flex-shrink: 0; } 
-.contents-wrap .job_info_wrap .content_wrap .cont_list_area .img_wrap a {display: block;}
+.contents-wrap .job_info_wrap .content_wrap .cont_list_area .img_wrap a { display: block; } 
 .contents-wrap .job_info_wrap .content_wrap .cont_list_area .img_wrap img { height: 100%; background-size: cover; } 
 .contents-wrap .job_info_wrap .content_wrap .cont_list_area .txt_wrap .c_tit { color: #008ae0; font-size: 16px; } 
-/* .contents-wrap .job_info_wrap .content_wrap .cont_list_area .txt_wrap .s_tit_area { display: flex; margin-bottom: 10px; align-items: center; }  */
+/* .contents-wrap .job_info_wrap .content_wrap .cont_list_area .txt_wrap .s_tit_area { display: flex; margin-bottom: 10px; align-items: center; } */
 .contents-wrap .job_info_wrap .content_wrap .cont_list_area .txt_wrap .s_tit { color: #000000; font-size: 20px; display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; -webkit-line-clamp: 1; text-overflow: ellipsis; } 
 .contents-wrap .job_info_wrap .content_wrap .cont_list_area .txt_wrap .d_day { padding: 0 12px; margin-left: 12px; background: #f4f4f4; color: #ff0101; font-size: 10px; font-weight: 900; border: 1px solid #cecece; border-radius: 20px; flex-shrink: 0; } 
 .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list > li { display: flex; align-items: flex-start; } 
@@ -842,20 +847,10 @@ body.scrollLock { overflow: hidden; }
  .contents-wrap .job_info_wrap .select_style01 { width: 100px; font-size: 12px; } 
  .contents-wrap .job_info_wrap .content_wrap .cont_list_area .btn_area { display: none; } 
  .contents-wrap .job_info_wrap .content_wrap .cont_list_area > li { display: flex; width: calc(100% - 20px); padding: 20px 20px; margin: 0 auto; position: relative; background: #fff; border-bottom: 0; box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.08); border-radius: 20px; } 
- .contents-wrap .job_info_wrap .content_wrap .cont_list_area > li:nth-child(1) { z-index: 10; } 
- .contents-wrap .job_info_wrap .content_wrap .cont_list_area > li:nth-child(2) { z-index: 9; } 
- .contents-wrap .job_info_wrap .content_wrap .cont_list_area > li:nth-child(3) { z-index: 8; } 
- .contents-wrap .job_info_wrap .content_wrap .cont_list_area > li:nth-child(4) { z-index: 7; } 
- .contents-wrap .job_info_wrap .content_wrap .cont_list_area > li:nth-child(5) { z-index: 6; } 
- .contents-wrap .job_info_wrap .content_wrap .cont_list_area > li:nth-child(6) { z-index: 5; } 
- .contents-wrap .job_info_wrap .content_wrap .cont_list_area > li:nth-child(7) { z-index: 4; } 
- .contents-wrap .job_info_wrap .content_wrap .cont_list_area > li:nth-child(8) { z-index: 3; } 
- .contents-wrap .job_info_wrap .content_wrap .cont_list_area > li:nth-child(9) { z-index: 2; } 
- .contents-wrap .job_info_wrap .content_wrap .cont_list_area > li:nth-child(10) { z-index: 1; } 
  .contents-wrap .job_info_wrap .content_wrap .cont_list_area > li + li { margin-top: 20px; } 
  .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_txt_area .edu_link .edu_link_list { right: initial; left: 0; } 
 /* s: 2024.07.01 css 추가 수정 */
- .contents-wrap .job_info_wrap .content_wrap .cont_list_area .cont_area.type02 > a {width: 100%;}
+ .contents-wrap .job_info_wrap .content_wrap .cont_list_area .cont_area.type02 > a { width: 100%; } 
 /* e: 2024.07.01 css 추가 수정 */
  .contents-wrap .job_info_wrap .content_wrap .cont_list_area .cont_area { width: 100%; } 
  .contents-wrap .job_info_wrap .content_wrap .cont_list_area .info_list .d_tag { display: none; } 
@@ -897,4 +892,4 @@ body.scrollLock { overflow: hidden; }
  .contents-wrap .job_info_wrap .content_wrap .cont_top .tab_list_wrap ul li.active a { color: #000; } 
  .contents-wrap .job_info_wrap .content_wrap .cont_top .tab_list_wrap ul li .ct_txt em { color: #008ae0; } 
  .contents-wrap .job_info_wrap .content_wrap .cont_top .tab_list_wrap ul li:last-child { border-right: 0; } 
-}
+ }
