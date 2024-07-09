@@ -2707,6 +2707,13 @@
                 keywordsWrap.show();
             }
         }
+
+        // 2024.07.09 스크립트 추가
+        var totalItems = $('.contents-wrap .cont_list_area > li').length;
+        $('.contents-wrap .cont_list_area > li').each(function(index) {
+            var zIndex = totalItems - index;
+            $(this).css('z-index', zIndex);
+        });
 		
 	</script>
 
