@@ -43,8 +43,9 @@
 .workExpWrap .item .bottom .date{font-size: 14px;color: #666;}
 .workExpWrap .item .contact{display: none}
 .workExpWrap .item .contact > p{font-size: 16px;font-weight: 500;margin-top: 20px;margin-bottom: 10px}
+.workExpWrap .item .contact ul {width: calc(100% - 200px);}
 .workExpWrap .item .contact .flex{display: flex;justify-content: space-between;align-items: flex-end}
-.workExpWrap .item .contact .flex li{font-size: 14px;color: #565454;margin-bottom: 5px}
+.workExpWrap .item .contact .flex li{font-size: 14px;color: #565454;margin-bottom: 5px; white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
 .workExpWrap .item .contact .flex li:last-child{margin-bottom: 0}
 .workExpWrap .item .contact .flex button{background: #00a8cd;color: #fff;font-size: 14px;font-weight: 500;padding: 6px 50px;border-radius: 3px; white-space: nowrap;}
 .workExpWrap .ex_lower{background: #f8f8f8;padding: 60px  0;margin-top: 60px}
@@ -85,7 +86,10 @@
 	.workExpWrap .item .bottom {font-size: 14px}
 	.workExpWrap .item .bottom .etc span{font-size: 14px}
 	.workExpWrap .item .contact p{font-size: 14px;margin-top: 0}
+	.workExpWrap .item .contact ul {width: 100%;}
 	.workExpWrap .item .contact .flex li{font-size: 13px}
+	.workExpWrap .item .contact .flex button{margin-top: 20px;margin-left: auto;display: block;}
+	.workExpWrap .item .contact .flex{display: block;}
 
 	.workExpWrap .ex_lower{padding: 50px 0}
 	.workExpWrap .ex_lower > div > div{display: block;}
@@ -108,12 +112,11 @@
 
 @media all and (max-width:480px){
 	.workExpWrap .tabs ul li a{font-size: 13px;padding: 10px}
-	.workExpWrap .tabs ul li a .num{display: block;}
+	.workExpWrap .tabs ul li a .num{display: none;}
 	.workExpWrap .we_search{display: block;}
 	.workExpWrap .we_search input[type=text]{width: 100%;margin-bottom: 10px}
 	.workExpWrap .we_search .btn_wrap{text-align: center;}
-	.workExpWrap .item .contact .flex{display: block;}
-	.workExpWrap .item .contact .flex button{margin-top: 20px;margin-left: auto;display: block;}
+	.workExpWrap .item .contact .flex button{margin: 20px auto 0;}	
 	.workExpWrap .ex_lower{margin-top: 40px}
 	.workExpWrap .item .contact .flex p{width: 100%}
 
