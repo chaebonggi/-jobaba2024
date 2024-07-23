@@ -33,7 +33,7 @@
 .workExpWrap .item .name{font-size: 16px;color: #787878;}
 .workExpWrap .item .tit{font-size: 20px;font-weight: 500;margin: 5px 0 20px 0}
 .workExpWrap .item .bottom{display: flex;justify-content: space-between;}
-.workExpWrap .item .bottom .etc{color: #787878;}
+.workExpWrap .item .bottom .etc{color: #787878; white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
 .workExpWrap .item .bottom .etc span{position: relative;padding-right: 10px;margin-right: 10px;}
 .workExpWrap .item .bottom .etc span:after{content: '';width: 1px;height: 14px;background: #787878;display: block;position: absolute;right: 0;top: 50%;transform: translateY(-50%)}
 .workExpWrap .item .bottom .etc span:last-child{margin-right: 0;padding-right: 0;border-right: 0}

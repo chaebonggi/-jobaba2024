@@ -681,10 +681,10 @@ body.scrollLock { overflow: hidden; }
 /* cont_list */ 
 .contents-wrap .job_info_wrap .select_style01 { width: 120px; height: 34px; padding: 0 8px; background: #fff url(../../../page/images/main_2024/sub/ico_btn_style01.png) center right 10px no-repeat; color: #777777; font-size: 14px; border: solid 1px #e2e2e2; border-radius: 5px; cursor: pointer; } 
 .contents-wrap .job_info_wrap .select_style01.sw100 { width: 100px; } 
-/* 2024.07.08 css 추가 수정 */
+/* 2024.07.23 css 추가 수정 */
 .contents-wrap .job_info_wrap .content_wrap .cont_list {padding-bottom: 30px;}
-.contents-wrap .job_info_wrap .content_wrap .cont_list .tit_wrap { display: flex; padding-bottom: 10px; align-items: center; border-bottom: 1px solid #bbbbbb; } 
-.contents-wrap .job_info_wrap .content_wrap .cont_list .tit_wrap ul { margin-left: auto; } 
+.contents-wrap .job_info_wrap .content_wrap .cont_list .tit_wrap {padding-bottom: 10px; position: relative; border-bottom: 1px solid #bbbbbb; text-align: right;} 
+.contents-wrap .job_info_wrap .content_wrap .cont_list .tit_wrap .check_wrap {position: absolute; top: 0; left: 0;}
 .contents-wrap .job_info_wrap .content_wrap .cont_list .tit_wrap ul li { display: inline-flex; } 
 .contents-wrap .job_info_wrap .content_wrap .cont_list .tit_wrap ul li + li { margin-left: 10px; } 
 
