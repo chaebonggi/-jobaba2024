@@ -104,6 +104,12 @@
 #newHeader .h_mobile_sns li a.youtu { background-image: url(../images/icon_youtube.png); } 
 #newHeader .h_mobile_sns li a.app { background-image: url(../images/icon_appstore.png); } 
 #newHeader .h_mobile_sns li a.play { background-image: url(../images/icon_playstore.png); } 
+#newHeader .searchCont { margin: 20px auto; padding: 0 15px; position: relative; } 
+#newHeader .searchCont .inputSearch { width: 100%; height: 30px; padding: 0 10px 10px 30px; background: transparent; font-size: 14px; border: 0; border-bottom: 2px solid #2a61f9; } 
+#newHeader .searchCont .inputSearch:focus { outline: inherit; } 
+#newHeader .searchCont button { width: 18px; height: 18px; position: absolute; bottom: 12px; left: 20px; background: url(../images/icon_search_btn.png) center no-repeat; background-size: contain; border: none; } 
+#newHeader .searchCont button:focus { outline: none; border: none; } 
+
  
  #newMain .innerSection { max-width: 1260px; margin: 0 auto; } 
  #newMain .fcRed { color: #ff0000 !important; } 
@@ -113,10 +119,10 @@
  #newMain .visualWrap { display: flex; justify-content: space-between; } 
  #newMain .mainVisual .visualCont { width: calc(100% - 360px); padding: 60px 10px 25px; background-image: url(../images/visual_cont_01.png), url(../images/visual_cont_02.png); background-repeat: no-repeat; background-position: left bottom, right top; border: 1px solid #2a61f9; border-radius: 20px; box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1); } 
  #newMain .mainVisual .searchCont { max-width: 570px; margin: 0 auto 25px; position: relative; } 
- #newMain .mainVisual .searchCont .inputSearch { width: 100%; height: 46px; padding: 0 46px 20px 20px; background: transparent; font-size: 16px; border: 0; border-bottom: 4px solid #2a61f9; } 
+ #newMain .mainVisual .searchCont .inputSearch { width: 100%; height: 46px; padding: 0 20px 20px 46px; background: transparent; font-size: 16px; border: 0; border-bottom: 4px solid #2a61f9; } 
  #newMain .mainVisual .searchCont .inputSearch:focus { outline: inherit; } 
- #newMain .mainVisual .searchCont button { width: 27px; height: 27px; position: absolute; bottom: 20px; right: 16px; background: url(../images/icon_search_btn.png) center no-repeat; background-size: contain; border: none; } 
- #newMain .mainVisual .searchCont button:focus { outline: none; border: none; } 
+ #newMain .mainVisual .searchCont button { width: 27px; height: 27px; position: absolute; bottom: 20px; left: 10px; background: url(../images/icon_search_btn.png) center no-repeat; background-size: contain; border: none; } 
+ #newMain .mainVisual .searchCont button:focus { outline: none; border: none; }  
  #newMain .mainVisual .visualItem { display: flex; max-width: 570px; margin: 0 auto; flex-wrap: wrap; justify-content: space-between; } 
  #newMain .mainVisual .visualItem li { width: 102px; height: 112px; margin-bottom: 10px; border: 1px solid transparent; box-sizing: border-box; } 
  #newMain .mainVisual .visualItem li a { display: block; height: 100%; padding: 12px 0; color: #666666; font-size: 16px; font-weight: 400; letter-spacing: -1px; text-align: center; } 
@@ -492,8 +498,8 @@
 #newHeader .bottomMenu { border-top: 3px solid #2a61f9; border-bottom: 1px solid #dadada; } 
 #newHeader .newGnb { display: none; } 
 
-#newMain .mainVisual .searchCont .inputSearch { height: 30px; padding: 0 20px 20px 10px; border-bottom: 2px solid #2a61f9; } 
-#newMain .mainVisual .searchCont button { width: 14px; height: 14px; bottom: 14px; } 
+#newMain .mainVisual .searchCont .inputSearch { height: 30px; padding: 4px 10px 10px 34px; border-bottom: 2px solid #2a61f9; } 
+#newMain .mainVisual .searchCont button { width: 18px; height: 18px; bottom: 10px; } 
 #newMain .mainVisual .visualCont { padding: 30px 10px 30px; background-size: auto 50%; } 
 #newMain .mainBanner .swiper-container { padding: 0 0 46px; margin: 0 auto 10px; } 
 #newMain .mainVisual .itemSwiper { overflow: hidden; } 
