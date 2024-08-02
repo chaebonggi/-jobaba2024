@@ -321,6 +321,7 @@ enterSlide.find('.swiper-container').each(function(i){
         },
     });
 });
+
 var indSlide = $('#newMain .indWrap .tabItem');
 indSlide.find('.swiper-container').each(function(i){
     $(this).find(".swiper-pagination").addClass("type"+i);
@@ -388,42 +389,59 @@ if ($.fn.scrollbar) {
 }
 
  // 모바일 체크박스 탭
- const mtabButton = $(".moFindBtn .mo_cont_list li");
- const mtabContent = $(".moFindBtn .mo_cont_Wrap .mo_cont_box");
- mtabButton.on("click", function(){
-     let tabIdx = $(this).index();
-     mtabButton.removeClass("active");
-     $(this).addClass("active");
-     mtabContent.removeClass("active");
-     mtabContent.eq(tabIdx).addClass("active");
- });
- const mBottomCont = $('.moFindBtn');
- const mPopupOpenBtn = mBottomCont.find('.btn_pop_open');
- const mSearchBtn = mBottomCont.find('.btn_search');
- const mPopCloseBtn = mBottomCont.find('.mo_btn_close');
- const mLayerTop = $(".m_find_top");
- const mLayerBottom = $(".m_find_bottom");
- const dimShadow = $('#newMain .dim_shadow');
- mPopupOpenBtn.on("click", function(){
-     mBottomCont.addClass('on');
-     $(this).hide();
-     mSearchBtn.show();
-     $('body').addClass('scrollLock');
- });
- mPopCloseBtn.on("click", function(){
-     mBottomCont.removeClass('on');
-     mPopupOpenBtn.show();
-     $('body').removeClass('scrollLock');
- });
- mSearchBtn.on("click", function(){ 
-     mBottomCont.removeClass('on');
-     mPopupOpenBtn.show();
-     $('body').removeClass('scrollLock');
- });
- $(document).mouseup(function (e) {
-    if (!mLayerTop.is(e.target) && mLayerTop.has(e.target).length === 0 && !mLayerBottom.is(e.target) && mLayerBottom.has(e.target).length === 0) {
+// 2024.08.02 모바일 클레스 추가 스크립트 수정
+const findBtnClasses = [".polFindBtn", ".jobFindBtn"];
+findBtnClasses.forEach(function(btnClass) {
+    const mtabButton = $(`${btnClass} .mo_cont_list li`);
+    const mtabContent = $(`${btnClass} .mo_cont_Wrap .mo_cont_box`);
+
+    mtabButton.on("click", function() {
+        let tabIdx = $(this).index();
+        mtabButton.removeClass("active");
+        $(this).addClass("active");
+        mtabContent.removeClass("active");
+        mtabContent.eq(tabIdx).addClass("active");
+    });
+
+    const mBottomCont = $(btnClass);
+    const mPopupOpenBtn = mBottomCont.find('.btn_pop_open');
+    const mSearchBtn = mBottomCont.find('.btn_search');
+    const mPopCloseBtn = mBottomCont.find('.mo_btn_close');
+    const mLayerTop = mBottomCont.find(".m_find_top");
+    const mLayerBottom = mBottomCont.find(".m_find_bottom");
+    const dimShadow = $('#newMain .dim_shadow');
+
+    mPopupOpenBtn.on("click", function() {
+        mBottomCont.addClass('on');
+        $(this).hide();
+        mSearchBtn.show();
+        $('body').addClass('scrollLock');
+    });
+
+    mPopCloseBtn.on("click", function() {
         mBottomCont.removeClass('on');
         mPopupOpenBtn.show();
         $('body').removeClass('scrollLock');
-    }
+    });
+
+    mSearchBtn.on("click", function() {
+        mBottomCont.removeClass('on');
+        mPopupOpenBtn.show();
+        $('body').removeClass('scrollLock');
+    });
+    
+    $(document).mouseup(function (e) {
+        if (!mLayerTop.is(e.target) && mLayerTop.has(e.target).length === 0 && !mLayerBottom.is(e.target) && mLayerBottom.has(e.target).length === 0) {
+            mBottomCont.removeClass('on');
+            mPopupOpenBtn.show();
+            $('body').removeClass('scrollLock');
+        }
+    });
 });
+function srchInit() {
+    $("[name^='chkPolicy']").prop("checked", false);
+    $("[name^='m_chkPolicy']").prop("checked", false);
+    $("[name^='chkJob']").prop("checked", false);
+    $("[name^='m_chkJob']").prop("checked", false);     
+}
+// 2024.08.02 모바일 클레스 추가 스크립트 수정

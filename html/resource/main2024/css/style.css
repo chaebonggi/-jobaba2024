@@ -396,181 +396,211 @@
 
  /* 모바일 찾기 메뉴 */
  body.scrollLock { overflow: hidden; } 
-#newMain .moFindBtn { display: none; position: relative; z-index: 600; } 
+ /* 2024.08.02 모바일 클레스 추가 */
+#newMain .jobFindBtn,
+#newMain .polFindBtn { display: none; position: relative; z-index: 600; } 
 #newMain .dim_shadow { display: none; position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 100; background-color: rgba(0, 0, 0, 0.7); } 
-#newMain .moFindBtn.on .dim_shadow { display: block; } 
-#newMain .moFindBtn .m_find_top { width: 100%; padding-bottom: 50px; position: fixed; bottom: 0; background: #fff; border-radius: 25px 25px 0 0; transform: translateY(100%); transition: transform 0.3s ease-in-out; z-index: 200; } 
-#newMain .moFindBtn.on .m_find_top { transform: translateY(0); } 
-#newMain .moFindBtn .m_find_top .tit_wrap { display: flex; justify-content: space-between; padding: 22px 18px; border-bottom: 1px solid #dfdfdf; } 
-#newMain .moFindBtn .m_find_top .tit { display: block; color: #000; font-size: 14px; font-weight: 500; } 
-#newMain .moFindBtn .m_find_top .tit_wrap .mo_btn_close { width: 18px; height: 18px; background: url(../images/close_type03_icon.png); border: none; } 
-#newMain .moFindBtn .m_find_top .mo_content { display: flex; } 
-#newMain .moFindBtn .m_find_top .mo_cont_list { background: #f3f3f3; } 
-#newMain .moFindBtn .m_find_top .mo_cont_list li { width: 90px; height: 50px; border-bottom: 1px solid #dfdfdf; } 
-#newMain .moFindBtn .m_find_top .mo_cont_list button { display: block; width: 100%; height: 100%; background: #f3f3f3; color: #777777; font-size: 13px; border: none; } 
-#newMain .moFindBtn .m_find_top .mo_cont_list li.active button { background: #fff; } 
-#newMain .moFindBtn .m_find_top .mo_cont_Wrap { width: 100%; height: 251px; border: 1px solid #dfdfdf; border-top: none; border-right: none; overflow-y: scroll; } 
-#newMain .moFindBtn .m_find_top .mo_cont_Wrap.type02 { height: 401px; } 
-#newMain .moFindBtn .m_find_top .mo_cont_Wrap .mo_cont_box { display: none; } 
-#newMain .moFindBtn .m_find_top .mo_cont_Wrap .mo_cont_box.active { display: block; } 
-#newMain .moFindBtn .m_find_top .mo_cont_Wrap .m_check_list .item { display: block; width: 100%; height: 50px; background: #fff; border-bottom: 1px solid #e2e7ed; box-sizing: border-box; } 
-#newMain .moFindBtn .m_find_top .mo_cont_Wrap .m_check_list .item .lb_tag { display: block; padding-left: 10px; color: #000; font-size: 13px; font-weight: 300; line-height: 50px; } 
-#newMain .moFindBtn .m_find_top .mo_cont_Wrap .m_check_list .inp_chk:checked + .lb_tag { color: #008ae0; } 
-#newMain .moFindBtn .m_find_bottom { width: 100%; height: 50px; position: fixed; bottom: 0; z-index: 200; } 
-#newMain .moFindBtn .m_find_bottom ul { display: flex; height: 50px; box-shadow: 0px 0px 20px 0px rgba(34, 37, 75, 0.4); } 
-#newMain .moFindBtn .m_find_bottom ul li { width: 100%; } 
-#newMain .moFindBtn .m_find_bottom ul li:first-child { width: 60px; } 
-#newMain .moFindBtn .m_find_bottom .btn_reset { background: url(../images/reset__type02_icon.png) #fff center no-repeat; background-size: 28px; } 
-#newMain .moFindBtn .m_find_bottom .btn_pop_open { background: #008ae0; color: #fff; font-size: 14px; font-weight: 500; } 
-#newMain .moFindBtn .m_find_bottom .btn_search { display: none; background: #008ae0; color: #fff; font-size: 14px; font-weight: 500; } 
-#newMain .moFindBtn .m_find_bottom ul button { display: block; width: 100%; height: 100%; border: none; } 
+#newMain .jobFindBtn.on .dim_shadow,
+#newMain .polFindBtn.on .dim_shadow { display: block; } 
+#newMain .jobFindBtn .m_find_top,
+#newMain .polFindBtn .m_find_top { width: 100%; padding-bottom: 50px; position: fixed; bottom: 0; background: #fff; border-radius: 25px 25px 0 0; transform: translateY(100%); transition: transform 0.3s ease-in-out; z-index: 200; } 
+#newMain .jobFindBtn.on .m_find_top,
+#newMain .polFindBtn.on .m_find_top { transform: translateY(0); } 
+#newMain .jobFindBtn .m_find_top .tit_wrap,
+#newMain .polFindBtn .m_find_top .tit_wrap { display: flex; justify-content: space-between; padding: 22px 18px; border-bottom: 1px solid #dfdfdf; } 
+#newMain .jobFindBtn .m_find_top .tit,
+#newMain .polFindBtn .m_find_top .tit { display: block; color: #000; font-size: 14px; font-weight: 500; } 
+#newMain .jobFindBtn .m_find_top .tit_wrap .mo_btn_close,
+#newMain .polFindBtn .m_find_top .tit_wrap .mo_btn_close { width: 18px; height: 18px; background: url(../images/close_type03_icon.png); border: none; } 
+#newMain .jobFindBtn .m_find_top .mo_content,
+#newMain .polFindBtn .m_find_top .mo_content { display: flex; } 
+#newMain .jobFindBtn .m_find_top .mo_cont_list,
+#newMain .polFindBtn .m_find_top .mo_cont_list { background: #f3f3f3; } 
+#newMain .jobFindBtn .m_find_top .mo_cont_list li,
+#newMain .polFindBtn .m_find_top .mo_cont_list li { width: 90px; height: 50px; border-bottom: 1px solid #dfdfdf; }
+#newMain .jobFindBtn .m_find_top .mo_cont_list button,
+#newMain .polFindBtn .m_find_top .mo_cont_list button { display: block; width: 100%; height: 100%; background: #f3f3f3; color: #777777; font-size: 13px; border: none; }
+#newMain .jobFindBtn .m_find_top .mo_cont_list li.active button,
+#newMain .polFindBtn .m_find_top .mo_cont_list li.active button { background: #fff; } 
+#newMain .jobFindBtn .m_find_top .mo_cont_Wrap,
+#newMain .polFindBtn .m_find_top .mo_cont_Wrap { width: 100%; height: 251px; border: 1px solid #dfdfdf; border-top: none; border-right: none; overflow-y: scroll; } 
+#newMain .jobFindBtn .m_find_top .mo_cont_Wrap.type02,
+#newMain .polFindBtn .m_find_top .mo_cont_Wrap.type02 { height: 401px; } 
+#newMain .jobFindBtn .m_find_top .mo_cont_Wrap .mo_cont_box,
+#newMain .polFindBtn .m_find_top .mo_cont_Wrap .mo_cont_box { display: none; } 
+#newMain .jobFindBtn .m_find_top .mo_cont_Wrap .mo_cont_box.active,
+#newMain .polFindBtn .m_find_top .mo_cont_Wrap .mo_cont_box.active { display: block; } 
+#newMain .jobFindBtn .m_find_top .mo_cont_Wrap .m_check_list .item,
+#newMain .polFindBtn .m_find_top .mo_cont_Wrap .m_check_list .item { display: block; width: 100%; height: 50px; background: #fff; border-bottom: 1px solid #e2e7ed; box-sizing: border-box; } 
+#newMain .jobFindBtn .m_find_top .mo_cont_Wrap .m_check_list .item .lb_tag,
+#newMain .polFindBtn .m_find_top .mo_cont_Wrap .m_check_list .item .lb_tag { display: block; padding-left: 10px; color: #000; font-size: 13px; font-weight: 300; line-height: 50px; } 
+#newMain .jobFindBtn .m_find_top .mo_cont_Wrap .m_check_list .inp_chk:checked + .lb_tag,
+#newMain .polFindBtn .m_find_top .mo_cont_Wrap .m_check_list .inp_chk:checked + .lb_tag { color: #008ae0; } 
+#newMain .jobFindBtn .m_find_bottom,
+#newMain .polFindBtn .m_find_bottom { width: 100%; height: 50px; position: fixed; bottom: 0; z-index: 200; } 
+#newMain .jobFindBtn .m_find_bottom ul,
+#newMain .polFindBtn .m_find_bottom ul { display: flex; height: 50px; box-shadow: 0px 0px 20px 0px rgba(34, 37, 75, 0.4); } 
+#newMain .jobFindBtn .m_find_bottom ul li,
+#newMain .polFindBtn .m_find_bottom ul li { width: 100%; } 
+#newMain .jobFindBtn .m_find_bottom ul li:first-child,
+#newMain .polFindBtn .m_find_bottom ul li:first-child { width: 60px; } 
+#newMain .jobFindBtn .m_find_bottom .btn_reset,
+#newMain .polFindBtn .m_find_bottom .btn_reset { background: url(../images/reset__type02_icon.png) #fff center no-repeat; background-size: 28px; } 
+#newMain .jobFindBtn .m_find_bottom .btn_pop_open,
+#newMain .polFindBtn .m_find_bottom .btn_pop_open { background: #008ae0; color: #fff; font-size: 14px; font-weight: 500; } 
+#newMain .jobFindBtn .m_find_bottom .btn_search,
+#newMain .polFindBtn .m_find_bottom .btn_search { display: none; background: #008ae0; color: #fff; font-size: 14px; font-weight: 500; } 
+#newMain .jobFindBtn .m_find_bottom ul button,
+#newMain .polFindBtn .m_find_bottom ul button { display: block; width: 100%; height: 100%; border: none; } 
+/*// 2024.08.02 모바일 클레스 추가 */
 
 @media screen and (max-width: 1300px){
- #newHeader .innerSection { width: calc(100% - 20px); } 
- #newMain .mainBanner .swiper-container { max-width: 100%; padding: 0 0 60px 0; } 
- #newMain .innerSection { width: calc(100% - 20px); }
- #newFooter .innerSection {width: calc(100% - 20px);}
+    #newHeader .innerSection { width: calc(100% - 20px); } 
+    #newMain .mainBanner .swiper-container { max-width: 100%; padding: 0 0 60px 0; } 
+    #newMain .innerSection { width: calc(100% - 20px); }
+    #newFooter .innerSection {width: calc(100% - 20px);}
  }
 
 @media screen and (max-width: 1200px){
- #newMain .mainVisual .visualCont { background-size: auto 60%; } 
+    #newMain .mainVisual .visualCont { background-size: auto 60%; } 
  }
 
 @media screen and (max-width: 1024px){
- #newHeader .bottomMenu .searchBox { display: none; } 
-#newHeader .bottomMenu .util { display: none; } 
-#newHeader .m_menu { display: flex; } 
-#newHeader .newGnb .depth1 > li.moveLink { display: none; } 
-#newHeader .newGnb .depth1 > li > a { justify-content: center; } 
+    #newHeader .bottomMenu .searchBox { display: none; } 
+    #newHeader .bottomMenu .util { display: none; } 
+    #newHeader .m_menu { display: flex; } 
+    #newHeader .newGnb .depth1 > li.moveLink { display: none; } 
+    #newHeader .newGnb .depth1 > li > a { justify-content: center; } 
 
-#newMain .pageWrap .innerSection { width: 100%; } 
+    #newMain .pageWrap .innerSection { width: 100%; } 
  }
 
 @media screen and (max-width: 860px){
- #newMain .mainVisual .visualCont { width: 100%; } 
-#newMain .mainVisual .loginForm { display: none; } 
+    #newMain .mainVisual .visualCont { width: 100%; } 
+    #newMain .mainVisual .loginForm { display: none; } 
 
-#newMain .mainBanner .swiper-slide .imgWrap { height: auto; } 
-#newMain .mainBanner .swiper-slide .imgWrap .x1 { display: block; max-height: 390px; object-fit: cover; } 
-#newMain .mainBanner .swiper-slide .imgWrap .x2 { display: none; } 
-#newMain .mainBanner .swiper-wrapper { margin-left: 0; } 
-#newMain .mainBanner .swiper-slide { margin-right: 0; } 
-#newMain .mainBanner .changing,
-#newMain .mainBanner .changed { transform:none; -ms-user-select: none; -moz-user-select: -moz-none; -khtml-user-select: none; -webkit-user-select: none; user-select: none; } 
-#newMain .mainBanner .swiper-slide-active ~ .changing,
-#newMain .mainBanner .swiper-slide-active ~ .changed { transform:none; } 
-#newMain .mainBanner .changing.swiper-slide-active .imgWrap,
-#newMain .mainBanner .changed.swiper-slide-active .imgWrap { transform:none; } 
-#newMain .mainBanner .changing.swiper-slide-active,
-#newMain .mainBanner .changed.swiper-slide-active { transform:none; border-radius: 20px; } 
+    #newMain .mainBanner .swiper-slide .imgWrap { height: auto; } 
+    #newMain .mainBanner .swiper-slide .imgWrap .x1 { display: block; max-height: 390px; object-fit: cover; } 
+    #newMain .mainBanner .swiper-slide .imgWrap .x2 { display: none; } 
+    #newMain .mainBanner .swiper-wrapper { margin-left: 0; } 
+    #newMain .mainBanner .swiper-slide { margin-right: 0; } 
+    #newMain .mainBanner .changing,
+    #newMain .mainBanner .changed { transform:none; -ms-user-select: none; -moz-user-select: -moz-none; -khtml-user-select: none; -webkit-user-select: none; user-select: none; } 
+    #newMain .mainBanner .swiper-slide-active ~ .changing,
+    #newMain .mainBanner .swiper-slide-active ~ .changed { transform:none; } 
+    #newMain .mainBanner .changing.swiper-slide-active .imgWrap,
+    #newMain .mainBanner .changed.swiper-slide-active .imgWrap { transform:none; } 
+    #newMain .mainBanner .changing.swiper-slide-active,
+    #newMain .mainBanner .changed.swiper-slide-active { transform:none; border-radius: 20px; } 
 
-#newMain .jobSlideWrap .swiper-container { position: relative; padding-bottom: 20px; } 
-#newMain .jobSlideWrap .swiper-pagination { display: block; left: 50%; transform: translateX(-50%); bottom: 0; } 
-#newMain .jobSlideWrap .swiper-pagination-bullet { margin: 0 3px; } 
+    #newMain .jobSlideWrap .swiper-container { position: relative; padding-bottom: 20px; } 
+    #newMain .jobSlideWrap .swiper-pagination { display: block; left: 50%; transform: translateX(-50%); bottom: 0; } 
+    #newMain .jobSlideWrap .swiper-pagination-bullet { margin: 0 3px; } 
 
-/* 채용 - 채용찾기 */
-#newMain .jobFindWrap .cateWrap { gap: 20px 0; } 
-#newMain .jobFindWrap .cateWrap > div { width: calc(100% / 3); flex: initial; } 
-#newMain .jobFindWrap .cateWrap > div:nth-child(4),
-#newMain .jobFindWrap .cateWrap > div:nth-child(5) { width: 50%; } 
-#newMain .jobFindWrap .cateWrap > div:nth-child(4) .cateBox { border-left: 1px solid #d8d8d8; } 
+    /* 채용 - 채용찾기 */
+    #newMain .jobFindWrap .cateWrap { gap: 20px 0; } 
+    #newMain .jobFindWrap .cateWrap > div { width: calc(100% / 3); flex: initial; } 
+    #newMain .jobFindWrap .cateWrap > div:nth-child(4),
+    #newMain .jobFindWrap .cateWrap > div:nth-child(5) { width: 50%; } 
+    #newMain .jobFindWrap .cateWrap > div:nth-child(4) .cateBox { border-left: 1px solid #d8d8d8; } 
  }
 
 @media screen and (max-width: 768px){
- #newHeader .topMenu { display: none; } 
-#newHeader .bottomMenu { border-top: 4px solid #2a61f9; } 
+    #newHeader .topMenu { display: none; } 
+    #newHeader .bottomMenu { border-top: 4px solid #2a61f9; } 
 
-#newMain .pageWrap a.icon01::before { margin-right: 10px; width: 70px; height: 51px; background-size: contain; } 
-#newMain .pageWrap a.icon02::after { margin-left: 10px; width: 45px; height: 49px; background-size: contain; } 
-#newMain .pageWrap a { font-size: 22px; } 
+    #newMain .pageWrap a.icon01::before { margin-right: 10px; width: 70px; height: 51px; background-size: contain; } 
+    #newMain .pageWrap a.icon02::after { margin-left: 10px; width: 45px; height: 49px; background-size: contain; } 
+    #newMain .pageWrap a { font-size: 22px; } 
 
-#newFooter .nfooter_top .f_sns { display: none; } 
-#newFooter .f_business .f_sns { display: flex; } 
-#newFooter .f_business .f_addr { display: none; } 
-#newFooter .f_address .f_addr { display: block; } 
+    #newFooter .nfooter_top .f_sns { display: none; } 
+    #newFooter .f_business .f_sns { display: flex; } 
+    #newFooter .f_business .f_addr { display: none; } 
+    #newFooter .f_address .f_addr { display: block; } 
  }
 
 @media screen and (max-width: 640px){
- #newHeader .bottomMenu .logo { width: 138px; height: 50px; } 
-#newHeader .m_menu .h_menu { width: 20px; height: 12px; } 
-#newHeader .m_menu .h_menu span { width: 20px; height: 2px; background-color: #666666; } 
-#newHeader .m_menu .h_search { width: 18px; height: 18px; margin-left: 14px; } 
-#newHeader .bottomMenu { border-top: 3px solid #2a61f9; border-bottom: 1px solid #dadada; } 
-#newHeader .newGnb { display: none; } 
+    #newHeader .bottomMenu .logo { width: 138px; height: 50px; } 
+    #newHeader .m_menu .h_menu { width: 20px; height: 12px; } 
+    #newHeader .m_menu .h_menu span { width: 20px; height: 2px; background-color: #666666; } 
+    #newHeader .m_menu .h_search { width: 18px; height: 18px; margin-left: 14px; } 
+    #newHeader .bottomMenu { border-top: 3px solid #2a61f9; border-bottom: 1px solid #dadada; } 
+    #newHeader .newGnb { display: none; } 
 
-#newMain .mainVisual .searchCont .inputSearch { height: 30px; padding: 4px 10px 10px 34px; border-bottom: 2px solid #2a61f9; } 
-#newMain .mainVisual .searchCont button { width: 18px; height: 18px; bottom: 10px; } 
-#newMain .mainVisual .visualCont { padding: 30px 10px 30px; background-size: auto 50%; } 
-#newMain .mainBanner .swiper-container { padding: 0 0 46px; margin: 0 auto 10px; } 
-#newMain .mainVisual .itemSwiper { overflow: hidden; } 
-#newMain .mainVisual .visualItem { margin-bottom: 10px; flex-wrap: nowrap; } 
-#newMain .mainVisual .visualItem li { height: 100%; } 
-#newMain .mainVisual .visualItem li a { padding: 10px 4px; background: #fff; border-radius: 10px; border: 1px solid #2a61f9; } 
-#newMain .mainVisual .visualItem li a::before { height: 30px; margin-bottom: 0; background-size: contain !important; } 
-#newMain .mainVisual .visualItem li:hover { border: none; box-shadow: none; } 
-#newMain .mainVisual .visualItem li a .txt { display: inline-block; font-size: 12px; white-space: nowrap; } 
-#newMain h3.title { margin-bottom: 16px; font-size: 20px; } 
+    #newMain .mainVisual .searchCont .inputSearch { height: 30px; padding: 4px 10px 10px 34px; border-bottom: 2px solid #2a61f9; } 
+    #newMain .mainVisual .searchCont button { width: 18px; height: 18px; bottom: 10px; } 
+    #newMain .mainVisual .visualCont { padding: 30px 10px 30px; background-size: auto 50%; } 
+    #newMain .mainBanner .swiper-container { padding: 0 0 46px; margin: 0 auto 10px; } 
+    #newMain .mainVisual .itemSwiper { overflow: hidden; } 
+    #newMain .mainVisual .visualItem { margin-bottom: 10px; flex-wrap: nowrap; } 
+    #newMain .mainVisual .visualItem li { height: 100%; } 
+    #newMain .mainVisual .visualItem li a { padding: 10px 4px; background: #fff; border-radius: 10px; border: 1px solid #2a61f9; } 
+    #newMain .mainVisual .visualItem li a::before { height: 30px; margin-bottom: 0; background-size: contain !important; } 
+    #newMain .mainVisual .visualItem li:hover { border: none; box-shadow: none; } 
+    #newMain .mainVisual .visualItem li a .txt { display: inline-block; font-size: 12px; white-space: nowrap; } 
+    #newMain h3.title { margin-bottom: 16px; font-size: 20px; } 
 
-/* 채용 - 정책 태그 */
-#newMain .pageWrap a { height: auto; padding: 10px 0; font-size: 16px; text-align: center; flex-direction: column; } 
-#newMain .pageWrap a.active { flex: 1.5; } 
-#newMain .pageWrap.leftPage a.icon02::before { content: none; } 
-#newMain .pageWrap.rightPage a.icon01::before { content: none; } 
-#newMain .pageWrap a.icon01::before { width: 50px; height: 36px; margin: 0 auto; } 
-#newMain .pageWrap a.icon02::after { content: none; } 
-#newMain .pageWrap a.icon02::before { content: ''; width: 34px; height: 37px; margin: 0 auto; background: url(../images/right_page_icon.png) center no-repeat; background-size: contain; } 
+    /* 채용 - 정책 태그 */
+    #newMain .pageWrap a { height: auto; padding: 10px 0; font-size: 16px; text-align: center; flex-direction: column; } 
+    #newMain .pageWrap a.active { flex: 1.5; } 
+    #newMain .pageWrap.leftPage a.icon02::before { content: none; } 
+    #newMain .pageWrap.rightPage a.icon01::before { content: none; } 
+    #newMain .pageWrap a.icon01::before { width: 50px; height: 36px; margin: 0 auto; } 
+    #newMain .pageWrap a.icon02::after { content: none; } 
+    #newMain .pageWrap a.icon02::before { content: ''; width: 34px; height: 37px; margin: 0 auto; background: url(../images/right_page_icon.png) center no-repeat; background-size: contain; } 
 
-/* 채용 */
-#newMain .orderWrap, #newMain .infoWrap, #newMain .publicWrap, #newMain .recruitWrap, #newMain .enterWrap { padding: 30px 0; } 
-#newMain .jobFind { display: none; } 
+    /* 채용 */
+    #newMain .orderWrap, #newMain .infoWrap, #newMain .publicWrap, #newMain .recruitWrap, #newMain .enterWrap { padding: 30px 0; } 
+    #newMain .jobFind { display: none; } 
 
-#newMain .infoWrap .innerSection { width: 100%; padding-left: 10px; } 
-#newMain .indWrap .indSlide .item,
-#newMain .jobSlideWrap.publicSlide .item,
-#newMain .jobSlideWrap.orderSlide .item { margin-bottom: 10px; } 
-#newMain .infoWrap ul li a { padding-left: 40px; background-size: 35px !important; } 
-#newMain .infoWrap ul a.icon03 { background-size: 20px auto !important; } 
-#newMain .infoWrap ul .countWrap .count { font-size: 34px; } 
-#newMain .indWrap .innerSection { width: 100%; } 
-#newMain .indWrap .topListWrap { padding-left: 10px; } 
-#newMain .indWrap h3.title { padding-left: 10px; } 
-#newMain .indWrap .topListWrap .moreBtn { right: 10px; } 
-#newMain .indWrap .tabCont { padding: 0 10px; } 
+    #newMain .infoWrap .innerSection { width: 100%; padding-left: 10px; } 
+    #newMain .indWrap .indSlide .item,
+    #newMain .jobSlideWrap.publicSlide .item,
+    #newMain .jobSlideWrap.orderSlide .item { margin-bottom: 10px; } 
+    #newMain .infoWrap ul li a { padding-left: 40px; background-size: 35px !important; } 
+    #newMain .infoWrap ul a.icon03 { background-size: 20px auto !important; } 
+    #newMain .infoWrap ul .countWrap .count { font-size: 34px; } 
+    #newMain .indWrap .innerSection { width: 100%; } 
+    #newMain .indWrap .topListWrap { padding-left: 10px; } 
+    #newMain .indWrap h3.title { padding-left: 10px; } 
+    #newMain .indWrap .topListWrap .moreBtn { right: 10px; } 
+    #newMain .indWrap .tabCont { padding: 0 10px; } 
 
-/* 채용 - 대기업 채용관 */
-#newMain .recruitWrap .innerSection { width: 100%; padding-left: 10px; } 
-#newMain .recruitWrap .item a { padding: 16px 16px; background-size: 60px auto !important; } 
-#newMain .recruitWrap .item .logoImg { height: 34px; padding: 8px; margin-bottom: 10px; } 
-#newMain .recruitWrap .item .logoImg img { width: 100%; height: 100%; object-fit: contain; } 
-#newMain .recruitWrap .item .tit { margin-bottom: 10px; font-size: 16px; } 
+    /* 채용 - 대기업 채용관 */
+    #newMain .recruitWrap .innerSection { width: 100%; padding-left: 10px; } 
+    #newMain .recruitWrap .item a { padding: 16px 16px; background-size: 60px auto !important; } 
+    #newMain .recruitWrap .item .logoImg { height: 34px; padding: 8px; margin-bottom: 10px; } 
+    #newMain .recruitWrap .item .logoImg img { width: 100%; height: 100%; object-fit: contain; } 
+    #newMain .recruitWrap .item .tit { margin-bottom: 10px; font-size: 16px; } 
 
-/* 탭 리스트 */
-#newMain .topListWrap { position: relative; } 
-#newMain .topListWrap .moreBtn { position: absolute; top: -40px; right: 0; } 
-#newMain .tabWrap .tabList { white-space: nowrap; overflow-x: scroll; } 
+    /* 탭 리스트 */
+    #newMain .topListWrap { position: relative; } 
+    #newMain .topListWrap .moreBtn { position: absolute; top: -40px; right: 0; } 
+    #newMain .tabWrap .tabList { white-space: nowrap; overflow-x: scroll; } 
 
 
-#newFooter .f_business .f_logo > a img { width: 100px; } 
-#newFooter .f_enquiry dl { font-size: 13px; } 
+    #newFooter .f_business .f_logo > a img { width: 100px; } 
+    #newFooter .f_enquiry dl { font-size: 13px; } 
 
-/* 정책 */
-#newMain .policyFind, #newMain .issueWrap, #newMain .tipWrap { padding: 30px 0; } 
-#newMain .policyWrap { display: none; } 
+    /* 정책 */
+    #newMain .policyFind, #newMain .issueWrap, #newMain .tipWrap { padding: 30px 0; } 
+    #newMain .policyWrap { display: none; } 
 
-#newMain .policyFind .innerSection,
-#newMain .issueWrap .innerSection,
-#newMain .tipWrap .innerSection { width: 100%; padding-left: 10px; } 
-#newMain .policyFind .topListWrap .moreBtn { right: 10px; } 
+    #newMain .policyFind .innerSection,
+    #newMain .issueWrap .innerSection,
+    #newMain .tipWrap .innerSection { width: 100%; padding-left: 10px; } 
+    #newMain .policyFind .topListWrap .moreBtn { right: 10px; } 
 
-/* 정책 - 잡아바 정책찾기 */
-#newMain .slideWrap .item .imgWrap { height: 150px; } 
+    /* 정책 - 잡아바 정책찾기 */
+    #newMain .slideWrap .item .imgWrap { height: 150px; } 
 
-#newMain .moFindBtn { display: block; } 
-body[data-chatbot="no"] { #ch-plugin { display: none !important; } 
- #newFooter { padding-bottom: 50px; } 
- } 
+    /* 2024.08.02 모바일 클레스 추가 */
+    #newMain .jobFindBtn,
+    #newMain .polFindBtn { display: block; } 
+     /* //2024.08.02 모바일 클레스 추가 */
+    body[data-chatbot="no"] { #ch-plugin { display: none !important; }  #newFooter { padding-bottom: 50px; }  } 
  }
 
 @media screen and (max-width: 480px){
- #newFooter .f_nav { white-space: nowrap; overflow-x: scroll; } 
+    #newFooter .f_nav { white-space: nowrap; overflow-x: scroll; } 
  }
