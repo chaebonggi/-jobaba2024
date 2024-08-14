@@ -1,10 +1,13 @@
 .contents-wrap .view-wrap { display:flex; flex-direction:row-reverse; margin:40px 0; } 
 .contents-wrap .view-wrap .summary_side { width:340px; } 
- .contents-wrap .view-wrap .summary_side .thumb { border:1px solid #e5eaea; border-radius:8px; margin-bottom: 24px; overflow:hidden; } 
+ /* 2024.08.14 css 수정 */
+ .contents-wrap .view-wrap .summary_side .thumb { height: 256px; margin-bottom: 24px; border:1px solid #e5eaea; border-radius:8px; box-sizing: border-box; overflow:hidden; } 
+ .contents-wrap .view-wrap .summary_side .thumb img { width: 100%; height: 100%; object-fit: cover; object-position: center; } 
  .contents-wrap .view-wrap .summary_side .tit_area { display:none; } 
  .contents-wrap .view-wrap .summary_side .sticky_box { position:sticky; top:24px; } 
  .contents-wrap .view-wrap .summary_side .state { border:1px solid #e5eaea; border-radius:8px; margin: 0 0 24px; padding:16px 24px; } 
- .contents-wrap .view-wrap .summary_side .state .remaining { display:flex; } 
+ .contents-wrap .view-wrap .summary_side .state .remaining { display:flex; align-items: center; font-size: 16px; } 
+ /* //2024.08.14 css 수정 */
  /* 2024.07.08 css 수정 */
  .contents-wrap .view-wrap .summary_side .state .remaining > div:nth-child(1) { flex-shrink:0; width:70px; color:#abb1b1; } 
 /* //2024.07.08 css 수정 */
@@ -15,9 +18,9 @@
  .contents-wrap .view-wrap .summary_side .state .apply a { display:block; padding:12px; text-align:center; color:#fff; background-color:#008ae0; border-radius:4px; font-size:18px; } 
  .contents-wrap .view-wrap .summary_side .sminfo { border:1px solid #e5eaea; border-radius:8px; padding:4px 24px 24px; word-break:keep-all; } 
  .contents-wrap .view-wrap .summary_side .sminfo dt { font-size:14px; margin:20px 0 4px; color:#abb1b1; } 
-  /* 2024.05.13 css 수정 */
- .contents-wrap .view-wrap .summary_side .sminfo dd.list_dot {position: relative; padding-left: 6px;}
- .contents-wrap .view-wrap .summary_side .sminfo dd.list_dot::before {content: ''; width: 3px; height: 3px; position: absolute; top: 12px; left: 0; background: #4e4e4e; border-radius: 50%;}
+ /* 2024.05.13 css 수정 */
+ .contents-wrap .view-wrap .summary_side .sminfo dd.list_dot { position: relative; padding-left: 6px; } 
+ .contents-wrap .view-wrap .summary_side .sminfo dd.list_dot::before { content: ''; width: 3px; height: 3px; position: absolute; top: 12px; left: 0; background: #4e4e4e; border-radius: 50%; } 
  .contents-wrap .view-wrap .summary_side .sminfo li { display:inline-block; font-size:14px; padding:2px 8px; border:1px solid #008ae0; color:#008ae0; border-radius:24px; margin:0 2px 6px 0; cursor:pointer; } 
  .contents-wrap .view-wrap .summary_side .sminfo li:hover { background-color:#008ae0; color:#fff; } 
  .contents-wrap .view-wrap .summary_side .sminfo li::before { content:"#"; } 
@@ -67,6 +70,9 @@
 
 @media screen and (max-width: 768px){
  .contents-wrap .view-wrap { flex-direction:column; margin:16px 0; } 
+ /* 2024.08.14 css 수정 */
+ .contents-wrap .view-wrap .summary_side .thumb { height: auto; } 
+ /* 2024.08.14 css 수정 */
  .contents-wrap .view-wrap .summary_side .state { padding:12px 20px; margin:20px 0; } 
  .contents-wrap .view-wrap .summary_side { width: 100%; max-width: 480px; margin: 0 auto; } 
  .contents-wrap .view-wrap .summary_side .tit_area { display:block; margin-top:24px; } 
@@ -85,19 +91,28 @@
  .contents-wrap .view-wrap .summary_side .state .apply { display:none; } 
 
  /* 2024.04.30 css 수정 */
- .contents-wrap .view-wrap .btn_wrap {display: none;}
- .contents-wrap .view-wrap .apply_mobile {display: flex; width: 100%; max-width: 480px; position:sticky; bottom:16px; margin: 24px auto 0; gap: 0 5px;} 
- .contents-wrap .view-wrap .btn_type01 {padding: 8px 15px; font-size: 14px;}
- .contents-wrap .view-wrap .apply_mobile a:nth-child(2) {flex-grow: 1;}
- /* //2024.04.30 css 수정 */
-}
+ .contents-wrap .view-wrap .btn_wrap { display: none; } 
+ .contents-wrap .view-wrap .apply_mobile { display: flex; width: 100%; max-width: 480px; position:sticky; bottom:16px; margin: 24px auto 0; gap: 0 5px; } 
+ .contents-wrap .view-wrap .btn_type01 { padding: 8px 15px; font-size: 14px; } 
+ .contents-wrap .view-wrap .apply_mobile a:nth-child(2) { flex-grow: 1; } 
+ /* //2024.04.30 css 수정 */}
 
 @media screen and (max-width: 480px){
  .contents-wrap .view-wrap .summary_side .sminfo { padding:4px 20px 16px; } 
  .contents-wrap .view-wrap .summary_side .sminfo dt { margin:16px 0 4px; } 
  .contents-wrap .view-wrap .dtinfo_wrap .dtinfo { border-style:solid none; border-radius:0; margin: 0 -4%; padding:24px; } 
  .contents-wrap .view-wrap .dtinfo_wrap .attach { margin:20px 0; padding:20px 24px; } 
- .contents-wrap .view-wrap .dtinfo_wrap .coposition, .contents-wrap .view-wrap .dtinfo_wrap .description { padding:20px 24px; font-size: 14px; } 
+ .contents-wrap .view-wrap .dtinfo_wrap .coposition, .contents-wrap .view-wrap .dtinfo_wrap .description { padding:20px 24px; font-size: 12px; } 
  .contents-wrap .view-wrap .dtinfo_wrap .description { margin-top:20px; } 
- }
+ /* 2024.08.14 css 수정 */
+ .contents-wrap .view-wrap .summary_side .tit_area .tit { font-size: 18px; } 
+ .contents-wrap .view-wrap .summary_side .state .remaining { font-size: 14px; } 
+ .contents-wrap .view-wrap .summary_side .sminfo dd { font-size: 14px; } 
+ .contents-wrap .view-wrap .dtinfo_wrap .dtinfo { font-size: 14px; } 
+ .contents-wrap .view-wrap .summary_side .sminfo li { font-size: 12px; } 
+ .contents-wrap .view-wrap .dtinfo_wrap .sbtit { font-size: 14px; } 
+ .contents-wrap .view-wrap .dtinfo_wrap .attach li { font-size: 14px; } 
+ .contents-wrap .view-wrap .dtinfo_wrap .coposition li { font-size: 14px; } 
+ .tmp_wrap .desc { font-size: 14px; } 
+ /* //2024.08.14 css 수정 */}
  
