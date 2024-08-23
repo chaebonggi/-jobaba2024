@@ -230,7 +230,7 @@ var orderSlide = new Swiper("#newMain .orderSlide .swiper-container", {
     },
 }); 
 var infoSlide = new Swiper("#newMain .infoSlide .swiper-container", {
-    slidesPerView: 1.5,    
+    slidesPerView: 1.8,    
     watchOverflow: true,
     breakpoints: {
         1024: {
@@ -401,6 +401,7 @@ findBtnClasses.forEach(function(btnClass) {
         $(this).addClass("active");
         mtabContent.removeClass("active");
         mtabContent.eq(tabIdx).addClass("active");
+        $('body').addClass('scrollLock');
     });
 
     const mBottomCont = $(btnClass);
@@ -437,7 +438,21 @@ findBtnClasses.forEach(function(btnClass) {
             $('body').removeClass('scrollLock');
         }
     });
+
+    checkIfAnyChecked();
+    $('input:radio[name="m_chkJobA"]').change(function() {
+        checkIfAnyChecked();
+    });
 });
+function checkIfAnyChecked() {
+    if ($('input:radio[name="m_chkJobA"]:checked').length > 0) {
+        $('.mo_cont_box .noItem').css('display', 'none');
+        $('.mo_cont_box .m_jobMcd').css('display', 'block');
+    } else {
+        $('.mo_cont_box .noItem').css('display', 'block');
+        $('.mo_cont_box .m_jobMcd').css('display', 'none');
+    }
+}
 function srchInit() {
     $("[name^='chkPolicy']").prop("checked", false);
     $("[name^='m_chkPolicy']").prop("checked", false);
