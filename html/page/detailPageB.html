@@ -43,13 +43,9 @@
     <script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/imgLiquid-min.js"></script>
     <script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/script.js?v=20220629"></script>
     <script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/jquery.vticker-min.js"></script>
-    <script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/googleAnalytics.js"></script>
-    <script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/facebookPixelCode.js"></script>
-    <script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/acecounter.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.js"></script>
-    <script src="https://www.jobaba.net/resource/main2024/js/main_2024/top.js"></script>
-    <script src="https://www.jobaba.net/resource/main2024/js/main_2024/main_ver_02.js"></script>
-    
+    <script src="https://www.jobaba.net/resource/js/entCntnts/jquery.sumoselect.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
 </head>
 
 <body data-header="job">
@@ -1128,13 +1124,13 @@
                     <div class="tit_area">
                         <!-- 2024.04.17 cate 텍스트 변경 및 태그 추가 했습니다 -->
                         <div class="cate">경기도일자리재단<span>경영・회계・사무</span></div>
-                        <div class="tit">영상편집(모션그래픽)제작자 과정 참여자 모집</div>
+                        <div class="tit">영상편집(모션그래픽)제작자 과정 참여자 모집</div>                        
                     </div>
                     <div class="sticky_box">
                         <div class="state">
                             <div class="remaining">
                                 <div>진행 상태</div>
-                                <div>D-100 <!--D-Day--> <!-- 상시 -->                                    
+                                <div><em class="red">오늘 마감</em> <!--D-100--> <!--D-Day--> <!-- 상시 -->                                    
                                     <span>채용중</span>
                                 </div>
                             </div>
@@ -1175,6 +1171,17 @@
                             영상편집(모션그래픽)제작자 과정 참여자 모집
                             <span><img src="images/detail/heart_ico_on.png" alt="좋아요"></span>
                         </h1>
+                        <!-- 2024.08.29 링크 복사하기 버튼 추가 -->
+                        <div class="link_area">
+                            <ul>
+                                <li>
+                                    <a id="copyUrl" href="javascript:void(0);" title="주소 복사" data-clipboard-action="copy" data-clipboard-text="https://www.jobaba.net/sprtPlcy/info/view2020.do?seq=11991">
+                                        <img src="https://www.jobaba.net/resource/images/ico_url2.gif" alt="주소 복사 아이콘">
+                                    </a>
+                                </li>       
+                            </ul>
+                        </div>
+                        <!-- //2024.08.29 링크 복사하기 버튼 추가  -->
                     </div>
                     <div class="dtinfo"> <!-- 에디터로 입력된 영역 / 테이블 사용 제한 -->
                         📂 교육정보
@@ -1332,8 +1339,7 @@
             </div>
         </div>
     </footer>
-    
-
+<script>
 </script>
 </body>
 </html>

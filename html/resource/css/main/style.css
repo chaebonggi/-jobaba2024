@@ -666,9 +666,12 @@ body.scrollLock { overflow: hidden; }
 /* e: 2024.07.26 css 수정 */
 /* recommend_list */
 .contents-wrap .job_info_wrap .content_wrap .recommend_list ul { display: flex; margin-top: 16px; justify-content: space-between; gap: 5px; } 
+/* s: 2024.08.27 css 수정 */
+.contents-wrap .job_info_wrap .content_wrap .recommend_list li {width: calc(100% / 4 - 10px);}
 .contents-wrap .job_info_wrap .content_wrap .recommend_list .img_wrap { max-width: 220px; width: 100%; height: 176px; margin-bottom: 16px; border-radius: 10px; overflow: hidden; } 
 .contents-wrap .job_info_wrap .content_wrap .recommend_list .img_wrap img { height: 100%; background-size: cover; } 
-.contents-wrap .job_info_wrap .content_wrap .recommend_list .txt_wrap .s_tit { margin: 4px 0; color: #000000; font-size: 16px; display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; -webkit-line-clamp: 2; text-overflow: ellipsis; letter-spacing: -1px; } 
+.contents-wrap .job_info_wrap .content_wrap .recommend_list .txt_wrap .s_tit { margin: 4px 0; color: #000000; font-size: 16px; display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; -webkit-line-clamp: 1; text-overflow: ellipsis; letter-spacing: -1px; } 
+/* e: 2024.08.27 css 수정 */
 .contents-wrap .job_info_wrap .content_wrap .recommend_list .txt_wrap .s_date { color: #888888; font-size: 14px; } 
  /* tag list */
  .contents-wrap .job_info_wrap .content_wrap .tag_area { display: flex; margin: 50px 0; padding: 20px 30px; background: #fff; border: 1px solid #eaeaea; border-left: 0; border-right: 0; align-items: center; } 
