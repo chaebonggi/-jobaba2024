@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>온라인박람회 템플릿</title>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        .exhb_wrap .onjob_view .view_Detail{background:#fff;padding:30px;border-radius:0;border-top:1px solid #000;margin-top:20px;}
+        .exhb_wrap .onjob_view .view_Detail .vTit, .exhb_wrap .attend_area, .exhb_wrap .at_cpn{display:none;}
+
+        .expo_wrap{font-family: 'Noto Sans KR', sans-serif;font-size:16px;font-weight:400;color:#232323;box-sizing:border-box;position:relative;padding:0;width:100%;max-width:1200px;word-break:keep-all;line-height:1.6;margin:0 auto;}
+        .expo_wrap img{max-width:100%;}
+        .expo_wrap .hire_list_wrap h2{text-align:center;font-size:32px;margin:32px 0 24px;padding:0;}
+        .expo_wrap .hire_list{border-top:1px solid #a4a4a4;margin:0;padding:0;position:relative;}
+        .expo_wrap .hire_list li{display:flex;border-bottom:1px solid #d4d4d4;padding:24px;}
+        .expo_wrap .hire_list li:nth-child(even){background:#f9f9f9;}
+        .expo_wrap .hire_list li a{text-decoration:none;color:inherit;}
+        .expo_wrap .hire_list li:hover{background:#f5f5f5;border:1px solid #008ae0;padding:25px 23px 24px;position:relative;top:-1px;}
+        .expo_wrap .hire_list li .com_nm{color:#52595a;width:25%;max-width:240px;}
+        .expo_wrap .hire_list li .hire_nm{font-weight:700;flex-grow:1;border-left:1px solid #e4e4e4;padding-left:24px;}
+        .expo_wrap .hire_list li .hire_nm .cond{font-size:13px;font-weight:300;color:#52595a;margin-top:6px;}
+        .expo_wrap .hire_list li .hire_nm .cond span{display:inline-block;}
+        .expo_wrap .hire_list li .hire_nm .cond span+span{margin-left:10px;}
+        .expo_wrap .hire_list li .hire_nm .cond span+span:before{content:"|";padding-right:10px;font-weight:200;font-size:12px;color:#d4d4d4;position:relative;top:-1px;}
+        .expo_wrap .hire_list li .hire_nm .desc{font-size:13px;font-weight:300;color:#9fa19f;margin-top:16px;}
+        .expo_wrap .hire_list li .btn_area{width:20%;max-width:180px;text-align:right;position:relative;}
+        .expo_wrap .hire_list li .btn_area a{color:#008ae0;font-size:14px;border:1px solid #008ae0;border-radius:4px;padding:8px 16px;}
+        .expo_wrap .hire_list li:hover .btn_area a{color:#fff;background:#008ae0;}
+        .expo_wrap .hire_list li .btn_area .due{font-size:13px;font-weight:300;color:#52595a;position:absolute;bottom:0;right:0;}
+
+        
+        @media screen and (max-width:1024px) {
+            .expo_wrap .hire_list li .com_nm{max-width:200px;}
+            .expo_wrap .hire_list li .btn_area{max-width:140px;}
+        }
+        @media screen and (max-width:768px) {
+            .expo_wrap .hire_list li .com_nm{width:180px;}
+            .expo_wrap .hire_list li .btn_area{width:120px;}
+            .expo_wrap .hire_list li .hire_nm{width:calc(100% - 300px);}
+            
+        }
+        @media screen and (max-width:420px) {
+            .expo_wrap .hire_list li{flex-direction:column;}
+            .expo_wrap .hire_list li .com_nm, 
+            .expo_wrap .hire_list li .btn_area, 
+            .expo_wrap .hire_list li .hire_nm{width:100%;max-width:100%;}
+            .expo_wrap .hire_list li .hire_nm{border:0;padding:0;margin-top:8px;}
+            .expo_wrap .hire_list li .btn_area{text-align:right;margin-top:24px;}
+            .expo_wrap .hire_list li .btn_area .due{right:auto;left:0;}
+            .expo_wrap .hire_list li .hire_nm .cond span+span{margin-left:6px;}
+            .expo_wrap .hire_list li .hire_nm .cond span+span:before{padding-right:6px;}
+            
+        }
+    </style>
+    <div class="expo_wrap">
+        <img src="https://fastly.picsum.photos/id/20/3670/2462.jpg?hmac=CmQ0ln-k5ZqkdtLvVO23LjVAEabZQx2wOaT4pyeG10I" alt="" />
+        <div class="hire_list_wrap">
+            <h2>진행중 채용공고</h2>
+            <ul class="hire_list">
+                <li>
+                    <div class="com_nm">세일기계공업(주)</div>
+                    <div class="hire_nm">
+                        <a href="https://career.jobaba.net/o/123606" target="_blank">제지 기계 관련 생산 직원 채용(용접 및 제관, 신입/경력)</a>
+                        <div class="cond">
+                            <span>안산시</span>
+                            <span>경력무관</span>
+                            <span>학력무관</span>
+                            <span>정규직</span>
+                            <span>면접 후 협의</span>
+                        </div>
+                        <div class="desc">제관업무 경험자 및 가능자, 관련 자격증(용접기능사, 용접기사, 용접산업기사, 전산응용기계제도기능사) 보유자 우대</div>
+                    </div>
+                    <div class="btn_area">
+                        <a href="https://career.jobaba.net/o/123606" target="_blank">입사지원</a>
+                        <div class="due">~ 2024-08-29(목)</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="com_nm">경원기계공업(주)</div>
+                    <div class="hire_nm">
+                        <a href="https://career.jobaba.net/o/122691" target="_blank">경원기계공업 제조팀 사원 모집</a>
+                        <div class="cond">
+                            <span>시흥시</span>
+                            <span>경력무관</span>
+                            <span>고졸↑</span>
+                            <span>정규직</span>
+                            <span>시급 10,000원</span>
+                        </div>
+                        <div class="desc">공기압축기 조립/전장배선</div>
+                    </div>
+                    <div class="btn_area">
+                        <a href="https://career.jobaba.net/o/122691" target="_blank">입사지원</a>
+                        <div class="due">~ 2024-08-30(금)</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="com_nm">(주)에이이엠모빌리티</div>
+                    <div class="hire_nm">
+                        <a href="https://career.jobaba.net/o/122738" target="_blank">자동차부품 플라스틱사출 사출기사채용</a>
+                        <div class="cond">
+                            <span>안산시</span>
+                            <span>경력 5년↑</span>
+                            <span>학력무관</span>
+                            <span>정규직</span>
+                            <span>면접 후 협의</span>
+                        </div>
+                        <div class="desc">생산라인 운영관리, 품질검사 및 유지, 기계 유지보수 작업, 작업 안전 점검, 자재 관리 및 배분, 사출 성형</div>
+                    </div>
+                    <div class="btn_area">
+                        <a href="https://career.jobaba.net/o/122738" target="_blank">입사지원</a>
+                        <div class="due">~ 2024-08-30(금)</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="com_nm">(주)퓨렉스</div>
+                    <div class="hire_nm">
+                        <a href="https://career.jobaba.net/o/124169" target="_blank">LH사업부 장비기술팀 채용</a>
+                        <div class="cond">
+                            <span>안산시</span>
+                            <span>경력무관</span>
+                            <span>고졸↑</span>
+                            <span>정규직</span>
+                            <span>면접 후 협의</span>
+                        </div>
+                        <div class="desc">PCB장비 정비 및 유지보스, 방진복 착용 가능자, 전기/전자공학/설비 관련 업무 경험자</div>
+                    </div>
+                    <div class="btn_area">
+                        <a href="https://career.jobaba.net/o/124169" target="_blank">입사지원</a>
+                        <div class="due">~ 2024-08-31(토)</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="com_nm">경원기계공업(주)</div>
+                    <div class="hire_nm">
+                        <a href="https://career.jobaba.net/o/122685" target="_blank">컴프레샤 서비스직원(A/S) 구인</a>
+                        <div class="cond">
+                            <span>시흥시</span>
+                            <span>경력무관</span>
+                            <span>대졸(2, 3년)↑</span>
+                            <span>정규직</span>
+                            <span>면접 후 협의</span>
+                        </div>
+                        <div class="desc">공기압축기(컴프레샤) A/S 및 점검, 관련 자격증(공조냉동기계기능사, 에너지관리기능사, 전기기능사) 보유자 우대</div>
+                    </div>
+                    <div class="btn_area">
+                        <a href="https://career.jobaba.net/o/122685" target="_blank">입사지원</a>
+                        <div class="due">~ 2024-08-31(토)</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="com_nm">성훈경금속(주)</div>
+                    <div class="hire_nm">
+                        <a href="https://career.jobaba.net/o/123720" target="_blank">알루미늄 생산부 신입 및 경력사원 채용</a>
+                        <div class="cond">
+                            <span>안산시</span>
+                            <span>경력무관</span>
+                            <span>학력무관</span>
+                            <span>정규직</span>
+                            <span>월 350만원↑</span>
+                        </div>
+                        <div class="desc">알루미늄 생산부, 사원아파트, 기숙사, 장기근속포상, 명절선물 제공</div>
+                    </div>
+                    <div class="btn_area">
+                        <a href="https://career.jobaba.net/o/123720" target="_blank">입사지원</a>
+                        <div class="due">~ 2024-08-31(토)</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="com_nm">대정화금</div>
+                    <div class="hire_nm">
+                        <a href="https://career.jobaba.net/o/123040" target="_blank">물류관리팀 계약직 사원 모집</a>
+                        <div class="cond">
+                            <span>시흥시</span>
+                            <span>경력무관</span>
+                            <span>고졸↑</span>
+                            <span>계약직</span>
+                            <span>연봉 3,000만원↑</span>
+                        </div>
+                        <div class="desc">창고관리, 물류관리, 자재검수, 24개월 계약직(계약만료 후 상용직 전환 검토)</div>
+                    </div>
+                    <div class="btn_area">
+                        <a href="https://career.jobaba.net/o/123040" target="_blank">입사지원</a>
+                        <div class="due">~ 2024-08-31(토)</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="com_nm">(주)네비웍스</div>
+                    <div class="hire_nm">
+                        <a href="https://career.jobaba.net/o/123849" target="_blank">기술영업 경력직(대리-과장급) 채용</a>
+                        <div class="cond">
+                            <span>안양시</span>
+                            <span>경력 3~8년</span>
+                            <span>대졸↑</span>
+                            <span>정규직</span>
+                            <span>면접 후 협의</span>
+                        </div>
+                        <div class="desc">신사업 기획, 사업수주/홍보 마케팅, 계약 및 사업관리 업무</div>
+                    </div>
+                    <div class="btn_area">
+                        <a href="https://career.jobaba.net/o/123849" target="_blank">입사지원</a>
+                        <div class="due">~ 2024-09-01(일)</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="com_nm">(주)네비웍스</div>
+                    <div class="hire_nm">
+                        <a href="https://career.jobaba.net/o/123851" target="_blank">HW기구설계 경력직채용</a>
+                        <div class="cond">
+                            <span>안양시</span>
+                            <span>경력 5~10년</span>
+                            <span>대졸↑</span>
+                            <span>정규직</span>
+                            <span>면접 후 협의</span>
+                        </div>
+                        <div class="desc">기계 및 기구 분야의 설계 및 제작, 2D/3D 설계 및 생산관리</div>
+                    </div>
+                    <div class="btn_area">
+                        <a href="https://career.jobaba.net/o/123851" target="_blank">입사지원</a>
+                        <div class="due">~ 2024-09-01(일)</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="com_nm">(주)네오피엠씨</div>
+                    <div class="hire_nm">
+                        <a href="https://career.jobaba.net/o/122475" target="_blank">기술영업 부문 경력 인재 채용</a>
+                        <div class="cond">
+                            <span>안산시</span>
+                            <span>경력 3년↑</span>
+                            <span>초대졸↑</span>
+                            <span>정규직</span>
+                            <span>면접 후 협의</span>
+                        </div>
+                        <div class="desc">곡내/해외 영업(도금설비)-설비 영업 및 설치, 고객사 관리, 견적서 작성, 해외 영업(수입 및 수출), 중국어 가능자(필수)</div>
+                    </div>
+                    <div class="btn_area">
+                        <a href="https://career.jobaba.net/o/122475" target="_blank">입사지원</a>
+                        <div class="due">~ 2024-09-02(월)</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="com_nm">(주)퓨렉스</div>
+                    <div class="hire_nm">
+                        <a href="https://career.jobaba.net/o/124167" target="_blank">시설관리팀 신입 및 경력 채용</a>
+                        <div class="cond">
+                            <span>안산시</span>
+                            <span>경력무관</span>
+                            <span>고졸↑</span>
+                            <span>정규직</span>
+                            <span>면접 후 협의</span>
+                        </div>
+                        <div class="desc">공무팀(시설관리), 초순수 운영관리, 보일러 운영관리, 관련 자격증(에너지기능사, 가스기능사, 소방산업기사 등) 보유자 우대</div>
+                    </div>
+                    <div class="btn_area">
+                        <a href="https://career.jobaba.net/o/124167" target="_blank">입사지원</a>
+                        <div class="due">~ 2024-09-03(화)</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="com_nm">(주)제이엔피</div>
+                    <div class="hire_nm">
+                        <a href="https://career.jobaba.net/o/123946" target="_blank">전자 부품, 제품 생산기계 조작원</a>
+                        <div class="cond">
+                            <span>시흥시</span>
+                            <span>경력 5년↑</span>
+                            <span>학력무관</span>
+                            <span>정규직</span>
+                            <span>연봉 4,000~4,500만원</span>
+                        </div>
+                        <div class="desc">생산라인 관리, Reel to Reel 도금 경력자</div>
+                    </div>
+                    <div class="btn_area">
+                        <a href="https://career.jobaba.net/o/123946" target="_blank">입사지원</a>
+                        <div class="due">~ 2024-09-03(화)</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="com_nm">(주)누리인포스</div>
+                    <div class="hire_nm">
+                        <a href="https://career.jobaba.net/o/123718" target="_blank">IT기술영업 경력채용</a>
+                        <div class="cond">
+                            <span>성남시</span>
+                            <span>경력 4년↑</span>
+                            <span>대졸(4년)↑</span>
+                            <span>정규직</span>
+                            <span>면접 후 협의</span>
+                        </div>
+                        <div class="desc">자사 IT솔루션(ERP, PRM, POS) 및 SI 기술영업, 신규 고객 발굴 및 기존 고객사 관리, 영업 파트너사 관리 및 추가 파트너 영업</div>
+                    </div>
+                    <div class="btn_area">
+                        <a href="https://career.jobaba.net/o/123718" target="_blank">입사지원</a>
+                        <div class="due">~ 2024-09-03(화)</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
