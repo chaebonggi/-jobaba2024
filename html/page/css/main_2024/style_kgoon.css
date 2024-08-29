@@ -28,7 +28,10 @@
  .contents-wrap .view-wrap .summary_side .sminfo li:hover { background-color:#008ae0; color:#fff; } 
  .contents-wrap .view-wrap .summary_side .sminfo li::before { content:"#"; } 
 .contents-wrap .view-wrap .dtinfo_wrap { width:calc(100% - 364px); min-height:1000px; margin-right:24px; } 
- .contents-wrap .view-wrap .dtinfo_wrap .tit_area { border:1px solid #e5eaea; border-radius:8px 8px 0 0; padding:24px 32px; } 
+/* 2024.08.29 css 수정 및 추가 */
+ .contents-wrap .view-wrap .dtinfo_wrap .tit_area { border:1px solid #e5eaea; border-radius:8px 8px 0 0; padding:24px 46px 24px 32px; position: relative;} 
+ .contents-wrap .view-wrap .dtinfo_wrap .tit_area .link_area {position: absolute; top: 60px; right: 20px;}
+ /* ///* 2024.08.29 css 수정 및 추가  */  */
  .contents-wrap .view-wrap .dtinfo_wrap .tit_area .cate { color:#008ae0; margin-bottom:4px; } 
  .contents-wrap .view-wrap .dtinfo_wrap .tit_area .cate span { display:inline-block; color:#999; margin-left:8px; } 
  .contents-wrap .view-wrap .dtinfo_wrap .tit_area .cate span::before { content:"|"; padding-right:8px; color:#ccc; font-size:12px; position:relative; top:-2px; } 
