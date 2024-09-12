@@ -423,8 +423,12 @@
 #newMain .polFindBtn .m_find_top .mo_cont_list button { display: block; width: 100%; height: 100%; background: #f3f3f3; color: #777777; font-size: 13px; border: none; } 
 #newMain .jobFindBtn .m_find_top .mo_cont_list li.active button,
 #newMain .polFindBtn .m_find_top .mo_cont_list li.active button { background: #fff; } 
+/* s:2024.09,09 css 수정 */
 #newMain .jobFindBtn .m_find_top .mo_cont_Wrap,
-#newMain .polFindBtn .m_find_top .mo_cont_Wrap { width: 100%; height: 160px; border-left: 1px solid #dfdfdf; border-top: none; border-right: none; overflow-y: scroll;} 
+#newMain .polFindBtn .m_find_top .mo_cont_Wrap { width: 100%; height: 160px; position: relative; border-left: 1px solid #dfdfdf; border-top: none; border-right: none; overflow-y: scroll;} 
+#newMain .jobFindBtn .m_find_top .mo_cont_Wrap::after,
+#newMain .polFindBtn .m_find_top .mo_cont_Wrap::after {content: ''; width: 100%; height: 1px; position: absolute; bottom: 0; left: 0; background: #dfdfdf;}
+/* e:2024.09,09 css 수정 */
 #newMain .jobFindBtn .m_find_top .mo_cont_Wrap.type02,
 #newMain .polFindBtn .m_find_top .mo_cont_Wrap.type02 { height: 280px; } 
 #newMain .jobFindBtn .m_find_top .mo_cont_Wrap .mo_cont_box,
