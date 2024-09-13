@@ -1,7 +1,7 @@
  
- body, input, select, textarea, button, input.button, input.check, input.radio { font-family: "Noto Sans KR", "Sans-serif"; }
- body.scrollLock {overflow: hidden;}
- body.scroll_Lock {overflow: hidden;}
+ body, input, select, textarea, button, input.button, input.check, input.radio { font-family: "Noto Sans KR", "Sans-serif"; } 
+ body.scrollLock { overflow: hidden; } 
+ body.scroll_Lock { overflow: hidden; } 
  .public_job .fcBlue { color: #008ae0 !important; } 
  .public_job .fcRed { color: #ff0000 !important; } 
  .public_job .for_mobile { display: none; } 
@@ -15,17 +15,17 @@
  .public_job .pbj_tab { display: flex; } 
  .public_job .pbj_tab .pbj_tab_btn { display: flex; width: 100%; background: #fff; } 
  /* 2024.05.07 css 수정 */
- .public_job .pbj_tab .pbj_tab_btn li {height: 40px; position: relative; flex: 1; border: 1px solid #dbdbdb; border-bottom: none; border-left: none; } 
+ .public_job .pbj_tab .pbj_tab_btn li { height: 40px; position: relative; flex: 1; border: 1px solid #dbdbdb; border-bottom: none; border-left: none; } 
  .public_job .pbj_tab .pbj_tab_btn li:first-child { border-left: 1px solid #dbdbdb; } 
  .public_job .pbj_tab .pbj_tab_btn li.p_btn::after { content: ''; display: block; width: 15px; height: 9px; position: absolute; top: 50%; right: 20px; transform: translateY(-50%); background: url(../resource/images/publicJob/arrow_type01_icon.png) no-repeat; } 
  .public_job .pbj_tab .pbj_tab_btn li.p_btn.active::after { background: url(../resource/images/publicJob/arrow_type01_icon_on.png) no-repeat; } 
  .public_job .pbj_tab .pbj_tab_btn li.active { border-color: #5c6fa7; } 
  .public_job .pbj_tab .pbj_tab_btn li.active button { background: #3f4860; color: #fff; } 
  .public_job .pbj_tab .pbj_tab_btn button { width: 100%; height: 100%; padding: 0 20px; color: #000; font-size: 14px; font-weight: 500; text-align: left; } 
- .public_job .pbj_search_wrap { position: relative; background: #fff; border: 1px solid #dbdbdb; border-bottom: 0;}
+ .public_job .pbj_search_wrap { position: relative; background: #fff; border: 1px solid #dbdbdb; border-bottom: 0; } 
  .public_job .pbj_search_wrap .pbj_keyword::before { content: ''; display: block; width: 16px; height: 16px; position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background: url(../resource/images/publicJob/search_icon.png) no-repeat; } 
  .public_job .pbj_search_wrap .pbj_keyword input { padding: 0 10px 0 34px; width: 100%; height: 40px; border: 0; box-sizing: border-box; color: #222; font-size: 13px; line-height: 40px; background: transparent; } 
-  /* //2024.05.07 css 수정 */
+ /* //2024.05.07 css 수정 */
  .public_job .pbj_tab_content { background: #fff; border: 1px solid #5c6fa7; box-shadow: 0px 0px 10px 0px rgba(34, 31, 31, 0.2); } 
  .public_job .pbj_tab_content .pbj_tab_box { display: none; } 
  .public_job .pbj_tab_content .pbj_tab_box.active { display: block; } 
@@ -35,7 +35,7 @@
  .public_job .check_list .item:nth-child(5n) { border-right: none; } 
  .public_job .check_list .item .lb_tag { color: #000; font-size: 14px; font-weight: 300; } 
  .public_job .check_list .inp_chk:checked + .lb_tag { color: #008ae0; } 
- .public_job .pbj_main .scrollbar-outer  {max-height: 202px;}
+ .public_job .pbj_main .scrollbar-outer { max-height: 202px; } 
  .public_job .scrollbar-outer { max-height:120px; overflow-y:scroll; } 
  .public_job .scrollbar-outer > .scroll-content.scroll-scrolly_visible { margin: 0; left: 0; } 
  .public_job .scrollbar-outer > .scroll-element .scroll-element_track { background: transparent; } 
@@ -46,7 +46,7 @@
 
  .public_job .pbj_result { display: flex; padding: 20px 30px; background: #fff; border: 1px solid #e2e7ed; border-top: none; align-items: center; } 
  .public_job .pbj_result .btn_search { display: flex; width: 160px; height: 50px; margin-left: 20px; background: #008ae0; color: #fff; font-size: 14px; box-shadow: 4.243px 4.243px 6px 0px rgba(34, 31, 31, 0.15); align-items: center; justify-content: center; } 
- .public_job .pbj_result .keywords_wrap { width: calc(100% - 400px); height: auto; font-size: 0;} 
+ .public_job .pbj_result .keywords_wrap { width: calc(100% - 400px); height: auto; font-size: 0; } 
 
  .public_job .pbj_result .keywords_wrap .selected_keyword { display: inline-flex; margin: 4px 10px 0 0; height: 20px; color: #6e6e6e; font-size: 14px; font-weight: 300; align-items: center; box-sizing: border-box; } 
  .public_job .pbj_result .keywords_wrap .selected_keyword .btn_del { width: 8px; height: 8px; margin-left: 4px; background: url(../resource/images/publicJob/close_type01_icon.png) no-repeat; border: none; } 
@@ -104,7 +104,7 @@
 .public_job .job_list .job_area .area { padding-left: 20px; margin-bottom: 10px; position: relative; color: #000; font-size: 13px; font-weight: 300; } 
 .public_job .job_list .job_area .area::before { content: ''; width: 13px; height: 17px; position: absolute; top: 50%; left: 0; transform: translateY(-50%); background: url(../resource/images/publicJob/area_icon.png) no-repeat; } 
 /* 2024.03.20 css 수정 */
-.public_job .job_list .job_area .corp { color: #008ae0; font-size: 13px; font-weight: 300; display: -webkit-box; white-space: normal; -webkit-line-clamp: 1; -webkit-box-orient: vertical; text-overflow: ellipsis; overflow: hidden;} 
+.public_job .job_list .job_area .corp { color: #008ae0; font-size: 13px; font-weight: 300; display: -webkit-box; white-space: normal; -webkit-line-clamp: 1; -webkit-box-orient: vertical; text-overflow: ellipsis; overflow: hidden; } 
 .public_job .job_list .tit { height: 48px; margin-bottom: 15px; color: #000; font-size: 16px; font-weight: 300; display: -webkit-box; white-space: normal; -webkit-line-clamp: 2; -webkit-box-orient: vertical; text-overflow: ellipsis; overflow: hidden; } 
 .public_job .job_list .job_desc { display: flex; align-items: center; } 
 /* .public_job .job_list .date_wrap { margin-left: auto; } */
@@ -112,7 +112,7 @@
 .public_job .job_list .job_desc .logo img { width: 100%; height: 100%; object-fit: scale-down; object-position: left; } */
 .public_job .job_list .date_wrap .date { color: #777777; font-size: 12px; } 
 .public_job .job_list .date_wrap .day { margin-right: 12px; color: #000; font-size: 12px; } 
-.public_job .job_list .date_wrap .always { color: #000; font-size: 12px; }
+.public_job .job_list .date_wrap .always { color: #000; font-size: 12px; } 
 
 .public_job .job_list .list_bottom { padding: 6px 20px 10px; border-top: 1px solid #dfdfdf; } 
 .public_job .job_list .list_bottom .etc { color: #777777; font-size: 12px; } 
@@ -124,7 +124,10 @@
 .public_job .pbj_slide .slide_wrap { position: relative; } 
 .public_job .pbj_slide .swiper-button-prev, .public_job .pbj_slide .swiper-button-next { width: 41px; height: 41px; margin-top: 0; top: -66px; z-index: 100; } 
 .public_job .pbj_slide .swiper-button-next { right: 0; left: initial !important; background: url(../resource/images/publicJob/arrow_next_icon.png) no-repeat; } 
-
+/* s:2024.09.13 */
+.public_job .pbj_slide .swiper-button-next::after,
+.public_job .pbj_slide .swiper-button-prev::after { content: none; } 
+/* e:2024.09.13 */
 .public_job .pbj_slide .swiper-button-prev { left: initial; right: 50px; background: url(../resource/images/publicJob/arrow_prev_icon.png) no-repeat; } 
 
 .public_job .pbj_list .more_wrap { margin: 50px 0; text-align: center; } 
@@ -197,8 +200,8 @@
 .calendar_list li { width: 45px; height: 45px; opacity: 0.4; float: left; text-align: center; margin: 4px 2.5px 4px; box-sizing: border-box; opacity: 1; position: relative; } 
 .calendar_list li.swiper-slide-active a { background: #008ae0; color: #fff; } 
 .calendar_list li a { display: flex; width: 100%; height: 100%; background: #fff; color: #afafaf; font-size: 13px; box-sizing: border-box; cursor: pointer; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 50%; flex-direction: column; align-items: center; justify-content: center; } 
-.pop_calender { display: none; max-width: 1068px; width: 100%; position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%); background: #efefef; z-index: 1100; border-radius: 20px; border: 1px solid #95a3cb;} 
-.pop_calendar_top .pop_tit { display: flex; padding: 15px 40px; background: #5c6fa6; justify-content: space-between;border-radius: 20px 20px 0 0; } 
+.pop_calender { display: none; max-width: 1068px; width: 100%; position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%); background: #efefef; z-index: 1100; border-radius: 20px; border: 1px solid #95a3cb; } 
+.pop_calendar_top .pop_tit { display: flex; padding: 15px 40px; background: #5c6fa6; justify-content: space-between; border-radius: 20px 20px 0 0; } 
 .pop_calendar_top .pop_tit .p_tit { padding-left: 40px; position: relative; color: #fff; font-size: 18px; } 
 .pop_calendar_top .pop_tit .p_tit::before { content: ''; width: 30px; height: 27px; position: absolute; left: 0; top: 2px; background: url(../resource/images/publicJob/calendar_icon.png) no-repeat; background-size: contain; } 
 .pop_calendar_top .pop_tit .pop_close { width: 23px; height: 23px; background: url(../resource/images/publicJob/close_type02_icon.png) no-repeat; border: none; } 
@@ -208,7 +211,7 @@
  .calendar_btn_wrap { display: flex; align-items: center; justify-content: space-between; } 
  .calendar_btn_wrap .calendar_day span { display: inline-block; color: #000; font-size: 36px; font-weight: 500; } 
  .calendar_btn_wrap .calendar_btn button { width: 41px; height: 41px; border: none; } 
- .calendar_btn_wrap .calendar_btn button.today_btn {display: none; width: 42px; margin-right: 10px; color: #008ae0; font-size: 12px; text-align: center; border: 1px solid #008ae0; border-radius: 20px;}
+ .calendar_btn_wrap .calendar_btn button.today_btn { display: none; width: 42px; margin-right: 10px; color: #008ae0; font-size: 12px; text-align: center; border: 1px solid #008ae0; border-radius: 20px; } 
  .calendar_btn_wrap .calendar_btn button.prev_btn { background: url(../resource/images/publicJob/arrow_prev_icon.png); } 
  .calendar_btn_wrap .calendar_btn button.next_btn { background: url(../resource/images/publicJob/arrow_next_icon.png); } 
  .calendar { width: 100%; background: #fff; border-collapse: collapse; box-sizing: border-box; margin: 0 auto; table-layout: fixed; } 
@@ -245,9 +248,8 @@
 @media all and (max-width:1024px){
  .public_job .pbj_list .job_list .item { width: calc(100% / 3 - 14px); } 
  }
-@media all and (max-width: 860px){
-/* 2024.05.07 css 수정 */
-.public_job .pbj_tab .pbj_tab_btn li.none_btn {display: none;}
+@media all and (max-width: 860px) {/* 2024.05.07 css 수정 */
+.public_job .pbj_tab .pbj_tab_btn li.none_btn { display: none; } 
 /* //2024.05.07 css 수정 */
  .public_job .pbj_result { flex-wrap: wrap; } 
  .public_job .pbj_result .keywords_wrap { width: 100%; margin-top: 20px; order: 4; } 
@@ -260,12 +262,10 @@
  
  .public_job .pbj_calendar .calendar_wrap { background: #edf5ff; } 
  }
-@media all and (max-width: 640px) { 
-    body[data-chatbot="no"] { 
-        #ch-plugin { display: none !important; } 
-        #renewFooter {padding-bottom: 50px;}
+@media all and (max-width: 640px) { body[data-chatbot="no"] { #ch-plugin { display: none !important; } 
+ #renewFooter { padding-bottom: 50px; } 
  }
- body.scroll_Lock {overflow: initial;}
+ body.scroll_Lock { overflow: initial; } 
  .public_job .for_mobile { display: block; } 
  .public_job .pbj_main { display: none; } 
  .public_job .pbj_list h3 { padding: 0 10px; margin-bottom: 20px; font-size: 18px; } 
@@ -273,10 +273,10 @@
  .public_job .pbj_list .job_list .item { width: 100%; } 
  /* 2024.03.20 css 수정 */
  .public_job .job_list .job_area { display: flex; margin-bottom: 10px; justify-content: space-between; } 
- .public_job .job_list .job_area .corp {font-size: 12px; order: 1; } 
- .public_job .job_list .job_area .area {margin-bottom: 0; margin-left: 10px; font-size: 12px; order: 2; flex-shrink: 0;} 
+ .public_job .job_list .job_area .corp { font-size: 12px; order: 1; } 
+ .public_job .job_list .job_area .area { margin-bottom: 0; margin-left: 10px; font-size: 12px; order: 2; flex-shrink: 0; } 
  .public_job .pbj_list .job_content { padding: 0 10px; } 
- .public_job .pbj_list .job_menu.fixed {position: sticky; box-shadow: 0px 10px 10px 0px rgba(34, 31, 31, 0.15);}
+ .public_job .pbj_list .job_menu.fixed { position: sticky; box-shadow: 0px 10px 10px 0px rgba(34, 31, 31, 0.15); } 
  .public_job .pbj_list .job_menu { margin-bottom: 20px; padding: 20px 10px; top: 0; background: #f8f8f8; text-align: center; z-index: 200; } 
  .public_job .pbj_list .job_menu li { width: calc(100% / 3); } 
  .public_job .pbj_list .job_menu li + li { margin-left: 0; } 
@@ -308,20 +308,20 @@
 
 /* 캘린더 */
 /* 2024.03.20 css 수정 */
-.pop_calender { position: fixed; left: 0; top: 0; bottom: 0; right: 0; transform: none; border-radius: 0;}
-.pop_calendar_top { position: relative; width: 100%; height: 142px; z-index: 1200; box-shadow: 0px 0px 20px 0px rgba(34, 37, 75, 0.2);}
-.pop_calender .cal_list_wrap { display: block; }
-.pop_calendar_wrap {position: absolute; top:0; right: 0; left: 0; bottom: 0;}
-.pop_calendar_wrap .calendar_content {padding-bottom: 200px; position: absolute; top: 140px; right: 0; left: 0; bottom: 0; overflow:hidden; overflow-y:auto;}
-.pop_calendar_top .pop_tit { padding: 8px 12px; background: #f4f4f4; border-top: 2px solid #008ae0; border-radius: 0;} 
+.pop_calender { position: fixed; left: 0; top: 0; bottom: 0; right: 0; transform: none; border-radius: 0; } 
+.pop_calendar_top { position: relative; width: 100%; height: 142px; z-index: 1200; box-shadow: 0px 0px 20px 0px rgba(34, 37, 75, 0.2); } 
+.pop_calender .cal_list_wrap { display: block; } 
+.pop_calendar_wrap { position: absolute; top:0; right: 0; left: 0; bottom: 0; } 
+.pop_calendar_wrap .calendar_content { padding-bottom: 200px; position: absolute; top: 140px; right: 0; left: 0; bottom: 0; overflow:hidden; overflow-y:auto; } 
+.pop_calendar_top .pop_tit { padding: 8px 12px; background: #f4f4f4; border-top: 2px solid #008ae0; border-radius: 0; } 
 .pop_calendar_top .pop_tit .p_tit { padding-left: 0; color: #000; font-size: 14px; } 
 .pop_calendar_top .pop_tit .p_tit::before { content: none; } 
 .pop_calendar_top .pop_tit .pop_close { width: 16px; height: 16px; background: url(../resource/images/publicJob/close_type03_icon.png) no-repeat; background-size: contain; } 
 .pop_calendar_control { padding: 0; background: #fff; } 
 .calendar_btn_wrap { padding: 10px; border-bottom: 1px solid #ddd; margin-bottom: 5px; } 
 .calendar_btn_wrap .calendar_day span { font-size: 15px; } 
-.calendar_btn_wrap .calendar_btn button { width: 20px; height: 20px; background-size: contain !important; }
-.calendar_btn_wrap .calendar_btn button.today_btn {display: inline-block;}
+.calendar_btn_wrap .calendar_btn button { width: 20px; height: 20px; background-size: contain !important; } 
+.calendar_btn_wrap .calendar_btn button.today_btn { display: inline-block; } 
 
 .calendar thead tr th { display: none; } 
 .calendar tbody tr td { display: block; border: none; } 
