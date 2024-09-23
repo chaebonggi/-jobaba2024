@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>온라인박람회 템플릿</title>
+    <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/import.css">
+    <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/kgoon.reset.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        .exhb_wrap .onjob_view .view_Detail { background:#fff; padding:30px 0; border-radius:0; border-top:1px solid #000; margin-top:20px; } 
+        .exhb_wrap .onjob_view .view_Detail .vTit, .exhb_wrap .attend_area, .exhb_wrap .at_cpn { display:none; } 
+
+        .expo_wrap { font-family: 'Noto Sans KR', sans-serif; font-size:16px; font-weight:400; color:#232323; box-sizing:border-box; position:relative; padding:0; width:100%; max-width:1260px; word-break:keep-all; line-height:1.6; margin:0 auto; } 
+        .expo_wrap .tit { margin-bottom: 16px; font-size:24px; font-weight:700; text-align:center; } 
+        .expo_wrap img { max-width:100%; } 
+
+        .expo_desc { background-color:#fff; padding:48px 0; } 
+        .expo_desc .for_pc { display: none; } 
+        
+        .expo_wrap .map_wrap { position: relative; } 
+        .expo_wrap .map_wrap .img_wrap img { display: none; } 
+        .expo_wrap .map_wrap .img_wrap { width: 100%; height: 679px; background: url(https://chaebonggi.github.io/jobaba2024/ckeditor/images/map_pc.png) center right no-repeat; } 
+        .expo_wrap .map_wrap .map_list { position: absolute; top: 50%; left: 20px; transform: translateY(-50%); background: #fff; border-radius: 10px; box-shadow: 3px 3px 7px 0 rgba(0, 0, 0, 0.16); overflow: hidden; } 
+        .expo_wrap .map_wrap .map_list li { border-bottom: 1px solid #e2e2e2; } 
+        
+        .expo_wrap .map_wrap .map_list li a { display: flex; width: 347px; padding: 10px 34px 10px 50px; background-image: url(https://chaebonggi.github.io/jobaba2024/ckeditor/images/marker_icon01.png), url(https://chaebonggi.github.io/jobaba2024/ckeditor/images/link_icon01.png); background-position: center left 16px, center right 16px; background-repeat: no-repeat; flex-direction: column; box-sizing: border-box; } 
+        .expo_wrap .map_wrap .map_list li:nth-child(2) a { background-image: url(https://chaebonggi.github.io/jobaba2024/ckeditor/images/marker_icon02.png), url(https://chaebonggi.github.io/jobaba2024/ckeditor/images/link_icon01.png); } 
+        .expo_wrap .map_wrap .map_list li:nth-child(3) a { background-image: url(https://chaebonggi.github.io/jobaba2024/ckeditor/images/marker_icon03.png), url(https://chaebonggi.github.io/jobaba2024/ckeditor/images/link_icon01.png); } 
+        .expo_wrap .map_wrap .map_list li:nth-child(4) a { background-image: url(https://chaebonggi.github.io/jobaba2024/ckeditor/images/marker_icon04.png), url(https://chaebonggi.github.io/jobaba2024/ckeditor/images/link_icon01.png); } 
+        .expo_wrap .map_wrap .map_list li:nth-child(5) a { background-image: url(https://chaebonggi.github.io/jobaba2024/ckeditor/images/marker_icon05.png), url(https://chaebonggi.github.io/jobaba2024/ckeditor/images/link_icon01.png); } 
+        .expo_wrap .map_wrap .map_list li:nth-child(6) a { background-image: url(https://chaebonggi.github.io/jobaba2024/ckeditor/images/marker_icon06.png), url(https://chaebonggi.github.io/jobaba2024/ckeditor/images/link_icon01.png); } 
+        .expo_wrap .map_wrap .map_list li:nth-child(7) a { background-image: url(https://chaebonggi.github.io/jobaba2024/ckeditor/images/marker_icon07.png), url(https://chaebonggi.github.io/jobaba2024/ckeditor/images/link_icon01.png); } 
+        .expo_wrap .map_wrap .map_list li:nth-child(8) a { background-image: url(https://chaebonggi.github.io/jobaba2024/ckeditor/images/marker_icon08.png), url(https://chaebonggi.github.io/jobaba2024/ckeditor/images/link_icon01.png); } 
+        .expo_wrap .map_wrap .map_list li:nth-child(9) a { background-image: url(https://chaebonggi.github.io/jobaba2024/ckeditor/images/marker_icon09.png), url(https://chaebonggi.github.io/jobaba2024/ckeditor/images/link_icon01.png); } 
+        .expo_wrap .map_wrap .map_list li strong { display: block; color: #2c60f9; font-size: 16px; } 
+        .expo_wrap .map_wrap .map_list li:nth-child(2) strong { color: #692498; } 
+        .expo_wrap .map_wrap .map_list li:nth-child(3) strong { color: #e92f00; } 
+        .expo_wrap .map_wrap .map_list li:nth-child(4) strong { color: #ff8000; } 
+        .expo_wrap .map_wrap .map_list li:nth-child(5) strong { color: #009c82; } 
+        .expo_wrap .map_wrap .map_list li:nth-child(6) strong { color: #18a8f1; } 
+        .expo_wrap .map_wrap .map_list li:nth-child(7) strong { color: #c55c00; } 
+        .expo_wrap .map_wrap .map_list li:nth-child(8) strong { color: #ffaa00; } 
+        .expo_wrap .map_wrap .map_list li:nth-child(9) strong { color: #139a00; } 
+        .expo_wrap .map_wrap .map_list li p { color: #333333; font-size: 14px; letter-spacing: -0.5px; } 
+        .expo_wrap .expo_table { margin: 0 auto; } 
+        .expo_wrap .expo_info table { width: 100%; border-collapse: separate; border-spacing: 0; } 
+        .expo_wrap .expo_info th,
+        .expo_wrap .expo_info td { padding: 10px; color: #232323; font-size: 16px; text-align: center; font-weight: bold; } 
+        .expo_wrap .expo_info th { background: #e1e1e1; } 
+        .expo_wrap .expo_info td { background: #fff; } 
+        .expo_wrap .expo_info tbody tr:nth-child(odd) td { background: #f5f5f5; } 
+        .expo_wrap .expo_info tbody tr:first-child td { background: #2c60f9; color: #fff; } 
+        .expo_wrap .expo_info th:first-child,
+        .expo_wrap .expo_info td:first-child { position: sticky; left: 0; } 
+        .expo_wrap .expo_info .txt { margin-top: 10px; color: #232323; font-size: 16px; } 
+
+        .expo_wrap .hire_list_wrap h2 { text-align:center; font-size:32px; margin:48px 0 24px; padding:0; } 
+        .expo_wrap .hire_list { border-top:1px solid #a4a4a4; margin:0; padding:0; position:relative; } 
+        .expo_wrap .hire_list li { display:flex; border-bottom: 1px solid #d6d6d6; padding:24px 0; align-items: center; } 
+        .expo_wrap .hire_list li a { text-decoration:none; color:inherit; } 
+        .expo_wrap .hire_list li:hover { background:#f9f9f9; } 
+        .expo_wrap .hire_list li .com_nm { display: flex; margin-right: 30px; align-items: center; justify-content: center; color:#52595a; width:100%; max-width:240px; flex-shrink: 0; } 
+        .expo_wrap .hire_list li .com_nm img { max-width: 108px; } 
+        .expo_wrap .hire_list li .hire_nm { font-weight:700; flex-grow:1; } 
+        .expo_wrap .hire_list li .hire_nm .cond { font-size:13px; font-weight:300; color:#52595a; margin-top:6px; } 
+        .expo_wrap .hire_list li .hire_nm .cond span { display:inline-block; } 
+        .expo_wrap .hire_list li .hire_nm .cond span+span { margin-left:10px; } 
+        .expo_wrap .hire_list li .hire_nm .cond span+span:before { content:"|"; padding-right:10px; font-weight:200; font-size:12px; color:#d4d4d4; position:relative; top:-1px; } 
+        .expo_wrap .hire_list li .hire_nm .desc { font-size:13px; font-weight:300; color:#9fa19f; margin-top:2px; } 
+        .expo_wrap .hire_list li .btn_area { margin-right: 20px; text-align:right; position:relative; } 
+        .expo_wrap .hire_list li .btn_area a { display: block; width: 120px; color:#2c60f9; font-size:16px; border:1px solid #2c60f9; border-radius:10px; padding:6px 10px; text-align: center; box-sizing: border-box; } 
+        .expo_wrap .hire_list li:hover .btn_area a { color:#fff; background:#2c60f9; } 
+        .expo_wrap .hire_list li .btn_area .due { font-size:13px; font-weight:300; color:#52595a; position:absolute; bottom:0; right:0; } 
+        
+        @media screen and (max-width:1024px){
+            .expo_wrap .hire_list li .com_nm { max-width:200px; } 
+            .expo_wrap .map_wrap .map_list { position: static; transform: none; } 
+            .expo_wrap .map_wrap .img_wrap { background-position: center; height: 400px; background-size: 100% 400px; } 
+            .expo_wrap .map_wrap .map_list { border-radius: 0; box-shadow: none; } 
+            .expo_wrap .map_wrap .map_list li a { width: 100%; flex-direction: row; align-items: center; } 
+            .expo_wrap .map_wrap .map_list li strong { margin-right: 20px; }        
+            
+            .expo_wrap .expo_table { overflow-x: scroll; } 
+            .expo_wrap .expo_info table { width: 1200px; } 
+        }
+        @media screen and (max-width:768px){
+            .expo_desc { padding:36px 0; } 
+            .expo_wrap .hire_list li .com_nm { max-width:160px; } 
+            .expo_wrap .hire_list li .btn_area { display: none; } 
+            .expo_wrap .map_wrap .img_wrap { height: auto; background: none; } 
+            .expo_wrap .map_wrap .img_wrap img { display: block; width: 100%; height: 100%; } 
+        }
+        @media screen and (max-width:640px){
+            .expo_desc .for_pc { display: block; } 
+            .expo_wrap .hire_list_wrap h2 { margin:30px 0 20px; font-size: 24px; } 
+            .expo_wrap .tit { font-size: 20px; } 
+            .expo_desc { padding:24px 0; } 
+            .expo_wrap .hire_list li .com_nm { max-width: 100px; margin-right: 10px; } 
+            .expo_wrap .hire_list li .com_nm img { max-width: 80px; } 
+            .expo_wrap .hire_list li .hire_nm { border:0; padding:0; margin-top:8px; } 
+            .expo_wrap .hire_list li .hire_nm .cond span+span { margin-left:6px; } 
+            .expo_wrap .hire_list li .hire_nm .cond span+span:before { padding-right:6px; } 
+            .expo_wrap .expo_info th, .expo_wrap .expo_info td { padding: 6px; color: #232323; font-size: 14px; text-align: center; font-weight: bold; } 
+            .expo_wrap .expo_info .txt { font-size: 12px; } 
+            .expo_wrap .map_wrap .map_list li a { padding: 10px 28px 10px 32px; background-size: 12px; background-position: center left 12px, center right 12px; word-break: keep-all; } 
+            .expo_wrap .map_wrap .map_list li strong { margin-right: 10px; font-size: 14px; } 
+        
+        }
+        @media screen and (max-width:420px){
+            .expo_wrap .hire_list li { flex-direction:column; align-items: initial; } 
+            .expo_wrap .hire_list li .com_nm { max-width: fit-content; margin: 0; } 
+        }
+    </style>
+    <div class="expo_wrap">
+        <!-- <img src="https://fastly.picsum.photos/id/20/3670/2462.jpg?hmac=CmQ0ln-k5ZqkdtLvVO23LjVAEabZQx2wOaT4pyeG10I" alt="" /> -->
+        <div class="expo_desc">
+            <p class="tit">쿠팡 센터별 위치 및 상세주소</p>
+            <div class="map_wrap">
+                <div class="img_wrap">
+                    <img src="https://chaebonggi.github.io/jobaba2024/ckeditor/images/map_m.png" alt="쿠팡 센터">
+                </div>
+                <ul class="map_list">
+                    <li>
+                        <a href="#" target="_blank">
+                            <strong>부천1센터</strong>
+                            <p>경기도 부천시 신흥로 511 80</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <strong>인천16센터</strong>
+                            <p>인천광역시 중구 서해대로 111</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <strong>안산2센터</strong>
+                            <p>경기도 안산시 단원구 시화호수로 835</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <strong>마장1센터</strong>
+                            <p>경기도 이천시 마장면 청강가창로 309</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <strong>용인1센터</strong>
+                            <p>경기도 용인시 처인구 백암면 백봉로 295</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <strong>안성8센터</strong>
+                            <p>경기도 안성시 일죽면 노성로 168-121</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <strong>안성5센터</strong>
+                            <p>경기도 안성시 원곡면 원곡물류단지 1로 61</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <strong>안성4센터</strong>
+                            <p>경기도 안성시 죽산면 녹배길 35</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <strong>평택1센터</strong>
+                            <p>경기도 평택시 포승읍 하만호길 153</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="expo_info">
+            <p class="tit">쿠팡 셔틀버스 운행지역</p>
+            <div class="expo_table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>도 / 센터</th>
+                            <th>안성5센터</th>
+                            <th>안성4센터</th>
+                            <th>마장센터</th>
+                            <th>인천16센터</th>
+                            <th>안산2센터</th>
+                            <th>부천1센터</th>
+                            <th>용인1센터</th>
+                            <th>안성8센터</th>
+                            <th>평택1센터</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>경기도</td>
+                            <td>27</td>
+                            <td>17</td>
+                            <td>11</td>
+                            <td>2</td>
+                            <td>20</td>
+                            <td>6</td>
+                            <td>9</td>
+                            <td>14</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>인천광역시</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>12</td>
+                            <td>1</td>
+                            <td>6</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>서울특별시</td>
+                            <td>9</td>
+                            <td>8</td>
+                            <td>10</td>
+                            <td>5</td>
+                            <td></td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>9</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>충청남도</td>
+                            <td>10</td>
+                            <td>3</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>3</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>충청북도</td>
+                            <td>2</td>
+                            <td>7</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>4</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>강원도</td>
+                            <td></td>
+                            <td></td>
+                            <td>1</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>1</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>대전광역시</td>
+                            <td>2</td>
+                            <td>4</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>4</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="txt">※ 운영 정류장수 : EX) 경기도 1 (경기도 내 1개의 정류장)</p>
+        </div>
+        <div class="hire_list_wrap">
+            <h2>진행중 채용공고</h2>
+            <ul class="hire_list">
+                <li>
+                    <div class="com_nm"><img src="https://chaebonggi.github.io/jobaba2024/ckeditor/images/coupang_logo.png" alt="쿠팡"></div>
+                    <div class="hire_nm">
+                        <a href="#" target="_blank">[CFS쿠팡] 부천1물류센터 계약직 사원 채용</a>
+                        <div class="cond">
+                            <span>부천시</span>
+                            <span>학력무관</span>
+                            <span>경력무관</span>
+                            <span>계약직</span>
+                            <span>월 321만원 ↑</span>
+                        </div>
+                        <div class="desc">물류, HUB, 지게차, 오더피커, 웰컴데이, 식사제공, 셔틀버스 운행</div>
+                    </div>
+                    <div class="btn_area">
+                        <a href="#" target="_blank">지원하기</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="com_nm"><img src="https://chaebonggi.github.io/jobaba2024/ckeditor/images/coupang_logo.png" alt="쿠팡"></div>
+                    <div class="hire_nm">
+                        <a href="#" target="_blank">[CFS쿠팡] 인천16물류센터 계약직 사원 채용</a>
+                        <div class="cond">
+                            <span>인천시</span>
+                            <span>학력무관</span>
+                            <span>경력무관</span>
+                            <span>계약직</span>
+                            <span>월 375만원 ↑</span>
+                        </div>
+                        <div class="desc">물류, HUB, 지게차, 오더피커, 웰컴데이, 식사제공, 셔틀버스 운행</div>
+                    </div>
+                    <div class="btn_area">
+                        <a href="#" target="_blank">지원하기</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="com_nm"><img src="https://chaebonggi.github.io/jobaba2024/ckeditor/images/coupang_logo.png" alt="쿠팡"></div>
+                    <div class="hire_nm">
+                        <a href="#" target="_blank">[CFS쿠팡] 안산2물류센터 계약직 사원 채용</a>
+                        <div class="cond">
+                            <span>안산시</span>
+                            <span>학력무관</span>
+                            <span>경력무관</span>
+                            <span>계약직</span>
+                            <span>월 331만원 ↑</span>
+                        </div>
+                        <div class="desc">물류, HUB, 지게차, 웰컴데이, 식사제공, 셔틀버스 운행</div>
+                    </div>
+                    <div class="btn_area">
+                        <a href="#" target="_blank">지원하기</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="com_nm"><img src="https://chaebonggi.github.io/jobaba2024/ckeditor/images/coupang_logo.png" alt="쿠팡"></div>
+                    <div class="hire_nm">
+                        <a href="#" target="_blank">[CFS쿠팡] 마장1물류센터 계약직 사원 채용</a>
+                        <div class="cond">
+                            <span>이천시</span>
+                            <span>학력무관</span>
+                            <span>경력무관</span>
+                            <span>계약직</span>
+                            <span>월 331만원 ↑</span>
+                        </div>
+                        <div class="desc">물류, HUB, 지게차, 웰컴데이, 식사제공, 셔틀버스 운행</div>
+                    </div>
+                    <div class="btn_area">
+                        <a href="#" target="_blank">지원하기</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="com_nm"><img src="https://chaebonggi.github.io/jobaba2024/ckeditor/images/coupang_logo.png" alt="쿠팡"></div>
+                    <div class="hire_nm">
+                        <a href="#" target="_blank">[CFS쿠팡] 용인1물류센터 계약직 사원 채용</a>
+                        <div class="cond">
+                            <span>용인시</span>
+                            <span>학력무관</span>
+                            <span>경력무관</span>
+                            <span>계약직</span>
+                            <span>월 371만원 ↑</span>
+                        </div>
+                        <div class="desc">물류, HUB, 지게차, 웰컴데이, 식사제공, 셔틀버스 운행</div>
+                    </div>
+                    <div class="btn_area">
+                        <a href="#" target="_blank">지원하기</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="com_nm"><img src="https://chaebonggi.github.io/jobaba2024/ckeditor/images/coupang_logo.png" alt="쿠팡"></div>
+                    <div class="hire_nm">
+                        <a href="#" target="_blank">[CFS쿠팡] 안성8물류센터 계약직 사원 채용</a>
+                        <div class="cond">
+                            <span>안성시</span>
+                            <span>학력무관</span>
+                            <span>경력무관</span>
+                            <span>계약직</span>
+                            <span>월 331만원 ↑</span>
+                        </div>
+                        <div class="desc">물류, HUB, 지게차, 웰컴데이, 식사제공, 셔틀버스 운행</div>
+                    </div>
+                    <div class="btn_area">
+                        <a href="#" target="_blank">지원하기</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="com_nm"><img src="https://chaebonggi.github.io/jobaba2024/ckeditor/images/coupang_logo.png" alt="쿠팡"></div>
+                    <div class="hire_nm">
+                        <a href="#" target="_blank">[CFS쿠팡] 안성5물류센터 계약직 사원 채용</a>
+                        <div class="cond">
+                            <span>안성시</span>
+                            <span>학력무관</span>
+                            <span>경력무관</span>
+                            <span>계약직</span>
+                            <span>월 344만원 ↑</span>
+                        </div>
+                        <div class="desc">물류, HUB, 지게차, 오더피커, 웰컴데이, 식사제공, 셔틀버스 운행</div>
+                    </div>
+                    <div class="btn_area">
+                        <a href="#" target="_blank">지원하기</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="com_nm"><img src="https://chaebonggi.github.io/jobaba2024/ckeditor/images/coupang_logo.png" alt="쿠팡"></div>
+                    <div class="hire_nm">
+                        <a href="#" target="_blank">[CFS쿠팡] 안성4물류센터 계약직 사원 채용</a>
+                        <div class="cond">
+                            <span>안성시</span>
+                            <span>학력무관</span>
+                            <span>경력무관</span>
+                            <span>계약직</span>
+                            <span>월 344만원 ↑</span>
+                        </div>
+                        <div class="desc">물류, HUB, 지게차, 오더피커, 웰컴데이, 식사제공, 셔틀버스 운행</div>
+                    </div>
+                    <div class="btn_area">
+                        <a href="#" target="_blank">지원하기</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="com_nm"><img src="https://chaebonggi.github.io/jobaba2024/ckeditor/images/coupang_logo.png" alt="쿠팡"></div>
+                    <div class="hire_nm">
+                        <a href="#" target="_blank">[CFS쿠팡] 평택1물류센터 계약직 사원 채용</a>
+                        <div class="cond">
+                            <span>평택시</span>
+                            <span>학력무관</span>
+                            <span>경력무관</span>
+                            <span>계약직</span>
+                            <span>월 363만원 ↑</span>
+                        </div>
+                        <div class="desc">물류, HUB, 지게차, 오더피커, 웰컴데이, 식사제공, 셔틀버스 운행</div>
+                    </div>
+                    <div class="btn_area">
+                        <a href="#" target="_blank">지원하기</a>
+                    </div>
+                </li>
+             
+                    
+                
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
