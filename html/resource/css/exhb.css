@@ -525,6 +525,10 @@
 
 	.exhb_wrap .des_open .tit_wrap .tit{width: calc(100% - 50px) !important}
 	.exhb_wrap .tag li{font-size: 13px}
+	/* s:2024.09.27 css 추가 수정 */
+	.exhb_wrap .at_cpn_list .slick-dots li.slick-active {display: inline-block; width: auto; font-size: 12px;}                
+	.exhb_wrap .at_cpn_list .slick-dots li {display: none;}
+	/* e:2024.09.27 css 추가 수정  */
 
 }
 
