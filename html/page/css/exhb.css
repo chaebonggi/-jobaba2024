@@ -282,19 +282,20 @@
 .exhb_wrap .innerSection { max-width: 1260px; width: calc(100% - 20px); margin: 0 auto; } 
 .exhb_remain .exhb_job { background: #fff; } 
 .exhb_remain .exhb_job .innerSection { padding: 100px 0 50px; } 
-.exhb_remain .exhb_job .job_list { display: flex; margin-bottom: 50px; flex-wrap: wrap; gap: 30px; } 
+.exhb_remain .exhb_job .job_list { display: flex; padding: 20px; margin-bottom: 50px; flex-wrap: wrap; gap: 30px; border: 1px solid #ddd; border-radius: 10px;} 
 .exhb_remain .exhb_job .job_list .item { width: calc(100% / 3 - 20px); } 
-.exhb_remain .exhb_job .job_list .item.end .img_wrap::before { content: '마감'; display: flex; width: 100%; height: 100%; position: absolute; top: 0; left: 0; background: rgba(0, 0, 0, 0.7); color: #fff; font-size: 40px; font-weight: 700; align-items: center; justify-content: center; } 
-.exhb_remain .exhb_job .job_list a { display: block; } 
+.exhb_remain .exhb_job .job_list .item.end .img_wrap::before { content: ''; display: flex; width: 100%; height: 100%; position: absolute; top: 0; left: 0; background: rgba(0, 0, 0, 0.7); color: #fff; font-size: 40px; font-weight: 700; align-items: center; justify-content: center; } 
+.exhb_remain .exhb_job .job_list a { display: block; position: relative;}
+.exhb_remain .exhb_job .job_list a:hover::before {content: '';width: 100%;height: 100%;position: absolute;top: 0;left: 0;border: 2px solid #4193F7;box-sizing: border-box;border-radius: 15px;z-index: 1; } 
 .exhb_remain .exhb_job .job_list .img_wrap { height: 170px; position: relative; border-radius: 15px; overflow: hidden; } 
 .exhb_remain .exhb_job .job_list .img_wrap img { width: 100%; height: 100%; } 
 .exhb_remain .exhb_job .job_list .txt_wrap { padding: 20px 10px; } 
 .exhb_remain .exhb_job .job_list .txt_wrap .prog { font-size: 14px; font-weight: 500; } 
 .exhb_remain .exhb_job .job_list .txt_wrap .prog.st1 { color: #00a8cd; } 
 .exhb_remain .exhb_job .job_list .txt_wrap .prog.st2 { color: #adadad; } 
-.exhb_remain .exhb_job .job_list .txt_wrap .tit { display: block; margin: 8px 0; color: #000; font-size: 16px; font-weight: 500; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; } 
+.exhb_remain .exhb_job .job_list .txt_wrap .tit { display: block; margin: 8px 0; color: #000; font-size: 18px; font-weight: 500; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; } 
 .exhb_remain .exhb_job .job_list a:hover .txt_wrap .tit { text-decoration: underline; } 
-.exhb_remain .exhb_job .job_list .txt_wrap ul li { display: block; color: #777777; font-size: 14px; font-weight: 300; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; } 
+.exhb_remain .exhb_job .job_list .txt_wrap ul li { display: block; color: #777777; font-size: 16px; font-weight: 300; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; } 
 .exhb_wrap .paging { margin: 24px 0; text-align: center; } 
 .exhb_wrap .paging a { display: inline-block; color: #6b6b6b; padding: 4px; font-size: 16px; } 
 .exhb_wrap .paging a + a { margin-left: 20px; } 
@@ -331,21 +332,22 @@
 .exhb_wrap .exhb_onjob .view_Detail .detail_box table {margin: 0 auto; } 
 .exhb_wrap .des_sub.style02 {background: #fff; } 
 .exhb_wrap .des_sub.style02 .src_wrap {display: flex;margin-bottom: 20px;align-items: center;justify-content: flex-end;gap: 10px; } 
-.exhb_wrap .des_sub.style02 .des_select {display: inline-block;width: 120px;height: 34px;padding: 0 20px 0 10px;background: #fff;vertical-align: middle;border: 0;-webkit-appearance: none;-moz-appearance: none;appearance: none;background: url(../images/exhb/select_arrow02.png) center right 10px no-repeat;background-size: 11px;font-size: 14px; } 
+.exhb_wrap .des_sub.style02 .des_select {display: inline-block;width: 120px;height: 34px;padding: 0 20px 0 10px;background: #fff;vertical-align: middle;border: 0;-webkit-appearance: none;-moz-appearance: none;appearance: none;background: url(../images/exhb/select_arrow02.png) center right 10px no-repeat;background-size: 11px;font-size: 16px; } 
 .exhb_wrap .des_sub.style02 .des_sch input[type="submit"] {background: url(../images/exhb/src_ico.png) center right transparent no-repeat;width: 20px;height: 20px;border: 0;text-indent: -9999px; } 
-.exhb_wrap .des_sub.style02 .des_sch {max-width: 460px;width: 100%;margin: 0;padding: 6px 20px; } 
+.exhb_wrap .des_sub.style02 .des_sch {max-width: 460px;width: 100%;margin: 0;padding: 10px 20px; } 
+.exhb_wrap .des_sch.style02 input[type="text"] {font-size: 16px;}
 .exhb_wrap .des_sub.style02 .des_filter {margin-bottom: 20px; } 
 .exhb_wrap .des_sub.style02 .des_filter .check_list {display: flex;border: 1px solid #cecece;border-radius: 10px 10px 0 0; } 
 .exhb_wrap .des_sub.style02 .des_filter .checkItem {padding: 30px;flex: 1; } 
 .exhb_wrap .des_sub.style02 .des_filter .checkItem:nth-child(1) {flex: 2;border-right: 1px solid #cecece; } 
 .exhb_wrap .des_sub.style02 .des_filter .checkList {display: inline-flex;flex-wrap: wrap;gap: 10px; } 
-.exhb_wrap .des_sub.style02 .des_filter .c_item .lb_tag {display: inline-flex;height: 30px;padding: 10px 20px;color: #666666;font-size: 14px;font-weight: 300;border: 1px solid #dddddd;border-radius: 50px;text-align: center;box-sizing: border-box;align-items: center;justify-content: center; } 
+.exhb_wrap .des_sub.style02 .des_filter .c_item .lb_tag {display: inline-flex;height: 40px;padding: 10px 25px;color: #666666;font-size: 16px;font-weight: 300;border: 1px solid #dddddd;border-radius: 10px;text-align: center;box-sizing: border-box;align-items: center;justify-content: center; } 
 .exhb_wrap .des_sub.style02 .des_filter .c_item .inp_chk:checked + .lb_tag {background: #2aa6c1;color: #fff;border-color: #2aa6c1; } 
 .exhb_wrap .des_sub.style02 .des_filter .des_result {display: flex;padding: 20px 30px;background: #f5f6f8;border: 1px solid #ddd;border-top: 0;border-radius: 0 0 10px 10px; } 
 .exhb_wrap .des_sub.style02 .des_filter .keywords_wrap {width: calc(100% - 100px); } 
-.exhb_wrap .des_sub.style02 .des_filter .keywords {display: inline-flex;flex-wrap: wrap;gap: 4px 10px; } 
+.exhb_wrap .des_sub.style02 .des_filter .keywords {display: inline-flex;flex-wrap: wrap;gap: 4px 20px; } 
 .exhb_wrap .des_sub.style02 .des_filter .selected_keyword {display: inline-flex;color: #6e6e6e;font-size: 14px;font-weight: 300;align-items: center;box-sizing: border-box; } 
-.exhb_wrap .des_sub.style02 .des_filter .selected_keyword .btn_del {width: 8px;height: 8px;margin-left: 6px;background: url(../images/exhb/close_type01_icon.png) no-repeat;border: none; } 
+.exhb_wrap .des_sub.style02 .des_filter .selected_keyword .btn_del {width: 8px;height: 8px;margin-left: 10px;background: url(../images/exhb/close_type01_icon.png) no-repeat;border: none; } 
 .exhb_wrap .des_sub.style02 .des_filter .area_btn {margin-left: auto; } 
 .exhb_wrap .des_sub.style02 .des_filter .area_btn .btn_reset {display: block;padding-right: 14px;position: relative;background: url(../images/exhb/reset_icon.png) center right no-repeat;color: #666666;font-size: 14px; } 
 .exhb_wrap .at_cpn.style02 {background: #f1f6f8; overflow: hidden;} 
@@ -564,9 +566,9 @@
     .exhb_remain .exhb_reheader .tit_wrap {padding: 40px 0; } 
     .exhb_remain .exhb_reheader .tit_wrap h2 {max-width: 300px;height: 62px;padding-top: 8px;font-size: 22px; } 
     .exhb_remain .exhb_reheader .tit_wrap::before {width: 280px;height: 119px; } 
-    .exhb_remain .exhb_job {background: #dbeeff; } 
+    .exhb_remain .exhb_job {background: #fff; } 
     .exhb_remain .exhb_job .innerSection {padding: 30px 0; } 
-    .exhb_remain .exhb_job .job_list .img_wrap {display: none; } 
+    .exhb_remain .exhb_job .job_list a:hover::before {content: none;}
     .exhb_remain .exhb_job .job_list {margin-bottom: 30px;gap: 10px 0; } 
     .exhb_remain .exhb_job .job_list .item {width: 100%; } 
     .exhb_remain .exhb_job .job_list a {background: #fff;border-radius: 15px; } 
