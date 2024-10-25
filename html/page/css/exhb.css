@@ -284,7 +284,7 @@
 .exhb_remain .exhb_job .innerSection { padding: 100px 0 50px; } 
 .exhb_remain .exhb_job .job_list { display: flex; padding: 20px; margin-bottom: 50px; flex-wrap: wrap; gap: 30px; border: 1px solid #ddd; border-radius: 10px;} 
 .exhb_remain .exhb_job .job_list .item { width: calc(100% / 3 - 20px); } 
-.exhb_remain .exhb_job .job_list .item.end .img_wrap::before { content: ''; display: flex; width: 100%; height: 100%; position: absolute; top: 0; left: 0; background: rgba(0, 0, 0, 0.7); color: #fff; font-size: 40px; font-weight: 700; align-items: center; justify-content: center; } 
+.exhb_remain .exhb_job .job_list .item.end .img_wrap::before { content: '종료'; display: flex; width: 100%; height: 100%; position: absolute; top: 0; left: 0; background: rgba(0, 0, 0, 0.7); color: #fff; font-size: 40px; font-weight: 700; align-items: center; justify-content: center; } 
 .exhb_remain .exhb_job .job_list a { display: block; position: relative;}
 .exhb_remain .exhb_job .job_list a:hover::before {content: '';width: 100%;height: 100%;position: absolute;top: 0;left: 0;border: 2px solid #4193F7;box-sizing: border-box;border-radius: 15px;z-index: 1; } 
 .exhb_remain .exhb_job .job_list .img_wrap { height: 170px; position: relative; border-radius: 15px; overflow: hidden; } 
@@ -392,12 +392,12 @@
 .modal.pop02 .resumeList .rInfoWrap li + li {margin-top: 4px; } 
 .modal.pop02 .resumeWrap {padding: 30px 40px;margin-bottom: 30px;background: #fff;border: 1px solid #c5c5c5; } 
 .modal.pop02 .resumeWrap dl {display: flex;align-items: center; } 
-.modal.pop02 .resumeWrap dl dt {margin-right: 20px;color: #000;font-size: 18px; } 
+.modal.pop02 .resumeWrap dl dt {margin-right: 20px;color: #000;font-size: 20px; } 
 .modal.pop02 .resumeWrap dl dd {display: flex;width: calc(100% - 120px);align-items: center; } 
-.modal.pop02 .resumeWrap .rSelect { display: inline-block; max-width: 460px; width: 100%; height: 34px; padding: 0 20px 0 10px; background: #fff; vertical-align: middle; border: 1px solid #cecece; -webkit-appearance: none; -moz-appearance: none; appearance: none; background: url(../images/exhb/select_arrow02.png) center right 10px no-repeat; background-size: 11px; font-size: 16px; cursor: pointer; } 
+.modal.pop02 .resumeWrap .rSelect { display: inline-block; max-width: 460px; width: 100%; height: 45px; padding: 0 20px 0 10px; background: #fff; vertical-align: middle; border: 1px solid #cecece; -webkit-appearance: none; -moz-appearance: none; appearance: none; background: url(../images/exhb/select_arrow02.png) center right 10px no-repeat; background-size: 11px; font-size: 18px; cursor: pointer; } 
 .modal.pop02 .resumeWrap .rBtnWrap {display: inline-flex; margin-left: 20px; flex-shrink: 0;}
 .modal.pop02 .resumeWrap .rBtnWrap a + a {margin-left: 20px;}
-.modal.pop02 .resumeWrap .rBtnWrap .rBtn {display: block;padding: 5px 20px;background: #8f8f8f;color: #fff;font-size: 15px;font-weight: 500;border-radius: 5px; } 
+.modal.pop02 .resumeWrap .rBtnWrap .rBtn {display: block;padding: 5px 20px;background: #8f8f8f;color: #fff;font-size: 18px;font-weight: 500;border-radius: 5px; } 
 .modal.pop02 .resumeWrap .rBtnWrap .rBtn.b_orange {background: #ff8a00; } 
 .modal.pop02 .fileWrap {margin-bottom: 30px; } 
 .modal.pop02 .fileWrap .fileBtn {margin-bottom: 10px;text-align: right; } 
@@ -648,6 +648,8 @@
     .exhb_remain .exhb_job .job_list .txt_wrap .tit {margin: 4px 0;font-size: 14px; } 
     .exhb_remain .exhb_job .job_list .txt_wrap ul {padding-top: 8px;border-top: 1px solid #e6e6e6; } 
     .exhb_remain .exhb_job .job_list .txt_wrap ul li {font-size: 12px; } 
+	.exhb_remain .exhb_job .job_list .img_wrap {height: 150px;}
+	.exhb_remain .exhb_job .job_list .item.end .img_wrap::before {font-size: 24px;}
     .exhb_wrap .exhb_cst .innerSection {padding: 30px 0 50px; } 
     .exhb_wrap .exhb_cst .tit_wrap h3 {margin-bottom: 4px;font-size: 20px; } 
     .exhb_wrap .exhb_cst .tit_wrap {margin-bottom: 40px; } 
@@ -670,7 +672,8 @@
 	.exhb_wrap .des_sub.style02 .des_filter .check_list {max-height: 150px;overflow: scroll; } 
 	.exhb_wrap .exhb_onjob { margin-top: 30px; } 
 	.exhb_wrap .des_sub.style02 .des_sch input[type="submit"] { width: 16px; height: 16px; background-size: contain; } 
-	.exhb_wrap .des_sub.style02 .des_filter .area_btn .btn_reset { font-size: 12px; } 
+	.exhb_wrap .des_sub.style02 .des_filter .area_btn .btn_reset { font-size: 12px; }
+	
 
 	/* 팝업 */
 	.modal.pop02 .modal-header .modal-title {font-size: 18px !important; } 
@@ -686,7 +689,9 @@
 	.modal.pop02 .resumeList .rTit {padding-top: 6px;font-size: 16px; } 
 	.modal.pop02 .resumeList .rInfoWrap li {font-size: 12px; } 
 	.modal.pop02 .resumeWrap {padding: 10px 15px;margin-bottom: 20px; } 
+	.modal.pop02 .resumeWrap dl dt {margin-right: 0; font-size: 16px;}
 	.modal.pop02 .resumeWrap dl dd {flex-direction: column;gap: 10px; } 
+	.modal.pop02 .resumeWrap .rSelect {height: 36px; font-size: 16px;}
 	.modal.pop02 .resumeWrap .rBtnWrap {margin-left: 0; } 
 	.modal.pop02 .resumeWrap .rBtnWrap .rBtn {padding: 8px 12px;font-size: 14px;border-radius: 5px;text-align: center; } 
 	.modal.pop02 .resumeWrap .rBtnWrap a + a {margin-left: 4px; } 
