@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>자기소개서 첨삭 팝업</title>
+	<!-- core CSS -->
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/import.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/swiper.min.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/kgoon.reset.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/main2024/css/style.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/bxslider/slick.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/allnew_ia.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/layout.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/style.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/style.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/mobile.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/mobile.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/font-awesome.min.css">
+	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/pe-icon-7-stroke.css">
+	<link type="text/css" rel="stylesheet" href="../etc/css/fonts.css" />
+	<!-- core JS -->
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-2.2.4.js"></script>
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-ui-1.11.4.js"></script>
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery.validate-1.14.0.js"></script>
+	<!-- common References -->
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/common.js"></script>
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/mobile.common.js?v=20190418"></script>
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery.common.js"></script>
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/upload/js/upload.common.js"></script>
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main.js"></script>
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/default_menu.js"></script>
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/swiper.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/bxslider/slick.js"></script>
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/bootstrap.min.js"></script>
+	<!-- ai면접 -->
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery.leanModal.min.js"></script>
+	<!-- 신규 2020 JS -->
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/imgLiquid-min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/script.js"></script>
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/main/jquery.vticker-min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.js"></script>
+	<!-- //잡아바 default-->
+
+	<!--추가 css-->
+    <style>
+		.modal .modal-dialog {max-width: 430px;}
+		.modal .modal-body {padding: 30px 0 20px;}
+		.modal .modal-header {padding: 10px 15px !important; background: #2f72cc !important;}
+		.modal .modal-header .modal-title {font-size: 18px !important; font-weight: 500; letter-spacing: -1px;}
+		.modal .modal-header .close {margin-top: -6px !important; font-size: 24px !important;}
+        .modal .desc{color: #000000; font-size: 16px; line-height:1.6; text-align:center;}
+        .modal .modal-footer .pBtn {padding: 5px 30px; background: #2f72cc; color:#fff; font-size: 18px; border-radius: 5px;}
+		@media all and (max-width: 640px) {
+			.modal .modal-header {padding: 10px !important; }
+			.modal .modal-header .modal-title {font-size: 16px !important;}
+			.modal .modal-header .close {margin-top: -4px !important;font-size: 20px !important;}
+		}
+    </style>
+</head>
+
+<body>
+	<div id="LayerPopup1" class="modal fade in" role="dialog" aria-labelledby="Layer1ModalLabel" style="display:block;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" id="btnLayerClose_top" class="close btn_close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title" id="recommModalLabel">자기소개서 첨삭 서비스 선착순 마감 안내</h4>
+                </div>
+                <div class="modal-body popLayer" id="viewRecomReqHtml">
+                    <div class="desc">
+                        금주 제공 건수가 마감되었습니다.<br/>
+                        매주 월요일 서비스 재개됩니다.
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="pBtn" data-dismiss="modal" aria-label="Close">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+	<!--잡아바 js-->
+	<script type="text/javascript" charset="utf-8" src="https://www.jobaba.net/resource/js/jquery-1.11.3.js"></script>
+	<script>	
+		
+	</script>
+</body></html>
