@@ -18,11 +18,15 @@
         .expo_wrap .tit { margin-bottom: 16px; font-size:24px; font-weight:700; text-align:center; } 
         .expo_wrap img { max-width:100%; } 
         
-        .expo_wrap .info_wrap { padding: 50px 0; background: #00693e; } 
-        .expo_wrap .info_wrap a { display: flex; max-width: 640px; width: 100%; height: 182px; margin: 0 auto; background: linear-gradient(180deg, rgb(174,255,174) 30%, rgb(100,255,224) 100%); color: #000; font-size: 30px; font-weight: 500; border-radius: 100px; border: 2px solid #000; align-items: center; justify-content: center; box-shadow: 0px 10px 0px 0px rgba(0, 0, 0, 0.28); } 
-        .expo_wrap .info_wrap a span { position: relative; padding-left: 40px; } 
-        .expo_wrap .info_wrap a span::before { content: ''; display: block; width: 100%; height: 61px; background: url(https://chaebonggi.github.io/jobaba2024/ckeditor/images/everland/everland_icon02.png) left no-repeat; background-size: contain; } 
-        .expo_wrap .info_wrap a span::after { content: ''; width: 132px; height: 205px; position: absolute; left: -90px; bottom: 0; background: url(https://chaebonggi.github.io/jobaba2024/ckeditor/images/everland/everland_icon01.png) no-repeat; background-size: contain; } 
+        .expo_wrap .job_wrap { padding-bottom: 120px; background: url(https://chaebonggi.github.io/jobaba2024/ckeditor/images/everland/ev_img02.jpg) center bottom #00693e no-repeat; } 
+        .expo_wrap .video_wrap { margin-bottom: 50px; font-size: 0; text-align: center; } 
+        .expo_wrap .video_wrap video { max-width: 600px; width: calc(100% - 10px); box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; } 
+        .expo_wrap .info_btn a { display: flex; max-width: 480px; width: 100%; height: 166px; margin: 0 auto; background: linear-gradient(180deg, rgb(174,255,174) 30%, rgb(100,255,224) 100%); color: #000; font-size: 30px; font-weight: 500; border-radius: 100px; border: 2px solid #000; align-items: center; justify-content: center; box-shadow: 0px 10px 0px 0px rgba(0, 0, 0, 0.28); } 
+        .expo_wrap .info_btn a span { position: relative; } 
+        .expo_wrap .info_btn a span::before { content: ''; display: block; width: 100%; height: 61px; background: url(https://chaebonggi.github.io/jobaba2024/ckeditor/images/everland/everland_icon02.png) left no-repeat; background-size: contain; } 
+        .expo_wrap .info_wrap { padding: 0 70px 75px; background: #9fd391; } 
+        .expo_wrap .info_wrap .img_wrap + .img_wrap { margin-top: 46px; } 
+        .expo_wrap .info_wrap .img_wrap:nth-child(1) img { margin-top: -50px; } 
 
         .expo_wrap .hire_list_wrap h2 { text-align:center; font-size:32px; margin:48px 0 24px; padding:0; } 
         .expo_wrap .hire_list { border-top:1px solid #a4a4a4; margin:0; padding:0; position:relative; } 
@@ -40,52 +44,65 @@
         .expo_wrap .hire_list li .btn_area .due { font-size:13px; font-weight:300; color:#52595a; position:absolute; bottom:0; right:0; } 
         
         @media screen and (max-width:1024px){
-            .expo_wrap .hire_list li .com_nm { max-width:200px; }
+        .expo_wrap .hire_list li .com_nm { max-width:200px; } 
+        .expo_wrap .info_wrap { padding: 0 30px 75px; } 
         }
         @media screen and (max-width:768px){
-            .expo_desc { padding:36px 0; } 
-            .expo_wrap .hire_list li .com_nm { max-width:160px; } 
-            .expo_wrap .hire_list li .btn_area { display: none; } 
+        .expo_desc { padding:36px 0; } 
+        .expo_wrap .hire_list li .com_nm { max-width:160px; } 
+        .expo_wrap .hire_list li .btn_area { display: none; } 
         }
         @media screen and (max-width:640px){
-            .expo_desc .for_pc { display: block; } 
-            .expo_wrap .hire_list_wrap h2 { margin:30px 0 20px; font-size: 24px; } 
-            .expo_wrap .tit { font-size: 20px; } 
-            .expo_desc { padding:24px 0; } 
-            .expo_wrap .hire_list li .com_nm { max-width: 100px; margin-right: 10px; } 
-            .expo_wrap .hire_list li .com_nm img { max-width: 90px; } 
-            .expo_wrap .hire_list li .hire_nm { border:0; padding:0; margin-top:8px; } 
-            .expo_wrap .hire_list li .hire_nm .cond span+span { margin-left:6px; } 
-            .expo_wrap .hire_list li .hire_nm .cond span+span:before { padding-right:6px; } 
-            .expo_wrap .info_wrap { padding: 30px 0; } 
-            .expo_wrap .info_wrap a span::after { content: none; } 
-            .expo_wrap .info_wrap a { width: 90%; height: 90px; font-size: 16px; border-radius: 20px; box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.28); } 
-            .expo_wrap .info_wrap a span::before { height: 32px; } 
-            .expo_wrap .info_wrap a span { position: relative; padding-left: 0; } 
+        .expo_desc .for_pc { display: block; } 
+        .expo_wrap .hire_list_wrap h2 { margin:30px 0 20px; font-size: 24px; } 
+        .expo_wrap .tit { font-size: 20px; } 
+        .expo_desc { padding:24px 0; } 
+        .expo_wrap .hire_list li .com_nm { max-width: 100px; margin-right: 10px; } 
+        .expo_wrap .hire_list li .com_nm img { max-width: 90px; } 
+        .expo_wrap .hire_list li .hire_nm { border:0; padding:0; margin-top:8px; } 
+        .expo_wrap .hire_list li .hire_nm .cond span+span { margin-left:6px; } 
+        .expo_wrap .hire_list li .hire_nm .cond span+span:before { padding-right:6px; } 
+        .expo_wrap .video_wrap { margin-bottom: 20px; } 
+        .expo_wrap .info_btn a { width: 90%; height: 90px; font-size: 16px; border-radius: 20px; box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.28); } 
+        .expo_wrap .info_btn a span::before { height: 32px; } 
+        .expo_wrap .job_wrap { padding-bottom: 30px; background: #00693e; } 
+        .expo_wrap .info_wrap .img_wrap:nth-child(1) img { margin-top: 0; } 
+        .expo_wrap .info_wrap { padding: 20px 10px; } 
+        .expo_wrap .info_wrap .img_wrap + .img_wrap { margin-top: 10px; } 
         }
         @media screen and (max-width:420px){
-            .expo_wrap .hire_list li { flex-direction:column; align-items: initial; } 
-            .expo_wrap .hire_list li .com_nm { max-width: fit-content; margin: 0; } 
+        .expo_wrap .hire_list li { flex-direction:column; align-items: initial; } 
+        .expo_wrap .hire_list li .com_nm { max-width: fit-content; margin: 0; } 
         }
     </style>
     <div class="expo_wrap">
         <div class="expo_info">
             <div class="img_wrap">
-                <img src="https://chaebonggi.github.io/jobaba2024/ckeditor/images/everland/everland_img01.jpg" alt="에버랜드 캐스트 채용">
+                <img src="https://chaebonggi.github.io/jobaba2024/ckeditor/images/everland/ev_img01.jpg" alt="에버랜드 캐스트 채용">
             </div>
+            <div class="job_wrap">
+                <div class="video_wrap">
+                    <video src="https://chaebonggi.github.io/jobabamain/html/page/images/test_video.mp4" controls></video>
+                </div>
+                <div class="info_btn">
+                    <a href="https://www.youtube.com/playlist?list=PLVyn-Okz5B950qKO4WbVygcKcY_SrPyDR" target="_blank">
+                        <span>캐스트 직무 소개</span>
+                    </a>
+                </div>
+            </div>
+            <style>
+                
+            </style>
             <div class="info_wrap">
-                <a href="https://www.youtube.com/playlist?list=PLVyn-Okz5B950qKO4WbVygcKcY_SrPyDR" target="_blank">
-                    <span>캐스트 직무 소개</span>
-                </a>
-            </div>
-            <div class="img_wrap">
-                <img src="https://chaebonggi.github.io/jobaba2024/ckeditor/images/everland/everland_img02.jpg" alt="근무유형">
-            </div>
-            <div class="img_wrap">
-                <img src="https://chaebonggi.github.io/jobaba2024/ckeditor/images/everland/everland_img03.jpg" alt="직무 및 시급">
-            </div>
-            <div class="img_wrap">
-                <img src="https://chaebonggi.github.io/jobaba2024/ckeditor/images/everland/everland_img04.jpg" alt="근무혜택">
+                <div class="img_wrap">
+                    <img src="https://chaebonggi.github.io/jobaba2024/ckeditor/images/everland/ev_img03.png" alt="근무유형">
+                </div>
+                <div class="img_wrap">
+                    <img src="https://chaebonggi.github.io/jobaba2024/ckeditor/images/everland/ev_img04.png" alt="직무 및 기본시급">
+                </div>
+                <div class="img_wrap">
+                    <img src="https://chaebonggi.github.io/jobaba2024/ckeditor/images/everland/ev_img05.png" alt="근무혜택">
+                </div>
             </div>
         </div>
         <div class="hire_list_wrap">
@@ -96,7 +113,7 @@
                     <div class="hire_nm">
                         <a href="https://mrecruit.everland.com/index" target="_blank">에버랜드 상시/주말직 캐스트 채용</a>
                         <div class="txt">
-                            <p>꿈과 환상의 나라 에버랜드에서 CAST를 모집합니다.</p>
+                            <p>캐스트 | 어트랙션 | 티켓/그리팅 | 상품판매 | 탐험가이드</p>
                         </div>
                         <div class="desc">상시채용</div>
                     </div>
