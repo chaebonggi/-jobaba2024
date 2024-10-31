@@ -371,6 +371,7 @@
 /* e:2024.10.22 온라인 채용관 css 추가 */
 
 /* s:2024.10.24 온라인 채용관 팝업 추가 수정 */
+.modal.pop02 .fcRed {color: red;}
 .modal.pop02 .modal-dialog {max-width: 1260px;width: calc(100% - 20px); } 
 .modal.pop02 .modal-header {background: #2a61f9 !important; } 
 .modal.pop02 .modal-header .modal-title {font-size: 28px !important;font-weight: 500 !important; } 
@@ -381,7 +382,9 @@
 .modal.pop02 .topTitle .tit01 {margin-bottom: 20px;color: #000;font-size: 18px;font-weight: 500; } 
 .modal.pop02 .pTit {color: #333333;font-size: 24px;font-weight: 900; } 
 .modal.pop02 .pTxt {color: #666666;font-size: 18px;font-weight: 300; } 
-.modal.pop02 .pTxt02 {color: #000;font-size: 20px;font-weight: 300; } 
+.modal.pop02 .pTxt02 {color: #000;font-size: 20px;font-weight: 300; }
+.modal.pop02 .listType01 li::before {content: '※'; position: absolute; top: 0; left: 0;}
+.modal.pop02 .listType01 li {position: relative; padding-left: 20px;}
 .modal.pop02 .resumeList {display: flex;margin: 10px 0 20px;padding: 30px 36px;background: #f6f6f6;border: 1px solid #c5c5c5;align-items: flex-start;gap: 10px 50px; } 
 .modal.pop02 .resumeList .rTitWrap {display: flex;width: 390px;align-items: flex-start; } 
 .modal.pop02 .resumeList .rTag {display: inline-block;width: 98px;padding: 4px 0;margin-right: 10px;background: #55bf7f;color: #fff;font-size: 18px; text-align: center;font-weight: 500;flex-shrink: 0; } 
@@ -681,6 +684,7 @@
 	.modal.pop02 .modal-body {padding: 10px; } 
 	.modal.pop02 .topTitle {margin-bottom: 20px; } 
 	.modal.pop02 .pTxt {font-size: 14px; } 
+	.modal.pop02 .listType01 li {padding-left: 16px;}
 	.modal.pop02 .topTitle .tit01 {margin-bottom: 10px;font-size: 14px; } 
 	.modal.pop02 .pTit {font-size: 18px; } 
 	.modal.pop02 .resumeList {padding: 10px 15px; } 
@@ -705,7 +709,6 @@
 	.modal.pop02 .pChkItem {margin: 30px 0 20px; } 
 	.modal-footer {display: flex; } 
 	.modal.pop02 .modal-footer .pBtn {padding: 5px;font-size: 16px; } 
-	.modal.pop02 .fileWrap .fileBtn {text-align: center; } 
 }
 /* e:2024.10.22 온라인 채용관 css 추가 */
 
