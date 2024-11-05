@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>온라인박람회 템플릿</title>
+    <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/import.css">
+    <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/kgoon.reset.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        .exhb_wrap .onjob_view .view_Detail { background:#fff; padding:30px 0; border-radius:0; border-top:1px solid #000; margin-top:20px; } 
+        .exhb_wrap .onjob_view .view_Detail .vTit, .exhb_wrap .attend_area, .exhb_wrap .at_cpn { display:none; } 
+
+        .expo_wrap { font-family: 'Noto Sans KR', sans-serif; font-size:16px; font-weight:400; color:#232323; box-sizing:border-box; position:relative; padding:0; width:100%; max-width:1260px; word-break:keep-all; line-height:1.6; margin:0 auto; } 
+        .expo_wrap .tit { margin-bottom: 16px; font-size:24px; font-weight:700; text-align:center; } 
+        .expo_wrap img { max-width:100%; } 
+
+        .expo_wrap .hire_list_wrap h2 { text-align:center; font-size:32px; margin:48px 0 24px; padding:0; } 
+        .expo_wrap .hire_list { border-top:1px solid #a4a4a4; margin:0; padding:0; position:relative; } 
+        .expo_wrap .hire_list li { display:flex; border-bottom: 1px solid #d6d6d6; padding:24px 0; align-items: center; } 
+        .expo_wrap .hire_list li a { text-decoration:none; color:inherit; } 
+        .expo_wrap .hire_list li:hover { background:#f9f9f9; } 
+        .expo_wrap .hire_list li .com_nm { display: flex; margin-right: 30px; align-items: center; justify-content: center; color:#52595a; width:100%; max-width:240px; flex-shrink: 0; } 
+        .expo_wrap .hire_list li .com_nm img { max-width: 140px; } 
+        .expo_wrap .hire_list li .hire_nm { font-weight:700; flex-grow:1; } 
+        .expo_wrap .hire_list li .hire_nm .txt { color: #6c6c6c; font-size: 14px; font-weight: 400; } 
+        .expo_wrap .hire_list li .hire_nm .desc { font-size:14px; font-weight:300; color:#9c9c9c; margin-top:2px; } 
+        .expo_wrap .hire_list li .btn_area { margin-right: 20px; text-align:right; position:relative; } 
+        .expo_wrap .hire_list li .btn_area a { display: block; width: 120px; color:#2c60f9; font-size:16px; border:1px solid #2c60f9; border-radius:10px; padding:6px 10px; text-align: center; box-sizing: border-box; } 
+        .expo_wrap .hire_list li:hover .btn_area a { color:#fff; background:#2c60f9; } 
+        .expo_wrap .hire_list li .btn_area .due { font-size:13px; font-weight:300; color:#52595a; position:absolute; bottom:0; right:0; }
+        .expo_wrap .img_wrap {font-size: 0;}
+        .expo_wrap .minfo_wrap {display: none;}
+        
+
+        @media screen and (max-width:1024px){
+            .expo_wrap .hire_list li .com_nm { max-width:200px; } 
+        }
+        @media screen and (max-width:768px){
+            .expo_desc { padding:36px 0; } 
+            .expo_wrap .hire_list li .com_nm { max-width:160px; } 
+            .expo_wrap .hire_list li .btn_area { display: none; } 
+        }
+        @media screen and (max-width:640px){
+            .expo_desc .for_pc { display: block; } 
+            .expo_wrap .hire_list_wrap h2 { margin:30px 0 20px; font-size: 24px; } 
+            .expo_wrap .tit { font-size: 20px; } 
+            .expo_desc { padding:24px 0; } 
+            .expo_wrap .hire_list li .com_nm { max-width: 100px; margin-right: 10px; } 
+            .expo_wrap .hire_list li .com_nm img { max-width: 90px; } 
+            .expo_wrap .hire_list li .hire_nm { border:0; padding:0; margin-top:8px; } 
+            .expo_wrap .hire_list li .hire_nm .cond span+span { margin-left:6px; } 
+            .expo_wrap .hire_list li .hire_nm .cond span+span:before { padding-right:6px; } 
+            .expo_wrap .info_wrap {display: none;}
+            .expo_wrap .minfo_wrap {display: block;}
+            
+        }
+        @media screen and (max-width:420px){
+            .expo_wrap .hire_list li { flex-direction:column; align-items: initial; } 
+            .expo_wrap .hire_list li .com_nm { max-width: fit-content; margin: 0; }
+        }
+    </style>
+    <div class="expo_wrap">
+        <div class="expo_info">
+            <div class="img_wrap">
+                <img src="./images/fredit/fredit_01.jpg" alt="프레시매니저 모집">
+            </div>
+            <div class="info_wrap">
+                <div class="img_wrap">
+                    <img src="./images/fredit/fredit_02.jpg" alt="프레시매니저란?">
+                </div>
+                <div class="img_wrap">
+                    <img src="./images/fredit/fredit_03.jpg" alt="프레시매니저 Q&A">
+                </div>
+            </div>
+            <div class="minfo_wrap">
+                <style>
+                    /* .expo_wrap .minfo_wrap {
+                        padding: 10px;
+                        background: #07bbcf;
+                    }
+                    .expo_wrap .minfo_wrap .cont01 {
+                        padding: 10px;
+                        background: #fff;
+                        border-radius: 10px;
+                    }
+                    .expo_wrap .minfo_wrap .cont01 .item {
+                    }
+                    .expo_wrap .minfo_wrap .cont01 .tit {
+                        background: #f4f4f4;
+                        border-radius: 10px 10px 0 0;
+                    }
+                    .expo_wrap .minfo_wrap .cont01 .tit p {
+                        padding: 5px 0;
+                        color: #000;
+                        font-size: 16px;
+                        font-weight: 500;
+                    } */
+                </style>
+                <div class="cont01">
+                    <div class="item">
+                        <div class="tit">
+                            <p>프레시매니저란?</p>
+                        </div>
+                        <div class="txt">
+                            <p>전국 1만여 명이 활동 중인 프레시매니저는 단순 판매원이 아닌 고객의 평생 건강을 설계하는 건강 컨설턴트입니다.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="tit">
+                            <p>프레시매니저는 무슨 일을 하나요?</p>
+                        </div>
+                        <div class="txt">
+                            <p>정기 고객 대상 제품 배달이 주요 업무이며, 원하는 지역과 시간을 조율할 수 있습니다.<br>
+                                또한 배달 중 구매를 원하시는 분들에게만 판매하기 때문에 영업 부담이 없습니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hire_list_wrap">
+            <h2>진행중 채용공고</h2>
+            <ul class="hire_list">
+                <li>
+                    <div class="com_nm"><img src="./images/fredit/fredit_logo.png" alt="한국야쿠르트"></div>
+                    <div class="hire_nm">
+                        <a href="https://mrecruit.everland.com/index" target="_blank">한국 야구르트 프레시매니저 채용</a>
+                        <div class="txt">
+                            <p>강북 지역(의정부, 동북 외)</p>
+                        </div>
+                        <div class="desc">상시채용</div>
+                    </div>
+                    <div class="btn_area">
+                        <a href="https://mrecruit.everland.com/index" target="_blank">지원하기</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="com_nm"><img src="./images/fredit/fredit_logo.png" alt="한국야쿠르트"></div>
+                    <div class="hire_nm">
+                        <a href="https://mrecruit.everland.com/index" target="_blank">한국 야구르트 프레시매니저 채용</a>
+                        <div class="txt">
+                            <p>강남 지역(강동, 성남 외)</p>
+                        </div>
+                        <div class="desc">상시채용</div>
+                    </div>
+                    <div class="btn_area">
+                        <a href="https://mrecruit.everland.com/index" target="_blank">지원하기</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="com_nm"><img src="./images/fredit/fredit_logo.png" alt="한국야쿠르트"></div>
+                    <div class="hire_nm">
+                        <a href="https://mrecruit.everland.com/index" target="_blank">한국 야구르트 프레시매니저 채용</a>
+                        <div class="txt">
+                            <p>강서 지역(고양, 광명, 구로, 안양 외)</p>
+                        </div>
+                        <div class="desc">상시채용</div>
+                    </div>
+                    <div class="btn_area">
+                        <a href="https://mrecruit.everland.com/index" target="_blank">지원하기</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="com_nm"><img src="./images/fredit/fredit_logo.png" alt="한국야쿠르트"></div>
+                    <div class="hire_nm">
+                        <a href="https://mrecruit.everland.com/index" target="_blank">한국 야구르트 프레시매니저 채용</a>
+                        <div class="txt">
+                            <p>경원 지역(경강, 분당, 수원, 평택 외)</p>
+                        </div>
+                        <div class="desc">상시채용</div>
+                    </div>
+                    <div class="btn_area">
+                        <a href="https://mrecruit.everland.com/index" target="_blank">지원하기</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="com_nm"><img src="./images/fredit/fredit_logo.png" alt="한국야쿠르트"></div>
+                    <div class="hire_nm">
+                        <a href="https://mrecruit.everland.com/index" target="_blank">한국 야구르트 프레시매니저 채용</a>
+                        <div class="txt">
+                            <p>경인 지역(부천, 안산, 남인천, 서인천 외)</p>
+                        </div>
+                        <div class="desc">상시채용</div>
+                    </div>
+                    <div class="btn_area">
+                        <a href="https://mrecruit.everland.com/index" target="_blank">지원하기</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
