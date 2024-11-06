@@ -339,7 +339,9 @@
 .exhb_wrap .des_sch.style02 input[type="text"] {font-size: 16px;}
 .exhb_wrap .des_sub.style02 .des_filter {margin-bottom: 20px; } 
 .exhb_wrap .des_sub.style02 .des_filter .check_list {display: flex;border: 1px solid #cecece;border-radius: 10px 10px 0 0; } 
-.exhb_wrap .des_sub.style02 .des_filter .checkItem {padding: 30px;flex: 1; } 
+/* s:2024.11.06 css 수정 */
+.exhb_wrap .des_sub.style02 .des_filter .checkItem {padding: 30px 20px 30px 30px; flex: 1; } 
+/* e:2024.11.06 css 수정 */
 .exhb_wrap .des_sub.style02 .des_filter .checkItem:nth-child(1) {flex: 2;border-right: 1px solid #cecece; } 
 .exhb_wrap .des_sub.style02 .des_filter .checkList {display: inline-flex;flex-wrap: wrap;gap: 10px; } 
 .exhb_wrap .des_sub.style02 .des_filter .c_item .lb_tag {display: inline-flex;height: 40px;padding: 10px 25px;color: #666666;font-size: 16px;font-weight: 300;border: 1px solid #dddddd;border-radius: 10px;text-align: center;box-sizing: border-box;align-items: center;justify-content: center; } 
@@ -364,8 +366,10 @@
 .exhb_wrap .info_view .info_wrap {display: flex;padding: 50px 70px;background: #fff;border: 1px solid #cccccc;border-radius: 10px;gap: 0 20px; } 
 .exhb_wrap .info_view .info_wrap .info_item {width: calc(100% / 2 - 10px); } 
 .exhb_wrap .info_view .info_wrap dl {display: flex;margin-bottom: 20px;align-items: center; } 
-.exhb_wrap .info_view .info_wrap dl dt {width: 136px;margin-right: 20px;padding: 8px 0;background: #2aa6c1;color: #fff;font-size: 16px;font-weight: 300;text-align: center;border-radius: 50px; } 
-.exhb_wrap .info_view .info_wrap dl dd {color: #000;font-size: 16px;font-weight: 300;flex: 1;min-width: 0;word-wrap: break-word;} 
+/* s:2024.11.06 css 수정 */
+.exhb_wrap .info_view .info_wrap dl dt {width: 160px;margin-right: 20px;padding: 8px 0;background: #2aa6c1;color: #fff;font-size: 20px;font-weight: 300;text-align: center;border-radius: 10px; } 
+.exhb_wrap .info_view .info_wrap dl dd {color: #000;font-size: 18px;font-weight: 300;flex: 1;min-width: 0;word-wrap: break-word;} 
+/* e:2024.11.06 css 수정 */
 .exhb_wrap .info_view .info_wrap dl dd.file a {display: block;width: calc(100% - 20px);margin-bottom: 4px;color: #000;font-size: 16px;font-weight: 300;white-space: nowrap;text-overflow: ellipsis;overflow: hidden; } 
 .exhb_wrap .info_view .info_wrap dl dd.file a span {padding-right: 30px;background: url(../images/exhb/file_icon.png) bottom 4px right no-repeat; } 
 /* e:2024.10.22 온라인 채용관 css 추가 */
@@ -412,8 +416,11 @@
 .modal.pop02 .fileWrap .fileTit .fTag span {margin-left: 40px;padding-left: 24px;color: #000;font-size: 16px;font-weight: 300; } 
 .modal.pop02 .fileWrap .fileTit .fTag span.tIcon01 {background: url(../images/exhb/file_icon01.png) left center no-repeat; } 
 .modal.pop02 .fileWrap .fileTit .fTag span.tIcon02 {background: url(../images/exhb/file_icon02.png) left center no-repeat; } 
-.modal.pop02 .areaWrap .areaBox {width: 100%;height: 150px;margin-top: 20px; } 
-.modal.pop02 .areaWrap textarea {width: 100%;height: 100%;padding: 20px;background: #fff;color: #000;font-size: 15px;font-family: "Noto Sans KR" !important;font-weight: 300;border-radius: 10px;border: 1px solid #c5c5c5;resize: none; } 
+/* s:2024.11.06 css 수정 */
+.modal.pop02 .areaWrap .areaBox {width: 100%;height: 150px;padding: 20px 20px 30px; margin-top: 20px; position: relative;border-radius: 10px;border: 1px solid #c5c5c5;overflow: hidden;} 
+.modal.pop02 .areaWrap textarea {width: 100%;height: 100%;background: #fff;color: #000;font-size: 15px;font-family: "Noto Sans KR" !important;font-weight: 300;border: 0; resize: none; }
+.modal.pop02 .areaWrap textarea:focus {border: 0; outline: 0;}
+/* e:2024.11.06 css 수정 */
 .modal.pop02 .pChkItem {margin: 50px 0 20px;position: relative; } 
 .modal.pop02 .pChkItem input[type="checkbox"] {display: none; } 
 .modal.pop02 .pChkItem input[type="checkbox"] + label::before {content: "";display: inline-block;width: 20px;height: 20px;margin-right: 2px;margin-bottom: 2px;background: #fdfdfd;border: 1px solid #ddd;border-radius: 3px;box-sizing: border-box;vertical-align: middle; } 
@@ -427,6 +434,11 @@
 .modal.pop02 .modal-footer .pBtn.b_gray {background: #ababab; } 
 .modal.pop02 .modal-footer button + button {margin-left: 10px; } 
 /* e:2024.10.24 온라인 채용관 팝업 추가 수정 */
+
+/* s:2024.11.06 css 수정 */
+.modal.pop02 .areaWrap .txtCnt {position: absolute; bottom: 10px; right: 20px; color: #000; font-size: 14px;}
+.exhb_wrap .des_filter .scrollbar-outer {max-height: 140px;	overflow-y: scroll;}
+/* e:2024.11.06 css 수정 */
 
 @media all and (max-width:1260px){
 	.exhb_main .exhb_header .top{padding-left: 0}
@@ -677,6 +689,8 @@
 	.exhb_wrap .des_sub.style02 .des_sch input[type="submit"] { width: 16px; height: 16px; background-size: contain; } 
 	.exhb_wrap .des_sub.style02 .des_filter .area_btn .btn_reset { font-size: 12px; }
 	
+	.exhb_wrap .des_filter .scrollbar-outer {max-height: 100%;}
+	
 
 	/* 팝업 */
 	.modal.pop02 .modal-header .modal-title {font-size: 18px !important; } 
@@ -701,8 +715,11 @@
 	.modal.pop02 .resumeWrap .rBtnWrap a + a {margin-left: 4px; } 
 	.modal.pop02 .fileWrap .fileTit {display: block;margin-bottom: 10px; } 
 	.modal.pop02 .fileWrap .fileTit .fTag span {display: block;margin-left: 0;padding-left: 16px;font-size: 12px;background-size: 12px !important; } 
-	.modal.pop02 .areaWrap .areaBox {height: 100px;margin-top: 10px; } 
-	.modal.pop02 .areaWrap textarea {padding: 10px;font-size: 14px; } 
+	/* s:2024.11.06 css 수정 */
+	.modal.pop02 .areaWrap .areaBox {height: 100px;margin-top: 10px; padding: 10px 10px 20px; } 
+	.modal.pop02 .areaWrap textarea {font-size: 14px; } 
+	.modal.pop02 .areaWrap .txtCnt { bottom: 5px; right: 14px;font-size: 12px;}
+	/* e:2024.11.06 css 수정 */
 	.modal.pop02 .pTxt02 {font-size: 16px; } 
 	.modal.pop02 .tbType02 th {padding: 10px;font-size: 14px; } 
 	.modal.pop02 .tbType02 td {padding: 10px;font-size: 14px; } 
