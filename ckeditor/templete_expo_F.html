@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>온라인박람회 템플릿</title>
+    <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/import.css">
+    <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/kgoon.reset.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:@300;400;500;700&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="/html/etc/css/fonts.css" />
+</head>
+<body>
+    <style>
+        .exhb_wrap .onjob_view .view_Detail { background:#fff; padding:30px 0; border-radius:0; border-top:1px solid #000; margin-top:20px; } 
+        .exhb_wrap .onjob_view .view_Detail .vTit, .exhb_wrap .attend_area, .exhb_wrap .at_cpn { display:none; } 
+
+        .expo_wrap { font-family: 'GmarketSans','Noto Sans KR' !important; font-weight: 500; line-height: 1.3; font-size:16px; color:#232323; background: #8de5e5; box-sizing:border-box; position:relative; padding:0; width:100%; max-width:1200px; word-break:keep-all; margin:0 auto; } 
+        .expo_wrap .gBold { font-weight: 700; } 
+        .expo_wrap .tit { margin-bottom: 16px; font-size:24px; font-weight:700; text-align:center; } 
+        .expo_wrap img { max-width:100%; } 
+
+        .expo_wrap .img_wrap { font-size: 0; } 
+        .expo_wrap .expo_info { padding: 100px 52px 50px; } 
+        .expo_wrap .info_item { padding: 90px; position: relative; background: #fff; border-radius: 30px; } 
+        .expo_wrap .info_item + .info_item { margin-top: 90px; } 
+        .expo_wrap .info_tit { display: flex; width: 437px; height: 105px; position: absolute; top: -54px; left: 50%; transform: translateX(-50%); background: #1c1d20; border-radius: 10px; align-items: center; justify-content: center; } 
+        .expo_wrap .info_tit:after { border-top: 15px solid #1c1d20; border-left: 20px solid transparent; border-right: 20px solid transparent; border-bottom: 0 solid transparent; content:""; position:absolute; bottom: -10px; left: 50%; transform: translateX(-50%); } 
+        .expo_wrap .info_tit p { color: #fff; font-size: 36px; } 
+        .expo_wrap .fcBlue { color: #1f64ff !important; } 
+        .expo_wrap .fcRed { color: #ff0000 !important; } 
+        .expo_wrap .info_list > li { display: flex; flex-wrap: wrap; } 
+        .expo_wrap .info_list .i_tit { display: flex; width: 206px; height: 48px; margin-right: 24px; padding-top: 4px; background: #e2e2e2; color: #000; font-size: 24px; border-radius: 10px; align-items: center; justify-content: center; box-sizing: border-box; } 
+        .expo_wrap .info_list .i_txt { display: inline-block; position: relative; color: #000; font-size: 26px; } 
+        .expo_wrap .info_list .i_txt02 { padding-left: 14px; position: relative; color: #666666; font-size: 22px; line-height: 1.5; } 
+        .expo_wrap .info_list .i_txt02 span { font-size: 18px; } 
+        .expo_wrap .info_list .i_txt span { font-size: 18px; } 
+        .expo_wrap .info_list .txt_wrap { width: calc(100% - 230px); margin-top: 6px; } 
+        .expo_wrap .info_list > li + li { margin-top: 20px; } 
+        .expo_wrap .info_list .txt_wrap.dot li .i_txt { position: relative; padding-left: 10px; } 
+        .expo_wrap .info_list .txt_wrap.dot li .i_txt.fcBlue::before { background: #1f64ff; } 
+        .expo_wrap .info_list .txt_wrap.dot li .i_txt::before { content: ''; width: 5px; height: 5px; position: absolute; top: 12px; left: 0; background: #000; border-radius: 50%; } 
+
+        .expo_wrap .info_list .table_wrap { width: 100%; margin-top: 20px; border: 1px solid #000; border-radius: 20px; overflow: hidden; } 
+        .expo_wrap .info_list .table_wrap table { width: 100%; } 
+        .expo_wrap .info_list .table_wrap th { padding: 10px 0; background: #fdfcb5; color: #000; font-size: 24px; text-align: center; font-weight: 500; border-bottom: 1px solid #bdbdbd; } 
+        .expo_wrap .info_list .table_wrap tr th:not(:first-child) { border-left: 1px solid #bdbdbd; } 
+        .expo_wrap .info_list .table_wrap td { padding: 8px 10px; color: #000; font-size: 20px; text-align: center; border-bottom: 1px solid #bdbdbd; } 
+        .expo_wrap .info_list .table_wrap tr td:not(:first-child) { border-left: 1px solid #bdbdbd; } 
+        .expo_wrap .info_list .table_wrap tr:last-child td { border-bottom: 0; } 
+        .expo_wrap .info_list .table_wrap .bgGray { background: #eaeaea; } 
+        .expo_wrap .info_list .table_wrap .bgGray02 { background: #fbfbfb; } 
+        .expo_wrap .info_list .table_wrap .m_table { display: none; } 
+        .expo_wrap .link_wrap { margin-top: 50px; text-align: center; } 
+        .expo_wrap .info_company { margin-top: 50px; } 
+        .expo_wrap .info_company .com_tit { padding: 24px 0 20px; margin-bottom: 10px; background: #fff0f0; border-radius: 30px 30px 0 0; } 
+        .expo_wrap .info_company .com_tit p { color: #000; font-size: 36px; text-align: center; } 
+        .expo_wrap .mt50 { margin-top: 50px; } 
+        .expo_wrap .info_company .company_wrap > li { display: flex; padding: 36px 0; border-top: 1px solid #cccccc; } 
+        .expo_wrap .info_company .company_wrap > li:last-child { border-bottom: 1px solid #cccccc; } 
+        .expo_wrap .info_company .com_logo { display: flex; width: 292px; margin-right: 30px; background: #f7f7f7; border-radius: 50px 0 50px 50px; flex-shrink: 0; align-items: center; justify-content: center; flex-direction: column; box-sizing: border-box; } 
+        .expo_wrap .info_company .com_logo .logo_tit { display: none; } 
+        .expo_wrap .info_company .com_logo .c_logo { margin-top: 40px; color: #000; font-size: 36px; } 
+        .expo_wrap .info_company .com_txt .c_tit { margin-bottom: 20px; color: #000; font-size: 24px; } 
+        .expo_wrap .info_company .com_txt .c_txt { color: #666666; font-size: 22px; letter-spacing: -1px; } 
+        .expo_wrap .info_company .c_list { display: flex; flex-wrap: wrap; gap: 15px; } 
+        .expo_wrap .info_company .c_list li { display: flex; width: 135px; height: 111px; padding: 12px; border: 1px solid #dbdbdb; align-items: center; justify-content: center; } 
+        .expo_wrap .info_item.style02 { padding: 90px 0 0; } 
+        .expo_wrap .info_item .info_box { padding: 0 90px 60px; border-bottom: 2px dashed #dcdcdc; } 
+        .expo_wrap .info_item .list_tit { margin-bottom: 20px; } 
+        .expo_wrap .info_item .info_box + .info_box { margin-top: 60px; } 
+        
+        .expo_wrap .info_item .g_icon01 { margin-bottom: 20px; } 
+        .expo_wrap .info_item .g_icon01::after { content: ''; width: 127px; height: 127px; position: absolute; bottom: -30px; right: -150px; background: url(https://chaebonggi.github.io/jobaba2024/ckeditor/image/jobfair/gift_icon01.png) no-repeat; } 
+        .expo_wrap .info_item .g_icon02 { margin-bottom: 20px; } 
+        .expo_wrap .info_item .g_icon02::after { content: ''; width: 168px; height: 106px; position: absolute; bottom: -20px; right: -190px; background: url(https://chaebonggi.github.io/jobaba2024/ckeditor/image/jobfair/gift_icon02.png) no-repeat; } 
+        .expo_wrap .info_item .etc_wrap { display: flex; padding: 50px 80px; background: #fffef4; border-radius: 0 0 50px 50px; } 
+        .expo_wrap .info_item .etc_wrap .ect_tit { margin-right: 36px; } 
+        .expo_wrap .info_item .etc_wrap li { padding-left: 10px; position: relative; color: #000; font-size: 20px; } 
+        .expo_wrap .info_item .etc_wrap li + li { margin-top: 4px; } 
+        .expo_wrap .info_item .etc_wrap li::before { content: ''; width: 4px; height: 4px; position: absolute; top: 10px; left: 0; background: #000; border-radius: 50%; } 
+        .expo_wrap .hire_wrap { margin: 50px auto; text-align: center; } 
+        .expo_wrap .hire_wrap p { display: inline-block; padding-left: 110px; position: relative; color: #000; font-size: 36px; text-align: left; } 
+        .expo_wrap .hire_wrap p span { color: #1994ba; } 
+        .expo_wrap .hire_wrap p::before { content: ''; width: 93px; height: 92px; position: absolute; top: -4px; left: 0; background: url(https://chaebonggi.github.io/jobaba2024/ckeditor/image/jobfair/hire_icon.png) no-repeat; } 
+        .expo_wrap .hire_wrap.type02 p::before { content: ''; width: 93px; height: 98px; position: absolute; top: -8px; left: 0; background: url(https://chaebonggi.github.io/jobaba2024/ckeditor/image/jobfair/hire_ico02.png) no-repeat; } 
+        .expo_wrap .hire_list li { display: flex; padding: 30px 0; align-items: center; justify-content: space-between; border-top: 1px solid #cccccc; } 
+        .expo_wrap .hire_list li:last-child { border-bottom: 1px solid #cccccc; } 
+        .expo_wrap .hire_list .h_tit { margin-bottom: 4px; color: #000; font-size: 20px; } 
+        .expo_wrap .hire_list .h_txt { color: #888888; font-size: 18px; } 
+        .expo_wrap .hire_list .hire_btn a { display: block; width: 135px; padding: 14px 0 10px; background: #1994ba; color: #fff; font-size: 18px; text-align: center; border-radius: 5px; } 
+        .expo_wrap .hire_list .hire_btn a:hover { background: #000; transition: all 0.3s; } 
+
+        @media screen and (max-width:1024px){
+        .expo_wrap .info_item { padding: 90px 30px; } 
+        .expo_wrap .info_item .g_icon02::after { display: block; position: static; } 
+        }
+        @media screen and (max-width:860px){
+        .expo_desc { padding:36px 0; } 
+        .expo_wrap .expo_info { padding: 100px 30px 50px; } 
+        .expo_wrap .info_list > li { flex-direction: column; align-items: center; } 
+        .expo_wrap .info_list .i_tit { margin-right: 0; } 
+        .expo_wrap .info_list .txt_wrap { display: inline-grid; width: 100%; margin-top: 15px; } 
+        .expo_wrap .info_list .txt_wrap.dot li { margin: 0 auto; text-align: center; } 
+        .expo_wrap .info_list .table_wrap th:last-child { display: none; } 
+        .expo_wrap .info_list .table_wrap td:last-child { display: none; } 
+        .expo_wrap .info_list .table_wrap .m_table { display: table-cell; } 
+        .expo_wrap .info_company .company_wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; } 
+        .expo_wrap .info_company .company_wrap .com_txt { display: none; } 
+        .expo_wrap .info_company .company_wrap > li { display: flex; max-width: 220px; width: 100%; padding: 0; border: 0; } 
+        .expo_wrap .info_company .company_wrap > li:last-child { border: 0; } 
+        .expo_wrap .info_company .com_logo { display: block; width: 100%; margin-right: 0; background: #fff; border-radius: 0; } 
+        .expo_wrap .info_company .com_logo .img_logo { display: flex; height: 50px; padding: 5px; margin: 20px 0; align-items: center; } 
+        .expo_wrap .info_company .com_logo .img_logo img { max-height: 100%; margin: 0 auto; } 
+        .expo_wrap .info_company .com_logo .logo_tit { display: block; background: #F7F7F7; } 
+        .expo_wrap .info_company .com_logo .logo_tit p { width: 100%; padding: 10px 0 6px; font-size: 18px; text-align: center; } 
+        .expo_wrap .info_company .com_logo .c_logo { margin-top: 20px; font-size: 18px; text-align: center; } 
+        .expo_wrap .info_item .list_tit { text-align: center; } 
+        .expo_wrap .info_item .g_icon01::after { display: block; position: static; margin: 10px auto 0; } 
+        .expo_wrap .info_item .g_icon02::after { margin: 10px auto 0; } 
+        .expo_wrap .info_list .txt_wrap.dot li .i_txt { display: inline; } 
+        .expo_wrap .info_list .i_txt02 { padding-left: 0; } 
+        .expo_wrap .hire_list li { flex-direction: column; align-items: flex-start; } 
+        .expo_wrap .hire_list .hire_btn { margin-top: 20px; margin-left: auto; } 
+        .expo_wrap .info_item .etc_wrap { padding: 50px 30px; flex-direction: column; align-items: center; } 
+        .expo_wrap .info_item .etc_wrap .ect_tit { margin-right: 0; margin-bottom: 20px; } 
+        }
+        @media screen and (max-width:640px){
+        .expo_wrap .expo_info { padding: 50px 10px 30px; } 
+        .expo_wrap .info_tit { width: 240px; height: 50px; top: -25px; } 
+        
+        .expo_wrap .info_tit p { font-size: 20px; } 
+        .expo_wrap .info_item { padding: 60px 10px 30px; border-radius: 10px; } 
+        .expo_wrap .info_list .i_tit { width: 180px; height: 30px; font-size: 16px; } 
+        .expo_wrap .info_list .txt_wrap.dot li .i_txt::before { width: 3px; height: 3px; top: 5px; } 
+        .expo_wrap .info_list .i_txt { font-size: 14px; } 
+        .expo_wrap .info_list .txt_wrap.dot li .i_txt { padding-left: 5px; } 
+        .expo_wrap .info_list .table_wrap th { padding: 6px 0; font-size: 16px; } 
+        .expo_wrap .info_list .table_wrap td { padding: 6px 8px; font-size: 14px; } 
+        .expo_wrap .info_list .i_txt span { font-size: 12px; } 
+        .expo_wrap .link_wrap { margin-top: 20px; } 
+        .expo_wrap .link_wrap img { max-width: 220px; } 
+        .expo_wrap .info_company .com_tit p { font-size: 16px; } 
+        .expo_wrap .info_company { margin-top: 30px; } 
+        .expo_wrap .info_company .com_tit { padding: 16px 0 12px; } 
+        .expo_wrap .info_company .company_wrap { gap: 10px; } 
+        .expo_wrap .info_company .company_wrap > li { max-width: 135px; } 
+        .expo_wrap .info_company .com_logo .logo_tit p { font-size: 12px; } 
+        .expo_wrap .info_company .com_logo .img_logo { height: 40px; margin: 10px 0; } 
+        .expo_wrap .info_company .com_logo .c_logo { margin-top: 0; font-size: 14px; } 
+        .expo_wrap .info_item + .info_item { margin-top: 50px; } 
+        .expo_wrap .info_item.style02 { padding: 50px 0 0; } 
+        .expo_wrap .info_item .info_box { padding: 0 10px 30px; } 
+        .expo_wrap .info_item .list_tit img { max-width: 200px; } 
+        .expo_wrap .info_item .g_icon01::after { width: 60px; height: 60px; background-size: contain; } 
+        .expo_wrap .info_item .info_box + .info_box { margin-top: 30px; } 
+        .expo_wrap .info_item .g_icon02::after { width: 100px; height: 63px; background-size: contain; } 
+        .expo_wrap .info_list .i_txt02 { font-size: 12px; } 
+        .expo_wrap .info_list .i_txt02 span { font-size: 12px; } 
+        .expo_wrap .info_item .etc_wrap { padding: 20px 10px; } 
+        .expo_wrap .info_item .etc_wrap .ect_tit img { max-width: 90px; } 
+        .expo_wrap .info_item .etc_wrap li { font-size: 12px; } 
+        .expo_wrap .info_item .etc_wrap li::before { width: 2px; height: 2px; top: 6px; } 
+        .expo_wrap .hire_wrap p { padding-left: 0; font-size: 18px; text-align: center; } 
+        .expo_wrap .hire_wrap p::before { display: block; width: 46px; height: 46px; margin: 0 auto 10px; position: static; background-size: contain; } 
+        .expo_wrap .hire_wrap { margin: 30px auto; } 
+        .expo_wrap .hire_wrap.type02 p::before { display: block; width: 46px; height: 48px; margin: 0 auto 10px; position: static; background-size: contain; } 
+        .expo_wrap .hire_list .h_tit { font-size: 16px; } 
+        .expo_wrap .hire_list .h_txt { font-size: 12px; } 
+        .expo_wrap .hire_list .hire_btn { margin: 20px auto 0; } 
+        .expo_wrap .hire_list .hire_btn a { padding: 6px 0 4px; background: #1994ba; font-size: 16px; } 
+        .expo_wrap .hire_list li {padding: 20px 5px;}
+        }
+    </style>
+    <div class="expo_wrap">
+        <div class="expo_main">
+            <img src="https://chaebonggi.github.io/jobaba2024/ckeditor/image/jobfair/main_tit.jpg" alt="온라인 job fair">
+        </div>
+        <div class="expo_info">
+           <div class="info_item">
+                <div class="info_tit">
+                    <p class="gBold">채용 설명회 안내</p>
+                </div>
+                <ul class="info_list">
+                    <li>
+                        <p class="i_tit">일시</p>
+                        <ul class="txt_wrap dot">
+                            <li class="fcBlue"><p class="i_txt gBold fcBlue">2024.11.13.(수), 15:00 ~ 18:00</p></li>                            
+                        </ul>                       
+                    </li>
+                    <li>
+                        <p class="i_tit">참여대상</p>
+                        <ul class="txt_wrap dot">
+                            <li><p class="i_txt">잡아바 / 러닝센터 회원 및 연계 학교 학생</p></li>                            
+                        </ul>                       
+                    </li>
+                    <li>
+                        <p class="i_tit">프로그램 안내</p>
+                        <div class="table_wrap">
+                            <table>
+                                <tr>
+                                    <th>시간</th>
+                                    <th colspan="2">프로그램</th>
+                                    <th>발표자</th>
+                                </tr>
+                                <tr>
+                                    <td class="bgGray02">14:30~15:00</td>
+                                    <td colspan="2">등록 및 입장</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td class="bgGray02">15:00~15:10</td>
+                                    <td colspan="2">개회 및 잡아바 소개</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td class="bgGray02">15:10~15:40</td>
+                                    <td colspan="2">취업특강 : 자기소개서 및 면접 대비 특강</td>
+                                    <td>숭실대학교 진로취업센터 취업지원관</td>
+                                </tr>
+                                <tr>
+                                    <td class="bgGray02">15:40~16:10</td>
+                                    <td colspan="2">직무 특강 : NCS기반 직무 분석법</td>
+                                    <td>한국성과역량연구소 수석연구원</td>
+                                </tr>
+                                <tr>
+                                    <td class="bgGray02">16:10~16:20</td>
+                                    <td colspan="2" class="m_table bgGray">Break Time</td>
+                                    <td colspan="3" class="bgGray">Break Time</td>
+                                </tr>
+                                <tr>
+                                    <td class="bgGray02">16:20~16:50</td>
+                                    <td rowspan="3">채용설명회</td>
+                                    <td class="bgGray02">대상㈜</td>
+                                    <td class="bgGray02">대상㈜  People Insight팀장</td>
+                                </tr>
+                                <tr>
+                                    <td class="bgGray02">16:50~17:20</td>
+                                    <td class="bgGray02">코스맥스㈜</td>
+                                    <td class="bgGray02">코스맥스㈜ 인사기획팀장</td>
+                                </tr>
+                                <tr>
+                                    <td class="bgGray02">17:20~17:50</td>
+                                    <td class="bgGray02">㈜에이직랜드</td>
+                                    <td class="bgGray02">㈜에이직랜드 HR인프라운영팀장</td>
+                                </tr>
+                                <tr>
+                                    <td class="bgGray02">17:50~18:00</td>
+                                    <td colspan="2" class="bgGray02">폐회</td>
+                                    <td class="bgGray02">-</td>
+                                </tr>
+                            </table>
+                        </div>                   
+                    </li>
+                    <li>
+                        <p class="i_tit">참여 방법</p>
+                        <ul class="txt_wrap dot">
+                            <li><p class="i_txt">온라인 : 잡아바 TV유튜브 채널 Live 중계<br><span class="fcRed">※ 참여하기 버튼은 11.13.(수), 설명회 당일 14:30에 활성화 됩니다.</span></p></li>                            
+                        </ul>                       
+                    </li>
+                </ul>
+                <div class="link_wrap">
+                    <a href=""><img src="https://chaebonggi.github.io/jobaba2024/ckeditor/image/jobfair/button_type01.png" alt="참여하기"></a>
+                </div>
+                <div class="info_company">
+                    <div class="com_tit"><p class="gBold">채용설명회 기업 소개</p></div>
+                    <ul class="company_wrap">
+                        <li>
+                            <div class="com_logo">
+                                <div class="logo_tit">
+                                    <p>식품&반도체</p>
+                                </div>
+                                <div class="img_logo">
+                                    <img src="https://chaebonggi.github.io/jobaba2024/ckeditor/image/jobfair/com_logo_01.png" alt="대상(주)">
+                                </div>
+                                <p class="c_logo">대상(주)</p>
+                            </div>
+                            <div class="com_txt">
+                                <p class="gBold c_tit">식품&소재</p>
+                                <p class="c_txt">대상㈜는 국내자본과 기술로 1956년 설립된 이래 60년 동안
+                                    세계 3대 발효전문기업 및 국내 최고의 종합식품회사입니다.</p>
+                                <p class="gBold c_tit mt50">대표 브랜드</p>
+                                <ul class="c_list">
+                                    <li>
+                                        <img src="https://chaebonggi.github.io/jobaba2024/ckeditor/image/jobfair/logo_icon01.png" alt="청정원">
+                                    </li>
+                                    <li>
+                                        <img src="https://chaebonggi.github.io/jobaba2024/ckeditor/image/jobfair/logo_icon02.png" alt="종가">
+                                    </li>
+                                    <li>
+                                        <img src="https://chaebonggi.github.io/jobaba2024/ckeditor/image/jobfair/logo_icon03.png" alt="미원">
+                                    </li>
+                                    <li>
+                                        <img src="https://chaebonggi.github.io/jobaba2024/ckeditor/image/jobfair/logo_icon04.png" alt="wellife">
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="com_logo">
+                                <div class="logo_tit">
+                                    <p>코스매틱&바이오</p>
+                                </div>
+                                <div class="img_logo">
+                                    <img src="https://chaebonggi.github.io/jobaba2024/ckeditor/image/jobfair/com_logo_02.png" alt="코스맥스(주)">
+                                </div>
+                                <p class="c_logo">코스맥스(주)</p>
+                            </div>
+                            <div class="com_txt">
+                                <p class="gBold c_tit">코스매틱&바이오</p>
+                                <p class="c_txt">코스맥스㈜는 K뷰티의 글로벌 리더인 코스맥스를 중심으로 
+                                    다양한 분야별 집중과 통합으로 연결된 기업입니다.</p>
+                                <p class="gBold c_tit mt50">주요 파트너사</p>
+                                <ul class="c_list">
+                                    <li>
+                                        <img src="https://chaebonggi.github.io/jobaba2024/ckeditor/image/jobfair/logo_icon05.png" alt="loreal">
+                                    </li>
+                                    <li>
+                                        <img src="https://chaebonggi.github.io/jobaba2024/ckeditor/image/jobfair/logo_icon06.png" alt="lg생활건강">
+                                    </li>
+                                    <li>
+                                        <img src="https://chaebonggi.github.io/jobaba2024/ckeditor/image/jobfair/logo_icon07.png" alt="존슨앤드존슨">
+                                    </li>
+                                    <li>
+                                        <img src="https://chaebonggi.github.io/jobaba2024/ckeditor/image/jobfair/logo_icon08.png" alt="올리브영">
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="com_logo">
+                                <div class="logo_tit">
+                                    <p>반도체</p>
+                                </div>
+                                <div class="img_logo">
+                                    <img src="https://chaebonggi.github.io/jobaba2024/ckeditor/image/jobfair/com_logo_03.png" alt="(주)에이직랜드">
+                                </div>
+                                <p class="c_logo">(주)에이직랜드</p>
+                            </div>
+                            <div class="com_txt">
+                                <p class="gBold c_tit">반도체</p>
+                                <p class="c_txt">㈜에이직랜드는 국내 유일 TSMC의 VCA 자격을 획득한 주문형 반도체(ASIC) 
+                                    디자인 서비스 및 시스템 온 칩(SoC) 제품 개발산업의 기업입니다.</p>
+                                <p class="gBold c_tit mt50">주요 파트너사</p>
+                                <ul class="c_list">
+                                    <li>
+                                        <img src="https://chaebonggi.github.io/jobaba2024/ckeditor/image/jobfair/logo_icon09.png" alt="tsmc">
+                                    </li>
+                                    <li>
+                                        <img src="https://chaebonggi.github.io/jobaba2024/ckeditor/image/jobfair/logo_icon10.png" alt="arm">
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+           </div>
+          
+           <div class="info_item style02">
+            
+                <div class="info_tit">
+                    <p class="gBold">EVENT 안내</p>                    
+                </div>
+                <div class="info_box">
+                    <div class="list_tit">
+                        <img src="https://chaebonggi.github.io/jobaba2024/ckeditor/image/jobfair/list_tit01.png" alt="사전질문 EVENT">
+                    </div>
+                    <ul class="info_list">
+                        <li>
+                            <p class="i_tit">기간</p>
+                            <ul class="txt_wrap dot">
+                                <li class="fcBlue"><p class="i_txt gBold fcBlue">2024.11.04(월) ~ 11.11.(월)</p></li>                            
+                            </ul>                       
+                        </li>
+                        <li>
+                            <p class="i_tit">인원 및 경품</p>
+                            <ul class="txt_wrap dot">
+                                <li><p class="i_txt">총 100명(추첨)</p></li>    
+                                <li><p class="i_txt g_icon01">스타벅스 아메리카노</p></li>                          
+                            </ul>                       
+                        </li>
+                        <li>
+                            <p class="i_tit">참여 방법</p>
+                            <ul class="txt_wrap dot">
+                                <li><p class="i_txt">채용설명회 3개 참여기업의 취업에 대한 사전 질문을 남겨주세요!</p></li>    
+                                <li><p class="i_txt">각 기업에 맞는 핵심 질문을 남기면 당첨 확률 UP!!</p></li>                          
+                            </ul>                       
+                        </li>
+                    </ul>
+                    <div class="link_wrap">
+                        <a href=""><img src="https://chaebonggi.github.io/jobaba2024/ckeditor/image/jobfair/button_type02.png" alt="참여하기"></a>
+                    </div>
+                </div>
+                <div class="info_box">
+                    <div class="list_tit">
+                        <img src="https://chaebonggi.github.io/jobaba2024/ckeditor/image/jobfair/list_tit02.png" alt="만족도 조사 EVENT">
+                    </div>
+                    <ul class="info_list">
+                        <li>
+                            <p class="i_tit">기간</p>
+                            <ul class="txt_wrap dot">
+                                <li class="fcBlue"><p class="i_txt gBold fcBlue">2024.11.13(수) ~ 11.17.(일)</p></li>                            
+                            </ul>                       
+                        </li>
+                        <li>
+                            <p class="i_tit">인원 및 경품</p>
+                            <ul class="txt_wrap dot">
+                                <li><p class="i_txt">총 100명(추첨)</p></li>    
+                                <li><p class="i_txt g_icon02">네이버페이 포인트 5,000원 권</p></li>                          
+                            </ul>                       
+                        </li>
+                        <li>
+                            <p class="i_tit">참여 방법</p>
+                            <ul class="txt_wrap dot">
+                                <li>
+                                    <p class="i_txt">채용설명회 및 특강에 참여 후 만족도 조사를 해주세요!</p>
+                                    <p class="i_txt02">1. 채용 설명회 및 특강 접속 및 시청(잡아바 TV)<br>
+                                        2. 실시간 채팅으로 취업과 관련된 질문(선택)<br>
+                                        3. 채용 설명회 만족도 참여<br>
+                                    <span class="fcRed">※ 본인의 채팅 내역을 캡쳐하여 만족도 조사에 첨부하면 당첨확률이 UP!</span></p>
+                                </li>
+
+                            </ul>                       
+                        </li>
+                    </ul>
+                    <div class="link_wrap">
+                        <a href=""><img src="https://chaebonggi.github.io/jobaba2024/ckeditor/image/jobfair/button_type02.png" alt="참여하기"></a>
+                    </div>
+                </div>
+                   <div class="etc_wrap">
+                    <div class="ect_tit">
+                        <img src="https://chaebonggi.github.io/jobaba2024/ckeditor/image/jobfair/etc_tit.png" alt="유의사항">
+                    </div>
+                    <ul>
+                        <li>본 이벤트는 중복 참여 및 당첨이 불가합니다.<br>(단,EVENT1, EVENT2의 중복 참여는 가능 / 각 이벤트 내에서 중복 참여 불가)</li>
+                        <li>채용 설명회와 관계없는 질문은 추첨 대상에서 제외됩니다.</li>
+                        <li>부정한 방법으로 참여한 경우, 추첨 대상에서 제외됩니다.</li>
+                        <li>경품은 사전공지 없이 유사품목·가격대의 경품으로 대체될 수 있습니다.</li>
+                        <li>개인정보 오기입으로 인한 경품 미수령 시 재발송되지 않습니다.</li>
+                        <li>본 이벤트는 경기도일자리재단의 위탁을 받아 ㈜인키움에서 운영,관리 합니다.</li>
+                        <li>경품은 설명회 종료 후 2주 이내로 발송 될 예정입니다.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="info_item">            
+                <div class="info_tit">
+                    <p class="gBold">온라인 채용 박람회 안내</p>                    
+                </div>
+                <ul class="info_list">
+                    <li>
+                        <p class="i_tit">박람회 기간</p>
+                        <ul class="txt_wrap dot">
+                            <li class="fcBlue"><p class="i_txt gBold fcBlue">2024.11.11.(월) ~ 12.31.(화)</p></li>                     
+                            <li><p class="i_txt">잡아바 / 러닝센터 회원 및 연계 학교 학생</p></li>              
+                        </ul>                       
+                    </li>
+                    <li>
+                        <p class="i_tit">참여대상</p>
+                        <ul class="txt_wrap dot">             
+                            <li><p class="i_txt">잡아바 / 러닝센터 회원 및 연계 학교 학생</p></li>              
+                        </ul>                       
+                    </li>
+                    <li>
+                        <p class="i_tit">참여기업·공고</p>
+                        <ul class="txt_wrap dot">             
+                            <li><p class="i_txt">2,000개 이상의 잡아바 추천 기업 채용공고</p></li>              
+                        </ul>                       
+                    </li>
+                </ul>
+                <div class="hire_wrap">
+                    <p class="gBold"><span class="gBold">잡아바 상담사 추천</span><br>경기도 우수기업 채용공고</p>
+                </div>
+                <ul class="hire_list">
+                    <li>
+                        <div class="hire_txt">
+                            <p class="h_tit">(주)비스토스 고객지원부 채용</p>
+                            <p class="h_txt">성남시 ㅣ 초대졸 이상 ㅣ 신입/경력 ㅣ 정규직 ㅣ 회사내규 ㅣ ~12.21.</p>
+                        </div>
+                        <div class="hire_btn">
+                            <a href="">지원하기</a>
+                        </div>                       
+                    </li>
+                    <li>
+                        <div class="hire_txt">
+                            <p class="h_tit">(주)비스토스 생산부 사원 모집</p>
+                            <p class="h_txt">용인시 ㅣ 고졸 이상 ㅣ 신입/경력 ㅣ 정규직 ㅣ 회사내규 ㅣ ~12.21.</p>
+                        </div>
+                        <div class="hire_btn">
+                            <a href="">지원하기</a>
+                        </div>                       
+                    </li>
+                    <li>
+                        <div class="hire_txt">
+                            <p class="h_tit">(주)비스토스 의료기기 제조업 관리부 채용</p>
+                            <p class="h_txt">성남시 ㅣ 무관 ㅣ 신입/경력 ㅣ 정규직 ㅣ 회사내규 ㅣ ~12.21.</p>
+                        </div>
+                        <div class="hire_btn">
+                            <a href="">지원하기</a>
+                        </div>                       
+                    </li>
+                    <li>
+                        <div class="hire_txt">
+                            <p class="h_tit">(주)비스토스 의료기기 제조업 구매팀 채용</p>
+                            <p class="h_txt">성남시 ㅣ 무관 ㅣ 신입/경력 ㅣ 정규직 ㅣ 회사내규 ㅣ ~12.21.</p>
+                        </div>
+                        <div class="hire_btn">
+                            <a href="">지원하기</a>
+                        </div>                       
+                    </li>
+                    <li>
+                        <div class="hire_txt">
+                            <p class="h_tit">(주)비스토스 의료기기 제조업 연구소 채용</p>
+                            <p class="h_txt">성남시 ㅣ 무관 ㅣ 신입/경력 ㅣ 정규직 ㅣ 회사내규 ㅣ ~12.21.</p>
+                        </div>
+                        <div class="hire_btn">
+                            <a href="">지원하기</a>
+                        </div>                       
+                    </li>
+                    <li>
+                        <div class="hire_txt">
+                            <p class="h_tit">(주)비스토스 의료기기 제조업 자재팀 채용</p>
+                            <p class="h_txt">성남시 ㅣ 고졸 이상 ㅣ 경력 ㅣ 정규직 ㅣ 면접 후 결정 ㅣ ~12.21.</p>
+                        </div>
+                        <div class="hire_btn">
+                            <a href="">지원하기</a>
+                        </div>                       
+                    </li>
+                    <li>
+                        <div class="hire_txt">
+                            <p class="h_tit">(주)비스토스 의료기기 제조팀 생산직 채용</p>
+                            <p class="h_txt">성남시 ㅣ 무관 ㅣ 신입 ㅣ 정규직 ㅣ 회사내규 ㅣ ~12.21.</p>
+                        </div>
+                        <div class="hire_btn">
+                            <a href="">지원하기</a>
+                        </div>                       
+                    </li>
+                    <li>
+                        <div class="hire_txt">
+                            <p class="h_tit">(주)비스토스 해외영업부 업무지원직 채용</p>
+                            <p class="h_txt">성남시 ㅣ 고졸 이상 ㅣ 신입/경력 ㅣ 정규직 ㅣ 회사내규 ㅣ ~12.21.</p>
+                        </div>
+                        <div class="hire_btn">
+                            <a href="">지원하기</a>
+                        </div>                       
+                    </li>
+                    <li>
+                        <div class="hire_txt">
+                            <p class="h_tit">(주)신플러스코리아 편집디자인 경력 모집</p>
+                            <p class="h_txt">의정부시 ㅣ 무관 ㅣ 경력 ㅣ 정규직 ㅣ 회사내규 ㅣ 상시모집</p>
+                        </div>
+                        <div class="hire_btn">
+                            <a href="">지원하기</a>
+                        </div>                       
+                    </li>
+                    <li>
+                        <div class="hire_txt">
+                            <p class="h_tit">(주)윈스 상시채용(경력)</p>
+                            <p class="h_txt">성남시 ㅣ 대졸 이상 ㅣ 경력 ㅣ 정규직 ㅣ 회사내규 ㅣ 상시모집</p>
+                        </div>
+                        <div class="hire_btn">
+                            <a href="">지원하기</a>
+                        </div>                       
+                    </li>
+                    <li>
+                        <div class="hire_txt">
+                            <p class="h_tit">(주)윈스 상시채용(신입)</p>
+                            <p class="h_txt">성남시 ㅣ 대졸 이상 ㅣ 신입 ㅣ 정규직 ㅣ 회사내규 ㅣ 상시모집</p>
+                        </div>
+                        <div class="hire_btn">
+                            <a href="">지원하기</a>
+                        </div>                       
+                    </li>
+                    <li>
+                        <div class="hire_txt">
+                            <p class="h_tit">(주)이에스티 품질경영팀 경력 정규직 모집</p>
+                            <p class="h_txt">오산시 ㅣ 초대졸 이상 ㅣ 경력 ㅣ 정규직 ㅣ 회사내규 ㅣ ~11.20.</p>
+                        </div>
+                        <div class="hire_btn">
+                            <a href="">지원하기</a>
+                        </div>                       
+                    </li>
+                    <li>
+                        <div class="hire_txt">
+                            <p class="h_tit">단암시스템즈 생산기술 운영자 모집</p>
+                            <p class="h_txt">안양시 ㅣ 대졸 이상 ㅣ 신입/경력 ㅣ 정규직 ㅣ 회사내규 ㅣ ~11.15.</p>
+                        </div>
+                        <div class="hire_btn">
+                            <a href="">지원하기</a>
+                        </div>                       
+                    </li>
+                    <li>
+                        <div class="hire_txt">
+                            <p class="h_tit">㈜HS하이테크 CNC사원 모집</p>
+                            <p class="h_txt">화성시 ㅣ 고졸 이상 ㅣ 신입/경력 ㅣ 정규직 ㅣ 회사내규 ㅣ ~12.24.</p>
+                        </div>
+                        <div class="hire_btn">
+                            <a href="">지원하기</a>
+                        </div>                       
+                    </li>
+                    <li>
+                        <div class="hire_txt">
+                            <p class="h_tit">㈜HS하이테크 CS/PM 사원 모집</p>
+                            <p class="h_txt">화성시 ㅣ 고졸 이상 ㅣ 경력 ㅣ 정규직 ㅣ 회사내규 ㅣ ~12.24.</p>
+                        </div>
+                        <div class="hire_btn">
+                            <a href="">지원하기</a>
+                        </div>                       
+                    </li>
+                    <li>
+                        <div class="hire_txt">
+                            <p class="h_tit">㈜HS하이테크 개발품질 경력직 모집</p>
+                            <p class="h_txt">화성시 ㅣ 초대졸 이상 ㅣ 경력 ㅣ 정규직 ㅣ 회사내규 ㅣ ~12.24.</p>
+                        </div>
+                        <div class="hire_btn">
+                            <a href="">지원하기</a>
+                        </div>                       
+                    </li>
+                    <li>
+                        <div class="hire_txt">
+                            <p class="h_tit">㈜HS하이테크 반도체 장비 부품 조립 사원 모집</p>
+                            <p class="h_txt">화성시 ㅣ 초대졸 이상 ㅣ 신입/경력 ㅣ 정규직 ㅣ 회사내규 ㅣ ~12.24.</p>
+                        </div>
+                        <div class="hire_btn">
+                            <a href="">지원하기</a>
+                        </div>                       
+                    </li>
+                    <li>
+                        <div class="hire_txt">
+                            <p class="h_tit">㈜HS하이테크 제조팀 기계 조립 사원 모집</p>
+                            <p class="h_txt">화성시 ㅣ 신입/경력 ㅣ 회사내규 ㅣ ~12.24.</p>
+                        </div>
+                        <div class="hire_btn">
+                            <a href="">지원하기</a>
+                        </div>                       
+                    </li>                    
+                </ul>
+                <div class="hire_wrap type02">
+                    <p class="gBold"><span class="gBold">연봉 · 매출 · 취업률 기준</span><br>수도권 우수기업 채용공고</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
