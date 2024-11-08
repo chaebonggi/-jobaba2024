@@ -1,0 +1,189 @@
+html, body { position: initial; } 
+.jobRegWrap .fcRed { color: #ff0000; } 
+.jobRegWrap .w90 { width: 90px !important; } 
+.jobRegWrap .w160 { width: 160px !important; } 
+.jobRegWrap .w200 { width: 200px !important; } 
+.jobRegWrap .w220 { width: 220px !important; } 
+.jobRegWrap .mw280 { max-width: 280px !important; } 
+.jobRegWrap .mw450 { max-width: 450px !important; } 
+.jobRegWrap .mw650 { max-width: 650px !important; } 
+.jobRegWrap .innerSection { max-width: 1260px; width: calc(100% - 20px); margin: 0 auto; padding-bottom: 30px; } 
+.jobRegWrap h2.tit { margin: 80px 0 50px; color: #000; font-size: 30px; font-weight: 900; text-align: center; } 
+.jobRegWrap .regBox + .regBox { margin-top: 70px; } 
+.jobRegWrap .regBox .tit { margin-bottom: 20px; color: #000; font-size: 22px; font-weight: 900; } 
+.jobRegWrap .regBox .tStyle01 { width: 100%; padding: 0 30px; border: 1px solid #000; border-left: 0; border-right: 0; border-collapse: collapse; border-spacing: 0; } 
+.jobRegWrap .regBox .tStyle01 tr { border-bottom: 1px solid #cbcbcb; } 
+.jobRegWrap .regBox .tStyle01 tr:last-child { border-bottom: 0; } 
+.jobRegWrap .regBox table .tct { text-align: center; } 
+.jobRegWrap .regBox table .trt { text-align: right; } 
+.jobRegWrap .regBox table th { padding: 0 20px; color: #000; font-size: 18px; font-weight: 300; text-align: left; } 
+.jobRegWrap .regBox table td { padding: 26px 20px; color: #000; font-size: 18px; font-weight: 300; word-break: keep-all; } 
+.jobRegWrap .regBox table input[type="text"] { width: 100%; padding: 8px 12px; background-color: #f8f8f8; color: #000; font-family: 'Noto Sans KR', sans-serif; font-size: 16px; box-sizing: border-box; border: 1px solid #e1e1e1; } 
+.jobRegWrap .regBox .tStyle01 .telWrap { display: flex; gap: 0 10px; } 
+.jobRegWrap .regBox .tStyle01 .telWrap .tSelect { width: 100px; flex-shrink: 0; } 
+.jobRegWrap .regBox .tStyle01 .telWrap input[type="text"] { min-width: 90px; } 
+.jobRegWrap .regBox table .tSelect { padding: 8px 30px 8px 12px; -webkit-appearance: none; -moz-appearance: none; appearance: none; background: url(../images/jobReg/select_icon.png) center right 10px #f8f8f8 no-repeat; background-size: 13px auto; font-family: 'Noto Sans KR', sans-serif; font-size: 16px; border: 1px solid #e1e1e1; box-sizing: border-box; cursor: pointer; } 
+ .jobRegWrap .regBox .radioList { display: flex; align-items: center; gap: 0 50px; } 
+ .jobRegWrap .regBox .radioList .radioBox input[type="radio"] { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; } 
+ .jobRegWrap .regBox .radioList .radioBox input[type="radio"] + label { display: inline-block; position: relative; padding-left: 30px; color: #000; font-size: 16px; font-weight: 500; cursor: pointer; } 
+ .jobRegWrap .regBox .radioList .radioBox input[type="radio"] + label:before { content: ''; position: absolute; left: 0; top: 2px; width: 20px; height: 20px; text-align: center; background: #fff; border: 1px solid #c9cdd2; border-radius: 100%; } 
+ .jobRegWrap .regBox .radioList .radioBox input[type="radio"]:checked + label:after { content: ''; position: absolute; top: 8px; left: 6px; width: 10px; height: 10px; background: #000; border-radius: 100%; } 
+ .jobRegWrap .regBox .radioList .radioSrch { max-width: 580px; width: 100%; position: relative; } 
+ .jobRegWrap .regBox .radioList .radioSrch input[type="text"] { padding: 8px 36px 8px 12px; } 
+ .jobRegWrap .regBox .radioList .radioSrch button { width: 20px; height: 20px; position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: url(../images/jobReg/search_icon.png) center no-repeat; } 
+ .jobRegWrap .regBox .radioList .radioSrch button:focus { border: 0; } 
+ .jobRegWrap .regBox .fileAdd .fileBtn { margin-bottom: 10px; text-align: right; } 
+ .jobRegWrap .regBox .tabWrap { border: 1px solid #000; border-left: 0; border-right: 0; } 
+ .jobRegWrap .regBox .ckList { display: flex; padding: 40px 0; justify-content: center; flex-wrap: wrap; gap: 10px 40px; } 
+ .jobRegWrap .regBox .ckList label { color: #777777; font-size: 16px; } 
+ .jobRegWrap .regBox .ckList input[type="checkbox"] + label::before { content: ''; display: inline-block; width: 20px; height: 20px; margin-right: 10px; background: #fff; border: 1px solid #c5c5c5; border-radius: 3px; vertical-align: text-bottom; box-sizing: border-box; } 
+ .jobRegWrap .regBox .ckList input[type="checkbox"]:checked + label::before { content: ''; background-image: url(../images/jobReg/check_icon.png); background-repeat: no-repeat; background-position: center; border-color: #000; } 
+ .jobRegWrap .regBox .ckList input[type="checkbox"]:checked + label { color: #000; } 
+ .jobRegWrap .regBox .tabBox { display: none; } 
+ .jobRegWrap .regBox .tabBox + .tabBox { margin-top: 20px; } 
+ .jobRegWrap .regBox .tStyle02 { width: 100%; border: 1px solid #cbcbcb; border-left: 0; border-right: 0; } 
+ .jobRegWrap .regBox .tStyle02 th { background-color: #f5f5f5; } 
+ .jobRegWrap .regBox table .brLine { border: 1px solid #cbcbcb; border-top: 0; border-bottom: 0; } 
+ .jobRegWrap .regBox table .brbLine { border-bottom: 1px solid #cbcbcb; } 
+ .jobRegWrap .regBox table .brlLine { border-left: 1px solid #cbcbcb; } 
+ .jobRegWrap .regBox .dateWrap .ui-datepicker-trigger { display: none; } 
+ .jobRegWrap .regBox .dateWrap { display: flex; align-items: center; gap: 10px 20px; } 
+ .jobRegWrap .regBox .dateCom { max-width: 200px; background-image: url(../images/jobReg/date_icon.png); background-position: center right 10px; background-repeat: no-repeat; } 
+ .jobRegWrap .regBox .dateWrap .dateTag { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; } 
+ .jobRegWrap .regBox .dateWrap .dateTag p { display: flex; padding: 5px 20px; color: #003cff; font-size: 12px; font-weight: 300; border: 1px solid #e1e1e1; border-radius: 30px; align-items: center; } 
+ .jobRegWrap .regBox .dateWrap .dateTag .dateDel { width: 8px; height: 8px; margin-left: 10px; background: url(../images/jobReg/del_icon.png) center no-repeat; } 
+ .jobRegWrap .regBox .dateWrap .dateTag .dateDel:focus { border: 0; } 
+ #ui-datepicker-div { width: 100%; max-width: 320px; } 
+ .ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year { border: 0; text-align: center; } 
+ #ui-datepicker-div .ui-datepicker-current-day { position: relative; background: transparent; } 
+ #ui-datepicker-div .ui-datepicker-current-day::before { content: ''; width: 30px; height: 30px; left: 50%; top: 50%; transform: translate(-50%, -50%); position: absolute; background: #003cff; border-radius: 50%; z-index: -1; } 
+ #ui-datepicker-div table td { padding: 5px; } 
+ .jobRegWrap .regBox .txtBox { padding: 30px; } 
+ .jobRegWrap .regBox .txtBox p { margin-bottom: 4px; color: #000; font-size: 16px; font-weight: 500; } 
+ .jobRegWrap .regBox .txtBox ul { padding-left: 20px; } 
+ .jobRegWrap .regBox .txtBox li { padding-left: 10px; position: relative; color: #666666; font-size: 16px; font-weight: 300; word-break: keep-all; } 
+ .jobRegWrap .regBox .txtBox li span { display: inline-block; font-size: 12px; } 
+ .jobRegWrap .regBox .txtBox li::before { content: ''; width: 3px; height: 3px; position: absolute; left: 0; top: 10px; background: #666666; border-radius: 50%; } 
+ .jobRegWrap .regBox .tStyle03 { width: 100%; border: 1px solid #000; } 
+ .jobRegWrap .regBox .tStyle03 th { background: #f5f5f5; } 
+ .jobRegWrap .regBox .ckList.type02 { padding: 0; justify-content: flex-start; gap: 6px 10px; } 
+ .jobRegWrap .regBox .ckList.type02 li { min-width: 74px; } 
+ .jobRegWrap .regBox .ckList.type02 input[type="checkbox"] + label::before { width: 16px; height: 16px; margin-right: 6px; margin-bottom: 1px; } 
+ .jobRegWrap .regBox .ckList.type02 input[type="checkbox"]:checked + label::before { background-size: 8px auto; } 
+ .jobRegWrap .regBox .ckList.type02 label { color: #000; font-size: 14px; } 
+ .jobRegWrap .regBox .fxBox { display: flex; align-items: center; flex-wrap: wrap; gap: 10px 14px; } .jobRegWrap .regBox table .t_txt { position: relative; } 
+.jobRegWrap .regBox .qTag:hover:before { content: '발신번호 변작방지 정책으로 인하여 등록된 발신번호만 사용 가능합니다.\a 희망하는 발신번호가 검색되지 않는 경우, 우측 잡아바 대표번호로 발송을 체크해주세요.'; height: 87px; padding: 10px 20px 0 20px; position: absolute; top: -78px; left: -30px; background: url(../images/jobReg/qtag_bg.png) top center no-repeat; background-size: contain; border-radius: 10px; z-index: 10; white-space: pre; text-align: left; } 
+.jobRegWrap .regBox .qTag { width: 18px; height: 18px; position: absolute; top: -12px; left: -10px; background: #808080; border-radius: 50%; color: #fff; font-size: 12px; } 
+.jobRegWrap .regBox .select2-container--default .select2-selection--single { height: 42px; background: #f8f8f8; border-color: #e1e1e1; } 
+.jobRegWrap .regBox .select2-container .select2-selection--single .select2-selection__rendered { padding-right: 0; } 
+.jobRegWrap .regBox .select2-container--default .select2-selection--single .select2-selection__rendered { color: #000; font-size: 16px; line-height: 42px; } 
+.jobRegWrap .regBox .select2-container--default .select2-selection--single .select2-selection__placeholder { color: #000; font-size: 16px; line-height: 42px; } 
+.jobRegWrap .regBox .select2-container--default .select2-selection--single .select2-selection__clear { line-height: 42px; } 
+.jobRegWrap .regBox .select2-container--default .select2-selection--single .select2-selection__arrow { top: 50%; transform: translateY(-50%); } 
+ .jobRegWrap .regBox table .t_txt { position: relative; } 
+.jobRegWrap .regBox .qTag:hover:before { content: '발신번호 변작방지 정책으로 인하여 등록된 발신번호만 사용 가능합니다.\a 희망하는 발신번호가 검색되지 않는 경우, 우측 잡아바 대표번호로 발송을 체크해주세요.'; height: 87px; padding: 10px 20px 0 20px; position: absolute; top: -78px; left: -30px; background: url(../images/jobReg/qtag_bg.png) top center no-repeat; background-size: contain; border-radius: 10px; z-index: 10; white-space: pre; text-align: left; } 
+.jobRegWrap .regBox .qTag { width: 18px; height: 18px; position: absolute; top: -12px; left: -10px; background: #808080; border-radius: 50%; color: #fff; font-size: 12px; } 
+.jobRegWrap .regBox .select2-container--default .select2-selection--single { height: 42px; background: #f8f8f8; border-color: #e1e1e1; } 
+.jobRegWrap .regBox .select2-container .select2-selection--single .select2-selection__rendered { padding-right: 0; } 
+.jobRegWrap .regBox .select2-container--default .select2-selection--single .select2-selection__rendered { color: #000; font-size: 16px; line-height: 42px; } 
+.jobRegWrap .regBox .select2-container--default .select2-selection--single .select2-selection__placeholder { color: #000; font-size: 16px; line-height: 42px; } 
+.jobRegWrap .regBox .select2-container--default .select2-selection--single .select2-selection__clear { line-height: 42px; } 
+.jobRegWrap .regBox .select2-container--default .select2-selection--single .select2-selection__arrow { top: 50%; transform: translateY(-50%); } 
+ .jobRegWrap .regBox .areaBox { width: 100%; height: 270px; padding: 20px 20px 30px; margin-top: 20px; position: relative; border: 1px solid #c5c5c5; overflow: hidden; } 
+.jobRegWrap .regBox .areaBox textarea { width: 100%; height: 100%; background: #fff; color: #000; font-size: 14px; font-family: "Noto Sans KR" !important; font-weight: 300; border: 0; resize: none; } 
+.jobRegWrap .regBox .areaBox textarea::placeholder { color: #999; font-size: 14px; line-height: 1.4; } 
+.jobRegWrap .regBox .areaBox textarea:focus { border: 0; outline: 0; } 
+.jobRegWrap .regBox .areaBox .txtCnt { color: #000; font-size: 12px; font-weight: 300; text-align: right; } 
+.jobRegWrap .regBox .areaWrap .txtWrap { margin-top: 14px; padding-left: 20px; } 
+.jobRegWrap .regBox .areaWrap .txtWrap p { color: #ff0000; font-size: 12px; font-weight: 300; } 
+.jobRegWrap .comWrap { margin-top: 60px; } 
+.jobRegWrap .comWrap p { color: #666666; font-size: 20px; font-weight: 300; text-align: center; line-height: 1.6; } 
+.jobRegWrap .comWrap a { display: block; width: 178px; padding: 15px 0; margin: 20px auto 0; background: #2a61f9; color: #fff; font-size: 20px; font-weight: 300; border-radius: 5px; text-align: center; } 
+.jobRegWrap .regBox .ckList.type03 { padding: 0; } 
+.jobRegWrap .regBox .ckList.type03 label { color: #000; font-size: 14px; } 
+.jobRegWrap .regBox .ckList.type03 input[type="checkbox"] + label::before { width: 16px; height: 16px; margin-right: 6px; margin-bottom: 1px; } 
+
+.jobRegWrap .modal { background: rgba(0, 0, 0, 0.5); } 
+.jobRegWrap .modal .modal-dialog { max-width: 820px; width: calc(100% - 20px); } 
+.jobRegWrap .modal .modal-content { border-radius: 20px; overflow: hidden; } 
+.jobRegWrap .modal .modal-header { background: #06bbc0 !important; } 
+.jobRegWrap .modal .link_btn { margin-top: 20px; text-align: center; } 
+.jobRegWrap .modal .link_btn button { width: 160px; padding: 8px; background: #06bbc0; color: #fff; font-size: 24px; border: 0; border-radius: 5px; } 
+.jobRegWrap .modal .mSrchWrap { display: flex; padding-bottom: 10px; align-items: center; gap: 10px; border-bottom: 1px solid #cbcbcb; } 
+.jobRegWrap .modal .mSrchWrap > div { display: flex; width: calc(100% - 270px); align-items: center; } 
+.jobRegWrap .modal .mSrchWrap .popTxt { margin-right: 20px; color: #000; font-size: 18px; } 
+.jobRegWrap .modal .mSrchWrap .popBtn { width: 86px; padding: 8px 0; margin-left: 10px; background: #06bbc0; color: #fff; font-size: 18px; border: 0; flex-shrink: 0; } 
+.jobRegWrap .modal .popSelect { width: 180px; padding: 8px 12px; -webkit-appearance: none; -moz-appearance: none; appearance: none; background: url(../images/jobReg/select_icon.png) center right 10px #f8f8f8 no-repeat; background-size: 13px auto; font-family: 'Noto Sans KR', sans-serif; font-size: 16px; border: 1px solid #e1e1e1; box-sizing: border-box; cursor: pointer; } 
+.jobRegWrap .modal .mSrchWrap input[type="text"] { width: calc(100% - 96px); padding: 8px 12px; background-color: #f8f8f8; color: #000; font-family: 'Noto Sans KR', sans-serif; font-size: 16px; box-sizing: border-box; border: 1px solid #e1e1e1; } 
+.jobRegWrap .modal .tableWrap { overflow-x: scroll; } 
+.jobRegWrap .modal .tableWrap table { width: 100%; min-width: 640px; } 
+.jobRegWrap .modal .tableWrap table .tct { text-align: center; } 
+.jobRegWrap .modal .tableWrap thead tr { border-bottom: 1px solid #cbcbcb; } 
+.jobRegWrap .modal .tableWrap thead th { padding: 5px 10px; background: #f8f8f8; color: #000; font-size: 16px; font-weight: 500; border-left: 1px solid #cbcbcb; text-align: center; } 
+.jobRegWrap .modal .tableWrap thead th:last-child { border-right: 1px solid #cbcbcb; } 
+.jobRegWrap .modal .tableWrap tbody tr { border-bottom: 1px solid #cbcbcb; } 
+.jobRegWrap .modal .tableWrap tbody td { padding: 10px 15px; color: #000; font-size: 16px; font-weight: 300; border-left: 1px solid #cbcbcb; } 
+.jobRegWrap .modal .tableWrap tbody td:last-child { border-right: 1px solid #cbcbcb; } 
+.jobRegWrap .modal .tableWrap .radioItem input[type="radio"] { position: absolute; left: -99999px; } 
+.jobRegWrap .modal .tableWrap .radioItem input[type="radio"] + label { display: block; position: relative; width: 20px; height: 20px; margin: 0 auto; text-align: center; background: #fff; border: 1px solid #c9cdd2; border-radius: 100%; } 
+.jobRegWrap .modal .tableWrap .radioItem input[type="radio"]:checked + label:after { content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 10px; height: 10px; background: #000; border-radius: 100%; } 
+.jobRegWrap .paging { margin: 24px 0; text-align: center; } 
+.jobRegWrap .paging a { display: inline-block; color: #6b6b6b; padding: 4px; font-size: 16px; } 
+.jobRegWrap .paging a.current { font-weight: 900; border-bottom: 2px solid #000; color: #000; } 
+.jobRegWrap .paging a + a { margin-left: 16px; } 
+.jobRegWrap .mpaging { display: none; color: #000; text-align: center; } 
+.jobRegWrap .mpaging a { display: inline-block; margin: 0 20px; background-color: #003281; color: #fff; font-size: 14px; padding: 4px 16px; border-radius: 4px; } 
+.jobRegWrap .mpaging span { font-weight: 900; } 
+.jobRegWrap .mpaging a { display: inline-block; margin: 0 20px; background-color: #003281; color: #fff; font-size: 14px; padding: 4px 16px; border-radius: 4px; } 
+
+@media all and (max-width:860px){
+ .jobRegWrap .regBox table th { display: block; padding: 10px 0; } 
+ .jobRegWrap .regBox table td { display: block; padding: 10px 0; } 
+ .jobRegWrap .regBox table .tct { text-align: left; } 
+ .jobRegWrap .regBox colgroup { display: none; } 
+ .jobRegWrap .regBox .tStyle01 tr { border-bottom: 0; } 
+ .jobRegWrap .regBox .tStyle02 th { padding: 10px; } 
+ .jobRegWrap .regBox .tStyle02 td { padding: 10px; } 
+ .jobRegWrap .regBox table .brLine { border: 0; } 
+ .jobRegWrap .regBox .tStyle03 th { padding: 10px; } 
+ .jobRegWrap .regBox .tStyle03 td { padding: 10px; } 
+ .jobRegWrap .regBox .qTag { display: none; } 
+ .jobRegWrap .regBox table .brlLine { border: 0; } 
+ }
+@media all and (max-width:640px){
+ .jobRegWrap h2.tit { margin: 30px 0; font-size: 20px; } 
+ .jobRegWrap .regBox .tit { margin-bottom: 10px; font-size: 16px; } 
+ .jobRegWrap .regBox table th { padding: 10px 0 0; font-size: 14px; } 
+ .jobRegWrap .regBox + .regBox { margin-top: 30px; } 
+ .jobRegWrap .regBox .radioList { flex-wrap: wrap; } 
+ .jobRegWrap .regBox .radioList .radioSrch { margin-top: 10px; } 
+ .jobRegWrap .regBox table input[type="text"] { padding: 6px 10px; font-size: 14px; } 
+ .jobRegWrap .regBox .radioList .radioSrch input[type="text"] { padding: 6px 36px 6px 10px; } 
+ .jobRegWrap .regBox table .tSelect { padding: 6px 30px 6px 02px; font-size: 14px; } 
+ .jobRegWrap .regBox table td { font-size: 14px; } 
+ .jobRegWrap .regBox .dateWrap { flex-wrap: wrap; } 
+ #ui-datepicker-div { max-width: 280px; } 
+ .jobRegWrap .regBox .txtBox { padding: 10px 5px; } 
+ .jobRegWrap .regBox .txtBox ul { padding-left: 10px; } 
+ .jobRegWrap .regBox .txtBox p { font-size: 14px; } 
+ .jobRegWrap .regBox .txtBox li::before { width: 2px; height: 2px; top: 8px; } 
+ .jobRegWrap .regBox .txtBox li { padding-left: 6px; font-size: 12px; } 
+ .jobRegWrap .regBox .ckList.type02 { height: 100px; overflow: scroll; } 
+ .jobRegWrap .comWrap { margin-top: 30px; } 
+ .jobRegWrap .comWrap p { font-size: 14px; } 
+ .jobRegWrap .comWrap a { width: 160px; padding: 10px 0; font-size: 16px; } 
+ .jobRegWrap .regBox .ckList label { font-size: 14px; } 
+ .jobRegWrap .regBox .ckList input[type="checkbox"] + label::before { width: 16px; height: 16px; margin-right: 4px; } 
+ .jobRegWrap .regBox .ckList { padding: 20px 0; gap: 10px 10px; } 
+ .jobRegWrap .paging { display: none; } 
+ .jobRegWrap .mpaging { display: block; margin: 20px 0; } 
+
+ .jobRegWrap .modal .tableWrap tbody td { padding: 8px 10px; font-size: 14px; } 
+.jobRegWrap .modal .mSrchWrap { flex-wrap: wrap; } 
+.jobRegWrap .modal .mSrchWrap > div { width: 100%; flex-wrap: wrap; } 
+.jobRegWrap .modal .mSrchWrap .popTxt { margin-right: 10px; font-size: 14px; } 
+.jobRegWrap .modal .popSelect { width: calc(100% - 60px); padding: 6px 10px; font-size: 14px; } 
+.jobRegWrap .modal .mSrchWrap input[type="text"] { width: 100%; padding: 6px 10px; font-size: 14px; } 
+.jobRegWrap .modal .mSrchWrap .popBtn { width: 100%; margin-top: 10px; padding: 6px 0; margin-left: 0; font-size: 14px; } 
+.jobRegWrap .modal .link_btn button { width: 130px; padding: 6px; font-size: 16px; } 
+ }

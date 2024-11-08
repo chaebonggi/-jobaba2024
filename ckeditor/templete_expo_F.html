@@ -12,6 +12,7 @@
 </head>
 <body>
     <style>
+        .exhb_wrap {overflow: hidden;}
         .exhb_wrap .onjob_view .view_Detail { background:#fff; padding:30px 0; border-radius:0; border-top:1px solid #000; margin-top:20px; } 
         .exhb_wrap .onjob_view .view_Detail .vTit, .exhb_wrap .attend_area, .exhb_wrap .at_cpn { display:none; } 
 
@@ -24,7 +25,7 @@
         .expo_wrap .expo_info { padding: 100px 52px 110px; background: #8de5e5; } 
         .expo_wrap .info_item { padding: 90px; position: relative; background: #fff; border-radius: 30px; } 
         .expo_wrap .info_item + .info_item { margin-top: 90px; } 
-        .expo_wrap .info_tit { display: flex; width: 437px; height: 105px; position: absolute; top: -54px; left: 50%; transform: translateX(-50%); background: #1c1d20; border-radius: 10px; align-items: center; justify-content: center; } 
+        .expo_wrap .info_tit { display: flex; width: 437px; height: 105px; padding-bottom: 0; position: absolute; top: -54px; left: 50%; transform: translateX(-50%); background: #1c1d20; border-radius: 10px; align-items: center; justify-content: center; } 
         .expo_wrap .info_tit:after { border-top: 15px solid #1c1d20; border-left: 20px solid transparent; border-right: 20px solid transparent; border-bottom: 0 solid transparent; content:""; position:absolute; bottom: -10px; left: 50%; transform: translateX(-50%); } 
         .expo_wrap .info_tit p { color: #fff; font-size: 36px; } 
         .expo_wrap .fcBlue { color: #1f64ff !important; } 
@@ -80,7 +81,7 @@
         .expo_wrap .info_item .etc_wrap li + li { margin-top: 4px; } 
         .expo_wrap .info_item .etc_wrap li::before { content: ''; width: 4px; height: 4px; position: absolute; top: 10px; left: 0; background: #000; border-radius: 50%; } 
         .expo_wrap .hire_wrap { margin: 50px auto; text-align: center; } 
-        .expo_wrap .hire_wrap.type02 {margin: 150px 0 50px;}
+        .expo_wrap .hire_wrap.type02 {margin: 150px 0 0; position: relative; z-index: 2;}
         .expo_wrap .hire_wrap p { display: inline-block; padding-left: 110px; position: relative; color: #000; font-size: 36px; text-align: left; } 
         .expo_wrap .hire_wrap p span { color: #1994ba; } 
         .expo_wrap .hire_wrap p::before { content: ''; width: 93px; height: 92px; position: absolute; top: -4px; left: 0; background: url(https://chaebonggi.github.io/jobaba2024/ckeditor/images/jobfair/hire_icon.png) no-repeat; } 
@@ -92,8 +93,12 @@
         .expo_wrap .hire_list .hire_btn a { display: block; width: 135px; padding: 14px 0 10px; background: #1994ba; color: #fff; font-size: 18px; text-align: center; border-radius: 5px; } 
         .expo_wrap .hire_list .hire_btn a:hover { background: #000; transition: all 0.3s; } 
         .expo_wrap .info_item.type02 {padding: 90px 90px 0;border-radius: 50px 50px 0 0;}
-        .expo_wrap .expo_info.type02 { padding: 170px 52px 0; background: #E9FEFD;}
-        .expo_wrap .expo_info.type02 .info_item {padding: 90px 90px 0; border-radius: 50px 50px 0 0;}
+        .expo_wrap .expo_info.type02 {position: relative; padding: 170px 52px 0;}
+        .expo_wrap .expo_info.type02 .info_item {padding: 90px 90px 60px;position: relative;  z-index: 2;}
+        .expo_wrap .expo_info.type02::before { content: ''; width: 100%; height: 100%; position: absolute; top: 0; left: -50%; right: 0; background: linear-gradient(to bottom, #fff 0%,#E9FEFD 2%) } 
+        .expo_wrap .expo_info.type02::after { content: ''; width: 100%; height: 100%; position: absolute; top: 0; left: 50%; right: 0; background: linear-gradient(to bottom, #fff 0%,#E9FEFD 2%); z-index: 1; } 
+        .exhb_wrap .onjob_view .view_Detail {padding-bottom: 0;}
+        .exhb_wrap .onjob_view {margin-bottom: 0;}
 
         @media screen and (max-width:1024px){
         .expo_wrap .info_item { padding: 90px 30px; } 
@@ -177,7 +182,7 @@
         .expo_wrap .hire_list .hire_btn a { padding: 6px 0 4px; background: #1994ba; font-size: 16px; } 
         .expo_wrap .hire_list li {padding: 20px 5px;}
         .expo_wrap .hire_wrap.type02 {margin: 50px 0 0;}
-        .expo_wrap .expo_info.type02 .info_item {padding: 60px 10px 0;}
+        .expo_wrap .expo_info.type02 .info_item {padding: 60px 10px 30px;}
         }
     </style>
     <div class="expo_wrap">
@@ -639,10 +644,10 @@
                             <a href="">지원하기</a>
                         </div>                       
                     </li>                    
-                </ul>
-                <div class="hire_wrap type02">
-                    <p class="gBold"><span class="gBold">연봉 · 매출 · 취업률 기준</span><br>수도권 우수기업 채용공고</p>
-                </div>
+                </ul>               
+            </div>
+            <div class="hire_wrap type02">
+                <p class="gBold"><span class="gBold">연봉 · 매출 · 취업률 기준</span><br>수도권 우수기업 채용공고</p>
             </div>
         </div>
     </div>
