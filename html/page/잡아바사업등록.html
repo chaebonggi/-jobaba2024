@@ -47,12 +47,11 @@
 	
 	<!-- s:2024.11.08 추가 -->
 	<link rel="stylesheet" href="css/jobReg.css">
-	<link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/js/css/jquery-ui.css">
 	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+	<script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ko.js"></script>
 	<!-- e:2024.11.08 추가 -->
 	
 </head>
@@ -70,8 +69,8 @@
 						<caption>신청자정보</caption>
 						<colgroup>
 							<col width="200px">
-							<col width="460px">
-							<col width="260px">
+							<col width="430px">
+							<col width="200px">
 							<col>
 						</colgroup>
 						<tbody>
@@ -80,7 +79,7 @@
 								<td>
 									<input type="text" id="" placeholder="부서명을 입력해주세요.">
 								</td>
-								<th scope="row" class="tct"><span class="fcRed">*</span>E-mail</th>
+								<th scope="row"><span class="fcRed">*</span>E-mail</th>
 								<td>
 									<input type="text" id="" placeholder="E-mail 주소를 입력해주세요.">
 								</td>
@@ -90,7 +89,7 @@
 								<td>
 									<input type="text" id="" placeholder="이름을 입력해주세요.">
 								</td>
-								<th scope="row" class="tct"><span class="fcRed">*</span>전화번호</th>
+								<th scope="row"><span class="fcRed">*</span>전화번호</th>
 								<td>
 									<div class="telWrap">
 										<select id="telno1" name="telno1" title="휴대폰 앞자리 선택" class="tSelect" >
@@ -146,9 +145,8 @@
 											<input type="radio" name="conts01" id="check02" value="no">
 											<label for="check02">N</label>
 										</div>
-										<div class="radioSrch">
-											<input type="text" class="radioSch" placeholder="정책명" disabled>
-											<button type="button" onclick="checkAndRun()"><span class="ir-text">검색</span></button>
+										<div class="radioSrch" >
+											<button type="button" onclick="checkAndRun()"><span>정책명정책명정책명정책명정책명정책명정책명정책명정책명정책명정책명정책명정책명정책명정책명정책명정책명정책명정책명정책명</span></button>
 										</div>
 										
 									</div>									
@@ -170,6 +168,9 @@
 										</div>
 										<div>
 											첨부파일
+										</div>
+										<div class="txtWrap">
+											<p>※ 최대 1개 파일만 첨부 가능하며, 파일이 여러 개인 경우 압축파일(zip)로 등록해주시기 바랍니다.</p>
 										</div>
 									</div>
 								</td>
@@ -237,7 +238,7 @@
 										</td>
 										<td>
 											<div class="dateWrap">
-												<input type="text" id="" class="datepicker01 dateCom">
+												<input type="text" id="" class="datepicker-news dateCom">
 												<div class="dateTag">
 													<p>2024년 10월 15일<button class="dateDel"><span class="ir-text">삭제</span></button></p>
 													<p>2024년 10월 15일<button class="dateDel"><span class="ir-text">삭제</span></button></p>
@@ -274,7 +275,7 @@
 										</td>
 										<td>
 											<div class="dateWrap">
-												<input type="text" id="" class="datepicker01 dateCom">
+												<input type="text" id="" class="datepicker-kakao dateCom">
 												<div class="dateTag">
 													<p>2024년 10월 15일<button class="dateDel"><span class="ir-text">삭제</span></button></p>
 													<p>2024년 10월 15일<button class="dateDel"><span class="ir-text">삭제</span></button></p>
@@ -310,7 +311,7 @@
 										</td>
 										<td>
 											<div class="dateWrap">
-												<input type="text" id="" class="datepicker01 dateCom">
+												<input type="text" id="" class="datepicker-sms dateCom">
 												<div class="dateTag">
 													<p>2024년 10월 15일<button class="dateDel"><span class="ir-text">삭제</span></button></p>
 													<p>2024년 10월 15일<button class="dateDel"><span class="ir-text">삭제</span></button></p>
@@ -529,7 +530,7 @@
 										</td>
 										<td>
 											<div class="fxBox">
-												<select id="" name="" title="발신번호" class="tSelect schSel w160">
+												<select id="" name="" title="발신번호" class="tSelect schSel w180">
 													<option value="" disabled selected>발신번호 선택</option>
 													<option value="010-1111-1111">010-1111-1111</option>
 													<option value="010-2222-2222">010-2222-2222</option>
@@ -564,7 +565,8 @@
 										<td colspan="4" class="brlLine">
 											<div class="areaWrap">
 												<div class="areaBox">
-													<textarea id="answerInput1" maxlength="2000" placeholder="(광고)[잡아바 회원 대상 사업 안내_사업명]&#10;간단한 사업 소개 or 홍보 문구(2문장 이내)&#10;&#10;1) 신청기간 : &#10;2) 지원대상 : &#10;3) 교육특전 : &#10;4) 교육기간 : &#10;5) 신청방법 : 온라인 신청(축약url)&#10;6) 문의처 : &#10;&#10;* 무료 수신거부 : : 080-139-5060"></textarea>
+													<textarea id="answerInput1" maxlength="2000">(광고)[잡아바 회원 대상 사업 안내_사업명]&#10;간단한 사업 소개 or 홍보 문구(2문장 이내)&#10;&#10;1) 신청기간 : &#10;2) 지원대상 : &#10;3) 교육특전 : &#10;4) 교육기간 : &#10;5) 신청방법 : 온라인 신청(축약url) &#10;6) 문의처 : &#10;* 무료 수신거부 : : 080-139-5060
+													</textarea>
 													<p class="charCount txtCnt" data-max="2000">0 / 2000</p>
 												</div>
 												<div class="txtWrap">
@@ -593,7 +595,7 @@
 										</td>
 										<td>
 											<div class="dateWrap">
-												<input type="text" id="" class="datepicker02 dateCom mw280">
+												<input type="text" id="" class="datePicker dateCom mw350">
 											</div>
 										</td>
 									</tr>	
@@ -631,6 +633,9 @@
 											<div>
 												첨부파일
 											</div>
+											<div class="txtWrap">
+												<p>※ 최대 1개 파일만 첨부 가능하며, 파일이 여러 개인 경우 압축파일(zip)로 등록해주시기 바랍니다.</p>
+											</div>
 										</td>
 									</tr>
 									<tr>
@@ -642,6 +647,9 @@
 											</div>
 											<div>
 												첨부파일
+											</div>
+											<div class="txtWrap">
+												<p>※ 최대 1개 파일만 첨부 가능하며, 파일이 여러 개인 경우 압축파일(zip)로 등록해주시기 바랍니다.</p>
 											</div>
 										</td>
 									</tr>
@@ -837,16 +845,50 @@
 	
 	<!--추가 js-->
 	<script>
-		$(function() {
-			$(".datepicker01").datepicker({
-				dateFormat: 'yy-mm-dd',
-				changeMonth: true,
-				changeYear: true,
-				showButtonPanel: true,
-			});
-			$('.datepicker01').datepicker();
-			$('.datepicker02').daterangepicker();
+		flatpickr(".datepicker-news", {
+			dateFormat: "Y년 m월 d일",
+			locale: "ko",
+			enable: [
+				function(date) {
+					return date.getDay() === 1; 
+				}
+			]
 		});
+		flatpickr(".datepicker-kakao", {
+			dateFormat: "Y년 m월 d일",
+			locale: "ko",
+			enable: [
+				function(date) {
+					return date.getDay() === 2; 
+				}
+			]
+		});
+		flatpickr(".datepicker-sms", {
+			dateFormat: "Y년 m월 d일",
+			locale: "ko",
+			enable: [
+				function(date) {
+					return date.getDay() === 2 || date.getDay() === 4;
+				}
+			]
+		});
+		flatpickr(".datePicker", {
+            dateFormat: "Y년 m월 d일",
+            locale: "ko", 
+            mode: "range", 
+            onChange: function(selectedDates, dateStr, instance) {
+                if (selectedDates.length === 2) {
+                    const startDate = selectedDates[0];
+                    const endDate = selectedDates[1];
+                    const diffInDays = (endDate - startDate) / (1000 * 60 * 60 * 24);
+
+                    if (diffInDays > 14) {
+                        alert("최대 14일까지만 선택 가능합니다.");
+                        instance.clear();
+                    }
+                }
+            }
+        });
 		function recPop() {
 			$('#entPop').show();
 		}
@@ -855,10 +897,9 @@
 			$('#entPop').hide();
 		}
 		function checkAndRun() {
-			const radioYes = document.getElementById("check01");			
-			if (radioYes.checked) {
-				recPop();
-			}
+			if ($('#check01').prop('checked')) {
+            	recPop();
+        	}
 		}
 		
 		$(document).ready(function(){
@@ -888,6 +929,13 @@
 					$tabBox.show();
 				} else {
 					$tabBox.hide();
+				}
+			});
+			$('input[name="conts01"]').change(function() {
+				if ($('#check01').prop('checked')) {
+					$('.radioSrch').show();
+				} else {
+					$('.radioSrch').hide();
 				}
 			});
 		});
