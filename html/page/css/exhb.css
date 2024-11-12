@@ -86,7 +86,9 @@
 .exhb_wrap .slick-dots .slick-active button{background: #00a8cd}
 
 /* 온라인 박람회_상세 */
-.exhb_sub_header {max-height:299px;overflow:hidden}
+/* s:2024.11.12 css 수정 */
+.exhb_sub_header {max-height:300px;overflow:hidden}
+/* e:2024.11.12 css 수정 */
 .exhb_sub_header img{width:100%;height:100%;display:block}
 .exhb_wrap .tabs {margin: 50px 0;display: flex;}
 .exhb_wrap .tabs li {width: 50%;text-align: center;border-bottom: 3px solid #e1e1e1;padding-bottom: 15px}
@@ -282,8 +284,10 @@
 .exhb_wrap .innerSection { max-width: 1260px; width: calc(100% - 20px); margin: 0 auto; } 
 .exhb_remain .exhb_job { background: #fff; } 
 .exhb_remain .exhb_job .innerSection { padding: 100px 0 50px; } 
-.exhb_remain .exhb_job .job_list { display: flex; padding: 20px; margin-bottom: 50px; flex-wrap: wrap; gap: 30px; border: 1px solid #ddd; border-radius: 10px;} 
-.exhb_remain .exhb_job .job_list .item { width: calc(100% / 3 - 20px); } 
+/* s:2024.11.12 온라인 채용관 css 수정 */
+.exhb_remain .exhb_job .job_list { display: flex; padding: 20px; margin-bottom: 50px; flex-wrap: wrap; gap: 30px 24px; outline: 1px solid #ddd; border-radius: 10px;} 
+.exhb_remain .exhb_job .job_list .item { width: calc(100% / 3 - 16.66px); } 
+/* s:2024.11.12 온라인 채용관 css 수정 */
 .exhb_remain .exhb_job .job_list .item.end .img_wrap::before { content: '종료'; display: flex; width: 100%; height: 100%; position: absolute; top: 0; left: 0; background: rgba(0, 0, 0, 0.7); color: #fff; font-size: 40px; font-weight: 700; align-items: center; justify-content: center; } 
 .exhb_remain .exhb_job .job_list a { display: block; position: relative;}
 .exhb_remain .exhb_job .job_list a:hover::before {content: '';width: 100%;height: 100%;position: absolute;top: 0;left: 0;border: 2px solid #4193F7;box-sizing: border-box;border-radius: 15px;z-index: 1; } 
