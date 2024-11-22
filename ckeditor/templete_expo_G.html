@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>온라인박람회 템플릿</title>
+    <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/new/import.css">
+    <link type="text/css" rel="stylesheet" href="https://www.jobaba.net/resource/css/main/kgoon.reset.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+       .exhb_wrap .onjob_view .view_Detail { background:#fff; padding:30px 0; border-radius:0; border-top:1px solid #000; margin-top:20px; } 
+        .exhb_wrap .onjob_view .view_Detail .vTit, .exhb_wrap .attend_area, .exhb_wrap .at_cpn { display:none; } 
+
+        .expo_wrap { font-family: 'Noto Sans KR', sans-serif; font-size:16px; font-weight:400; color:#232323; box-sizing:border-box; position:relative; padding:0; width:100%; max-width:1260px; word-break:keep-all; line-height:1.6; margin:0 auto; } 
+        .expo_wrap .tit { margin-bottom: 16px; font-size:24px; font-weight:700; text-align:center; } 
+        .expo_wrap img { max-width:100%; } 
+
+        .expo_wrap .hire_list_wrap h2 { text-align:center; font-size:32px; margin:48px 0 24px; padding:0; } 
+        .expo_wrap .hire_list { border-top:1px solid #a4a4a4; margin:0; padding:0; position:relative; } 
+        .expo_wrap .hire_list li { display:flex; border-bottom: 1px solid #d6d6d6; padding:24px 0; align-items: center; } 
+        .expo_wrap .hire_list li a { text-decoration:none; color:inherit; } 
+        .expo_wrap .hire_list li:hover { background:#f9f9f9; } 
+        .expo_wrap .hire_list li .com_nm { display: flex; margin-right: 30px; align-items: center; justify-content: center; color:#52595a; width:100%; max-width:240px; flex-shrink: 0; } 
+        .expo_wrap .hire_list li .com_nm img { max-height: 70px; } 
+        .expo_wrap .hire_list li .hire_nm { font-weight:700; flex-grow:1; } 
+        .expo_wrap .hire_list li .hire_nm .txt { color: #6c6c6c; font-size: 14px; font-weight: 400; } 
+        .expo_wrap .hire_list li .hire_nm .desc { font-size:14px; font-weight:300; color:#9c9c9c; margin-top:2px; } 
+        .expo_wrap .hire_list li .btn_area { margin-right: 20px; text-align:right; position:relative; } 
+        .expo_wrap .hire_list li .btn_area a { display: block; width: 120px; color:#2c60f9; font-size:16px; border:1px solid #2c60f9; border-radius:10px; padding:6px 10px; text-align: center; box-sizing: border-box; } 
+        .expo_wrap .hire_list li:hover .btn_area a { color:#fff; background:#2c60f9; } 
+        .expo_wrap .hire_list li .btn_area .due { font-size:13px; font-weight:300; color:#52595a; position:absolute; bottom:0; right:0; } 
+        .expo_wrap .img_wrap { font-size: 0; } 
+        .expo_wrap .info_wrap { padding: 25px 70px 60px; background: #4682d4; } 
+        .expo_wrap .expo_info { padding: 62px 80px; background: #fff; border-radius: 50px; box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05); } 
+        .expo_wrap .expo_info .item + .item { margin-top: 60px; } 
+        .expo_wrap .expo_info .ex_tit { padding: 20px 0; margin-bottom: 40px; background: #e7f9ff; border: 1px solid #ade6f1; border-radius: 30px 0 30px 0; } 
+        .expo_wrap .expo_info .ex_tit p { color: #000; font-size: 30px; font-weight: 500; text-align: center; } 
+        .expo_wrap .expo_info .ex_list01 { padding-left: 240px; position: relative; } 
+        .expo_wrap .expo_info .ex_list01::before { content: ''; width: 117px; height: 114px; position: absolute; top: 50%; left: 60px; transform: translateY(-50%); background: url(./images/logis/ex_icon01.png) no-repeat; } 
+        .expo_wrap .expo_info .ex_list01.ic01::before { width: 117px; height: 114px; background: url(./images/logis/ex_icon01.png) center no-repeat; } 
+        .expo_wrap .expo_info .ex_list01.ic02::before { width: 126px; height: 104px; background: url(./images/logis/ex_icon02.png) center no-repeat; } 
+        .expo_wrap .expo_info .ex_list01 li { padding-left: 30px; position: relative; color: #000; font-size: 24px; } 
+        .expo_wrap .expo_info .ex_list01 li span { color: #00abcd; font-weight: 500; } 
+        .expo_wrap .expo_info .ex_list01 li + li { margin-top: 6px; } 
+        .expo_wrap .expo_info .ex_list01 li::before { content: ''; width: 24px; height: 25px; position: absolute; left: 0; top: 8px; background: url(./images/logis/list_icon.png) no-repeat; } 
+        .expo_wrap .expo_info .ex_list01 li.noList { padding-left: 0; } 
+        .expo_wrap .expo_info .ex_list01 li.noList::before { content: none; } 
+        .expo_wrap .expo_info .ex_list01 li.noList .txt01 { display: inline-block; padding: 0 20px; color: #000; font-size: 22px; font-weight: 500; background: #e4e4e4; } 
+        .expo_wrap .expo_info .ex_list01 li.noList .txt02 { padding-left: 30px; color: #ff0000; font-size: 16px; font-weight: 300; } 
+        .expo_wrap .expo_info .ex_list02 { display: flex; flex-wrap: wrap; } 
+        .expo_wrap .expo_info .ex_list02 li { width: calc(100% / 3); padding: 20px 0 30px; border: 1px solid #dddddd; text-align: center; } 
+        .expo_wrap .expo_info .ex_list02 li::before { content: ''; display: block; width: 100%; height: 45px; margin-bottom: 15px; } 
+        .expo_wrap .expo_info .ex_list02 li:not(:nth-child(3n + 1)) { border-left: 0; } 
+        .expo_wrap .expo_info .ex_list02 li:nth-child(n+4) { border-top: 0; } 
+        .expo_wrap .expo_info .ex_list02 li:nth-child(1):before { background: url(./images/logis/list02_icon01.png) center no-repeat; } 
+        .expo_wrap .expo_info .ex_list02 li:nth-child(2):before { background: url(./images/logis/list02_icon02.png) center no-repeat; } 
+        .expo_wrap .expo_info .ex_list02 li:nth-child(3):before { background: url(./images/logis/list02_icon03.png) center no-repeat; } 
+        .expo_wrap .expo_info .ex_list02 li:nth-child(4):before { background: url(./images/logis/list02_icon04.png) center no-repeat; } 
+        .expo_wrap .expo_info .ex_list02 li:nth-child(5):before { background: url(./images/logis/list02_icon05.png) center no-repeat; } 
+        .expo_wrap .expo_info .ex_list02 li:nth-child(6):before { background: url(./images/logis/list02_icon06.png) center no-repeat; } 
+        .expo_wrap .expo_info .ex_list02 li:nth-child(7):before { background: url(./images/logis/list02_icon07.png) center no-repeat; } 
+        .expo_wrap .expo_info .ex_list02 li:nth-child(8):before { background: url(./images/logis/list02_icon08.png) center no-repeat; } 
+        .expo_wrap .expo_info .ex_list02 li:nth-child(9):before { background: url(./images/logis/list02_icon09.png) center no-repeat; } 
+        .expo_wrap .expo_info .ex_list02 li:nth-child(10):before { background: url(./images/logis/list02_icon10.png) center no-repeat; } 
+        .expo_wrap .expo_info .ex_list02 li:nth-child(11):before { background: url(./images/logis/list02_icon11.png) center no-repeat; } 
+        .expo_wrap .expo_info .ex_list02 li:nth-child(12):before { background: url(./images/logis/list02_icon12.png) center no-repeat; } 
+        .expo_wrap .expo_info .ex_list02 li:nth-child(13):before { background: url(./images/logis/list02_icon13.png) center no-repeat; } 
+        .expo_wrap .expo_info .ex_list02 li:nth-child(14):before { background: url(./images/logis/list02_icon14.png) center no-repeat; } 
+        .expo_wrap .expo_info .ex_list02 li:nth-child(15):before { background: url(./images/logis/list02_icon15.png) center no-repeat; } 
+        .expo_wrap .expo_info .ex_list02 li:nth-child(16):before { background: url(./images/logis/list02_icon16.png) center no-repeat; } 
+        .expo_wrap .expo_info .ex_list02 li:nth-child(17):before { background: url(./images/logis/list02_icon17.png) center no-repeat; } 
+        .expo_wrap .expo_info .ex_list02 li.noList { border: 0; background: url(./images/logis/list02_icon18.png) center no-repeat; } 
+        .expo_wrap .expo_info .ex_list02 .l_tit { margin-bottom: 4px; color: #000; font-size: 22px; font-weight: 500; } 
+        .expo_wrap .expo_info .ex_list02 .l_txt { color: #666666; font-size: 18px; font-weight: 300; line-height: 1.3; } 
+        .expo_wrap .expo_info .ex_list02 .l_txt span { font-size: 14px; } 
+        .expo_wrap .expo_info .s_item + .s_item { margin-top: 50px; } 
+        .expo_wrap .expo_info .s_item .s_tit { max-width: 312px; width: 100%; margin: 0 auto 30px; position: relative; border-radius: 30px; background: #f0f0f0; } 
+        .expo_wrap .expo_info .s_item .s_tit::after { content: ''; position: absolute; left: 50%; transform: translateX(-50%); bottom: -10px; border-top: 10px solid #f0f0f0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-bottom: 0 solid transparent; } 
+        .expo_wrap .expo_info .s_item .s_tit p { padding: 8px 0; color: #000; font-size: 24px; font-weight: 500; text-align: center; } 
+        .expo_wrap .expo_info .ex_list03 { display: flex; justify-content: center; gap: 20px; } 
+        .expo_wrap .expo_info .ex_list03 li { width: 312px; padding: 35px 0; border: 1px solid #ddd; text-align: center; border-radius: 10px; } 
+        .expo_wrap .expo_info .ex_list03 li::before { content: ''; display: block; width: 100%; height: 76px; margin-bottom: 10px; background: url(./images/logis/list03_ico01.png) center no-repeat; } 
+        .expo_wrap .expo_info .ex_list03 li:nth-child(2)::before { background: url(./images/logis/list03_ico02.png) center no-repeat; } 
+        .expo_wrap .expo_info .ex_list03 .l_tit { color: #000; font-size: 22px; font-weight: 500; } 
+        .expo_wrap .expo_info .ex_list03 .l_txt { color: #666666; font-size: 18px; font-weight: 300; line-height: 1.2; } 
+        .expo_wrap .expo_info .ex_list04 { display: flex; flex-wrap: wrap; justify-content: center; } 
+        .expo_wrap .expo_info .ex_list04 .l_tit { color: #000; font-size: 22px; font-weight: 500; } 
+        .expo_wrap .expo_info .ex_list04 .l_txt { color: #ff0000; font-size: 16px; font-weight: 300; } 
+        .expo_wrap .expo_info .ex_list04 li { width: 168px; position: relative; text-align: center; } 
+        .expo_wrap .expo_info .ex_list04 li:not(:first-child) { margin-left: 30px; } 
+        .expo_wrap .expo_info .ex_list04 li::before { content: ''; display: block; width: 100%; height: 100px; margin-bottom: 10px; background: url(./images/logis/list04_icon01.png) center no-repeat; border: 1px solid #ddd; border-radius: 20px; } 
+        .expo_wrap .expo_info .ex_list04 li:nth-child(2)::before { background: url(./images/logis/list04_icon02.png) center no-repeat; } 
+        .expo_wrap .expo_info .ex_list04 li:nth-child(3)::before { background: url(./images/logis/list04_icon03.png) center no-repeat; } 
+        .expo_wrap .expo_info .ex_list04 li:nth-child(4)::before { background: url(./images/logis/list04_icon04.png) center no-repeat; } 
+        .expo_wrap .expo_info .ex_list04 li:nth-child(5)::before { background: url(./images/logis/list04_icon05.png) center no-repeat; } 
+        .expo_wrap .expo_info .ex_list04 li:not(:last-child)::after { content: ''; position: absolute; right: -24px; top: 46px; border-top: 6px solid transparent; border-left: 12px solid #00e2de; border-right: 0 solid transparent; border-bottom: 6px solid transparent; } 
+        .expo_wrap .expo_info .ex_list05 { display: flex; flex-wrap: wrap; justify-content: center; } 
+        .expo_wrap .expo_info .ex_list05 li { width: calc(100% / 3); padding: 20px; border: 1px solid #ddd; } 
+        .expo_wrap .expo_info .ex_list05 li:nth-child(n + 4) { border-top: 0; } 
+        .expo_wrap .expo_info .ex_list05 li::before { content: ''; display: block; width: 100%; height: 48px; background: url(./images/logis/list05_icon01.png) left center no-repeat; background-size: contain !important; } 
+        .expo_wrap .expo_info .ex_list05 li:nth-child(2)::before { background: url(./images/logis/list05_icon02.png) left center no-repeat; } 
+        .expo_wrap .expo_info .ex_list05 li:nth-child(3)::before { background: url(./images/logis/list05_icon03.png) left center no-repeat; } 
+        .expo_wrap .expo_info .ex_list05 li:nth-child(4)::before { background: url(./images/logis/list05_icon04.png) left center no-repeat; } 
+        .expo_wrap .expo_info .ex_list05 li:nth-child(5)::before { background: url(./images/logis/list05_icon05.png) left center no-repeat; } 
+        .expo_wrap .expo_info .ex_list05 .l_tit { margin-bottom: 20px; color: #000; font-size: 22px; line-height: 1.3; } 
+        .expo_wrap .expo_info .ex_list05 .l_tit .lt01 { color: #666666; font-size: 14px; } 
+        .expo_wrap .expo_info .ex_list05 .l_tit .lt02 { color: #ff4141; font-size: 20px; } 
+        .expo_wrap .expo_info .ex_list05 .l_txt { padding-left: 10px; position: relative; color: #666666; font-size: 16px; } 
+        .expo_wrap .expo_info .ex_list05 .l_txt::before { content: '-'; position: absolute; top: 0; left: 0; } 
+
+
+        @media screen and (max-width:1024px) {.expo_wrap .hire_list li .com_nm { max-width:200px; } 
+        .expo_wrap .info_wrap { padding: 25px 30px 60px; } 
+        .expo_wrap .expo_info { padding: 62px 30px; } 
+        }
+        @media screen and (max-width:768px) {.expo_wrap .hire_list li .com_nm { max-width:160px; } 
+        .expo_wrap .hire_list li .btn_area { display: none; } 
+        .expo_wrap .expo_info .ex_list01 { padding-left: 0; } 
+        .expo_wrap .expo_info .ex_list01::before { display: block; margin: 0 auto 20px; position: static; transform: none; } 
+        .expo_wrap .expo_info .ex_list05 li { width: calc(100% / 2); } 
+        .expo_wrap .expo_info .ex_list05 li:nth-child(3n) { border-top: 0; } 
+        }
+        @media screen and (max-width:640px) {.expo_wrap .hire_list_wrap h2 { margin:30px 0 20px; font-size: 24px; } 
+        .expo_wrap .hire_list li .com_nm { max-width: 100px; margin-right: 10px; } 
+        .expo_wrap .hire_list li .com_nm img { max-height: 50px; } 
+        .expo_wrap .hire_list li .hire_nm { border:0; padding:0; margin-top:8px; } 
+        .expo_wrap .hire_list li .hire_nm .cond span+span { margin-left:6px; } 
+        .expo_wrap .hire_list li .hire_nm .cond span+span:before { padding-right:6px; } 
+        .expo_wrap .info_wrap { padding: 20px 10px 30px; } 
+        .expo_wrap .expo_info { padding: 20px 15px; border-radius: 20px; } 
+        .expo_wrap .expo_info .ex_tit p { font-size: 22px; } 
+        .expo_wrap .expo_info .ex_tit { padding: 10px 0; margin-bottom: 20px; } 
+        .expo_wrap .expo_info .ex_list01.ic01::before,
+        .expo_wrap .expo_info .ex_list01.ic02::before { height: 50px; background-size: contain; } 
+        .expo_wrap .expo_info .ex_list01 li {padding-left: 22px;font-size: 16px; } 
+        .expo_wrap .expo_info .ex_list01 li::before {width: 16px;height: 17px;top: 6px;background-size: contain; } 
+        .expo_wrap .expo_info .item + .item {margin-top: 30px; } 
+        .expo_wrap .expo_info .ex_list01 li.noList .txt01 {padding: 0 10px;font-size: 16px; } 
+        .expo_wrap .expo_info .ex_list01 li.noList .txt02 {padding-left: 10px;font-size: 12px; } 
+        .expo_wrap .expo_info .ex_list02 li {width: calc(100% / 2);padding: 20px 0 20px; } 
+        .expo_wrap .expo_info .ex_list02 li:not(:nth-child(3n + 1)) {border-left: 1px solid #ddd; } 
+        .expo_wrap .expo_info .ex_list02 li:nth-child(3) {border-top: 0; } 
+        .expo_wrap .expo_info .ex_list02 li::before {height: 30px;margin-bottom: 5px;background-size: contain !important; } 
+        .expo_wrap .expo_info .ex_list02 .l_tit {font-size: 16px; } 
+        .expo_wrap .expo_info .ex_list02 .l_txt {padding: 0 4px;font-size: 12px; } 
+        .expo_wrap .expo_info .ex_list02 li.noList {background-size: 50%; } 
+        .expo_wrap .expo_info .ex_list04 li:not(:last-child)::after {content: none; } 
+        .expo_wrap .expo_info .ex_list04 {gap: 10px; } 
+        .expo_wrap .expo_info .ex_list04 li {width: calc(100% / 3 - 7px); } 
+        .expo_wrap .expo_info .ex_list04 li:not(:first-child) {margin-left: 0; } 
+        .expo_wrap .expo_info .ex_list04 .l_tit {font-size: 16px; } 
+        .expo_wrap .expo_info .ex_list04 li::before {height: 50px;margin-bottom: 4px;background-size: 30px !important;border-radius: 10px; } 
+        .expo_wrap .expo_info .ex_list04 .l_txt {font-size: 12px; } 
+        .expo_wrap .expo_info .s_item .s_tit p {padding: 5px 0;font-size: 18px; } 
+        .expo_wrap .expo_info .s_item + .s_item {margin-top: 30px; } 
+        .expo_wrap .expo_info .ex_list05 li {width: 100%; } 
+        .expo_wrap .expo_info .ex_list05 li::before {height: 30px; } 
+        .expo_wrap .expo_info .ex_list05 .l_tit {margin-bottom: 10px;font-size: 18px; } 
+        .expo_wrap .expo_info .ex_list05 .l_tit .lt01 {font-size: 12px; } 
+        .expo_wrap .expo_info .ex_list05 .l_tit .lt02 {font-size: 16px; } 
+        .expo_wrap .expo_info .ex_list05 .l_txt {padding-left: 6px;font-size: 12px; } 
+        .expo_wrap .expo_info .ex_list03 {gap: 0 2px; } 
+        .expo_wrap .expo_info .ex_list03 li {width: 50%;padding: 20px 0; } 
+        .expo_wrap .expo_info .ex_list03 li::before {height: 30px;margin-bottom: 4px;background-size: contain !important; } 
+        .expo_wrap .expo_info .ex_list03 .l_tit {font-size: 18px; } 
+        .expo_wrap .expo_info .ex_list03 .l_txt {font-size: 12px; } 
+
+        }
+        @media screen and (max-width:420px) {.expo_wrap .hire_list li { flex-direction:column; align-items: initial; } 
+        .expo_wrap .hire_list li .com_nm { max-width: fit-content; margin: 0; } 
+        }
+    </style>
+    <div class="expo_wrap">
+        <div class="expo_main">
+            <img src="./images/logis/main_img.jpg" alt="">
+        </div>
+        <div class="info_wrap">
+          <div class="expo_info">
+            <div class="item">
+                <div class="ex_tit"><p>용마로지스</p></div>
+                <ul class="ex_list01 ic01">
+                    <li>639명 사원 수, 연 매출 <span>3,559억 중견기업</span></li>
+                    <li>택배 서비스 평가 <span>7년 이상 A등급</span> 획득 유지</li>
+                    <li>고객사 재계약률 <span>95% 이상</span></li>
+                    <li>시간당 <span>12,500박스 처리 능력</span>을 보유한 최첨단 안성 Hub 물류센터</li>
+                    <li>2020년 고용노동부 선정 <span>대한민국 일자리 으뜸기업</span> 선정</li>
+                    <li>2023년 <span>사회공헌 우수기업</span> 부총리 겸 기획재정부 장관상 수상</li>
+                </ul>
+            </div>
+            <div class="item">
+                <div class="ex_tit"><p>급여조건</p></div>
+                <ul class="ex_list01 ic02">
+                    <li>경력 채용 시 : 채용 시 협의</li>
+                    <li>신입 채용 시 : 초임 기준</li>
+                    <li class="noList"><p class="txt01">부문별 상이 : 약 3,700만 원 ~ 4,100만 원 수준</p></li>
+                    <li class="noList"><p class="txt02">※ 성과급 및 하계휴가비, 연차휴가 보상비 등 변동수당 별도 지급</p></li>
+                </ul>
+            </div>
+            <div class="item">
+                <div class="ex_tit"><p>특별한 복지제도</p></div>
+                <ul class="ex_list02">
+                    <li>
+                        <p class="l_tit">복지포인트 지급</p>
+                        <p class="l_txt">현금성 복지포인트<br>
+                            연간 210만 원 별도 지급</p>
+                    </li>
+                    <li>
+                        <p class="l_tit">사내 대출 제도 운영</p>
+                        <p class="l_txt">주거/생활 안정 등<br>
+                            필요자금 일부 지원</p>
+                    </li>
+                    <li>
+                        <p class="l_tit">단체보험 지원</p>
+                        <p class="l_txt">단체보험 가입을 통해<br>
+                            본인 입원 의료비 지원</p>
+                    </li>
+                    <li>
+                        <p class="l_tit">건강검진 실시</p>
+                        <p class="l_txt">직원들의 건강을 위하여<br>
+                            매년 건강검진 실시</p>
+                    </li>
+                    <li>
+                        <p class="l_tit">자녀학자금 지원</p>
+                        <p class="l_txt">자녀 대학교, 해외유학자녀<br>
+                            학자금 지원</p>
+                    </li>
+                    <li>
+                        <p class="l_tit">식사 제공</p>
+                        <p class="l_txt">중식 제공</p>
+                    </li>
+                    <li>
+                        <p class="l_tit">선물 지원</p>
+                        <p class="l_txt">신입사원 웰컴키트 지급, 업무 장비 및
+                            사무용품 구입 지원</p>
+                    </li>
+                    <li>
+                        <p class="l_tit">Work & Life Balance</p>
+                        <p class="l_txt">근무 중 원거리 근무 발령 시<br>
+                            안정적 정착을 위해 가구이전비,<br>
+                            부임 시 여비 지원</p>
+                    </li>
+                    <li>
+                        <p class="l_tit">임직원 쇼핑몰 운영</p>
+                        <p class="l_txt">건강기능식품, 생활용품 등<br>
+                            그룹사의 다양한 상품을<br>
+                            저렴한 가격으로 구입</p>
+                    </li>
+                    <li>
+                        <p class="l_tit">장기근속자 포상</p>
+                        <p class="l_txt">10년, 20년, 30년, 40년 등<br>
+                            장기근속자에 대한 포상</p>
+                    </li>
+                    <li>
+                        <p class="l_tit">우수사원 포상</p>
+                        <p class="l_txt">매년 우수사원에 대한 포상금 지급</p>
+                    </li>
+                    <li>
+                        <p class="l_tit">Refresh Support</p>
+                        <p class="l_txt">하계 휴가비 지원,<br>
+                            휴가(연차)보상, 리조트 숙박권 포상 등</p>
+                    </li>
+                    <li>
+                        <p class="l_tit">자기개발 지원</p>
+                        <p class="l_txt">사내 외국어강좌, 사내 직무교육,<br>
+                            외부교육 지원</p>
+                    </li>
+                    <li>
+                        <p class="l_tit">임직원 교육비 지원</p>
+                        <p class="l_txt">임직원 본인 학자금 연간1인<br>
+                            최대200만원 지급, 자격증 취득비 지원<br>
+                            <span>(응시료,교재비)</span></p>
+                    </li>
+                    <li>
+                        <p class="l_tit">우리사주제도 운영</p>
+                        <p class="l_txt">임직원의 동아쏘시오홀딩스 주식<br>
+                            취득 지원<br>
+                            <span>(월 최대100만원 취득 시50%추가 지원)</span></p>
+                    </li>
+                    <li>
+                        <p class="l_tit">성과급 지급</p>
+                        <p class="l_txt">경영실적에 따라 성과급 별도 지급</p>
+                    </li>
+                    <li>
+                        <p class="l_tit">경조사 지원</p>
+                        <p class="l_txt">경조휴가, 경조금, 화환(조화),<br>
+                            장례물품 지원</p>
+                    </li>
+                    <li class="noList"></li>
+                </ul>
+            </div>
+            <div class="item">
+                <div class="ex_tit"><p>채용 프로세스</p></div>
+                <div class="s_item">
+                    <div class="s_tit"><p>채용시기</p></div>
+                    <ul class="ex_list03">
+                        <li>
+                            <p class="l_tit">수시 채용</p>
+                            <p class="l_txt">(매 월 채용공고 진행)</p>
+                        </li>
+                        <li>
+                            <p class="l_tit">상시 채용</p>
+                            <p class="l_txt">(DC, TPL, CIS, 방역서비스)</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="s_item">
+                    <div class="s_tit"><p>채용 프로세스</p></div>
+                    <ul class="ex_list04">
+                        <li>
+                            <p class="l_tit">서류전형</p>
+                        </li>
+                        <li>
+                            <p class="l_tit">1차면접(팀장)</p>
+                        </li>
+                        <li>
+                            <p class="l_tit">2차면접(임원)</p>
+                            <p class="l_txt">※ 필요시 진행</p>
+                        </li>
+                        <li>
+                            <p class="l_tit">채용검진</p>
+                        </li>
+                        <li>
+                            <p class="l_tit">최종 합격</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="s_item">
+                    <div class="s_tit"><p>사업분야</p></div>
+                    <ul class="ex_list05">
+                        <li>
+                            <p class="l_tit">DC<span class="lt01">(Distribution Center)</span><br>
+                                <span class="lt02">택배 서비스</span></p>
+                            <p class="l_txt">집하, 분류, 택배 센터별 수송</p>
+                            <p class="l_txt">전국 택배센터에서 최종 소비자에게 전달</p>
+                            <p class="l_txt">택배 전 과정 화물추적 및 정보 제공</p>
+                        </li>
+                        <li>
+                            <p class="l_tit">TPL<span class="lt01">(Third Party Logistics)</span><br>
+                                <span class="lt02">3PL서비스</span></p>
+                            <p class="l_txt">WMS 업계 최초 도입</p>
+                            <p class="l_txt">모바일, GPS/GLS 기술 기반 물류 추적 정보 제공</p>
+                            <p class="l_txt">물류  BPR 및 선진 물류기법 운영 노하우 등 컨설팅 능력보유</p>
+                        </li>
+                        <li>
+                            <p class="l_tit">CIS<span class="lt01">(Consignment Inventory Specialist)</span><br>
+                                <span class="lt02">약품, 의료기기 납품 및 재고관리</span></p>
+                            <p class="l_txt">화주사 제품을 발주, 납품, 재고관리, 마감업무</p>
+                            <p class="l_txt">화주사와 병원 중간 역할 수행</p>
+                            <p class="l_txt">화주사와 병원 유대관계 형성</p>
+                        </li>
+                        <li>
+                            <p class="l_tit">PECOEX<span class="lt01">(Pest Control Expert)</span><br>
+                                <span class="lt02">방역서비스</span></p>
+                            <p class="l_txt">해충 방제 브랜드 PECOEX(페콕스) 운영</p>
+                            <p class="l_txt">종합방제서비스 IPM기준 관리</p>
+                            <p class="l_txt">방문 상담을 통한 통합 솔루션 제안</p>
+                        </li>
+                        <li>
+                            <p class="l_tit">DS<span class="lt01">(Delivery Specialist)</span><br>
+                                <span class="lt02">직영 배송센터</span></p>
+                            <p class="l_txt">전국 24시간 내 택배완료율 99.8%</p>
+                            <p class="l_txt">화물추적시스템을 통한 실시간 정보 제공</p>
+                            <p class="l_txt">택배 컨설팅을 통한 맞춤형 서비스 제공</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="hire_list_wrap">
+            <h2>상시채용</h2>
+            <ul class="hire_list">
+                <li>
+                    <div class="com_nm"><img src="./images/logis/logo.png" alt="용마로지스"></div>
+                    <div class="hire_nm">
+                        <a href="#" target="_blank">용마로지스 DC(Distribution Center) 상시 채용</a>
+                        <div class="txt">
+                            <p>근무지 공고 상세 참고 | 정규직 | 급여 협의</p>
+                        </div>
+                        <div class="desc">택배 서비스, 상시채용</div>
+                    </div>
+                    <div class="btn_area">
+                        <a href="#" target="_blank">지원하기</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="com_nm"><img src="./images/logis/logo.png" alt="용마로지스"></div>
+                    <div class="hire_nm">
+                        <a href="#" target="_blank">용마로지스 TPL(Third Party Logistics) 상시 채용</a>
+                        <div class="txt">
+                            <p>근무지 공고 상세 참고 | 정규직 | 급여 협의</p>
+                        </div>
+                        <div class="desc">물류센터, 상시채용</div>
+                    </div>
+                    <div class="btn_area">
+                        <a href="#" target="_blank">지원하기</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="com_nm"><img src="./images/logis/logo.png" alt="용마로지스"></div>
+                    <div class="hire_nm">
+                        <a href="#" target="_blank">용마로지스 CIS(Consignment Inventory Specialist) 상시 채용</a>
+                        <div class="txt">
+                            <p>근무지 공고 상세 참고 | 정규직 | 급여 협의</p>
+                        </div>
+                        <div class="desc">약품, 의료기기 납품 및 재고관리, 상시채용</div>
+                    </div>
+                    <div class="btn_area">
+                        <a href="#" target="_blank">지원하기</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="com_nm"><img src="./images/logis/logo.png" alt="용마로지스"></div>
+                    <div class="hire_nm">
+                        <a href="#" target="_blank">용마로지스 PECOEX(Pest Control Expert) 상시 채용</a>
+                        <div class="txt">
+                            <p>근무지 공고 상세 참고 | 정규직 | 급여 협의</p>
+                        </div>
+                        <div class="desc">방역서비스, 상시채용</div>
+                    </div>
+                    <div class="btn_area">
+                        <a href="#" target="_blank">지원하기</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="com_nm"><img src="./images/logis/logo.png" alt="용마로지스"></div>
+                    <div class="hire_nm">
+                        <a href="#" target="_blank">용마로지스 DS(Delivery Specialist) 채용 직영 배송센터</a>
+                        <div class="txt">
+                            <p>배송센터 | 정규직 | 톤급별 월 고정운임</p>
+                        </div>
+                        <div class="desc">수시채용</div>
+                    </div>
+                    <div class="btn_area">
+                        <a href="#" target="_blank">지원하기</a>
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

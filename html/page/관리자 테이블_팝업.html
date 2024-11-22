@@ -3418,6 +3418,7 @@
                     .modal_pop .popItem .radioList .radioBox input[type="radio"]:checked + label:after { content: ''; position: absolute; top: 7px; left: 5px; width: 10px; height: 10px; background: #2A61F9; border-radius: 100%; } 
                     .modal_pop .pob_bottom {padding: 0 20px 10px;}
                     .modal_pop .pob_bottom p { color: #ff0000; font-size: 12px; letter-spacing: -0.5px;}
+                    .modal_pop .ckOff {background: #eee;}
                 </style>
                 
                 <div class="modal_pop active" id="popupOverlay">
@@ -3458,8 +3459,20 @@
                 <script>
                     $(function() {	
                         $('#popDate').datepicker({
-                            format: 'yyyy-mm-dd'
-                            ,language: 'ko'
+                            format: 'yyyy-mm-dd',
+                            language: 'ko',
+                            beforeShowDay: function (date) {
+                                const highlightDates = ['2024-11-04','2024-11-11']; 
+                                const year = date.getFullYear();
+                                const month = ('0' + (date.getMonth() + 1)).slice(-2);
+                                const day = ('0' + date.getDate()).slice(-2);
+                                const formattedDate = `${year}-${month}-${day}`;
+
+                                if (highlightDates.includes(formattedDate)) {
+                                    return { classes: 'ckOff' };
+                                }
+                                return true;
+                            }
                         });
                     });
                     $('#popDate').on('changeDate', function(e) {
