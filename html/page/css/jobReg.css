@@ -125,6 +125,7 @@ html, body { position: initial; }
 .jobRegWrap .mpaging a { display: inline-block; margin: 0 20px; background-color: #003281; color: #fff; font-size: 14px; padding: 4px 16px; border-radius: 4px; } 
 .jobRegWrap .mpaging span { font-weight: 900; } 
 .jobRegWrap .mpaging a { display: inline-block; margin: 0 20px; background-color: #003281; color: #fff; font-size: 14px; padding: 4px 16px; border-radius: 4px; } 
+.jobRegWrap .s_txt {margin-top: 10px; color: #ff0000; font-size: 14px;}
 
 @media all and (max-width:860px){
  .jobRegWrap .regBox table th { display: block; padding: 10px 0; } 
