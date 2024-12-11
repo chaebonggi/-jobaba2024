@@ -228,7 +228,37 @@
 				</ul>
 			</div>
 		</article>	
-
+		
+		<!-- s:2024.12.11 팝업창 추가 -->
+		<style>
+			.eventWrap .shadow {background: rgba(0, 0, 0, 0.5);position: fixed;top: 0;left: 0;z-index: 9999;width: 100%;height: 100vh;display: none; } 
+			.eventWrap .ev_pop {position: fixed;background: #fff;top: 50%;left: 50%;transform: translate(-50%,-50%);z-index: 9999;border: 1px solid #000;border-radius: 10px;box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);overflow: hidden; } 
+			.eventWrap .ev_pop.wd650 {max-width: 650px;width: calc(100% - 10px); } 
+			.eventWrap .ev_pop .popup_inner {padding: 30px;text-align: center; } 
+			.eventWrap .ev_pop .txt {color: #000;font-size: 26px;line-height: 1.5; } 
+			.eventWrap .btn_wrap {margin-top: 30px;text-align: center; } 
+			.eventWrap .ev_pop .btn_wrap a {font-size: 18px;padding: 7px 20px; } 
+			@media (max-width: 640px) {
+				.eventWrap .ev_pop .popup_inner {padding: 20px 10px;}
+				.eventWrap .btn_wrap {margin-top: 20px;}
+				.eventWrap .ev_pop .txt {font-size: 15px;word-break: keep-all;}
+				.eventWrap .ev_pop .btn_wrap a {font-size: 14px;}
+			}
+		</style>
+		
+		<div class="shadow" style="display: block;"></div>
+		<div id="popup_deadline" class="ev_pop wd650 fixed" style="display: block">
+			<div class="popup_inner">
+				<p class="txt">준비된 예산이 모두 소진되어<br>
+					<span class="gBold">잡아바 AI역량검사 이벤트는 종료되었습니다.</span><br>
+					성원에 감사드립니다.
+				</p>
+				<div class="btn_wrap tct mt_20">
+					<a href="javascript:void(0)" class="btn_style04 btn_gray btn" onclick="closePopup()">닫기 </a>
+				</div>
+			</div>
+		</div>
+		<!-- e:2024.12.11 팝업창 추가 -->
 </div>
 
 <!--잡아바 js-->
@@ -247,8 +277,12 @@
 			document.execCommand("copy");
 			$tempInput.remove();
 			alert("링크가 복사되었습니다!");
-		});
-		
+		});		
 	});
+	// 2024.12.11 팝업 스크립트 추가
+	function closePopup() {
+		$('.ev_pop').hide();
+		$('.shadow').hide();
+	};
 </script>
 </body></html>
