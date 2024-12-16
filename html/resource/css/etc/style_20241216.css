@@ -220,7 +220,7 @@ h3.tit2 {margin: 30px 0 15px;font-size: 20px;}
 .certify .btn_certi {clear: both;display: block;margin-top: 20px;}
 
 /* s:2024.12.16 마이페이지 css 수정 */
-.view {border-top: 1px solid #666; word-break: keep-all;}
+.view {border-top: 1px solid #666; word-break: break-all;}
 /* e:2024.12.16 마이페이지 css 수정 */
 .view > dl {border-bottom: 1px solid #ccc;display: table;table-layout: fixed;width: 100%;font-size: 14px;}
 .view > dl > dt {display: table-cell;vertical-align: middle;width: 178px;background: #f1f1f1;font-weight: 600;padding: 17px;}
